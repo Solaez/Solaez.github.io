@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos más destacados</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .carousel-item {
+      text-align: center;
+    }
+    .carousel-item img {
+      max-height: 200px;
+      margin: 0 auto;
+    }
+    .carousel-item .badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Productos más destacados</h2>
+    <div id="featured-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <div class="card">
+                <span class="badge badge-danger">Oferta</span>
+                <img src="/img/productos/camisa/camisa 1.png" class="card-img-top" alt="Camiseta militar con bordados verdes">
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta militar con bordados verdes</h5>
+                  <a href="#" class="btn btn-primary">VER DETALLES</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="card">
+                <span class="badge badge-success">Nuevo</span>
+                <img src="gorra-militar.jpg" class="card-img-top" alt="Gorra militar con bordados verdes">
+                <div class="card-body">
+                  <h5 class="card-title">Gorra militar con bordados verdes</h5>
+                  <a href="#" class="btn btn-primary">VER DETALLES</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="card">
+                <img src="camiseta-amarilla.jpg" class="card-img-top" alt="Camiseta militar de dos tonos verdes">
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta militar de dos tonos verdes</h5>
+                  <a href="#" class="btn btn-primary">VER DETALLES</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="card">
+                <span class="badge badge-danger">Más vendido</span>
+                <img src="parches.jpg" class="card-img-top" alt="Parches militares con bordados verdes">
+                <div class="card-body">
+                  <h5 class="card-title">Parches militares con bordados verdes</h5>
+                  <a href="#" class="btn btn-primary">VER DETALLES</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <div class="card">
+                <span class="badge badge-danger">Oferta</span>
+                <img src="chaqueta.jpg" class="card-img-top" alt="Chaqueta militar con bordados verdes">
+                <div class="card-body">
+                  <h5 class="card-title">Chaqueta militar con bordados verdes</h5>
+                  <a href="#" class="btn btn-primary">VER DETALLES</a>
+                </div>
+              </div>
+            </div>
+            <!-- Agrega más elementos de producto aquí -->
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#featured-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#featured-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

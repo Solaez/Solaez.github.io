@@ -1,0 +1,100 @@
+.acerca {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide el contenedor en dos columnas */
+    /*gap: 20px;  Espacio entre las columnas */
+    position: relative;
+    top: 70px;
+  }
+
+  #dialog-box {
+    font-family: sans-serif;
+    background-color: #f0f0f0; /* Color de fondo del cuadro */
+    padding: 5%; /* Espacio interno en porcentaje */
+    border-radius: 5px; /*redondear boldes*/
+    max-width: 550px; /* Ancho máximo del cuadro */
+    max-height: 250px; /* Ancho máximo del cuadro */
+    position: relative;
+    left: 5%;
+    z-index: 9; /* Coloca el objeto en la parte superior de la pila de elementos */
+    opacity: 0.9;
+    box-shadow: -15px 24px 10px 0 rgba(0, 0, 0, 0.3);/*sombras*/
+  }
+
+  #dialog-box h1 {
+    color: #4b4949;
+    margin-top: 0;
+    font-size: 34px;
+    font-weight: bold;
+  }
+  #dialog-box p {
+    color: #8b8b8b;
+  }
+
+  .acerca-boton {
+    padding: 1vw 4vw; /*tamaño*/
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(56, 56, 56);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    top: 22rem;
+    position: absolute;
+  }
+  
+  .acerca-boton:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+  }
+  
+  .acerca-boton:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+  
+  #image {
+    position: relative;
+    right: 20px;
+    max-width: 100%; /* La imagen no superará el ancho del contenedor */
+    position: relative;
+    top: 20px;
+  }
+  
+  /* Ajuste para pantallas pequeñas */
+  @media screen and (max-width: 600px) {
+
+
+
+    .acerca {
+      grid-template-columns: 1fr; /* Cambia a una sola columna */
+    }
+    #dialog-box {
+      left: 0; /* Reinicia la posición */
+      height: 300px; /* Ancho máximo del cuadro */
+      max-height: 300%; /* Ancho máximo del cuadro */
+
+    }
+    
+  .acerca-boton {
+    padding: 1vw 7vw; /*tamaño*/
+    top: 17rem;
+  }
+  
+
+    #image {
+        right: 0px;
+      }
+
+
+  }
+  

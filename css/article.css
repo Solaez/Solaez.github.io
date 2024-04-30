@@ -1,0 +1,164 @@
+/*Ventas inicio*/
+
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+  /**box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);*/
+  border-radius: 10px;
+  top: 160px; /* Ajusta esta propiedad según sea necesario */
+  
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  position: relative;
+  flex: 0 0 calc(100% / 4);
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.new-sticker {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff3333;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 5px;
+  box-shadow: -5px 4px 5px 0 rgba(0, 0, 0, 0.3);/*sombras*/
+}
+.ofer-sticker {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #004bd6;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 10px;
+  border-radius: 5px;
+  box-shadow: -5px 4px 5px 0 rgba(0, 0, 0, 0.3);/*sombras*/
+}
+
+.description {
+  margin-top: 10px;
+  color: #555;
+}
+
+.boton-ver-inicio {
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton-ver-inicio:hover {
+  background-color: #45a049;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #555;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.title-produc {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 34px;
+  font-family: sans-serif;
+  color: #555;
+}
+
+.ver-mas-venta {
+  padding: 1vw 4vw; /*tamaño*/
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+  background-color: rgb(56, 56, 56);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  top: 170px;
+  left: 45%;
+  position: relative;
+}
+
+.ver-mas-venta:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.ver-mas-venta:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+
+}
+
+
+  /* Ajuste para pantallas pequeñas */
+  @media screen and (max-width: 600px) {
+
+    .ver-mas-venta{
+      top: 100px;
+      left: 36%;
+
+
+    }
+
+    .carousel-container {
+      top: 100px; /* Ajusta esta propiedad según sea necesario */
+      
+    }
+
+    .title-produc {
+      font-size: 4vw;
+      
+    }
+  }
+  
