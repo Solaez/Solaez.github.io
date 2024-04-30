@@ -1,0 +1,48 @@
+    .title-ubic{
+    position: relative;
+    top: 150px;
+    left: 5%;
+    font-size: 50px;
+    color: #585858;
+    }
+  .ubicacion {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Color de fondo ligeramente diferente */
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    position: relative;
+    top: 150px;
+  }
+  
+  .ubicacion h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333; /* Color de texto más oscuro */
+  }
+  
+  .ubicacion .info {
+    padding: 10px;
+    background-color: #fff; /* Fondo blanco para la información */
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .ubicacion p {
+    margin: 10px 0;
+  }
+  
+  .ubicacion p i {
+    margin-right: 5px;
+    color: #007bff; /* Color de los iconos */
+  }
+  
+ /* Ajuste para pantallas pequeñas */
+ @media screen and (max-width: 600px) {
+    .title-ubic{
+        left: 10%;
+        font-size: 40px;
+        }
+  }
+    
+  

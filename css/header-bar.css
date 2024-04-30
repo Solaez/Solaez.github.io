@@ -25,6 +25,7 @@ header{
     box-shadow: 0px 24px 20px 0 rgba(0, 0, 0, 0.3);
     filter: blur(7);
     background: #ffffff;
+    
 }
 
 .header-container {
@@ -160,7 +161,7 @@ nav ul li a::before {
     position: absolute;
     background-color: #ffffff; /* Color de fondo por defecto */
     min-width: 160px;
-    box-shadow: -10px 18px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: -10px 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
     transition: background-color 0.6s; /* Agregamos una transición para suavizar el cambio */
 }

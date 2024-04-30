@@ -326,7 +326,12 @@
 
   /*marcas trabajadas*
   --------------------------------------------------------------------------------*/
-  
+  /* Ajustes para el carrusel */
+.institutos .institutos-track {
+  animation: scroll 40s linear infinite; /* Duplica la duración del tiempo para cubrir el doble de contenido */
+  display: flex;
+  width: calc(250px * 16); /* Duplica el ancho para acomodar el doble de contenido */
+}
  @keyframes scroll {
 	 0% {
 		 transform: translateX(0);
@@ -383,6 +388,7 @@
   }
   .instituto img{
     height: 60px;
+    width: 150px;
   }
 
   
