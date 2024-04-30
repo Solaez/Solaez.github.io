@@ -52,18 +52,18 @@ footer a {
 }
 
 /* Footer main | Newsletter form */
-form {
+.email-form {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-input[type="email"] {
+.email-input[type="email"] {
 	border: 0;
 	padding: 0.625rem;
 	margin-top: 0.3125rem;
 }
 
-input[type="submit"] {
+.email-input[type="submit"] {
 	background-color: #00d188;
 	color: #fff;
 	cursor: pointer;
@@ -141,12 +141,12 @@ input[type="submit"] {
       margin-bottom: 1rem;
     }
   
-    form {
+    .email-form {
       margin-bottom: 1rem;
     }
   
-    input[type="email"],
-    input[type="submit"] {
+    .email-input[type="email"],
+    .email-input[type="submit"] {
       width: 100%;
     }
   
