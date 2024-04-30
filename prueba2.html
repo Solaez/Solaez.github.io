@@ -1,328 +1,83 @@
-<!--Header Barra de navegación-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubicaciones</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ubicacion">
+        <h2><i class="fas fa-map-marker-alt"></i> Sede principal - Medellín</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7932.313469689067!2d-75.556858!3d6.243065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442859553c39b5%3A0xe54e406c36352109!2sCl.%2049%20%23%2035%2052%2C%20Buenos%20Aires%2C%20Medell%C3%ADn%2C%20Buenos%20Aires%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1714493559192!5m2!1ses-419!2sco" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="info">
+            <p><i class="fas fa-map-pin"></i> Calle 49 #35 - 52 Barrio Buenos Aires</p>
+            <p><i class="fas fa-clock"></i> Lunes - Viernes: 7:00am - 5:00pm <br>Sábados: 7:00am - 12:00pm</p>
+        </div>
+    </div>
+
+  <!-- Las otras ubicaciones se mantienen iguales -->
+
+  <script src="script.js"></script>
+</body>
+</html>
+
 <style>
-  body{
-    background:url(/img/fondo/fondo\ claro.png);
-    background-attachment: fixed;
-	background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+.ubicacion {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f8f9fa; /* Color de fondo ligeramente diferente */
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-/* Estilos para el encabezado */        
-header{
-    opacity: 0.9;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    transition: 0.7s;
-    padding: 10px 20px;
-    z-index: 10;
-    align-items: center;
-    box-shadow: 0px 24px 20px 0 rgba(0, 0, 0, 0.3);
-    filter: blur(7);
+.ubicacion h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #333; /* Color de texto más oscuro */
 }
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-header.abajo{
-    background: #fff;
-    padding: 5px 20px;
-    
+.ubicacion .info {
+  padding: 10px;
+  background-color: #fff; /* Fondo blanco para la información */
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-
-header .logo{
-    position: relative;
-    color: #fff;
-    font-weight: bold;
-    font-size: 2em;
-    letter-spacing: 2px;
-    transition: 1.5s;
-    text-decoration: none;
-}
-header ul{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.ubicacion p {
+  margin: 10px 0;
 }
 
-header ul li{
-    list-style: none;
+.ubicacion p i {
+  margin-right: 5px;
+  color: #007bff; /* Color de los iconos */
 }
-
-header ul li a{
-    position: relative;
-    font-family: helvetica;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: 600;
-    transition: 0.7s;
-}
-
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nav-links {
-    margin-right: 50px; 
-}
-
-header.abajo .logo,
-header.abajo ul li a{
-    color: #000;
-}
-
-/* Estilos para el logotipo */
-.logo img {
-    max-height: 50px;
-    width: auto;
-    transition: transform 0.7s;
-}
-
-header.abajo .logo img {
-    max-height: 40px;
-    transform: scale(0.8);
-}
-
-/* Nuevo estilo para el overlay */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9;
-    display: none;
-}
-
-.overlay.active {
-    display: block;
-}
-
-/* Estilos para el botón de toggle */
-.toggle-button {
-    display: none;
-    cursor: pointer;
-    z-index: 11;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-}
-
-header.abajo .bar {
-    background-color: #000;
-}
-/*estilos para pantallas pequeñas, como celular,iPad Apps y tablet*/
-@media (max-width: 768px) {
-
-    .logo img {
-        max-height: 40px;
-    }
-    nav {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .nav-links {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #7e7e7e;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: flex-start; /* Cambio aquí */
-        align-items: center;
-        padding-top: 80px; /* Nuevo */
-    }
-
-    .toggle-button {
-        display: block;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .toggle-button.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .toggle-button.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .toggle-button.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-}
-/* Estilos para el menú desplegable */
-.dropdown-menu {
-  display: none;
-    position: absolute;
-    background-color: #000; /* Color de fondo inicial */
-    color: #fff; /* Color de texto inicial */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    transition: opacity 0.3s ease; /* Transición de opacidad */
-    opacity: 0; /* Opacidad inicial */
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-    opacity: 1; /* Cambia la opacidad al mostrar el menú */
-}
-
-.dropdown-menu li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones para fondo y color de texto */
-}
-
-.dropdown-menu li:last-child {
-    border-bottom: none;
-}
-
-.dropdown-menu li:hover {
-    background-color: #333; /* Cambia el color de fondo al pasar el cursor */
-    color: #fff; /* Cambia el color del texto al pasar el cursor */
-}
-/* Cambia el fondo y el color del texto cuando las letras se pongan blancas */
-header.abajo .dropdown-menu {
-    background-color: #fff;
-    color: #000;
-}
-
-header.abajo .dropdown-menu li {
-    border-color: #000; /* Cambia el color del borde */
-}
-
 
 </style>
 <script>
-  window.addEventListener("scroll", function(){
-    var header = document.querySelector("header");
-    header.classList.toggle("abajo",window.scrollY>0);
-})
+    // Simulación de mapa estático
+// Puedes integrar aquí un mapa interactivo usando una API de mapas como Google Maps
 
-// Nuevo código para hacer el menú responsive
-const toggleButton = document.querySelector('.toggle-button');
-const navLinks = document.querySelector('.nav-links');
-const overlay = document.querySelector('.overlay');
+function cargarMapa(idMapa, latitud, longitud) {
+  // Aquí puedes integrar un mapa interactivo usando una API de mapas
+  // Por ejemplo, con Google Maps: new google.maps.Map(document.getElementById(idMapa), { center: { lat: latitud, lng: longitud }, zoom: 15 });
+}
 
-toggleButton.addEventListener('click', () => {
-    toggleButton.classList.toggle('active');
-    navLinks.classList.toggle('active');
-    overlay.classList.toggle('active');
-});
+// Coordenadas para cada ubicación
+const ubicaciones = [
+  { id: "mapa1", latitud: 40.7128, longitud: -74.0060 }, // Nueva York
+  { id: "mapa2", latitud: 34.0522, longitud: -118.2437 }, // Los Ángeles
+  { id: "mapa3", latitud: 51.5074, longitud: -0.1278 } // Londres
+];
+
+// Cargar mapas para cada ubicación
+ubicaciones.forEach(u => cargarMapa(u.id, u.latitud, u.longitud));
+
 </script>
-<header>
-  <div class="header-container">
-      <a href="#" class="logo">
-          <img src="/img/iconos/LOGO hd.png" alt="Logo">
-      </a>
-      <nav>
-          <ul class="nav-links">
-              <li><a href="/index.html">Inicio</a></li>
-              <li class="dropdown">
-                  <a href="#">Productos</a>
-                  <ul class="dropdown-menu">
-                      <li><a href="#">Producto 1</a></li>
-                      <li><a href="#">Producto 2</a></li>
-                      <li><a href="#">Producto 3</a></li>
-                      <!-- Agrega más elementos del menú desplegable según sea necesario -->
-                  </ul>
-              </li>
-              <li><a href="/sitios/ubic.html">Ubicación</a></li>
-              <li><a href="/sitios/cont.html">Contacto</a></li>
-              <li><a href="/sitios/acer.html">Acerca de</a></li>
-          </ul>
-          <div class="toggle-button">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-          </div>
-      </nav>
-  </div>
-</header>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
-<p>mario</p>
