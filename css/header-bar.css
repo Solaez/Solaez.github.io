@@ -1,16 +1,17 @@
-body{
-    background:url(/img/fondo/fondo\ claro.png);
+body {
+    background: url(/img/fondo/fondo\ claro.png);
     background-attachment: fixed;
-	background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+    background-size: cover;
+    /* Hace que la imagen de fondo cubra todo el contenedor */
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-/* Estilos para el encabezado */        
-header{
+/* Estilos para el encabezado */
+header {
     opacity: 0.9;
     position: fixed;
     top: 0;
@@ -25,7 +26,7 @@ header{
     box-shadow: 0px 24px 20px 0 rgba(0, 0, 0, 0.3);
     filter: blur(7);
     background: #ffffff;
-    
+
 }
 
 .header-container {
@@ -34,14 +35,15 @@ header{
     align-items: center;
     width: 100%;
 }
-header.abajo{
+
+header.abajo {
     background: #4b4b4b;
     padding: 5px 20px;
-    
+
 }
 
 
-header .logo{
+header .logo {
     position: relative;
     color: #fff;
     font-weight: bold;
@@ -50,18 +52,19 @@ header .logo{
     transition: 1.5s;
     text-decoration: none;
 }
-header ul{
+
+header ul {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header ul li{
+header ul li {
     list-style: none;
 }
 
-header ul li a{
+header ul li a {
     position: relative;
     font-family: helvetica;
     margin: 0 15px;
@@ -72,17 +75,18 @@ header ul li a{
     transition: 0.7s;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .nav-links {
-    margin-right: 50px; 
+    margin-right: 50px;
 }
 
 header.abajo .logo,
-header.abajo ul li a{
+header.abajo ul li a {
     color: #ccc9c9;
 }
 
@@ -133,6 +137,7 @@ header.abajo .logo img {
 header.abajo .bar {
     background-color: #cacaca;
 }
+
 /* Agregar animación de hover-forward */
 nav ul li a::before {
     content: '';
@@ -141,34 +146,42 @@ nav ul li a::before {
     height: 2px;
     bottom: -2px;
     left: 0;
-    background-color: transparent; /* Color inicial transparente */
+    background-color: transparent;
+    /* Color inicial transparente */
     transition: all 0.3s ease;
-    transform: scaleX(0); /* Inicialmente oculto */
-  }
-  
-  nav ul li a:hover::before {
-    background-color: #007bff; /* Color al hacer hover */
-    transform: scaleX(1); /* Mostrar línea */
-  }
-  
-  nav ul li a:hover {
-    color: #007bff; /* Cambia el color que desees al hacer hover */
-  }
+    transform: scaleX(0);
+    /* Inicialmente oculto */
+}
 
-  /* Estilos para el dropdown */
+nav ul li a:hover::before {
+    background-color: #007bff;
+    /* Color al hacer hover */
+    transform: scaleX(1);
+    /* Mostrar línea */
+}
+
+nav ul li a:hover {
+    color: #007bff;
+    /* Cambia el color que desees al hacer hover */
+}
+
+/* Estilos para el dropdown */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #ffffff; /* Color de fondo por defecto */
+    background-color: #ffffff;
+    /* Color de fondo por defecto */
     min-width: 160px;
-    box-shadow: -10px 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: -10px 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
-    transition: background-color 0.6s; /* Agregamos una transición para suavizar el cambio */
+    transition: background-color 0.6s;
+    /* Agregamos una transición para suavizar el cambio */
 }
 
 /* Cambiar el fondo cuando el encabezado está abajo */
 header.abajo .dropdown-content {
-    background-color: #4b4b4b; /* Cambia el color de fondo cuando el encabezado está abajo */
+    background-color: #4b4b4b;
+    /* Cambia el color de fondo cuando el encabezado está abajo */
 }
 
 .dropdown-content a {
@@ -190,6 +203,7 @@ header.abajo .dropdown-content {
     .logo img {
         max-height: 40px;
     }
+
     nav {
         flex-direction: row;
         justify-content: space-between;
@@ -206,9 +220,11 @@ header.abajo .dropdown-content {
         background-color: #7e7e7e;
         z-index: 10;
         flex-direction: column;
-        justify-content: flex-start; /* Cambio aquí */
+        justify-content: flex-start;
+        /* Cambio aquí */
         align-items: center;
-        padding-top: 80px; /* Nuevo */
+        padding-top: 80px;
+        /* Nuevo */
     }
 
     .toggle-button {
