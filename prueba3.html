@@ -274,6 +274,63 @@
                 margin-bottom: 10px;
             }
         }
+
+
+        .product {
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.product button {
+    background-color: #3367f7;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #a25aff;
+}
+
+.product .product-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff6347;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+        
     </style>
 
 </head>
@@ -308,7 +365,7 @@
                 </nav>
                 <div class="categories">
                     <a href="#" class="active" data-category="all">Todos</a>
-                    <a href="#" data-category="camisas">Camisas</a>
+                    <a href="#" data-category="nuevo">nuevo</a>
                     <a href="#" data-category="busos">Busos</a>
                     <a href="#" data-category="bordados">Bordados</a>
                     <a href="#" data-category="casco">Casco</a>
@@ -316,11 +373,13 @@
                 <main>
                     <div id="product-grid">
                         <!-- Productos -->
-                        <div class="product" data-category="camisas">
-                            <img src="/img/productos/camisa/camisa 1.png" alt="White Sneaker">
+                        <div class="product" data-category="camisas" >
+                            <span class="product-label">Nuevo</span>
+                            <img src="/img/productos/camisa/camisa 1.png" alt="Camia militar">
                             <h3>Camia militar</h3>
                             <button>Seleccionar</button>
                         </div>
+                        
                         
                         <div class="product" data-category="camisas">
                             <img src="/img/productos/camisa/camisa2.png" alt="White Sneaker">
@@ -521,6 +580,39 @@
             showFilteredProducts('all');
         });
     </script>
+<script>
+    // Obtener el input de búsqueda y el contenedor de productos
+const searchInput = document.querySelector('.search-icons input');
+const productGrid = document.getElementById('product-grid');
 
+// Función para filtrar los productos por título
+function filterProductsByTitle(query) {
+  const products = productGrid.querySelectorAll('.product');
+  const lowercaseQuery = query.toLowerCase();
+
+  products.forEach(product => {
+    const title = product.querySelector('h3').textContent.toLowerCase();
+    if (title.includes(lowercaseQuery)) {
+      product.style.display = 'block';
+    } else {
+      product.style.display = 'none';
+    }
+  });
+
+  // Actualizar la paginación después de filtrar los productos
+  const visibleProducts = Array.from(products).filter(product => product.style.display !== 'none');
+  renderPagination(visibleProducts);
+  showProducts(1, visibleProducts);
+  updateActivePage(1);
+}
+
+// Event listener para el input de búsqueda al presionar Enter
+searchInput.addEventListener('keydown', event => {
+  if (event.key === 'Enter') {
+    const searchQuery = event.target.value.trim();
+    filterProductsByTitle(searchQuery);
+  }
+});
+</script>
 </body>
 </html>

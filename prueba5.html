@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+ 
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Poppins', sans-serif;
+     /*background-color: #f9f9f9;*/
+     background-image: url("img/fondo/fondo\ claro.png");
+ }
+
+ .container-productos {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+     display: flex;
+ }
+
+ .sidebar-productos {
+     width: 250px;
+     margin-right: 20px;
+ }
+
+ .content-productos {
+     flex: 1;
+ }
+
+ .nass {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 20px;
+     background-color: #fff;
+     padding: 10px 20px;
+     border-radius: 10px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+
+ nav a {
+     text-decoration: none;
+     color: #333;
+     margin-right: 20px;
+     font-weight: 500;
+     transition: color 0.3s ease;
+ }
+
+ nav a.active {
+     color: #1538ff;
+ }
+
+ nav a:hover {
+     color: #8441ff;
+ }
+
+ .search-icons {
+     display: flex;
+     align-items: center;
+ }
+
+ .search-icons input {
+     padding: 8px 12px;
+     border: 1px solid #ccc;
+     border-radius: 20px;
+     margin-right: 10px;
+     outline: none;
+     transition: border-color 0.3s ease;
+ }
+
+ .search-icons input:focus {
+     border-color: #0b44ff;
+ }
+
+ .categories {
+     margin-bottom: 20px;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ .categories a {
+     text-decoration: none;
+     color: #333;
+     margin-right: 20px;
+     font-weight: 500;
+     padding: 8px 16px;
+     border-radius: 20px;
+     background-color: #fff;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     transition: background-color 0.3s ease, color 0.3s ease;
+ }
+
+ .categories a:hover,
+ .categories a.active {
+     background-color: #003cff;
+     color: #fff;
+ }
+
+ #product-grid {
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     grid-gap: 20px;
+ }
+
+ .product {
+     text-align: center;
+     background-color: #fff;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease;
+     
+ }
+
+ .product:hover {
+     transform: translateY(-5px);
+ }
+
+ .product img {
+     max-width: 100%;
+     height: auto;
+     border-radius: 5px;
+ }
+
+ .product h3 {
+     margin-top: 10px;
+     font-size: 16px;
+     font-weight: 600;
+     color: #333;
+ }
+
+ .product button {
+     background-color: #3367f7;
+     color: #fff;
+     border: none;
+     padding: 8px 16px;
+     border-radius: 20px;
+     cursor: pointer;
+     margin-top: 10px;
+     transition: background-color 0.3s ease;
+ }
+
+ .product button:hover {
+     background-color: #a25aff;
+ }
+
+ .container-productos {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+ }
+
+ #pagination {
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+ }
+
+ #pagination button {
+     background-color: #fff;
+     color: #333;
+     border: none;
+     padding: 8px 16px;
+     border-radius: 20px;
+     cursor: pointer;
+     margin: 0 5px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     transition: background-color 0.3s ease, color 0.3s ease;
+ }
+
+ #pagination button:hover,
+ #pagination button.active {
+     background-color: #4781ff;
+     color: #fff;
+ }
+
+ /* Estilos para el menú de categorías */
+ .categories-menu {
+     background-color: #fff;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+ }
+
+ .categories-menu h3 {
+     margin-top: 0;
+     font-size: 18px;
+     font-weight: 600;
+     color: #333;
+ }
+
+ .categories-menu ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ .categories-menu ul li {
+     margin-bottom: 10px;
+ }
+
+ .categories-menu ul li a {
+     text-decoration: none;
+     color: #333;
+     font-weight: 500;
+     transition: color 0.3s ease;
+ }
+
+ .categories-menu ul li a:hover {
+     color: #ff6347;
+ }
+
+ /* Estilos para dispositivos móviles */
+ @media screen and (max-width: 568px) {
+     
+     .container-productos {
+         flex-direction: column;
+     }
+
+     .sidebar-productos {
+         width: 100%;
+         margin-right: 0;
+     }
+
+     .categories-menu {
+         padding: 10px;
+     }
+
+     .content-productos {
+         width: 100%;
+     }
+
+     .product {
+         width: 25vw;
+         height: 40vw;
+     }
+
+     .product img {
+     max-width: 100%;
+     }
+
+     .product h3 {
+         margin-top: 1px;
+         font-size: 10px;
+         font-weight: 600;
+         color: #333;
+     }
+     #product-grid {
+         grid-template-columns: repeat(2, 1fr); /* Cambia a 3 columnas */
+     }
+     
+     .product button {
+         padding: 1vw 6px;
+         margin-top: -1px;
+         
+     }
+
+     .categories {
+         justify-content: flex-start;
+     }
+
+     .search-icons input {
+         width: calc(100% - 20px);
+     }
+
+     .categories a {
+         margin-bottom: 10px;
+     }
+ }
+
+
+ .product {
+position: relative;
+text-align: center;
+background-color: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+
+.product:hover {
+transform: translateY(-5px);
+}
+
+.product img {
+max-width: 100%;
+height: auto;
+border-radius: 5px;
+}
+
+.product h3 {
+margin-top: 10px;
+font-size: 16px;
+font-weight: 600;
+color: #333;
+}
+
+.product button {
+background-color: #3367f7;
+color: #fff;
+border: none;
+padding: 8px 16px;
+border-radius: 20px;
+cursor: pointer;
+margin-top: 10px;
+transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+background-color: #a25aff;
+}
+
+.product .product-label {
+position: absolute;
+top: 10px;
+left: 10px;
+background-color: #ff6347;
+color: #fff;
+padding: 5px 10px;
+border-radius: 5px;
+font-size: 14px;
+}
+
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            margin-right: 20px;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-right: 20px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a.active {
+            color: #ff6347;
+        }
+
+        nav a:hover {
+            color: #ff6347;
+        }
+
+        .search-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-icons input {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            margin-right: 10px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-icons input:focus {
+            border-color: #ff6347;
+        }
+
+        .icons i {
+            color: #333;
+            margin-left: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .icons i:hover {
+            color: #ff6347;
+        }
+
+        .product-details {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+        }
+
+        .small-images {
+            position: absolute;
+            top: 20px;
+            left: -10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .small-images img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .small-images img:hover{
+            scale: 1.2;
+        }
+
+        .product-details img {
+            position: relative;
+            max-width: 300px;
+            margin-right: 20px;
+            left: 30px;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .product-info h2 {
+            margin-top: 0;
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .product-info p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .product-info button {
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-info button:hover {
+            background-color: #e65c4f;
+        }
+
+        .product-description {
+            margin-top: 20px;
+        }
+
+        .product-description h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-description p {
+            color: #555;
+        }
+
+        /* Estilos para el menú de categorías */
+        .categories-menu {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .categories-menu h3 {
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .categories-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .categories-menu ul li {
+            margin-bottom: 10px;
+        }
+
+        .categories-menu ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .categories-menu ul li a:hover {
+            color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="categories-menu">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="#">Todos los productos</a></li>
+                    <li><a href="#">Camisas</a></li>
+                    <li><a href="#">Busos</a></li>
+                    <li><a href="#">Zapatos</a></li>
+                    <li><a href="#">Pantalones</a></li>
+                    <li><a href="#">bordados</a></li>
+                    <li><a href="#">Casco</a></li>
+                    <li><a href="#">Busos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <header>
+                <nav>
+                    <a href="#"><i class="fas fa-bars"></i> Menú</a>
+                    <a href="#" class="active">Productos</a>
+                </nav>
+                <div class="search-icons">
+                    <input type="text" placeholder="Buscar">
+                    <div class="icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </header>
+            <div class="categories">
+                <a href="#" class="active" data-category="all">Todos</a>
+                <a href="#" data-category="camisas">Camisas</a>
+                <a href="#" data-category="busos">Busos</a>
+                <a href="#" data-category="zapatos">Zapatos</a>
+                <a href="#" data-category="pantalones">Pantalones</a>
+                <a href="#" data-category="bordados">Bordados</a>
+                <a href="#" data-category="casco">Casco</a>
+            </div>
+            <main>
+                <div id="product-grid">
+                    <!-- Productos -->
+                </div>
+                <div id="product-details" style="display: none;">
+                    <div class="product-details">
+                        <div class="small-images">
+                            <img src="/img/productos/camisa/camisa 1.png" alt="">
+                            <!-- Imágenes pequeñas se agregarán aquí -->
+                        </div>
+                        <img src="" alt="Producto" id="main-image">
+                        <div class="product-info">
+                            <h2 id="product-title"></h2>
+                            <p>Tipo: </p>
+                            <p>Lugar: </p>
+                            <button>Pedir producto</button>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <h3>Descripción del producto</h3>
+                        <p id="product-description"></p>
+                    </div>
+                </div>
+                <div id="pagination"></div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        const products = [
+            // Agrega tus datos de productos aquí
+        ];
+
+        const productGrid = document.getElementById('product-grid');
+        const productDetails = document.getElementById('product-details');
+        const productTitle = document.getElementById('product-title');
+        const productDescription = document.getElementById('product-description');
+        const mainImage = document.getElementById('main-image');
+        const smallImagesContainer = document.querySelector('.small-images');
+
+        function showProductDetails(product) {
+            productDetails.style.display = 'block';
+            productTitle.textContent = product.title;
+            productDescription.textContent = product.description;
+            mainImage.src = product.mainImageUrl;
+
+            // Limpiar imágenes pequeñas anteriores
+            smallImagesContainer.innerHTML = '';
+
+            // Agregar imágenes pequeñas
+            product.smallImages.forEach(imageUrl => {
+                const img = document.createElement('img');
+                img.src = imageUrl;
+                img.alt = 'Imagen pequeña';
+                img.className = 'small-image';
+                img.addEventListener('click', () => {
+                    mainImage.src = imageUrl;
+                });
+                smallImagesContainer.appendChild(img);
+            });
+        }
+
+        function renderProducts() {
+            productGrid.innerHTML = '';
+            products.forEach(product => {
+                const productElement = document.createElement('div');
+                productElement.className = 'product';
+                productElement.setAttribute('data-category', product.category);
+                productElement.innerHTML = `
+                    <img src="${product.mainImageUrl}" alt="${product.title}">
+                    <h3>${product.title}</h3>
+                    <button onclick="showProductDetails(${JSON.stringify(product)})">Seleccionar</button>
+                `;
+                productGrid.appendChild(productElement);
+            });
+        }
+
+        renderProducts();
+
+            // Función para mostrar los productos en la página actual
+            function showProducts(pageNumber, products) {
+                const startIndex = (pageNumber - 1) * productsPerPage;
+                const endIndex = startIndex + productsPerPage;
+                products.forEach((product, index) => {
+                    if (index >= startIndex && index < endIndex) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            }
+    
+            // Función para actualizar el estilo del botón de página activa
+            function updateActivePage(pageNumber) {
+                const paginationButtons = document.querySelectorAll('#pagination button');
+                paginationButtons.forEach(button => {
+                    button.classList.remove('active');
+                });
+                paginationButtons[pageNumber - 1].classList.add('active');
+            }
+    
+            // Evento de clic para cada enlace de categoría
+            document.querySelectorAll('.categories a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const category = this.getAttribute('data-category');
+                    showFilteredProducts(category);
+                });
+            });
+    
+            // Función para mostrar productos filtrados por categoría
+            function showFilteredProducts(category) {
+                let filteredProducts = [];
+                products.forEach(product => {
+                    const productCategory = product.getAttribute('data-category');
+                    if (category === 'all' || productCategory === category) {
+                        product.style.display = 'block';
+                        filteredProducts.push(product);
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+    
+                const pagination = document.getElementById('pagination');
+                pagination.innerHTML = '';
+                renderPagination(filteredProducts);
+                showProducts(1, filteredProducts);
+                updateActivePage(1);
+            }
+                
+            // Agregar evento de clic a los enlaces del menú lateral
+            const categoriesMenuLinks = document.querySelectorAll('.categories-menu ul li a');
+            categoriesMenuLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const category = this.getAttribute('data-category');
+                    showFilteredProducts(category);
+
+                    // Remover la clase 'active' de todos los enlaces
+                    categoriesMenuLinks.forEach(link => link.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+
+            // Inicializa la página
+            renderPagination(products);
+            showProducts(1, products);
+            updateActivePage(1);
+    
+            // Inicializar con el filtro "camisas"
+            showFilteredProducts('all');
+        
+        // Resto del código para el filtro de categorías y la paginación
+    </script>
+</body>
+</html>

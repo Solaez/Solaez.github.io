@@ -118,7 +118,7 @@ nav a:hover {
     margin-top: 10px;
     font-size: 16px;
     font-weight: 600;
-    color: #333;
+    color: #333333;
 }
 
 .product button {
@@ -178,7 +178,7 @@ nav a:hover {
     margin-top: 0;
     font-size: 18px;
     font-weight: 600;
-    color: #333;
+    color: #0003a8;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -191,6 +191,8 @@ nav a:hover {
 
 .categories-menu ul li {
     margin-bottom: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+
 }
 
 .categories-menu ul li a {
@@ -202,8 +204,15 @@ nav a:hover {
 }
 
 .categories-menu ul li a:hover {
-    color: #ff6347;
+    color: #1814ff;
+    
 }
+
+.categories-menu ul li:hover {
+    background-color: #f3f3f3;
+    transform: translateX(10px); /* Movemos el enlace 5px hacia la derecha cuando se pasa el ratón */
+}
+
 
 
 /* Estilos para dispositivos móviles */
