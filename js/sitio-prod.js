@@ -94,3 +94,39 @@ document.addEventListener('DOMContentLoaded', function () {
     // Inicializar con el filtro "camisas"
     showFilteredProducts('all');
 });
+
+
+//Buscador--------------------------------------------------------------
+
+    // Obtener el input de búsqueda y el contenedor de productos
+const searchInput = document.querySelector('.search-icons input');
+const productGrid = document.getElementById('product-grid');
+
+// Función para filtrar los productos por título
+function filterProductsByTitle(query) {
+  const products = productGrid.querySelectorAll('.product');
+  const lowercaseQuery = query.toLowerCase();
+
+  products.forEach(product => {
+    const title = product.querySelector('h3').textContent.toLowerCase();
+    if (title.includes(lowercaseQuery)) {
+      product.style.display = 'block';
+    } else {
+      product.style.display = 'none';
+    }
+  });
+
+  // Actualizar la paginación después de filtrar los productos
+  const visibleProducts = Array.from(products).filter(product => product.style.display !== 'none');
+  renderPagination(visibleProducts);
+  showProducts(1, visibleProducts);
+  updateActivePage(1);
+}
+
+// Event listener para el input de búsqueda al presionar Enter
+searchInput.addEventListener('keydown', event => {
+  if (event.key === 'Enter') {
+    const searchQuery = event.target.value.trim();
+    filterProductsByTitle(searchQuery);
+  }
+});
