@@ -130,3 +130,4 @@ searchInput.addEventListener('keydown', event => {
     filterProductsByTitle(searchQuery);
   }
 });
+//

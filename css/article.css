@@ -33,7 +33,15 @@
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+  transition: transform 0.2s;
+  min-height: 250px;
 }
+.carousel img:hover {
+  transform: scale(1.1);
+}
+
+
+
 
 .new-sticker {
   position: absolute;
@@ -47,6 +55,7 @@
   border-radius: 5px;
   box-shadow: -5px 4px 5px 0 rgba(0, 0, 0, 0.3);/*sombras*/
 }
+
 .ofer-sticker {
   position: absolute;
   top: 10px;
@@ -148,6 +157,12 @@
   @media screen and (max-width: 600px) {
 
     
+    .carousel img {
+      min-height: 0;
+    }
+    .carousel img:hover {
+      transform: scale(1);
+    }
     .description {
       font-size: 3vw;
       
