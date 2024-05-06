@@ -114,7 +114,7 @@
       <div class="categories-menu">
           <h3>Categorías</h3>
           <ul>
-              <li><a href="#" class="active" data-category="all">Todos los productos</a></li>
+              <li><a href="todo" data-category="all">Todos los productos</a></li>
               <li><a href="camisa" data-category="camisas">Camisas</a></li>
               <li><a href="busos" data-category="busos">Busos</a></li>
               <li><a href="zapatos" data-category="zapatos">Zapatos</a></li>
@@ -143,118 +143,179 @@
               </div>
             </nav>
           <div class="categories">
-              <a href="#" class="active" data-category="all">Todos</a>
+              <a href="#" data-category="all" >Todos</a>
               <a href="#" data-category="camisas">Camisas</a>
               <a href="#" data-category="busos">Busos</a>
               <a href="#" data-category="bordados">Bordados</a>
               <a href="#" data-category="casco">Casco</a>
           </div>
           <main>
-              <div id="product-grid">
-                  <!-- Productos -->
-                  <div class="product" data-category="camisas">
-                      <img src="/img/productos/camisa/camisa 1.png" alt="White Sneaker">
-                      <h3>Camia militar</h3>
-                      <button>Seleccionar</button>
-                  </div>
-                  
-                  <div class="product" data-category="camisas">
-                      <img src="/img/productos/camisa/camisa2.png" alt="White Sneaker">
-                      <h3>Camia militar 2</h3>
-                      <button>Seleccionar</button>
-                  </div>
-                  
-                  
-                  <div class="product" data-category="camisas">
-                      <img src="/img/productos/camisa/camisa2.png" alt="White Sneaker">
-                      <h3>Camia militar 2</h3>
-                      <button>Seleccionar</button>
-                  </div>
-                  
-                  
-                  <div class="product" data-category="camisas">
-                      <img src="/img/productos/camisa/camisa2.png" alt="White Sneaker">
-                      <h3>Camia militar 2</h3>
-                      <button>Seleccionar</button>
-                  </div>
-                  
-                  <div class="product" data-category="camisas">
-                      <img src="/img/productos/camisa/camisa3.png" alt="White Sneaker">
-                      <h3>Camia militar 3</h3>
-                      <button>Seleccionar</button>
-                  </div>
-                  
-                  <div class="product" data-category="casco">
-                      <img src="/img/productos/cascos/casco1.png" alt="White Sneaker">
-                      <h3>Casco militar</h3>
-                      <button>Seleccionar</button>
-                  </div>
+            <div id="product-details" style="display: none;">
+                <button id="regresar-btn">Regresar</button>
+                <button id="pedir-producto">Pedir producto</button>
+            </div>
+            <div id="product-grid">
 
-                  <div class="product" data-category="bordados">
-                      <img src="/img/productos/bordados/bordado 2.png" alt="White Sneaker">
-                      <h3>Bordados</h3>
-                      <button>Seleccionar</button>
-                  </div>
-                  
-                  <div class="product" data-category="camisas">
-                      <img src="/img/productos/camisa/camisa 1.png" alt="White Sneaker">
-                      <h3>Camia militar</h3>
-                      <button>Seleccionar</button>
-                  </div>
-                  
-                  <div class="product" data-category="camisas">
-                      <img src="/img/productos/camisa/camisa2.png" alt="White Sneaker">
-                      <h3>Camia militar</h3>
-                      <button>Seleccionar</button>
-                  </div>
-                  
-                  <div class="product" data-category="camisas">
-                      <img src="/img/productos/camisa/camisa3.png" alt="White Sneaker">
-                      <h3>Camia militar</h3>
-                      <button>Seleccionar</button>
-                  </div>
-                  
-                  <div class="product" data-category="casco">
-                      <img src="/img/productos/cascos/casco1.png" alt="White Sneaker">
-                      <h3>Casco militar</h3>
-                      <button>Seleccionar</button>
-                  </div>
+                <!-- Productos -->
+                <div class="product" data-category="camisas">
+                    <img src="/img/productos/camisa/negro/camisa3.png" alt="Camisa militar" >
+                    <h3 class="titleproductos">Camisa militar negra</h3>
+                    <button>Seleccionar</button>
+                    <div id="product-details"  style="display: none;">
+                        <img class="imag1" src="/img/productos/camisa/negro/camisa3.png" alt="cami1">
+                        <img class="imag2" src="/img/productos/camisa/negro/camisa3-right.png" alt="cami2">
+                        <img class="imag3" src="/img/productos/camisa/negro/camisa3-down.png" alt="cami3">
+                    </div>
+                    <div id="product-details" style="display: none;">
+                        <p class="descripcion">la descripcion va aqui1</p>
+                        <p class="tipo">el tipo va aqui 2</p>
+                        <p class="lugar">el lugar esta en cierto lugar 3</p>
+                    </div>
+                </div>
 
-                  <div class="product" data-category="bordados">
-                      <img src="/img/productos/bordados/bordado 2.png" alt="White Sneaker">
-                      <h3>Bordados</h3>
-                      <button>Seleccionar</button>
-                  </div>
-                  
-                  <div class="product" data-category="camisas">
-                      <img src="/img/productos/camisa/camisa 1.png" alt="White Sneaker">
-                      <h3>Camia militar</h3>
-                      <button>Seleccionar</button>
-                  </div>
-                  
-                  <div class="product" data-category="camisas">
-                      <img src="/img/productos/camisa/camisa2.png" alt="White Sneaker">
-                      <h3>Camia militar</h3>
-                      <button>Seleccionar</button>
-                  </div>
-                  
-                  <div class="product" data-category="camisas">
-                      <img src="/img/productos/camisa/camisa3.png" alt="White Sneaker">
-                      <h3>Camia militar</h3>
-                      <button>Seleccionar</button>
-                  </div>
-                  
-                  <div class="product" data-category="casco">
-                      <img src="/img/productos/cascos/casco1.png" alt="White Sneaker">
-                      <h3>Casco militar</h3>
-                      <button>Seleccionar</button>
-                  </div>
 
-                  <div class="product" data-category="bordados">
-                      <img src="/img/productos/bordados/bordado 2.png" alt="White Sneaker">
-                      <h3>Bordados</h3>
-                      <button>Seleccionar</button>
+
+
+                
+                <div class="product" data-category="camisas">
+                  <img src="/img/productos/camisa/negro/camisa3.png" alt="Camisa militar" >
+                  <h3 class="titleproductos">Camibuso negro</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/camisa/negro/camisa3.png" alt="cami1">
+                      <img class="imag2" src="/img/productos/camisa/negro/camisa3-right.png" alt="cami2">
+                      <img class="imag3" src="/img/productos/camisa/negro/camisa3-down.png" alt="cami3">
                   </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">Es una camibu militar con negro con verde </p>
+                      <p class="tipo">Camibuso</p>
+                      <p class="lugar">Sede Principal</p>
+                  </div>
+                </div>
+
+                <div class="product" data-category="camisas">
+                  <img src="/img/productos/camisa/amarilla/camisa2.png" alt="Camisa militar" >
+                  <h3 class="titleproductos">Camisa militar amarilla</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/camisa/amarilla/camisa2.png" alt="cami1">
+                      <img class="imag2" src="/img/productos/camisa/amarilla/camisa1.png" alt="cami2">
+                      <img class="imag3" src="/img/productos/camisa/amarilla/camisa3.png" alt="cami3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">la descripcion va aqui1</p>
+                      <p class="tipo">el tipo va aqui 2</p>
+                      <p class="lugar">el lugar esta en cierto lugar 3</p>
+                  </div>
+                </div>
+                  
+                  
+                <div class="product" data-category="camisas">
+                  <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Camisa militar" >
+                  <h3 class="titleproductos">Camisa militar roja</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/camisa/camisa roja/camisa 1.png" alt="cami1">
+                      <img class="imag2" src="/img/productos/camisa/camisa roja/camisa2.png" alt="cami2">
+                      <img class="imag3" src="/img/productos/camisa/camisa roja/camisa 1.png" alt="cami3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">la descripcion va aqui1</p>
+                      <p class="tipo">el tipo va aqui 2</p>
+                      <p class="lugar">el lugar esta en cierto lugar 3</p>
+                  </div>
+                </div>
+                  
+                  
+                <div class="product" data-category="camisas">
+                  <img src="/img/productos/camisa/camaleon/camisa1.png" alt="Camisa militar" >
+                  <h3 class="titleproductos">Camisa militar Camaleon</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/camisa/camaleon/camisa1.png" alt="cami1">
+                      <img class="imag2" src="/img/productos/camisa/camaleon/camisa2.png" alt="cami2">
+                      <img class="imag3" src="/img/productos/camisa/camaleon/camisa3.png" alt="cami3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">la descripcion va aqui1</p>
+                      <p class="tipo">el tipo va aqui 2</p>
+                      <p class="lugar">el lugar esta en cierto lugar 3</p>
+                  </div>
+                </div>
+                  
+                <div class="product" data-category="casco">
+                  <img src="/img/productos/cascos/casco1/casco1.png" alt="cosco" >
+                  <h3 class="titleproductos">Casco militar</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/cascos/casco1/casco1.png" alt="cami1">
+                      <img class="imag2" src="/img/productos/cascos/casco1/casco2.png" alt="cami2">
+                      <img class="imag3" src="/img/productos/cascos/casco1/casco3.png" alt="cami3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">la descripcion va aqui1</p>
+                      <p class="tipo">el tipo va aqui 2</p>
+                      <p class="lugar">el lugar esta en cierto lugar 3</p>
+                  </div>
+                </div>
+                  
+                
+                
+                <div class="product" data-category="bordados">
+                  <img src="/img/productos/bordados/bordado circulo/bordado1.png" alt="bordados" >
+                  <h3 class="titleproductos">Bordado circulo</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/bordados/bordado circulo/bordado1.png" alt="cami1">
+                      <img class="imag2" src="/img/productos/bordados/bordado circulo/bordado2.png" alt="cami2">
+                      <img class="imag3" src="/img/productos/bordados/bordado circulo/bordado3.png" alt="cami3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">la descripcion va aqui1</p>
+                      <p class="tipo">el tipo va aqui 2</p>
+                      <p class="lugar">el lugar esta en cierto lugar 3</p>
+                  </div>
+                </div>
+                  
+                
+                
+                <div class="product" data-category="bordados">
+                  <img src="/img/productos/bordados/bordado figura/bordado1.png" alt="bordados" >
+                  <h3 class="titleproductos">Bordado figura</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/bordados/bordado figura/bordado1.png" alt="cami1">
+                      <img class="imag2" src="/img/productos/bordados/bordado figura/bordado2.png" alt="cami2">
+                      <img class="imag3" src="/img/productos/bordados/bordado figura/bordado3.png" alt="cami3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">la descripcion va aqui1</p>
+                      <p class="tipo">el tipo va aqui 2</p>
+                      <p class="lugar">el lugar esta en cierto lugar 3</p>
+                  </div>
+                </div>
+                  
+                
+                
+                <div class="product" data-category="bordados">
+                  <img src="/img/productos/bordados/bordado triangulo/bordado1.png" alt="bordados" >
+                  <h3 class="titleproductos">Bordado triangulo</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/bordados/bordado triangulo/bordado1.png" alt="cami1">
+                      <img class="imag2" src="/img/productos/bordados/bordado triangulo/bordado2.png" alt="cami2">
+                      <img class="imag3" src="/img/productos/bordados/bordado triangulo/bordado3.png" alt="cami3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">la descripcion va aqui1</p>
+                      <p class="tipo">el tipo va aqui 2</p>
+                      <p class="lugar">el lugar esta en cierto lugar 3</p>
+                  </div>
+                </div>
+                  
+
+
+
               </div>
               <div id="pagination"></div>
           </main>
@@ -418,6 +479,170 @@
 <script src="/js/article.js"></script>
 <script src="/js/whatsapp.js"></script>
 <script src="/js/sitio-prod.js"></script>
+
+<script>
+  // Obtener el contenedor de detalles del producto
+  const productDetails = document.getElementById('product-details');
+
+  // Función para mostrar los detalles del producto seleccionado
+  function showProductDetails(event) {
+      const product = event.target.closest('.product');
+      const title = product.querySelector('h3').textContent;
+      const image = product.querySelector('img').src;
+      const description = product.querySelector('.descripcion').textContent;
+      const tipo = product.querySelector('.tipo').textContent;
+      const lugar = product.querySelector('.lugar').textContent;
+      const imag1 = product.querySelector('.imag1').src;
+      const imag2 = product.querySelector('.imag2').src;
+      const imag3 = product.querySelector('.imag3').src;
+
+      // Limpiar el contenido anterior del contenedor de detalles
+      productDetails.innerHTML = '';
+
+      // Crear el contenido HTML para mostrar los detalles del producto
+      const productHTML = `
+          <button id="regresar-btn"><img class="mario" src="/img/iconos/volver.png" alt="volver"></button>
+          <div style="display: flex; align-items: center;">
+              <div>
+                  <img id="product1" src="${imag1}" onclick="changeMainImage(this.src)"><br>
+                  <img id="product2" src="${imag2}" onclick="changeMainImage(this.src)"><br>
+                  <img id="product3" src="${imag3}" onclick="changeMainImage(this.src)">
+              </div>
+              <div>
+                  <img id="productoImagen" src="${image}" alt="${title}" onclick="showEnlargedImage(this.src)">
+                  <h3 id="descripcionProducto2">Descripción del producto</h3>
+                  <p id="descripcionProducto">${description}</p>
+              </div>
+              <div style="margin-left: 20px;">
+                  <h2 id="titleProducto">${title}</h2>
+                  <p id="tipoProducto"><b>Tipo:</b> ${tipo}</p>
+                  <p id="ubicacionProducto"><b>Ubicación:</b> ${lugar}</p>
+                  <button id="pedir-producto">Pedir producto</button>
+              </div>
+          </div>
+      `;
+      // Agregar el contenido HTML al contenedor de detalles
+      productDetails.innerHTML = productHTML;
+
+      // Mostrar el contenedor de detalles con la animación de entrada
+      productDetails.style.display = 'block';
+      productDetails.classList.remove('slide-out');
+
+      // Ocultar la cuadrícula de productos
+      const productGrid = document.getElementById('product-grid');
+      productGrid.style.display = 'none';
+
+      // Agregar evento de clic al botón "Regresar"
+      const regresarBtn = document.getElementById('regresar-btn');
+      regresarBtn.addEventListener('click', () => {
+          productDetails.classList.add('slide-out');
+
+          // Después de que la animación de salida finalice, oculta el contenedor de detalles y muestra la cuadrícula de productos
+          setTimeout(() => {
+              productDetails.style.display = 'none';
+              productDetails.classList.remove('slide-out');
+              productGrid.style.display = 'grid';
+          }, 500);
+      });
+  }
+
+  // Función para cambiar la imagen principal
+  function changeMainImage(imageSrc) {
+      const mainImage = document.getElementById('productoImagen');
+      mainImage.src = imageSrc;
+  }
+
+  // Función para mostrar la imagen ampliada
+  function showEnlargedImage(imageSrc) {
+      const enlargedImageContainer = document.createElement('div');
+      enlargedImageContainer.style.position = 'fixed';
+      enlargedImageContainer.style.top = '0';
+      enlargedImageContainer.style.left = '0';
+      enlargedImageContainer.style.width = '100%';
+      enlargedImageContainer.style.height = '100%';
+      enlargedImageContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+      enlargedImageContainer.style.display = 'flex';
+      enlargedImageContainer.style.justifyContent = 'center';
+      enlargedImageContainer.style.alignItems = 'center';
+      enlargedImageContainer.style.zIndex = '9999';
+      enlargedImageContainer.style.opacity = '0'; // Inicialmente oculta
+      enlargedImageContainer.style.transition = 'opacity 0.3s ease'; // Animación de entrada
+
+      const enlargedImage = document.createElement('img');
+      enlargedImage.src = imageSrc;
+      enlargedImage.style.maxWidth = '90%';
+      enlargedImage.style.maxHeight = '90%';
+      enlargedImage.style.transform = 'scale(0.8)'; // Escala inicial
+      enlargedImage.style.transition = 'transform 0.3s ease'; // Animación de entrada
+
+      enlargedImageContainer.appendChild(enlargedImage);
+      document.body.appendChild(enlargedImageContainer);
+
+      // Mostrar la imagen ampliada con animación
+      setTimeout(() => {
+          enlargedImageContainer.style.opacity = '1';
+          enlargedImage.style.transform = 'scale(1)';
+      }, 10); // Retraso para evitar parpadeo
+
+      // Agregar evento de clic para cerrar la imagen ampliada con animación
+      enlargedImageContainer.addEventListener('click', () => {
+          enlargedImageContainer.style.opacity = '0';
+          enlargedImage.style.transform = 'scale(0.8)';
+
+          // Eliminar el contenedor después de la animación de salida
+          setTimeout(() => {
+              document.body.removeChild(enlargedImageContainer);
+          }, 300); // Duración de la animación
+      });
+  }
+
+  // Obtener los botones "Seleccionar" y agregar el evento de clic
+  const selectButtons = document.querySelectorAll('.product button');
+  selectButtons.forEach(button => {
+      button.addEventListener('click', showProductDetails);
+  });
+
+  // Agregar evento de clic al botón "Pedir producto"
+  const pedirProductoBtn = document.getElementById('pedir-producto');
+  pedirProductoBtn.addEventListener('click', () => {
+      alert('Producto pedido');
+  });
+</script>
+<script>
+  // Obtener el input de búsqueda y el contenedor de productos
+  const searchInput = document.querySelector('.search-icons input');
+  const productGrid = document.getElementById('product-grid');
+
+  // Función para filtrar los productos por título
+  function filterProductsByTitle(query) {
+      const products = productGrid.querySelectorAll('.product');
+      const lowercaseQuery = query.toLowerCase();
+
+      products.forEach(product => {
+          const title = product.querySelector('h3').textContent.toLowerCase();
+          if (title.includes(lowercaseQuery)) {
+              product.style.display = 'block';
+          } else {
+              product.style.display = 'none';
+          }
+      });
+
+      // Actualizar la paginación después de filtrar los productos
+      const visibleProducts = Array.from(products).filter(product => product.style.display !== 'none');
+      renderPagination(visibleProducts);
+      showProducts(1, visibleProducts);
+      updateActivePage(1);
+  }
+
+  // Event listener para el input de búsqueda al presionar Enter
+  searchInput.addEventListener('keydown', event => {
+      if (event.key === 'Enter') {
+          const searchQuery = event.target.value.trim();
+          filterProductsByTitle(searchQuery);
+      }
+  });
+</script>
+
 <!--Fin-->
 </body>
 </html>

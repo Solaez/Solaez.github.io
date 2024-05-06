@@ -1,4 +1,134 @@
 
+     
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+        /*animacion de entrada a detalles*/
+                @keyframes slideInFromLeft {
+                    0% {
+                        transform: translateX(100%);
+                    }
+        
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
+        
+                #product-details {
+                    animation: slideInFromLeft 0.7s ease forwards;
+                    /* Aplica la animación al mostrar los detalles */
+                }
+        
+        /*animacion de salida a detalles*/
+                @keyframes slideOutToLeft {
+                    0% {
+                        transform: translateX(0);
+                    }
+        
+                    100% {
+                        transform: translateX(120%);
+                    }
+                }
+        
+                #product-details.slide-out {
+                    animation: slideOutToLeft 0.7s ease forwards;
+                    /* Aplica la animación al salir de los detalles */
+                }
+        
+
+                
+/* Animación de entrada para los productos */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.product {
+    animation: fadeIn 0.5s ease forwards;
+    /* Aplica la animación a cada producto */
+}
+
+        .descripcion {
+            font-weight: 500;
+            /* Aumenta el peso de la fuente para destacar la descripción */
+            margin-bottom: 15px;
+            /* Agrega espacio entre la descripción y otros detalles */
+        }
+
+        #pedir-producto {
+            background-color: #3367f7;
+            /* Cambia el color de fondo */
+            color: #fff;
+            /* Cambia el color del texto a blanco */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 1px;
+            transition: background-color 0.3s ease;
+            /* Agrega una transición suave al color de fondo */
+
+        }
+
+        #pedir-producto:hover {
+            background-color: #4781ff;
+            /* Cambia el color de fondo al pasar el cursor sobre el botón */
+        }
+
+        #product-details {
+
+            background-color: #ffffff;
+            /* Puedes cambiar el color de fondo según tus preferencias */
+            min-height: 400px;
+            /* Aumenta el padding para agregar más espacio */
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            /* Ajusta este valor según el ancho deseado */
+            margin: 0 auto;
+            /* Centra el contenedor horizontalmente */
+            border: 1px solid #ccc;
+            /* Agrega un borde sutil alrededor de los detalles */
+            padding: 20px;
+            /* Ajusta el padding según sea necesario */
+        }
+
+        #product-details img {
+            max-width: 300px;
+        }
+
+        .container-productos {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+        }
+
+        .sidebar-productos {
+            width: 250px;
+            margin-right: 20px;
+        }
+
+        .content-productos {
+            flex: 1;
+        }
+
+        
+        
+
+
+
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 .container-productos {
@@ -101,11 +231,13 @@ nav a:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: translate 0.3s ease;
 }
 
 .product:hover {
-    transform: translateY(-5px);
+    translate: 0px -15px;
+    box-shadow: -8px 8px 9px rgba(0, 0, 0, 0.1);
+    
 }
 
 .product img {
@@ -212,7 +344,10 @@ nav a:hover {
     background-color: #f3f3f3;
     transform: translateX(10px); /* Movemos el enlace 5px hacia la derecha cuando se pasa el ratón */
 }
+.categories-menu ul li:active{
 
+    transform: translateX(15px); /* Movemos el enlace 5px hacia la derecha cuando se pasa el ratón */
+}
 
 
 /* Estilos para dispositivos móviles */
@@ -271,3 +406,179 @@ nav a:hover {
         margin-bottom: 10px;
     }
 }
+
+
+        /*Detalles de peroductos ------------------------------------------------------------------------------
+        ---------------------------------------------------------------------------------------*/
+       
+        #titleProducto{
+            font-size: 30px;
+            position: relative;
+            bottom: 160px;
+            color: #302f2f;
+        }
+        #tipoProducto,#ubicacionProducto{
+            position: relative;
+            bottom: 150px;
+            color: #585858;
+            margin-top: 15px;
+        }
+        #descripcionProducto,#descripcionProducto2{
+            color: #2c2c2c;
+        }
+        #regresar-btn{
+            
+            animation: fadeIn 2s ease forwards;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            bottom: 70px;
+        }
+        .mario{
+            width: 30px;
+        }
+        .mario:hover{
+            scale: 1.1;
+            filter: contrast();
+        }
+        .mario:active{
+            scale: 1.5;
+        }
+        /*productos imagenes pequeñas*/
+        #product1,#product2,#product3{
+            width: 50px;
+            position: relative;
+            bottom:120px ;
+            background-color: #ebebeb;
+            border-radius: 5px;
+            transition: transform 0.2s;
+            transition: box-shadow 0.2s;
+            transition: scale 0.05s;
+            margin: 2px;
+            cursor: pointer;
+        }
+        
+        #product3:hover{
+            transform:scale(1.1);
+            box-shadow: -2px 2px 10px rgb(112, 112, 112);
+        }
+        #product1:hover{
+            transform: scale(1.1);
+            box-shadow: -2px 2px 10px rgb(112, 112, 112);
+        }
+        #product2:hover{
+            transform: scale(1.1);
+            box-shadow: -2px 2px 10px rgb(112, 112, 112);
+        }
+        #product1:active{
+            scale: 1.2;
+        }
+        #product2:active{
+            scale: 1.2;
+        }
+        #product3:active{
+            scale: 1.2;
+        }
+        #productoImagen{
+            background-color: #f3f1f1;
+            border-radius: 10px;
+            transition: transform 0.2s;
+            transition: box-shadow 0.3s ease; /* Transición suave de la sombra */
+            position: relative;
+            bottom: 28px;
+            margin-left: 5px;
+            min-height: 340px;
+            cursor: pointer;
+        }
+        
+        #productoImagen:hover{
+            transform:scale(1.03);
+            box-shadow: -5px 5px 15px rgb(121, 121, 121);
+            
+        }
+
+
+        /* Estilos para dispositivos tablet */
+        @media screen and (max-width: 1068px) {
+
+            #productoImagen{
+                bottom: 28px;
+                margin-left: 0px;
+                min-height: 30px;
+                max-height: 200px;
+            }
+            
+            #product1,#product2,#product3{
+                bottom:50px ;
+            }
+            #regresar-btn{
+                
+                bottom: 10px;
+            }
+            #regresar-btn img{
+                width: 20px;
+            }
+
+            #titleProducto{
+                bottom: 20px;
+            }
+            #tipoProducto,#ubicacionProducto{
+                top: 10px;
+            }
+            #pedir-producto {
+                position: relative;
+                top: 60px;
+    
+            }
+
+
+        }
+        /* Estilos para dispositivos móviles */
+        @media screen and (max-width: 568px) {
+
+            #productoImagen{
+                bottom: 28px;
+                margin-left: 0px;
+                min-height: 30px;
+                max-height: 200px;
+            }
+            
+            #product1,#product2,#product3{
+                width: 30px;
+                bottom:120px ;
+                margin: 0px;
+                cursor: pointer;
+            }
+            #regresar-btn{
+                
+                bottom: 10px;
+            }
+            #regresar-btn img{
+                width: 20px;
+            }
+
+            #descripcionProducto2{
+                margin-top: 200px;
+            }
+            #titleProducto{
+                font-size: 20px;
+                top: 40px;
+                right: 220px;
+                width: 200px;
+            }
+            #tipoProducto,#ubicacionProducto{
+                top: 50px;
+                right: 220px;
+                color: #585858;
+                margin-top: 15px;
+            }
+            #pedir-producto {
+                position: relative;
+                right: 220px;
+                top: 60px;
+    
+            }
+
+
+        }
