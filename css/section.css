@@ -197,13 +197,31 @@
       font-weight: 600;
       margin-bottom: 10px;
   }
+  .info_items img{
+    width: 30px;
+    filter: invert();
+  }
+  .info_items p:hover{
+    transform: scale(1.01);
+  }
   
   .info_items p:nth-child(1) span{
-      font-size: 30px;
-      margin-right: 10px;
+    font-size: 50px;
+    margin-right: 15px;
+    margin-left: 4px;
   }
   
   .info_items p:nth-child(2) span{
+      font-size: 50px;
+      margin-right: 15px;
+      margin-left: 4px;
+  }
+  .info_items p:nth-child(3) span{
+      font-size: 50px;
+      margin-right: 15px;
+      margin-left: 4px;
+  }
+  .info_items p:nth-child(4) span{
       font-size: 50px;
       margin-right: 15px;
       margin-left: 4px;

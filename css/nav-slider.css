@@ -6,6 +6,7 @@
     position:relative;
     overflow:hidden;
     box-shadow: 0px 24px 20px 0 rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.9s ease forwards;
   }
   @keyframes load{
     from{left:-100%;}
@@ -423,4 +424,30 @@
     }
   }
 
+  @media screen and (max-width: 800px) {
+
+  
+    
+    .fortalezas img{
+      width: 30vw;
+    }
+      #slider{
+        height: 290px; /* Altura del 50% del viewport */
+      }
+      .content-txt {
+        /*display: none;  Ocultar el contenido de texto */
+        top: 90px;
+      }
+      .content-txt h1{
+        font-size: 15px;
+      }
+      .content-txt h2{
+        font-size: 15px;
+      }
+      .inicio-boton {
+        padding: 1em 2em;
+      }
+    }
+
+  
   
