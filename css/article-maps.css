@@ -42,7 +42,8 @@
  @media screen and (max-width: 600px) {
     .title-ubic{
         left: 10%;
-        font-size: 40px;
+        font-size: 30px;
+        width: 10px;
         }
   }
     

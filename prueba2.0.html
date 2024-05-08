@@ -1,382 +1,110 @@
-<html class=""><head>
-    <script src="/openui/tailwindcss.min.js"></script>
-    <script type="text/javascript">
-        window.tailwind.config.darkMode = ['class', '.darkMode']
-    </script>
-    <style type="text/css">
-        .selected {
-            position: absolute;
-            z-index: 49;
-            border: 2px dashed orange;
-            border-radius: 3px;
-        }
-        .inspector-element {
-            position: absolute;
-            z-index: 100;
-            pointer-events: none;
-            border: 1px dashed rgb(139 92 246);
-            box-shadow: 0 0 3px rgb(139 92 246);
-            animation: pulseGlow 1s infinite ease-in-out;
-            border-radius: 2px;
-            transition: all 250ms ease-in-out;
-            background-color: rgba(250, 250, 250, 0.1);
-        }
-        #wrapper {
-            cursor: pointer;
-            padding-top: 20px;
-        }
-        @keyframes pulseGlow {
-            0% {
-                box-shadow: 0 0 3px rgb(139 92 246);
-            }
-            50% {
-                box-shadow: 0 0 8px rgb(139 92 200);
-            }
-            100% {
-                box-shadow: 0 0 3px rgb(139 92 246);
-            }
-        }
-    </style>
-<style>/* ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.ml-2{margin-left:0.5rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mb-4{margin-bottom:1rem}.mt-6{margin-top:1.5rem}.mb-6{margin-bottom:1.5rem}.-mt-8{margin-top:-2rem}.-mt-16{margin-top:-4rem}.mb-12{margin-bottom:3rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-full{height:100%}.h-32{height:8rem}.w-\[300px\]{width:300px}.w-\[80vw\]{width:80vw}.w-full{width:100%}.w-32{width:8rem}.max-w-4xl{max-width:56rem}.origin-top{transform-origin:top}.scale-0{--tw-scale-x:0;--tw-scale-y:0;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-100{--tw-scale-x:1;--tw-scale-y:1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.gap-4{gap:1rem}.gap-8{gap:2rem}.overflow-hidden{overflow:hidden}.rounded-md{border-radius:0.375rem}.rounded-lg{border-radius:0.5rem}.rounded-full{border-radius:9999px}.rounded{border-radius:0.25rem}.border{border-width:1px}.border-4{border-width:4px}.border-zinc-200{--tw-border-opacity:1;border-color:rgb(228 228 231 / var(--tw-border-opacity))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity))}.bg-zinc-100{--tw-bg-opacity:1;background-color:rgb(244 244 245 / var(--tw-bg-opacity))}.bg-zinc-300{--tw-bg-opacity:1;background-color:rgb(212 212 216 / var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-blue-600\/\[0\.7\]{background-color:rgb(37 99 235 / 0.7)}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity))}.bg-opacity-50{--tw-bg-opacity:0.5}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-4{padding-left:1rem;padding-right:1rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.pt-0{padding-top:0px}.text-center{text-align:center}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-base{font-size:1rem;line-height:1.5rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-\[8px\]{font-size:8px}.text-3xl{font-size:1.875rem;line-height:2.25rem}.font-semibold{font-weight:600}.font-bold{font-weight:700}.italic{font-style:italic}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.text-zinc-600{--tw-text-opacity:1;color:rgb(82 82 91 / var(--tw-text-opacity))}.text-zinc-700{--tw-text-opacity:1;color:rgb(63 63 70 / var(--tw-text-opacity))}.text-zinc-900{--tw-text-opacity:1;color:rgb(24 24 27 / var(--tw-text-opacity))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-red-700:hover{--tw-bg-opacity:1;background-color:rgb(185 28 28 / var(--tw-bg-opacity))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-blue-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246 / var(--tw-ring-opacity))}:is(.darkMode .dark\:border-zinc-700){--tw-border-opacity:1;border-color:rgb(63 63 70 / var(--tw-border-opacity))}:is(.darkMode .dark\:border-zinc-800){--tw-border-opacity:1;border-color:rgb(39 39 42 / var(--tw-border-opacity))}:is(.darkMode .dark\:bg-zinc-800){--tw-bg-opacity:1;background-color:rgb(39 39 42 / var(--tw-bg-opacity))}:is(.darkMode .dark\:bg-zinc-900){--tw-bg-opacity:1;background-color:rgb(24 24 27 / var(--tw-bg-opacity))}:is(.darkMode .dark\:bg-zinc-700){--tw-bg-opacity:1;background-color:rgb(63 63 70 / var(--tw-bg-opacity))}:is(.darkMode .dark\:text-zinc-300){--tw-text-opacity:1;color:rgb(212 212 216 / var(--tw-text-opacity))}:is(.darkMode .dark\:text-white){--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}:is(.darkMode .dark\:text-zinc-400){--tw-text-opacity:1;color:rgb(161 161 170 / var(--tw-text-opacity))}:is(.darkMode .dark\:focus\:ring-blue-300:focus){--tw-ring-opacity:1;--tw-ring-color:rgb(147 197 253 / var(--tw-ring-opacity))}@media (min-width: 768px){.md\:w-auto{width:auto}.md\:w-64{width:16rem}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}</style></head>
-<body class="no-select items-top flex h-full w-full justify-center bg-zinc-300 dark:bg-zinc-900">
-    <div class="no-select relative w-[80vw]" id="wrapper"><div class="max-w-4xl mx-auto p-8">
-<h2 class="text-3xl font-bold text-center mb-12 text-zinc-900 dark:text-white transition-colors duration-300">Quiénes Somos</h2>
-<div class="flex flex-wrap justify-center gap-8">
-    <div class="card bg-white dark:bg-zinc-800 shadow-lg rounded-lg overflow-hidden w-full md:w-64 transition-all duration-300 transform hover:scale-105 cursor-pointer">
-        <img src="https://placehold.co/100x100" alt="Profile picture" class="w-32 h-32 rounded-full mx-auto -mt-16 border-4 border-white dark:border-zinc-800" crossorigin="anonymous">
-        <div class="p-4 text-center">
-            <p class="text-lg font-semibold text-zinc-900 dark:text-white transition-colors duration-300">Nombre</p>
-            <p class="text-sm text-zinc-600 dark:text-zinc-400 transition-colors duration-300">Cargo: Administrativo</p>
-        </div>
-    </div>
-</div>
-</div>
-<div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-<div class="bg-white dark:bg-zinc-800 p-8 rounded-lg shadow-lg">
-    <h3 class="text-2xl font-bold text-zinc-900 dark:text-white">Información Detallada</h3>
-    <p class="text-zinc-600 dark:text-zinc-400 mt-4">Aquí va la información detallada del miembro del equipo.</p>
-    <button class="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-700" onclick="closeModal()">Cerrar</button>
-</div>
-</div>
-<script>
-const cards = document.querySelectorAll('.card');
-const modal = document.getElementById('modal');
-
-cards.forEach(card => {
-card.addEventListener('click', () => {
-    modal.classList.remove('hidden');
-});
-});
-
-function closeModal() {
-modal.classList.add('hidden');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup de Producto</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
 }
-</script>
 
-</div>
-    <div id="prompt" class="no-select absolute z-50 origin-top scale-0 transform rounded-md border border-zinc-200 bg-zinc-100 text-zinc-700 shadow-lg transition-all duration-300 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300" data-comment-idx="0" style="top: 303px; left: 50%; margin-left: -200px;">
-        <div class="p-4 text-xs">
-            <h3 class="text-base font-semibold">How do you want this to change?</h3>
-            <input type="text" class="mt-2 w-[300px] rounded-md border border-zinc-200 px-4 py-2 text-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-300">
-            <button class="ml-2 mt-4 rounded-md bg-blue-500 p-2 text-white">
-                Submit
-            </button>
-        </div>
-    </div>
-
-<script src="/openui/extra.min.js"></script>
-<script type="text/javascript">
-    // Setup the room
-    window.theRoom.configure({
-        blockRedirection: false,
-        createInspector: true,
-        excludes: ['.no-select']
-    })
-    function clearInspector() {
-        const inspector = document.querySelector('.inspector-element')
-        if (inspector) {
-            inspector.style.top = '50%'
-            inspector.style.left = '50%'
-            inspector.style.width = ''
-            inspector.style.height = ''
-            inspector.style.border = 'none'
-            inspector.style.boxShadow = 'none'
-        }
-    }
-    let inspectorEnabled = false
-    // State TODO: maybe hydrate this from the parent
-    let commentIdx = 0
-    let selectedElements = []
-    // Reset the inspector every 5 seconds
-    let interval = null
-    // TODO: support more
-    let colors = ['blue', 'green', 'orange', 'yellow', 'red', 'purple']
-    let moved = false
-    document.addEventListener('mousemove', () => (moved = true))
-    document
-        .getElementById('wrapper')
-        .addEventListener('mouseleave', clearInspector)
-    function reset() {
-        interval = setInterval(() => {
-            if (!moved) {
-                clearInspector()
-            } else {
-                moved = false
-            }
-        }, 3000)
-    }
-    reset()
-
-    // TODO: might not need this if we just refactor the click handler
-    function reinitInspector(target, inspector) {
-        var pos = target.getBoundingClientRect()
-        var scrollTop = window.scrollY || document.documentElement.scrollTop
-        var scrollLeft = window.scrollX || document.documentElement.scrollLeft
-        var width = pos.width + 8
-        var height = pos.height + 8
-        var top = Math.max(-4, pos.top + scrollTop - 4)
-        var left = Math.max(-4, pos.left + scrollLeft - 4)
-
-        inspector.style.top = top + 'px'
-        inspector.style.left = left + 'px'
-        inspector.style.width = width + 'px'
-        inspector.style.height = height + 'px'
-    }
-
-    // Reset state on escape, submit on enter
-    document.addEventListener('keydown', e => {
-        if (e.key === 'Escape') {
-            clearInspector()
-            let p = document.getElementById('prompt')
-            if (p.classList.contains('scale-100')) {
-                p.querySelector('input').value = ''
-                let idx = p.dataset.commentIdx
-                document
-                    .querySelectorAll('.selected-' + idx + ', .fix-legend-' + idx)
-                    .forEach(selected => {
-                        selected.parentNode.removeChild(selected)
-                    })
-                p.classList.remove('scale-100')
-                if (inspectorEnabled) {
-                    window.theRoom.start()
-                }
-            }
-        } else if (e.key === 'Enter') {
-            let sub = document.getElementById('prompt').querySelector('button')
-            sub.click()
-        }
-    })
-
-    window.addEventListener('resize', () => {
-        document.querySelectorAll('.selected').forEach(selected => {
-            let selIdx = parseInt(selected.dataset.commentIdx)
-            let el = selectedElements[selIdx]
-            reinitInspector(el, selected)
-            let fix = document.querySelector(`.fix-legend-${selIdx + 1}`)
-            fix.style.top = Math.max(3, parseFloat(selected.style.top) - 10) + 'px'
-            fix.style.left = parseFloat(selected.style.left) + 5 + 'px'
-        })
-    })
-
-    window.theRoom.on('mouseover', function () {
-        const inspector = document.querySelector('.inspector-element')
-        if (inspector) {
-            inspector.style.border = ''
-            inspector.style.boxShadow = ''
-        }
-    })
-    window.theRoom.on('click', function (element, event) {
-        event.preventDefault()
-        event.stopPropagation()
-        clearInterval(interval)
-        // TODO: reinit inspector here if it's gone
-        let inspector = document.querySelector('.inspector-element')
-        if (inspector.style.border === 'none') {
-            reinitInspector(element, inspector)
-        }
-        let selected = inspector.cloneNode()
-        let color = colors[commentIdx]
-        selected.classList.add('selected')
-        selected.classList.add('no-select')
-        selected.classList.add('selected-' + commentIdx)
-        selected.classList.remove('inspector-element')
-        selected.dataset.commentIdx = commentIdx
-        selected.style.borderColor = color
-        if (element.parentNode.id === 'wrapper') {
-            // TODO: think about this one more
-            selected.style.zIndex = -1
-        }
-        let prompt = document.getElementById('prompt')
-        prompt.dataset.commentIdx = commentIdx
-        prompt.classList.add('scale-100')
-        prompt.style.top = event.clientY + 'px'
-        prompt.style.left = '50%' // event.clientX + 'px'
-        prompt.style.marginLeft = `-200px`
-        let input = prompt.querySelector('input')
-        input.focus()
-        prompt.querySelector('button').addEventListener('click', () => {
-            addComment(input.value)
-            input.value = ''
-            prompt.classList.remove('scale-100')
-        })
-        // TODO: make it clear "esc" cancels
-        document.body.append(selected)
-        let fix = document.createElement('div')
-        fix.innerText = element.tagName
-        fix.addEventListener('mouseenter', () => {
-            const cmt = document.createElement('div')
-            cmt.innerText = text
-            cmt.className =
-                'p-2 rounded bg-white text-purple-500 italic absolute opacity-95 fix-comment'
-            cmt.style.top = Math.max(3, parseFloat(selected.style.top)) + 'px'
-            cmt.style.left = parseFloat(selected.style.left) + 'px'
-            cmt.style.zIndex = 50
-            document.body.append(cmt)
-        })
-        fix.addEventListener('mouseleave', () => {
-            const cmt = document.querySelector('.fix-comment')
-            if (cmt) {
-                cmt.parentNode.removeChild(cmt)
-            }
-        })
-        fix.className = `no-select fix fix-legend-${commentIdx} italic text-white text-center font-mono text-[8px] px-2 pt-0 z-50`
-        fix.classList.add('bg-' + color + '-600/[0.7]')
-        // TODO: use tailwind
-        fix.style.border = '1px dashed ' + color
-        fix.style.position = 'absolute'
-        fix.style.height = '12px'
-        fix.style.top = Math.max(3, parseFloat(selected.style.top) - 10) + 'px'
-        fix.style.left = parseFloat(selected.style.left) + 5 + 'px'
-        document.body.append(fix)
-        window.theRoom.stop()
-        function addComment(text) {
-            //let text = prompt('What would you like to fix about this?')
-            if (text) {
-                commentIdx += 1
-                let c = document.createComment('FIX (' + commentIdx + '): ' + text)
-                element.parentNode.insertBefore(c, element)
-                window.parent.parent.postMessage(
-                    {
-                        comment: text,
-                        idx: commentIdx,
-                        html: document.getElementById('wrapper').innerHTML
-                    },
-                    '*'
-                )
-            } else {
-                return
-            }
-            selectedElements.push(element)
-            clearInspector()
-            setTimeout(() => {
-                if (inspectorEnabled) {
-                    window.theRoom.start()
-                }
-                reset()
-            }, 500)
-        }
-    })
-
-    window.addEventListener('load', () => {
-        window.parent.parent.postMessage({ action: 'ready' }, '*')
-    })
-
-    window._go = function (cb) {
-        if (document.readyState === 'complete') {
-            cb()
-        } else {
-            document.addEventListener('DOMContentLoaded', cb)
-        }
-    }
-
-    // handle events from parent
-    window.addEventListener(
-        'message',
-        function (event) {
-            if (event.data.action === 'take-screenshot') {
-                console.log('Got take screenshot event')
-                html2canvas(document.body, {
-                    useCors: true,
-                    foreignObjectRendering: true,
-                    allowTaint: true,
-                    windowWidth: 1524,
-                    windowHeight: 768
-                }).then(function (canvas) {
-                    const data = canvas.toDataURL('image/png')
-                    window.parent.parent.postMessage(
-                        { screenshot: data, action: 'screenshot' },
-                        '*'
-                    )
-                })
-            } else if (event.data.action === 'hydrate') {
-                let wrapper = document.getElementById('wrapper')
-                wrapper.innerHTML = event.data.html
-                wrapper.querySelectorAll('img').forEach(img => {
-                    img.crossOrigin = 'anonymous'
-                })
-
-                if (event.data.darkMode) {
-                    document.documentElement.classList.add('darkMode')
-                }
-                document.querySelectorAll('.user-script').forEach(scr => {
-                    scr.parentNode.removeChild(scr)
-                })
-                event.data.js.forEach(js => {
-                    const script = document.createElement('script')
-                    script.classList.add('user-script')
-                    script.type = js.type
-                    if (js.src) script.setAttribute('src', js.src)
-                    // Close our JS to avoid conflicts
-                    script.text = `(()=>{${js.text}})()`
-                    document.body.append(script)
-                })
-                // Remove our selected elements
-                selectedElements = []
-                commentIdx = 0
-                var elements = document.querySelectorAll('.selected, .fix')
-                elements.forEach(function (element) {
-                    element.parentNode.removeChild(element)
-                })
-                // TODO: maybe delay this a bit
-                window.parent.parent.postMessage(
-                    {
-                        preview: wrapper.hasChildNodes(),
-                        height: document.body.scrollHeight,
-                        action: 'loaded'
-                    },
-                    '*'
-                )
-                // state = event.data.state
-            } else if (event.data.action === 'toggle-dark-mode') {
-                if (document.documentElement.classList.contains('darkMode')) {
-                    document.documentElement.classList.remove('darkMode')
-                } else {
-                    document.documentElement.classList.add('darkMode')
-                }
-            } else if (event.data.action === 'toggle-inspector') {
-                if (inspectorEnabled) {
-                    window.theRoom.stop()
-                } else {
-                    window.theRoom.start()
-                }
-                inspectorEnabled = !inspectorEnabled
-            }
-        },
-        false
-    )
-</script>
-
-<script class="user-script" type="">(()=>{
-const cards = document.querySelectorAll('.card');
-const modal = document.getElementById('modal');
-
-cards.forEach(card => {
-card.addEventListener('click', () => {
-    modal.classList.remove('hidden');
-});
-});
-
-function closeModal() {
-modal.classList.add('hidden');
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
-})()</script></body></html>
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 20% auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+#buyButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#buyButton:hover {
+  background-color: #45a049;
+}
+
+#openPopup {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#openPopup:hover {
+  background-color: #005f79;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+  </style>
+</head>
+<body>
+  <button id="openPopup">Ver Producto</button>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" id="closePopup">&times;</span>
+      <h2>Producto</h2>
+      <p>¿Estás seguro de comprar el producto?</p>
+      <button id="buyButton">Pedir Producto</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('openPopup').addEventListener('click', function() {
+  document.getElementById('popup').style.display = 'block';
+});
+
+document.getElementById('closePopup').addEventListener('click', function() {
+  document.getElementById('popup').style.display = 'none';
+});
+
+document.getElementById('buyButton').addEventListener('click', function() {
+  // Aquí puedes añadir la lógica para comprar el producto
+  alert('¡Producto comprado!');
+});
+
+  </script>
+</body>
+</html>
