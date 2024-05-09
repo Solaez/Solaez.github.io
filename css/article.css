@@ -26,21 +26,32 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #fff;
+  transition: transform 0.5s,background-color 0.5s;
+}
+.carousel-item h3, .carousel-item p{
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: left;
+  color: #555;
+}
+.carousel-item p{
+font-size: 13px;
 }
 
+.carousel-item:hover{
+  background-color: #eeeeee;
+  transform: scale(1.01);
+  z-index: 99;
+}
 .carousel img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
-  transition: transform 0.2s,filter 0.2s;
-  min-height: 250px;
+  transition: transform 0.2s,filter 0.8s;
 }
-.carousel img:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(-5px 5px 3px rgb(0,0,0,0.5));
-
+.carousel img:hover{
+  filter: drop-shadow(10px 10px 5px rgb(0, 0, 0, 0.5));
 }
-
 
 
 
@@ -78,17 +89,22 @@
 
 .boton-ver-inicio {
   margin-top: 20px;
-  background-color: #4CAF50;
+  background-color: #1884ff;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.8s,transform 0.2s;
+  left: 0;
 }
 
 .boton-ver-inicio:hover {
-  background-color: #45a049;
+  background-color: #6f00ff;
+  transform: scale(1.05);
+}
+.boton-ver-inicio:active{
+  transform: scale(0.8);
 }
 
 .prev,
@@ -135,6 +151,7 @@
   left: 45%;
   position: relative;
   z-index: 2;
+  margin-bottom: 50px;
 }
 
 .ver-mas-venta:hover {
@@ -212,7 +229,10 @@
       
     }
     .carousel-item h3{
-      font-size: 2vw;
+      font-size: 3vw;
+    }
+    .carousel-item p{
+      font-size: 3vw;
     }
     .boton-ver-inicio {
       padding: 1vw 4vw; /*tamaño*/
