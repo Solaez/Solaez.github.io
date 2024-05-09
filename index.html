@@ -8,27 +8,24 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
-
-/* Estilos para el loader */
 .loader {
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #3498db;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 120px;
+  height: 120px;
   animation: spin 2s linear infinite;
-  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Inicialmente oculto */
 }
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
-
-
-
-
 
 /* Animación de entrada para los productos */
 @keyframes fadeIn {
@@ -548,7 +545,8 @@
             box-shadow: -5px 5px 15px rgb(121, 121, 121);
             
         }
-    </style> <style>
+    </style> 
+    <style>
         /* Animación de entrada para los productos */
         @keyframes fadeIn {
             from {
@@ -721,14 +719,15 @@
 
                     <!-- Productos -->
                     <div class="product" data-category="camisas">
+                        <div class="loader"></div>
                         <span class="product-label">Nuevo</span>
                         <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Camia militar" >
                         <h3 class="titleproductos">Camia militar</h3>
                         <button>Seleccionar</button>
                         <div id="product-details"  style="display: none;">
-                            <img class="imag1" src="/img/productos/camisa/camisa roja/camisa2.png" alt="cami1">
-                            <img class="imag2" src="/img/productos/camisa/camisa roja/camisa2.png" alt="cami2">
-                            <img class="imag3" src="/img/productos/camisa/camisa roja/camisa2.png" alt="cami3">
+                            <img class="imag1" src="/img/productos/camisa/camisa3-down.png" alt="cami1">
+                            <img class="imag2" src="/img/productos/camisa/camisa3-right.png" alt="cami2">
+                            <img class="imag3" src="/img/productos/camisa/camisa3.png" alt="cami3">
 
                         </div>
                         <div id="product-details" style="display: none;">
@@ -859,7 +858,19 @@
         <button id="confirmar-compra">Pedir producto</button>
         <button id="cerrar-popup">Cerrar</button>
     </div>
-    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+  var images = document.querySelectorAll('img');
+  images.forEach(function(img) {
+    img.addEventListener('load', function() {
+      var loader = this.parentElement.querySelector('.loader');
+      loader.style.display = 'none'; // Oculta el cargador una vez que la imagen se ha cargado completamente
+    });
+  });
+});
+
+    </script>
     <script>
         // Obtener el contenedor de detalles del producto
         const productDetails = document.getElementById('product-details');
@@ -1042,77 +1053,6 @@
                 filterProductsByTitle(searchQuery);
             }
         });
-    </script>
-    <script>
-        function showProductDetails(event) {
-  const product = event.target.closest('.product');
-  const title = product.querySelector('h3').textContent;
-  const image = product.querySelector('img').src;
-  const description = product.querySelector('.descripcion')?.textContent;
-  const tipo = product.querySelector('.tipo')?.textContent;
-  const lugar = product.querySelector('.lugar')?.textContent;
-  const imag1 = product.querySelector('.imag1')?.src;
-  const imag2 = product.querySelector('.imag2')?.src;
-  const imag3 = product.querySelector('.imag3')?.src;
-
-  // Mostrar el loader mientras se cargan las imágenes
-  productDetails.innerHTML = '<div class="loader"></div>';
-  productDetails.style.display = 'block';
-
-  // Función para cargar las imágenes antes de mostrar los detalles
-  const loadImages = () => {
-    const images = [image, imag1, imag2, imag3];
-    let loadedImages = 0;
-
-    images.forEach(imgSrc => {
-      const img = new Image();
-      img.onload = () => {
-        loadedImages++;
-        if (loadedImages === images.length) {
-          showDetails();
-        }
-      };
-      img.src = imgSrc;
-    });
-  };
-
-  // Función para mostrar los detalles una vez que se hayan cargado las imágenes
-  const showDetails = () => {
-    // Limpiar el contenido anterior del contenedor de detalles
-    productDetails.innerHTML = '';
-
-    // Crear el contenido HTML para mostrar los detalles del producto
-    const productHTML = `
-      <!-- Aquí va el contenido HTML para mostrar los detalles del producto -->
-    `;
-
-    // Agregar el contenido HTML al contenedor de detalles
-    productDetails.innerHTML = productHTML;
-
-    // Mostrar el contenedor de detalles con la animación de entrada
-    productDetails.classList.remove('slide-out');
-
-    // Ocultar la cuadrícula de productos
-    const productGrid = document.getElementById('product-grid');
-    productGrid.style.display = 'none';
-
-    // Agregar evento de clic al botón "Regresar"
-    const regresarBtn = document.getElementById('regresar-btn');
-    regresarBtn.addEventListener('click', () => {
-      productDetails.classList.add('slide-out');
-
-      // Después de que la animación de salida finalice, oculta el contenedor de detalles y muestra la cuadrícula de productos
-      setTimeout(() => {
-        productDetails.style.display = 'none';
-        productDetails.classList.remove('slide-out');
-        productGrid.style.display = 'grid';
-      }, 500);
-    });
-  };
-
-  // Cargar las imágenes antes de mostrar los detalles
-  loadImages();
-}
     </script>
   
 </body>
