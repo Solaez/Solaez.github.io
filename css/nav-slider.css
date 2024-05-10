@@ -319,6 +319,7 @@
     top: 150px;
     display: flex;
     justify-content: center; /* Centra horizontalmente los elementos */
+    margin-bottom: 50px;
   }
   .fortalezas img{
     
@@ -398,7 +399,7 @@
     height:auto;
   }
   .fortalezas{
-    top: 100px;
+    top: 120px;
   }
   .fortalezas img{
     width: 30vw;

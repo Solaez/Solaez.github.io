@@ -21,52 +21,101 @@
 </head>
 <body>
   
-    <!--Header Barra de navegación-->
-    <header class="header1">
-      <div class="header-container">
-          <a href="/index.html" class="logo">
-              <img src="/img/iconos/LOGO hd.png" alt="Logo">
-          </a>
-          <nav>
-              <ul class="nav-links">
-                  <li><a href="/index.html">Inicio</a></li>
-                  <li class="dropdown">
-                    <a href="/sitios/prod.html">Productos▾</a>
-                    <div class="dropdown-content">
+<!--Header Barra de navegación-->
+<header class="header1">
+    <div class="header-container">
+        <a href="/index.html" class="logo">
+            <img src="/img/iconos/LOGO hd.png" alt="Logo">
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                  <a href="/sitios/prod.html">Productos▾</a>
+                  <div class="dropdown-content">
 
-                        <div class="dropdown-acesorios">
-                            <a href="#">Acesorios▾</a>
-                            <div class="dropdown-acesorios-content">
-                                <a href="/sitios/prod.html#bordados" id="redirigir-btn">Bordados</a>
-                                <a href="/sitios/prod.html#cascos" id="redirigir-btn">Cascos</a>
-                            </div>
+                    <a href="/sitios/prod.html#acesorio">Acesorios</a>
+                      <!-- Agregar el nuevo dropdown de camisas -->
+                      <div class="dropdown-camisas">
+                          <a href="/sitios/prod.html#camisas">Ropa▾</a>
+                          <div class="dropdown-camisas-content">
+                              <a href="/sitios/prod.html#camibuso">Camibusos</a>
+                              <a href="/sitios/prod.html#camisas" id="redirigir-btn">Camisas</a>
+                              <a href="/sitios/prod.html#pamtalone">pantalones</a>
+                          </div>
                       </div>
-                        <!-- Agregar el nuevo dropdown de camisas -->
-                        <div class="dropdown-camisas">
-                            <a href="#">Ropa▾</a>
-                            <div class="dropdown-camisas-content">
-                                <a href="#">Camibusos</a>
-                                <a href="/sitios/prod.html#camisas" id="redirigir-btn">Camisas</a>
-                                <a href="#">pantalones</a>
-                            </div>
+                      <a href="/sitios/prod.html">Tenis</a>
+                      <!-- Agregar el nuevo dropdown de estampados -->
+                      <div class="dropdown-camisas">
+                        <a href="/sitios/prod.html#estampado">Estampados▾</a>
+                        <div class="dropdown-estampados-content">
+                            <a href="/sitios/prod.html#personalizado">Personalizados</a>
+                            <a href="/sitios/prod.html#estampado">Estampados</a>
                         </div>
-                        <!-- Fin del dropdown de camisas -->
-                        
-                        <a href="/sitios/prod.html">Otros</a>
                     </div>
-                  </li>
-                  <li><a href="/sitios/ubic.html">Ubicación</a></li>
-                  <li><a href="/sitios/cont.html">Contacto </a></li>
-                  <li><a href="/sitios/acer.html">Acerca de</a></li>
-              </ul>
-              <div class="toggle-button">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-              </div>
-          </nav>
-      </div>
-  </header>  
+                    <!-- Agregar el nuevo dropdown de gorras -->
+                    <div class="dropdown-camisas">
+                      <a href="/sitios/prod.html#gorra">Gorras▾</a>
+                      <div class="dropdown-gorras-content">
+                          <a href="/sitios/prod.html#boina">Boinas</a>
+                          <a href="/sitios/prod.html#gorra">Gorras</a>
+                          <a href="/sitios/prod.html#pava">Pavas</a>
+                      </div>
+                    </div>
+                    <!-- Agregar el nuevo dropdown de banderas -->
+                    <div class="dropdown-camisas">
+                      <a href="/sitios/prod.html#exteriore">Banderas▾</a>
+                      <div class="dropdown-banderas-content">
+                          <a href="/sitios/prod.html#exteriore">Banderas exteriores</a>
+                          <a href="/sitios/prod.html#interiore">Banderas interiores</a>
+                          <a href="/sitios/prod.html#banderine">Banderines</a>
+                      </div>
+                    </div>
+                    <!-- Agregar el nuevo dropdown de Seguridad▾ -->
+                    <div class="dropdown-camisas">
+                      <a href="/sitios/prod.html#ejercito">Seguridad▾</a>
+                      <div class="dropdown-seguridad-content">
+                          <a href="/sitios/prod.html#ejercito">Ejercito y Policía</a>
+                          <a href="/sitios/prod.html#rescate">Personal de Rescate</a>
+                          <a href="/sitios/prod.html#privada">Seguridad Privada</a>
+                          <a href="/sitios/prod.html#vial">Seguridad Vial</a>
+                      </div>
+                    </div>
+                      <a href="/sitios/prod.html#insignia">Insigias y Parches</a>
+                      <a href="/sitios/prod.html#oferta">Ofertas</a>
+                  </div>
+                </li>
+                <li><a href="/sitios/ubic.html">Ubicación</a></li>
+                <li><a href="/sitios/cont.html">Contacto </a></li>
+                <li><a href="/sitios/acer.html">Acerca de</a></li>
+            </ul>
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </div>
+</header>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--red social-->
 <article>
@@ -129,28 +178,69 @@
 
 <!--Contenido de la pagina-->
 <div class="container-productos">
+  
   <div class="sidebar-productos">
-      <div class="categories-menu">
-          <h3>Categorías</h3>
-          <ul>
-              <li><a href="todo" data-category="all">Todos los productos</a></li>
-              <li><a href="camisa" data-category="camisas">Camisas</a></li>
-              <li><a href="busos" data-category="busos">Busos</a></li>
-              <li><a href="zapatos" data-category="zapatos">Zapatos</a></li>
-              <li><a href="pantalones" data-category="pantalones">Pantalones</a></li>
-              <li><a href="bordados" data-category="bordados">bordados</a></li>
-              <li><a href="casco" data-category="casco">Casco</a></li>
-              <li><a href="busos" data-category="busos">Busos</a></li>
-              <li><a href="camibuso" data-category="camibuso">Camibuso</a></li>
-              <li><a href="sudareda" data-category="sudareda">Sudareda</a></li>
-          </ul>
-          <h3>Estado</h3>
-          <ul>
-            <li><a href="#" data-category="oferta">Oferta</a></li>
-            <li><a href="#" data-category="nuevo">Nuevo</a></li>
-          </ul>
-      </div>
-  </div>
+    <div class="categories-menu">
+        <h3>Categorías</h3>
+        <ul>
+            <li><a href="#" class="active" data-category="all">Todos los productos</a></li>
+            <li><a href="#"  data-category="acesorio">Acesorios</a></li>
+            <li>
+                <a href="#" data-category="all">Ropa ▾</a>
+                <ul class="submenu">
+                    <li><a href="Camisa" data-category="camisas">• Camisas</a></li>
+                    <li><a href="Camibuso" data-category="camibuso">• Camibusos</a></li>
+                    <li><a href="Busos" data-category="busos">• Busos</a></li>
+                    <li><a href="Pantalones" data-category="pantalone">• Pantalones</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" data-category="all">Banderas ▾</a>
+                <ul class="submenu">
+                    <li><a href="#" data-category="exteriore">• Banderas Exteriores</a></li>
+                    <li><a href="#" data-category="interiore">• Banderas Interiores</a></li>
+                    <li><a href="#" data-category="banderine">• Banderines</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" data-category="all">Estampados ▾</a>
+                <ul class="submenu">
+                    <li><a href="#" data-category="estampados">• Estampados</a></li>
+                    <li><a href="#" data-category="bordados">• Bordados</a></li>
+                    <li><a href="#" data-category="dtf">• DTF</a></li>
+                    <li><a href="#" data-category="personalizado">• Personalizados</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" data-category="all">Gorras ▾</a>
+                <ul class="submenu">
+                    <li><a href="#" data-category="gorra">• Gorras</a></li>
+                    <li><a href="#" data-category="casco">• Casco</a></li>
+                    <li><a href="#" data-category="boina">• Boinas</a></li>
+                    <li><a href="#" data-category="pava"="">• Pavas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" data-category="all">Estados ▾</a>
+                <ul class="submenu">
+                    <li><a href="#" data-category="Promocion">• Promoción</a></li>
+                    <li><a href="#" data-category="nuevo">• Nuevo</a></li>
+                    <li><a href="#" data-category="destacados">• Mas Destacados</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" data-category="all">Seguridad ▾</a>
+                <ul class="submenu">
+                    <li><a href="#" data-category="Promocion">• Ejercito y policia</a></li>
+                    <li><a href="#" data-category="nuevo">• Personal de rescate</a></li>
+                    <li><a href="#" data-category="destacados">• Seguridad privada</a></li>
+                    <li><a href="#" data-category="destacados">• Seguridad vial</a></li>
+                </ul>
+            </li>
+            <li><a href="#"  data-category="insignia">Insignias y Parches</a></li>
+        </ul>
+    </div>
+</div>
   <div class="content-productos">
       <nav class="buscadorproductos">
           <nav>
@@ -175,10 +265,8 @@
             </div>
             <div id="product-grid">
 
-
-
                 <!-- Productos -->
-                <div id="CB001" class="product" data-category="camisas">
+                <div id="CB001" class="product" data-category="camibuso">
                   <div class="product-loader">
                     <div class="spinner"></div>
                   </div>
@@ -197,8 +285,7 @@
                   </div>
                 </div>
 
-
-                <div id="CB002" class="product" data-category="camisas">
+                <div id="CB002" class="product" data-category="camibuso">
                   <div class="product-loader">
                     <div class="spinner"></div>
                   </div>
@@ -217,8 +304,7 @@
                   </div>
                 </div>
                   
-                  
-                <div id="CB003" class="product" data-category="camisas">
+                <div id="CB003" class="product" data-category="camibuso">
                   <div class="product-loader">
                     <div class="spinner"></div>
                   </div>
@@ -236,7 +322,6 @@
                       <p class="lugar">el lugar esta en cierto lugar 3</p>
                   </div>
                 </div>
-                  
                   
                 <div id="B001" class="product" data-category="busos">
                   <div class="product-loader">
@@ -314,8 +399,6 @@
                   </div>
                 </div>
                   
-                
-                
                 <div id="BD003" class="product" data-category="bordados">
                   <div class="product-loader">
                     <div class="spinner"></div>
@@ -335,14 +418,126 @@
                   </div>
                 </div>
                   
+                <div id="G001" class="product" data-category="gorra">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="/img/productos/gorras/1/1.webp" alt="gorra" >
+                  <h3 class="titleproductos">Gorra</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/gorras/1/1.webp" alt="cami1">
+                      <img class="imag2" src="/img/productos/gorras/1/2.webp" alt="cami2">
+                      <img class="imag3" src="/img/productos/gorras/1/3.webp" alt="cami3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">la descripcion va aqui1</p>
+                      <p class="tipo">el tipo va aqui 2</p>
+                      <p class="lugar">el lugar esta en cierto lugar 3</p>
+                  </div>
+                </div>
+                
+                <div id="CS001" class="product" data-category="camisas">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="/img/productos/camisas/1/1.webp" alt="camisas" >
+                  <h3 class="titleproductos">Bordado triangulo</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/camisas/1/1.webp" alt="cami1">
+                      <img class="imag2" src="/img/productos/camisas/1/2.webp" alt="cami2">
+                      <img class="imag3" src="/img/productos/camisas/1/3.webp" alt="cami3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">la descripcion va aqui1</p>
+                      <p class="tipo">el tipo va aqui 2</p>
+                      <p class="lugar">el lugar esta en cierto lugar 3</p>
+                  </div>
+                </div>
 
+                <div id="BN001" class="product" data-category="boina">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="/img/productos/gorras/boinas/1/1.webp" alt="boina" >
+                  <h3 class="titleproductos">Bordado triangulo</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/gorras/boinas/1/1.webp" alt="cami1">
+                      <img class="imag2" src="/img/productos/gorras/boinas/1/2.webp" alt="cami2">
+                      <img class="imag3" src="/img/productos/gorras/boinas/1/3.webp" alt="cami3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">la descripcion va aqui1</p>
+                      <p class="tipo">el tipo va aqui 2</p>
+                      <p class="lugar">el lugar esta en cierto lugar 3</p>
+                  </div>
+                </div>
 
+                <div id="P001" class="product" data-category="pantalone">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="/img/productos/pantalones/blanco/1.webp" alt="pantalone" >
+                  <h3 class="titleproductos">Bordado triangulo</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/pantalones/blanco/1.webp" alt="cami1">
+                      <img class="imag2" src="/img/productos/pantalones/blanco/2.webp" alt="cami2">
+                      <img class="imag3" src="/img/productos/pantalones/blanco/3.webp" alt="cami3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">la descripcion va aqui1</p>
+                      <p class="tipo">el tipo va aqui 2</p>
+                      <p class="lugar">el lugar esta en cierto lugar 3</p>
+                  </div>
+                </div>
+                
+                <div id="I001" class="product" data-category="insignia">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="/img/productos/insignias/1/1.webp" alt="Insigia" >
+                  <h3 class="titleproductos">Bordado triangulo</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/insignias/1/1.webp" alt="cami1">
+                      <img class="imag2" src="/img/productos/insignias/1/2.webp" alt="cami2">
+                      <img class="imag3" src="/img/productos/insignias/1/3.webp" alt="cami3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">la descripcion va aqui1</p>
+                      <p class="tipo">el tipo va aqui 2</p>
+                      <p class="lugar">el lugar esta en cierto lugar 3</p>
+                  </div>
+                </div>
+                
+                <div id="IP001" class="product" data-category="insignia">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="/img/productos/insignias/parches/1/1.webp" alt="Insigia" >
+                  <h3 class="titleproductos">Bordado triangulo</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/insignias/1/1.webp" alt="cami1">
+                      <img class="imag2" src="/img/productos/insignias/1/2.webp" alt="cami2">
+                      <img class="imag3" src="/img/productos/insignias/1/3.webp" alt="cami3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">la descripcion va aqui1</p>
+                      <p class="tipo">el tipo va aqui 2</p>
+                      <p class="lugar">el lugar esta en cierto lugar 3</p>
+                  </div>
+                </div>
+                
+                
               </div>
               <div id="pagination"></div>
           </main>
   </div>
 </div> 
-
 
 <!--pedir producto-->
 <div id="popup" class="popup">
@@ -771,11 +966,41 @@
 </script>
 <!--barra de navegacion-->
 <script>
-  //camisabusos
+  //camisas
   window.addEventListener('DOMContentLoaded', () => {
   const urlFragment = window.location.hash.slice(1);
   if (urlFragment === 'camisas') {
     const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="camisas"]');
+    if (categoriesMenuLink) {
+      categoriesMenuLink.click();
+    }
+  }
+});
+  //pantalones
+  window.addEventListener('DOMContentLoaded', () => {
+  const urlFragment = window.location.hash.slice(1);
+  if (urlFragment === 'pantalone') {
+    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="pantalone"]');
+    if (categoriesMenuLink) {
+      categoriesMenuLink.click();
+    }
+  }
+});
+  //estanpado
+  window.addEventListener('DOMContentLoaded', () => {
+  const urlFragment = window.location.hash.slice(1);
+  if (urlFragment === 'estampados') {
+    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="estampados"]');
+    if (categoriesMenuLink) {
+      categoriesMenuLink.click();
+    }
+  }
+});
+  //camisabusos
+  window.addEventListener('DOMContentLoaded', () => {
+  const urlFragment = window.location.hash.slice(1);
+  if (urlFragment === 'camibuso') {
+    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="camibuso"]');
     if (categoriesMenuLink) {
       categoriesMenuLink.click();
     }
@@ -797,6 +1022,16 @@
   const urlFragment = window.location.hash.slice(1);
   if (urlFragment === 'bordados') {
     const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="bordados"]');
+    if (categoriesMenuLink) {
+      categoriesMenuLink.click();
+    }
+  }
+});
+//insignia
+  window.addEventListener('DOMContentLoaded', () => {
+  const urlFragment = window.location.hash.slice(1);
+  if (urlFragment === 'insignia') {
+    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="insignia"]');
     if (categoriesMenuLink) {
       categoriesMenuLink.click();
     }

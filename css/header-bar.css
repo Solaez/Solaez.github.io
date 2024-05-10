@@ -161,7 +161,7 @@ nav ul li a::before {
 }
 
 nav ul li a:hover::before {
-    background-color: #007bff;
+    background-color: #0071e2;
     /* Color al hacer hover */
     transform: scaleX(1);
     /* Mostrar línea */
@@ -169,6 +169,7 @@ nav ul li a:hover::before {
 
 nav ul li a:hover {
     color: #007bff;
+    background-color: #d1cfcf5d;
     /* Cambia el color que desees al hacer hover */
 }
 
@@ -235,39 +236,95 @@ header.abajo .dropdown-content {
     top: 50px;
     animation: fadeIn 0.3s ease forwards;
 }
+/* Nuevo estilo para el dropdown de camisas */
+.dropdown-estampados-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    /* Color de fondo por defecto */
+    min-width: 160px;
+    box-shadow: -10px 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2; /* Ajustar z-index para que esté por encima del dropdown de productos */
+    transition: background-color 0.6s;
+    /* Agregamos una transición para suavizar el cambio */
+    left: 100%; /* Alinear a la derecha del dropdown de productos */
+    top: 130px;
+    animation: fadeIn 0.3s ease forwards;
+}
+/* Nuevo estilo para el dropdown de camisas */
+.dropdown-gorras-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    /* Color de fondo por defecto */
+    min-width: 160px;
+    box-shadow: -10px 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2; /* Ajustar z-index para que esté por encima del dropdown de productos */
+    transition: background-color 0.6s;
+    /* Agregamos una transición para suavizar el cambio */
+    left: 100%; /* Alinear a la derecha del dropdown de productos */
+    top: 180px;
+    animation: fadeIn 0.3s ease forwards;
+}
+/* Nuevo estilo para el dropdown de seguridad */
+.dropdown-seguridad-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    /* Color de fondo por defecto */
+    min-width: 160px;
+    box-shadow: -10px 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2; /* Ajustar z-index para que esté por encima del dropdown de productos */
+    transition: background-color 0.6s;
+    /* Agregamos una transición para suavizar el cambio */
+    left: 100%; /* Alinear a la derecha del dropdown de productos */
+    top: 260px;
+    animation: fadeIn 0.3s ease forwards;
+    width: 260px;
+}
+/* Nuevo estilo para el dropdown de bandera */
+.dropdown-banderas-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    /* Color de fondo por defecto */
+    min-width: 160px;
+    box-shadow: -10px 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2; /* Ajustar z-index para que esté por encima del dropdown de productos */
+    transition: background-color 0.6s;
+    /* Agregamos una transición para suavizar el cambio */
+    left: 100%; /* Alinear a la derecha del dropdown de productos */
+    top: 220px;
+    animation: fadeIn 0.3s ease forwards;
+    width: 260px;
+}
 
 
 /* Cambiar el fondo cuando el encabezado está abajo */
-header.abajo .dropdown-acesorios-content {
+header.abajo .dropdown-acesorios-content,header.abajo .dropdown-camisas-content,
+header.abajo .dropdown-estampados-content,header.abajo .dropdown-seguridad-content,
+header.abajo .dropdown-banderas-content,header.abajo .dropdown-gorras-content  {
     background-color: #4b4b4b;
     /* Cambia el color de fondo cuando el encabezado está abajo */
 }
 
-/* Cambiar el fondo cuando el encabezado está abajo */
-header.abajo .dropdown-camisas-content {
-    background-color: #4b4b4b;
-    /* Cambia el color de fondo cuando el encabezado está abajo */
-}
-
-.dropdown-acesorios-content a {
+.dropdown-acesorios-content a,.dropdown-camisas-content a,
+.dropdown-estampados-content a,.dropdown-estampados-content a,
+.dropdown-banderas-content a,.dropdown-gorras-content a{
     color: black;
     padding: 5px 16px;
     text-decoration: none;
     display: block;
 }
-.dropdown-camisas-content a {
-    color: black;
-    padding: 5px 16px;
-    text-decoration: none;
-    display: block;
-}
 
-.dropdown-acesorios:hover .dropdown-acesorios-content {
+.dropdown-acesorios:hover .dropdown-acesorios-content,
+.dropdown-camisas:hover .dropdown-camisas-content,
+.dropdown-camisas:hover .dropdown-estampados-content,
+.dropdown-camisas:hover .dropdown-seguridad-content, 
+.dropdown-camisas:hover .dropdown-banderas-content, 
+.dropdown-camisas:hover .dropdown-gorras-content {
     display: block;
-}
-.dropdown-camisas:hover .dropdown-camisas-content {
-    display: block;
-}
+}   
 
 
 
