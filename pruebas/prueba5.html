@@ -8,37 +8,31 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
+        /* Animación para el menú desplegable */
+        @keyframes slideDown {
+            0% {
+                max-height: 0;
+                opacity: 0;
+            }
+            100% {
+                max-height: 200px; /* Ajusta este valor según la altura deseada */
+                opacity: 1;
+            }
+        }
+    
+        .submenu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            opacity: 0;
+        }
+    
+        .submenu.open {
+            animation: slideDown 0.3s ease-out forwards;
+        }
+    </style>
+    <style>
 
-.product-loader {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    opacity: 1;
-    transition: opacity 0.5s ease-out;
-    border-radius: 20px;
-}
-
-.product .spinner {
-    border: 4px solid #f3f3f3;
-    border-top: 4px solid #4400ff;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    animation: spin 2s linear infinite;
-    box-shadow: 0 0 10px rgba(162, 0, 255, 0.1);
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
 /* Animación de entrada para los productos */
 @keyframes fadeIn {
     from {
@@ -557,8 +551,8 @@
             box-shadow: -5px 5px 15px rgb(121, 121, 121);
             
         }
-    </style> 
-    <style>
+    </style>
+     <style>
         /* Animación de entrada para los productos */
         @keyframes fadeIn {
             from {
@@ -693,7 +687,15 @@
                 <h3>Categorías</h3>
                 <ul>
                     <li><a href="#" class="active" data-category="all">Todos los productos</a></li>
-                    <li><a href="#" data-category="camisas">Camisas</a></li>
+                    <li>
+                        <a href="#" data-category="camisas">Camisas</a>
+                        <ul class="submenu">
+                            <li><a href="#">Camisas de manga corta</a></li>
+                            <li><a href="#">Camisas de manga larga</a></li>
+                            <li><a href="#">Camisas casuales</a></li>
+                            <li><a href="#">Camisas formales</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#" data-category="busos">Busos</a></li>
                     <li><a href="#" data-category="zapatos">Zapatos</a></li>
                     <li><a href="#" data-category="pantalones">Pantalones</a></li>
@@ -730,12 +732,9 @@
                 <div id="product-grid">
 
                     <!-- Productos -->
-                    <div  class="product" data-category="camisas">
-                        <div class="product-loader">
-                            <div class="spinner"></div>
-                        </div>
+                    <div class="product" data-category="camisas">
                         <span class="product-label">Nuevo</span>
-                        <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Camia militar" >
+                        <img src="/img/productos/camisa/camisa 1.png" alt="Camia militar" >
                         <h3 class="titleproductos">Camia militar</h3>
                         <button>Seleccionar</button>
                         <div id="product-details"  style="display: none;">
@@ -754,11 +753,8 @@
 
 
                     <div class="product" data-category="camisas">
-                        <div class="product-loader">
-                            <div class="spinner"></div>
-                        </div>
 
-                        <img src="/img/fondo/fondo claro.png roja/camisa 1.png" alt="Camia militar" >
+                        <img src="/img/productos/camisa/camisa2.png" alt="White Sneaker">
                         <h3>Camia militar 2</h3>
                         <button>Seleccionar</button>
                         <div id="product-details" style="display: none;">
@@ -772,92 +768,92 @@
 
 
                     <div class="product" data-category="camisas">
-                        <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Camia militar" >
+                        <img src="/img/productos/camisa/camisa2.png" alt="White Sneaker">
                         <h3>Camia militar 2</h3>
                         <button>Seleccionar</button>
                     </div>
 
 
                     <div class="product" data-category="camisas">
-                        <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Camia militar" >
+                        <img src="/img/productos/camisa/camisa2.png" alt="White Sneaker">
                         <h3>Camia militar 2</h3>
                         <button>Seleccionar</button>
                     </div>
 
                     <div class="product" data-category="camisas">
-                        <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Camia militar" >
+                        <img src="/img/productos/camisa/camisa3.png" alt="White Sneaker">
                         <h3>Camia militar 3</h3>
                         <button>Seleccionar</button>
                     </div>
 
                     <div class="product" data-category="casco">
-                        <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Camia militar" >
+                        <img src="/img/productos/cascos/casco1.png" alt="White Sneaker">
                         <h3>Casco militar</h3>
                         <button>Seleccionar</button>
                     </div>
 
                     <div class="product" data-category="bordados">
-                        <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Camia militar" >
+                        <img src="/img/productos/bordados/bordado 2.png" alt="White Sneaker">
                         <h3>Bordados</h3>
                         <button>Seleccionar</button>
                     </div>
 
                     <div class="product" data-category="camisas">
-                        <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Camia militar" >
+                        <img src="/img/productos/camisa/camisa 1.png" alt="White Sneaker">
                         <h3>Camia militar</h3>
                         <button>Seleccionar</button>
                     </div>
 
                     <div class="product" data-category="camisas">
-                        <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Camia militar" >
+                        <img src="/img/productos/camisa/camisa2.png" alt="White Sneaker">
                         <h3>Camia militar</h3>
                         <button>Seleccionar</button>
                     </div>
 
                     <div class="product" data-category="camisas">
-                        <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Camia militar" >
+                        <img src="/img/productos/camisa/camisa3.png" alt="White Sneaker">
                         <h3>Camia militar</h3>
                         <button>Seleccionar</button>
                     </div>
 
                     <div class="product" data-category="casco">
-                        <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Camia militar" >
+                        <img src="/img/productos/cascos/casco1.png" alt="White Sneaker">
                         <h3>Casco militar</h3>
                         <button>Seleccionar</button>
                     </div>
 
                     <div class="product" data-category="bordados">
-                        <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Camia militar" >
+                        <img src="/img/productos/bordados/bordado 2.png" alt="White Sneaker">
                         <h3>Bordados</h3>
                         <button>Seleccionar</button>
                     </div>
 
                     <div class="product" data-category="camisas">
-                        <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Camia militar" >
+                        <img src="/img/productos/camisa/camisa 1.png" alt="White Sneaker">
                         <h3>Camia militar</h3>
                         <button>Seleccionar</button>
                     </div>
 
                     <div class="product" data-category="camisas">
-                        <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Camia militar" >
+                        <img src="/img/productos/camisa/camisa2.png" alt="White Sneaker">
                         <h3>Camia militar</h3>
                         <button>Seleccionar</button>
                     </div>
 
                     <div class="product" data-category="camisas">
-                        <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Camia militar" >
+                        <img src="/img/productos/camisa/camisa3.png" alt="White Sneaker">
                         <h3>Camia militar</h3>
                         <button>Seleccionar</button>
                     </div>
 
                     <div class="product" data-category="casco">
-                        <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Camia militar" >
+                        <img src="/img/productos/cascos/casco1.png" alt="White Sneaker">
                         <h3>Casco militar</h3>
                         <button>Seleccionar</button>
                     </div>
 
                     <div class="product" data-category="bordados">
-                        <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Camia militar" >
+                        <img src="/img/productos/bordados/bordado 2.png" alt="White Sneaker">
                         <h3>Bordados</h3>
                         <button>Seleccionar</button>
                     </div>
@@ -876,18 +872,17 @@
         <button id="cerrar-popup">Cerrar</button>
     </div>
     <script>
-        const productImages = document.querySelectorAll('.product img');
+        // Función para abrir y cerrar el menú desplegable
+const submenuLinks = document.querySelectorAll('.categories-menu ul li > a');
 
-productImages.forEach(image => {
-    const productLoader = image.parentNode.querySelector('.product-loader');
+submenuLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault(); // Evita que el enlace se siga
 
-    image.addEventListener('load', () => {
-        setTimeout(() => {
-            productLoader.style.opacity = '0';
-            setTimeout(() => {
-                productLoader.parentNode.removeChild(productLoader);
-            }, 500);
-        }, 600);
+        const submenu = link.nextElementSibling;
+        if (submenu && submenu.classList.contains('submenu')) {
+            submenu.classList.toggle('open');
+        }
     });
 });
     </script>

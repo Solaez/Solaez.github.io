@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+
     // Función para mostrar productos filtrados por categoría
     function showFilteredProducts(category) {
         let filteredProducts = [];
@@ -64,7 +65,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 product.style.display = 'none';
             }
         });
-
         const pagination = document.getElementById('pagination');
         pagination.innerHTML = '';
         renderPagination(filteredProducts);
@@ -155,4 +155,18 @@ document.getElementById("pagination").addEventListener("click", function() {
     requestAnimationFrame(animation);
   }
   
+  //categorias -------------------------------------------------------------------------------------
   
+        // Función para abrir y cerrar el menú desplegable
+const submenuLinks = document.querySelectorAll('.categories-menu ul li > a');
+
+submenuLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault(); // Evita que el enlace se siga
+
+        const submenu = link.nextElementSibling;
+        if (submenu && submenu.classList.contains('submenu')) {
+            submenu.classList.toggle('open');
+        }
+    });
+});

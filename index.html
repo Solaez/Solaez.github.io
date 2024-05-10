@@ -19,51 +19,82 @@
 <body>
    
     <!--Header Barra de navegación-->
-    <header class="header1">
-      <div class="header-container">
-          <a href="/index.html" class="logo">
-              <img src="/img/iconos/LOGO hd.png" alt="Logo">
-          </a>
-          <nav>
-              <ul class="nav-links">
-                  <li><a href="/index.html">Inicio</a></li>
-                  <li class="dropdown">
-                    <a href="/sitios/prod.html">Productos▾</a>
-                    <div class="dropdown-content">
+<header class="header1">
+  <div class="header-container">
+      <a href="/index.html" class="logo">
+          <img src="/img/iconos/LOGO hd.png" alt="Logo">
+      </a>
+      <nav>
+          <ul class="nav-links">
+              <li><a href="/index.html">Inicio</a></li>
+              <li class="dropdown">
+                <a href="/sitios/prod.html">Productos▾</a>
+                <div class="dropdown-content">
 
-                        <div class="dropdown-acesorios">
-                            <a href="/sitios/prod.html">Acesorios▾</a>
-                            <div class="dropdown-acesorios-content">
-                                <a href="/sitios/prod.html#bordados" id="redirigir-btn">Bordados</a>
-                                <a href="/sitios/prod.html#cascos" id="redirigir-btn">Cascos</a>
-                            </div>
-                      </div>
-                        <!-- Agregar el nuevo dropdown de camisas -->
-                        <div class="dropdown-camisas">
-                            <a href="/sitios/prod.html">Ropa▾</a>
-                            <div class="dropdown-camisas-content">
-                                <a href="#">Camibusos</a>
-                                <a href="/sitios/prod.html#camisas" id="redirigir-btn">Camisas</a>
-                                <a href="#">pantalones</a>
-                            </div>
+                  <a href="/sitios/prod.html#acesorio">Acesorios</a>
+                    <!-- Agregar el nuevo dropdown de camisas -->
+                    <div class="dropdown-camisas">
+                        <a href="/sitios/prod.html#camisas">Ropa▾</a>
+                        <div class="dropdown-camisas-content">
+                            <a href="/sitios/prod.html#camibuso" >Camibusos</a>
+                            <a href="/sitios/prod.html#camisas" >Camisas</a>
+                            <a href="/sitios/prod.html#pantalone">pantalones</a>
                         </div>
-                        <!-- Fin del dropdown de camisas -->
-                        
-                        <a href="/sitios/prod.html">Otros</a>
                     </div>
-                  </li>
-                  <li><a href="/sitios/ubic.html">Ubicación</a></li>
-                  <li><a href="/sitios/cont.html">Contacto </a></li>
-                  <li><a href="/sitios/acer.html">Acerca de</a></li>
-              </ul>
-              <div class="toggle-button">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-              </div>
-          </nav>
-      </div>
-  </header>  
+                    <a href="/sitios/prod.html">Tenis</a>
+                    <!-- Agregar el nuevo dropdown de estampados -->
+                    <div class="dropdown-camisas">
+                      <a href="/sitios/prod.html#estampados">Estampados▾</a>
+                      <div class="dropdown-estampados-content">
+                          <a href="/sitios/prod.html#personalizado">Personalizados</a>
+                          <a href="/sitios/prod.html#estampados">Estampados</a>
+                      </div>
+                  </div>
+                  <!-- Agregar el nuevo dropdown de gorras -->
+                  <div class="dropdown-camisas">
+                    <a href="/sitios/prod.html#gorra">Gorras▾</a>
+                    <div class="dropdown-gorras-content">
+                        <a href="/sitios/prod.html#boina">Boinas</a>
+                        <a href="/sitios/prod.html#gorra">Gorras</a>
+                        <a href="/sitios/prod.html#pava">Pavas</a>
+                        <a href="/sitios/prod.html#casco">casco</a>
+                    </div>
+                  </div>
+                  <!-- Agregar el nuevo dropdown de banderas -->
+                  <div class="dropdown-camisas">
+                    <a href="/sitios/prod.html#exteriore">Banderas▾</a>
+                    <div class="dropdown-banderas-content">
+                        <a href="/sitios/prod.html#exteriore">Banderas exteriores</a>
+                        <a href="/sitios/prod.html#interiore">Banderas interiores</a>
+                        <a href="/sitios/prod.html#banderine">Banderines</a>
+                    </div>
+                  </div>
+                  <!-- Agregar el nuevo dropdown de Seguridad▾ -->
+                  <div class="dropdown-camisas">
+                    <a href="/sitios/prod.html#ejercito">Seguridad▾</a>
+                    <div class="dropdown-seguridad-content">
+                        <a href="/sitios/prod.html#ejercito">Ejercito y Policía</a>
+                        <a href="/sitios/prod.html#rescate">Personal de Rescate</a>
+                        <a href="/sitios/prod.html#privada">Seguridad Privada</a>
+                        <a href="/sitios/prod.html#vial">Seguridad Vial</a>
+                    </div>
+                  </div>
+                    <a href="/sitios/prod.html#insignia">Insigias y Parches</a>
+                    <a href="/sitios/prod.html#oferta">Ofertas</a>
+                </div>
+              </li>
+              <li><a href="/sitios/ubic.html">Ubicación</a></li>
+              <li><a href="/sitios/cont.html">Contacto </a></li>
+              <li><a href="/sitios/acer.html">Acerca de</a></li>
+          </ul>
+          <div class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
+  </div>
+</header>  
 
     <!--Imagenes de paso sliter-->
     <nav>
@@ -175,12 +206,110 @@
     <article>
         
       <div class="carousel-container">
-        
       <h2 class="title-produc">Productos más destacados</h2>
-
         <div class="carousel">
           <div class="carousel-item">
-            <span class="new-sticker">Nuevo</span>
+            <img src="/img/productos/camisa/negro/camisa3.png" alt="Product 1" onload="hideLoader(this)">
+            <h3>Producto 1</h3>
+            <p class="description">Descripción del Producto 1</p>
+            <a href="/sitios/prod.html#PRODUCTO1" id="redirigir-btn">
+              <button class="boton-ver-inicio">Comprar</button>
+            </a>
+          </div>
+          
+          <div class="carousel-item">
+            <img src="/img/productos/camisa/camisa roja/camisa 1.png" alt="Product 2">
+            <h3>Producto 2</h3>
+            <p class="description">Descripción del Producto 2</p>
+            <a href="/sitios/prod.html#PRODUCTO3" id="redirigir-btn">
+              <button class="boton-ver-inicio">Comprar</button>
+            </a>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/img/productos/cascos/casco1/casco1.png" alt="Product 3">
+            <h3>Producto 3</h3>
+            <p class="description">Descripción del Producto 3</p>
+            <a href="/sitios/prod.html#PRODUCTO5" id="redirigir-btn">
+              <button class="boton-ver-inicio">Comprar</button>
+            </a>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/img/productos/camisa/amarilla/camisa2.png" alt="Product 4">
+            <h3>Producto 4</h3>
+            <p class="description">Descripción del Producto 4</p>
+            <a href="/sitios/prod.html#PRODUCTO2" id="redirigir-btn">
+              <button class="boton-ver-inicio">Comprar</button>
+            </a>
+
+          </div>
+          <div class="carousel-item">
+            <span class="ofer-sticker">Oferta</span>
+            <img src="/img/productos/bordados/bordado circulo/bordado1.png" alt="Product 4">
+            <h3>Producto 4</h3>
+            <p class="description">Descripción del Producto 4</p>
+            <a href="/sitios/prod.html#PRODUCTO6" id="redirigir-btn">
+              <button class="boton-ver-inicio">Comprar</button>
+            </a>
+          </div>
+
+          <div class="carousel-item">
+            <span class="ofer-sticker">Oferta</span>
+            <img src="/img/productos/bordados/bordado figura/bordado1.png" alt="Product 4">
+            <h3>Producto 4</h3>
+            <p class="description">Descripción del Producto 4</p>
+            <a href="/sitios/prod.html#PRODUCTO7" id="redirigir-btn">
+              <button class="boton-ver-inicio">Comprar</button>
+            </a>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/img/productos/bordados/bordado triangulo/bordado1.png" alt="Product 4">
+            <h3>Producto 4</h3>
+            <p class="description">Descripción del Producto 4</p>
+            <a href="/sitios/prod.html#PRODUCTO8" id="redirigir-btn">
+              <button class="boton-ver-inicio">Comprar</button>
+            </a>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/img/productos/busos/buso.png" alt="Product 4">
+            <h3>Producto 4</h3>
+            <p class="description">Descripción del Producto 4</p>
+            <a href="/sitios/prod.html#PRODUCTO4" id="redirigir-btn">
+              <button class="boton-ver-inicio">Comprar</button>
+            </a>
+          </div>
+          <!-- Agrega más elementos según sea necesario -->
+        </div>
+        <button class="prev" onclick="prevSlide(); resetTimer()">❮</button>
+        <button class="next" onclick="nextSlide(); resetTimer()">❯</button>
+        
+      <a href="/sitios/prod.html"><button class="ver-mas-venta">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEw
+        EAmpwYAAABxklEQVR4nO3ZMWgUQRiG4QkYTaPE0kJIlU4bwcJCLBRSKdqoYMBGSCMpxc5CQQWxVjvRwlgpYmE6Cy0sFVSsBDvR
+        gIUKER5Z2CXreVH2dufmFuaFn2UPZuZ7OeZndjeETCaTybQFh3DhH3UGU2ESwRzW/Z/F0HOBW2FSwUFcxtWBulcTeB76BnbXBL
+        5jNUE9xdFRBabwTXo+t/kXXqVOj09tBO6mTo9nbQQupk6Pm20EjqVOj3NtBOZTp8eBNgJb8DOxwM6RBUqJ173sQBVY6WUHqsCl
+        XnagCpzsZQeqwN5edqAKzOBXgvBfsS10AT4kELjeSfhS4NGYwz/BdJcCxQNOxceI5//bON5Z8JrA2ZrAg9A3sL8m8D70DWzFl5
+        rEDRzB4Y5rLqbEtTFs3vXiJUMsgemyO8TmfBSBmsiJslvE6EJ3sD2qQGZSwA7sK64t3jvNlzXel8dYwo9y0xXXpYbjd+FlbeO+
+        KH6Ll/jv4/Xg6bS439NgjodDus9K3OQbiy9v0v6WG8yxNmT8WtzkG4uf3kTgVIM53g0Z/zZu8j8fcN4MLF7czzSYYzHpRxTM4g
+        oel98WZkeYYwH3y1qIkzSTyYRJ5jcomeN7mqPfZwAAAABJRU5ErkJggg=="><br><p>ver mas</p>
+      </button></a>
+      </div>
+      
+      
+
+    </article>
+
+    <!--Ofertas de ventas inicio-->
+    <article>
+        
+      <div class="carousel-container">
+      <h2 class="title-produc">¡Ofertas Especiales!</h2>
+        <div class="carousel2">
+          <div class="carousel-item">
+            <span class="ofer-sticker">¡Oferta!</span>
             <img src="/img/productos/camisa/negro/camisa3.png" alt="Product 1" onload="hideLoader(this)">
             <h3>Producto 1</h3>
             <p class="description">Descripción del Producto 1</p>
@@ -200,6 +329,7 @@
           </div>
 
           <div class="carousel-item">
+            <span class="ofer-sticker">¡Oferta!</span>
             <img src="/img/productos/cascos/casco1/casco1.png" alt="Product 3">
             <h3>Producto 3</h3>
             <p class="description">Descripción del Producto 3</p>
@@ -209,7 +339,7 @@
           </div>
 
           <div class="carousel-item">
-            <span class="new-sticker">Nuevo</span>
+            <span class="ofer-sticker">Oferta</span>
             <img src="/img/productos/camisa/amarilla/camisa2.png" alt="Product 4">
             <h3>Producto 4</h3>
             <p class="description">Descripción del Producto 4</p>
@@ -219,7 +349,7 @@
 
           </div>
           <div class="carousel-item">
-            <span class="new-sticker">Nuevo</span>
+            <span class="ofer-sticker">Oferta</span>
             <img src="/img/productos/bordados/bordado circulo/bordado1.png" alt="Product 4">
             <h3>Producto 4</h3>
             <p class="description">Descripción del Producto 4</p>
@@ -229,7 +359,7 @@
           </div>
 
           <div class="carousel-item">
-            <span class="new-sticker">Nuevo</span>
+            <span class="ofer-sticker">Oferta</span>
             <img src="/img/productos/bordados/bordado figura/bordado1.png" alt="Product 4">
             <h3>Producto 4</h3>
             <p class="description">Descripción del Producto 4</p>
@@ -239,7 +369,7 @@
           </div>
 
           <div class="carousel-item">
-            <span class="new-sticker">Nuevo</span>
+            <span class="ofer-sticker">Oferta</span>
             <img src="/img/productos/bordados/bordado triangulo/bordado1.png" alt="Product 4">
             <h3>Producto 4</h3>
             <p class="description">Descripción del Producto 4</p>
@@ -249,7 +379,7 @@
           </div>
 
           <div class="carousel-item">
-            <span class="new-sticker">Nuevo</span>
+            <span class="ofer-sticker">Oferta</span>
             <img src="/img/productos/busos/buso.png" alt="Product 4">
             <h3>Producto 4</h3>
             <p class="description">Descripción del Producto 4</p>
@@ -259,18 +389,25 @@
           </div>
           <!-- Agrega más elementos según sea necesario -->
         </div>
-        <button class="prev" onclick="prevSlide(); resetTimer()">❮</button>
-        <button class="next" onclick="nextSlide(); resetTimer()">❯</button>
+        <button class="prev" onclick="prevSlide2(); resetTimer2()">❮</button>
+        <button class="next" onclick="nextSlide2(); resetTimer2()">❯</button>
         
+      <a href="/sitios/prod.html"><button class="ver-mas-venta">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEw
+        EAmpwYAAABxklEQVR4nO3ZMWgUQRiG4QkYTaPE0kJIlU4bwcJCLBRSKdqoYMBGSCMpxc5CQQWxVjvRwlgpYmE6Cy0sFVSsBDvR
+        gIUKER5Z2CXreVH2dufmFuaFn2UPZuZ7OeZndjeETCaTybQFh3DhH3UGU2ESwRzW/Z/F0HOBW2FSwUFcxtWBulcTeB76BnbXBL
+        5jNUE9xdFRBabwTXo+t/kXXqVOj09tBO6mTo9nbQQupk6Pm20EjqVOj3NtBOZTp8eBNgJb8DOxwM6RBUqJ173sQBVY6WUHqsCl
+        XnagCpzsZQeqwN5edqAKzOBXgvBfsS10AT4kELjeSfhS4NGYwz/BdJcCxQNOxceI5//bON5Z8JrA2ZrAg9A3sL8m8D70DWzFl5
+        rEDRzB4Y5rLqbEtTFs3vXiJUMsgemyO8TmfBSBmsiJslvE6EJ3sD2qQGZSwA7sK64t3jvNlzXel8dYwo9y0xXXpYbjd+FlbeO+
+        KH6Ll/jv4/Xg6bS439NgjodDus9K3OQbiy9v0v6WG8yxNmT8WtzkG4uf3kTgVIM53g0Z/zZu8j8fcN4MLF7czzSYYzHpRxTM4g
+        oel98WZkeYYwH3y1qIkzSTyYRJ5jcomeN7mqPfZwAAAABJRU5ErkJggg=="><br><p>ver mas</p>
+      </button></a>
+
       </div>
       
-      <a href="/sitios/prod.html"><button class="ver-mas-venta">Ver mas</button></a>
-
       
 
     </article>
-
-
 
 
 
@@ -306,27 +443,14 @@
          <div class="wa__popup_content wa__popup_content_left">
             <div class="wa__popup_notice">El equipo generalmente responde en unos minutos.</div>
             <div class="wa__popup_content_list">
-               <div class="wa__popup_content_item ">
-                  <a target="_blank" href="https://web.whatsapp.com/send?phone=573217291894&text=Chatea%20con%20nosotros" class="wa__stt wa__stt_online">
-                     <div class="wa__popup_avatar">
-                        <div class="wa__cs_img_wrap"> <img style="width:48px" src="https://www.produccionesleon.com/wp-content/uploads/FOTOS-EMPLEADOS_ERIKA.png">	</div>
-                     </div>
-                     <div class="wa__popup_txt">
-                        <div class="wa__member_name">Erika</div>
-                        <!-- /.wa__member_name -->
-                        <div class="wa__member_duty">Acesoria comercial</div>
-                        <!-- /.wa__member_duty -->
-                     </div>
-                     <!-- /.wa__popup_txt -->
-                  </a>
-               </div>
+               
               <div class="wa__popup_content_item ">
                   <a target="_blank" href="#" class="wa__stt wa__stt_online">
                      <div class="wa__popup_avatar">
                         <div class="wa__cs_img_wrap"> <img style="width:48px" src="/img/redes sociales/produccionesLeon.png">	</div>
                      </div>
                      <div class="wa__popup_txt">
-                        <div class="wa__member_name">Paola</div>
+                        <div class="wa__member_name">Soporte</div>
                         <!-- /.wa__member_name -->
                         <div class="wa__member_duty">Administración</div>
                         <!-- /.wa__member_duty -->
