@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="/css/sitio-prod.css">
     <link rel="stylesheet" href="/css/pedir-producto.css">
-    <link rel="stylesheet" href="/css/loader.css">
+    <!-- <link rel="stylesheet" href="/css/loader.css"> -->
     <!--fin-->
 </head>
-<body>
+<body >
   
 <!--Header Barra de navegación-->
 <header class="header1">
@@ -98,25 +98,6 @@
     </div>
 </header>  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--red social-->
 <article>
   <!-- partial:index.partial.html -->
@@ -184,6 +165,14 @@
         <h3>Categorías</h3>
         <ul>
             <li><a href="#" class="active" data-category="all">Todos los productos</a></li>
+            <li>
+              <a href="#" data-category="all">Estado ▾</a>
+              <ul class="submenu">
+                  <li><a href="Nuevo" data-category="nuevo">• Nuevo</a></li>
+                  <li><a href="Promocion" data-category="promocion">• Ofertas</a></li>
+                  <li><a href="Destacados" data-category="destacados">• Destacados</a></li>
+              </ul>
+          </li>
             <li><a href="#"  data-category="acesorio">Acesorios</a></li>
             <li>
                 <a href="#" data-category="all">Ropa ▾</a>
@@ -192,8 +181,10 @@
                     <li><a href="Camibuso" data-category="camibuso">• Camibusos</a></li>
                     <li><a href="Busos" data-category="busos">• Busos</a></li>
                     <li><a href="Pantalones" data-category="pantalone">• Pantalones</a></li>
+                    <li><a href="Tennis" data-category="tennis">• Tennis</a></li>
                 </ul>
             </li>
+            <li><a href="#"  data-category="bolsos">Bolsos</a></li>
             <li>
                 <a href="#" data-category="all">Banderas ▾</a>
                 <ul class="submenu">
@@ -221,20 +212,12 @@
                 </ul>
             </li>
             <li>
-                <a href="#" data-category="all">Estados ▾</a>
-                <ul class="submenu">
-                    <li><a href="#" data-category="Promocion">• Promoción</a></li>
-                    <li><a href="#" data-category="nuevo">• Nuevo</a></li>
-                    <li><a href="#" data-category="destacados">• Mas Destacados</a></li>
-                </ul>
-            </li>
-            <li>
                 <a href="#" data-category="all">Seguridad ▾</a>
                 <ul class="submenu">
-                    <li><a href="#" data-category="Promocion">• Ejercito y policia</a></li>
-                    <li><a href="#" data-category="nuevo">• Personal de rescate</a></li>
-                    <li><a href="#" data-category="destacados">• Seguridad privada</a></li>
-                    <li><a href="#" data-category="destacados">• Seguridad vial</a></li>
+                    <li><a href="#" data-category="policia">• Ejercito y policia</a></li>
+                    <li><a href="#" data-category="rescate">• Personal de rescate</a></li>
+                    <li><a href="#" data-category="privada">• Seguridad privada</a></li>
+                    <li><a href="#" data-category="vial">• Seguridad vial</a></li>
                 </ul>
             </li>
             <li><a href="#"  data-category="insignia">Insignias y Parches</a></li>
@@ -259,20 +242,21 @@
               <a href="#" data-category="casco">Casco</a>
           </div>
           <main>
-            <div id="product-details" style="display: none;">
+            <div  id="product-details" style="display: none;">
                 <button id="regresar-btn">Regresar</button>
                 <button id="pedir-producto">Pedir producto</button>
             </div>
             <div id="product-grid">
 
                 <!-- Productos -->
-                <div id="CB001" class="product" data-category="camibuso">
-                  <div class="product-loader">
+                <div id="CB001" class="product" data-category="camibuso,nuevo" >
+                  <div class="product-loader" >
                     <div class="spinner"></div>
                   </div>
+                  <span class="span-nuevo">¡Nuevo!</span>
                   <img src="/img/productos/camisa/negro/camisa3.png" alt="Camisa militar" >
                   <h3 class="titleproductos">Camisa militar negra</h3>
-                  <button>Seleccionar</button>
+                  <button >Seleccionar</button>
                   <div id="product-details"  style="display: none;">
                       <img class="imag1" src="/img/productos/camisa/negro/camisa3.png" alt="cami1">
                       <img class="imag2" src="/img/productos/camisa/negro/camisa3-right.png" alt="cami2">
@@ -418,15 +402,16 @@
                   </div>
                 </div>
                   
-                <div id="G001" class="product" data-category="gorra">
+                <div id="G001" class="product" data-category="gorra,promocion">
                   <div class="product-loader">
                     <div class="spinner"></div>
                   </div>
-                  <img src="/img/productos/gorras/1/1.webp" alt="gorra" >
+                  <span class="span-oferta">¡Oferta!</span>
+                  <img src="/img/productos/gorras/1/1.png" alt="gorra" >
                   <h3 class="titleproductos">Gorra</h3>
                   <button>Seleccionar</button>
                   <div id="product-details"  style="display: none;">
-                      <img class="imag1" src="/img/productos/gorras/1/1.webp" alt="cami1">
+                      <img class="imag1" src="/img/productos/gorras/1/1.png" alt="cami1">
                       <img class="imag2" src="/img/productos/gorras/1/2.webp" alt="cami2">
                       <img class="imag3" src="/img/productos/gorras/1/3.webp" alt="cami3">
                   </div>
@@ -475,7 +460,7 @@
                   </div>
                 </div>
 
-                <div id="P001" class="product" data-category="pantalone">
+                <div id="P001" class="product" data-category="pantalone,destacados">
                   <div class="product-loader">
                     <div class="spinner"></div>
                   </div>
@@ -532,6 +517,1539 @@
                   </div>
                 </div>
                 
+                <div id="BS001" class="product" data-category="bolsos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="/img/productos/bolso/1/1.webp" alt="bolso" >
+                  <h3 class="titleproductos">Bolso militar</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/bolso/1/1.webp" alt="cami1">
+                      <img class="imag2" src="/img/productos/bolso/1/2.webp" alt="cami2">
+                      <img class="imag3" src="/img/productos/bolso/1/3.webp" alt="cami3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">Es un bolso muy grande</p>
+                      <p class="tipo">Bolso</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="BS002" class="product" data-category="bolso">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="/img/productos/bolso/BS002/1.webp" alt="bolso" >
+                  <h3 class="titleproductos">Bolso Deportivo Maletín</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/bolso/BS002/1.webp" alt="prod1">
+                      <img class="imag2" src="/img/productos/bolso/BS002/2.webp" alt="prod2">
+                      <img class="imag3" src="/img/productos/bolso/BS002/3.webp" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">
+                        Bolso Deportivo para Gimnasio y/o Viaje para Mujer u Hombre en Nylon Impermeable
+
+                        Una tula perfecta para ir al gym, salidas casuales, viajes o ¡a dónde tú quieras ir! Práctica, resistente y anti rasgados.
+
+                        Medidas:
+
+                        Largo: 48 cm
+                        Ancho: 23 cm
+                        Alto: 26 cm
+
+                        - Cremalleras garantizadas y de alta calidad.
+                        - Material: Nylon
+                        - Bolsillo para almacenar ropa húmeda o mojada.
+                        - Compartimientos y/o bolsillos: 5
+                        - Impermeable
+                      </p>
+                      
+                      <p class="tipo">Bolso, maletin :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="BS003" class="product" data-category="bolso">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="/img/productos/bolso/BS003/1.webp" alt="producto" >
+                  <h3 class="titleproductos">Morral Bolso Camping</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/bolso/BS003/1.webp" alt="prod1">
+                      <img class="imag2" src="/img/productos/bolso/BS003/2.webp" alt="prod2">
+                      <img class="imag3" src="/img/productos/bolso/BS003/3.webp" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">
+                        Morral Bolso Camping Senderismo Pentagon Impermeable 30l Color Negro
+
+                        Una mochila diseñada para brindar seguridad y comodidad en cualquier lugar, con 30 lts de capacidad, material impermeable y gran espacio, esta mochila Pentagon es para ti.
+                        
+                        - Diseño más espacioso: con múltiples espacios y compartimientos, esta mochila de 30 litros te permitirá llevar contigo todos tus necesarios, tanto para la vida al aire libre como en la ciudad.
+                        - Con cinturón para ajustar correctamente el peso, cuenta con un bolsillo con cierre para guardar tu teléfono y esenciales.
+                        - Diseñada 100% poliéster, a prueba de agua
+                        - Espalda y tirantes acolchados para una mayor comodidad
+                        - Con salida para manguera de agua, así te puedes ir hidratando durante el camino sin necesidad de ocupar botella (no incluye bolsa de agua)
+                        - Más cómoda, ideal para el trabajo, gimnasio, viajes y aventuras al aire libre.
+                        - Diseño con detalles reflectantes para mayor seguridad en condiciones de poca luz
+                        - Con bolsillos abiertos laterales para la botella de agua, paraguas o lo que necesites llevar a la mano
+                      </p>
+                      <p class="tipo">Bolso, camping :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="CS001" class="product" data-category="camisas">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="/img/productos/camisa/CS001/1.webp" alt="producto" >
+                  <h3 class="titleproductos">camisa</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/camisa/CS001/1.webp" alt="prod1">
+                      <img class="imag2" src="/img/productos/camisa/CS001/2.webp" alt="prod2">
+                      <img class="imag3" src="/img/productos/camisa/CS001/3.webp" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="CS002" class="product" data-category="camisas">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="/img/productos/camisa/CS002/1.png" alt="producto" >
+                  <h3 class="titleproductos">camisa</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/camisa/CS002/1.png" alt="prod1">
+                      <img class="imag2" src="/img/productos/camisa/CS002/2.webp" alt="prod2">
+                      <img class="imag3" src="/img/productos/camisa/CS002/3.webp" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="camisas">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="/img/productos/camisa/CS003/1.webp" alt="producto" >
+                  <h3 class="titleproductos">camisa3</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/camisa/CS003/1.webp" alt="prod1">
+                      <img class="imag2" src="/img/productos/camisa/CS003/2.webp" alt="prod2">
+                      <img class="imag3" src="/img/productos/camisa/CS003/3.webp" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="G002" class="product" data-category="gorra">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="/img/productos/gorras/G002/1.webp" alt="producto" >
+                  <h3 class="titleproductos">gorra</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/gorras/G002/1.webp" alt="prod1">
+                      <img class="imag2" src="/img/productos/gorras/G002/2.webp" alt="prod2">
+                      <img class="imag3" src="/img/productos/gorras/G002/3.webp" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="BS002" class="product" data-category="busos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="/img/productos/busos/BS002/1.webp" alt="producto" >
+                  <h3 class="titleproductos">buso</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/busos/BS002/1.webp" alt="prod1">
+                      <img class="imag2" src="/img/productos/busos/BS002/2.webp" alt="prod2">
+                      <img class="imag3" src="/img/productos/busos/BS002/3.webp" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="C002" class="product" data-category="casco">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="/img/productos/cascos/C002/1.webp" alt="producto" >
+                  <h3 class="titleproductos">casco</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/cascos/C002/1.webp" alt="prod1">
+                      <img class="imag2" src="/img/productos/cascos/C002/2.webp" alt="prod2">
+                      <img class="imag3" src="/img/productos/cascos/C002/3.webp" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="C003" class="product" data-category="casco">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="/img/productos/cascos/C003/1.webp" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/cascos/C003/1.webp" alt="prod1">
+                      <img class="imag2" src="/img/productos/cascos/C003/2.webp" alt="prod2">
+                      <img class="imag3" src="/img/productos/cascos/C003/3.webp" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="TN001" class="product" data-category="tennis,nuevo">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <span class="span-nuevo">¡Nuevo!</span>
+                  <img src="/img/productos/tennis/ZT001/1.webp" alt="producto" >
+                  <h3 class="titleproductos">Tennis</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/tennis/ZT001/1.webp" alt="prod1">
+                      <img class="imag2" src="/img/productos/tennis/ZT001/2.webp" alt="prod2">
+                      <img class="imag3" src="/img/productos/tennis/ZT001/3.webp" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="TN002" class="product" data-category="tennis,promocion">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <span class="span-oferta">¡Oferta!</span>
+                  <img src="/img/productos/tennis/ZT002/1.webp" alt="producto" >
+                  <h3 class="titleproductos">Tennis</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="/img/productos/tennis/ZT002/1.webp" alt="prod1">
+                      <img class="imag2" src="/img/productos/tennis/ZT002/2.webp" alt="prod2">
+                      <img class="imag3" src="/img/productos/tennis/ZT002/3.webp" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
+                <div id="Nose001" class="product" data-category="productos">
+                  <div class="product-loader">
+                    <div class="spinner"></div>
+                  </div>
+                  <img src="https://placehold.co/1080x1231" alt="producto" >
+                  <h3 class="titleproductos">Produtos</h3>
+                  <button>Seleccionar</button>
+                  <div id="product-details"  style="display: none;">
+                      <img class="imag1" src="https://placehold.co/1080x1231" alt="prod1">
+                      <img class="imag2" src="https://placehold.co/1080x1231" alt="prod2">
+                      <img class="imag3" src="https://placehold.co/1080x1231" alt="product3">
+                  </div>
+                  <div id="product-details" style="display: none;">
+                      <p class="descripcion">PAqui va la descripcion del productos sjjsjsjsjsj XD</p>
+                      <p class="tipo">Producto :/</p>
+                      <p class="lugar">Sede principal</p>
+                  </div>
+                </div>
+                
                 
               </div>
               <div id="pagination"></div>
@@ -540,15 +2058,17 @@
 </div> 
 
 <!--pedir producto-->
+<article>
 <div id="popup" class="popup">
   <div class="popup-content">
     <span class="close" id="closePopup">&times;</span>
     <h2>Comprar producto</h2>
     <p>¿Estás seguro de que desea comprar el producto?</p>
-    <button id="buyButton">Pedir Producto</button>
+    <img src="https://cdn-icons-png.freepik.com/512/3655/3655469.png" alt="">
+    <a href="https://web.whatsapp.com/send?phone=573217291894&text=Chatea%20con%20nosotros"><button id="buyButton">Pedir Producto</button></a>
   </div>
 </div>
-
+</article>
 
 
 
@@ -694,7 +2214,7 @@
 </footer>
 
 <!--Scripts-->
-<script src="/js/loader.js"></script>
+<!-- <script src="/js/loader.js"></script> -->
 <script src="/js/header-bar.js"></script>
 <script src="/js/article.js"></script>
 <script src="/js/whatsapp.js"></script>
@@ -719,27 +2239,55 @@
       productDetails.innerHTML = '';
 
       // Crear el contenido HTML para mostrar los detalles del producto
+
+
       const productHTML = `
-          <button id="regresar-btn"><img class="mario" src="/img/iconos/volver.png" alt="volver"></button>
-          <div style="display: flex; align-items: center;">
-              <div>
-                  <img id="product1" src="${imag1}" onclick="changeMainImage(this.src)"><br>
-                  <img id="product2" src="${imag2}" onclick="changeMainImage(this.src)"><br>
-                  <img id="product3" src="${imag3}" onclick="changeMainImage(this.src)">
-              </div>
-              <div>
-                  <img id="productoImagen" src="${image}" alt="${title}" onclick="showEnlargedImage(this.src)">
-                  <h3 id="descripcionProducto2">Descripción del producto</h3>
-                  <p id="descripcionProducto">${description}</p>
-              </div>
-              <div style="margin-left: 20px;">
-                  <h2 id="titleProducto">${title}</h2>
-                  <p id="tipoProducto"><b>Tipo:</b> ${tipo}</p>
-                  <p id="ubicacionProducto"><b>Ubicación:</b> ${lugar}</p>
-                  <button id="pedir-producto" onclick="showPopup()">Pedir producto</button>
-              </div>
-          </div>
-      `;
+    <button id="regresar-btn"><img class="mario" src="/img/iconos/volver.png" alt="volver"></button>
+    <div class="detallesproductosmargen" style="display: flex; align-items: center;">
+        <div>
+            <img id="product1" src="${imag1}" onclick="changeMainImage(this.src)"><br>
+            <img id="product2" src="${imag2}" onclick="changeMainImage(this.src)"><br>
+            <img id="product3" src="${imag3}" onclick="changeMainImage(this.src)">
+        </div>
+        <div>
+            <img id="productoImagen" src="${image}" alt="${title}" onclick="showEnlargedImage(this.src)">
+        </div>
+        <div style="margin-left: 20px;">
+            <h2 id="titleProducto">${title}</h2>
+            <p id="tipoProducto"><b>Tipo:</b> ${tipo}</p>
+            <p id="ubicacionProducto"><b>Ubicación:</b> ${lugar}</p>
+            <button id="pedir-producto" onclick="showPopup()">Pedir producto</button>
+        </div>
+    </div>
+    <div>
+        <h3 id="descripcionProducto2">Descripción del producto</h3>
+        <p id="descripcionProducto">${description.replace(/\n/g, '<br>')}</p>
+    </div>
+`;
+
+      // const productHTML = `
+      //     <button id="regresar-btn"><img class="mario" src="/img/iconos/volver.png" alt="volver"></button>
+      //     <div style="display: flex; align-items: center;">
+      //         <div>
+      //             <img id="product1" src="${imag1}" onclick="changeMainImage(this.src)"><br>
+      //             <img id="product2" src="${imag2}" onclick="changeMainImage(this.src)"><br>
+      //             <img id="product3" src="${imag3}" onclick="changeMainImage(this.src)">
+      //         </div>
+      //         <div>
+      //             <img id="productoImagen" src="${image}" alt="${title}" onclick="showEnlargedImage(this.src)">
+                  
+      //           <h3 id="descripcionProducto2">Descripción del producto</h3>
+      //           <p id="descripcionProducto">${description}</p>
+                  
+      //         </div>
+      //         <div style="margin-left: 20px;">
+      //             <h2 id="titleProducto">${title}</h2>
+      //             <p id="tipoProducto"><b>Tipo:</b> ${tipo}</p>
+      //             <p id="ubicacionProducto"><b>Ubicación:</b> ${lugar}</p>
+      //             <button id="pedir-producto" onclick="showPopup()">Pedir producto</button>
+      //         </div>
+      //     </div>
+      // `;
       // Agregar el contenido HTML al contenedor de detalles
       productDetails.innerHTML = productHTML;
 
@@ -786,6 +2334,7 @@
       enlargedImageContainer.style.zIndex = '9999';
       enlargedImageContainer.style.opacity = '0'; // Inicialmente oculta
       enlargedImageContainer.style.transition = 'opacity 0.3s ease'; // Animación de entrada
+      enlargedImageContainer.style.backdropFilter = 'blur(5px)'; // Agregar el backdrop-filter
 
       const enlargedImage = document.createElement('img');
       enlargedImage.src = imageSrc;
@@ -1037,9 +2586,28 @@
     }
   }
 });
+//Promocion
+  window.addEventListener('DOMContentLoaded', () => {
+  const urlFragment = window.location.hash.slice(1);
+  if (urlFragment === 'promocion') {
+    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="promocion"]');
+    if (categoriesMenuLink) {
+      categoriesMenuLink.click();
+    }
+  }
+});
+//destacados
+  window.addEventListener('DOMContentLoaded', () => {
+  const urlFragment = window.location.hash.slice(1);
+  if (urlFragment === 'destacados') {
+    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="destacados"]');
+    if (categoriesMenuLink) {
+      categoriesMenuLink.click();
+    }
+  }
+});
 
 </script>
-
 <!--popup-->
 <script>
   
@@ -1053,7 +2621,7 @@ document.getElementById('popup').style.display = 'none';
 
 document.getElementById('buyButton').addEventListener('click', function() {
 // Aquí puedes añadir la lógica para comprar el producto
-alert('¡Producto comprado!');
+alert('¡Te estamos enviando a un empleado para hacer tu compra!');
 });
 
 </script>
