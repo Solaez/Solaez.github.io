@@ -57,8 +57,8 @@ document.addEventListener('DOMContentLoaded', function () {
     function showFilteredProducts(category) {
         let filteredProducts = [];
         products.forEach(product => {
-            const productCategory = product.getAttribute('data-category');
-            if (category === 'all' || productCategory === category) {
+            const productCategory = product.getAttribute('data-category').split(',');
+            if (category === 'all' || productCategory.includes(category)) {
                 product.style.display = 'block';
                 filteredProducts.push(product);
             } else {

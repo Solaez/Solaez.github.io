@@ -112,28 +112,34 @@
             </section>
         </section>
 
-        <form action="" class="form_contact">
+        <form id="form" class="form_contact">
             <h2>Envia un mensaje</h2>
-            <div class="user_info">
-                <label for="names">Nombres *</label>
-                <input type="text" id="names">
+            <div>
+                <label >Nombres</label>
+                <input type="text" name="Nombre" >
 
-                <label for="phone">Telefono / Celular</label>
-                <input type="text" id="phone">
+                <label >Telefono / Celular</label>
+                <input type="number" name="Telefono" >
 
-                <label for="email">Correo electronico *</label>
-                <input type="text" id="email">
+                <label >Correo electronico</label>
+                <input type="email" name="Gmail"  >
 
-                <label for="mensaje">Mensaje *</label>
-                <textarea id="mensaje"></textarea>
+                <label for="motivo">Motivo de contacto</label>
+                  <select id="motivo" name="Contacto">
+                      <option value="consulta">Consulta</option>
+                      <option value="comentario">Comentario</option>
+                      <option value="solicitud">Solicitud</option>
+                  </select>
 
-                <input type="button" value="Enviar Mensaje" id="btnSend">
+
+                <label >Mensaje</label>
+                <textarea id="mensaje" name="Mensaje" ></textarea>
+                
+
+              <button class="enviar" type="submit" id="button" value="Send Email">Enviar Mensaje</button>
             </div>
         </form>
-
     </section>
-
-
 
 
 
@@ -315,6 +321,55 @@
   
 
 <!--Scripts-->
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script> 
+<script type="text/javascript">
+  emailjs.init('SB25-PCBEpOU3FwK2')
+</script>
+<script>
+  const btn = document.getElementById('button');
+
+  document.getElementById('form').addEventListener('submit', function(event) {
+    // Detener el envío del formulario
+    event.preventDefault();
+
+    // Verificar si todos los campos están llenos
+    if (validarCampos()) {
+      btn.value = 'Enviando...';
+
+      const serviceID = 'default_service';
+      const templateID = 'template_ypbfvyl';
+
+      emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+          btn.value = 'Send Email';
+          alert('Correo enviado con éxito!');
+        }, (err) => {
+          btn.value = 'Send Email';
+          alert(JSON.stringify(err));
+        });
+    } else {
+      alert('Por favor, complete todos los campos.');
+    }
+  });
+
+  function validarCampos() {
+    // Obtener todos los campos del formulario
+    const campos = document.getElementById('form').querySelectorAll('input, textarea, select');
+    
+    // Verificar si algún campo está vacío
+    for (let campo of campos) {
+      if (!campo.value.trim()) {
+        return false; // Al menos un campo está vacío
+      }
+    }
+    
+    return true; // Todos los campos están llenos
+  }
+</script>
+<!------------------------------------------------------------------------------------->
 <script src="/js/header-bar.js"></script>
 <script src="/js/article.js"></script>
 <script src="/js/whatsapp.js"></script>

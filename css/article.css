@@ -143,11 +143,9 @@
       top: 10px;
       position: absolute;
       z-index: 2;
-      filter: invert() ;
     }
 
     .ver-mas-venta:hover {
-      filter:  invert() drop-shadow(0 0 3px) ;
       transform: translateY(-10px);
 
     }
