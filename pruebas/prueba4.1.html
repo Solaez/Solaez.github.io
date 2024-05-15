@@ -1,173 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto en venta</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #f9f9f9;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            display: flex;
-        }
-
-        .sidebar {
-            width: 250px;
-            margin-right: 20px;
-        }
-
-        .content {
-            flex: 1;
-        }
-
-        
-        .product-details {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            display: flex;
-            align-items: flex-start;
-            position: relative;
-        }
-
-        .small-images {
-            position: absolute;
-            top: 20px;
-            left: -40px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .small-images img {
-            width: 50px;
-            height: 50px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-
-        .product-details img {
-            position: relative;
-            max-width: 300px;
-            margin-right: 20px;
-            left: 60px;
-            border-radius: 10px;
-            box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
-            transition-duration: 0.3s;
-            background-color: #f1f1f1;
-            
-        }
-        .product-details img:hover{
-            transform: scale(1.05);
-        }
-        .product-details img:active{
-            transform: scale(1.2);
-        }
-
-        .product-info {
-            flex: 1;
-            margin-left: 80px;
-        }
-
-        .product-info h2 {
-            margin-top: 0;
-            font-size: 24px;
-            font-weight: 600;
-            color: #333;
-        }
-
-        .product-info p {
-            margin-bottom: 20px;
-            color: #555;
-        }
-
-        .product-info button {
-            background-color: #2d31ff;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            margin-top: 130px;
-            transition: transform 0.1s ;
-        }
-
-        .product-info button:hover {
-            background-color: #6200ff;
-        }
-        
-        .product-info button:active{
-            transform: scale(1.1);
-        }
-
-        .product-description {
-            margin-top: 50px;
-            position: relative;
-            right: 370px;
-        }
-
-        .product-description h3 {
-            font-size: 18px;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .product-description p {
-            color: #555;
-        }
-
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        
-        <div class="content">
-            
-            <main>
-                <div class="product-details">
-                    <div class="small-images">
-                        <img src="/img/productos/camisa/camisa3.png" alt="Imagen pequeña" class="small-image">
-                        <img src="/img/productos/camisa/camisa3-right.png" alt="Imagen pequeña" class="small-image">
-                        <img src="/img/productos/camisa/camisa3-down.png" alt="Imagen pequeña" class="small-image">
-                    </div>
-                    <img src="/img/productos/camisa/camisa3.png" alt="Producto" id="main-image">
-                    <div class="product-info">
-                        <h2>Título del producto en venta</h2>
-                        <p>Tipo: </p>
-                        <p>Lugar: </p>
-                        <button>Pedir producto</button>
-                        <div class="product-description">
-                            <h3>Descripcióndel producto</h3>
-                            <p>Sobre el producto seleccionado</p>
-                        </div>
-                    </div>
+<body onload="reproducirAudio()">
+    <audio id="audio" src="/sound/logo.mp3" autoplay></audio>
+    
+    <div id="logo-container">
+        <img id="logo" src="/img/iconos/LOGO hd2.png" alt="Logo">
+    </div>
+
+    <div class="contenido">
+        <div class="cuerpo">
+            <div class="contenedor2">
+            <div class="militar-cuerpo">
+                <div class="relleno-izquierdo">
+                <h2 class="titulo-boton">Militar</h2>
+                <button onclick="reproducirAudioEntrar()" class="boton-militar">Elegir Militar</button>
                 </div>
-            </main>
+            </div>
+            </div>
+            <div class="contenedor3">
+            <div class="civil-cuerpo">
+                <div class=" relleno-derecho">
+                <h2 class="titulo-boton">Civil</h2>
+                <button onclick="reproducirAudioEntrar()" class="boton-civil">Elegir Civil</button >
+                </div>
+            </div>
+            </div>
         </div>
     </div>
     <script>
-        const smallImages = document.querySelectorAll('.small-image');
-        const mainImage = document.getElementById('main-image');
 
-        smallImages.forEach(image => {
-            image.addEventListener('click', () => {
-                mainImage.src = image.src;
-            });
+        function reproducirAudioEntrar() {
+            const audioEntrar = new Audio('/sound/entrar.mp3');
+            audioEntrar.play();
+        }
+        function reproducirAudio() {
+            const audio = document.getElementById('audio');
+            audio.play();
+        }
+        const logo = document.getElementById('logo');
+        const contenido = document.querySelector('.contenido');
+
+        // Desaparecer el logo lentamente después de 4 segundos
+        setTimeout(() => {
+            logo.style.animation = 'fadeOut-logo 1.5s ease-in-out forwards';
+        }, 2000);
+
+        // Mostrar el contenido después de 3 segundos
+        setTimeout(() => {
+            contenido.style.display = 'block';
+        }, 3000);
+        const militarBtn = document.querySelector('.boton-militar');
+        const civilBtn = document.querySelector('.boton-civil');
+        const militarImg = document.querySelector('.militar-cuerpo');
+        const civilImg = document.querySelector('.civil-cuerpo');
+        const militarRellenoIzq = document.querySelector('.relleno-izquierdo');
+        const civilRellenoDer = document.querySelector('.relleno-derecho');
+        militarBtn.addEventListener('click', () => {
+        // Invertir animaciones
+        militarImg.style.animation = 'slideOutLeft 0.5s ease-out forwards';
+        civilImg.style.animation = 'slideOutRight 0.5s ease-out forwards';
+        militarRellenoIzq.style.animation = 'ySlideDown 1s ease-out forwards';
+        civilRellenoDer.style.animation = 'ySlideUp 1s ease-out forwards';
+        // Redirección después de 5 segundos
+        setTimeout(() => {
+            window.location.href ='/index.html';
+        }, 1000);
         });
     </script>
 </body>
+</html>
 </html>
