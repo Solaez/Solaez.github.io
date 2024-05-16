@@ -70,7 +70,7 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-radius: 0.25rem;
-    transition: transform 0.3s;
+    transition: transform 0.3s,box-shadow 0.7s;
 }
 .boton-civil {
     background-color: #9b30ff;
@@ -78,13 +78,18 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-radius: 0.25rem;
-    transition: transform 0.3s;
+    transition: transform 0.3s,box-shadow 0.7s;
 }
 
 .boton-civil:hover,
 .boton-militar:hover {
     transform: scale(1.1);
     cursor: pointer;
+    box-shadow: 0 0 20px rgb(255, 253, 253);
+}
+.boton-civil:active,
+.boton-militar:active{
+    transform: scale(0.5);
 }
 
 /*relleno de animaciones del objeto
@@ -225,7 +230,6 @@ body {
         opacity: 1;
     }
 }
-
 @keyframes slideInRight {
     from {
         transform: translateX(100%);
@@ -237,7 +241,6 @@ body {
         opacity: 1;
     }
 }
-
 @keyframes ySlideLeft {
     from {
         transform: translateY(100%);
@@ -249,23 +252,19 @@ body {
         opacity: 1;
     }
 }
-
 @keyframes ySlideRight {
     from {
         transform: translateY(-100%);
         opacity: 0;
     }
-
     to {
         transform: translateY(0);
     }
 }
-
 .animate-y-slide-right {
     animation: ySlideRight 1s ease-out forwards;
     opacity: 0;
 }
-
 /*Animacion inverza
         ---------------------------------------------------------------------------*/
 @keyframes slideOutLeft {
@@ -279,7 +278,6 @@ body {
         opacity: 0;
     }
 }
-
 @keyframes slideOutRight {
     from {
         transform: translateX(0);
@@ -291,7 +289,6 @@ body {
         opacity: 0;
     }
 }
-
 @keyframes ySlideDown {
     from {
         transform: translateY(0);
@@ -303,7 +300,6 @@ body {
         opacity: 0;
     }
 }
-
 @keyframes ySlideUp {
     from {
         transform: translateY(0);
@@ -317,7 +313,6 @@ body {
 }
 /*Movil
 ------------------------------------------------------------*/
-
 @media screen and (max-width: 700px) {
         .civil-cuerpo,.militar-cuerpo{
         filter: saturate(0) blur(0px);
