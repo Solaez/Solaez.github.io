@@ -160,7 +160,7 @@
     background-size: cover; /* Estira la imagen para que llene completamente el contenedor */
     background-position: center; /* Centra la imagen dentro del contenedor */
     background-repeat: no-repeat;
-    background-image: url('/img/fondo/2.0.avif'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la ruta real de tu imagen */
+    background-image: url('/img/fondo/2.png'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la ruta real de tu imagen */
     filter: saturate(0);
     transition: filter 0.7s;
 }
