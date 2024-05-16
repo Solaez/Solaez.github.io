@@ -132,7 +132,7 @@
     background-position: center; /* Centra la imagen dentro del contenedor */
     background-repeat: no-repeat;
     background-image: url('/img/fondo/1.jpg'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la ruta real de tu imagen */
-    filter: saturate(0);
+    filter: saturate(0) blur(1px);
     transition: filter 0.7s;
 
 }
@@ -160,8 +160,8 @@
     background-size: cover; /* Estira la imagen para que llene completamente el contenedor */
     background-position: center; /* Centra la imagen dentro del contenedor */
     background-repeat: no-repeat;
-    background-image: url('/img/fondo/2.png'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la ruta real de tu imagen */
-    filter: saturate(0);
+    background-image: url('/img/fondo/2.0.png'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la ruta real de tu imagen */
+    filter: saturate(0) blur(1px);
     transition: filter 0.7s;
 }
 
@@ -319,7 +319,11 @@ body {
 ------------------------------------------------------------*/
 
 @media screen and (max-width: 700px) {
-    
+        .civil-cuerpo,.militar-cuerpo{
+        filter: saturate(0) blur(0px);
+        }
+
+
     #logo {
         width: 140px;
         height: auto;
