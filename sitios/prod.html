@@ -256,7 +256,7 @@
                   <span class="span-nuevo">¡Nuevo!</span>
                   <img src="/img/productos/camisa/negro/camisa3.png" alt="Camisa militar" >
                   <h3 class="titleproductos">Camisa militar negra</h3>
-                  <button >Seleccionar</button>
+                  <a href="#CB001"><button >Seleccionar</button></a>
                   <div id="product-details"  style="display: none;">
                       <img class="imag1" src="/img/productos/camisa/negro/camisa3.png" alt="cami1">
                       <img class="imag2" src="/img/productos/camisa/negro/camisa3-right.png" alt="cami2">
@@ -275,7 +275,7 @@
                   </div>
                   <img src="/img/productos/camisa/amarilla/camisa2.png" alt="Camisa militar" >
                   <h3 class="titleproductos">Camisa militar amarilla</h3>
-                  <button>Seleccionar</button>
+                  <a href="#CB002"><button>Seleccionar</button></a>
                   <div id="product-details"  style="display: none;">
                       <img class="imag1" src="/img/productos/camisa/amarilla/camisa2.png" alt="cami1">
                       <img class="imag2" src="/img/productos/camisa/amarilla/camisa1.png" alt="cami2">
@@ -2058,27 +2058,32 @@
 </div> 
 
 <!--pedir producto-->
+
+
 <article>
-<div id="popup" class="popup">
-  <div class="popup-content">
-    <span class="close" id="closePopup">&times;</span>
-    <h2>Comprar producto</h2>
-    <p>¿Estás seguro de que desea comprar el producto?</p>
-    <img src="https://cdn-icons-png.freepik.com/512/3655/3655469.png" alt="">
-    <a href="https://web.whatsapp.com/send?phone=573217291894&text=Chatea%20con%20nosotros"><button id="buyButton">Pedir Producto</button></a>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" id="closePopup">&times;</span>
+      <h2>Comprar producto</h2>
+      <p>¿Estás seguro de que desea comprar el producto?</p>
+      <img src="https://cdn-icons-png.freepik.com/512/3655/3655469.png" alt="">
+      <a id="whatsappLink" href="#"><button id="buyButton">Pedir Producto</button></a>
+    </div>
   </div>
-</div>
-</article>
-
-
-
-
-
-
-
-
-
-
+  </article>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const buyButton = document.getElementById('buyButton');
+    
+    buyButton.addEventListener('click', function() {
+      const currentPageUrl = window.location.href;
+      const whatsappLink = `https://web.whatsapp.com/send?phone=3008645571&text=Me interesa adquirir este producto.¿Podrías proporcionarme información sobre su precio? :
+      ${currentPageUrl}`;
+      document.getElementById('whatsappLink').href = whatsappLink;
+    });
+  });
+  </script>
 
 
 
@@ -2214,6 +2219,9 @@
 </footer>
 
 <!--Scripts-->
+<!--PRODUCTOS
+------------------------------------------------------------------------------------------------------->
+<script src="/js/id-productos.js"></script>
 <!-- <script src="/js/loader.js"></script> -->
 <script src="/js/header-bar.js"></script>
 <script src="/js/article.js"></script>
@@ -2242,7 +2250,8 @@
 
 
       const productHTML = `
-    <button id="regresar-btn"><img class="mario" src="/img/iconos/volver.png" alt="volver"></button>
+      <a href="#Productos"><button id="regresar-btn"><img class="mario" src="/img/iconos/volver.png" alt="volver"></button></a>
+
     <div class="detallesproductosmargen" style="display: flex; align-items: center;">
         <div>
             <img id="product1" src="${imag1}" onclick="changeMainImage(this.src)"><br>
