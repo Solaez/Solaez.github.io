@@ -728,14 +728,14 @@ nav a:hover {
     width: 20px;
   }
 
-  #descripcionProducto2 {
+  /* #descripcionProducto2 {
     margin-top: 200px;
-  }
+  } */
   .titleproductos{
     width: 80px;
   }
 
-  #titleProducto {
+  /* #titleProducto {
     font-size: 20px;
     top: 140px;
     right: 220px;
@@ -754,7 +754,7 @@ nav a:hover {
     position: relative;
     right: 220px;
     top: 150px;
-  }
+  } */
   
 .span-nuevo {
   padding: 0.25rem 2rem;
