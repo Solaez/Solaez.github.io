@@ -314,7 +314,7 @@ nav a:hover {
 
 .product h3 {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: left;
   font-size: 13px;
   font-weight: 600;
@@ -329,6 +329,9 @@ nav a:hover {
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 1s;
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
 }
 
 .product button:hover {
@@ -471,14 +474,24 @@ nav a:hover {
   }
 
   .product img {
-    max-width: 100%;
+    max-width: 200%;
+    max-height: 150px;
+    height: auto;
+    border-radius: 5px;
   }
-
+  
   .product h3 {
     margin-top: 1px;
     font-size: 3vw;
     font-weight: 600;
-    color: #333;
+    color: #000000;
+    position: absolute;
+    top: 120px;
+    background-color: rgba(250, 233, 252, 0.479);
+    border-radius: 5px;
+    padding: 4px;
+    backdrop-filter: blur(3px);
+    margin-top: -10px;
   }
 
   #product-grid {
@@ -487,7 +500,16 @@ nav a:hover {
   }
 
   .product button {
-    padding: 1vw 6px;
+    background-color: transparent;
+    color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .product button:hover {
+    background-color: rgba(153, 0, 255, 0.13);
   }
 
   .categories {
@@ -679,7 +701,7 @@ nav a:hover {
 @media screen and (max-width: 668px) {
   .product{
     min-width: 0;
-    min-height: 180px;
+    min-height: 100px;
 
   }
   #productoImagen {
@@ -715,14 +737,14 @@ nav a:hover {
 
   #titleProducto {
     font-size: 20px;
-    top: 120px;
+    top: 140px;
     right: 220px;
     width: 200px;
   }
 
   #tipoProducto,
   #ubicacionProducto {
-    top: 120px;
+    top: 140px;
     right: 220px;
     color: #585858;
     margin-top: 15px;
