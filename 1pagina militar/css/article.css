@@ -1,0 +1,273 @@
+
+    /* Estilos para las ofertas */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .carousel-container {
+      position: relative;
+      width: 80%;
+      margin: 70px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      top: 100px;
+      z-index: 2;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel ,.carousel2{
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .carousel-item {
+      position: relative;
+      flex: 0 0 calc(100% / 4);
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #fff;
+      transition: transform 0.5s, box-shadow 0.3s;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .carousel img,.carousel2 img {
+      max-width: 100%;
+      min-height: 230px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.2s, filter 0.8s;
+    }
+
+    .carousel img:hover,.carousel2 img:hover {
+      filter: drop-shadow(6px 6px 3px rgba(0, 0, 0, 0.5));
+    }
+
+    .ofer-sticker {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #ff3c3c;
+      color: #fff;
+      padding: 5px 10px;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 5px;
+      box-shadow: -5px 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .description {
+      margin-top: 10px;
+      color: #555;
+    }
+
+    .boton-ver-inicio {
+      margin-top: 20px;
+      background-color: #6f00ff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.8s, transform 0.2s;
+    }
+
+    .boton-ver-inicio:hover {
+      background-color: #4a00cc;
+      transform: scale(1.05);
+    }
+
+    .boton-ver-inicio:active {
+      transform: scale(0.8);
+    }
+
+    .prev,
+    .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #555;
+    }
+
+    .prev {
+      left: 10px;
+    }
+    .next {
+      right: 10px;
+    }
+    .prev,.next{
+      transition: scale 0.2s;
+
+    }
+    .next:hover,.prev:hover{
+      scale: 1.1;
+    }
+    .next:active,.prev:active{
+      scale: 0.8;
+    }
+
+    .title-produc {
+      text-align: center;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      font-size: 34px;
+      font-family: sans-serif;
+      color: #555;
+    }
+
+    .ver-mas-venta {
+      padding: 1vw 4vw;
+      border-radius: 5px;
+      cursor: pointer;
+      border: 0;
+      background-color: transparent;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-size: 15px;
+      transition: filter 0.2s,transform 0.6s;
+      left: 80%;
+      top: 10px;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .ver-mas-venta:hover {
+      transform: translateY(-10px);
+
+    }
+
+    .ver-mas-venta:active {
+      transform: translateY(2px);
+      transition: 100ms;
+    }
+
+    /* Ajuste para pantallas pequeñas */
+    @media screen and (max-width: 600px) {
+      .carousel img,.carousel2 img {
+        min-height: 0;
+        min-width: 100px;
+      }
+
+      .carousel img:hover,.carousel2 img:hover {
+        transform: scale(1);
+      }
+
+      .description {
+        font-size: 3vw;
+      }
+
+      .carousel-item h3 {
+        font-size: 3vw;
+        margin-top: 0;
+      }
+      .carousel-item p {
+        font-size: 3vw;
+        margin-bottom: 0;
+      }
+      .ofer-sticker{
+        scale: 0.7;
+      }
+
+      .boton-ver-inicio {
+        padding: 1vw 4vw;
+      }
+
+      .ver-mas-venta img{
+        scale: 0.5;
+      }
+      .ver-mas-venta p{
+        display: none;
+      }
+
+      .ver-mas-venta {
+        left: 75%;
+      }
+
+      .carousel-container {
+        top: 100px;
+      }
+
+      .title-produc {
+        font-size: 4vw;
+      }
+    }
+
+    /* Estilos adicionales para fondos */
+    .fondo-2 {
+      background: #004bd6;
+    }
+  /*acerca de nosotros
+  -----------------------------------------------------------------------------------------------------------------*/
+
+  .title-acer{
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    color: #585858;
+    margin: 120px 60px 30px;
+    background-color: #eeeeee;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease forwards;
+    }
+  .fondo-acer{  
+    padding: 15px 20px 20px;
+    border-radius: 10px;
+    margin: 10px 60px;
+    background-color: #ffffff;
+    animation: fadeIn 2s ease forwards;
+  }
+  .fondo-acer p{  
+    text-align:  justify;
+    font-size: 22px;
+    color: #585858;
+    margin-left: 20px;
+  }
+  .subtitle-acer{  
+    font-size: 30px;
+    padding: 15px 20px 20px;
+    color: #2238ff;
+  }
+  .fondo-como{
+height: 700px;
+  }
+  .fondo-acer img{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    transition: transform 0.5s, filter 0.5s;
+    max-width: 80%;
+
+  }
+  .fondo-acer img:hover{
+    transform: scale(1.01);
+    filter: drop-shadow(-10px 10px 4px rgb(0,0,0,0.5));
+
+  }
+  
+  /* Ajuste para pantallas pequeñas */
+  @media screen and (max-width: 900px) {
+
+    .title-acer{
+      margin: 120px 10px 30px;
+      font-size: 20px;
+      }
+      .fondo-acer{  
+        margin: 10px 10px;
+      }
+    .fondo-acer p{
+      font-size: 10px;
+    }
+  }

@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+.content {
+  position: fixed;
+  overflow: hidden;
+  z-index: 99;display: flex;
+  justify-content: flex-end;
+  height: 80px;
+  right: 25px;
+  top: 510px;
+
+}
+.challenge {
+  width: 541px;
+  height: 22px;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  top: 569.5px;
+  left: 755px;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+.challenge .number {
+  float: right;
+}
+.challenge .daily {
+  float: left;
+}
+
+/* 
+.content {
+  width: 800px;
+  height: 600px;
+  display: -webkit-box;
+  -webkit-box-pack: start;
+  -webkit-box-align: end;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+} */
+.content .shareButton.main .share, .content .shareButton.main .close, .content .shareButton.main .check {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+}
+.content .shareButton.main .share, .content .shareButton.main.open .close, .content .shareButton.main.sent .check {
+  -webkit-transform: rotate(0) scale(1);
+          transform: rotate(0) scale(1);
+  opacity: 1;
+}
+.content .shareButton.main .close, .content .shareButton.main.open .share, .content .shareButton.main .check, .content .shareButton.main.sent .share {
+  opacity: 0;
+  -webkit-transform: rotate(90deg) scale(0);
+          transform: rotate(90deg) scale(0);
+}
+
+.shareButton, .shareButton.open {
+  border: none;
+  border-radius: 50%;
+  background: #0026ff;
+  padding: 1rem;
+  overflow: hidden;
+  outline: none;
+  margin: 0.5rem;
+  width: 24px;
+  height: 24px;
+  box-sizing: content-box;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  position: relative;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.shareButton:hover, .shareButton.open:hover {
+  -webkit-transform: scale(1.1) translateY(-3px);
+          transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.shareButton svg, .shareButton.open svg {
+  display: block;
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.fb, .shareButton.open.ig {
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+
+.tw, .shareButton.open.tw {
+  -webkit-transition-delay: 50ms;
+          transition-delay: 50ms;
+}
+
+.ig, .shareButton.open.fb {
+  -webkit-transition-delay: 0ms;
+          transition-delay: 0ms;
+}
+
+.fb, .tw, .ig {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.fb svg, .tw svg, .ig svg {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 668px) {
+  .content {
+    scale: 0.5;
+  }
+
+
+}
