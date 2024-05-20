@@ -10,7 +10,7 @@
 <body >
     <audio id="audio" src="/sound/logo.mp3" autoplay></audio>
     
-    <div onload="reproducirAudio()" id="logo-container">
+    <div  id="logo-container">
         <img id="logo" src="/img/iconos/LOGO hd2.png" alt="Logo">
     </div>
 
@@ -27,22 +27,14 @@
             <div class="contenedor3">
             <div class="civil-cuerpo">
                 <div class=" relleno-derecho">
-                <h2 class="titulo-boton"><center>Civil <br>Proximamente</center></h2>
-                <!-- <button onclick="reproducirAudioEntrar()" class="boton-civil">Elegir Civil</button > -->
+                <h2 class="titulo-boton">Civil</h2>
+                <button onclick="reproducirAudioEntrar()" class="boton-civil">Elegir Civil</button >
                 </div>
             </div>
             </div>
         </div>
     </div>
     <script>
-        function reproducirAudioEntrar() {
-            const audioEntrar = new Audio('/sound/entrar.mp3');
-            audioEntrar.play();
-        }
-        function reproducirAudio() {
-            const audio = document.getElementById('audio');
-            audio.play();
-        }
         const logo = document.getElementById('logo');
         const contenido = document.querySelector('.contenido');
 
@@ -69,7 +61,18 @@
         civilRellenoDer.style.animation = 'ySlideUp 1s ease-out forwards';
         // Redirección después de 5 segundos
         setTimeout(() => {
-            window.location.href ='/sitios/inicio.html';
+            window.location.href ='/1pagina militar/sitios/inicio.html';
+        }, 1000);
+        });
+        civilBtn.addEventListener('click', () => {
+        // Invertir animaciones
+        militarImg.style.animation = 'slideOutLeft 0.5s ease-out forwards';
+        civilImg.style.animation = 'slideOutRight 0.5s ease-out forwards';
+        militarRellenoIzq.style.animation = 'ySlideDown 1s ease-out forwards';
+        civilRellenoDer.style.animation = 'ySlideUp 1s ease-out forwards';
+        // Redirección después de 5 segundos
+        setTimeout(() => {
+            window.location.href ='/1pagina civil/sitios/inicio.html';
         }, 1000);
         });
     </script>
