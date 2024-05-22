@@ -135,9 +135,10 @@
         justify-content: flex-end;
         margin-right: 20px;
         margin-bottom: 20px;
-        background-color: #ffffff;
+        background-color: #ffffff85;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(3px);
     }
 
     #chat-header {
@@ -145,7 +146,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-        background-color: #0070ba;
+        background-color: #3d00baa8;
         color: #ffffff;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
@@ -215,7 +216,7 @@
     #message-container {
         display: flex;
         padding: 10px;
-        background-color: #f1f1f1;
+        /* background-color: #f1f1f1; */
         border-top: 1px solid #ccc;
     }
 
@@ -316,7 +317,7 @@
   }
 
   async function fetchMessages() {
-      const response = await fetch('chat.php');
+      const response = await fetch('/1pagina civil/php/chat.php');
       const messages = await response.json();
       const chatbox = document.getElementById('chatbox');
       chatbox.innerHTML = '';
@@ -342,7 +343,7 @@
           formData.append('user', user);
           formData.append('message', message);
 
-          await fetch('chat.php', {
+          await fetch('/1pagina civil/php/chat.php', {
               method: 'POST',
               body: formData
           });
@@ -387,7 +388,7 @@
           const timeDiff = currentTime - lastActivityTime;
 
           if (timeDiff >= idleTime) {
-              fetch('delete_old_messages.php');
+              fetch('/1pagina civil/php/delete_old_messages.php');
           }
       }, 10000); // Verifica cada 10 segundos
   }
