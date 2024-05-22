@@ -1,8 +1,8 @@
 <?php
-$servername = "www.db4free.net";
-$username = "aguerrerosolaez";
-$password = "12062005as";
-$dbname = "mario_kart_8";
+$servername = "localhost";
+$username = "id22204035_aguerrerosolaez";
+$password = "12Juni02005.";
+$dbname = "id22204035_chat_db";
 
 
 // Crear conexión
