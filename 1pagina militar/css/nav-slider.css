@@ -1,0 +1,454 @@
+
+/* Slider */
+#slider{
+    width: 100vw; /* Ancho del 100% del viewport */
+    height: 600px; /* Altura del 50% del viewport */
+    position:relative;
+    overflow:hidden;
+    box-shadow: 0px 24px 20px 0 rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.9s ease forwards;
+  }
+  @keyframes load{
+    from{left:-100%;}
+    to{left:0;}
+  }
+  .slides{
+    width:400%;
+    height:100%;
+    position:relative;
+    -webkit-animation:slide 30s infinite;
+    -moz-animation:slide 30s infinite;
+    animation:slide 30s infinite;
+  }
+  .slider{
+    width:25%;
+    height:100%;
+    float:left;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+  }
+  .slide img{
+    width:120%;
+    height:100%;
+  }
+  .image img{
+    width:100%;
+    height:auto;
+  }
+  
+  /* Legend */
+  .legend{
+    border:1500px solid transparent;
+    border-left:800px solid rgba(52, 73, 94, .7);
+    border-bottom:0;
+    position:absolute;
+    bottom:0;
+  }
+  
+  /* Contents */
+  .content{
+    width:100%;
+    height:100%;
+    position:absolute;
+    overflow:hidden;
+  }
+  .content-txt{
+    width: 80%; /* Ancho del 80% del contenedor */
+    max-width: 400px; /* Límite máximo de ancho */
+    float:left;
+    position:relative;
+    top: 30vh; /* Posición vertical relativa */
+    -webkit-animation:content-s 7.5s infinite;
+    -moz-animation:content-s 7.5s infinite;
+    animation:content-s 7.5s infinite;
+  }
+  .content-txt h1{
+    font-family:Arial;
+    text-transform:uppercase;
+    font-size: 2.5vw; /* Tamaño de fuente relativo al viewport */
+    color:#fff;
+    text-align:left;
+    margin-left:30px;
+    padding-bottom:10px;
+  }
+  .content-txt h2{
+    font-family:arial;
+    font-weight:normal;
+    font-size: 1.5vw; /* Tamaño de fuente relativo al viewport */
+    font-style:italic;
+    color:#fff;
+    text-align:left;
+    margin-left:30px;
+  }
+  
+  /* Animation */
+  @-webkit-keyframes slide{
+    0%,100%{
+      margin-left:0%;
+    }
+    21%{
+      margin-left:0%;
+    }
+    25%{
+      margin-left:-100%;
+    }
+    46%{
+      margin-left:-100%;
+    }
+    50%{
+      margin-left:-200%;
+    }
+    71%{
+      margin-left:-200%;
+    }
+    75%{
+      margin-left:-300%;
+    }
+    96%{
+      margin-left:-300%;
+    }
+  }
+  @-moz-keyframes slide{
+    0%,100%{
+      margin-left:0%;
+    }
+    21%{
+      margin-left:0%;
+    }
+    25%{
+      margin-left:-100%;
+    }
+    46%{
+      margin-left:-100%;
+    }
+    50%{
+      margin-left:-200%;
+    }
+    71%{
+      margin-left:-200%;
+    }
+    75%{
+      margin-left:-300%;
+    }
+    96%{
+      margin-left:-300%;
+    }
+  }
+  @keyframes slide{
+    0%,100%{
+      margin-left:0%;
+    }
+    21%{
+      margin-left:0%;
+    }
+    25%{
+      margin-left:-100%;
+    }
+    46%{
+      margin-left:-100%;
+    }
+    50%{
+      margin-left:-200%;
+    }
+    71%{
+      margin-left:-200%;
+    }
+    75%{
+      margin-left:-300%;
+    }
+    96%{
+      margin-left:-300%;
+    }
+  }
+  
+  @-webkit-keyframes content-s{
+    0%{left:-420px;}
+    10%{left:0px;}
+    30%{left:0px;}
+    40%{left:0px;}
+    50%{left:0px;}
+    60%{left:0px;}
+    70%{left:0;}
+    80%{left:-420px;}
+    90%{left:-420px;}
+    100%{left:-420px;}
+  }
+  @-moz-keyframes content-s{
+    0%{left:-420px;}
+    10%{left:0px;}
+    30%{left:0px;}
+    40%{left:0px;}
+    50%{left:0px;}
+    60%{left:0px;}
+    70%{left:0;}
+    80%{left:-420px;}
+    90%{left:-420px;}
+    100%{left:-420px;}
+  }
+  @keyframes content-s{
+    0%{left:-420px;}
+    10%{left:20px;}
+    15%{left:0px;}
+    30%{left:0px;}
+    40%{left:0px;}
+    50%{left:0px;}
+    60%{left:0px;}
+    70%{left:0;}
+    80%{left:-420px;}
+    90%{left:-420px;}
+    100%{left:-420px;}
+  }
+  
+  @-webkit-keyframes on{
+    0%,100%{
+      margin-left:0%;
+    }
+    21%{
+      margin-left:0%;
+    }
+    25%{
+      margin-left:15px;
+    }
+    46%{
+      margin-left:15px;
+    }
+    50%{
+      margin-left:30px;
+    }
+    71%{
+      margin-left:30px;
+    }
+    75%{
+      margin-left:45px;
+    }
+    96%{
+      margin-left:45px;
+    }
+  }
+  
+  @-moz-keyframes on{
+    0%,100%{
+      margin-left:0%;
+    }
+    21%{
+      margin-left:0%;
+    }
+    25%{
+      margin-left:15px;
+    }
+    46%{
+      margin-left:15px;
+    }
+    50%{
+      margin-left:30px;
+    }
+    71%{
+      margin-left:30px;
+    }
+    75%{
+      margin-left:45px;
+    }
+    96%{
+      margin-left:45px;
+    }
+  }
+  
+  @keyframes on{
+    0%,100%{
+      margin-left:0%;
+    }
+    21%{
+      margin-left:0%;
+    }
+    25%{
+      margin-left:15px;
+    }
+    46%{
+      margin-left:15px;
+    }
+    50%{
+      margin-left:30px;
+    }
+    71%{
+      margin-left:30px;
+    }
+    75%{
+      margin-left:45px;
+    }
+    96%{
+      margin-left:45px;
+    }
+  }
+
+
+  .inicio-boton {
+    position: relative;
+    top: 40px;
+    left: 30px;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .inicio-boton:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .inicio-boton:active {
+    transform: translateY(-1px);
+  }
+  /**FORTALEZAS*/
+  .fortalezas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Divide el contenedor en dos columnas */
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    margin-bottom: 50px;
+  }
+  .fortalezas img{
+    
+    width: 350px;
+  }
+
+  /*marcas trabajadas*
+  --------------------------------------------------------------------------------*/
+  /* Ajustes para el carrusel */
+.institutos .institutos-track {
+  animation: scroll 40s linear infinite; /* Duplica la duración del tiempo para cubrir el doble de contenido */
+  display: flex;
+  width: calc(250px * 16); /* Duplica el ancho para acomodar el doble de contenido */
+}
+ @keyframes scroll {
+	 0% {
+		 transform: translateX(0);
+	}
+	 100% {
+		 transform: translateX(calc(-200px * 10));
+	}
+}
+ .institutos {
+	 background: white;
+	 box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	 height: 100px;
+	 margin: auto;
+	 overflow: hidden;
+	 position: relative;
+	 width: 100%;
+}
+ .institutos::before, .institutos::after {
+	 background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	 content: "";
+	 height: 100px;
+	 position: absolute;
+	 width: 200px;
+	 z-index: 2;
+}
+ .institutos::after {
+	 right: 0;
+	 top: 0;
+	 transform: rotateZ(180deg);
+}
+ .institutos::before {
+	 left: 0;
+	 top: 0;
+}
+ .institutos .institutos-track {
+	 animation: scroll 20s linear infinite;
+	 display: flex;
+	 /* width: calc(250px * 8); */
+}
+ .instituto .instituto {
+	 height: 100px;
+	 width: 250px;
+}
+ 
+
+
+  /*pantallas pequeñas*/
+  
+  @media (max-width: 568px) {
+
+  .institutos {
+    height: 60px;
+    top: -35px; /* Ajusta la posición vertical según necesites */
+  }
+  .instituto img{
+    height: 60px;
+    width: 150px;
+  }
+
+  
+  .image img{
+    width:180%;
+    height:auto;
+  }
+  .fortalezas{
+    top: 120px;
+  }
+  .fortalezas img{
+    width: 30vw;
+  }
+    #slider{
+      height: 290px; /* Altura del 50% del viewport */
+    }
+    .content-txt {
+      /*display: none;  Ocultar el contenido de texto */
+      top: 90px;
+    }
+    .content-txt h1{
+      font-size: 15px;
+    }
+    .content-txt h2{
+      font-size: 15px;
+    }
+    .inicio-boton {
+      padding: 1em 2em;
+    }
+    .legend{
+      display: none; /* Ocultar el contenido de texto */
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+
+  
+    
+    .fortalezas img{
+      width: 30vw;
+    }
+      #slider{
+        height: 290px; /* Altura del 50% del viewport */
+      }
+      .content-txt {
+        /*display: none;  Ocultar el contenido de texto */
+        top: 90px;
+      }
+      .content-txt h1{
+        font-size: 15px;
+      }
+      .content-txt h2{
+        font-size: 15px;
+      }
+      .inicio-boton {
+        padding: 1em 2em;
+      }
+    }
+
+  
+  

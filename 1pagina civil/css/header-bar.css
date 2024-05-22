@@ -1,0 +1,407 @@
+body {
+    background: url(/img/fondo/fondo\ claro2.png);
+    background-attachment: fixed;
+    background-size: cover;
+    /* Hace que la imagen de fondo cubra todo el contenedor */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    
+    /* opacity: 0.9; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 10px 20px;
+    z-index: 10;
+    align-items: center;
+    box-shadow: 0px 24px 20px 0 rgba(0, 0, 0, 0.3);
+    background: #ffb71c;
+
+}
+header
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.header-container a img:hover{
+    transform: scale(1.1);
+}
+.header-container a img:active{
+    scale: 1.1;
+}
+
+header.abajo {
+    background-color: #ffae00b6;
+    padding: 5px 20px;
+    /* backdrop-filter: blur(2px); */
+
+}
+
+
+header .logo {
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    font-family: helvetica;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    margin-right: 50px;
+}
+
+header.abajo .logo,
+header.abajo ul li a {
+    color: #ffffff;
+}
+
+/* Estilos para el logotipo */
+.logo img {
+    max-height: 50px;
+    width: auto;
+    transition: transform 0.7s;
+}
+
+header.abajo .logo img {
+    max-height: 40px;
+    transform: scale(0.8);
+}
+
+/* Nuevo estilo para el overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(243, 243, 243, 0.5);
+    z-index: 9;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* Estilos para el botón de toggle */
+.toggle-button {
+    display: none;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #ff9100;
+    transition: all 0.3s ease-in-out;
+}
+
+header.abajo .bar {
+    background-color: #cacaca;
+}
+
+/* Agregar animación de hover-forward */
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: transparent;
+    /* Color inicial transparente */
+    transition: all 0.3s ease;
+    transform: scaleX(0);
+    /* Inicialmente oculto */
+}
+
+nav ul li a:hover::before {
+    background-color: #ffffff;
+    /* Color al hacer hover */
+    transform: scaleX(1);
+    /* Mostrar línea */
+}
+
+nav ul li a:hover {
+    color: #703d02;
+    background-color: #d1cfcf5d;
+    /* Cambia el color que desees al hacer hover */
+}
+
+/* Estilos para el dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* backdrop-filter: blur(22px); */
+    background-color:  #ffb71ca2;
+    /* Color de fondo por defecto */
+    min-width: 160px;
+    box-shadow: -10px 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: background-color 0.6s;
+    animation: fadeIn 0.3s ease forwards;
+
+    /* Agregamos una transición para suavizar el cambio */
+}
+
+/* Cambiar el fondo cuando el encabezado está abajo */
+header.abajo .dropdown-content {
+    background-color: #ffae00b6;
+    /* backdrop-filter: blur(22opx); */
+    /* Cambia el color de fondo cuando el encabezado está abajo */
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Nuevo estilo para el dropdown de camisas */
+.dropdown-camisas-content {
+    display: none;
+    position: absolute;
+    background-color:  #ffb71ca2;
+    /* Color de fondo por defecto */
+    min-width: 160px;
+    box-shadow: -10px 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2; /* Ajustar z-index para que esté por encima del dropdown de productos */
+    transition: background-color 0.6s;
+    /* Agregamos una transición para suavizar el cambio */
+    left: 100%; /* Alinear a la derecha del dropdown de productos */
+    top: 50px;
+    animation: fadeIn 0.3s ease forwards;
+}
+/* Nuevo estilo para el dropdown de camisas */
+.dropdown-estampados-content {
+    display: none;
+    position: absolute;
+    background-color:  #ffb71ca2;
+    /* Color de fondo por defecto */
+    min-width: 160px;
+    box-shadow: -10px 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2; /* Ajustar z-index para que esté por encima del dropdown de productos */
+    transition: background-color 0.6s;
+    /* Agregamos una transición para suavizar el cambio */
+    left: 100%; /* Alinear a la derecha del dropdown de productos */
+    top: 130px;
+    animation: fadeIn 0.3s ease forwards;
+}
+/* Nuevo estilo para el dropdown de camisas */
+.dropdown-gorras-content {
+    display: none;
+    position: absolute;
+    background-color:  #ffb71ca2;
+    /* Color de fondo por defecto */
+    min-width: 160px;
+    box-shadow: -10px 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2; /* Ajustar z-index para que esté por encima del dropdown de productos */
+    transition: background-color 0.6s;
+    /* Agregamos una transición para suavizar el cambio */
+    left: 100%; /* Alinear a la derecha del dropdown de productos */
+    top: 180px;
+    animation: fadeIn 0.3s ease forwards;
+}
+/* Nuevo estilo para el dropdown de seguridad */
+.dropdown-seguridad-content {
+    display: none;
+    position: absolute;
+    background-color:  #ffb71ca2;
+    /* Color de fondo por defecto */
+    min-width: 160px;
+    box-shadow: -10px 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2; /* Ajustar z-index para que esté por encima del dropdown de productos */
+    transition: background-color 0.6s;
+    /* Agregamos una transición para suavizar el cambio */
+    left: 100%; /* Alinear a la derecha del dropdown de productos */
+    top: 260px;
+    animation: fadeIn 0.3s ease forwards;
+    width: 260px;
+}
+/* Nuevo estilo para el dropdown de bandera */
+.dropdown-banderas-content {
+    display: none;
+    position: absolute;
+    background-color:  #ffb71ca2;
+    /* Color de fondo por defecto */
+    min-width: 160px;
+    box-shadow: -10px 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2; /* Ajustar z-index para que esté por encima del dropdown de productos */
+    transition: background-color 0.6s;
+    /* Agregamos una transición para suavizar el cambio */
+    left: 100%; /* Alinear a la derecha del dropdown de productos */
+    top: 220px;
+    animation: fadeIn 0.3s ease forwards;
+    width: 260px;
+}
+
+
+/* Cambiar el fondo cuando el encabezado está abajo */
+header.abajo .dropdown-acesorios-content,header.abajo .dropdown-camisas-content,
+header.abajo .dropdown-estampados-content,header.abajo .dropdown-seguridad-content,
+header.abajo .dropdown-banderas-content,header.abajo .dropdown-gorras-content  {
+    background-color: #ffae00b6;
+    /* Cambia el color de fondo cuando el encabezado está abajo */
+}
+
+.dropdown-acesorios-content a,.dropdown-camisas-content a,
+.dropdown-estampados-content a,.dropdown-estampados-content a,
+.dropdown-banderas-content a,.dropdown-gorras-content a{
+    color: rgb(255, 255, 255);
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-acesorios:hover .dropdown-acesorios-content,
+.dropdown-camisas:hover .dropdown-camisas-content,
+.dropdown-camisas:hover .dropdown-estampados-content,
+.dropdown-camisas:hover .dropdown-seguridad-content, 
+.dropdown-camisas:hover .dropdown-banderas-content, 
+.dropdown-camisas:hover .dropdown-gorras-content {
+    display: block;
+}   
+
+
+
+
+
+/* Animación de entrada para los productos */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Animación de salida para los productos */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/*estilos para pantallas pequeñas, como celular,iPad Apps y tablet*/
+@media (max-width: 768px) {
+
+
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    .logo img {
+        max-height: 40px;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ce5606f6;
+        backdrop-filter: blur(px);
+        z-index: 10;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* Cambio aquí */
+        align-items: center;
+        padding-top: 80px;
+        /* Nuevo */
+    }
+
+    .toggle-button {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .toggle-button.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle-button.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .toggle-button.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
