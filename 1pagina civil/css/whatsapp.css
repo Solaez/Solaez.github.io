@@ -872,9 +872,13 @@
       -moz-border-radius: 50%;
       box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14);
       -webkit-box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14);
-      -moz-box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14)
+      -moz-box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14);
+      transition: transform .2s, box-shadow .8s;
     }
-    
+    .wa__btn_popup_icon:hover {
+      transform: scale(1.1);
+      box-shadow: -5px 5px 5px rgb(0, 0, 0, .5);
+  }
     .wa__btn_popup .wa__btn_popup_icon:before {
       content: '';
       position: absolute;
