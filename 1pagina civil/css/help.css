@@ -225,7 +225,6 @@
         }
         #chat-container {
             position: relative;
-            width: 96%;
             height: 380px;
             border: 1px solid #ccc;
             display: flex;
