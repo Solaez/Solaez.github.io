@@ -3,7 +3,7 @@
     position: fixed;
     right: 13px;
     bottom: 77px;
-    z-index: 9999;
+    z-index: 99;
     }
     #chat-container {
         position: relative;
