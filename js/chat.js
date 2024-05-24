@@ -22,6 +22,11 @@ document.getElementById('message').addEventListener('keydown', function(event) {
   document.getElementById('usernameInput').style.animation = 'slideInUsername 0.5s ease-out';
 }
 //-------------------------------------------------------------------------------------
+function isValidUsername(username) {
+    const lowercaseUsername = username.toLowerCase();
+    return lowercaseUsername !== 'admin';
+}
+//---------------------------------------------------------------------------------------
 function openUsernameInput() {
     document.getElementById('usernameInput').style.display = 'flex';
     document.getElementById('openUserBtn').style.display = 'none';
@@ -67,11 +72,14 @@ async function sendMessage() {
 }
 
 function saveUsername() {
-    const username = document.getElementById('user').value;
-    if (username) {
+    const username = document.getElementById('user').value.trim();
+    if (username && isValidUsername(username)) {
         document.getElementById('usernameInput').style.display = 'none';
+        document.getElementById('chat-container').classList.remove('hidden');
         document.getElementById('chat-container').style.display = 'flex';
         fetchMessages();
+    } else {
+        alert('Por favor, ingrese un nombre de usuario válido (diferente de "Admin")');
     }
 }
 

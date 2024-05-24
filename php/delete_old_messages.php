@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
 
 // Eliminar mensajes con más de 2 minutos de antigüedad
-$sql = "DELETE FROM messages WHERE timestamp < (NOW() - INTERVAL 10 MINUTE)";
+$sql = "DELETE FROM messages WHERE timestamp < (NOW() - INTERVAL 2 MINUTE)";
 if ($conn->query($sql) === TRUE) {
     echo "Mensajes antiguos eliminados correctamente.";
 } else {
