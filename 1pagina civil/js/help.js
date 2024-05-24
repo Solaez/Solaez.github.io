@@ -23,7 +23,7 @@ function saveUsername() {
   }
   
   async function fetchMessages() {
-      const response = await fetch('chat.php');
+      const response = await fetch('/1pagina civil/php/chat.php');
       const messages = await response.json();
       const chatbox = document.getElementById('chatbox');
       chatbox.innerHTML = '';
@@ -49,7 +49,7 @@ function saveUsername() {
           formData.append('user', user);
           formData.append('message', message);
   
-          await fetch('chat.php', {
+          await fetch('/1pagina civil/php/chat.php', {
               method: 'POST',
               body: formData
           });
@@ -94,7 +94,7 @@ function saveUsername() {
           const timeDiff = currentTime - lastActivityTime;
   
           if (timeDiff >= idleTime) {
-              fetch('delete_old_messages.php');
+              fetch('/1pagina civil/php/delete_old_messages.php');
           }
       }, 10000); // Verifica cada 10 segundos
   }
