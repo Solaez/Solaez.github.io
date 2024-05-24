@@ -117,6 +117,20 @@
             #admin-sendBtn:active{
                 transform: scale(1);
             }
+            @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#admin-container {
+    animation: fadeIn 0.5s ease-in-out;
+}
             
         </style>
 </head>
@@ -136,3 +150,4 @@
 <script src="/js/chat-admin.js"></script>
 </body>
 </html>
+<script src="/js/ocultarMarcaDeAgua.js"></script>
