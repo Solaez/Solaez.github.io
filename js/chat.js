@@ -1,11 +1,34 @@
 
+document.getElementById('message').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        sendMessage();
+    }
+});
+
+    function saveUsername() {
+  const username = document.getElementById('user').value;
+  if (username) {
+    document.getElementById('usernameInput').style.display = 'none';
+    document.getElementById('chat-container').classList.remove('hidden');
+    document.getElementById('chat-container').style.display = 'flex';
+    fetchMessages();
+  }
+}
+    //-----------------------------------------------------------------------------------
+    function openUsernameInput() {
+  document.getElementById('usernameInput').style.display = 'flex';
+  document.getElementById('openUserBtn').style.display = 'none';
+  // Agregar animación al input de nombre de usuario
+  document.getElementById('usernameInput').style.animation = 'slideInUsername 0.5s ease-out';
+}
+//-------------------------------------------------------------------------------------
 function openUsernameInput() {
     document.getElementById('usernameInput').style.display = 'flex';
     document.getElementById('openUserBtn').style.display = 'none';
 }
 
 async function fetchMessages() {
-    const response = await fetch('/1pagina civil/php/chat.php');
+    const response = await fetch('/php/chat.php');
     const messages = await response.json();
     const chatbox = document.getElementById('chatbox');
     chatbox.innerHTML = '';
@@ -14,6 +37,8 @@ async function fetchMessages() {
         messageElement.classList.add('message');
         if (msg.user === document.getElementById('user').value) {
             messageElement.classList.add('user');
+        } else if (msg.user === 'Admin' || msg.user === 'Soporte-Admin') {
+            messageElement.classList.add('admin');
         } else {
             messageElement.classList.add('service');
         }
@@ -25,13 +50,13 @@ async function fetchMessages() {
 
 async function sendMessage() {
     const user = document.getElementById('user').value;
-    const message = document.getElementById('message').value;
+    const message = document.getElementById('message').value.trim();
     if (user && message) {
         const formData = new FormData();
         formData.append('user', user);
         formData.append('message', message);
 
-        await fetch('/1pagina civil/php/chat.php', {
+        await fetch('/php/chat.php', {
             method: 'POST',
             body: formData
         });
@@ -76,7 +101,7 @@ function checkInactivity() {
         const timeDiff = currentTime - lastActivityTime;
 
         if (timeDiff >= idleTime) {
-            fetch('/1pagina civil/php/delete_old_messages.php');
+            fetch('/php/delete_old_messages.php');
         }
     }, 10000); // Verifica cada 10 segundos
 }
