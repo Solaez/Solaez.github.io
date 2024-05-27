@@ -174,6 +174,65 @@ submenuLinks.forEach(link => {
 //.-------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------
 
+document.querySelectorAll('#all').forEach(function(element) {
+    element.addEventListener('click', () => {
+        productDetails.classList.add('slide-out');
+        
+        setTimeout(() => {
+            productDetails.style.display = 'none';
+            productDetails.classList.remove('slide-out');
+            productGrid.style.display = 'grid';
+        }, 500);
+    });
+});
+document.querySelectorAll('#camisas').forEach(function(element) {
+    element.addEventListener('click', () => {
+        productDetails.classList.add('slide-out');
+        
+        setTimeout(() => {
+            productDetails.style.display = 'none';
+            productDetails.classList.remove('slide-out');
+            productGrid.style.display = 'grid';
+        }, 500);
+    });
+});
+document.querySelectorAll('#busos').forEach(function(element) {
+    element.addEventListener('click', () => {
+        productDetails.classList.add('slide-out');
+        
+        setTimeout(() => {
+            productDetails.style.display = 'none';
+            productDetails.classList.remove('slide-out');
+            productGrid.style.display = 'grid';
+        }, 500);
+    });
+});
+document.querySelectorAll('#bordados').forEach(function(element) {
+    element.addEventListener('click', () => {
+        productDetails.classList.add('slide-out');
+        
+        setTimeout(() => {
+            productDetails.style.display = 'none';
+            productDetails.classList.remove('slide-out');
+            productGrid.style.display = 'grid';
+        }, 500);
+    });
+});
+document.querySelectorAll('#cascos').forEach(function(element) {
+    element.addEventListener('click', () => {
+        productDetails.classList.add('slide-out');
+        
+        setTimeout(() => {
+            productDetails.style.display = 'none';
+            productDetails.classList.remove('slide-out');
+            productGrid.style.display = 'grid';
+        }, 500);
+    });
+});
+
+
+
+//______________________________________________________________________________________________________________
       // regresar todos"
       const regresarBtn = document.getElementById('all');
       regresarBtn.addEventListener('click', () => {
