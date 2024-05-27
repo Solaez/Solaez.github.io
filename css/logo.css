@@ -89,7 +89,7 @@
 }
 .boton-civil:active,
 .boton-militar:active{
-    transform: scale(0.5);
+    transform: scale(1);
 }
 
 /*relleno de animaciones del objeto
