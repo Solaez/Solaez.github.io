@@ -2,9 +2,9 @@
 session_start();
 
 $servername = "localhost";
-$username = "id22204035_aguerrerosolaez";
+$username = "id22234751_producciones";
 $password = "12Juni02005.";
-$dbname = "id22204035_chat_db";
+$dbname = "id22234751_chat";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

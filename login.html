@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Login - Producciones Leon</title>
+  <link rel="icon" href="/img/iconos/LOGO hd.png">
   <style>
     body {
       background: url("/img/fondo/fondo2.png");
@@ -207,8 +208,7 @@
     <div class="h1">Login</div>
     <form onsubmit="handleSubmit(event)">
       <input
-        pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
-        placeholder="User" id="text" name="text" type="text" required>
+        placeholder="User" id="email" name="email" type="text" required>
       <input placeholder="Password" id="password" name="password" type="password" required>
       <input value="Login" class="btn" type="submit">
     </form>
@@ -220,3 +220,4 @@
 </html>
 <script src="/js/ocultarMarcaDeAgua.js"></script>
 <!--INSERT INTO users (email, password) VALUES ('admin@example.com', SHA2('password', 256));-->
+<!-- pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" -->
