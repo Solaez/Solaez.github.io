@@ -22,7 +22,7 @@ header {
     justify-content: space-around;
     transition: 0.7s;
     padding: 10px 20px;
-    z-index: 10;
+    z-index: 1000;
     align-items: center;
     box-shadow: 0px 24px 20px 0 rgba(0, 0, 0, 0.3);
     background: #ffffff;
@@ -356,8 +356,21 @@ header.abajo .dropdown-banderas-content,header.abajo .dropdown-gorras-content  {
 
 /*estilos para pantallas pequeñas, como celular,iPad Apps y tablet*/
 @media (max-width: 768px) {
-
-
+    header{
+        opacity: 100;
+        background: #ffffffa8;
+    }
+    header.abajo{
+        background: #4b4b4bd8;
+    }
+    header ul li a{
+        color: #fff;
+        font-size: 20px;
+    
+    }
+    .bar {
+        background-color: #ffffff;
+    }
 
     .dropdown:hover .dropdown-content {
         display: none;
@@ -380,13 +393,14 @@ header.abajo .dropdown-banderas-content,header.abajo .dropdown-gorras-content  {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #7e7e7e;
+        background-color: #000000be;
         z-index: 10;
         flex-direction: column;
         justify-content: flex-start;
         /* Cambio aquí */
         align-items: center;
         padding-top: 80px;
+        backdrop-filter: blur(10px);
         /* Nuevo */
     }
 

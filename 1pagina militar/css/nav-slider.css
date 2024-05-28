@@ -323,7 +323,9 @@
   }
   .fortalezas img{
     
-    width: 350px;
+    width: 160px;
+    height: 180px;
+    margin-inline: 67px;
   }
 
   /*marcas trabajadas*
@@ -384,6 +386,31 @@
   
   @media (max-width: 568px) {
 
+
+    
+    #dialog-box p {
+      color: #8b8b8b;
+      font-size: 9px;
+    }
+    #dialog-box {
+      left: 0;
+      height: 180px;
+      max-height: 300%;
+      margin-top: -40px;
+
+  }
+
+    
+  
+    .content-txt {
+      /*display: none;  Ocultar el contenido de texto */
+      top: 90px;
+      backdrop-filter: blur(8px);
+      padding: 10px;
+      width: 100%;
+      height: 65%;
+    }
+
   .institutos {
     height: 60px;
     top: -35px; /* Ajusta la posición vertical según necesites */
@@ -401,8 +428,10 @@
   .fortalezas{
     top: 120px;
   }
-  .fortalezas img{
-    width: 30vw;
+  .fortalezas img {
+      width: 90px;
+      height: 90px;
+      margin-inline: 10px;
   }
     #slider{
       height: 290px; /* Altura del 50% del viewport */
@@ -428,10 +457,6 @@
   @media screen and (max-width: 800px) {
 
   
-    
-    .fortalezas img{
-      width: 30vw;
-    }
       #slider{
         height: 290px; /* Altura del 50% del viewport */
       }

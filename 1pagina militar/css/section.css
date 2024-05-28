@@ -80,14 +80,14 @@
     }
     #dialog-box {
       left: 0; /* Reinicia la posición */
-      height: 300px; /* Ancho máximo del cuadro */
+      height: 150px; /* Ancho máximo del cuadro */
       max-height: 300%; /* Ancho máximo del cuadro */
 
     }
     
   .acerca-boton {
-    padding: 1vw 7vw; /*tamaño*/
-    top: 17rem;
+    top: 8rem;
+    font-size: 7px;
   }
   
 
@@ -384,6 +384,12 @@ form.form_contact select {
 /* Estilos para pantallas pequeñas *//* Ajustes para pantallas pequeñas */
 @media screen and (max-width: 768px) {
 
+  #dialog-box h1 {
+    color: #4b4949;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
   
   .info_title h2{
     font-size: 7vw;
