@@ -964,7 +964,19 @@
 
 
   @media screen and (max-width: 580px) {
-    
+    .wa__popup_chat_box.wa__active {
+      -ms-transform: translate(0, 0);
+      transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      visibility: visible;
+      opacity: 1;
+      border-radius: 10px;
+      scale: .7;
+      left: 76px;
+      bottom: 15px;
+  }
+
   .wa__btn_popup .wa__btn_popup_txt {
     display: none;
   }
