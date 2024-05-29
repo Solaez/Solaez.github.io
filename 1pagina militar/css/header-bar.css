@@ -138,6 +138,7 @@ header.abajo .logo img {
     margin: 5px auto;
     background-color: #383838;
     transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 header.abajo .bar {
@@ -369,7 +370,7 @@ header.abajo .dropdown-banderas-content,header.abajo .dropdown-gorras-content  {
     
     }
     .bar {
-        background-color: #ffffff;
+        background-color: #5e5e5e;
     }
 
     .dropdown:hover .dropdown-content {
