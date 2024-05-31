@@ -9,11 +9,35 @@
     
     margin: 20px;
     padding: 20px;
-    background-color: #f8f9fa; /* Color de fondo ligeramente diferente */
+    background-color: #f8f9fa; 
     border-radius: 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
     position: relative;
     top: 150px;
+  }
+  .ubicacion iframe:hover{
+    transition: transform .2s;
+    border-radius: 20px;
+    box-shadow: 0 0  10px rgba(0, 0, 0, .2);
+
+  }
+  .mapimagen{
+    width: 50%;
+    height: 82%;
+    display: block;
+    position: absolute;
+    top: 10%;
+    left:50%;
+    opacity: 0;
+    transition: opacity 0.5s ease,transform .2s;
+    border-radius: 17px;
+    transform: scale(0.5);
+  }
+
+  .mapImagen1:hover  .mapimagen{
+    display: block;
+    opacity: 1;
+    transform: scale(1);
   }
   
   .ubicacion h2 {
