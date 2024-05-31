@@ -15,10 +15,14 @@
     position: relative;
     top: 150px;
   }
+  .ubicacion iframe{
+    transition: border-radius .2s;
+
+  }
   .ubicacion iframe:hover{
-    transition: transform .2s;
     border-radius: 20px;
     box-shadow: 0 0  10px rgba(0, 0, 0, .2);
+    
 
   }
   .mapimagen{
