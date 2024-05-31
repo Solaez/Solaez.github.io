@@ -24,25 +24,6 @@
     box-shadow: 0 0  10px rgba(0, 0, 0, .2);
     
 
-  }
-  .mapimagen{
-    width: 50%;
-    height: 82%;
-    display: block;
-    position: absolute;
-    top: 10%;
-    left:50%;
-    opacity: 0;
-    transition: opacity 0.5s ease,transform .2s;
-    border-radius: 17px;
-    transform: scale(0.5);
-  }
-
-  .mapImagen1:hover  .mapimagen{
-    display: block;
-    opacity: 1;
-    transform: scale(1);
-  }
   
   .ubicacion h2 {
     margin-bottom: 15px;
