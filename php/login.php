@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-$servername = "localhost";
-$username = "id22234751_producciones";
+$servername = "www.produccionesleon.com";
+$username = "produc_produc";
 $password = "12Juni02005.";
-$dbname = "id22234751_chat";
+$dbname = "produc_id22234751_chat";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
