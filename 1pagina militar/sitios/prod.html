@@ -2312,6 +2312,159 @@
   </section>
 </footer>
 
+    <!--Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script>
+        function leerExcel() {
+            const url = 'productos.xlsx';
+            fetch(url)
+                .then(response => response.arrayBuffer())
+                .then(data => {
+                    const workbook = XLSX.read(data, { type: 'array' });
+                    const sheetName = workbook.SheetNames[0];
+                    const sheet = workbook.Sheets[sheetName];
+                    const productos = XLSX.utils.sheet_to_json(sheet);
+                    mostrarProductos(productos);
+                });
+        }
+
+        function mostrarProductos(productos) {
+            const productGrid = document.getElementById('product-grid');
+            productGrid.innerHTML = '';
+            productos.forEach(producto => {
+                const promocionHTML = producto.Promoción ? `<span class="span-nuevo">${producto.Promoción}</span>` : '';
+                const productHTML = `
+                    <div id="${producto.ID}" class="product" data-category="${producto.Categoría}">
+                        <div class="product-loader">
+                            <div class="spinner"></div>
+                        </div>
+                        ${promocionHTML}
+                        <img src="${producto['Imagen Principal']}" alt="${producto.Nombre}">
+                        <h3 class="titleproductos">${producto.Nombre}</h3>
+                        <button onclick="showProductDetails(event)">Seleccionar</button>
+                        <div class="product-details" style="display: none;">
+                            <img class="imag1" src="${producto['Imagen 1']}" alt="Imagen 1">
+                            <img class="imag2" src="${producto['Imagen 2']}" alt="Imagen 2">
+                            <img class="imag3" src="${producto['Imagen 3']}" alt="Imagen 3">
+                            <p class="descripcion">${producto.Descripción}</p>
+                            <p class="tipo">${producto.Tipo}</p>
+                            <p class="lugar">${producto.Ubicación}</p>
+                            <p class="precio">${producto['Precio Original']}</p>
+                            <p class="precio2">${producto['Precio Promoción']}</p>
+                        </div>
+                    </div>
+                `;
+                productGrid.innerHTML += productHTML;
+            });
+        }
+
+        function showProductDetails(event) {
+            const product = event.target.closest('.product');
+            const title = product.querySelector('h3').textContent;
+            const image = product.querySelector('img').src;
+            const description = product.querySelector('.descripcion').textContent;
+            const tipo = product.querySelector('.tipo').textContent;
+            const lugar = product.querySelector('.lugar').textContent;
+            const precio = product.querySelector('.precio').textContent;
+            const precio2 = product.querySelector('.precio2').textContent;
+            const imag1 = product.querySelector('.imag1').src;
+            const imag2 = product.querySelector('.imag2').src;
+            const imag3 = product.querySelector('.imag3').src;
+
+            const productDetails = document.getElementById('product-details');
+            productDetails.innerHTML = '';
+
+            const productHTML = `
+                <a href="#Productos"><button id="regresar-btn"><img class="mario" src="/1pagina civil/img/iconos/volver.png" alt="volver"></button></a>
+                <div class="detallesproductosmargen" style="display: flex; align-items: center;">
+                    <div>
+                        <img id="product1" src="${imag1}" onclick="changeMainImage(this.src)"><br>
+                        <img id="product2" src="${imag2}" onclick="changeMainImage(this.src)"><br>
+                        <img id="product3" src="${imag3}" onclick="changeMainImage(this.src)">
+                    </div>
+                    <div>
+                        <img id="productoImagen" src="${image}" alt="${title}" onclick="showEnlargedImage(this.src)">
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <h2 id="titleProducto">${title}</h2>
+                        <p id="tipoProducto"><b>Tipo:</b> ${tipo}</p>
+                        <p id="ubicacionProducto"><b>Ubicación:</b> ${lugar}</p>
+                        <p id="ubicacionProducto"><b>Precio:</b><del> ${precio}</del> - ${precio2}</p>
+                        <button id="pedir-producto" onclick="showPopup()">Pedir producto</button>
+                    </div>
+                </div>
+                <div>
+                    <h3 id="descripcionProducto2">Descripción del producto</h3>
+                    <p id="descripcionProducto">${description.replace(/\n/g, '<br>')}</p>
+                </div>
+            `;
+
+            productDetails.innerHTML = productHTML;
+            productDetails.style.display = 'block';
+
+            const productGrid = document.getElementById('product-grid');
+            productGrid.style.display = 'none';
+
+            const regresarBtn = document.getElementById('regresar-btn');
+            regresarBtn.addEventListener('click', () => {
+                productDetails.style.display = 'none';
+                productGrid.style.display = 'grid';
+            });
+        }
+
+        function changeMainImage(imageSrc) {
+            const mainImage = document.getElementById('productoImagen');
+            mainImage.src = imageSrc;
+        }
+
+        function showEnlargedImage(imageSrc) {
+            const enlargedImageContainer = document.createElement('div');
+            enlargedImageContainer.style.position = 'fixed';
+            enlargedImageContainer.style.top = '0';
+            enlargedImageContainer.style.left = '0';
+            enlargedImageContainer.style.width = '100%';
+            enlargedImageContainer.style.height = '100%';
+            enlargedImageContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+            enlargedImageContainer.style.display = 'flex';
+            enlargedImageContainer.style.justifyContent = 'center';
+            enlargedImageContainer.style.alignItems = 'center';
+            enlargedImageContainer.style.zIndex = '9999';
+            enlargedImageContainer.style.opacity = '0';
+            enlargedImageContainer.style.transition = 'opacity 0.3s ease';
+            enlargedImageContainer.style.backdropFilter = 'blur(5px)';
+
+            const enlargedImage = document.createElement('img');
+            enlargedImage.src = imageSrc;
+            enlargedImage.style.maxWidth = '90%';
+            enlargedImage.style.maxHeight = '90%';
+            enlargedImage.style.transform = 'scale(0.8)';
+            enlargedImage.style.transition = 'transform 0.3s ease';
+
+            enlargedImageContainer.appendChild(enlargedImage);
+            document.body.appendChild(enlargedImageContainer);
+
+            setTimeout(() => {
+                enlargedImageContainer.style.opacity = '1';
+                enlargedImage.style.transform = 'scale(1)';
+            }, 10);
+
+            enlargedImageContainer.addEventListener('click', () => {
+                enlargedImageContainer.style.opacity = '0';
+                enlargedImage.style.transform = 'scale(0.8)';
+
+                setTimeout(() => {
+                    document.body.removeChild(enlargedImageContainer);
+                }, 300);
+            });
+        }
+
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        window.addEventListener('DOMContentLoaded', leerExcel);
+    </script>
+
 <!--Scripts-->
 <script src="/js/chat.js"></script>
 <!--PRODUCTOS
