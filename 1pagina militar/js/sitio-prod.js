@@ -1,15 +1,14 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-    const products = document.querySelectorAll('#product-grid .product');
+    const productGrid = document.getElementById('product-grid');
+    const pagination = document.getElementById('pagination');
     const productsPerPage = 20;
+
 
     // Función para renderizar la paginación
     function renderPagination(products) {
-        const pagination = document.getElementById('pagination');
         pagination.innerHTML = '';
-
         const totalPages = Math.ceil(products.length / productsPerPage);
-
         for (let i = 1; i <= totalPages; i++) {
             const button = document.createElement('button');
             button.textContent = i;
@@ -21,28 +20,23 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Función para mostrar los productos en la página actual
+    // Función para mostrar los productos según la página seleccionada
     function showProducts(pageNumber, products) {
+        products.forEach(product => product.style.display = 'none');
         const startIndex = (pageNumber - 1) * productsPerPage;
         const endIndex = startIndex + productsPerPage;
-        products.forEach((product, index) => {
-            if (index >= startIndex && index < endIndex) {
-                product.style.display = 'block';
-            } else {
-                product.style.display = 'none';
-            }
-        });
+        for (let i = startIndex; i < endIndex && i < products.length; i++) {
+            products[i].style.display = 'block';
+        }
     }
-
-    // Función para actualizar el estilo del botón de página activa
+    // Función para actualizar la página activa en la paginación
     function updateActivePage(pageNumber) {
-        const paginationButtons = document.querySelectorAll('#pagination button');
-        paginationButtons.forEach(button => {
-            button.classList.remove('active');
-        });
-        paginationButtons[pageNumber - 1].classList.add('active');
+        const paginationButtons = pagination.querySelectorAll('button');
+        paginationButtons.forEach(button => button.classList.remove('active'));
+        if (paginationButtons[pageNumber - 1]) {
+            paginationButtons[pageNumber - 1].classList.add('active');
+        }
     }
-
     // Evento de clic para cada enlace de categoría
     document.querySelectorAll('.categories a').forEach(link => {
         link.addEventListener('click', function (e) {
@@ -52,47 +46,50 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-
     // Función para mostrar productos filtrados por categoría
     function showFilteredProducts(category) {
-        let filteredProducts = [];
-        products.forEach(product => {
+        const allProducts = Array.from(document.querySelectorAll('#product-grid .product'));
+        const filteredProducts = allProducts.filter(product => {
             const productCategory = product.getAttribute('data-category').split(',');
-            if (category === 'all' || productCategory.includes(category)) {
-                product.style.display = 'block';
-                filteredProducts.push(product);
-            } else {
-                product.style.display = 'none';
-            }
+            return category === 'all' || productCategory.includes(category);
         });
-        const pagination = document.getElementById('pagination');
-        pagination.innerHTML = '';
+
         renderPagination(filteredProducts);
         showProducts(1, filteredProducts);
         updateActivePage(1);
     }
 
-    // Agregar evento de clic a los enlaces del menú lateral
-    const categoriesMenuLinks = document.querySelectorAll('.categories-menu ul li a');
-    categoriesMenuLinks.forEach(link => {
+    // Agregar eventos a las categorías
+    document.querySelectorAll('.categories-menu a').forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
             const category = this.getAttribute('data-category');
             showFilteredProducts(category);
-
-            // Remover la clase 'active' de todos los enlaces
-            categoriesMenuLinks.forEach(link => link.classList.remove('active'));
-            this.classList.add('active');
+        });
+    });
+    
+    // Configuración del MutationObserver para manejar productos dinámicos
+    const observer = new MutationObserver(mutations => {
+        mutations.forEach(mutation => {
+            mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1 && node.matches('.product')) { // Verifica si el nodo añadido es un elemento de producto
+                    const allProducts = Array.from(document.querySelectorAll('#product-grid .product'));
+                    const activeCategory = document.querySelector('.categories-menu a.active');
+                    const category = activeCategory ? activeCategory.getAttribute('data-category') : 'all';
+                    showFilteredProducts(category);
+                }
+            });
         });
     });
 
-    // Inicializa la página
-    renderPagination(products);
-    showProducts(1, products);
-    updateActivePage(1);
+    // Observar cambios en el DOM en el contenedor de productos
+    observer.observe(productGrid, { childList: true, subtree: true });
 
-    // Inicializar con el filtro "camisas"
-    showFilteredProducts('all');
+    // Inicializar con los productos actuales
+    const initialProducts = Array.from(document.querySelectorAll('#product-grid .product'));
+    renderPagination(initialProducts);
+    showProducts(1, initialProducts);
+    updateActivePage(1);
 });
 
 
