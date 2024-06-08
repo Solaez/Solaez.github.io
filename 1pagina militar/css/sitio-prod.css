@@ -566,6 +566,7 @@ nav a:hover {
   bottom: 160px;
   color: #302f2f;
   margin-top: 131px;
+  max-width: 376px;
 }
 
 #tipoProducto,
