@@ -1,5 +1,6 @@
 <?php
-require 'vendor/autoload.php';
+session_start();
+require '../../phpConexion/vendor/autoload.php';
 
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
@@ -14,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $precio = $_POST['precio'];
     $precio_promocion = $_POST['precio_promocion'];
     $promocion = $_POST['promocion'];
-    
+     
     // Crear la carpeta imagenesProductos si no existe
     $uploadsDir = 'imagenesProductos';
     if (!is_dir($uploadsDir)) {
@@ -49,18 +50,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $sheet = $spreadsheet->getActiveSheet();
         // Definir encabezados
         $sheet->setCellValue('A1', 'ID');
-        $sheet->setCellValue('B1', 'Nombre');
-        $sheet->setCellValue('C1', 'Categoría');
-        $sheet->setCellValue('D1', 'Descripción');
-        $sheet->setCellValue('E1', 'Tipo');
-        $sheet->setCellValue('F1', 'Ubicación');
-        $sheet->setCellValue('G1', 'Precio Original');
-        $sheet->setCellValue('H1', 'Precio Promoción');
-        $sheet->setCellValue('I1', 'Promoción');
-        $sheet->setCellValue('J1', 'Imagen Principal');
-        $sheet->setCellValue('K1', 'Imagen 1');
-        $sheet->setCellValue('L1', 'Imagen 2');
-        $sheet->setCellValue('M1', 'Imagen 3');
+        $sheet->setCellValue('B1', 'Categoría');
+        $sheet->setCellValue('C1', 'Nombre');
+        $sheet->setCellValue('D1', 'Imagen Principal');
+        $sheet->setCellValue('E1', 'Imagen 1');
+        $sheet->setCellValue('F1', 'Imagen 2');
+        $sheet->setCellValue('G1', 'Imagen 3');
+        $sheet->setCellValue('H1', 'Descripción');
+        $sheet->setCellValue('I1', 'Tipo');
+        $sheet->setCellValue('J1', 'Ubicación');
+        $sheet->setCellValue('K1', 'Precio Original');
+        $sheet->setCellValue('L1', 'Precio Promoción');
+        $sheet->setCellValue('M1', 'Promoción');
     }
 
     $sheet = $spreadsheet->getActiveSheet();
@@ -99,8 +100,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Guardar el archivo Excel
         $writer = new Xlsx($spreadsheet);
         $writer->save($filePath);
+        
 
-        echo "Producto guardado exitosamente.";
+        // echo "Producto guardado exitosamente.";
+        // Mostrar la alerta y redirigir
+        echo "<script>alert('Producto guardado exitosamente.'); window.location.href = '/admin/new/index.php';</script>";
+        exit;
+
     }
 }
 ?>

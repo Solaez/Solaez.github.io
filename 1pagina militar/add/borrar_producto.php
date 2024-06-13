@@ -1,12 +1,12 @@
 <?php
-require 'vendor/autoload.php';
+require '../../phpConexion/vendor/autoload.php';
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 if (isset($_GET['id'])) {
     $idToDelete = $_GET['id'];
-    $filePath = 'productos.xlsx';
+    $filePath = '../../1pagina militar/add/productos.xlsx';
 
     $spreadsheet = IOFactory::load($filePath);
     $sheet = $spreadsheet->getActiveSheet();
@@ -41,11 +41,10 @@ if (isset($_GET['id'])) {
 <html>
 <head>
     <title>Eliminar Producto</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container mt-5">
-        <a href="listar_productos.php" class="btn btn-primary">Volver al listado de productos</a>
+        <a href="../../admin/edit/index.php" class="btn btn-primary"><img src="https://img.icons8.com/metro/26/undo.png" alt="regresar"></a>
     </div>
 </body>
 </html>

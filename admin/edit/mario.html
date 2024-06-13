@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocultar párrafo con hover</title>
+    <style>
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .btn img {
+            margin-left: 10px;
+        }
+        .btn:hover p {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">
+        <p>Este es el párrafo que se ocultará.</p>
+        <img src="https://via.placeholder.com/20" alt="Ocultar">
+    </button>
+</body>
+</html>
