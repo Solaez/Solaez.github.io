@@ -232,8 +232,8 @@
         <div class="carousel2">
           <div class="carousel-item">
             <span class="ofer-sticker">¡Oferta!</span>
-            <img src="/1pagina militar/img/productos/camisa/negro/camisa3.png" alt="Product 1" onload="hideLoader(this)">
-            <h3>Producto 1</h3>
+            <img src="/1pagina militar/add/imagenesProductos/2.png" alt="Product 1" onload="hideLoader(this)">
+            <h3>Bolso militar, Bolsa de Viaje o tula</h3>
             <p class="description">Descripción del Producto 1</p>
             <a href="/1pagina militar/sitios/prod.php#PRODUCTO1" id="redirigir-btn">
               <button class="boton-ver-inicio">Comprar</button>
@@ -347,7 +347,4 @@
 
 
 <!--cursor-->
-<div class="cursor-container">
-  <div class="cursor"></div>
-  <link rel="stylesheet" href="/1pagina militar/css/cursor.css">
-  <script src="/1pagina militar/js/cursor.js"></script>
+<?php require '../../1pagina militar/src/cursor.php'; ?>

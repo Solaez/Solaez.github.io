@@ -78,7 +78,6 @@
 
 
 <!--Scripts-->
-<script src="/js/chat.js"></script>
 <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script> 
@@ -127,6 +126,7 @@
   }
 </script>
 <!------------------------------------------------------------------------------------->
+<script src="/js/chat.js"></script>
 <script src="/1pagina militar/js/header-bar.js"></script>
 <script src="/1pagina militar/js/article.js"></script>
 <script src="/1pagina militar/js/whatsapp.js"></script>
@@ -135,7 +135,4 @@
 </html>
 
 <!--cursor-->
-<div class="cursor-container">
-  <div class="cursor"></div>
-  <link rel="stylesheet" href="/1pagina militar/css/cursor.css">
-  <script src="/1pagina militar/js/cursor.js"></script>
+<?php require '../../1pagina militar/src/cursor.php'; ?>
