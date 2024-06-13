@@ -1,5 +1,6 @@
 <?php
-require 'vendor/autoload.php';
+require '../../phpConexion/vendor/autoload.php';
+
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
 // Ruta del archivo Excel

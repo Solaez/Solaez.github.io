@@ -1,9 +1,9 @@
 <?php
-require 'vendor/autoload.php';
+require '../../phpConexion/vendor/autoload.php';
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
-$filePath = 'productos.xlsx';
+$filePath = '../../1pagina militar/add/productos.xlsx';
 
 $spreadsheet = IOFactory::load($filePath);
 $sheet = $spreadsheet->getActiveSheet();
@@ -55,18 +55,17 @@ if (isset($_GET['categoria'])) {
     }
 }
 ?>
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <head>
     <title>Listado de Productos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body>
+<body> -->
 <div class="container mt-5">
-    <h1 class="mb-4">Listado de Productos</h1>
 
-    <form method="GET" action="listar_productos.php" class="form-inline mb-4">
+    <form method="GET" action="../../admin/edit/index.php" class="form-inline mb-4">
         <label for="categoria" class="mr-2">Filtrar por Categoría:</label>
         <select name="categoria" id="categoria" class="form-control mr-2">
             <option value="Todas">Todas</option>
@@ -98,20 +97,20 @@ if (isset($_GET['categoria'])) {
                 <td><?php echo $producto['ID']; ?></td>
                 <td><?php echo $producto['Categoría']; ?></td>
                 <td><?php echo $producto['Nombre']; ?></td>
-                <td><?php echo $producto['Descripción']; ?></td>
+                <td class="descripcionTD"><?php echo $producto['Descripción']; ?></td>
                 <td><?php echo $producto['Tipo']; ?></td>
                 <td><?php echo $producto['Ubicación']; ?></td>
                 <td><?php echo $producto['Precio']; ?></td>
                 <td><?php echo $producto['Precio Promoción']; ?></td>
                 <td><?php echo $producto['Promoción']; ?></td>
-                <td>
-                    <a href="editar_producto.php?id=<?php echo $producto['ID']; ?>" class="btn btn-warning btn-sm">Editar</a>
-                    <a href="borrar_producto.php?id=<?php echo $producto['ID']; ?>" class="btn btn-danger btn-sm">Eliminar</a>
+                <td class=botonTD>
+                    <a href="../../admin/edit/editar.php?id=<?php echo $producto['ID']; ?>" class="btn btn-warning btn-sm">Editar</a>
+                    <a href="../../admin/edit/borrar.php?id=<?php echo $producto['ID']; ?>" class="btn btn-danger btn-sm">Eliminar</a>
                 </td>
             </tr>
         <?php endforeach; ?>
         </tbody>
     </table>
 </div>
-</body>
-</html>
+<!-- </body>
+</html> -->

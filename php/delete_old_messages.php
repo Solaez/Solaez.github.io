@@ -1,9 +1,8 @@
 <?php
-$servername = "www.produccionesleon.com";
-$username = "produc_produc";
-$password = "12Juni02005.";
-$dbname = "produc_id22234751_chat";
-
+$servername = "localhost";
+$username = "produc_chat";
+$password = "produc_chat";
+$dbname = "produc_chat";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);

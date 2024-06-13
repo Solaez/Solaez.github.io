@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-$servername = "www.produccionesleon.com";
-$username = "produc_produc";
-$password = "12Juni02005.";
-$dbname = "produc_id22234751_chat";
+$servername = "localhost";
+$username = "produc_chat";
+$password = "produc_chat";
+$dbname = "produc_chat";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -24,6 +24,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->bind_param("ss", $email, $password);
     $stmt->execute();
     $result = $stmt->get_result();
+    $stmt->bind_result($id, $username, $email);
+
     
     if ($result->num_rows > 0) {
         $_SESSION['user'] = $email;
