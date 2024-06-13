@@ -52,7 +52,7 @@
                 <audio id="notification-sound" src="/sound/notificacion.mp3"></audio>
             </div>
         </div>
-        <?php require '../../php/menu.php'; ?>
+        <?php require '../../php/menu2.php'; ?>
     </div>
 
     <?php require '../../admin/loading.php'; ?>

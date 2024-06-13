@@ -108,7 +108,4 @@
 </body>
 </html>
 <!--cursor-->
-<div class="cursor-container">
-  <div class="cursor"></div>
-  <link rel="stylesheet" href="/1pagina militar/css/cursor.css">
-  <script src="/1pagina militar/js/cursor.js"></script>
+<?php require '../../1pagina militar/src/cursor.php'; ?>

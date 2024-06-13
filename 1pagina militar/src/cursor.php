@@ -1,4 +1,7 @@
-/* Estilos para el cursor personalizado */
+<div class="cursor-container">
+<div class="cursor"></div>
+<style>
+    /* Estilos para el cursor personalizado */
 .cursor-container {
   position: fixed;
   top: 0;
@@ -95,3 +98,20 @@
     display: block;
   }
 }
+
+</style>
+<script>
+    const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', (e) => {
+  cursor.style.left = `${e.clientX - cursor.offsetWidth / 2}px`;
+  cursor.style.top = `${e.clientY - cursor.offsetHeight / 2}px`;
+});
+
+document.addEventListener('click', () => {
+  cursor.classList.add('expand');
+  setTimeout(() => {
+    cursor.classList.remove('expand');
+  }, 500);
+});
+</script>

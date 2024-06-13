@@ -19,463 +19,282 @@
 </head>
 <body>
    
-    <!--Header Barra de navegación-->
-<header class="header1">
-  <div class="header-container">
-      <a href="/index.php" class="logo">
-          <img src="/1pagina civil/img/iconos/LOGO hd.png" alt="Logo">
-      </a>
-      <nav>
-          <ul class="nav-links">
-              <li><a href="/1pagina civil/sitios/inicio.php">Inicio</a></li>
-              <li class="dropdown">
-                <a href="/1pagina civil/sitios/prod.php#Productos">Productos▾</a>
-                <div class="dropdown-content">
+  <!--Header Barra de navegación-->
+  <?php require '../../1pagina civil/src/header.php'; ?>
 
-                  <a href="/1pagina civil/sitios/prod.php#acesorio">Acesorios</a>
-                    <!-- Agregar el nuevo dropdown de camisas -->
-                    <div class="dropdown-camisas">
-                        <a href="/1pagina civil/sitios/prod.php#camisas">Ropa▾</a>
-                        <div class="dropdown-camisas-content">
-                            <a href="/1pagina civil/sitios/prod.php#camibuso" >Camibusos</a>
-                            <a href="/1pagina civil/sitios/prod.php#camisas" >Camisas</a>
-                            <a href="/1pagina civil/sitios/prod.php#pantalone">pantalones</a>
-                        </div>
-                    </div>
-                    <a href="/1pagina civil/sitios/prod.php#bolsos">Bolsos</a>
-                    <!-- Agregar el nuevo dropdown de estampados -->
-                    <div class="dropdown-camisas">
-                      <a href="/1pagina civil/sitios/prod.php#estampados">Estampados▾</a>
-                      <div class="dropdown-estampados-content">
-                          <a href="/1pagina civil/sitios/prod.php#estampados">Estampados</a>
-                          <a href="/1pagina civil/sitios/prod.php#personalizado">Personalizados</a>
-                      </div>
-                  </div>
-                  <!-- Agregar el nuevo dropdown de gorras -->
-                  <div class="dropdown-camisas">
-                    <a href="/1pagina civil/sitios/prod.php#gorra">Gorras▾</a>
-                    <div class="dropdown-gorras-content">
-                        <a href="/1pagina civil/sitios/prod.php#boina">Boinas</a>
-                        <a href="/1pagina civil/sitios/prod.php#gorra">Gorras</a>
-                        <a href="/1pagina civil/sitios/prod.php#pava">Pavas</a>
-                        <a href="/1pagina civil/sitios/prod.php#cascos">casco</a>
-                    </div>
-                  </div>
-                  <!-- Agregar el nuevo dropdown de Seguridad▾ -->
-                    <a href="/1pagina civil/sitios/prod.php#promocion">Ofertas</a>
-                </div>
-              </li>
-              <li><a href="/1pagina civil/sitios/ubic.php">Ubicación</a></li>
-              <li><a href="/1pagina civil/sitios/cont.php">Contacto </a></li>
-              <li><a href="/1pagina civil/sitios/acer.php">Acerca de</a></li>
-          </ul>
-          <div class="toggle-button">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-          </div>
-      </nav>
-  </div>
-</header>  
-
-    <!--Imagenes de paso sliter-->
-    <nav>
-        <div id="slider">
-            <div class="slides">
-              <div class="slider">
-                <div class="legend"></div>
-                <div class="content">
-                  <div class="content-txt">
-                    <h1>Mejores precios</h1>
-                    <h2>Súper precios en tus <br>artículos favoritos.</h2>
-                    <a href="/1pagina civil/sitios/prod.php">
-                    <button class="inicio-boton">
-                      Ver mas detalles
-                    </button></a>
-                  </div>
-                </div>
-                <div class="image">
-                  <img src="/1pagina civil/img/imagenes/slite/slite1.webp">
+  <!--Imagenes de paso sliter-->
+  <nav>
+      <div id="slider">
+          <div class="slides">
+            <div class="slider">
+              <div class="legend"></div>
+              <div class="content">
+                <div class="content-txt">
+                  <h1>Mejores precios</h1>
+                  <h2>Súper precios en tus <br>artículos favoritos.</h2>
+                  <a href="/1pagina civil/sitios/prod.php">
+                  <button class="inicio-boton">
+                    Ver mas detalles
+                  </button></a>
                 </div>
               </div>
-              <div class="slider">
-                <div class="legend"></div>
-                <div class="content">
-                  <div class="content-txt">
-                    <h1>Somos fabricantes</h1>
-                    <h2>Expertos en artículos militares, bordados, impresión DTF, sublimación y calandra.</h2>
-                  </div>
-                </div>
-                <div class="image">
-                  <img src="/1pagina civil/img/imagenes/slite/slite4.png">
+              <div class="image">
+                <img src="/1pagina civil/img/imagenes/slite/slite1.webp">
+              </div>
+            </div>
+            <div class="slider">
+              <div class="legend"></div>
+              <div class="content">
+                <div class="content-txt">
+                  <h1>Somos fabricantes</h1>
+                  <h2>Expertos en artículos militares, bordados, impresión DTF, sublimación y calandra.</h2>
                 </div>
               </div>
-        </div>
-          
-    </nav>
-
-<!--marcas trabajadas-->
-    <article>
-      <div class="cuerpo">
-        <div><img src="/1pagina civil/img/imagenes/instituciones/2.png" alt=""></div>
+              <div class="image">
+                <img src="/1pagina civil/img/imagenes/slite/slite4.png">
+              </div>
+            </div>
       </div>
-    </article>
-
-<!--Productos de inicio-->
-<article>
-  <div class="productos-home">
-    <div class="produc-home"><img  src="/1pagina civil/img/productos/camisa/CS001/1.webp" alt="produc"><button>ver</button></div>
-    <div class="produc-home"><img  src="/1pagina civil/img/productos/camisa/CS001/1.webp" alt="produc"><button>ver</button></div>
-    <div class="produc-home"><img  src="/1pagina civil/img/productos/camisa/CS001/1.webp" alt="produc"><button>ver</button></div>
-    <div class="produc-home"><img  src="/1pagina civil/img/productos/camisa/CS001/1.webp" alt="produc"><button>ver</button></div>
-    <div class="produc-home"><img  src="/1pagina civil/img/productos/camisa/CS001/1.webp" alt="produc"><button>ver</button></div>
-    <div class="produc-home"><img  src="/1pagina civil/img/productos/camisa/CS001/1.webp" alt="produc"><button>ver</button></div>
-  </div>
-</article>
-
-<article>
-  <div class="quiernesSomos">
-    <div class="quiernesT"><center><h1>¿Quienes somos?</h1></center></div>
-    <div class="quienesD">
-      Somos fabricantes y ofrecemos una amplia variedad de parches bordados,<br>
-       tanto militares como civiles, para todo tipo de prendas, como guerreras,<br>
-        gorras y chaquetas, entre otros. La empresa vende ropa tanto para uso <br> 
-        militar como civil, satisfaciendo las necesidades de <br>
-        profesionales del sector y aficionados.</div>
-    <div class="quienesB"><a href="/1pagina civil/sitios/acer.php"><button>Ver mas detalles</button></a></div>
-
-  </div>
-  <div>
-    <img src="/1pagina civil/img/imagenes/fortalezas/1.png" alt="" style="width: 70%; max-width: 100rem; margin-top: 50px; ">
-  </div>
-</article>
-    <!--Articulos de venta inicio-->
-    <article>
         
-      <div class="carousel-container">
-      <h2 class="title-produc">Productos más destacados</h2>
-        <div class="carousel">
-          <div class="carousel-item">
-            <img src="/1pagina civil/img/productos/camisa/negro/camisa3.png" alt="Product 1" onload="hideLoader(this)">
-            <h3>Producto 1</h3>
-            <p class="description">Descripción del Producto 1</p>
-            <a href="/1pagina civil/sitios/prod.php#PRODUCTO1" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-          
-          <div class="carousel-item">
-            <img src="/1pagina civil/img/productos/camisa/camisa roja/camisa 1.png" alt="Product 2">
-            <h3>Producto 2</h3>
-            <p class="description">Descripción del Producto 2</p>
-            <a href="/1pagina civil/sitios/prod.php#PRODUCTO3" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
+  </nav>
 
-          <div class="carousel-item">
-            <img src="/1pagina civil/img/productos/cascos/casco1/casco1.png" alt="Product 3">
-            <h3>Producto 3</h3>
-            <p class="description">Descripción del Producto 3</p>
-            <a href="/1pagina civil/sitios/prod.php#PRODUCTO5" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
-          <div class="carousel-item">
-            <img src="/1pagina civil/img/productos/camisa/amarilla/camisa2.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina civil/sitios/prod.php#PRODUCTO2" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-
-          </div>
-          <div class="carousel-item">
-            <span class="ofer-sticker">Oferta</span>
-            <img src="/1pagina civil/img/productos/bordados/bordado circulo/bordado1.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina civil/sitios/prod.php#PRODUCTO6" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
-          <div class="carousel-item">
-            <span class="ofer-sticker">Oferta</span>
-            <img src="/1pagina civil/img/productos/bordados/bordado figura/bordado1.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina civil/sitios/prod.php#PRODUCTO7" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
-          <div class="carousel-item">
-            <img src="/1pagina civil/img/productos/bordados/bordado triangulo/bordado1.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina civil/sitios/prod.php#PRODUCTO8" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
-          <div class="carousel-item">
-            <img src="/1pagina civil/img/productos/busos/buso.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina civil/sitios/prod.php#PRODUCTO4" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-          <!-- Agrega más elementos según sea necesario -->
-        </div>
-        <button class="prev" onclick="prevSlide(); resetTimer()">❮</button>
-        <button class="next" onclick="nextSlide(); resetTimer()">❯</button>
-        
-      <a href="/1pagina civil/sitios/prod.php#destacados"><button class="ver-mas-venta">
-        <img src="https://img.icons8.com/fluency-systems-filled/48/checkout.png">
-      </button></a>
-      </div>
-      
-      
-
-    </article>
-
-    <!--Ofertas de ventas inicio-->
-    <article>
-        
-      <div class="carousel-container">
-      <h2 class="title-produc">¡Ofertas Especiales!</h2>
-        <div class="carousel2">
-          <div class="carousel-item">
-            <span class="ofer-sticker">¡Oferta!</span>
-            <img src="/1pagina civil/img/productos/camisa/negro/camisa3.png" alt="Product 1" onload="hideLoader(this)">
-            <h3>Producto 1</h3>
-            <p class="description">Descripción del Producto 1</p>
-            <a href="/1pagina civil/sitios/prod.php#PRODUCTO1" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-          
-          <div class="carousel-item">
-            <span class="ofer-sticker">Oferta</span>
-            <img src="/1pagina civil/img/productos/camisa/camisa roja/camisa 1.png" alt="Product 2">
-            <h3>Producto 2</h3>
-            <p class="description">Descripción del Producto 2</p>
-            <a href="/1pagina civil/sitios/prod.php#PRODUCTO3" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
-          <div class="carousel-item">
-            <span class="ofer-sticker">¡Oferta!</span>
-            <img src="/1pagina civil/img/productos/cascos/casco1/casco1.png" alt="Product 3">
-            <h3>Producto 3</h3>
-            <p class="description">Descripción del Producto 3</p>
-            <a href="/1pagina civil/sitios/prod.php#PRODUCTO5" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
-          <div class="carousel-item">
-            <span class="ofer-sticker">Oferta</span>
-            <img src="/1pagina civil/img/productos/camisa/amarilla/camisa2.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina civil/sitios/prod.php#PRODUCTO2" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-
-          </div>
-          <div class="carousel-item">
-            <span class="ofer-sticker">Oferta</span>
-            <img src="/1pagina civil/img/productos/bordados/bordado circulo/bordado1.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina civil/sitios/prod.php#PRODUCTO6" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
-          <div class="carousel-item">
-            <span class="ofer-sticker">Oferta</span>
-            <img src="/1pagina civil/img/productos/bordados/bordado figura/bordado1.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina civil/sitios/prod.php#PRODUCTO7" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
-          <div class="carousel-item">
-            <span class="ofer-sticker">Oferta</span>
-            <img src="/1pagina civil/img/productos/bordados/bordado triangulo/bordado1.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina civil/sitios/prod.php#PRODUCTO8" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
-          <div class="carousel-item">
-            <span class="ofer-sticker">Oferta</span>
-            <img src="/1pagina civil/img/productos/busos/buso.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina civil/sitios/prod.php#PRODUCTO4" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-          <!-- Agrega más elementos según sea necesario -->
-        </div>
-        <button class="prev" onclick="prevSlide2(); resetTimer2()">❮</button>
-        <button class="next" onclick="nextSlide2(); resetTimer2()">❯</button>
-
-        <a href="/1pagina civil/sitios/prod.php#promocion">
-        <button class="ver-mas-venta">
-        <img src="https://img.icons8.com/fluency-systems-filled/48/checkout.png">
-      </button></a>
-      </div>
-      
-      
-
-    </article>
-
-
-    <article class="help">
-  
-      <div id="chat-container" style="display: none;">
-          <div id="chat-header">
-              <h2>Chat de Atención</h2>
-              <button id="closeBtn" onclick="closeChat()">X</button>
-          </div>
-          <div id="chatbox"></div>
-          <div id="message-container">
-              <input type="text" id="message" placeholder="Escribe un mensaje">
-              <button id="sendBtn">Enviar</button>
-          </div>
-      </div>
-      <div id="usernameInput">
-          <input type="text" id="user" placeholder="Tu nombre">
-          <button onclick="saveUsername()">⨠</button>
-      </div>
-      <button id="openUserBtn" onclick="openUsernameInput()"><img src="https://img.icons8.com/ios-glyphs/30/user--v1.png" ></button>
-      
-  </article>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-  <!--red social-->
+  <!--marcas trabajadas-->
   <article>
-    <!-- partial:index.partial.php -->
-    <div class="wa__btn_popup">
-      <div class="wa__btn_popup_txt">Nesecitas ayuda? <strong>¡Habla con nosotros!</strong></div>
-      <div class="wa__btn_popup_icon" onclick="toggle()">
-        <img class="wpmg" src="https://img.icons8.com/color/48/000000/whatsapp.png" />
-      </div>
+    <div class="cuerpo">
+      <div><img src="/1pagina civil/img/imagenes/instituciones/2.png" alt=""></div>
     </div>
-    <div id="button" class="wa__popup_chat_box wa__pending">
-      <div class="wa__popup_heading">
-        <div class="wa__popup_title">Iniciar uma conversación</div>
-        <div class="wa__popup_intro">
-          ¡Hola! Haga clic en uno de nuestros miembros a continuación para chatear en <strong>WhatsApp ;)</strong>
-          <div id="\&quot;eJOY__extension_root\&quot;"></div>
-        </div>
-      </div>
-      <!-- /.wa__popup_heading -->
-      <div class="wa__popup_content wa__popup_content_left">
-        <div class="wa__popup_notice">El equipo generalmente responde en unos minutos.</div>
-        <div class="wa__popup_content_list">
-          <div class="wa__popup_content_item ">
-            <a target="_blank" href="https://web.whatsapp.com/send?phone=573217291894&text=¡Hola!%20Me%20gustaría%20obtener%20ayuda%20con%20[describe%20tu%20problema%20o%20consulta%20breve].%20¿Podrían%20por%20favor%20asistirme?%20Gracias."
-              class="wa__stt wa__stt_online">
-              <div class="wa__popup_avatar">
-                <div class="wa__cs_img_wrap"> <img style="width:48px"
-                    src="/1pagina militar/img/iconos/LOGO hd.png"> </div>
-              </div>
-              <div class="wa__popup_txt">
-                <div class="wa__member_name">Servicio al Cliente</div>
-                <!-- /.wa__member_name -->
-                <div class="wa__member_duty">Soporte</div>
-                <!-- /.wa__member_duty -->
-              </div>
-              <!-- /.wa__popup_txt -->
-            </a>
-          </div>
-        </div>
-        <!-- /.wa__popup_content_list -->
-      </div>
-      <!-- /.wa__popup_content -->
-    </div>
-    <!-- partial -->
-    <script src="./script.js"></script>
   </article>
-  
-  <!--footer-->
-  <footer>
+
+  <!--Productos de inicio-->
+  <article>
+    <div class="productos-home">
+      <div class="produc-home"><img  src="/1pagina civil/img/productos/camisa/CS001/1.webp" alt="produc"><button>ver</button></div>
+      <div class="produc-home"><img  src="/1pagina civil/img/productos/camisa/CS001/1.webp" alt="produc"><button>ver</button></div>
+      <div class="produc-home"><img  src="/1pagina civil/img/productos/camisa/CS001/1.webp" alt="produc"><button>ver</button></div>
+      <div class="produc-home"><img  src="/1pagina civil/img/productos/camisa/CS001/1.webp" alt="produc"><button>ver</button></div>
+      <div class="produc-home"><img  src="/1pagina civil/img/productos/camisa/CS001/1.webp" alt="produc"><button>ver</button></div>
+      <div class="produc-home"><img  src="/1pagina civil/img/productos/camisa/CS001/1.webp" alt="produc"><button>ver</button></div>
+    </div>
+  </article>
+
+  <article>
+    <div class="quiernesSomos">
+      <div class="quiernesT"><center><h1>¿Quienes somos?</h1></center></div>
+      <div class="quienesD">
+        Somos fabricantes y ofrecemos una amplia variedad de parches bordados,<br>
+        tanto militares como civiles, para todo tipo de prendas, como guerreras,<br>
+          gorras y chaquetas, entre otros. La empresa vende ropa tanto para uso <br> 
+          militar como civil, satisfaciendo las necesidades de <br>
+          profesionales del sector y aficionados.</div>
+      <div class="quienesB"><a href="/1pagina civil/sitios/acer.php"><button>Ver mas detalles</button></a></div>
+
+    </div>
+    <div>
+      <img src="/1pagina civil/img/imagenes/fortalezas/1.png" alt="" style="width: 70%; max-width: 100rem; margin-top: 50px; ">
+    </div>
+  </article>
+
+  <!--Articulos de venta inicio-->
+  <article>
+      
+    <div class="carousel-container">
+    <h2 class="title-produc">Productos más destacados</h2>
+      <div class="carousel">
+        <div class="carousel-item">
+          <img src="/1pagina civil/img/productos/camisa/negro/camisa3.png" alt="Product 1" onload="hideLoader(this)">
+          <h3>Producto 1</h3>
+          <p class="description">Descripción del Producto 1</p>
+          <a href="/1pagina civil/sitios/prod.php#PRODUCTO1" id="redirigir-btn">
+            <button class="boton-ver-inicio">Comprar</button>
+          </a>
+        </div>
+        
+        <div class="carousel-item">
+          <img src="/1pagina civil/img/productos/camisa/camisa roja/camisa 1.png" alt="Product 2">
+          <h3>Producto 2</h3>
+          <p class="description">Descripción del Producto 2</p>
+          <a href="/1pagina civil/sitios/prod.php#PRODUCTO3" id="redirigir-btn">
+            <button class="boton-ver-inicio">Comprar</button>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <img src="/1pagina civil/img/productos/cascos/casco1/casco1.png" alt="Product 3">
+          <h3>Producto 3</h3>
+          <p class="description">Descripción del Producto 3</p>
+          <a href="/1pagina civil/sitios/prod.php#PRODUCTO5" id="redirigir-btn">
+            <button class="boton-ver-inicio">Comprar</button>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <img src="/1pagina civil/img/productos/camisa/amarilla/camisa2.png" alt="Product 4">
+          <h3>Producto 4</h3>
+          <p class="description">Descripción del Producto 4</p>
+          <a href="/1pagina civil/sitios/prod.php#PRODUCTO2" id="redirigir-btn">
+            <button class="boton-ver-inicio">Comprar</button>
+          </a>
+
+        </div>
+        <div class="carousel-item">
+          <span class="ofer-sticker">Oferta</span>
+          <img src="/1pagina civil/img/productos/bordados/bordado circulo/bordado1.png" alt="Product 4">
+          <h3>Producto 4</h3>
+          <p class="description">Descripción del Producto 4</p>
+          <a href="/1pagina civil/sitios/prod.php#PRODUCTO6" id="redirigir-btn">
+            <button class="boton-ver-inicio">Comprar</button>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <span class="ofer-sticker">Oferta</span>
+          <img src="/1pagina civil/img/productos/bordados/bordado figura/bordado1.png" alt="Product 4">
+          <h3>Producto 4</h3>
+          <p class="description">Descripción del Producto 4</p>
+          <a href="/1pagina civil/sitios/prod.php#PRODUCTO7" id="redirigir-btn">
+            <button class="boton-ver-inicio">Comprar</button>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <img src="/1pagina civil/img/productos/bordados/bordado triangulo/bordado1.png" alt="Product 4">
+          <h3>Producto 4</h3>
+          <p class="description">Descripción del Producto 4</p>
+          <a href="/1pagina civil/sitios/prod.php#PRODUCTO8" id="redirigir-btn">
+            <button class="boton-ver-inicio">Comprar</button>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <img src="/1pagina civil/img/productos/busos/buso.png" alt="Product 4">
+          <h3>Producto 4</h3>
+          <p class="description">Descripción del Producto 4</p>
+          <a href="/1pagina civil/sitios/prod.php#PRODUCTO4" id="redirigir-btn">
+            <button class="boton-ver-inicio">Comprar</button>
+          </a>
+        </div>
+        <!-- Agrega más elementos según sea necesario -->
+      </div>
+      <button class="prev" onclick="prevSlide(); resetTimer()">❮</button>
+      <button class="next" onclick="nextSlide(); resetTimer()">❯</button>
+      
+    <a href="/1pagina civil/sitios/prod.php#destacados"><button class="ver-mas-venta">
+      <img src="https://img.icons8.com/fluency-systems-filled/48/checkout.png">
+    </button></a>
+    </div>
     
-  
-    <!-- Footer main -->
-    <section class="ft-main">
-      <div class="ft-main-item">
-        <h2 class="ft-title"><b>Contactenos</b></h2>
-        <ul>
-          <li><b>Email</b><br><a href="mailto:soldado.leon@hotmail.com">soldado.leon@hotmail.com</a></li><br>
-          <li><b>Telefono</b><br>2222177</li><br>
-          <li><b>Soporte</b><br>lun - sab 7:00am - 5:00pm</li>
-        </ul>
-      </div>
-      <div class="ft-main-item">
-        <h2 class="ft-title"><b>Ubicación</b></h2>
-        <ul>
-          <li><b>Direcciòn</b><br>Carrera 21 # 45-18 </li><br>
-          <li><b>Ubicaciones</b><br><a href="/1pagina militar/sitios/ubic.php">Ver ubicaciones</a></li><br>
-          <li><b>Medellin, Antioqui</b></li>
-        </ul>
-      </div>
-      <div class="ft-main-item">
-        <h2 class="ft-title"><b>Enviame un correo</b></h2>
-        <p>Cualquier duda nos puedes escribir al gmail.</p>
-        <form class="email-form">
-          <input class="email-input" type="email" name="email" placeholder="Enter email address">
-          <input class="email-input" type="submit" value="ENVIAR">
-        </form>
-      </div>
-    </section>
+    
 
-    <!-- Footer social -->
-    <section class="ft-social">
-      <ul class="ft-social-list">
-        <li><a href="https://www.facebook.com/produccionesleon2021/?locale=es_LA"><img
-              src="/1pagina militar/img/redes sociales/facebook.png" alt=""></li>
-        <li><a href="https://www.instagram.com/producciones_leon/?hl=es"><img src="/1pagina militar/img/redes sociales/instagram.png"
-              alt=""></li>
-        <li><a href="https://www.youtube.com/@produccionesleon2457"><img src="/1pagina militar/img/redes sociales/youtube.png" alt="">
-        </li>
-        <li><a href="https://web.whatsapp.com/"><img src="/1pagina militar/img/redes sociales/whatsapp.png" alt=""></li>
-      </ul>
-    </section>
+  </article>
 
-    <!-- Footer legal -->
-    <section class="ft-legal">
-      <ul class="ft-legal-list">
-        <li><a href="/index.php">Producciones Leon</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li>&copy; 2024 Copyright autor: Anthony G.</li>
-      </ul>
-    </section>
-  </footer>
+  <!--Ofertas de ventas inicio-->
+  <article>
+      
+    <div class="carousel-container">
+    <h2 class="title-produc">¡Ofertas Especiales!</h2>
+      <div class="carousel2">
+        <div class="carousel-item">
+          <span class="ofer-sticker">¡Oferta!</span>
+          <img src="/1pagina civil/img/productos/camisa/negro/camisa3.png" alt="Product 1" onload="hideLoader(this)">
+          <h3>Producto 1</h3>
+          <p class="description">Descripción del Producto 1</p>
+          <a href="/1pagina civil/sitios/prod.php#PRODUCTO1" id="redirigir-btn">
+            <button class="boton-ver-inicio">Comprar</button>
+          </a>
+        </div>
+        
+        <div class="carousel-item">
+          <span class="ofer-sticker">Oferta</span>
+          <img src="/1pagina civil/img/productos/camisa/camisa roja/camisa 1.png" alt="Product 2">
+          <h3>Producto 2</h3>
+          <p class="description">Descripción del Producto 2</p>
+          <a href="/1pagina civil/sitios/prod.php#PRODUCTO3" id="redirigir-btn">
+            <button class="boton-ver-inicio">Comprar</button>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <span class="ofer-sticker">¡Oferta!</span>
+          <img src="/1pagina civil/img/productos/cascos/casco1/casco1.png" alt="Product 3">
+          <h3>Producto 3</h3>
+          <p class="description">Descripción del Producto 3</p>
+          <a href="/1pagina civil/sitios/prod.php#PRODUCTO5" id="redirigir-btn">
+            <button class="boton-ver-inicio">Comprar</button>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <span class="ofer-sticker">Oferta</span>
+          <img src="/1pagina civil/img/productos/camisa/amarilla/camisa2.png" alt="Product 4">
+          <h3>Producto 4</h3>
+          <p class="description">Descripción del Producto 4</p>
+          <a href="/1pagina civil/sitios/prod.php#PRODUCTO2" id="redirigir-btn">
+            <button class="boton-ver-inicio">Comprar</button>
+          </a>
+
+        </div>
+        <div class="carousel-item">
+          <span class="ofer-sticker">Oferta</span>
+          <img src="/1pagina civil/img/productos/bordados/bordado circulo/bordado1.png" alt="Product 4">
+          <h3>Producto 4</h3>
+          <p class="description">Descripción del Producto 4</p>
+          <a href="/1pagina civil/sitios/prod.php#PRODUCTO6" id="redirigir-btn">
+            <button class="boton-ver-inicio">Comprar</button>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <span class="ofer-sticker">Oferta</span>
+          <img src="/1pagina civil/img/productos/bordados/bordado figura/bordado1.png" alt="Product 4">
+          <h3>Producto 4</h3>
+          <p class="description">Descripción del Producto 4</p>
+          <a href="/1pagina civil/sitios/prod.php#PRODUCTO7" id="redirigir-btn">
+            <button class="boton-ver-inicio">Comprar</button>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <span class="ofer-sticker">Oferta</span>
+          <img src="/1pagina civil/img/productos/bordados/bordado triangulo/bordado1.png" alt="Product 4">
+          <h3>Producto 4</h3>
+          <p class="description">Descripción del Producto 4</p>
+          <a href="/1pagina civil/sitios/prod.php#PRODUCTO8" id="redirigir-btn">
+            <button class="boton-ver-inicio">Comprar</button>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <span class="ofer-sticker">Oferta</span>
+          <img src="/1pagina civil/img/productos/busos/buso.png" alt="Product 4">
+          <h3>Producto 4</h3>
+          <p class="description">Descripción del Producto 4</p>
+          <a href="/1pagina civil/sitios/prod.php#PRODUCTO4" id="redirigir-btn">
+            <button class="boton-ver-inicio">Comprar</button>
+          </a>
+        </div>
+        <!-- Agrega más elementos según sea necesario -->
+      </div>
+      <button class="prev" onclick="prevSlide2(); resetTimer2()">❮</button>
+      <button class="next" onclick="nextSlide2(); resetTimer2()">❯</button>
+
+      <a href="/1pagina civil/sitios/prod.php#promocion">
+      <button class="ver-mas-venta">
+      <img src="https://img.icons8.com/fluency-systems-filled/48/checkout.png">
+    </button></a>
+    </div>
+    
+    
+
+  </article>
+
+  <!--Mensajes-->
+  <?php require '../../1pagina civil/src/help.php'; ?>
+
+  <!--Whatsapp-->
+  <?php require '../../1pagina civil/src/whatsapp.php'; ?>
+
+  <!--footer-->
+  <?php require '../../1pagina civil/src/footer.php'; ?>
 
 <!--Scripts-->
 <script src="/js/chat.js"></script>
@@ -487,12 +306,6 @@
 <!--Fin-->
 </body>
 </html>
-<script src="/js/ocultarMarcaDeAgua.js"></script>
 
-
-
-<!--cursor-->
-<div class="cursor-container">
-  <div class="cursor"></div>
-  <link rel="stylesheet" href="/1pagina civil/css/cursor.css">
-  <script src="/1pagina civil/js/cursor.js"></script>
+  <!--cursor-->
+  <?php require '../../1pagina militar/src/cursor.php'; ?>
