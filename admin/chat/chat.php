@@ -93,6 +93,7 @@
             });
         });
     </script>
+<script src="/js/chat-admin.js"></script>
 
 </body>
 </html>

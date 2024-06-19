@@ -218,6 +218,5 @@
 </body>
 
 </html>
-<script src="/js/ocultarMarcaDeAgua.js"></script>
 <!--INSERT INTO users (email, password) VALUES ('admin@example.com', SHA2('password', 256));-->
 <!-- pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" -->
