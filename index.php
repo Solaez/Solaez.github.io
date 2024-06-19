@@ -95,7 +95,6 @@
     </script>
 </body>
 </html>
-<script src="/js/ocultarMarcaDeAgua.js"></script>
 
 <!--cursor-->
 <div class="cursor-container">
