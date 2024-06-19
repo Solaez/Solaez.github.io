@@ -99,9 +99,7 @@
 
                   <!-- Productos -->
                   <div id="B001" class="product" data-category="bolsos,promocion" >
-                    <div class="product-loader" >
-                      <div class="spinner"></div>
-                    </div>
+                    
                     <span class="span-nuevo">Promoción!</span>
                     <img src="/1pagina militar/img/productos/bolso/bolso miltitar viajero/principal.png" alt="bolso" >
                     <h3 class="titleproductos">Bolso militar, Bolsa de Viaje, con Correas de Mochila Extraíbles</h3>
@@ -127,9 +125,6 @@
                   </div>
 
                   <div id="CB002" class="product" data-category="ropa,camibuso">
-                    <div class="product-loader">
-                      <div class="spinner"></div>
-                    </div>
                     <img src="/1pagina militar/img/productos/camisa/amarilla/camisa2.png" alt="Camisa militar" >
                     <h3 class="titleproductos">Camisa militar amarilla</h3>
                     <a href="#CB002"><button>Seleccionar</button></a>
@@ -203,6 +198,7 @@
                         <p class="lugar">el lugar esta en cierto lugar 3</p>
                     </div>
                   </div>
+                  
                   
                   <div id="BD001" class="product" data-category="bordados,estampados">
                     <div class="product-loader">
@@ -1962,6 +1958,9 @@
     });
   </script>
 
+
+
+
   <!--Mensajes-->
   <?php require '../../1pagina civil/src/help.php'; ?>
 
@@ -1970,6 +1969,13 @@
 
   <!--footer-->
   <?php require '../../1pagina civil/src/footer.php'; ?>
+
+
+
+
+
+
+
 
   <!--Scripts-->
   <script src="/js/chat.js"></script>
@@ -2446,7 +2452,6 @@ alert('¡Te estamos enviando a un empleado para hacer tu compra!');
 <!--Fin-->
 </body>
 </html>
-<script src="/js/ocultarMarcaDeAgua.js"></script>
 
   <!--cursor-->
   <?php require '../../1pagina militar/src/cursor.php'; ?>

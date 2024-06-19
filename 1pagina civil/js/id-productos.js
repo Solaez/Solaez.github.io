@@ -2,7 +2,7 @@
   //1 producto de inicio
   window.addEventListener('DOMContentLoaded', () => {
     const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'CB001') {
+    if (urlFragment === '1') {
       const selectButton = document.querySelector('.product[id="CB001"] button');
       if (selectButton) {
         selectButton.click();
@@ -12,7 +12,7 @@
   //2 producto de inicio
   window.addEventListener('DOMContentLoaded', () => {
     const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'CB002') {
+    if (urlFragment === '2') {
       const selectButton = document.querySelector('.product[id="CB002"] button');
       if (selectButton) {
         selectButton.click();
@@ -22,7 +22,7 @@
   //3 producto de inicio
   window.addEventListener('DOMContentLoaded', () => {
     const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'CB003') {
+    if (urlFragment === '3') {
       const selectButton = document.querySelector('.product[id="CB003"] button');
       if (selectButton) {
         selectButton.click();
