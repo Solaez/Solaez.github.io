@@ -48,7 +48,7 @@
 <div class="seleccion">
         <a href="/admin/"><button class="iconP"><img src="https://img.icons8.com/sf-black-filled/64/home.png" alt="home"><p>Inicio</p></button></a>
         <a href="/admin/chat/chat.php"><button class="iconP"><img src="https://img.icons8.com/pastel-glyph/64/talk--v3.png" alt="mensajes"><p>Mensajes</p></button></a>
-        <a href=""><button class="iconP"><img src="https://img.icons8.com/ios-glyphs/30/add-ticket--v1.png" alt="nuevo"><p>Nuevo</p></button></a>
-        <a href=""><button class="iconP"><img src="https://img.icons8.com/pulsar-line/48/edit-text-file.png" alt="editar"><p>Editar</p></button></a>
+        <a href="/admin/new/civil.php"><button class="iconP"><img src="https://img.icons8.com/ios-glyphs/30/add-ticket--v1.png" alt="nuevo"><p>Nuevo</p></button></a>
+        <a href="/admin/edit/civil.php"><button class="iconP"><img src="https://img.icons8.com/pulsar-line/48/edit-text-file.png" alt="editar"><p>Editar</p></button></a>
         <a href="/login.php"><button class="iconP"><img src="https://img.icons8.com/external-jumpicon-glyph-ayub-irawan/32/external-_30-user-interface-jumpicon-(glyph)-jumpicon-glyph-ayub-irawan.png" alt="salir"><p>Salir</p></button></a>
 </div>
