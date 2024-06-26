@@ -46,7 +46,7 @@ if ($result->num_rows > 0) {
     $row = $result->fetch_assoc(); // Obtener los datos del producto
 
     // Mostrar el formulario para editar el producto
-    echo '<form action="actualizar_producto.php" method="post" enctype="multipart/form-data">';
+    echo '<form action="/1pagina civil/add/actualizar_producto.php" method="post" enctype="multipart/form-data">';
     echo '<input type="hidden" name="id_producto" value="' . htmlspecialchars($id_producto) . '">';
 
     echo '<label for="nombre">Nombre:</label>';
@@ -69,6 +69,9 @@ if ($result->num_rows > 0) {
 
     echo '<label for="precio2">Precio 2:</label>';
     echo '<input type="text" id="precio2" name="precio2" value="' . htmlspecialchars($row['precio2']) . '"><br>';
+
+    echo '<label for="estado">estado:</label>';
+    echo '<input type="text" id="estado" name="estado" value="' . htmlspecialchars($row['estado']) . '"><br>';
 
     echo '<input type="submit" value="Actualizar">';
     echo '</form>';

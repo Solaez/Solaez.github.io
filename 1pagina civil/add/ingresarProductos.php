@@ -24,6 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $lugar = $_POST['lugar'];
     $precio = $_POST['precio'];
     $precio2 = $_POST['precio2'];
+    $estado = $_POST['estado'];
 
     // Directorio donde se guardarán las imágenes
     $uploadDirectory = $_SERVER['DOCUMENT_ROOT'] . '/1pagina civil/sitios/productoCivil/';
@@ -81,8 +82,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $imagen3 = isset($uploadedFiles[2]) ? str_replace($_SERVER["DOCUMENT_ROOT"], '', $uploadedFiles[2]) : '';
         $imagen4 = isset($uploadedFiles[3]) ? str_replace($_SERVER["DOCUMENT_ROOT"], '', $uploadedFiles[3]) : '';
 
-        $sql = "INSERT INTO productos (nombre, categorias, imagen1, imagen2, imagen3, imagen4, descripcion, tipo, lugar, precio, precio2) 
-                VALUES ('$nombre', '$categorias', '$imagen1', '$imagen2', '$imagen3', '$imagen4', '$descripcion', '$tipo', '$lugar', '$precio', '$precio2')";
+        $sql = "INSERT INTO productos (nombre, categorias, imagen1, imagen2, imagen3, imagen4, descripcion, tipo, lugar, precio, precio2, estado) 
+                VALUES ('$nombre', '$categorias', '$imagen1', '$imagen2', '$imagen3', '$imagen4', '$descripcion', '$tipo', '$lugar', '$precio', '$precio2', '$estado')";
 
         if ($conn->query($sql) === TRUE) {
             echo '<p style="color: green;">Producto ingresado correctamente</p>';

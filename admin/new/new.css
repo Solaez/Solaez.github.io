@@ -137,3 +137,8 @@ img#imagePreview,img#imagePreview1,img#imagePreview2,img#imagePreview3 {
   top: 0;
   border-radius: 10px;
 } */
+select#categorias, #estado {
+  background-color: #121212;
+  min-width: 238px;
+  color: #7b7b7b;
+}

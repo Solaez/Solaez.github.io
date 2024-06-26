@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Dashboard</title>
+    <title>Agregar Productos - Producciones Leon</title>
+    <link rel="icon" href="/img/iconos/admin.png">
     <link rel="stylesheet" href="new.css">
     <link rel="stylesheet" href="/admin/style.css">
 </head>
@@ -13,7 +14,7 @@
     <div class="dashboard">
         <div>
             <div class="container">
-                <h1>Ingresar Productos Militares</h1>
+                <h1>Ingresar Productos Civil</h1>
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
                     <!-- <div>
                     <input placeholder="ID" class="input" type="number" id="id" name="id" required>
@@ -86,12 +87,13 @@
                             </div>
 
                             <div>
-                                <input placeholder="Precio Viejo (poner espacio)" class="input" type="text" id="precio"  name="precio" step="any" required>
+                                <input placeholder="Precio Viejo (poner espacio)" class="input" type="text" id="precio"  name="precio" step="any">
                             </div>
 
                             <div>
                                 <input placeholder="Precio Actual (1,00)" class="input" type="text" id="precio2"  name="precio2">
                             </div>
+
 
                             <div>
                                 <select class="input" id="categorias" name="categorias" required>
@@ -115,6 +117,15 @@
                                 </select>
                             </div>
 
+                            <div>
+                                <select class="input" id="estado" name="estado">
+                                    <option value="">Estado</option>
+                                    <option value="">Ninguno</option>
+                                    <option value="Nuevo">Nuevo</option>
+                                    <option value="¡Oferta!">¡Oferta!</option>
+                                    <option value="Destacado">Destacado</option>
+                                </select>
+                            </div>
                             <!-- <div>
                                 <select class="input" id="promocion" name="promocion">
                                     <option value="">Estado</option>

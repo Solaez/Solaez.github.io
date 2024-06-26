@@ -20,7 +20,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['id_producto'])) {
     $sql = "DELETE FROM productos WHERE id_producto = $id_producto";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Producto eliminado correctamente.";
         header("Location: /admin/edit/borrarCivil.php");
         exit; // Asegúrate de terminar la ejecución del script después de la redirección
     } else {
