@@ -165,7 +165,9 @@ if ($result->num_rows > 0) {
   // Iterar sobre cada fila de resultados
   while($row = $result->fetch_assoc()) {
     // Aquí se genera el HTML para cada producto
-    echo '<div id="' . $row['id_producto'] . '" class="product" data-category="' . $row['categorias'] . '">';
+    echo '<div id="' . $row['id_producto'] . '" class="product" data-category="' . $row['categorias'] . ',' . $row['estado'] . '">';
+    // 
+    echo '<span class="span-nuevo">' . $row['estado'] . '</span>';
     echo '<img src="' . $row['imagen1'] . '" alt="' . $row['nombre'] . '" >';
     echo '<h3 class="titleproductos">' . $row['nombre'] . '</h3>';
     echo '<a href="#' . $row['id_producto'] . '"><button>Seleccionar</button></a>';
@@ -175,7 +177,7 @@ if ($result->num_rows > 0) {
     echo '<img class="imag3" src="' . $row['imagen4'] . '" alt="imagen3">';
     echo '</div>';
     echo '<div id="product-details" style="display: none;">';
-    echo '<p class="descripcion">' . $row['descripcion'] . '</p>';
+    echo '<p class="descripcion" >' . $row['descripcion'] . '</p>';
     echo '<p class="tipo">' . $row['tipo'] . '</p>';
     echo '<p class="lugar">' . $row['lugar'] . '</p>';
     echo '<p class="precio">' . $row['precio'] . '</p>';
@@ -205,6 +207,7 @@ $conn->close();
         <p>¿Estás seguro de que desea comprar el producto?</p>
         <center><img src="/1pagina civil/img/iconos/producto.png"></center>
         <a id="whatsappLink" href="#"><button id="buyButton">Pedir Producto</button></a>
+        <img src="" alt=""  >
       </div>
     </div>
   </article>

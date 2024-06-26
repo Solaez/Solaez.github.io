@@ -20,14 +20,29 @@
     color: #212529;
     margin-left: -60px;
     scale: 0.9;
+    }
+    td.botonTD {
+    min-width: 100px;
+    display: flex;
+    gap: 10px;
+    align-content: center;
+    flex-direction: column;
+    align-items: baseline;
+    }
+    .table {
+    width: 112%;
+    margin-bottom: 1rem;
+    color: #212529;
+    margin-left: -60px;
 }
+
 </style>
 <h2>Lista de Productos</h2>
 
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="get">
     <label for="categoria">Buscar por Categoría:</label>
     <input type="text" id="categoria" name="categoria">
-    <input type="submit" value="Buscar">
+    <input type="submit" value="Buscar" class="btn btn-primary">
 </form>
 
 <?php
@@ -56,7 +71,7 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     echo '<table class="table table-striped">';
-    echo '<tr><th>Nombre</th><th>Categorías</th><th>Descripción</th><th>Tipo</th><th>Lugar</th><th>Precio</th><th>Precio 2</th><th>Imágenes</th><th>Acciones</th></tr>';
+    echo '<tr><th>Nombre</th><th>Categorías</th><th>Descripción</th><th>Tipo</th><th>Lugar</th><th>Precio</th><th>Precio 2</th><th>estado</th><th>Imágenes</th><th>Acciones</th></tr>';
     
     while($row = $result->fetch_assoc()) {
         echo '<tr>';
@@ -67,13 +82,14 @@ if ($result->num_rows > 0) {
         echo '<td>' . htmlspecialchars($row['lugar']) . '</td>';
         echo '<td>' . htmlspecialchars($row['precio']) . '</td>';
         echo '<td>' . htmlspecialchars($row['precio2']) . '</td>';
+        echo '<td>' . htmlspecialchars($row['estado']) . '</td>';
         echo '<td>';
         if (!empty($row['imagen1'])) {
             echo '<img src="' . htmlspecialchars($row['imagen1']) . '" alt="Imagen 1" style="width:100px;">';
         }
         echo '</td>';
         echo '<td class=botonTD>';
-        echo '<a href="editar_producto.php?id=' . htmlspecialchars($row['id_producto']) . '">Editar</a>';
+        echo '<a class="btn btn-warning btn-sm" href="editar_producto.php?id=' . htmlspecialchars($row['id_producto']) . '">Editar</a>';
         echo '<form action="/1pagina civil/add/eliminar_producto.php" method="post" style="display: inline-block; margin-left: 10px;">';
         echo '<input class="btn btn-warning btn-sm" type="hidden" name="id_producto" value="' . htmlspecialchars($row['id_producto']) . '">';
         echo '<input class="btn btn-danger btn-sm" type="submit" value="Eliminar" onclick="return confirm(\'¿Estás seguro de eliminar este producto?\')">';

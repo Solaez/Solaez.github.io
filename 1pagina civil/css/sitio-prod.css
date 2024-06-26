@@ -806,3 +806,7 @@ nav a:hover {
   background-color: #e4e4e4;
 
 }
+img#product2, #product1, #product3 {
+  max-height: 50px;
+  min-height: 50px;
+}
