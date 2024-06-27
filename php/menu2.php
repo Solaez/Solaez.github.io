@@ -45,6 +45,24 @@
                 transform: scale(1.1);
         }
     </style>
+    
+<style>
+
+.dashboard {
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    .dashboard.enter {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .dashboard.fadeOut {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+</style>
 <div class="seleccion">
         <a href="/admin/"><button class="iconP"><img src="https://img.icons8.com/sf-black-filled/64/home.png" alt="home"><p>Inicio</p></button></a>
         <a href="/admin/chat/chat.php"><button class="iconP"><img src="https://img.icons8.com/pastel-glyph/64/talk--v3.png" alt="mensajes"><p>Mensajes</p></button></a>
@@ -52,3 +70,40 @@
         <a href="/admin/edit/civil.php"><button class="iconP"><img src="https://img.icons8.com/pulsar-line/48/edit-text-file.png" alt="editar"><p>Editar</p></button></a>
         <a href="/login.php"><button class="iconP"><img src="https://img.icons8.com/external-jumpicon-glyph-ayub-irawan/32/external-_30-user-interface-jumpicon-(glyph)-jumpicon-glyph-ayub-irawan.png" alt="salir"><p>Salir</p></button></a>
 </div>
+
+<script>
+        // Añadir la clase 'enter' al dashboard al cargar la página para activar la animación de entrada
+        window.addEventListener('load', function() {
+            document.querySelector('.dashboard').classList.add('enter');
+        });
+
+        document.querySelectorAll('.seleccion a').forEach(enlace => {
+            enlace.addEventListener('click', function(evento) {
+                evento.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+
+                // Agregar la clase de animación
+                const dashboard = document.querySelector('.dashboard');
+                dashboard.classList.add('fadeOut');
+
+                // Obtener la URL de destino desde el atributo href del enlace
+                const url = this.getAttribute('href');
+
+                // Retrasar la redirección por 0.5 segundos para permitir la animación
+                setTimeout(function() {
+                    window.location.href = url; // Redirigir a la URL después de 0.5 segundos
+                }, 500); // 500 milisegundos = 0.5 segundos
+            });
+        });
+
+        document.querySelector('.search-bar input').addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase();
+            document.querySelectorAll('.game-item').forEach(item => {
+                const gameName = item.querySelector('p').textContent.toLowerCase();
+                if (gameName.includes(query)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>

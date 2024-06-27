@@ -5,10 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['id_producto'])) {
     $id_producto = $_POST['id_producto'];
 
     // Configuración de la conexión a la base de datos
-    $servername = "localhost";
-    $username = "root";
-    $password = "root";
-    $dbname = "productos";
+ require '../../php/baseDatos.php';
 
     // Crear conexión
     $conn = new mysqli($servername, $username, $password, $dbname);

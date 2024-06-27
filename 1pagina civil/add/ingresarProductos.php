@@ -3,10 +3,7 @@
 // Procesar el formulario cuando se envía
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Configuración de la conexión a la base de datos
-    $servername = "localhost";
-    $username = "root";
-    $password = "root";
-    $dbname = "productos";
+ require '../../php/baseDatos.php';
 
     // Crear conexión
     $conn = new mysqli($servername, $username, $password, $dbname);

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Dashboard</title>
+    <title>Chat - Producciones Leon</title>
+    <link rel="icon" href="/img/iconos/admin.png">
     <link rel="stylesheet" href="chat.css">
     <link rel="stylesheet" href="/admin/style.css">
     <style>
@@ -97,3 +98,4 @@
 
 </body>
 </html>
+<?php require '../../php/NO.php'; ?>

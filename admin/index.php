@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Dashboard</title>
+    <title>Admin - Producciones Leon</title>
+    <link rel="icon" href="/img/iconos/admin.png">
     <link rel="stylesheet" href="style.css">
     <style>
         .dashboard {
@@ -72,5 +73,6 @@
             militarOp.style.display = 'none';
         });
     </script>
+    <?php require '../php/NO.php'; ?>
 </body>
 </html>
