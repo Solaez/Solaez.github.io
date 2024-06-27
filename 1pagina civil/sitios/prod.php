@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -99,92 +99,92 @@
 
                   <!-- Productos -->
                   <!-- <div id="B001" class="product" data-category="bolsos,promocion" >
-                    
-                    <span class="span-nuevo">Promoción!</span>
-                    <img src="/1pagina militar/img/productos/bolso/bolso miltitar viajero/principal.png" alt="bolso" >
-                    <h3 class="titleproductos">Bolso militar, Bolsa de Viaje, con Correas de Mochila Extraíbles</h3>
-                    <a href="#CB001"><button >Seleccionar</button></a>
-                    <div id="product-details"  style="display: none;">
-                        <img class="imag1" src="/1pagina militar/img/productos/bolso/bolso miltitar viajero/principal.png" alt="cami1">
-                        <img class="imag2" src="/1pagina militar/img/productos/bolso/bolso miltitar viajero/1.png" alt="cami2">
-                        <img class="imag3" src="/1pagina militar/img/productos/bolso/bolso miltitar viajero/2.png" alt="cami3">
-                    </div>
-                    <div id="product-details" style="display: none;">
-                        <p class="descripcion">
-                          Esta gran bolsa de deporte militar está hecha de tela de poliéster 600D resistente con cremallera resistente n.º 10 y hebillas de calidad en toda la bolsa para su uso en condiciones difíciles. Ideal como bolsa de deporte, bolsa de despliegue, bolsa de carga táctica, bolsa de carga, bolsa de viaje. para hombres, etc...
-                          Esta enorme bolsa de viaje de estilo militar puede satisfacer todas sus necesidades de viajes, deportes o actividades al aire libre. Un compartimento principal de carga superior con cremallera y 6 bolsillos externos para un acceso rápido. El compartimento principal es de aproximadamente 82L. 6 bolsillos exteriores aproximadamente 6 L. Dimensiones totales: 94 cm de ancho x 38 cm de profundidad x 28 cm de altura.
-                          Las asas de transporte están hechas de todas las correas resistentes de 5 cm o de uso duradero y de transporte cómodo. 2 asas grandes reforzadas en cada lado para transportar y mover cargas pesadas. O dos personas mueven la bolsa pesada agarrando cada mango. Parte inferior de cuero artificial duradera y fácil de limpiar con patas de goma.
-                          Correas acolchadas extraíbles estilo mochila y panel superior para un transporte cómodo. Cuando las correas están sueltas, más cómodo de usar y llevar como bolsa de deporte.
-                          Esta gran mochila de estilo militar tiene el equilibrio adecuado entre calidad y dinero. En caso de insatisfacción, puede devolverlo en cualquier momento.
-                        </p>
-                        <p class="tipo">Bolso</p>
-                        <p class="lugar">Sede principal</p>
-                        <p class="precio">$160.000</p>
-                        <p class="precio2">$90.000</p>
-                    </div>
-                  </div>
+                                      
+                                      <span class="span-nuevo">Promoción!</span>
+                                      <img src="/1pagina militar/img/productos/bolso/bolso miltitar viajero/principal.png" alt="bolso" >
+                                      <h3 class="titleproductos">Bolso militar, Bolsa de Viaje, con Correas de Mochila Extraíbles</h3>
+                                      <a href="#CB001"><button >Seleccionar</button></a>
+                                      <div id="product-details"  style="display: none;">
+                                          <img class="imag1" src="/1pagina militar/img/productos/bolso/bolso miltitar viajero/principal.png" alt="cami1">
+                                          <img class="imag2" src="/1pagina militar/img/productos/bolso/bolso miltitar viajero/1.png" alt="cami2">
+                                          <img class="imag3" src="/1pagina militar/img/productos/bolso/bolso miltitar viajero/2.png" alt="cami3">
+                                      </div>
+                                      <div id="product-details" style="display: none;">
+                                          <p class="descripcion">
+                                            Esta gran bolsa de deporte militar está hecha de tela de poliéster 600D resistente con cremallera resistente n.º 10 y hebillas de calidad en toda la bolsa para su uso en condiciones difíciles. Ideal como bolsa de deporte, bolsa de despliegue, bolsa de carga táctica, bolsa de carga, bolsa de viaje. para hombres, etc...
+                                            Esta enorme bolsa de viaje de estilo militar puede satisfacer todas sus necesidades de viajes, deportes o actividades al aire libre. Un compartimento principal de carga superior con cremallera y 6 bolsillos externos para un acceso rápido. El compartimento principal es de aproximadamente 82L. 6 bolsillos exteriores aproximadamente 6 L. Dimensiones totales: 94 cm de ancho x 38 cm de profundidad x 28 cm de altura.
+                                            Las asas de transporte están hechas de todas las correas resistentes de 5 cm o de uso duradero y de transporte cómodo. 2 asas grandes reforzadas en cada lado para transportar y mover cargas pesadas. O dos personas mueven la bolsa pesada agarrando cada mango. Parte inferior de cuero artificial duradera y fácil de limpiar con patas de goma.
+                                            Correas acolchadas extraíbles estilo mochila y panel superior para un transporte cómodo. Cuando las correas están sueltas, más cómodo de usar y llevar como bolsa de deporte.
+                                            Esta gran mochila de estilo militar tiene el equilibrio adecuado entre calidad y dinero. En caso de insatisfacción, puede devolverlo en cualquier momento.
+                                          </p>
+                                          <p class="tipo">Bolso</p>
+                                          <p class="lugar">Sede principal</p>
+                                          <p class="precio">$160.000</p>
+                                          <p class="precio2">$90.000</p>
+                                      </div>
+                                    </div>
 
-                  <div id="CB002" class="product" data-category="ropa,camibuso">
-                    <img src="/1pagina militar/img/productos/camisa/amarilla/camisa2.png" alt="Camisa militar" >
-                    <h3 class="titleproductos">Camisa militar amarilla</h3>
-                    <a href="#CB002"><button>Seleccionar</button></a>
-                    <div id="product-details"  style="display: none;">
-                        <img class="imag1" src="/1pagina militar/img/productos/camisa/amarilla/camisa2.png" alt="cami1">
-                        <img class="imag2" src="/1pagina militar/img/productos/camisa/amarilla/camisa1.png" alt="cami2">
-                        <img class="imag3" src="/1pagina militar/img/productos/camisa/amarilla/camisa3.png" alt="cami3">
-                    </div>
-                    <div id="product-details" style="display: none;">
-                        <p class="descripcion">la descripcion va aqui1</p>
-                        <p class="tipo">el tipo va aqui 2</p>
-                        <p class="lugar">el lugar esta en cierto lugar 3</p>
-                        <p class="precio"></p>
-                        <p class="precio2"></p>
-                    </div>
-                  </div> -->
-                    
-  <?php
-   require '../../php/baseDatos.php';
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-  die("Conexión fallida: " . $conn->connect_error);
-}
-?>
+                                    <div id="CB002" class="product" data-category="ropa,camibuso">
+                                      <img src="/1pagina militar/img/productos/camisa/amarilla/camisa2.png" alt="Camisa militar" >
+                                      <h3 class="titleproductos">Camisa militar amarilla</h3>
+                                      <a href="#CB002"><button>Seleccionar</button></a>
+                                      <div id="product-details"  style="display: none;">
+                                          <img class="imag1" src="/1pagina militar/img/productos/camisa/amarilla/camisa2.png" alt="cami1">
+                                          <img class="imag2" src="/1pagina militar/img/productos/camisa/amarilla/camisa1.png" alt="cami2">
+                                          <img class="imag3" src="/1pagina militar/img/productos/camisa/amarilla/camisa3.png" alt="cami3">
+                                      </div>
+                                      <div id="product-details" style="display: none;">
+                                          <p class="descripcion">la descripcion va aqui1</p>
+                                          <p class="tipo">el tipo va aqui 2</p>
+                                          <p class="lugar">el lugar esta en cierto lugar 3</p>
+                                          <p class="precio"></p>
+                                          <p class="precio2"></p>
+                                      </div>
+                                    </div> -->
+                                      
                   <?php
-// Query para obtener productos
-$sql = "SELECT * FROM productos";
-$result = $conn->query($sql);
+                  require '../../php/baseDatos.php';
 
-if ($result->num_rows > 0) {
-  // Iterar sobre cada fila de resultados
-  while($row = $result->fetch_assoc()) {
-    // Aquí se genera el HTML para cada producto
-    echo '<div id="' . $row['id_producto'] . '" class="product" data-category="' . $row['categorias'] . ',' . $row['estado'] . '">';
-    // 
-    echo '<span class="span-nuevo">' . $row['estado'] . '</span>';
-    echo '<img src="' . $row['imagen1'] . '" alt="' . $row['nombre'] . '" >';
-    echo '<h3 class="titleproductos">' . $row['nombre'] . '</h3>';
-    echo '<a href="#' . $row['id_producto'] . '"><button>Seleccionar</button></a>';
-    echo '<div id="product-details" style="display: none;">';
-    echo '<img class="imag1" src="' . $row['imagen2'] . '" alt="imagen1">';
-    echo '<img class="imag2" src="' . $row['imagen3'] . '" alt="imagen2">';
-    echo '<img class="imag3" src="' . $row['imagen4'] . '" alt="imagen3">';
-    echo '</div>';
-    echo '<div id="product-details" style="display: none;">';
-    echo '<p class="descripcion" >' . $row['descripcion'] . '</p>';
-    echo '<p class="tipo">' . $row['tipo'] . '</p>';
-    echo '<p class="lugar">' . $row['lugar'] . '</p>';
-    echo '<p class="precio">' . $row['precio'] . '</p>';
-    echo '<p class="precio2">' . $row['precio2'] . '</p>';
-    echo '</div>';
-    echo '</div>';
-  }
-} else {
-  echo "0 resultados";
-}
-$conn->close();
-?>
+                  $conn = new mysqli($servername, $username, $password, $dbname);
+
+                  if ($conn->connect_error) {
+                    die("Conexión fallida: " . $conn->connect_error);
+                  }
+                  ?>
+                                    <?php
+                  // Query para obtener productos
+                  $sql = "SELECT * FROM productos";
+                  $result = $conn->query($sql);
+
+                  if ($result->num_rows > 0) {
+                    // Iterar sobre cada fila de resultados
+                    while($row = $result->fetch_assoc()) {
+                      // Aquí se genera el HTML para cada producto
+                      echo '<div id="' . $row['id_producto'] . '" class="product" data-category="' . $row['categorias'] . ',' . $row['estado'] . '">';
+                      // 
+                      echo '<span class="span-nuevo">' . $row['estado'] . '</span>';
+                      echo '<img src="' . $row['imagen1'] . '" alt="' . $row['nombre'] . '" >';
+                      echo '<h3 class="titleproductos">' . $row['nombre'] . '</h3>';
+                      echo '<a href="#' . $row['id_producto'] . '"><button>Seleccionar</button></a>';
+                      echo '<div id="product-details" style="display: none;">';
+                      echo '<img class="imag1" src="' . $row['imagen2'] . '" alt="imagen1">';
+                      echo '<img class="imag2" src="' . $row['imagen3'] . '" alt="imagen2">';
+                      echo '<img class="imag3" src="' . $row['imagen4'] . '" alt="imagen3">';
+                      echo '</div>';
+                      echo '<div id="product-details" style="display: none;">';
+                      echo '<p class="descripcion" >' . $row['descripcion'] . '</p>';
+                      echo '<p class="tipo">' . $row['tipo'] . '</p>';
+                      echo '<p class="lugar">' . $row['lugar'] . '</p>';
+                      echo '<p class="precio">' . $row['precio'] . '</p>';
+                      echo '<p class="precio2">' . $row['precio2'] . '</p>';
+                      echo '</div>';
+                      echo '</div>';
+                    }
+                  } else {
+                    echo "0 resultados";
+                  }
+                  $conn->close();
+                  ?>
 
                   
                 </div>
