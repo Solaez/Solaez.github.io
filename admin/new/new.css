@@ -14,7 +14,7 @@
     border-radius: 10px;
     box-shadow: 0px 48px 35px -48px rgba(0,0,0,0.1);
     filter: invert();
-    transition: transform .2s;
+    transition: transform .2s, box-shadow .7s;
   }
   .custum-file-upload .icon {
     display: flex;
@@ -29,6 +29,9 @@
   }
   .custum-file-upload input {
     display: none;
+  }
+  input:hover,select:hover ,textarea:hover {
+      box-shadow: inset 1px 6px 13px -3px #0008ff;
   }
 /*mario
 ----------------------------------------------------------------*/
@@ -48,7 +51,7 @@
     margin: 10px;
     box-shadow: 0px 48px 35px -48px rgba(0,0,0,0.1);
     filter: invert();
-    transition: transform .2s;
+    transition: transform .2s box-shadow .7s;
   }
   .custum-file-upload2 img {
     display: flex;
@@ -76,6 +79,7 @@
 }
 .custum-file-upload:hover,.custum-file-upload2:hover{
     transform: scale(1.1);
+    box-shadow: 0px 20px 25px -19px #fff700;
 }
 
 .input {
@@ -90,6 +94,7 @@
     border-radius: 9999px;
     box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
     color: #fff;
+    transition: box-shadow .6s;
   }
 .input2 {
     margin-block: 7px;
@@ -141,4 +146,5 @@ select#categorias, #estado {
   background-color: #121212;
   min-width: 238px;
   color: #7b7b7b;
+  transition: box-shadow .6s;
 }
