@@ -8,11 +8,17 @@
         display: block;
         margin-top: 10px;
     }
+    .imagenes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: -20px;
+    }
+    
 </style>
 </head>
 <body>
 
-<h2>Editar Producto</h2>
 
 <?php
 // Verificar si se recibió un ID válido del producto
@@ -49,40 +55,58 @@ if ($result->num_rows > 0) {
     echo '<form action="/1pagina civil/add/actualizar_producto.php" method="post" enctype="multipart/form-data">';
     echo '<input type="hidden" name="id_producto" value="' . htmlspecialchars($id_producto) . '">';
 
-    echo '<label for="nombre">Nombre:</label>';
-    echo '<input type="text" id="nombre" name="nombre" value="' . htmlspecialchars($row['nombre']) . '" required><br>';
+    echo '<div class="imagenes">';
+    echo '<div class="imagenesPequeñas">';
+    for ($i = 2; $i <= 4; $i++) {
+        $imagen = 'imagen' . $i;
+        $imagenSrc = !empty($row[$imagen]) ? $row[$imagen] : 'https://img.icons8.com/external-dashed-line-kawalan-studio/96/external-upload-document-user-interface-dashed-line-kawalan-studio.png';
+        echo '<div>';
+        echo '<label class="custum-file-upload2" for="' . $imagen . '">';
+        echo '<div class="icon"><img id="imagePreview' . $i . '" src="' . htmlspecialchars($imagenSrc) . '" alt=""></div>';
+        echo '<div class="text"><span>Seleccione la imagen ' . $i . '</span></div>';
+        echo '<input type="file" id="' . $imagen . '" name="' . $imagen . '" onchange="previewImage(event, \'imagePreview' . $i . '\')">';
+        echo '</label></div>';
+    }
+    echo '</div>';
 
-    echo '<label for="categorias">Categorías:</label>';
-    echo '<input type="text" id="categorias" name="categorias" value="' . htmlspecialchars($row['categorias']) . '"><br>';
+    $imagen1 = !empty($row['imagen1']) ? $row['imagen1'] : 'https://img.icons8.com/external-dashed-line-kawalan-studio/96/external-upload-document-user-interface-dashed-line-kawalan-studio.png';
+    echo '<label class="custum-file-upload" for="imagen1">';
+    echo '<div class="icon"><img id="imagePreview" src="' . htmlspecialchars($imagen1) . '" alt=""></div>';
+    echo '<div class="text"><span>Seleccione Imagen Principal</span></div>';
+    echo '<input type="file" id="imagen1" name="imagen1" onchange="previewImage(event, \'imagePreview\')" style="display: none;">';
+    echo '</label>';
 
-    echo '<label for="descripcion">Descripción:</label>';
-    echo '<textarea id="descripcion" name="descripcion" rows="4">' . htmlspecialchars($row['descripcion']) . '</textarea><br>';
+    echo '<div class="marcoDerecha">';
+    echo '<div class="form-group"><input placeholder="Nombre" class="input" type="text" name="nombre" id="nombre" value="' . htmlspecialchars($row['nombre']) . '" required></div>';
+    echo '<div class="form-group"><input placeholder="Tipo" class="input" type="text" name="tipo" id="tipo" value="' . htmlspecialchars($row['tipo']) . '" required></div>';
+    echo '<div class="form-group"><input placeholder="Ubicación" class="input" type="text" name="ubicacion" id="ubicacion" value="' . htmlspecialchars($row['lugar']) . '" required></div>';
+    echo '<div class="form-group"><input placeholder="Precio" class="input" type="text" name="precio" id="precio" value="' . htmlspecialchars($row['precio']) . '" required></div>';
+    echo '<div class="form-group"><input placeholder="Precio Promoción" class="input" type="text" name="precio_promocion" id="precio_promocion" value="' . htmlspecialchars($row['precio2']) . '"></div>';
+    echo '<div class="form-group"><input placeholder="Categoría" class="input" type="text" name="categoria" id="categoria" value="' . htmlspecialchars($row['categorias']) . '" required></div>';
+    echo '<div class="form-group"><input placeholder="Estado" class="input" type="text" name="promocion" id="promocion" value="' . htmlspecialchars($row['estado']) . '"></div>';
+    echo '</div></div>';
 
-    echo '<label for="tipo">Tipo:</label>';
-    echo '<input type="text" id="tipo" name="tipo" value="' . htmlspecialchars($row['tipo']) . '"><br>';
-
-    echo '<label for="lugar">Lugar:</label>';
-    echo '<input type="text" id="lugar" name="lugar" value="' . htmlspecialchars($row['lugar']) . '"><br>';
-
-    echo '<label for="precio">Precio:</label>';
-    echo '<input type="text" id="precio" name="precio" value="' . htmlspecialchars($row['precio']) . '"><br>';
-
-    echo '<label for="precio2">Precio 2:</label>';
-    echo '<input type="text" id="precio2" name="precio2" value="' . htmlspecialchars($row['precio2']) . '"><br>';
-
-    echo '<label for="estado">estado:</label>';
-    echo '<input type="text" id="estado" name="estado" value="' . htmlspecialchars($row['estado']) . '"><br>';
-
-    echo '<input type="submit" value="Actualizar">';
+    echo '<div class="form-group"><textarea placeholder="Descripción" class="input" name="descripcion" id="descripcion" rows="3" required>' . htmlspecialchars($row['descripcion']) . '</textarea></div>';
+    echo '<button type="submit" class="btn btn-primary">Guardar Cambios</button>';
     echo '</form>';
-
 } else {
-    echo '<p style="color: red;">No se encontró el producto.</p>';
+    echo '<p>No se encontró el producto.</p>';
 }
 
 // Cerrar conexión
 $conn->close();
 ?>
+
+<script>
+function previewImage(event, previewId) {
+    const reader = new FileReader();
+    reader.onload = function() {
+        const output = document.getElementById(previewId);
+        output.src = reader.result;
+    };
+    reader.readAsDataURL(event.target.files[0]);
+}
+</script>
 
 </body>
 </html>
