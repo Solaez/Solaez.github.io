@@ -1,18 +1,20 @@
 <?php
-$servername = "localhost";
-$username = "produc_chat";
-$password = "produc_chat";
-$dbname = "produc_chat";
+// $servername = "localhost";
+// $username = "produc_chat";
+// $password = "produc_chat";
+// $dbname = "produc_chat";
 
-// Crear conexi¨®n
+require 'baseDatos.php';
+
+// Crear conexiï¿½ï¿½n
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verificar conexi¨®n
+// Verificar conexiï¿½ï¿½n
 if ($conn->connect_error) {
-    die("Conexi¨®n fallida: " . $conn->connect_error);
+    die("Conexiï¿½ï¿½n fallida: " . $conn->connect_error);
 }
 
-// Comprobar si se envi¨® una solicitud POST
+// Comprobar si se enviï¿½ï¿½ una solicitud POST
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Guardar nuevo mensaje
     if(isset($_POST['user']) && isset($_POST['message'])) {
@@ -35,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     echo json_encode($messages);
 } else {
-    echo json_encode(array("success" => false, "message" => "M¨¦todo de solicitud no v¨¢lido"));
+    echo json_encode(array("success" => false, "message" => "Mï¿½ï¿½todo de solicitud no vï¿½ï¿½lido"));
 }
 
 $conn->close();
