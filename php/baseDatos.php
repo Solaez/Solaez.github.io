@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "productos";
+$username = "produc_chat";
+$password = "produc_chat";
+$dbname = "produc_chat";
 ?>

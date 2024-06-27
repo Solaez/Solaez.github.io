@@ -144,9 +144,9 @@
                     
   <?php
 $servername = "localhost"; // Nombre del servidor MySQL
-$username = "root"; // Usuario de MySQL
-$password = "root"; // Contraseña de MySQL
-$dbname = "productos"; // Nombre de la base de datos
+$username = "produc_chat"; // Usuario de MySQL
+$password = "produc_chat"; // Contraseña de MySQL
+$dbname = "produc_chat"; // Nombre de la base de datos
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
