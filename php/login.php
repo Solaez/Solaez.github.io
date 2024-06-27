@@ -1,10 +1,12 @@
 <?php
 session_start();
 
-$servername = "localhost";
-$username = "produc_chat";
-$password = "produc_chat";
-$dbname = "produc_chat";
+// $servername = "localhost";
+// $username = "produc_chat";
+// $password = "produc_chat";
+// $dbname = "produc_chat";
+
+require 'baseDatos.php';
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
