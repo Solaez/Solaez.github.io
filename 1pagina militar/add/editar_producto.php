@@ -108,7 +108,7 @@ if ($result->num_rows > 0) {
     echo '<div class="form-group"><input placeholder="Tipo" class="input" type="text" name="tipo" id="tipo" value="' . htmlspecialchars($row['tipo']) . '" required><p>Tipo</p></div>';
     echo '<div class="form-group"><input placeholder="Ubicación" class="input" type="text" name="ubicacion" id="ubicacion" value="' . htmlspecialchars($row['lugar']) . '" required><p>Ubicación</p></div>';
     echo '<div class="form-group"><input placeholder="Precio" class="input" type="text" name="precio" id="precio" value="' . htmlspecialchars($row['precio']) . '" required><p>Precio P. Opcional</p></div>';
-    echo '<div class="form-group"><input placeholder="Precio Promoción" class="input" type="text" name="precio_promocion" id="precio_promocion" value="' . htmlspecialchars($row['precio2']) . '"><p>Precio Opcional</p></div>';
+    echo '<div class="form-group"><input placeholder="Precio Promoción" class="input" type="text" name="precio_promocion" id="precio_promocion" value="' . htmlspecialchars($row['precio2']) . '" required><p>Precio Opcional</p></div>';
     echo '<div class="form-group"><input placeholder="Categoría" class="input" type="text" name="categoria" id="categoria" value="' . htmlspecialchars($row['categorias']) . '" required><p>Categoria</p></div>';
     // echo '<div class="form-group"><input placeholder="Estado" class="input" type="text" name="promocion" id="promocion" value="' . htmlspecialchars($row['estado']) . '"><p>Estado</p></div>';
     echo '<div class="form-group"><p>Estado</p>';
