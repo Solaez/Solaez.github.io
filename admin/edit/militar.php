@@ -26,9 +26,9 @@ if (!isset($_SESSION['user'])) {
     <div class="greeting">
             <h1>Listado de Productos Militares</h1>
         </div>
-                <?php
-                require '../../1pagina militar/add/listar_productos.php';
-                ?>
+
+                <?php require '../../1pagina militar/add/productos.php';?>
+        
         </div>
                 <?php
                 require '../../php/menu.php';
@@ -65,7 +65,7 @@ if (!isset($_SESSION['user'])) {
         });
     });
 
-    </script>
+</script>
 </body>
 </html>
 <?php require '../../php/NO.php'; ?>

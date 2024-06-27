@@ -23,60 +23,60 @@ if (!isset($_SESSION['user'])) {
         <div>
             <div class="container">
                 <h1>Ingresar Productos Militares</h1>
-                <form action="/1pagina militar/add/guardar_producto.php" method="post" enctype="multipart/form-data">
-                    <div>
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
+                    <!-- <div>
                     <input placeholder="ID" class="input" type="number" id="id" name="id" required>
-                    </div>
-
+                    </div> -->
+                    <?php require '../../1pagina militar/add/ingresarProductos.php'; ?>
                     <div class="imagenes">
 
                         <div class="imagenesPequeñas">
                                 
                             <div>
-                                <label class="custum-file-upload2" for="imagen1">
+                                <label class="custum-file-upload2" for="imagen2">
                                     <div class="icon">
                                         <img id="imagePreview1" src="https://img.icons8.com/external-dashed-line-kawalan-studio/96/external-upload-document-user-interface-dashed-line-kawalan-studio.png" alt="">
                                     </div>
                                     <div class="text">
                                         <span>Seleccione la imagen 1</span>
                                         </div>
-                                        <input type="file" id="imagen1" name="imagen1" required onchange="previewImage(event, 'imagePreview1')" >
-                                    </label>
-                                </div>
-                                
-                            <div>
-                                <label class="custum-file-upload2" for="imagen2">
-                                    <div class="icon">
-                                        <img id="imagePreview2" src="https://img.icons8.com/external-dashed-line-kawalan-studio/96/external-upload-document-user-interface-dashed-line-kawalan-studio.png" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <span>seleccione imagen 2</span>
-                                        </div>
-                                        <input type="file" id="imagen2" name="imagen2" required onchange="previewImage(event, 'imagePreview2')">
+                                        <input type="file" id="imagen2" name="imagen2" required onchange="previewImage(event, 'imagePreview1')" accept="image/*" >
                                     </label>
                                 </div>
                                 
                             <div>
                                 <label class="custum-file-upload2" for="imagen3">
                                     <div class="icon">
+                                        <img id="imagePreview2" src="https://img.icons8.com/external-dashed-line-kawalan-studio/96/external-upload-document-user-interface-dashed-line-kawalan-studio.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <span>seleccione imagen 2</span>
+                                        </div>
+                                        <input type="file" id="imagen3" name="imagen3" required onchange="previewImage(event, 'imagePreview2')" accept="image/*">
+                                    </label>
+                                </div>
+                                
+                            <div>
+                                <label class="custum-file-upload2" for="imagen4">
+                                    <div class="icon">
                                         <img id="imagePreview3" src="https://img.icons8.com/external-dashed-line-kawalan-studio/96/external-upload-document-user-interface-dashed-line-kawalan-studio.png" alt="">
                                     </div>
                                     <div class="text">
                                         <span>seleccione imagen 3</span>
                                         </div>
-                                        <input type="file" id="imagen3" name="imagen3" required onchange="previewImage(event, 'imagePreview3')" style="display: none;">
+                                        <input type="file" id="imagen4" name="imagen4" required onchange="previewImage(event, 'imagePreview3')" style="display: none;" accept="image/*">
                                     </label>
                                 </div>
                         </div>
 
-                        <label class="custum-file-upload" for="imagen_principal">
+                        <label class="custum-file-upload" for="imagen1">
                             <div class="icon">
                                 <img id="imagePreview" src="https://img.icons8.com/external-dashed-line-kawalan-studio/96/external-upload-document-user-interface-dashed-line-kawalan-studio.png" alt="">
                             </div>
                             <div class="text">
                                 <span>Seleccione Imagen Principal</span>
                                 </div>
-                                <input type="file" id="imagen_principal" name="imagen_principal"  onchange="previewImage(event,'imagePreview')" style="display: none;">
+                                <input type="file" id="imagen1" name="imagen1"  onchange="previewImage(event,'imagePreview')" style="display: none;" accept="image/*">
                         </label>
   
                         
@@ -91,30 +91,32 @@ if (!isset($_SESSION['user'])) {
                             </div>
 
                             <div>
-                                <input placeholder="Ubicación" class="input" type="text" id="ubicacion" name="ubicacion" required>
+                                <input placeholder="Ubicación" class="input" type="text" id="lugar" name="lugar" required>
                             </div>
 
                             <div>
-                                <input placeholder="Precio Viejo (poner espacio)" class="input" type="text" id="precio"  name="precio" step="any" required>
+                                <input placeholder="Precio Viejo (poner espacio)" class="input" type="text" id="precio"  name="precio" step="any">
                             </div>
 
                             <div>
-                                <input placeholder="Precio Actual (1,00)" class="input" type="number" id="precio_promocion"  name="precio_promocion">
+                                <input placeholder="Precio Actual (1,00)" class="input" type="text" id="precio2"  name="precio2">
                             </div>
 
+
                             <div>
-                                <select class="input" id="categoria" name="categoria" required>
+                                <select class="input" id="categorias" name="categorias" required>
                                     <option value="">Categoria</option>
                                     <option value="acesorios">Acesorios</option>
-                                    <option value="camisas">Camisas</option>
+                                    <option value="boinas">Boinas</option>
+                                    <option value="bolsos">Bolsos</option>
                                     <option value="busos">Busos</option>
+                                    <option value="casco">Casco</option>
+                                    <option value="camisas">Camisas</option>
+                                    <option value="camibusos">Camibuso</option>
                                     <option value="pantalones">Pantalones</option>
                                     <option value="tennis">Tennis</option>
-                                    <option value="bolsos">Bolsos</option>
                                     <option value="estampados">Estampados</option>
                                     <option value="gorras">Gorras</option>
-                                    <option value="casco">Casco</option>
-                                    <option value="boinas">Boinas</option>
                                     <option value="pavas">Pavas</option>
                                     <option value="policia">Ejercito y policia</option>
                                     <option value="rescate">Personal de rescate</option>
@@ -125,12 +127,12 @@ if (!isset($_SESSION['user'])) {
                             </div>
 
                             <div>
-                                <select class="input" id="promocion" name="promocion">
+                                <select class="input" id="estado" name="estado">
                                     <option value="">Estado</option>
                                     <option value="">Ninguno</option>
-                                    <option value="Nuevo">Nuevo</option>
-                                    <option value="¡Oferta!">¡Oferta!</option>
-                                    <option value="Destacado">Destacado</option>
+                                    <option value="nuevo">Nuevo</option>
+                                    <option value="promocion">¡Oferta!</option>
+                                    <option value="destacado">Destacado</option>
                                 </select>
                             </div>
 
