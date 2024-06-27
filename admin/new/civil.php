@@ -121,9 +121,9 @@
                                 <select class="input" id="estado" name="estado">
                                     <option value="">Estado</option>
                                     <option value="">Ninguno</option>
-                                    <option value="Nuevo">Nuevo</option>
-                                    <option value="¡Oferta!">¡Oferta!</option>
-                                    <option value="Destacado">Destacado</option>
+                                    <option value="nuevo">Nuevo</option>
+                                    <option value="promocion">¡Oferta!</option>
+                                    <option value="destacado">Destacado</option>
                                 </select>
                             </div>
                             <!-- <div>

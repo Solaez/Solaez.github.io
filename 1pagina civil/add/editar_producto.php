@@ -14,6 +14,32 @@
         align-items: center;
         margin-top: -20px;
     }
+    .form-group p {
+        color: rgb(256, 256, 256, .3);
+        opacity: 0;
+        /* display: none; */
+        position: absolute;
+        margin: -43px 350px;
+        background: transparent;
+        padding: 8px;
+        border-radius: 0 20px 20px 0;
+        transform: translateX(-60px);
+        transition: opacity .2s,box-shadow .8s,transform .2s ;
+    }
+    .form-group:hover p{
+        opacity: 1;
+        box-shadow: 12px 1px 10px 0px #2700ff;
+        transform: translateX(0px);
+    }
+    select#promocion {
+        background-color: #131313;
+    }
+    input,select{
+        transition: box-shadow .7s ;
+    }
+    input:hover, select:hover {
+        box-shadow: inset 2px 5px 10px #2700ff;
+    }
     
 </style>
 </head>
@@ -77,13 +103,32 @@ if ($result->num_rows > 0) {
     echo '</label>';
 
     echo '<div class="marcoDerecha">';
-    echo '<div class="form-group"><input placeholder="Nombre" class="input" type="text" name="nombre" id="nombre" value="' . htmlspecialchars($row['nombre']) . '" required></div>';
-    echo '<div class="form-group"><input placeholder="Tipo" class="input" type="text" name="tipo" id="tipo" value="' . htmlspecialchars($row['tipo']) . '" required></div>';
-    echo '<div class="form-group"><input placeholder="Ubicación" class="input" type="text" name="ubicacion" id="ubicacion" value="' . htmlspecialchars($row['lugar']) . '" required></div>';
-    echo '<div class="form-group"><input placeholder="Precio" class="input" type="text" name="precio" id="precio" value="' . htmlspecialchars($row['precio']) . '" required></div>';
-    echo '<div class="form-group"><input placeholder="Precio Promoción" class="input" type="text" name="precio_promocion" id="precio_promocion" value="' . htmlspecialchars($row['precio2']) . '"></div>';
-    echo '<div class="form-group"><input placeholder="Categoría" class="input" type="text" name="categoria" id="categoria" value="' . htmlspecialchars($row['categorias']) . '" required></div>';
-    echo '<div class="form-group"><input placeholder="Estado" class="input" type="text" name="promocion" id="promocion" value="' . htmlspecialchars($row['estado']) . '"></div>';
+    echo '<div class="form-group"><input placeholder="Nombre" class="input" type="text" name="nombre" id="nombre" value="' . htmlspecialchars($row['nombre']) . '" required><p>Nombre</p></div>';
+    echo '<div class="form-group"><input placeholder="Tipo" class="input" type="text" name="tipo" id="tipo" value="' . htmlspecialchars($row['tipo']) . '" required><p>Tipo</p></div>';
+    echo '<div class="form-group"><input placeholder="Ubicación" class="input" type="text" name="ubicacion" id="ubicacion" value="' . htmlspecialchars($row['lugar']) . '" required><p>Ubicación</p></div>';
+    echo '<div class="form-group"><input placeholder="Precio" class="input" type="text" name="precio" id="precio" value="' . htmlspecialchars($row['precio']) . '" required><p>Precio P. Opcional</p></div>';
+    echo '<div class="form-group"><input placeholder="Precio Promoción" class="input" type="text" name="precio_promocion" id="precio_promocion" value="' . htmlspecialchars($row['precio2']) . '"><p>Precio Opcional</p></div>';
+    echo '<div class="form-group"><input placeholder="Categoría" class="input" type="text" name="categoria" id="categoria" value="' . htmlspecialchars($row['categorias']) . '" required><p>Categoria</p></div>';
+    // echo '<div class="form-group"><input placeholder="Estado" class="input" type="text" name="promocion" id="promocion" value="' . htmlspecialchars($row['estado']) . '"><p>Estado</p></div>';
+    echo '<div class="form-group"><p>Estado</p>';
+    echo '<select class="input" id="promocion" name="promocion">';
+
+    $opcionesEstado = array(
+        '' => 'Ninguno',
+        'nuevo' => 'Nuevo',
+        'promocion' => '¡Oferta!',
+        'destacado' => 'Destacado',
+        'agotado' => 'Agotado',
+    );
+
+    foreach ($opcionesEstado as $valor => $texto) {
+        $selected = ($row['promocion'] == $valor) ? 'selected' : '';
+        echo '<option value="' . htmlspecialchars($valor) . '" ' . $selected . '>' . htmlspecialchars($texto) . '</option>';
+    }
+
+    echo '</select>';
+    echo '</div>';
+
     echo '</div></div>';
 
     echo '<div class="form-group"><textarea placeholder="Descripción" class="input" name="descripcion" id="descripcion" rows="3" required>' . htmlspecialchars($row['descripcion']) . '</textarea></div>';
@@ -110,3 +155,5 @@ function previewImage(event, previewId) {
 
 </body>
 </html>
+
+
