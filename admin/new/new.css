@@ -121,13 +121,17 @@
     background-color: #161616;
 }
 textarea#descripcion {
-    width: 90%;
-    height: 30px;
+    border-radius: 8px;
+    background-color: #131313;
+    max-width: 650px;
+    min-width: 650px;
+    
+    
 }
 .marcoDerecha {
     width: 280px;
 }
-img#imagePreview,img#imagePreview1,img#imagePreview2,img#imagePreview3 {
+img#imagePreview,img#imagePreview1,img#imagePreview2,img#imagePreview3,img#imagePreview4 {
   max-width: 280px;
   max-height: 283px;
   filter: invert();
@@ -147,4 +151,9 @@ select#categorias, #estado {
   min-width: 238px;
   color: #7b7b7b;
   transition: box-shadow .6s;
+}
+.dashboard.enter {
+  opacity: 1;
+  transform: scale(1);
+  overflow: auto;
 }

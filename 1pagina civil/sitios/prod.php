@@ -143,15 +143,10 @@
                   </div> -->
                     
   <?php
-$servername = "localhost"; // Nombre del servidor MySQL
-$username = "produc_chat"; // Usuario de MySQL
-$password = "produc_chat"; // Contraseña de MySQL
-$dbname = "produc_chat"; // Nombre de la base de datos
+   require '../../php/baseDatos.php';
 
-// Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verificar conexión
 if ($conn->connect_error) {
   die("Conexión fallida: " . $conn->connect_error);
 }

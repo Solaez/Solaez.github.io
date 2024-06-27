@@ -49,13 +49,13 @@ window.addEventListener('keydown', function(event) {
   if (event.key === 'F12') {
     event.preventDefault(); // Evitar que se abra la herramienta de desarrollador
     showpopup123();
-    location.reload(); // Refrescar la página
+    // location.reload(); // Refrescar la página
   }
 });
 
 window.addEventListener('contextmenu', function(event) {
   event.preventDefault(); // Evitar que se abra el menú contextual
-  showpopup123();
+  // showpopup123();
 //   location.reload(); 
 });
 

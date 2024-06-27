@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['user'])) {
+    header("Location: /login.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -99,15 +107,16 @@
                                 <select class="input" id="categorias" name="categorias" required>
                                     <option value="">Categoria</option>
                                     <option value="acesorios">Acesorios</option>
-                                    <option value="camisas">Camisas</option>
+                                    <option value="boinas">Boinas</option>
+                                    <option value="bolsos">Bolsos</option>
                                     <option value="busos">Busos</option>
+                                    <option value="casco">Casco</option>
+                                    <option value="camisas">Camisas</option>
+                                    <option value="camibusos">Camibuso</option>
                                     <option value="pantalones">Pantalones</option>
                                     <option value="tennis">Tennis</option>
-                                    <option value="bolsos">Bolsos</option>
                                     <option value="estampados">Estampados</option>
                                     <option value="gorras">Gorras</option>
-                                    <option value="casco">Casco</option>
-                                    <option value="boinas">Boinas</option>
                                     <option value="pavas">Pavas</option>
                                     <option value="policia">Ejercito y policia</option>
                                     <option value="rescate">Personal de rescate</option>
@@ -189,7 +198,7 @@
         });
     });
 
-    </script>
+</script>
 </body>
 </html>
 
