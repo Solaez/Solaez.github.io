@@ -14,7 +14,7 @@
     <div class="produccion">
     <div class="dashboard">
     <div class="greeting">
-            <h1>Editar Productos Militares</h1>
+            <h1>Editar Productos Civil</h1>
         </div>
                <?php
                 require '../../1pagina civil/add/editar_producto.php';

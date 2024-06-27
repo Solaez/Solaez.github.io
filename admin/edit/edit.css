@@ -217,7 +217,7 @@ textarea#descripcion {
 .marcoDerecha {
   width: 280px;
 }
-img#imagePreview,img#imagePreview1,img#imagePreview2,img#imagePreview3 {
+img#imagePreview,img#imagePreview1,img#imagePreview2,img#imagePreview3,img#imagePreview4 {
 max-width: 280px;
 max-height: 283px;
 filter: invert();
