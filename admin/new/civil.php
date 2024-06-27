@@ -192,3 +192,6 @@
     </script>
 </body>
 </html>
+
+<?php require '../../php/NO.php'; ?>
+

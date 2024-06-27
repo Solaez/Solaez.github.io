@@ -57,10 +57,11 @@ if (!isset($_GET['id']) || empty($_GET['id']) || !is_numeric($_GET['id'])) {
 $id_producto = $_GET['id'];
 
 // Configuración de la conexión a la base de datos
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "productos";
+// $servername = "localhost";
+// $username = "root";
+// $password = "root";
+// $dbname = "productos";
+ require '../../php/baseDatos.php';
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
