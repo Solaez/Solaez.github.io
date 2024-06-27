@@ -47,6 +47,7 @@
 
     .login input:focus {
       animation: bounce 1s;
+      /* -webkit-appearance: none; */
     }
 
     .login input[type=submit],
@@ -87,6 +88,7 @@
 
     .login input[type=text] {
       animation: bounce 1s;
+      /* -webkit-appearance: none; */
     }
 
     .login input[type=password] {
@@ -96,6 +98,7 @@
     .ui {
       font-weight: bolder;
       background: -webkit-linear-gradient(#B563FF, #535EFC, #0EC8EE);
+      /* -webkit-background-clip: text; */
       -webkit-text-fill-color: transparent;
       border-bottom: 4px solid transparent;
       border-image: linear-gradient(0.25turn, #535EFC, #0EC8EE, #0EC8EE);
@@ -138,8 +141,7 @@
         opacity: 0;
       }
     }
-
-    .regresar {
+    .regresar{
       display: flex;
       background: transparent;
       border: transparent;
@@ -149,18 +151,17 @@
       top: 10px;
       left: 10px;
       cursor: pointer;
-      transition: transform .2s, background-color .2s;
+      transition: transform .2s,background-color .2s;
       border-radius: 50px;
       z-index: 9;
       animation: bounce 3s;
-    }
 
-    .regresar:hover {
+    }
+    .regresar:hover{
       transform: scale(1.1);
       background-color: #2e2e2e;
     }
-
-    .fondoblur {
+    .fondoblur{
       background-color: #1e1e1ea8;
       width: 100%;
       height: 100%;
@@ -168,12 +169,12 @@
       position: absolute;
       border: transparent;
       backdrop-filter: blur(5px);
+      /* display: none; */
       opacity: 0;
       transition: opacity .5s;
       z-index: -5;
     }
-
-    .regresar:hover+.fondoblur {
+    .regresar:hover + .fondoblur{
       opacity: 100;
       z-index: 2;
     }
@@ -206,7 +207,8 @@
   <div class="login wrap">
     <div class="h1">Login</div>
     <form onsubmit="handleSubmit(event)">
-      <input placeholder="User" id="email" name="email" type="text" required>
+      <input
+        placeholder="User" id="email" name="email" type="text" required>
       <input placeholder="Password" id="password" name="password" type="password" required>
       <input value="Login" class="btn" type="submit">
     </form>
@@ -216,3 +218,5 @@
 </body>
 
 </html>
+<!--INSERT INTO users (email, password) VALUES ('admin@example.com', SHA2('password', 256));-->
+<!-- pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" -->

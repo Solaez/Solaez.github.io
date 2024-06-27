@@ -104,7 +104,7 @@
           <img src="/1pagina civil/img/productos/camisa/negro/camisa3.png" alt="Product 1" onload="hideLoader(this)">
           <h3>Producto 1</h3>
           <p class="description">Descripción del Producto 1</p>
-          <a href="/1pagina civil/sitios/prod.php#PRODUCTO1" id="redirigir-btn">
+          <a href="/1pagina civil/sitios/prod.php#10" id="redirigir-btn">
             <button class="boton-ver-inicio">Comprar</button>
           </a>
         </div>

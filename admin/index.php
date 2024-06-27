@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['user'])) {
+    header("Location: /login.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -46,6 +55,7 @@
                 <h5 class="subtitulo">Seleccione una para que le aparezca las funciones u botones</h5>
                 <button class="militar">Productos Militar</button>
                 <button class="civil">Productos Civil</button>
+                
             </div>
         </div>
         <div id="militaropcion">
