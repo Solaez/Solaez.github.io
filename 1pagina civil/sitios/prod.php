@@ -28,7 +28,134 @@
   <!--Contenido de la pagina-->
   <div class="container-productos">
     
-    <div class="sidebar-productos">
+  <div class="sidebar-productos">
+    <div class="categories-menu">
+        <h3>Categorías</h3>
+
+        <ul class="submovil">
+          <li>
+            <a href="#" data-category="all"><p>Categorias ▾</p></a>
+            <ul class="submenu">
+              <li><a href="#todos-los-productos" class="active" data-category="all" id="all">Todos los productos</a></li>
+            <li>
+              <a href="#" data-category="all">Estado ▾</a>
+              <ul class="submenu">
+                  <li><a href="#Nuevo" data-category="nuevo" id="nuevo">• Nuevo</a></li>
+                  <li><a href="#Promocion" data-category="promocion" id="ofertas">• Ofertas</a></li>
+                  <li><a href="#Destacados" data-category="destacados" id="destacados">• Destacados</a></li>
+              </ul>
+          </li>
+            <li><a href="#Acesorios"  data-category="acesorio" id="acesorios">Acesorios</a></li>
+            <li>
+                <a href="#Ropa" data-category="ropa">Ropa ▾</a>
+                <ul class="submenu">
+                    <li><a href="#Camisa" data-category="camisas" id="camisas">• Camisas</a></li>
+                    <li><a href="#Camibuso" data-category="camibuso" id="camibusos">• Camibusos</a></li>
+                    <li><a href="#Busos" data-category="busos" id="busos">• Busos</a></li>
+                    <li><a href="#Pantalones" data-category="pantalone" id="pantalones">• Pantalones</a></li>
+                    <li><a href="#Tennis" data-category="tennis" id="tennis">• Tennis</a></li>
+                </ul>
+            </li>
+            <li><a href="#Bolsos"  data-category="bolsos" id="bolsos">Bolsos</a></li>
+            <li>
+                <a href="#" data-category="all">Banderas ▾</a>
+                <ul class="submenu">
+                    <li><a href="#Banderas-exteriores" data-category="exteriore" id="banderase">• Banderas Exteriores</a></li>
+                    <li><a href="#Banderas-interiores" data-category="interiore" id="banderasi">• Banderas Interiores</a></li>
+                    <li><a href="#Banderines" data-category="banderine" id="banderines">• Banderines</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" data-category="all">Estampados ▾</a>
+                <ul class="submenu">
+                    <li><a href="#Estampados" data-category="estampados" id="estampados">• Estampados y más</a></li>
+                    <li><a href="#Personalizados" data-category="personalizado" id="personalizados">• Personalizados</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#gorras" data-category="gorras">Gorras ▾</a>
+                <ul class="submenu">
+                    <li><a href="#Gorras" data-category="gorra" id="gorras">• Gorras</a></li>
+                    <li><a href="#Casco" data-category="casco" id="cascos">• Casco</a></li>
+                    <li><a href="#Boinas" data-category="boina" id="boinas">• Boinas</a></li>
+                    <li><a href="#Pavas" data-category="pava" id="pavas">• Pavas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" data-category="all">Seguridad ▾</a>
+                <ul class="submenu">
+                    <li><a href="#Ejercito-policia" data-category="policia" id="policia">• Ejercito y policia</a></li>
+                    <li><a href="#Personal-rescate" data-category="rescate" id="rescate">• Personal de rescate</a></li>
+                    <li><a href="#Seguridad-privada" data-category="privada" id="privada">• Seguridad privada</a></li>
+                    <li><a href="#Seguridad-vial" data-category="vial" id="vial">• Seguridad vial</a></li>
+                </ul>
+            </li>
+            <li><a href="#Insignias-Parches"  data-category="insignia" id="insignias">Insignias y Parches</a></li>
+            </ul>
+        </li>
+        </ul>
+
+        <ul class="subpc">
+            <li><a href="#todos-los-productos" class="active" data-category="all" id="all">Todos los productos</a></li>
+            <li>
+              <a href="#" data-category="all">Estado ▾</a>
+              <ul class="submenu">
+                  <li><a href="#Nuevo" data-category="nuevo" id="nuevo">• Nuevo</a></li>
+                  <li><a href="#Promocion" data-category="promocion" id="ofertas">• Ofertas</a></li>
+                  <li><a href="#Destacados" data-category="destacados" id="destacados">• Destacados</a></li>
+              </ul>
+          </li>
+            <li><a href="#Acesorios"  data-category="acesorio" id="acesorios">Acesorios</a></li>
+            <li>
+                <a href="#Ropa" data-category="ropa">Ropa ▾</a>
+                <ul class="submenu">
+                    <li><a href="#Camisa" data-category="camisas" id="camisas">• Camisas</a></li>
+                    <li><a href="#Camibuso" data-category="camibuso" id="camibusos">• Camibusos</a></li>
+                    <li><a href="#Busos" data-category="busos" id="busos">• Busos</a></li>
+                    <li><a href="#Pantalones" data-category="pantalone" id="pantalones">• Pantalones</a></li>
+                    <li><a href="#Tennis" data-category="tennis" id="tennis">• Tennis</a></li>
+                </ul>
+            </li>
+            <li><a href="#Bolsos"  data-category="bolsos" id="bolsos">Bolsos</a></li>
+            <li>
+                <a href="#" data-category="all">Banderas ▾</a>
+                <ul class="submenu">
+                    <li><a href="#Banderas-exteriores" data-category="exteriore" id="banderase">• Banderas Exteriores</a></li>
+                    <li><a href="#Banderas-interiores" data-category="interiore" id="banderasi">• Banderas Interiores</a></li>
+                    <li><a href="#Banderines" data-category="banderine" id="banderines">• Banderines</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" data-category="all">Estampados ▾</a>
+                <ul class="submenu">
+                    <li><a href="#Estampados" data-category="estampados" id="estampados">• Estampados y más</a></li>
+                    <li><a href="#Personalizados" data-category="personalizado" id="personalizados">• Personalizados</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#gorras" data-category="gorras">Gorras ▾</a>
+                <ul class="submenu">
+                    <li><a href="#Gorras" data-category="gorra" id="gorras">• Gorras</a></li>
+                    <li><a href="#Casco" data-category="casco" id="cascos">• Casco</a></li>
+                    <li><a href="#Boinas" data-category="boina" id="boinas">• Boinas</a></li>
+                    <li><a href="#Pavas" data-category="pava" id="pavas">• Pavas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" data-category="all">Seguridad ▾</a>
+                <ul class="submenu">
+                    <li><a href="#Ejercito-policia" data-category="policia" id="policia">• Ejercito y policia</a></li>
+                    <li><a href="#Personal-rescate" data-category="rescate" id="rescate">• Personal de rescate</a></li>
+                    <li><a href="#Seguridad-privada" data-category="privada" id="privada">• Seguridad privada</a></li>
+                    <li><a href="#Seguridad-vial" data-category="vial" id="vial">• Seguridad vial</a></li>
+                </ul>
+            </li>
+            <li><a href="#Insignias-Parches"  data-category="insignia" id="insignias">Insignias y Parches</a></li>
+        </ul>
+
+    </div>
+    </div>
+    <!-- <div class="sidebar-productos">
       <div class="categories-menu">
           <h3>Categorías</h3>
           <ul>
@@ -72,7 +199,9 @@
               <li><a href="#Insignias-Parches"  data-category="insignia" id="insignias">Insignias y Parches</a></li>
           </ul>
       </div>
-  </div>
+  </div> -->
+
+  
     <div class="content-productos">
         <nav class="buscadorproductos">
             <nav>
@@ -286,24 +415,21 @@
       const productHTML = `
       <a href="#Productos"><button id="regresar-btn"><img class="mario" src="/1pagina civil/img/iconos/volver.png" alt="volver"></button></a>
 
-    <div class="detallesproductosmargen" style="display: flex; align-items: center;">
-        <div>
-            <img id="product1" src="${imag1}" onclick="changeMainImage(this.src)"><br>
-            <img id="product2" src="${imag2}" onclick="changeMainImage(this.src)"><br>
-            <img id="product3" src="${imag3}" onclick="changeMainImage(this.src)">
-        </div>
-        <div>
-            <img id="productoImagen" src="${image}" alt="${title}" onclick="showEnlargedImage(this.src)">
-        </div>
-        <div style="margin-left: 20px;">
-            <h2 id="titleProducto">${title}</h2>
-            <p id="tipoProducto"><b>Tipo:</b> ${tipo}</p>
-            <p id="ubicacionProducto"><b>Ubicación:</b> ${lugar}</p>
-            <p id="ubicacionProducto"><b>Precio:</b><del> ${precio}</del> - ${precio2}</p>
-            <button id="pedir-producto" onclick="showPopup()">Pedir producto</button>
-            
-        </div>
+    <div class="detallesproductosmargen" id="producto-container">
+    <div class="fotos">
+        <img id="product1" src="${imag1}" onclick="changeMainImage(this.src)">
+        <img id="product2" src="${imag2}" onclick="changeMainImage(this.src)">
+        <img id="product3" src="${imag3}" onclick="changeMainImage(this.src)">
     </div>
+    <img id="productoImagen" src="${image}" alt="${title}" onclick="showEnlargedImage(this.src)">
+    <div class="descripcion">
+        <h2 id="titleProducto">${title}</h2>
+        <p id="tipoProducto"><b>Tipo:</b> ${tipo}</p>
+        <p id="ubicacionProducto"><b>Ubicación:</b> ${lugar}</p>
+        <p id="ubicacionProducto"><b>Precio:</b><del> ${precio}</del> - ${precio2}</p>
+        <button id="pedir-producto" onclick="showPopup()">Pedir producto</button>
+    </div>
+</div>
     <div>
         <h3 id="descripcionProducto2">Descripción del producto</h3>
         <p id="descripcionProducto">${description.replace(/\n/g, '<br>')}</p>

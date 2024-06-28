@@ -425,6 +425,10 @@ nav a:hover {
   margin-top: 50px;
 
 }
+.detallesproductosmargen{
+  margin-top: 50px;
+  
+}
 
 
 #descripcionProducto{
@@ -433,6 +437,11 @@ nav a:hover {
   background-color: #f1f1f1;
   border-radius: 5px;
 }
+/* .fotos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+} */
 .product{
   display: flex;
 }
@@ -882,3 +891,35 @@ element.style {
   justify-items: center;
 }
 
+/* Estilos generales */
+.detallesproductosmargen {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ajusta el espaciado entre los elementos */
+  margin: 10px; /* Margen externo para separación */
+}
+
+/* Estilos específicos para móvil */
+@media (max-width: 768px) {
+  .detallesproductosmargen {
+      flex-direction: column; 
+  }
+  .fotos {
+      /* display: flex;
+      flex-wrap: wrap;
+      justify-content: center;  */
+      position: relative;
+      top: 265px;
+  }
+}
+
+/* Estilos específicos para PC */
+@media (min-width: 769px) {
+  .fotos {
+      display: flex;
+      flex-direction: column; 
+  }
+  .descripcion {
+      margin-left: 20px; 
+  }
+}

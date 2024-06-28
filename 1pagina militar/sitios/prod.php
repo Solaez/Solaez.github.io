@@ -198,16 +198,17 @@
                     while($row = $result->fetch_assoc()) {
                       // Aquí se genera el HTML para cada producto
                       echo '<div id="' . $row['id_producto'] . '" class="product" data-category="' . $row['categorias'] . ',' . $row['estado'] . '">';
-                      // 
                       echo '<span class="span-nuevo">' . $row['estado'] . '</span>';
                       echo '<img src="' . $row['imagen1'] . '" alt="' . $row['nombre'] . '" >';
                       echo '<h3 class="titleproductos">' . $row['nombre'] . '</h3>';
                       echo '<a href="#' . $row['id_producto'] . '"><button>Seleccionar</button></a>';
+
                       echo '<div id="product-details" style="display: none;">';
                       echo '<img class="imag1" src="' . $row['imagen2'] . '" alt="imagen1">';
                       echo '<img class="imag2" src="' . $row['imagen3'] . '" alt="imagen2">';
                       echo '<img class="imag3" src="' . $row['imagen4'] . '" alt="imagen3">';
                       echo '</div>';
+                      
                       echo '<div id="product-details" style="display: none;">';
                       echo '<p class="descripcion" >' . $row['descripcion'] . '</p>';
                       echo '<p class="tipo">' . $row['tipo'] . '</p>';
@@ -216,6 +217,7 @@
                       echo '<p class="precio2">' . $row['precio2'] . '</p>';
                       echo '</div>';
                       echo '</div>';
+
                     }
                   } else {
                     echo "0 resultados";
@@ -244,7 +246,7 @@
     </div>
   </article>
 
-  <script>
+<script>
     document.addEventListener('DOMContentLoaded', function() {
       const buyButton = document.getElementById('buyButton');
       
@@ -265,7 +267,7 @@
         document.getElementById('whatsappLink').href = whatsappLink;
       });
     });
-  </script>
+</script>
 
     <!--Mensajes-->
     <?php require '../../1pagina militar/src/help.php'; ?>
@@ -313,25 +315,22 @@ productDetails.innerHTML = '';
 
 const productHTML = `
 <a href="#Productos"><button id="regresar-btn"><img class="mario" src="/1pagina militar/img/iconos/volver.png" alt="volver"></button></a>
-
-<div class="detallesproductosmargen" style="display: flex; align-items: center;">
-    <div>
-        <img id="product1" src="${imag1}" onclick="changeMainImage(this.src)"><br>
-        <img id="product2" src="${imag2}" onclick="changeMainImage(this.src)"><br>
+<div class="detallesproductosmargen" id="producto-container">
+    <div class="fotos">
+        <img id="product1" src="${imag1}" onclick="changeMainImage(this.src)">
+        <img id="product2" src="${imag2}" onclick="changeMainImage(this.src)">
         <img id="product3" src="${imag3}" onclick="changeMainImage(this.src)">
     </div>
-    <div>
-        <img id="productoImagen" src="${image}" alt="${title}" onclick="showEnlargedImage(this.src)">
-    </div>
-    <div style="margin-left: 20px;">
+    <img id="productoImagen" src="${image}" alt="${title}" onclick="showEnlargedImage(this.src)">
+    <div class="descripcion">
         <h2 id="titleProducto">${title}</h2>
         <p id="tipoProducto"><b>Tipo:</b> ${tipo}</p>
         <p id="ubicacionProducto"><b>Ubicación:</b> ${lugar}</p>
         <p id="ubicacionProducto"><b>Precio:</b><del> ${precio}</del> - ${precio2}</p>
         <button id="pedir-producto" onclick="showPopup()">Pedir producto</button>
-        
     </div>
 </div>
+
 <div>
     <h3 id="descripcionProducto2">Descripción del producto</h3>
     <p id="descripcionProducto">${description.replace(/\n/g, '<br>')}</p>
