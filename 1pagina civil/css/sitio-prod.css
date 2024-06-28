@@ -698,8 +698,52 @@ nav a:hover {
   
 }
 
+
+/*menu dezplegable de categorias*/
+.submovil{
+  display: none;
+}
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 668px) {
+  .categories a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 7px;
+    font-weight: 500;
+    padding: 3px 18px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+  .search-icons {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+  nav a.active {
+    color: #1538ff;
+    display: none;
+}
+  .submovil{
+    display: block;
+  }
+  .subpc{
+    display: none;
+  }
+.categories-menu h3{
+  display: none;
+
+}
+.submovil p {
+  font-size: 20px;
+  color: #a83e00;
+}
+
+
   .product{
     min-width: 0;
     min-height: 100px;
@@ -808,5 +852,89 @@ nav a:hover {
 }
 img#product2, #product1, #product3 {
   max-height: 50px;
-  min-height: 50px;
+  min-height: 30px;
+}
+
+
+
+
+
+
+
+
+element.style {
+  display: grid;
+  justify-items: center;
+}
+
+/* Estilos generales */
+.detallesproductosmargen {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ajusta el espaciado entre los elementos */
+  margin: 10px; /* Margen externo para separación */
+}
+
+/* Estilos específicos para móvil */
+@media (max-width: 768px) {
+  .detallesproductosmargen {
+      flex-direction: column; 
+  }
+  .fotos {
+      /* display: flex;
+      flex-wrap: wrap;
+      justify-content: center;  */
+      position: relative;
+      top: 265px;
+  }
+}
+
+/* Estilos específicos para PC */
+@media (min-width: 769px) {
+  .fotos {
+      display: flex;
+      flex-direction: column; 
+  }
+  .descripcion {
+      margin-left: 20px; 
+  }
+}
+
+/*sub menu de categoria
+--------------------------------------------------------------------------------------------------*/
+
+@keyframes slideDown {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  100% {
+    max-height: 1000px;
+    /* Ajusta este valor según la altura deseada */
+    opacity: 1;
+  }
+}
+
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  opacity: 0;
+  position: relative;
+  left: 10px;
+}
+
+.submenu li:hover {
+  background-color: #3367f7;
+
+}
+
+.submenu.open {
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+.categories-menu ul li:hover .submenu li:hover {
+  background-color: #e4e4e4;
+
 }
