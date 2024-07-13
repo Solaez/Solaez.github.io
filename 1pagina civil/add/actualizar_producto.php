@@ -54,7 +54,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Cerrar conexión
     $conn->close();
-} else {
-    echo "Acceso no permitido.";
-}
+} else
 ?>

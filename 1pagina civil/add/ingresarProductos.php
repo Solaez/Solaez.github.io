@@ -1,19 +1,14 @@
 
 <?php
-// Procesar el formulario cuando se envía
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Configuración de la conexión a la base de datos
  require '../../php/baseDatos.php';
 
-    // Crear conexión
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    // Verificar conexión
     if ($conn->connect_error) {
         die("Conexión fallida: " . $conn->connect_error);
     }
 
-    // Obtener datos del formulario
     $nombre = $_POST['nombre'];
     $categorias = $_POST['categorias'];
     $descripcion = $_POST['descripcion'];
@@ -23,15 +18,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $precio2 = $_POST['precio2'];
     $estado = $_POST['estado'];
 
-    // Directorio donde se guardarán las imágenes
     $uploadDirectory = $_SERVER['DOCUMENT_ROOT'] . '/1pagina civil/sitios/productoCivil/';
 
-    // Crear el directorio si no existe
     if (!file_exists($uploadDirectory)) {
         mkdir($uploadDirectory, 0777, true);
     }
 
-    // Procesar las imágenes
     $uploadedFiles = array();
     $uploadOk = 1;
 
