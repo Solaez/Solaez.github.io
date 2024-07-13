@@ -137,83 +137,44 @@
       <div class="carousel-container">
       <h2 class="title-produc">Productos más destacados</h2>
         <div class="carousel">
-          <div class="carousel-item">
-            <img src="/1pagina militar/img/productos/camisa/negro/camisa3.png" alt="Product 1" onload="hideLoader(this)">
-            <h3>Producto 1</h3>
-            <p class="description">Descripción del Producto 1</p>
-            <a href="/1pagina militar/sitios/prod.php#PRODUCTO1" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
+            
+                    <?php
+                  require '../../php/baseDatos.php';
+
+                  $conn = new mysqli($servername, $username, $password, $dbname);
+
+                  if ($conn->connect_error) {
+                    die("Conexión fallida: " . $conn->connect_error);
+                  }
+                  ?>
+                    <?php
+                  $sql = "SELECT * FROM militar WHERE estado = 'destacado' LIMIT 10";
+
+                  $result = $conn->query($sql);
+
+                  if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                      
+                      echo '<div class="carousel-item">';
+                      echo '<span class="ofer-sticker">' . $row['estado'] . '</span>';
+                      echo '<img src="' . $row['imagen1'] . '" alt="' . $row['nombre'] . '" >';
+                      echo '<h3>' . $row['nombre'] . '</h3>';
+                      echo '<a href="/1pagina militar/sitios/prod.php#' . $row['id_producto'] . '"><button class="boton-ver-inicio">Comprar</button></a>';
+
+                      echo '</div>';
+
+                    }
+                  } else {
+                    echo "0 resultados";
+                  }
+                  $conn->close();
+                  ?>
+
           </div>
           
-          <div class="carousel-item">
-            <img src="/1pagina militar/img/productos/camisa/camisa roja/camisa 1.png" alt="Product 2">
-            <h3>Producto 2</h3>
-            <p class="description">Descripción del Producto 2</p>
-            <a href="/1pagina militar/sitios/prod.php#PRODUCTO3" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
-          <div class="carousel-item">
-            <img src="/1pagina militar/img/productos/cascos/casco1/casco1.png" alt="Product 3">
-            <h3>Producto 3</h3>
-            <p class="description">Descripción del Producto 3</p>
-            <a href="/1pagina militar/sitios/prod.php#PRODUCTO5" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
-          <div class="carousel-item">
-            <img src="/1pagina militar/img/productos/camisa/amarilla/camisa2.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina militar/sitios/prod.php#PRODUCTO2" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-
-          </div>
-          <div class="carousel-item">
-            <span class="ofer-sticker">Oferta</span>
-            <img src="/1pagina militar/img/productos/bordados/bordado circulo/bordado1.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina militar/sitios/prod.php#PRODUCTO6" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
-          <div class="carousel-item">
-            <span class="ofer-sticker">Oferta</span>
-            <img src="/1pagina militar/img/productos/bordados/bordado figura/bordado1.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina militar/sitios/prod.php#PRODUCTO7" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
-          <div class="carousel-item">
-            <img src="/1pagina militar/img/productos/bordados/bordado triangulo/bordado1.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina militar/sitios/prod.php#PRODUCTO8" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
-          <div class="carousel-item">
-            <img src="/1pagina militar/img/productos/busos/buso.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina militar/sitios/prod.php#PRODUCTO4" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-          <!-- Agrega más elementos según sea necesario -->
-        </div>
         <button class="prev" onclick="prevSlide(); resetTimer()">❮</button>
         <button class="next" onclick="nextSlide(); resetTimer()">❯</button>
+
         
       <a href="/1pagina militar/sitios/prod.php#destacados"><button class="ver-mas-venta">
         <img src="https://img.icons8.com/fluency-systems-filled/48/checkout.png">
@@ -230,76 +191,41 @@
       <div class="carousel-container">
       <h2 class="title-produc">¡Ofertas Especiales!</h2>
         <div class="carousel2">
-          <div class="carousel-item">
-            <span class="ofer-sticker">¡Oferta!</span>
-            <img src="/1pagina militar/add/imagenesProductos/2.png" alt="Product 1" onload="hideLoader(this)">
-            <h3>Bolso militar, Bolsa de Viaje o tula</h3>
-            <p class="description">Descripción del Producto 1</p>
-            <a href="/1pagina militar/sitios/prod.php#PRODUCTO1" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
+              <?php
+                  require '../../php/baseDatos.php';
+
+                  $conn = new mysqli($servername, $username, $password, $dbname);
+
+                  if ($conn->connect_error) {
+                    die("Conexión fallida: " . $conn->connect_error);
+                  }
+                  ?>
+                    <?php
+                  $sql = "SELECT * FROM militar WHERE estado = 'oferta' LIMIT 10";
+
+                  $result = $conn->query($sql);
+
+                  if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                      
+                      echo '<div class="carousel-item">';
+                      echo '<span class="ofer-sticker">' . $row['estado'] . '</span>';
+                      echo '<img src="' . $row['imagen1'] . '" alt="' . $row['nombre'] . '" >';
+                      echo '<h3>' . $row['nombre'] . '</h3>';
+                      echo '<a href="/1pagina militar/sitios/prod.php#' . $row['id_producto'] . '"><button class="boton-ver-inicio">Comprar</button></a>';
+                      echo '</div>';
+
+                    }
+                  } else {
+                    echo "0 resultados";
+                  }
+                  $conn->close();
+                  ?>
           </div>
           
-          <div class="carousel-item">
-            <span class="ofer-sticker">Oferta</span>
-            <img src="/1pagina militar/img/productos/camisa/camisa roja/camisa 1.png" alt="Product 2">
-            <h3>Producto 2</h3>
-            <p class="description">Descripción del Producto 2</p>
-            <a href="/1pagina militar/sitios/prod.php#PRODUCTO3" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
-          <div class="carousel-item">
-            <span class="ofer-sticker">¡Oferta!</span>
-            <img src="/1pagina militar/img/productos/cascos/casco1/casco1.png" alt="Product 3">
-            <h3>Producto 3</h3>
-            <p class="description">Descripción del Producto 3</p>
-            <a href="/1pagina militar/sitios/prod.php#PRODUCTO5" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
-          <div class="carousel-item">
-            <span class="ofer-sticker">Oferta</span>
-            <img src="/1pagina militar/img/productos/camisa/amarilla/camisa2.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina militar/sitios/prod.php#PRODUCTO2" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-
-          </div>
-          <div class="carousel-item">
-            <span class="ofer-sticker">Oferta</span>
-            <img src="/1pagina militar/img/productos/bordados/bordado circulo/bordado1.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina militar/sitios/prod.php#PRODUCTO6" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
-          <div class="carousel-item">
-            <span class="ofer-sticker">Oferta</span>
-            <img src="/1pagina militar/img/productos/bordados/bordado figura/bordado1.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina militar/sitios/prod.php#PRODUCTO7" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
-          <div class="carousel-item">
-            <span class="ofer-sticker">Oferta</span>
-            <img src="/1pagina militar/img/productos/bordados/bordado triangulo/bordado1.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina militar/sitios/prod.php#PRODUCTO8" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div>
-
+        <button class="prev" onclick="prevSlide2(); resetTimer2()">❮</button>
+        <button class="next" onclick="nextSlide2(); resetTimer2()">❯</button>
+<!-- 
           <div class="carousel-item">
             <span class="ofer-sticker">Oferta</span>
             <img src="/1pagina militar/img/productos/busos/buso.png" alt="Product 4">
@@ -308,11 +234,9 @@
             <a href="/1pagina militar/sitios/prod.php#PRODUCTO4" id="redirigir-btn">
               <button class="boton-ver-inicio">Comprar</button>
             </a>
-          </div>
+          </div> -->
           <!-- Agrega más elementos según sea necesario -->
-        </div>
-        <button class="prev" onclick="prevSlide2(); resetTimer2()">❮</button>
-        <button class="next" onclick="nextSlide2(); resetTimer2()">❯</button>
+        <!-- </div> -->
 
         <a href="/1pagina militar/sitios/prod.php#promocion">
         <button class="ver-mas-venta">
