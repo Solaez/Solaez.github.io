@@ -189,14 +189,11 @@
                   }
                   ?>
                     <?php
-                  // Query para obtener productos
                   $sql = "SELECT * FROM militar";
                   $result = $conn->query($sql);
 
                   if ($result->num_rows > 0) {
-                    // Iterar sobre cada fila de resultados
                     while($row = $result->fetch_assoc()) {
-                      // Aquí se genera el HTML para cada producto
                       echo '<div id="' . $row['id_producto'] . '" class="product" data-category="' . $row['categorias'] . ',' . $row['estado'] . '">';
                       echo '<span class="span-nuevo">' . $row['estado'] . '</span>';
                       echo '<img src="' . $row['imagen1'] . '" alt="' . $row['nombre'] . '" >';

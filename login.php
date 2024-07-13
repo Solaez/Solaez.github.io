@@ -178,6 +178,7 @@
       z-index: 2;
     }
   </style>
+
   <script>
     async function handleSubmit(event) {
       event.preventDefault();
@@ -200,6 +201,7 @@
       }
     }
   </script>
+  
 </head>
 
 <body>
