@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -206,11 +206,11 @@
 
 <body>
   <div class="login wrap">
-    <div class="h1">Login</div>
+    <div class="h1">Iniciar Sección</div>
     <form onsubmit="handleSubmit(event)">
-      <input placeholder="User" id="email" name="email" type="text" required>
-      <input placeholder="Password" id="password" name="password" type="password" required>
-      <input value="Login" class="btn" type="submit">
+      <input placeholder="Usuario" id="email" name="email" type="text" required>
+      <input placeholder="Contraseña" id="password" name="password" type="password" required>
+      <input value="Iniciar Sección" class="btn" type="submit">
     </form>
   </div>
   <a href="/index.php" class="regresar"><button class="regresar">↩</button></a>

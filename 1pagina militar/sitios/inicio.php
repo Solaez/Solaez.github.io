@@ -121,9 +121,9 @@
         </div>
       </div>
       </section>
-
+      
     </main>
-
+      
     <!--Fortalezas-->
     <nav class="fortalezas">
         <img src="/1pagina militar/img/imagenes/fortalezas/telefono.png" alt="telefono">
@@ -131,7 +131,7 @@
         <img src="/1pagina militar/img/imagenes/fortalezas/persona.png" alt="persona">
     </nav>
 
-    <!--Articulos de venta inicio-->
+    <!--Articulos de venta inicio -->
     <article>
         
       <div class="carousel-container">
@@ -148,7 +148,7 @@
                   }
                   ?>
                     <?php
-                  $sql = "SELECT * FROM militar WHERE estado = 'destacado' LIMIT 10";
+                  $sql = "SELECT * FROM militar WHERE estado = 'destacados' LIMIT 10";
 
                   $result = $conn->query($sql);
 
@@ -201,7 +201,7 @@
                   }
                   ?>
                     <?php
-                  $sql = "SELECT * FROM militar WHERE estado = 'oferta' LIMIT 10";
+                  $sql = "SELECT * FROM militar WHERE estado = 'promocion' LIMIT 10";
 
                   $result = $conn->query($sql);
 
@@ -263,12 +263,12 @@
 <script src="/1pagina militar/js/header-bar.js"></script>
 <script src="/1pagina militar/js/article.js"></script>
 <script src="/1pagina militar/js/whatsapp.js"></script>
-
 <!--Fin-->
+
 </body>
 </html>
 
-
-
 <!--cursor-->
 <?php require '../../1pagina militar/src/cursor.php'; ?>
+
+
