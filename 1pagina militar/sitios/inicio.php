@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
     <!--fin-->
 </head>
 <body>
-   
+  
     <!--Header Barra de navegación-->
     <?php require '../../1pagina militar/src/header.php'; ?>
 
@@ -257,13 +257,13 @@
     <!--footer-->
     <?php require '../../1pagina militar/src/footer.php'; ?>
 
-<!--Scripts-->
-<script src="/js/chat.js"></script>
-<script src="/1pagina militar/js/loader.js"></script>
-<script src="/1pagina militar/js/header-bar.js"></script>
-<script src="/1pagina militar/js/article.js"></script>
-<script src="/1pagina militar/js/whatsapp.js"></script>
-<!--Fin-->
+    <!--Scripts-->
+    <script src="/js/chat.js"></script>
+    <script src="/1pagina militar/js/loader.js"></script>
+    <script src="/1pagina militar/js/header-bar.js"></script>
+    <script src="/1pagina militar/js/article.js"></script>
+    <script src="/1pagina militar/js/whatsapp.js"></script>
+    <!--Fin-->
 
 </body>
 </html>
