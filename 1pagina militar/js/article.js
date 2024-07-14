@@ -28,6 +28,7 @@ let slideIndex = 0;
     function autoSlide() {
       timer = setInterval(() => {
         nextSlide();
+        nextSlide2();
       }, 3000); // Cambia 3000 a la cantidad de milisegundos que desees
     }
 
@@ -38,7 +39,8 @@ let slideIndex = 0;
       autoSlide(); // Reinicia el carrusel automático
     }
     //fin------------------------------------------------------------
-    //ventas inicio_____---------------------------------------------
+    
+//ventas inicio_____---------------------------------------------
     let slideIndex2 = 0;
     let timer2;
 function showSlides2() {
