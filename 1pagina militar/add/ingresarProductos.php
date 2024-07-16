@@ -1,9 +1,8 @@
-
 <?php
 // Procesar el formulario cuando se envía
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Configuración de la conexión a la base de datos
- require '../../php/baseDatos.php';
+    require '../../php/baseDatos.php';
 
     // Crear conexión
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -39,7 +38,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $fileInputName = "imagen{$i}";
 
         if (!empty($_FILES[$fileInputName]['name'])) {
-            $target_file = $uploadDirectory . basename($_FILES[$fileInputName]["name"]);
+            // Generar nuevo nombre para el archivo
+            $randomNumbers = rand(10, 99); // Generar dos números aleatorios
+            $imageFileType = strtolower(pathinfo($_FILES[$fileInputName]['name'], PATHINFO_EXTENSION));
+            $newFileName = $nombre . "_" . $randomNumbers . "." . $imageFileType;
+            $target_file = $uploadDirectory . $newFileName;
 
             // Verificar si el archivo de imagen es una imagen real o falsa
             $check = getimagesize($_FILES[$fileInputName]["tmp_name"]);
@@ -49,9 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 continue;
             }
 
-
             // Permitir ciertos formatos de archivo
-            $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
             if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif") {
                 echo "Lo siento, sólo se permiten archivos JPG, JPEG, PNG y GIF para {$fileInputName}.<br>";
                 $uploadOk = 0;
