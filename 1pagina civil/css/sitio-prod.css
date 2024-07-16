@@ -643,7 +643,9 @@ nav a:hover {
   transform: scale(1.03);
   box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.5);
 }
-
+img#productoImagen {
+  max-height: 200px;
+}
 
 
 
@@ -747,6 +749,7 @@ nav a:hover {
   .product{
     min-width: 0;
     min-height: 100px;
+    
 
   }
   #productoImagen {
