@@ -79,11 +79,12 @@
 
 <!--Scripts-->
 <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script> 
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 <script type="text/javascript">
-  emailjs.init('SB25-PCBEpOU3FwK2')
+  emailjs.init('BbIoFKXSf9cmrFFPY')
 </script>
+
 <script>
   const btn = document.getElementById('button');
 
@@ -96,7 +97,7 @@
       btn.value = 'Enviando...';
 
       const serviceID = 'default_service';
-      const templateID = 'template_ypbfvyl';
+      const templateID = 'template_mqelh8v';
 
       emailjs.sendForm(serviceID, templateID, this)
         .then(() => {

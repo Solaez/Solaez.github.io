@@ -76,15 +76,16 @@
   <?php require '../../1pagina civil/src/footer.php'; ?>
 
 <!--Scripts-->
-<script src="/js/chat.js"></script>
 <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script> 
-<script type="text/javascript">
-    emailjs.init('SB25-PCBEpOU3FwK2')
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
+
+<script type="text/javascript">
+  emailjs.init('BbIoFKXSf9cmrFFPY')
+</script>
+
 <script>
-   const btn = document.getElementById('button');
+  const btn = document.getElementById('button');
 
   document.getElementById('form').addEventListener('submit', function(event) {
     // Detener el envío del formulario
@@ -95,7 +96,7 @@
       btn.value = 'Enviando...';
 
       const serviceID = 'default_service';
-      const templateID = 'template_ypbfvyl';
+      const templateID = 'template_mqelh8v';
 
       emailjs.sendForm(serviceID, templateID, this)
         .then(() => {
