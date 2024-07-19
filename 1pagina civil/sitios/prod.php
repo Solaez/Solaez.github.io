@@ -411,6 +411,13 @@
 
       // Crear el contenido HTML para mostrar los detalles del producto
 
+// Crear el contenido HTML para mostrar los detalles del producto
+let precioHTML = '';
+
+
+if (precio || precio2) {
+    precioHTML = `<p id="ubicacionProducto"><b>Precio:</b><del> ${precio}</del> - ${precio2}</p>`;
+}
 
       const productHTML = `
       <a href="#Productos"><button id="regresar-btn"><img class="mario" src="/1pagina civil/img/iconos/volver.png" alt="volver"></button></a>
@@ -426,7 +433,7 @@
         <h2 id="titleProducto">${title}</h2>
         <p id="tipoProducto"><b>Tipo:</b> ${tipo}</p>
         <p id="ubicacionProducto"><b>Ubicación:</b> ${lugar}</p>
-        <p id="ubicacionProducto"><b>Precio:</b><del> ${precio}</del> - ${precio2}</p>
+        ${precioHTML}
         <button id="pedir-producto" onclick="showPopup()">Pedir producto</button>
     </div>
 </div>
@@ -436,29 +443,6 @@
     </div>
 `;
 
-      // const productHTML = `
-      //     <button id="regresar-btn"><img class="mario" src="/img/iconos/volver.png" alt="volver"></button>
-      //     <div style="display: flex; align-items: center;">
-      //         <div>
-      //             <img id="product1" src="${imag1}" onclick="changeMainImage(this.src)"><br>
-      //             <img id="product2" src="${imag2}" onclick="changeMainImage(this.src)"><br>
-      //             <img id="product3" src="${imag3}" onclick="changeMainImage(this.src)">
-      //         </div>
-      //         <div>
-      //             <img id="productoImagen" src="${image}" alt="${title}" onclick="showEnlargedImage(this.src)">
-                  
-      //           <h3 id="descripcionProducto2">Descripción del producto</h3>
-      //           <p id="descripcionProducto">${description}</p>
-                  
-      //         </div>
-      //         <div style="margin-left: 20px;">
-      //             <h2 id="titleProducto">${title}</h2>
-      //             <p id="tipoProducto"><b>Tipo:</b> ${tipo}</p>
-      //             <p id="ubicacionProducto"><b>Ubicación:</b> ${lugar}</p>
-      //             <button id="pedir-producto" onclick="showPopup()">Pedir producto</button>
-      //         </div>
-      //     </div>
-      // `;
       // Agregar el contenido HTML al contenedor de detalles
       productDetails.innerHTML = productHTML;
 

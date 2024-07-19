@@ -95,11 +95,11 @@ if (!isset($_SESSION['user'])) {
                             </div>
 
                             <div>
-                                <input placeholder="Precio Viejo (poner espacio)" class="input" type="text" id="precio"  name="precio" step="any">
+                                <input placeholder="Precio Viejo (opcional)" class="input" type="text" id="precio"  name="precio" step="any">
                             </div>
 
                             <div>
-                                <input placeholder="Precio Actual (1,00)" class="input" type="text" id="precio2"  name="precio2">
+                                <input placeholder="Precio Actual (opcional)" class="input" type="text" id="precio2"  name="precio2">
                             </div>
 
 
@@ -189,7 +189,7 @@ if (!isset($_SESSION['user'])) {
         });
     });
 
-    </script>
+</script>
 </body>
 </html>
 <?php require '../../php/NO.php'; ?>

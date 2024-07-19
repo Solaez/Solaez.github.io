@@ -433,9 +433,10 @@ nav a:hover {
 
 #descripcionProducto{
   text-align: justify;
-  margin-left: 10px;
-  background-color: #f1f1f1;
-  border-radius: 5px;
+    /* margin-left: 10px; */
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px 15px;
 }
 /* .fotos {
   display: flex;
@@ -576,6 +577,8 @@ nav a:hover {
   color: #302f2f;
   margin-top: 131px;
   max-width: 376px;
+  
+  min-width: 376px;
 }
 
 #tipoProducto,
@@ -651,6 +654,8 @@ nav a:hover {
   margin-left: 5px;
   min-height: 340px;
   cursor: pointer;
+  background: linear-gradient(150deg, rgba(180,180,180,1) 0%, rgba(255,255,255,1) 35%, rgba(150,150,150,1) 100%);
+
 }
 
 #productoImagen:hover {
