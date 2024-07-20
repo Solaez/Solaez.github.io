@@ -1,51 +1,49 @@
 <?php
-session_start();
-
-if (!isset($_SESSION['user'])) {
-    header("Location: /login.php");
-    exit();
-}
-?>
-<?php
 include 'config.php';
 
-// Insertar datos
+// Verificar si se pasó un ID
+if (!isset($_GET['id'])) {
+    die("ID no especificado");
+}
+
+$id = intval($_GET['id']);
+
+// Recuperar los datos de la cuenta para el ID especificado
+$sql = "SELECT * FROM cuentas WHERE id = $id";
+$result = $conn->query($sql);
+
+if ($result->num_rows != 1) {
+    die("Cuenta no encontrada");
+}
+
+$cuenta = $result->fetch_assoc();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $cuenta = $_POST['cuenta'];
-    $contrasena = $_POST['contrasena'];
-    $link = $_POST['link'];
+    $cuenta_actualizada = $_POST['cuenta'];
+    $link_actualizado = $_POST['link'];
+    $contrasena_actualizada = $_POST['contrasena'];
 
-    $sql = "INSERT INTO cuentas (cuenta, contrasena, link) VALUES ('$cuenta', '$contrasena', '$link')";
+    // $contrasena_hash = empty($contrasena_actualizada) ? $cuenta['contrasena'] : password_hash($contrasena_actualizada, PASSWORD_DEFAULT);
 
-    if ($conn->query($sql) === TRUE) {
+    $sql_update = "UPDATE cuentas SET cuenta='$cuenta_actualizada', contrasena='$contrasena_actualizada', link='$link_actualizado' WHERE id=$id";
+
+    if ($conn->query($sql_update) === TRUE) {
         header("Location: ../../admin/password/index.php");
         exit; // Asegúrate de terminar la ejecución del script después de la redirección
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $sql_update . "<br>" . $conn->error;
     }
-}
-
-// Recuperar datos
-$sql = "SELECT id, cuenta, contrasena, link FROM cuentas";
-$result = $conn->query($sql);
-
-$cuentas = [];
-if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) {
-        $cuentas[] = $row;
-    }
-} else {
-    echo "0 resultados";
 }
 
 $conn->close();
 ?>
+
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar cuentas - Producciones Leon</title>
+    <title>editar cuentas - Producciones Leon</title>
     <link rel="icon" href="/img/iconos/admin.png">
     <link rel="stylesheet" href="new.css">
     <link rel="stylesheet" href="/admin/style.css">
@@ -133,32 +131,18 @@ $conn->close();
 </head>
 <body>
     
-    <div class="produccion">
+<div class="produccion">
     <div class="dashboard">
         <div>
             <div class="container">
                 
-                <h1>Cuentas guardadas</h1>
-                <br>
-                <div class="contrasenas">
-
-                    <?php foreach ($cuentas as $cuenta): ?>
-                        <div>
-                            <p><b><?php echo htmlspecialchars($cuenta['link']); ?></b></p> 
-                            <p class="cuenta hover">Cuenta: <?php echo htmlspecialchars($cuenta['cuenta']); ?></p>    
-                            <p class="contrasena hover">Contraseña: <?php echo htmlspecialchars($cuenta['contrasena']); ?></p> <!-- La contraseña está oculta por seguridad -->
-                            <a href="editar.php?id=<?php echo $cuenta['id']; ?>"><button class="boton">Editar</button></a>
-                        </div>
-                    <?php endforeach; ?>
-                    
-                </div>
-                
-    <h2>Agregar Nueva Cuenta</h2>
+            <h2>Editar Cuenta</h2>
     <form method="post" action="">
-        <div><p>Nombre:</p> <input class="input" type="text" name="link" required></div><br>
-        <div><p>Cuenta:</p> <input class="input" type="text" name="cuenta" required></div><br>
-        <div><p>Contraseña:</p> <input class="input" type="password" name="contrasena" required></div><br>
-        <input class="boton" type="submit" value="Agregar">
+        Nombre:       <input class="input" type="text" name="link" value="<?php echo htmlspecialchars($cuenta['link']); ?>" required><br>
+        Cuenta:     <input class="input" type="text" name="cuenta" value="<?php echo htmlspecialchars($cuenta['cuenta']); ?>" required><br>
+        Contraseña: <input class="input" type="text" name="contrasena" value="<?php echo htmlspecialchars($cuenta['contrasena']); ?>" required><br>
+        <input class="boton" type="submit" value="Actualizar">
+        <a href="/admin/password/index.php"><button class="boton" >Volver</button></a>
     </form>
             </div>
         </div>
@@ -172,6 +156,7 @@ $conn->close();
                 <?php
                 require '../../admin/loading.php';
                 ?>
+
 <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             const cuentaElements = document.querySelectorAll('.cuenta');
@@ -237,6 +222,7 @@ $conn->close();
         reader.readAsDataURL(input.files[0]);
     }
 </script>
+
 <script>
         // script.js
 
@@ -253,7 +239,7 @@ $conn->close();
     });
 
 </script>
+    
 </body>
 </html>
-
 <?php require '../../php/NO.php'; ?>
