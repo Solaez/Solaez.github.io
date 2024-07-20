@@ -53,10 +53,10 @@ $conn->close();
         .dashboard.enter {
             opacity: 1;
             transform: scale(1);
-            height: 500px;
-            max-height: 500px;
-            width: 700px;
-            max-width: 700px;
+            height: 550px;
+            max-height: 550px;
+            width: 800px;
+            max-width: 800px;
             overflow: overlay;
             
         }
@@ -67,11 +67,16 @@ $conn->close();
         .contrasenas div {
             background-color: #2c2c2c;
             margin: 10px;
-            width: 300px;
-            height: 152px;
+            width: 355px;
+            height: 190px;
             padding: 0px 12px;
             border-radius: 10px;
             overflow: overlay;
+            transition: transform .5s, box-shadow 1s;
+        }
+        .contrasenas div:hover {
+            box-shadow: 0 10px 10px black;
+            transform: translateY(-20px);
         }
         .input {
             margin: 30px;
@@ -118,6 +123,11 @@ $conn->close();
         }
         .hover {
             cursor: pointer;
+            padding: 5px;
+        }
+        .hover:hover{
+            background: rebeccapurple;
+            border-radius: 50px;
         }
 
         .fade-in-out {
@@ -144,7 +154,7 @@ $conn->close();
 
                     <?php foreach ($cuentas as $cuenta): ?>
                         <div>
-                            <p><b><?php echo htmlspecialchars($cuenta['link']); ?></b></p> 
+                            <p><b><?php echo htmlspecialchars($cuenta['link']); ?></b></p>
                             <p class="cuenta hover">Cuenta: <?php echo htmlspecialchars($cuenta['cuenta']); ?></p>    
                             <p class="contrasena hover">Contraseña: <?php echo htmlspecialchars($cuenta['contrasena']); ?></p> <!-- La contraseña está oculta por seguridad -->
                             <a href="editar.php?id=<?php echo $cuenta['id']; ?>"><button class="boton">Editar</button></a>
@@ -256,4 +266,4 @@ $conn->close();
 </body>
 </html>
 
-<?php require '../../php/NO.php'; ?>
+<!-- <?php require '../../php/NO.php'; ?> -->
