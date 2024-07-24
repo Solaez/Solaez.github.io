@@ -45,14 +45,14 @@
                   <li><a href="#Destacados" data-category="destacados" id="destacados">• Destacados</a></li>
               </ul>
           </li>
-            <li><a href="#Acesorios"  data-category="acesorio" id="acesorios">Acesorios</a></li>
+            <li><a href="#Acesorios"  data-category="acesorios" id="acesorios">Acesorios</a></li>
             <li>
                 <a href="#Ropa" data-category="ropa">Ropa ▾</a>
                 <ul class="submenu">
                     <li><a href="#Camisa" data-category="camisas" id="camisas">• Camisas</a></li>
                     <li><a href="#Camibuso" data-category="camibuso" id="camibusos">• Camibusos</a></li>
                     <li><a href="#Busos" data-category="busos" id="busos">• Busos</a></li>
-                    <li><a href="#Pantalones" data-category="pantalone" id="pantalones">• Pantalones</a></li>
+                    <li><a href="#Pantalones" data-category="pantalones" id="pantalones">• Pantalones</a></li>
                     <li><a href="#Tennis" data-category="tennis" id="tennis">• Tennis</a></li>
                 </ul>
             </li>
@@ -105,14 +105,14 @@
                   <li><a href="#Destacados" data-category="destacados" id="destacados">• Destacados</a></li>
               </ul>
           </li>
-            <li><a href="#Acesorios"  data-category="acesorio" id="acesorios">Acesorios</a></li>
+            <li><a href="#Acesorios"  data-category="acesorios" id="acesorios">Acesorios</a></li>
             <li>
                 <a href="#Ropa" data-category="ropa">Ropa ▾</a>
                 <ul class="submenu">
                     <li><a href="#Camisa" data-category="camisas" id="camisas">• Camisas</a></li>
                     <li><a href="#Camibuso" data-category="camibuso" id="camibusos">• Camibusos</a></li>
                     <li><a href="#Busos" data-category="busos" id="busos">• Busos</a></li>
-                    <li><a href="#Pantalones" data-category="pantalone" id="pantalones">• Pantalones</a></li>
+                    <li><a href="#Pantalones" data-category="pantalones" id="pantalones">• Pantalones</a></li>
                     <li><a href="#Tennis" data-category="tennis" id="tennis">• Tennis</a></li>
                 </ul>
             </li>
@@ -168,14 +168,14 @@
                     <li><a href="#Destacados" data-category="destacados" id="destacados">• Destacados</a></li>
                 </ul>
             </li>
-              <li><a href="#Acesorios"  data-category="acesorio" id="acesorios">Acesorios</a></li>
+              <li><a href="#Acesorios"  data-category="acesorios" id="acesorios">Acesorios</a></li>
               <li>
                   <a href="#Ropa" data-category="ropa">Ropa ▾</a>
                   <ul class="submenu">
                       <li><a href="#Camisa" data-category="camisas" id="camisas">• Camisas</a></li>
                       <li><a href="#Camibuso" data-category="camibuso" id="camibusos">• Camibusos</a></li>
                       <li><a href="#Busos" data-category="busos" id="busos">• Busos</a></li>
-                      <li><a href="#Pantalones" data-category="pantalone" id="pantalones">• Pantalones</a></li>
+                      <li><a href="#Pantalones" data-category="pantalones" id="pantalones">• Pantalones</a></li>
                       <li><a href="#Tennis" data-category="tennis" id="tennis">• Tennis</a></li>
                   </ul>
               </li>
@@ -674,7 +674,7 @@ if (precio || precio2) {
     window.addEventListener('DOMContentLoaded', () => {
     const urlFragment = window.location.hash.slice(1);
     if (urlFragment === 'acesorio') {
-      const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="acesorio"]');
+      const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="acesorios"]');
       if (categoriesMenuLink) {
         categoriesMenuLink.click();
       }
@@ -695,7 +695,7 @@ if (precio || precio2) {
   window.addEventListener('DOMContentLoaded', () => {
   const urlFragment = window.location.hash.slice(1);
   if (urlFragment === 'pantalone') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="pantalone"]');
+    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="pantalones"]');
     if (categoriesMenuLink) {
       categoriesMenuLink.click();
     }

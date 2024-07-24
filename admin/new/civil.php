@@ -111,9 +111,9 @@ if (!isset($_SESSION['user'])) {
                                     <option value="bolsos">Bolsos</option>
                                     <option value="busos">Busos</option>
                                     <option value="casco">Casco</option>
-                                    <option value="camisas">Camisas</option>
-                                    <option value="camibusos">Camibuso</option>
-                                    <option value="pantalones">Pantalones</option>
+                                    <option value="camisas,ropa">Camisas</option>
+                                    <option value="camibusos,ropa">Camibuso</option>
+                                    <option value="pantalones,ropa">Pantalones</option>
                                     <option value="tennis">Tennis</option>
                                     <option value="estampados">Estampados</option>
                                     <option value="gorras">Gorras</option>
