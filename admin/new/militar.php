@@ -40,7 +40,7 @@ if (!isset($_SESSION['user'])) {
                                     <div class="text">
                                         <span>Seleccione la imagen 1</span>
                                         </div>
-                                        <input type="file" id="imagen2" name="imagen2" required onchange="previewImage(event, 'imagePreview1')" accept="image/*" >
+                                        <input type="file" id="imagen2" name="imagen2" onchange="previewImage(event, 'imagePreview1')" accept="image/*" >
                                     </label>
                                 </div>
                                 
@@ -52,7 +52,7 @@ if (!isset($_SESSION['user'])) {
                                     <div class="text">
                                         <span>seleccione imagen 2</span>
                                         </div>
-                                        <input type="file" id="imagen3" name="imagen3" required onchange="previewImage(event, 'imagePreview2')" accept="image/*">
+                                        <input type="file" id="imagen3" name="imagen3" onchange="previewImage(event, 'imagePreview2')" accept="image/*">
                                     </label>
                                 </div>
                                 
@@ -64,7 +64,7 @@ if (!isset($_SESSION['user'])) {
                                     <div class="text">
                                         <span>seleccione imagen 3</span>
                                         </div>
-                                        <input type="file" id="imagen4" name="imagen4" required onchange="previewImage(event, 'imagePreview3')" style="display: none;" accept="image/*">
+                                        <input type="file" id="imagen4" name="imagen4"  onchange="previewImage(event, 'imagePreview3')" style="display: none;" accept="image/*">
                                     </label>
                                 </div>
                         </div>
@@ -76,7 +76,7 @@ if (!isset($_SESSION['user'])) {
                             <div class="text">
                                 <span>Seleccione Imagen Principal</span>
                                 </div>
-                                <input type="file" id="imagen1" name="imagen1"  onchange="previewImage(event,'imagePreview')" style="display: none;" accept="image/*">
+                                <input type="file" id="imagen1" name="imagen1" required onchange="previewImage(event,'imagePreview')" style="display: none;" accept="image/*">
                         </label>
   
                         

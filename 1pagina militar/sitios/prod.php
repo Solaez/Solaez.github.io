@@ -19,6 +19,21 @@
     <link rel="stylesheet" href="/css/chat.css">
     <!-- <link rel="stylesheet" href="/css/loader.css"> -->
     <!--fin-->
+    <style>
+      .categories a.active {
+          font-weight: bold;
+      }
+
+      .categories-menu li.active {
+          font-weight: bold;
+          background-color: #f3f3f3;
+          transform: translateX(10px);
+      }
+      .categories-menu a.active {
+          font-weight: bold;
+      }
+
+    </style>
 </head>
 <body >
   
@@ -243,6 +258,7 @@
     </div>
   </article>
 
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
       const buyButton = document.getElementById('buyButton');
@@ -303,25 +319,15 @@ const precio2 = product.querySelector('.precio2').textContent;
 const imag1 = product.querySelector('.imag1').src;
 const imag2 = product.querySelector('.imag2').src;
 const imag3 = product.querySelector('.imag3').src;
-
-// Limpiar el contenido anterior del contenedor de detalles
-productDetails.innerHTML = '';
-
-// Crear el contenido HTML para mostrar los detalles del producto
-let precioHTML = '';
-
-
-if (precio || precio2) {
-    precioHTML = `<p id="ubicacionProducto"><b>Precio:</b><del> ${precio}</del> - ${precio2}</p>`;
-}
+const hideImage = url => url === 'http://localhost:3000/1pagina%20militar/sitios/prod.php' ? 'display: none;' : '';
 
 const productHTML = `
 <a href="#Productos"><button id="regresar-btn"><img class="mario" src="/1pagina militar/img/iconos/volver.png" alt="volver"></button></a>
 <div class="detallesproductosmargen" id="producto-container">
     <div class="fotos">
-         ${(imag1 || imag2) ? `<img id="product1" src="${imag1}" onclick="changeMainImage(this.src)">` : ''}
-        <img id="product2" src="${imag2}" onclick="changeMainImage(this.src)">
-        <img id="product3" src="${imag3}" onclick="changeMainImage(this.src)">
+        <img id="product1" src="${imag1}" style="${hideImage(imag1)}" onclick="changeMainImage(this.src)">
+        <img id="product1" src="${imag2}" style="${hideImage(imag2)}" onclick="changeMainImage(this.src)">
+        <img id="product1" src="${imag3}" style="${hideImage(imag3)}" onclick="changeMainImage(this.src)">
     </div>
     <img id="productoImagen" src="${image}" alt="${title}" onclick="showEnlargedImage(this.src)">
     <div class="descripcion">
@@ -338,6 +344,7 @@ const productHTML = `
     <p id="descripcionProducto">${description.replace(/\n/g, '<br>')}</p>
 </div>
 `;
+
 
 // Agregar el contenido HTML al contenedor de detalles
 productDetails.innerHTML = productHTML;
@@ -359,7 +366,7 @@ regresarBtn.addEventListener('click', () => {
     setTimeout(() => {
         productDetails.style.display = 'none';
         productDetails.classList.remove('slide-out');
-        productGrid.style.display = 'grid';
+        productGrid.style.display = 'flex';
     }, 500);
 });
 }
@@ -458,109 +465,6 @@ button.addEventListener('click', showProductDetails);
           const searchQuery = event.target.value.trim();
           filterProductsByTitle(searchQuery);
       }
-  });
-</script>
-<!--productos-->
-<script>
-  //1 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO1') {
-      const selectButton = document.querySelector('.product[id="CB001"] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-  //2 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO2') {
-      const selectButton = document.querySelector('.product[id="CB002"] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-  //3 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO3') {
-      const selectButton = document.querySelector('.product[id="CB003"] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-  //4 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO4') {
-      const selectButton = document.querySelector('.product[id="B001"] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-  //5 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO5') {
-      const selectButton = document.querySelector('.product[id="C001"] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-  //6 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO6') {
-      const selectButton = document.querySelector('.product[id="BD001"] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-  //7 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO7') {
-      const selectButton = document.querySelector('.product[id="BD002"] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-  //8 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO8') {
-      const selectButton = document.querySelector('.product[id="BD003"] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-  //9 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO') {
-      const selectButton = document.querySelector('.product[id=" "] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-  //10 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO') {
-      const selectButton = document.querySelector('.product[id=" "] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
   });
 </script>
 <!--barra de navegacion-->
