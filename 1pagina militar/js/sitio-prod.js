@@ -174,323 +174,111 @@ submenuLinks.forEach(link => {
 //.-------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------
 
-document.querySelectorAll('#all').forEach(function(element) {
-    element.addEventListener('click', () => {
-        productDetails.classList.add('slide-out');
+// document.querySelectorAll('#all').forEach(function(element) {
+//     element.addEventListener('click', () => {
+//         productDetails.classList.add('slide-out');
         
-        setTimeout(() => {
-            productDetails.style.display = 'none';
-            productDetails.classList.remove('slide-out');
-            productGrid.style.display = 'grid';
-        }, 500);
-    });
-});
-document.querySelectorAll('#camisas').forEach(function(element) {
-    element.addEventListener('click', () => {
-        productDetails.classList.add('slide-out');
+//         setTimeout(() => {
+//             productDetails.style.display = 'none';
+//             productDetails.classList.remove('slide-out');
+//             productGrid.style.display = 'flex';
+//         }, 500);
+//     });
+// });
+// document.querySelectorAll('#camisas').forEach(function(element) {
+//     element.addEventListener('click', () => {
+//         productDetails.classList.add('slide-out');
         
-        setTimeout(() => {
-            productDetails.style.display = 'none';
-            productDetails.classList.remove('slide-out');
-            productGrid.style.display = 'grid';
-        }, 500);
-    });
-});
-document.querySelectorAll('#busos').forEach(function(element) {
-    element.addEventListener('click', () => {
-        productDetails.classList.add('slide-out');
+//         setTimeout(() => {
+//             productDetails.style.display = 'none';
+//             productDetails.classList.remove('slide-out');
+//             productGrid.style.display = 'flex';
+//         }, 500);
+//     });
+// });
+// document.querySelectorAll('#busos').forEach(function(element) {
+//     element.addEventListener('click', () => {
+//         productDetails.classList.add('slide-out');
         
-        setTimeout(() => {
-            productDetails.style.display = 'none';
-            productDetails.classList.remove('slide-out');
-            productGrid.style.display = 'grid';
-        }, 500);
-    });
-});
-document.querySelectorAll('#bordados').forEach(function(element) {
-    element.addEventListener('click', () => {
-        productDetails.classList.add('slide-out');
+//         setTimeout(() => {
+//             productDetails.style.display = 'none';
+//             productDetails.classList.remove('slide-out');
+//             productGrid.style.display = 'flex';
+//         }, 500);
+//     });
+// });
+// document.querySelectorAll('#bordados').forEach(function(element) {
+//     element.addEventListener('click', () => {
+//         productDetails.classList.add('slide-out');
         
-        setTimeout(() => {
-            productDetails.style.display = 'none';
-            productDetails.classList.remove('slide-out');
-            productGrid.style.display = 'grid';
-        }, 500);
-    });
-});
-document.querySelectorAll('#cascos').forEach(function(element) {
-    element.addEventListener('click', () => {
-        productDetails.classList.add('slide-out');
+//         setTimeout(() => {
+//             productDetails.style.display = 'none';
+//             productDetails.classList.remove('slide-out');
+//             productGrid.style.display = 'flex';
+//         }, 500);
+//     });
+// });
+// document.querySelectorAll('#cascos').forEach(function(element) {
+//     element.addEventListener('click', () => {
+//         productDetails.classList.add('slide-out');
         
-        setTimeout(() => {
-            productDetails.style.display = 'none';
-            productDetails.classList.remove('slide-out');
-            productGrid.style.display = 'grid';
-        }, 500);
-    });
-});
+//         setTimeout(() => {
+//             productDetails.style.display = 'none';
+//             productDetails.classList.remove('slide-out');
+//             productGrid.style.display = 'flex';
+//         }, 500);
+//     });
+// });
 
 
 
 //______________________________________________________________________________________________________________
-      // regresar todos"
-      const regresarBtn = document.getElementById('all');
-      regresarBtn.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const camisas = document.getElementById('camisas');
-      camisas.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const busos = document.getElementById('busos');
-      busos.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const bordados = document.getElementById('bordados');
-      bordados.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const cascos = document.getElementById('cascos');
-      cascos.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const nuevo = document.getElementById('nuevo');
-      nuevo.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const ofertas = document.getElementById('ofertas');
-      ofertas.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const destacados = document.getElementById('destacados');
-      destacados.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const acesorios = document.getElementById('acesorios');
-      acesorios.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const camibusos = document.getElementById('camibusos');
-      camibusos.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const pantalones = document.getElementById('pantalones');
-      pantalones.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const tennis = document.getElementById('tennis');
-      tennis.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const bolsos = document.getElementById('bolsos');
-      bolsos.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const banderase = document.getElementById('banderase');
-      banderase.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const banderasi = document.getElementById('banderasi');
-      banderasi.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const banderines = document.getElementById('banderines');
-      banderines.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const estampados = document.getElementById('estampados');
-      estampados.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const personalizados = document.getElementById('personalizados');
-      personalizados.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const gorras = document.getElementById('gorras');
-      gorras.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const boinas = document.getElementById('boinas');
-      boinas.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const pavas = document.getElementById('pavas');
-      pavas.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const policia = document.getElementById('policia');
-      policia.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const rescate = document.getElementById('rescate');
-      rescate.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const privada = document.getElementById('privada');
-      privada.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const vial = document.getElementById('vial');
-      vial.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-      const insignias = document.getElementById('insignias');
-      insignias.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
+    // Función para manejar el evento de clic
+function handleCategoryClick(event) {
+    productDetails.classList.add('slide-out');
+    
+    setTimeout(() => {
+        productDetails.style.display = 'none';
+        productDetails.classList.remove('slide-out');
+        productGrid.style.display = 'flex';
+    }, 500);
+}
+
+// Obtener todos los botones
+const buttons = [
+    'all', 'camisas', 'busos', 'bordados', 'cascos', 'nuevo', 'ofertas', 
+    'destacados', 'acesorios', 'camibusos', 'pantalones', 'tennis', 
+    'bolsos', 'banderase', 'banderasi', 'banderines', 'estampados', 
+    'personalizados', 'gorras', 'boinas', 'pavas', 'policia', 
+    'rescate', 'privada', 'vial', 'insignias'
+];
+
+// Agregar el evento de clic a cada botón
+buttons.forEach(id => {
+    const button = document.getElementById(id);
+    button.addEventListener('click', handleCategoryClick);
+});
+//--------------------------------------------------------------------------SELECCION DE CATEGORIAS SIMPRES
+document.addEventListener('DOMContentLoaded', function() {
+    // Función para manejar el cambio de clase 'active'
+    function handleActiveClass(selector) {
+        const elements = document.querySelectorAll(selector);
+        
+        elements.forEach(element => {
+            element.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                // Remover la clase 'active' de todos los elementos
+                elements.forEach(el => el.classList.remove('active'));
+
+                // Agregar la clase 'active' al elemento clicado
+                this.classList.add('active');
+            });
+        });
+    }
+
+    // Aplicar la función a los diferentes selectores
+    handleActiveClass('.categories a');
+    handleActiveClass('.categories-menu a');
+    handleActiveClass('.categories-menu li');
+});
