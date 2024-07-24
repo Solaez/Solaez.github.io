@@ -1,4 +1,3 @@
-
 <style>
         .loading-popup {
             display: none; /* Oculto por defecto */

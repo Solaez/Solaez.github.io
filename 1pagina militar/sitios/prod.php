@@ -45,12 +45,12 @@
                   <li><a href="#Destacados" data-category="destacados" id="destacados">• Destacados</a></li>
               </ul>
           </li>
-            <li><a href="#Acesorios"  data-category="acesorio" id="acesorios">Acesorios</a></li>
+            <li><a href="#Acesorios"  data-category="acesorios" id="acesorios">Acesorios</a></li>
             <li>
                 <a href="#Ropa" data-category="ropa">Ropa ▾</a>
                 <ul class="submenu">
                     <li><a href="#Camisa" data-category="camisas" id="camisas">• Camisas</a></li>
-                    <li><a href="#Camibuso" data-category="camibuso" id="camibusos">• Camibusos</a></li>
+                    <li><a href="#Camibuso" data-category="camibusos" id="camibusos">• Camibusos</a></li>
                     <li><a href="#Busos" data-category="busos" id="busos">• Busos</a></li>
                     <li><a href="#Pantalones" data-category="pantalone" id="pantalones">• Pantalones</a></li>
                     <li><a href="#Tennis" data-category="tennis" id="tennis">• Tennis</a></li>
@@ -75,10 +75,10 @@
             <li>
                 <a href="#gorras" data-category="gorras">Gorras ▾</a>
                 <ul class="submenu">
-                    <li><a href="#Gorras" data-category="gorra" id="gorras">• Gorras</a></li>
+                    <li><a href="#Gorras" data-category="gorras" id="gorras">• Gorras</a></li>
                     <li><a href="#Casco" data-category="casco" id="cascos">• Casco</a></li>
-                    <li><a href="#Boinas" data-category="boina" id="boinas">• Boinas</a></li>
-                    <li><a href="#Pavas" data-category="pava" id="pavas">• Pavas</a></li>
+                    <li><a href="#Boinas" data-category="boinas" id="boinas">• Boinas</a></li>
+                    <li><a href="#Pavas" data-category="pavas" id="pavas">• Pavas</a></li>
                 </ul>
             </li>
             <li>
@@ -105,12 +105,12 @@
                   <li><a href="#Destacados" data-category="destacados" id="destacados">• Destacados</a></li>
               </ul>
           </li>
-            <li><a href="#Acesorios"  data-category="acesorio" id="acesorios">Acesorios</a></li>
+            <li><a href="#Acesorios"  data-category="acesorios" id="acesorios">Acesorios</a></li>
             <li>
                 <a href="#Ropa" data-category="ropa">Ropa ▾</a>
                 <ul class="submenu">
                     <li><a href="#Camisa" data-category="camisas" id="camisas">• Camisas</a></li>
-                    <li><a href="#Camibuso" data-category="camibuso" id="camibusos">• Camibusos</a></li>
+                    <li><a href="#Camibuso" data-category="camibusos" id="camibusos">• Camibusos</a></li>
                     <li><a href="#Busos" data-category="busos" id="busos">• Busos</a></li>
                     <li><a href="#Pantalones" data-category="pantalone" id="pantalones">• Pantalones</a></li>
                     <li><a href="#Tennis" data-category="tennis" id="tennis">• Tennis</a></li>
@@ -135,10 +135,10 @@
             <li>
                 <a href="#gorras" data-category="gorras">Gorras ▾</a>
                 <ul class="submenu">
-                    <li><a href="#Gorras" data-category="gorra" id="gorras">• Gorras</a></li>
+                    <li><a href="#Gorras" data-category="gorras" id="gorras">• Gorras</a></li>
                     <li><a href="#Casco" data-category="casco" id="cascos">• Casco</a></li>
-                    <li><a href="#Boinas" data-category="boina" id="boinas">• Boinas</a></li>
-                    <li><a href="#Pavas" data-category="pava" id="pavas">• Pavas</a></li>
+                    <li><a href="#Boinas" data-category="boinas" id="boinas">• Boinas</a></li>
+                    <li><a href="#Pavas" data-category="pavas" id="pavas">• Pavas</a></li>
                 </ul>
             </li>
             <li>
@@ -314,11 +314,12 @@ let precioHTML = '';
 if (precio || precio2) {
     precioHTML = `<p id="ubicacionProducto"><b>Precio:</b><del> ${precio}</del> - ${precio2}</p>`;
 }
+
 const productHTML = `
 <a href="#Productos"><button id="regresar-btn"><img class="mario" src="/1pagina militar/img/iconos/volver.png" alt="volver"></button></a>
 <div class="detallesproductosmargen" id="producto-container">
     <div class="fotos">
-        <img id="product1" src="${imag1}" onclick="changeMainImage(this.src)">
+         ${(imag1 || imag2) ? `<img id="product1" src="${imag1}" onclick="changeMainImage(this.src)">` : ''}
         <img id="product2" src="${imag2}" onclick="changeMainImage(this.src)">
         <img id="product3" src="${imag3}" onclick="changeMainImage(this.src)">
     </div>
@@ -327,7 +328,7 @@ const productHTML = `
         <h2 id="titleProducto">${title}</h2>
         <p id="tipoProducto"><b>Tipo:</b> ${tipo}</p>
         <p id="ubicacionProducto"><b>Ubicación:</b> ${lugar}</p>
-        ${precioHTML}
+        ${(precio || precio2) ? `<p id="ubicacionProducto"><b>Precio:</b><del> ${precio}</del> - ${precio2}</p>` : ''}
         <button id="pedir-producto" onclick="showPopup()">Pedir producto</button>
     </div>
 </div>
@@ -568,7 +569,7 @@ button.addEventListener('click', showProductDetails);
     window.addEventListener('DOMContentLoaded', () => {
     const urlFragment = window.location.hash.slice(1);
     if (urlFragment === 'acesorio') {
-      const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="acesorio"]');
+      const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="acesorios"]');
       if (categoriesMenuLink) {
         categoriesMenuLink.click();
       }
@@ -609,7 +610,7 @@ button.addEventListener('click', showProductDetails);
   window.addEventListener('DOMContentLoaded', () => {
   const urlFragment = window.location.hash.slice(1);
   if (urlFragment === 'camibuso') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="camibuso"]');
+    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="camibusos"]');
     if (categoriesMenuLink) {
       categoriesMenuLink.click();
     }
@@ -670,7 +671,7 @@ button.addEventListener('click', showProductDetails);
   window.addEventListener('DOMContentLoaded', () => {
   const urlFragment = window.location.hash.slice(1);
   if (urlFragment === 'gorra') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="gorra"]');
+    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="gorras"]');
     if (categoriesMenuLink) {
       categoriesMenuLink.click();
     }
@@ -680,7 +681,7 @@ button.addEventListener('click', showProductDetails);
   window.addEventListener('DOMContentLoaded', () => {
   const urlFragment = window.location.hash.slice(1);
   if (urlFragment === 'pava') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="pava"]');
+    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="pavas"]');
     if (categoriesMenuLink) {
       categoriesMenuLink.click();
     }
@@ -690,7 +691,7 @@ button.addEventListener('click', showProductDetails);
   window.addEventListener('DOMContentLoaded', () => {
   const urlFragment = window.location.hash.slice(1);
   if (urlFragment === 'boina') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="boina"]');
+    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="boinas"]');
     if (categoriesMenuLink) {
       categoriesMenuLink.click();
     }
