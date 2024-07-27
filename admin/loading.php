@@ -25,25 +25,29 @@
 </div>
 
 <script>
-    document.querySelectorAll('.seleccion a').forEach(link => {
-        link.addEventListener('click', function(event) {
-            document.getElementById('loading-popup').style.display = 'flex';
+        document.querySelectorAll('.seleccion a').forEach(link => {
+            link.addEventListener('click', function(event) {
+                document.getElementById('loading-popup').style.display = 'flex';
+                showErrorPopup();
+            });
         });
-    });
 
-    window.addEventListener('load', function() {
-        document.getElementById('loading-popup').style.display = 'none';
-    });
-</script>
-<script>
-    document.querySelectorAll('.input2').forEach(link => {
-        link.addEventListener('click', function(event) {
-            document.getElementById('loading-popup').style.display = 'flex';
+        document.querySelectorAll('.input2').forEach(link => {
+            link.addEventListener('click', function(event) {
+                document.getElementById('loading-popup').style.display = 'flex';
+                showErrorPopup();
+            });
         });
-    });
 
-    window.addEventListener('load', function() {
-        document.getElementById('loading-popup').style.display = 'none';
-    });
-</script>
+        window.addEventListener('load', function() {
+            document.getElementById('loading-popup').style.display = 'none';
+        });
+
+        function showErrorPopup() {
+            setTimeout(function() {
+                alert('Error al ingresar el producto');
+                window.location.reload();
+            }, 3000); // 3000 milisegundos = 3 segundos
+        }
+    </script>
 

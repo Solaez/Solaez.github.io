@@ -14,14 +14,14 @@
   height: 100%;
   backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: 1000;
   animation: fadeIn2 0.5s ease-in-out;
 }
 
 
 .popup-content {
   background-color: #fefefe;
-  margin: 5% auto;
+  margin: 30% auto;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);

@@ -195,7 +195,6 @@
   flex: 1;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 .container-productos {
   max-width: 1200px;
@@ -514,9 +513,9 @@ nav a:hover {
     top: 120px;
     background-color: rgba(250, 233, 252, 0.479);
     border-radius: 5px;
-    padding: 4px;
+    padding: 2px;
     backdrop-filter: blur(3px);
-    margin-top: -10px;
+    margin-top: -30px;
   }
 
   #product-grid {
@@ -767,6 +766,12 @@ img#productoImagen {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+img#productoImagen {
+  max-height: 220px;
+  min-width: auto;
+  min-height: 220px;
+}
+
   .search-icons {
     display: flex;
     width: 100%;
@@ -797,9 +802,9 @@ img#productoImagen {
   .product{
     /* min-height: 200px; */
     min-width: 85px;
-    max-width: 86px;
-    min-height: 155px;
-    max-height: 155px;
+    max-width: 100px;
+    min-height: 140px;
+    max-height: 130px;
   }
   #productoImagen {
     bottom: 28px;
@@ -943,7 +948,7 @@ element.style {
       flex-wrap: wrap;
       justify-content: center;  */
       position: relative;
-      top: 265px;
+      top: 270px;
   }
 }
 
