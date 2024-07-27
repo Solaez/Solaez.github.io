@@ -285,9 +285,10 @@ nav a:hover {
 }
 
 #product-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
+  justify-content: center;
 }
 
 .product {
@@ -514,10 +515,6 @@ nav a:hover {
     background-color: rgba(153, 0, 255, 0.13);
   }
 
-  .categories {
-    justify-content: flex-start;
-  }
-
   .search-icons input {
     width: calc(100% - 20px);
   }
@@ -664,6 +661,9 @@ img#productoImagen {
 
 /* Estilos para dispositivos tablet */
 @media screen and (max-width: 1068px) {
+  #titleProducto{
+    min-width: 0;
+  }
   .product{
     min-width: 150px;
   }

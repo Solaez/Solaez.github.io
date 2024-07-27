@@ -19,6 +19,22 @@
     <link rel="stylesheet" href="/css/chat.css">
     <!-- <link rel="stylesheet" href="/css/loader.css"> -->
     <!--fin-->
+    <style>
+      .categories a.active {
+          font-weight: bold;
+      }
+
+      .categories-menu li.active {
+          font-weight: bold;
+          background-color: #ffeecb;
+          transform: translateX(10px);
+      }
+      .categories-menu a.active {
+          font-weight: bold;
+          color: #ff9914;
+      }
+
+    </style>
 </head>
 <body >
   
@@ -226,51 +242,6 @@
               </div>
               <div id="product-grid">
 
-                  <!-- Productos -->
-                  <!-- <div id="B001" class="product" data-category="bolsos,promocion" >
-                                      
-                                      <span class="span-nuevo">Promoción!</span>
-                                      <img src="/1pagina militar/img/productos/bolso/bolso miltitar viajero/principal.png" alt="bolso" >
-                                      <h3 class="titleproductos">Bolso militar, Bolsa de Viaje, con Correas de Mochila Extraíbles</h3>
-                                      <a href="#CB001"><button >Seleccionar</button></a>
-                                      <div id="product-details"  style="display: none;">
-                                          <img class="imag1" src="/1pagina militar/img/productos/bolso/bolso miltitar viajero/principal.png" alt="cami1">
-                                          <img class="imag2" src="/1pagina militar/img/productos/bolso/bolso miltitar viajero/1.png" alt="cami2">
-                                          <img class="imag3" src="/1pagina militar/img/productos/bolso/bolso miltitar viajero/2.png" alt="cami3">
-                                      </div>
-                                      <div id="product-details" style="display: none;">
-                                          <p class="descripcion">
-                                            Esta gran bolsa de deporte militar está hecha de tela de poliéster 600D resistente con cremallera resistente n.º 10 y hebillas de calidad en toda la bolsa para su uso en condiciones difíciles. Ideal como bolsa de deporte, bolsa de despliegue, bolsa de carga táctica, bolsa de carga, bolsa de viaje. para hombres, etc...
-                                            Esta enorme bolsa de viaje de estilo militar puede satisfacer todas sus necesidades de viajes, deportes o actividades al aire libre. Un compartimento principal de carga superior con cremallera y 6 bolsillos externos para un acceso rápido. El compartimento principal es de aproximadamente 82L. 6 bolsillos exteriores aproximadamente 6 L. Dimensiones totales: 94 cm de ancho x 38 cm de profundidad x 28 cm de altura.
-                                            Las asas de transporte están hechas de todas las correas resistentes de 5 cm o de uso duradero y de transporte cómodo. 2 asas grandes reforzadas en cada lado para transportar y mover cargas pesadas. O dos personas mueven la bolsa pesada agarrando cada mango. Parte inferior de cuero artificial duradera y fácil de limpiar con patas de goma.
-                                            Correas acolchadas extraíbles estilo mochila y panel superior para un transporte cómodo. Cuando las correas están sueltas, más cómodo de usar y llevar como bolsa de deporte.
-                                            Esta gran mochila de estilo militar tiene el equilibrio adecuado entre calidad y dinero. En caso de insatisfacción, puede devolverlo en cualquier momento.
-                                          </p>
-                                          <p class="tipo">Bolso</p>
-                                          <p class="lugar">Sede principal</p>
-                                          <p class="precio">$160.000</p>
-                                          <p class="precio2">$90.000</p>
-                                      </div>
-                                    </div>
-
-                                    <div id="CB002" class="product" data-category="ropa,camibuso">
-                                      <img src="/1pagina militar/img/productos/camisa/amarilla/camisa2.png" alt="Camisa militar" >
-                                      <h3 class="titleproductos">Camisa militar amarilla</h3>
-                                      <a href="#CB002"><button>Seleccionar</button></a>
-                                      <div id="product-details"  style="display: none;">
-                                          <img class="imag1" src="/1pagina militar/img/productos/camisa/amarilla/camisa2.png" alt="cami1">
-                                          <img class="imag2" src="/1pagina militar/img/productos/camisa/amarilla/camisa1.png" alt="cami2">
-                                          <img class="imag3" src="/1pagina militar/img/productos/camisa/amarilla/camisa3.png" alt="cami3">
-                                      </div>
-                                      <div id="product-details" style="display: none;">
-                                          <p class="descripcion">la descripcion va aqui1</p>
-                                          <p class="tipo">el tipo va aqui 2</p>
-                                          <p class="lugar">el lugar esta en cierto lugar 3</p>
-                                          <p class="precio"></p>
-                                          <p class="precio2"></p>
-                                      </div>
-                                    </div> -->
-                                      
                   <?php
                   require '../../php/baseDatos.php';
 
@@ -284,22 +255,22 @@
                   // Query para obtener productos
                   $sql = "SELECT * FROM productos";
                   $result = $conn->query($sql);
+                  $defaultImage = 'https://produccionesleon.com/img/imagenes/error.png (1).webp';
 
                   if ($result->num_rows > 0) {
-                    // Iterar sobre cada fila de resultados
                     while($row = $result->fetch_assoc()) {
-                      // Aquí se genera el HTML para cada producto
                       echo '<div id="' . $row['id_producto'] . '" class="product" data-category="' . $row['categorias'] . ',' . $row['estado'] . '">';
-                      // 
                       echo '<span class="span-nuevo">' . $row['estado'] . '</span>';
-                      echo '<img src="' . $row['imagen1'] . '" alt="' . $row['nombre'] . '" >';
+                      echo '<img src="' . htmlspecialchars($row['imagen1'], ENT_QUOTES, 'UTF-8') . '" alt="' . htmlspecialchars($row['nombre'], ENT_QUOTES, 'UTF-8') . '" onerror="this.onerror=null;this.src=\'' . $defaultImage . '\'">';
                       echo '<h3 class="titleproductos">' . $row['nombre'] . '</h3>';
                       echo '<a href="#' . $row['id_producto'] . '"><button>Seleccionar</button></a>';
+
                       echo '<div id="product-details" style="display: none;">';
                       echo '<img class="imag1" src="' . $row['imagen2'] . '" alt="imagen1">';
                       echo '<img class="imag2" src="' . $row['imagen3'] . '" alt="imagen2">';
                       echo '<img class="imag3" src="' . $row['imagen4'] . '" alt="imagen3">';
                       echo '</div>';
+                      
                       echo '<div id="product-details" style="display: none;">';
                       echo '<p class="descripcion" >' . $row['descripcion'] . '</p>';
                       echo '<p class="tipo">' . $row['tipo'] . '</p>';
@@ -308,6 +279,7 @@
                       echo '<p class="precio2">' . $row['precio2'] . '</p>';
                       echo '</div>';
                       echo '</div>';
+
                     }
                   } else {
                     echo "0 resultados";
@@ -388,148 +360,138 @@
 <script src="/1pagina civil/js/article.js"></script>
 <script src="/1pagina civil/js/whatsapp.js"></script>
 <script src="/1pagina civil/js/sitio-prod.js"></script>
+
 <script>
-  // Obtener el contenedor de detalles del producto
-  const productDetails = document.getElementById('product-details');
+     // Obtener el contenedor de detalles del producto
+     const productDetails = document.getElementById('product-details');
 
-  // Función para mostrar los detalles del producto seleccionado
-  function showProductDetails(event) {
-      const product = event.target.closest('.product');
-      const title = product.querySelector('h3').textContent;
-      const image = product.querySelector('img').src;
-      const description = product.querySelector('.descripcion').textContent;
-      const tipo = product.querySelector('.tipo').textContent;
-      const lugar = product.querySelector('.lugar').textContent;
-      const precio = product.querySelector('.precio').textContent;
-      const precio2 = product.querySelector('.precio2').textContent;
-      const imag1 = product.querySelector('.imag1').src;
-      const imag2 = product.querySelector('.imag2').src;
-      const imag3 = product.querySelector('.imag3').src;
+// Función para mostrar los detalles del producto seleccionado
+function showProductDetails(event) {
+const product = event.target.closest('.product');
+const title = product.querySelector('h3').textContent;
+const image = product.querySelector('img').src;
+const description = product.querySelector('.descripcion').textContent;
+const tipo = product.querySelector('.tipo').textContent;
+const lugar = product.querySelector('.lugar').textContent;
+const precio = product.querySelector('.precio').textContent;
+const precio2 = product.querySelector('.precio2').textContent;
+const imag1 = product.querySelector('.imag1').src;
+const imag2 = product.querySelector('.imag2').src;
+const imag3 = product.querySelector('.imag3').src;
+const hideImage = url => url === 'http://localhost:3000/1pagina%20civil/sitios/prod.php' ? 'display: none;' : '';
+const defaultImage = 'https://produccionesleon.com/img/imagenes/error.png.webp';
 
-      // Limpiar el contenido anterior del contenedor de detalles
-      productDetails.innerHTML = '';
-
-      // Crear el contenido HTML para mostrar los detalles del producto
-
-// Crear el contenido HTML para mostrar los detalles del producto
-let precioHTML = '';
-
-
-if (precio || precio2) {
-    precioHTML = `<p id="ubicacionProducto"><b>Precio:</b><del> ${precio}</del> - ${precio2}</p>`;
-}
-
-      const productHTML = `
-      <a href="#Productos"><button id="regresar-btn"><img class="mario" src="/1pagina civil/img/iconos/volver.png" alt="volver"></button></a>
-
-    <div class="detallesproductosmargen" id="producto-container">
+const productHTML = `
+<a href="#Productos"><button id="regresar-btn"><img class="mario" src="/1pagina civil/img/iconos/volver.png" alt="volver"></button></a>
+<div class="detallesproductosmargen" id="producto-container">
     <div class="fotos">
-        <img id="product1" src="${imag1}" onclick="changeMainImage(this.src)">
-        <img id="product2" src="${imag2}" onclick="changeMainImage(this.src)">
-        <img id="product3" src="${imag3}" onclick="changeMainImage(this.src)">
+        <img id="product1" src="${imag1 || defaultImage}" style="${hideImage(imag1)}" onclick="changeMainImage(this.src)" onerror="this.src='${defaultImage}'" alt="Producto 1">
+        <img id="product2" src="${imag2 || defaultImage}" style="${hideImage(imag2)}" onclick="changeMainImage(this.src)" onerror="this.src='${defaultImage}'" alt="Producto 2">
+        <img id="product3" src="${imag3 || defaultImage}" style="${hideImage(imag3)}" onclick="changeMainImage(this.src)" onerror="this.src='${defaultImage}'" alt="Producto 3">
     </div>
-    <img id="productoImagen" src="${image}" alt="${title}" onclick="showEnlargedImage(this.src)">
+    <img id="productoImagen" src="${image || defaultImage}" alt="${title}" onclick="showEnlargedImage(this.src)" onerror="this.src='${defaultImage}'">
     <div class="descripcion">
         <h2 id="titleProducto">${title}</h2>
         <p id="tipoProducto"><b>Tipo:</b> ${tipo}</p>
         <p id="ubicacionProducto"><b>Ubicación:</b> ${lugar}</p>
-        ${precioHTML}
+        ${(precio || precio2) ? `<p id="ubicacionProducto"><b>Precio:</b><del> ${precio}</del> - ${precio2}</p>` : ''}
         <button id="pedir-producto" onclick="showPopup()">Pedir producto</button>
     </div>
 </div>
-    <div>
-        <h3 id="descripcionProducto2">Descripción del producto</h3>
-        <p id="descripcionProducto">${description.replace(/\n/g, '<br>')}</p>
-    </div>
+
+<div>
+    <h3 id="descripcionProducto2">Descripción del producto</h3>
+    <p id="descripcionProducto">${description.replace(/\n/g, '<br>')}</p>
+</div>
 `;
 
-      // Agregar el contenido HTML al contenedor de detalles
-      productDetails.innerHTML = productHTML;
 
-      // Mostrar el contenedor de detalles con la animación de entrada
-      productDetails.style.display = 'block';
-      productDetails.classList.remove('slide-out');
+// Agregar el contenido HTML al contenedor de detalles
+productDetails.innerHTML = productHTML;
 
-      // Ocultar la cuadrícula de productos
-      const productGrid = document.getElementById('product-grid');
-      productGrid.style.display = 'none';
+// Mostrar el contenedor de detalles con la animación de entrada
+productDetails.style.display = 'block';
+productDetails.classList.remove('slide-out');
 
-      // Agregar evento de clic al botón "Regresar"
-      const regresarBtn = document.getElementById('regresar-btn');
-      regresarBtn.addEventListener('click', () => {
-          productDetails.classList.add('slide-out');
-          
-          // Después de que la animación de salida finalice, oculta el contenedor de detalles y muestra la cuadrícula de productos
-          setTimeout(() => {
-              productDetails.style.display = 'none';
-              productDetails.classList.remove('slide-out');
-              productGrid.style.display = 'grid';
-          }, 500);
-      });
-  }
+// Ocultar la cuadrícula de productos
+const productGrid = document.getElementById('product-grid');
+productGrid.style.display = 'none';
 
-  // Función para cambiar la imagen principal
-  function changeMainImage(imageSrc) {
-      const mainImage = document.getElementById('productoImagen');
-      mainImage.src = imageSrc;
-  }
+// Agregar evento de clic al botón "Regresar"
+const regresarBtn = document.getElementById('regresar-btn');
+regresarBtn.addEventListener('click', () => {
+    productDetails.classList.add('slide-out');
+    
+    // Después de que la animación de salida finalice, oculta el contenedor de detalles y muestra la cuadrícula de productos
+    setTimeout(() => {
+        productDetails.style.display = 'none';
+        productDetails.classList.remove('slide-out');
+        productGrid.style.display = 'flex';
+    }, 500);
+});
+}
 
-  // Función para mostrar la imagen ampliada
-  function showEnlargedImage(imageSrc) {
-      const enlargedImageContainer = document.createElement('div');
-      enlargedImageContainer.style.position = 'fixed';
-      enlargedImageContainer.style.top = '0';
-      enlargedImageContainer.style.left = '0';
-      enlargedImageContainer.style.width = '100%';
-      enlargedImageContainer.style.height = '100%';
-      enlargedImageContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-      enlargedImageContainer.style.display = 'flex';
-      enlargedImageContainer.style.justifyContent = 'center';
-      enlargedImageContainer.style.alignItems = 'center';
-      enlargedImageContainer.style.zIndex = '9999';
-      enlargedImageContainer.style.opacity = '0'; // Inicialmente oculta
-      enlargedImageContainer.style.transition = 'opacity 0.3s ease'; // Animación de entrada
-      enlargedImageContainer.style.backdropFilter = 'blur(5px)'; // Agregar el backdrop-filter
+// Función para cambiar la imagen principal
+function changeMainImage(imageSrc) {
+const mainImage = document.getElementById('productoImagen');
+mainImage.src = imageSrc;
+}
 
-      const enlargedImage = document.createElement('img');
-      enlargedImage.src = imageSrc;
-      enlargedImage.style.maxWidth = '90%';
-      enlargedImage.style.maxHeight = '90%';
-      enlargedImage.style.transform = 'scale(0.8)'; // Escala inicial
-      enlargedImage.style.transition = 'transform 0.3s ease'; // Animación de entrada
+// Función para mostrar la imagen ampliada
+function showEnlargedImage(imageSrc) {
+const enlargedImageContainer = document.createElement('div');
+enlargedImageContainer.style.position = 'fixed';
+enlargedImageContainer.style.top = '0';
+enlargedImageContainer.style.left = '0';
+enlargedImageContainer.style.width = '100%';
+enlargedImageContainer.style.height = '100%';
+enlargedImageContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+enlargedImageContainer.style.display = 'flex';
+enlargedImageContainer.style.justifyContent = 'center';
+enlargedImageContainer.style.alignItems = 'center';
+enlargedImageContainer.style.zIndex = '9999';
+enlargedImageContainer.style.opacity = '0'; // Inicialmente oculta
+enlargedImageContainer.style.transition = 'opacity 0.3s ease'; // Animación de entrada
+enlargedImageContainer.style.backdropFilter = 'blur(5px)'; // Agregar el backdrop-filter
 
-      enlargedImageContainer.appendChild(enlargedImage);
-      document.body.appendChild(enlargedImageContainer);
+const enlargedImage = document.createElement('img');
+enlargedImage.src = imageSrc;
+enlargedImage.style.maxWidth = '90%';
+enlargedImage.style.maxHeight = '90%';
+enlargedImage.style.transform = 'scale(0.8)'; // Escala inicial
+enlargedImage.style.transition = 'transform 0.3s ease'; // Animación de entrada
 
-      // Mostrar la imagen ampliada con animación
-      setTimeout(() => {
-          enlargedImageContainer.style.opacity = '1';
-          enlargedImage.style.transform = 'scale(1)';
-      }, 10); // Retraso para evitar parpadeo
+enlargedImageContainer.appendChild(enlargedImage);
+document.body.appendChild(enlargedImageContainer);
 
-      // Agregar evento de clic para cerrar la imagen ampliada con animación
-      enlargedImageContainer.addEventListener('click', () => {
-          enlargedImageContainer.style.opacity = '0';
-          enlargedImage.style.transform = 'scale(0.8)';
+// Mostrar la imagen ampliada con animación
+setTimeout(() => {
+    enlargedImageContainer.style.opacity = '1';
+    enlargedImage.style.transform = 'scale(1)';
+}, 10); // Retraso para evitar parpadeo
 
-          // Eliminar el contenedor después de la animación de salida
-          setTimeout(() => {
-              document.body.removeChild(enlargedImageContainer);
-          }, 300); // Duración de la animación
-      });
-  }
+// Agregar evento de clic para cerrar la imagen ampliada con animación
+enlargedImageContainer.addEventListener('click', () => {
+    enlargedImageContainer.style.opacity = '0';
+    enlargedImage.style.transform = 'scale(0.8)';
 
-  // Función para mostrar el popup
-  function showPopup() {
-      document.getElementById('popup').style.display = 'block';
-  }
+    // Eliminar el contenedor después de la animación de salida
+    setTimeout(() => {
+        document.body.removeChild(enlargedImageContainer);
+    }, 300); // Duración de la animación
+});
+}
 
-  // Obtener los botones "Seleccionar" y agregar el evento de clic
-  const selectButtons = document.querySelectorAll('.product button');
-  selectButtons.forEach(button => {
-      button.addEventListener('click', showProductDetails);
-  });
+// Función para mostrar el popup
+function showPopup() {
+document.getElementById('popup').style.display = 'block';
+}
 
+// Obtener los botones "Seleccionar" y agregar el evento de clic
+const selectButtons = document.querySelectorAll('.product button');
+selectButtons.forEach(button => {
+button.addEventListener('click', showProductDetails);
+});
 </script>
 <script>
   // Obtener el input de búsqueda y el contenedor de productos
@@ -565,248 +527,29 @@ if (precio || precio2) {
       }
   });
 </script>
-<!--productos-->
-<script>
-  //1 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO1') {
-      const selectButton = document.querySelector('.product[id="CB001"] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-  //2 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO2') {
-      const selectButton = document.querySelector('.product[id="CB002"] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-  //3 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO3') {
-      const selectButton = document.querySelector('.product[id="CB003"] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-  //4 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO4') {
-      const selectButton = document.querySelector('.product[id="B001"] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-  //5 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO5') {
-      const selectButton = document.querySelector('.product[id="C001"] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-  //6 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO6') {
-      const selectButton = document.querySelector('.product[id="BD001"] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-  //7 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO7') {
-      const selectButton = document.querySelector('.product[id="BD002"] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-  //8 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO8') {
-      const selectButton = document.querySelector('.product[id="BD003"] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-  //9 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO') {
-      const selectButton = document.querySelector('.product[id=" "] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-  //10 producto de inicio
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'PRODUCTO') {
-      const selectButton = document.querySelector('.product[id=" "] button');
-      if (selectButton) {
-        selectButton.click();
-      }
-    }
-  });
-</script>
 <!--barra de navegacion-->
 <script>
-  //boinas
-    window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'acesorio') {
-      const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="acesorios"]');
-      if (categoriesMenuLink) {
-        categoriesMenuLink.click();
-      }
-    }
-  });
-  
-  //camisas
-  window.addEventListener('DOMContentLoaded', () => {
+ window.addEventListener('DOMContentLoaded', () => {
   const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'camisas') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="camisas"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-  //pantalones
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'pantalone') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="pantalones"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-  //estanpado
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'estampados') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="estampados"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-  //camisabusos
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'camibuso') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="camibuso"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-//cascos
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'cascos') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="casco"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
+  const categories = {
+    acesorio: 'acesorios',
+    camisas: 'camisas',
+    pantalone: 'pantalone',
+    estampados: 'estampados',
+    camibuso: 'camibusos',
+    cascos: 'casco',
+    bordados: 'bordados',
+    insignia: 'insignia',
+    promocion: 'promocion',
+    destacados: 'destacados',
+    gorra: 'gorras',
+    pava: 'pavas',
+    boina: 'boinas',
+    bolsos: 'bolsos'
+  };
 
-//bordados
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'bordados') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="bordados"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-//insignia
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'insignia') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="insignia"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-//Promocion
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'promocion') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="promocion"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-//destacados
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'destacados') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="destacados"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-//gorras
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'gorra') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="gorra"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-//pava
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'pava') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="pava"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-//boinas
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'boina') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="boina"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-//boinas
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'bolsos') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="bolsos"]');
+  if (categories[urlFragment]) {
+    const categoriesMenuLink = document.querySelector(`.categories-menu a[data-category="${categories[urlFragment]}"]`);
     if (categoriesMenuLink) {
       categoriesMenuLink.click();
     }

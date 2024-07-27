@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -206,12 +207,13 @@
                     <?php
                   $sql = "SELECT * FROM militar";
                   $result = $conn->query($sql);
+                  $defaultImage = 'https://produccionesleon.com/img/imagenes/error.png (1).webp';
 
                   if ($result->num_rows > 0) {
                     while($row = $result->fetch_assoc()) {
                       echo '<div id="' . $row['id_producto'] . '" class="product" data-category="' . $row['categorias'] . ',' . $row['estado'] . '">';
                       echo '<span class="span-nuevo">' . $row['estado'] . '</span>';
-                      echo '<img src="' . $row['imagen1'] . '" alt="' . $row['nombre'] . '" >';
+                      echo '<img src="' . htmlspecialchars($row['imagen1'], ENT_QUOTES, 'UTF-8') . '" alt="' . htmlspecialchars($row['nombre'], ENT_QUOTES, 'UTF-8') . '" onerror="this.onerror=null;this.src=\'' . $defaultImage . '\'">';
                       echo '<h3 class="titleproductos">' . $row['nombre'] . '</h3>';
                       echo '<a href="#' . $row['id_producto'] . '"><button>Seleccionar</button></a>';
 
@@ -320,16 +322,17 @@ const imag1 = product.querySelector('.imag1').src;
 const imag2 = product.querySelector('.imag2').src;
 const imag3 = product.querySelector('.imag3').src;
 const hideImage = url => url === 'http://localhost:3000/1pagina%20militar/sitios/prod.php' ? 'display: none;' : '';
+const defaultImage = 'https://produccionesleon.com/img/imagenes/error.png.webp';
 
 const productHTML = `
 <a href="#Productos"><button id="regresar-btn"><img class="mario" src="/1pagina militar/img/iconos/volver.png" alt="volver"></button></a>
 <div class="detallesproductosmargen" id="producto-container">
     <div class="fotos">
-        <img id="product1" src="${imag1}" style="${hideImage(imag1)}" onclick="changeMainImage(this.src)">
-        <img id="product1" src="${imag2}" style="${hideImage(imag2)}" onclick="changeMainImage(this.src)">
-        <img id="product1" src="${imag3}" style="${hideImage(imag3)}" onclick="changeMainImage(this.src)">
+        <img id="product1" src="${imag1 || defaultImage}" style="${hideImage(imag1)}" onclick="changeMainImage(this.src)" onerror="this.src='${defaultImage}'" alt="Producto 1">
+        <img id="product2" src="${imag2 || defaultImage}" style="${hideImage(imag2)}" onclick="changeMainImage(this.src)" onerror="this.src='${defaultImage}'" alt="Producto 2">
+        <img id="product3" src="${imag3 || defaultImage}" style="${hideImage(imag3)}" onclick="changeMainImage(this.src)" onerror="this.src='${defaultImage}'" alt="Producto 3">
     </div>
-    <img id="productoImagen" src="${image}" alt="${title}" onclick="showEnlargedImage(this.src)">
+    <img id="productoImagen" src="${image || defaultImage}" alt="${title}" onclick="showEnlargedImage(this.src)" onerror="this.src='${defaultImage}'">
     <div class="descripcion">
         <h2 id="titleProducto">${title}</h2>
         <p id="tipoProducto"><b>Tipo:</b> ${tipo}</p>
@@ -469,143 +472,27 @@ button.addEventListener('click', showProductDetails);
 </script>
 <!--barra de navegacion-->
 <script>
-  //boinas
-    window.addEventListener('DOMContentLoaded', () => {
-    const urlFragment = window.location.hash.slice(1);
-    if (urlFragment === 'acesorio') {
-      const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="acesorios"]');
-      if (categoriesMenuLink) {
-        categoriesMenuLink.click();
-      }
-    }
-  });
-  
-  //camisas
-  window.addEventListener('DOMContentLoaded', () => {
+ window.addEventListener('DOMContentLoaded', () => {
   const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'camisas') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="camisas"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-  //pantalones
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'pantalone') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="pantalone"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-  //estanpado
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'estampados') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="estampados"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-  //camisabusos
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'camibuso') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="camibusos"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-//cascos
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'cascos') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="casco"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
+  const categories = {
+    acesorio: 'acesorios',
+    camisas: 'camisas',
+    pantalone: 'pantalone',
+    estampados: 'estampados',
+    camibuso: 'camibusos',
+    cascos: 'casco',
+    bordados: 'bordados',
+    insignia: 'insignia',
+    promocion: 'promocion',
+    destacados: 'destacados',
+    gorra: 'gorras',
+    pava: 'pavas',
+    boina: 'boinas',
+    bolsos: 'bolsos'
+  };
 
-//bordados
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'bordados') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="bordados"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-//insignia
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'insignia') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="insignia"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-//Promocion
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'promocion') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="promocion"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-//destacados
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'destacados') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="destacados"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-//gorras
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'gorra') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="gorras"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-//pava
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'pava') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="pavas"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-//boinas
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'boina') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="boinas"]');
-    if (categoriesMenuLink) {
-      categoriesMenuLink.click();
-    }
-  }
-});
-//boinas
-  window.addEventListener('DOMContentLoaded', () => {
-  const urlFragment = window.location.hash.slice(1);
-  if (urlFragment === 'bolsos') {
-    const categoriesMenuLink = document.querySelector('.categories-menu a[data-category="bolsos"]');
+  if (categories[urlFragment]) {
+    const categoriesMenuLink = document.querySelector(`.categories-menu a[data-category="${categories[urlFragment]}"]`);
     if (categoriesMenuLink) {
       categoriesMenuLink.click();
     }
