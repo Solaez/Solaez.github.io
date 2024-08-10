@@ -77,8 +77,8 @@ if ($result->num_rows > 0) {
         echo '<td class="descripcionTD">' . htmlspecialchars($row['descripcion']) . '</td>';
         echo '<td>' . htmlspecialchars($row['tipo']) . '</td>';
         echo '<td>' . htmlspecialchars($row['lugar']) . '</td>';
-        echo '<td>' . htmlspecialchars($row['precio']) . '</td>';
-        echo '<td>' . htmlspecialchars($row['precio2']) . '</td>';
+        echo '<td>' . htmlspecialchars($row['precio'] ?? '') . '</td>';
+        echo '<td>' . htmlspecialchars($row['precio2'] ?? '') . '</td>';
         echo '<td>' . htmlspecialchars($row['estado']) . '</td>';
         echo '<td>';
         if (!empty($row['imagen1'])) {
