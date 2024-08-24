@@ -45,8 +45,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
 
             // Permitir ciertos formatos de archivo
-            if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif") {
-                echo "Lo siento, sólo se permiten archivos JPG, JPEG, PNG y GIF para {$fileInputName}.<br>";
+            if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "webp") {
+                echo "Lo siento, sólo se permiten archivos JPG, JPEG, PNG y webp para {$fileInputName}.<br>";
                 $uploadOk = 0;
                 continue;
             }
