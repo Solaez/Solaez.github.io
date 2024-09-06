@@ -148,7 +148,7 @@
                   }
                   ?>
                     <?php
-                  $sql = "SELECT * FROM militar WHERE estado = 'destacados' LIMIT 10";
+                  $sql = "SELECT * FROM militar WHERE estado = 'destacado' LIMIT 10";
 
                   $result = $conn->query($sql);
 
@@ -176,7 +176,7 @@
         <button class="next" onclick="nextSlide(); resetTimer()">❯</button>
 
         
-      <a href="/1pagina militar/sitios/prod.php#destacados"><button class="ver-mas-venta">
+      <a href="/1pagina militar/sitios/prod.php#destacado"><button class="ver-mas-venta">
         <img src="https://img.icons8.com/fluency-systems-filled/48/checkout.png">
       </button></a>
       </div>

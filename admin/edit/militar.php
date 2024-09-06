@@ -17,7 +17,6 @@ if (!isset($_SESSION['user'])) {
     <link rel="stylesheet" href="/admin/style.css">
     <link rel="stylesheet" href="edit.css">
     
-    
 </head>
 <body>
     
@@ -68,5 +67,5 @@ if (!isset($_SESSION['user'])) {
 </script>
 </body>
 </html>
-<?php require '../../php/NO.php'; ?>
+<!-- <?php require '../../php/NO.php'; ?> -->
 

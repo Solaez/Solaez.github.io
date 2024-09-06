@@ -3,7 +3,7 @@
   $servername = "localhost";
   $username = "root";
   $password = "root";
-  $dbname = "productos";
+  $dbname = "produc_chat";
 
 // $servername = "localhost";
 // $username = "produc_chat";

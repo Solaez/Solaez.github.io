@@ -45,9 +45,9 @@
     }
 
     .carousel img,.carousel2 img {
-      max-width: 100%;
+      max-width: max-content;
       /* min-height: 230px; */
-      height: auto;
+      height: 200px;
       border-radius: 10px;
       transition: transform 0.2s, filter 0.8s;
     }
