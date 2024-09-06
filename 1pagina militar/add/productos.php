@@ -37,8 +37,8 @@
 <h2>Lista de Productos</h2>
 
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="get">
-    <label for="categoria">Buscar por Categoría:</label>
-    <input type="text" id="categoria" name="categoria">
+    <label for="nombre">Buscar por Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
     <input type="submit" value="Buscar" class="btn btn-primary">
 </form>
 
@@ -56,9 +56,9 @@ if ($conn->connect_error) {
 
 // Consulta SQL para obtener todos los productos o filtrar por categoría
 $sql = "SELECT * FROM militar";
-if (isset($_GET['categoria']) && !empty($_GET['categoria'])) {
-    $categoria = $conn->real_escape_string($_GET['categoria']);
-    $sql .= " WHERE categorias LIKE '%$categoria%'";
+if (isset($_GET['nombre']) && !empty($_GET['nombre'])) {
+    $nombre = $conn->real_escape_string($_GET['nombre']);
+    $sql .= " WHERE nombres LIKE '%$nombre%'";
 }
 
 $result = $conn->query($sql);
