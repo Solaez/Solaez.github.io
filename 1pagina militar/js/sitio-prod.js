@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     const products = document.querySelectorAll('#product-grid .product');
     const productsPerPage = 20;
@@ -43,16 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
         paginationButtons[pageNumber - 1].classList.add('active');
     }
 
-    // Evento de clic para cada enlace de categoría
-    document.querySelectorAll('.categories a').forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-            const category = this.getAttribute('data-category');
-            showFilteredProducts(category);
-        });
-    });
-
-
     // Función para mostrar productos filtrados por categoría
     function showFilteredProducts(category) {
         let filteredProducts = [];
@@ -72,17 +61,32 @@ document.addEventListener('DOMContentLoaded', function () {
         updateActivePage(1);
     }
 
-    // Agregar evento de clic a los enlaces del menú lateral
-    const categoriesMenuLinks = document.querySelectorAll('.categories-menu ul li a');
-    categoriesMenuLinks.forEach(link => {
+    // Evento de clic para cada enlace de categoría
+    document.querySelectorAll('.categories a').forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
             const category = this.getAttribute('data-category');
             showFilteredProducts(category);
+        });
+    });
 
-            // Remover la clase 'active' de todos los enlaces
-            categoriesMenuLinks.forEach(link => link.classList.remove('active'));
-            this.classList.add('active');
+    // Agregar evento de clic a los enlaces del menú lateral
+    const categoriesMenuLinks = document.querySelectorAll('.categories-menu ul li a');
+    categoriesMenuLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            const isPersonalizados = this.getAttribute('id') === 'personalizados';
+            if (isPersonalizados) {
+                // No prevenir el comportamiento del enlace para 'Personalizados'
+                window.location.href = '/1pagina militar/sitios/personalizado.php';
+            } else {
+                e.preventDefault();
+                const category = this.getAttribute('data-category');
+                showFilteredProducts(category);
+
+                // Remover la clase 'active' de todos los enlaces
+                categoriesMenuLinks.forEach(link => link.classList.remove('active'));
+                this.classList.add('active');
+            }
         });
     });
 
@@ -94,7 +98,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Inicializar con el filtro "camisas"
     showFilteredProducts('all');
 });
-
 
 //Buscador--------------------------------------------------------------
 

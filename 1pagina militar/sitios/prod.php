@@ -42,6 +42,7 @@
     <?php require '../../1pagina militar/src/header.php'; ?>
 
 <!--Contenido de la pagina-->
+
 <div class="container-productos">
   
   <div class="sidebar-productos">
@@ -85,7 +86,7 @@
                 <a href="#" data-category="all">Estampados ▾</a>
                 <ul class="submenu">
                     <li><a href="#Estampados" data-category="estampados" id="estampados">• Estampados y más</a></li>
-                    <li><a href="#Personalizados" data-category="personalizado" id="personalizados">• Personalizados</a></li>
+                    <li><a href="#" id="personalizado">• Personalizados</a></li>
                 </ul>
             </li>
             <li>
@@ -142,10 +143,10 @@
                 </ul>
             </li>
             <li>
-                <a href="#" data-category="all">Estampados ▾</a>
+                <a href="#Estampados" data-category="all">Estampados ▾</a>
                 <ul class="submenu">
                     <li><a href="#Estampados" data-category="estampados" id="estampados">• Estampados y más</a></li>
-                    <li><a href="#Personalizados" data-category="personalizado" id="personalizados">• Personalizados</a></li>
+                    <li><a href="www.google.com" data-category="personalizado" id="personalizados">• Personalizados</a></li>
                 </ul>
             </li>
             <li>
@@ -245,6 +246,7 @@
             </main>
     </div>
 </div> 
+
 
   <!--pedir producto-->
   <article>
