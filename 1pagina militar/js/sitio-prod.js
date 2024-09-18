@@ -3,22 +3,84 @@ document.addEventListener('DOMContentLoaded', function () {
     const productsPerPage = 20;
 
     // Función para renderizar la paginación
-    function renderPagination(products) {
-        const pagination = document.getElementById('pagination');
-        pagination.innerHTML = '';
+    function renderPagination(products, currentPage = 1) {
+    const pagination = document.getElementById('pagination');
+    pagination.innerHTML = '';
 
-        const totalPages = Math.ceil(products.length / productsPerPage);
+    const totalPages = Math.ceil(products.length / productsPerPage);
 
-        for (let i = 1; i <= totalPages; i++) {
-            const button = document.createElement('button');
-            button.textContent = i;
-            button.addEventListener('click', () => {
-                showProducts(i, products);
-                updateActivePage(i);
-            });
-            pagination.appendChild(button);
-        }
+    // Determinar las páginas visibles
+    const startPage = Math.max(1, currentPage - 1);  // Mostrar la página anterior
+    const endPage = Math.min(totalPages, currentPage + 1);  // Mostrar la página siguiente
+
+    // Agregar botón "Anterior" si no está en la primera página
+    if (currentPage > 1) {
+        const prevButton = document.createElement('button');
+        prevButton.textContent = '«';
+        prevButton.addEventListener('click', () => {
+            renderPagination(products, currentPage - 1);
+            showProducts(currentPage - 1, products);
+            updateActivePage(currentPage - 1);
+        });
+        pagination.appendChild(prevButton);
     }
+
+    // Si hay más de 3 páginas, mostrar el botón "1..." para ir al inicio
+    if (startPage > 1) {
+        const firstButton = document.createElement('button');
+        firstButton.textContent = '•••';
+        firstButton.addEventListener('click', () => {
+            renderPagination(products, 1);
+            showProducts(1, products);
+            updateActivePage(1);
+        });
+        pagination.appendChild(firstButton);
+    }
+
+    // Crear botones de paginación dentro del rango (anterior, actual, siguiente)
+    for (let i = startPage; i <= endPage; i++) {
+        const button = document.createElement('button');
+        button.textContent = i;
+        if (i === currentPage) {
+            button.classList.add('active');
+        }
+        button.addEventListener('click', () => {
+            showProducts(i, products);
+            updateActivePage(i);
+            renderPagination(products, i);
+        });
+        pagination.appendChild(button);
+    }
+
+    // Si hay más páginas, mostrar el botón "...N" para ir al final
+    if (endPage < totalPages) {
+        const lastButton = document.createElement('button');
+        lastButton.textContent = `•••`;
+        // lastButton.textContent = `••• ${totalPages}`;
+        lastButton.addEventListener('click', () => {
+            renderPagination(products, totalPages);
+            showProducts(totalPages, products);
+            updateActivePage(totalPages);
+        });
+        pagination.appendChild(lastButton);
+    }
+
+    // Agregar botón "Siguiente" si no está en la última página
+    if (currentPage < totalPages) {
+        const nextButton = document.createElement('button');
+        nextButton.textContent = '»';
+        nextButton.addEventListener('click', () => {
+            renderPagination(products, currentPage + 1);
+            showProducts(currentPage + 1, products);
+            updateActivePage(currentPage + 1);
+        });
+        pagination.appendChild(nextButton);
+    }
+}
+
+// Inicializa la página con la paginación
+renderPagination(products, 1);
+
 
     // Función para mostrar los productos en la página actual
     function showProducts(pageNumber, products) {
@@ -173,67 +235,6 @@ submenuLinks.forEach(link => {
         }
     });
 });
-
-//.-------------------------------------------------------------------------------------------------------------------
-//--------------------------------------------------------------------------------------------------------------------
-
-// document.querySelectorAll('#all').forEach(function(element) {
-//     element.addEventListener('click', () => {
-//         productDetails.classList.add('slide-out');
-        
-//         setTimeout(() => {
-//             productDetails.style.display = 'none';
-//             productDetails.classList.remove('slide-out');
-//             productGrid.style.display = 'flex';
-//         }, 500);
-//     });
-// });
-// document.querySelectorAll('#camisas').forEach(function(element) {
-//     element.addEventListener('click', () => {
-//         productDetails.classList.add('slide-out');
-        
-//         setTimeout(() => {
-//             productDetails.style.display = 'none';
-//             productDetails.classList.remove('slide-out');
-//             productGrid.style.display = 'flex';
-//         }, 500);
-//     });
-// });
-// document.querySelectorAll('#busos').forEach(function(element) {
-//     element.addEventListener('click', () => {
-//         productDetails.classList.add('slide-out');
-        
-//         setTimeout(() => {
-//             productDetails.style.display = 'none';
-//             productDetails.classList.remove('slide-out');
-//             productGrid.style.display = 'flex';
-//         }, 500);
-//     });
-// });
-// document.querySelectorAll('#bordados').forEach(function(element) {
-//     element.addEventListener('click', () => {
-//         productDetails.classList.add('slide-out');
-        
-//         setTimeout(() => {
-//             productDetails.style.display = 'none';
-//             productDetails.classList.remove('slide-out');
-//             productGrid.style.display = 'flex';
-//         }, 500);
-//     });
-// });
-// document.querySelectorAll('#cascos').forEach(function(element) {
-//     element.addEventListener('click', () => {
-//         productDetails.classList.add('slide-out');
-        
-//         setTimeout(() => {
-//             productDetails.style.display = 'none';
-//             productDetails.classList.remove('slide-out');
-//             productGrid.style.display = 'flex';
-//         }, 500);
-//     });
-// });
-
-
 
 //______________________________________________________________________________________________________________
     // Función para manejar el evento de clic

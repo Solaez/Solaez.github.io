@@ -664,7 +664,7 @@ nav a:hover {
   bottom: 28px;
   margin-left: 5px;
   max-height: 330px;
-  min-width: 280px;
+  min-width: max-content;
   cursor: pointer;
   background: linear-gradient(150deg, rgba(180,180,180,1) 0%, rgba(255,255,255,1) 35%, rgba(150,150,150,1) 100%);
 

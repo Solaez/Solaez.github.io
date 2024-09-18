@@ -122,7 +122,14 @@
                   <li><a href="#Destacados" data-category="destacados" id="destacados">• Destacados</a></li>
               </ul>
           </li>
-            <li><a href="#Acesorios"  data-category="acesorios" id="acesorios">Acesorios</a></li>
+            <li>
+              <a href="#Acesorios"  data-category="acesorios" id="acesorios">Acesorios ▾</a>
+              <ul class="submenu">
+                <li><a href="#Personal" data-category="usoPersonal" id="usoPersonal">• Uso personal</a></li>
+                <li><a href="#Complementos" data-category="complemento" id="complemento" >• Complementos</a></li>
+                <li><a href="#Otros" data-category="otros" id="otros">• Otros</a></li>
+              </ul>
+            </li>
             <li>
                 <a href="#Ropa" data-category="ropa">Ropa ▾</a>
                 <ul class="submenu">
@@ -134,6 +141,7 @@
                 </ul>
             </li>
             <li><a href="#Bolsos"  data-category="bolsos" id="bolsos">Bolsos</a></li>
+            <li><a href="#Linternas" data-category="linternas" id="linternas" >Linternas</a></li>
             <li>
                 <a href="#" data-category="all">Banderas ▾</a>
                 <ul class="submenu">
