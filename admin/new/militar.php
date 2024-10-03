@@ -104,27 +104,84 @@ if (!isset($_SESSION['user'])) {
 
 
                             <div>
-                                <select class="input" id="categorias" name="categorias" required>
-                                    <option value="">Categoria</option>
-                                    <option value="acesorios">Acesorios</option>
-                                    <option value="boinas">Boinas</option>
-                                    <option value="bolsos">Bolsos</option>
-                                    <option value="busos">Busos</option>
-                                    <option value="casco">Casco</option>
-                                    <option value="camisas,ropa">Camisas</option>
-                                    <option value="camibusos,ropa">Camibuso</option>
-                                    <option value="pantalones,ropa">Pantalones</option>
-                                    <option value="tennis">Tennis</option>
-                                    <option value="estampados">Estampados</option>
-                                    <option value="gorras">Gorras</option>
-                                    <option value="pavas">Pavas</option>
-                                    <option value="policia">Ejercito y policia</option>
-                                    <option value="rescate">Personal de rescate</option>
-                                    <option value="privada">Seguridad privada</option>
-                                    <option value="vial">Seguridad vial</option>
-                                    <option value="insignias">Insignias y Parches</option>
-                                </select>
-                            </div>
+    <select class="input" id="categoriasSelect" name="categorias">
+        <option value="">Categoria</option>
+        <option value="acesorios">Acesorios</option>
+        <option value="usoPersonal">Uso personal</option>
+        <option value="complemento">Complemento</option>
+        <option value="boinas">Boinas</option>
+        <option value="bolsos">Bolsos</option>
+        <option value="busos">Busos</option>
+        <option value="casco">Casco</option>
+        <option value="camisas">Camisas</option>
+        <option value="camibusos">Camibuso</option>
+        <option value="pantalones">Pantalones</option>
+        <option value="linternas">Linternas</option>
+        <option value="tennis">Tennis</option>
+        <option value="estampados">Estampados</option>
+        <option value="gorras">Gorras</option>
+        <option value="pavas">Pavas</option>
+        <option value="policia">Ejercito y policia</option>
+        <option value="rescate">Personal de rescate</option>
+        <option value="privada">Seguridad privada</option>
+        <option value="vial">Seguridad vial</option>
+        <option value="insignias">Insignias y Parches</option>
+        <option value="otros">Otros</option>
+    </select>
+    <button type="button" id="addCategoria" style="display:none;">+</button>
+</div>
+
+<!-- Campo oculto para almacenar las categorías adicionales -->
+<input type="hidden" name="categoriasAdicionales" id="categoriasInput" />
+
+<!-- Mostrar las categorías adicionales seleccionadas -->
+<div id="categoriasSeleccionadas"></div>
+
+<script>
+document.getElementById('categoriasSelect').addEventListener('change', function() {
+    const selectedValue = this.value;
+    const addButton = document.getElementById('addCategoria');
+    const categoriasSeleccionadas = document.getElementById('categoriasSeleccionadas');
+
+    // Mostrar el botón "+" si hay una categoría seleccionada
+    if (selectedValue) {
+        addButton.style.display = 'inline';
+    } else {
+        addButton.style.display = 'none'; // Ocultar el botón si no hay nada seleccionado
+    }
+
+    // Actualizar la categoría seleccionada en la visualización
+    // categoriasSeleccionadas.textContent = 'Categoría principal seleccionada: ' + selectedValue;
+});
+
+document.getElementById('addCategoria').addEventListener('click', function() {
+    const select = document.getElementById('categoriasSelect');
+    const selectedValue = select.value;
+    const input = document.getElementById('categoriasInput');
+    const categoriasSeleccionadas = document.getElementById('categoriasSeleccionadas');
+
+    if (selectedValue) {
+        // Concatenar la nueva categoría al campo oculto sin borrar las anteriores
+        if (input.value) {
+            input.value += ',' + selectedValue;
+        } else {
+            input.value = selectedValue;
+        }
+
+        // Actualizar las categorías adicionales seleccionadas
+        categoriasSeleccionadas.textContent = ' ' + input.value;
+
+        // Limpiar la selección del select para permitir agregar otra categoría
+        select.value = '';
+
+        // Ocultar el botón "+" si ya se han seleccionado más de 1 categoría
+        if (input.value.split(',').length > 1) {
+            document.getElementById('addCategoria').style.display = 'none';
+        }
+    }
+});
+</script>
+
 
                             <div>
                                 <select class="input" id="estado" name="estado">
@@ -192,4 +249,4 @@ if (!isset($_SESSION['user'])) {
 </script>
 </body>
 </html>
-<?php require '../../php/NO.php'; ?>
+<!-- <?php require '../../php/NO.php'; ?> -->

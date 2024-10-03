@@ -221,28 +221,27 @@
                   }
                   $conn->close();
                   ?>
+                  
+                  
+
+<!-- 
+                  <div class="carousel-item">
+                  <img class="ver-mas" src="/img/imagenes/Background.png" alt="Product 4">
+                  <a href="/1pagina militar/sitios/prod.php#PRODUCTO4" id="redirigir-btn">
+                    <button class="boton-ver-inicio-mas">Comprar</button>
+                  </a>
+                  </div> -->
           </div>
           
         <button class="prev" onclick="prevSlide2(); resetTimer2()">❮</button>
         <button class="next" onclick="nextSlide2(); resetTimer2()">❯</button>
-<!-- 
-          <div class="carousel-item">
-            <span class="ofer-sticker">Oferta</span>
-            <img src="/1pagina militar/img/productos/busos/buso.png" alt="Product 4">
-            <h3>Producto 4</h3>
-            <p class="description">Descripción del Producto 4</p>
-            <a href="/1pagina militar/sitios/prod.php#PRODUCTO4" id="redirigir-btn">
-              <button class="boton-ver-inicio">Comprar</button>
-            </a>
-          </div> -->
-          <!-- Agrega más elementos según sea necesario -->
-        <!-- </div> -->
 
+<!-- 
         <a href="/1pagina militar/sitios/prod.php#promocion">
         <button class="ver-mas-venta">
         <img src="https://img.icons8.com/fluency-systems-filled/48/checkout.png">
       </button></a>
-      </div>
+      </div> -->
       
       
 

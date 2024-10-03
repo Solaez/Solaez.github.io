@@ -116,8 +116,8 @@
   background-color: #3239ff;
   transform: scale(1.1);
 }
-  select#tipo, select#categoria{
-    width: 240px;
+  select#tipo, select#categoriasSelect{
+    /* width: 240px; */
     background-color: #161616;
 }
 textarea#descripcion {
@@ -156,4 +156,29 @@ select#categorias, #estado {
   opacity: 1;
   transform: scale(1);
   overflow: auto;
+}
+#addCategoria {
+  border-radius: 50px;
+  border: transparent;
+  font-size: 20px;
+  background: #131313;
+  box-shadow: 0px 0px 5px 2px #00000094;
+  color: aliceblue;
+  padding: 5px 10px;
+  transition: transform 0.5s, box-shadow 0.5s ;
+}
+#addCategoria:hover{
+  cursor: pointer;
+  box-shadow: 0 0 9px 3px #0008ff;
+  color: #0008ff;
+  transform: scale(1.1);
+}
+#categoriasSeleccionadas {
+  background: #0008ff;
+  padding: 10px;
+  border-radius: 26px;
+  overflow: overlay;
+  width: 220px;
+  margin: 0px 0px 0px 15px;
+  box-shadow: inset 3px 4px 8px 1px rgb(5, 5, 5);
 }

@@ -14,7 +14,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Obtener datos del formulario
     $nombre = $_POST['nombre'];
-    $categorias = $_POST['categorias'];
+// Verificar si las categorías fueron enviadas
+$categorias = isset($_POST['categorias']) ? $_POST['categorias'] : '';
+$categoriasAdicionales = isset($_POST['categoriasAdicionales']) ? $_POST['categoriasAdicionales'] : '';
+
+// Si existen categorías adicionales, concatenarlas a la principal
+if (!empty($categoriasAdicionales)) {
+    $categorias .= (!empty($categorias) ? ',' : '') . $categoriasAdicionales;
+}
+
+// Ahora, $categorias contiene tanto la categoría principal como las adicionales concatenadas
     $descripcion = $_POST['descripcion'];
     $tipo = $_POST['tipo'];
     $lugar = $_POST['lugar'];

@@ -318,3 +318,17 @@ height: 700px;
       font-size: 10px;
     }
   }
+
+  .boton-ver-inicio-mas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.ver-mas {
+  width: 100%;
+  height: 100%;
+}
