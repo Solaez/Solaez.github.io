@@ -2,18 +2,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const products = document.querySelectorAll('#product-grid .product');
     const productsPerPage = 20;
 
-    // Función para renderizar la paginación
-    function renderPagination(products, currentPage = 1) {
+   // Función para renderizar la paginación
+function renderPagination(products, currentPage = 1) {
     const pagination = document.getElementById('pagination');
     pagination.innerHTML = '';
 
     const totalPages = Math.ceil(products.length / productsPerPage);
 
-    // Determinar las páginas visibles
-    const startPage = Math.max(1, currentPage - 1);  // Mostrar la página anterior
-    const endPage = Math.min(totalPages, currentPage + 1);  // Mostrar la página siguiente
-
-    // Agregar botón "Anterior" si no está en la primera página
+    // Botón "Anterior"
     if (currentPage > 1) {
         const prevButton = document.createElement('button');
         prevButton.textContent = '«';
@@ -25,47 +21,48 @@ document.addEventListener('DOMContentLoaded', function () {
         pagination.appendChild(prevButton);
     }
 
-    // Si hay más de 3 páginas, mostrar el botón "1..." para ir al inicio
-    if (startPage > 1) {
+    // Mostrar rango de páginas (1 página antes y 1 después de la actual)
+    const startPage = Math.max(1, currentPage - 1);
+    const endPage = Math.min(totalPages, currentPage + 1);
+
+    // Mostrar botón para ir a la primera página si el rango empieza más allá de 1
+    if (startPage > 2) {
         const firstButton = document.createElement('button');
-        firstButton.textContent = '•••';
+        firstButton.textContent = '...';
         firstButton.addEventListener('click', () => {
-            renderPagination(products, 1);
             showProducts(1, products);
+            renderPagination(products, 1);
             updateActivePage(1);
         });
         pagination.appendChild(firstButton);
     }
 
-    // Crear botones de paginación dentro del rango (anterior, actual, siguiente)
+    // Crear botones para páginas en el rango
     for (let i = startPage; i <= endPage; i++) {
         const button = document.createElement('button');
         button.textContent = i;
         if (i === currentPage) {
-            button.classList.add('active');
+            button.classList.add('active'); // Página actual activa
         }
         button.addEventListener('click', () => {
             showProducts(i, products);
-            updateActivePage(i);
             renderPagination(products, i);
         });
         pagination.appendChild(button);
     }
 
-    // Si hay más páginas, mostrar el botón "...N" para ir al final
-    if (endPage < totalPages) {
+    // Mostrar botón para ir a la última página si el rango no incluye el total de páginas
+    if (endPage < totalPages - 1) {
         const lastButton = document.createElement('button');
-        lastButton.textContent = `•••`;
-        // lastButton.textContent = `••• ${totalPages}`;
+        lastButton.textContent = `...`;
         lastButton.addEventListener('click', () => {
-            renderPagination(products, totalPages);
             showProducts(totalPages, products);
-            updateActivePage(totalPages);
+            renderPagination(products, totalPages);
         });
         pagination.appendChild(lastButton);
     }
 
-    // Agregar botón "Siguiente" si no está en la última página
+    // Botón "Siguiente"
     if (currentPage < totalPages) {
         const nextButton = document.createElement('button');
         nextButton.textContent = '»';
@@ -78,8 +75,33 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 }
 
-// Inicializa la página con la paginación
+// Función para mostrar los productos en la página actual
+function showProducts(pageNumber, products) {
+    const startIndex = (pageNumber - 1) * productsPerPage;
+    const endIndex = startIndex + productsPerPage;
+    products.forEach((product, index) => {
+        if (index >= startIndex && index < endIndex) {
+            product.style.display = 'block';
+        } else {
+            product.style.display = 'none';
+        }
+    });
+}
+
+// Función para actualizar el estilo del botón de página activa
+function updateActivePage(pageNumber) {
+    const paginationButtons = document.querySelectorAll('#pagination button');
+    paginationButtons.forEach(button => {
+        button.classList.remove('active');
+    });
+    const activeButton = Array.from(paginationButtons).find(button => button.textContent === pageNumber.toString());
+    if (activeButton) activeButton.classList.add('active');
+}
+
+// Inicializar con la paginación en la primera página
 renderPagination(products, 1);
+showProducts(1, products);
+
 
 
     // Función para mostrar los productos en la página actual
@@ -254,7 +276,7 @@ const buttons = [
     'destacados', 'acesorios', 'camibusos', 'pantalones', 'tennis', 
     'bolsos', 'banderase', 'banderasi', 'banderines', 'estampados', 
     'personalizados', 'gorras', 'boinas', 'pavas', 'policia', 
-    'rescate', 'privada', 'vial', 'insignias'
+    'rescate', 'privada', 'vial', 'insignias', 'banderas', 'carpas'
 ];
 
 // Agregar el evento de clic a cada botón
