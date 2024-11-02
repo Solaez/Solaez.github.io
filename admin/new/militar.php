@@ -107,6 +107,7 @@ if (!isset($_SESSION['user'])) {
 
                                 <div>
                                     <select class="input" id="categoriasSelect" name="categorias">
+
                                         <option value="">Categoria</option>
                                         <option value="acesorios">Acesorios</option>
                                         <option value="usoPersonal">Uso personal - aseo</option>
@@ -135,8 +136,8 @@ if (!isset($_SESSION['user'])) {
                                         <option value="chalecos">Chalecos</option>
                                         <option value="entretenimiento">Entretenimiento</option>
                                         <option value="kit">KIT</option>
-
                                         <option value="otros">Otros</option>
+
                                     </select>
                                     <button type="button" id="addCategoria" style="display:none;">+</button>
                                 </div>

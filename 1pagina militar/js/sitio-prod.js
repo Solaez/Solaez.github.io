@@ -272,7 +272,7 @@ function handleCategoryClick(event) {
 
 // Obtener todos los botones
 const buttons = [
-    'all', 'camisas', 'busos', 'bordados', 'cascos', 'nuevo', 'ofertas', 
+    'all', 'camisas', 'busos', 'insignias', 'cascos', 'nuevo', 'ofertas', 
     'destacados', 'acesorios', 'camibusos', 'pantalones', 'tennis', 
     'bolsos', 'banderase', 'banderasi', 'banderines', 'estampados', 
     'personalizados', 'gorras', 'boinas', 'pavas', 'policia', 

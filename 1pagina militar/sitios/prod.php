@@ -215,7 +215,7 @@
         <a href="#productos" data-category="all" id="all">Todos</a>
         <a href="#" data-category="camisas" id="camisas">Camisas</a>
         <a href="#" data-category="busos" id="busos">Busos</a>
-        <a href="#" data-category="bordados" id="bordados">Bordados</a>
+        <a href="#" data-category="insignias" id="insignias">Bordados</a>
         <a href="#" data-category="casco" id="cascos">Casco</a>
       </div>
       <main>
