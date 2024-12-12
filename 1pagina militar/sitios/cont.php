@@ -127,10 +127,10 @@
   }
 </script>
 <!------------------------------------------------------------------------------------->
-<script src="/js/chat.js"></script>
-<script src="/1pagina militar/js/header-bar.js"></script>
-<script src="/1pagina militar/js/article.js"></script>
-<script src="/1pagina militar/js/whatsapp.js"></script>
+    <script src="/js/chat.js"></script>
+    <script src="/1pagina militar/js/header-bar.js"></script>
+    <script src="/1pagina militar/js/article.js"></script>
+    <script src="/1pagina militar/js/whatsapp.js"></script>
 <!--Fin-->
 </body>
 </html>

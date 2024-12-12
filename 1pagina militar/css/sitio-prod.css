@@ -677,6 +677,8 @@ nav a:hover {
 
 img#productoImagen {
   max-height: 300px;
+    object-fit: contain;
+
 }
 
 
@@ -770,6 +772,8 @@ img#productoImagen {
   max-height: 220px;
   min-width: auto;
   min-height: 220px;
+    object-fit: contain;
+
 }
 
   .search-icons {
