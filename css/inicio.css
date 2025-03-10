@@ -1,0 +1,974 @@
+body {
+  background: url("/img/fondo2.png");
+  /* background-size: cover; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+/*Inicio
+------------------------------------------------------------------------------------------*/
+#asideElement a {
+  color: #fff;
+  text-decoration: none;
+  cursor: default;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 20px;
+  background-color: #303763da;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.login-btn {
+  padding: 8px 16px;
+  background-color: #6441a5;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #8b69c2;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  padding: 20px;
+  width: 24px;
+  max-width: 300px;
+  min-width: 24px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  margin-top: 18px;
+  transition: transform 0.2s;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-out;
+  will-change: transform;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #303763c9;
+  height: 100%;
+  transition: transform 0.2s ease, width 0.3s ease;
+  overflow: hidden;
+}
+
+aside ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside li {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  left: -10px;
+}
+
+aside li i {
+  margin-right: 10px;
+  color: #6441a5;
+}
+
+.subscriptions {
+  margin-top: 20px;
+}
+
+.subscriptions h3 {
+  margin-bottom: 10px;
+  color: #6441a5;
+}
+
+.user {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: #404040;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+section {
+  padding: 20px;
+  flex-grow: 1;
+  border-radius: 20px;
+  margin: 15px;
+}
+.hero {
+  position: relative;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #6441a5;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+.play-btn:hover {
+  background-color: #8b69c2;
+}
+.play-btn i {
+  margin-right: 5px;
+}
+.game-card {
+  background-color: #393168;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  will-change: transform;
+}
+.game-info h3 {
+  margin-top: 20px;
+}
+.game-info p {
+  margin-bottom: 0;
+  color: #ccc;
+  font-size: 10px;
+}
+/*pantallas pequeñas*/
+@media (max-width: 768px) {
+  aside {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    height: 100vh;
+    z-index: 999;
+    transition: left 0.3s ease;
+  }
+  aside.open {
+    left: 0;
+  }
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+  }
+  section {
+    padding: 10px;
+  }
+}
+.user h6 {
+  display: none;
+  position: absolute;
+  background-color: #2b2b2b;
+  padding: 3px 10px;
+  border-radius: 20px;
+  right: 0;
+  margin-bottom: -20px;
+}
+.user:hover h6 {
+  display: block;
+}
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 20px;
+  animation: fadeIn 0.6s ease-out;
+  animation-fill-mode: both;
+}
+.game-card:hover {
+  transform: scale(1.1);
+}
+.game-image {
+  position: relative;
+  overflow: hidden;
+}
+.game-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+  min-height: 252px;
+}
+.game-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.664);
+  color: #fff;
+  transition: transform 0.3s ease,opacity .5s;
+  height: 100%;
+  opacity: 0;
+  backdrop-filter: blur(5px);
+}
+.game-info:hover{
+  opacity: 1;
+}
+.game-details {
+  background-color: rgba(43, 43, 43, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  margin: 0 auto;
+}
+.game-details h2 {
+  color: #6441a5;
+  font-size: 2rem;
+  margin-top: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.game-details p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.game-details input[type="number"] {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+}
+.game-details button {
+  background-color: #6441a5;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+.game-details button:hover {
+  background-color: #8b69c2;
+}
+.hero iframe {
+  border-radius: 15px;
+  box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.623);
+  animation: zoomIn 0.6s ease-out;
+  animation-fill-mode: both;
+}
+#toggleButton {
+  position: fixed;
+  z-index: 90;
+  width: 150px;
+  height: 50px;
+  left: -105px;
+  top: 100px;
+  border-radius: 0px 20px 20px 0;
+  border: transparent;
+  cursor: pointer;
+  font-size: 30px;
+  text-align: end;
+  transition: transform 0.2s;
+  background-color: #000000a2;
+  color: #ffffff;
+  backdrop-filter: blur(20px);
+}
+#toggleButton:hover {
+  transform: scale(1.1);
+  transform: translateX(100px);
+}
+#toggleButton:active {
+  transform: translateX(100px);
+}
+/* Ocultar el aside */
+aside.hidden {
+  transform: translateX(-200%);
+}
+/* Ocultar el aside */
+aside.hidden2 {
+  display: none;
+}
+.estender {
+  background-color: transparent;
+  color: #fff;
+  font-size: 40px;
+  border: transparent;
+  border-radius: 20px;
+  position: relative;
+  left: -8px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+/* Estilo para la animación */
+@keyframes slideIn {
+  from {
+    width: 250px;
+  }
+
+  to {
+    width: 20px;
+  }
+}
+@keyframes slideOut {
+  from {
+    width: 20px;
+  }
+
+  to {
+    width: 250px;
+  }
+}
+/* Estilos para el aside */
+#asideElement {
+  transition: width 0.5s, min-width 0.5s;
+}
+/* Clase ue se aplicará para expandir */
+.collapsed {
+  /* width: 300px ; */
+  min-width: 200px ;
+  overflow: hidden;
+  height: 100%;
+  max-width: 300px;
+
+}
+.iconCategorias {
+  will-change: transform;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: rgba(0, 4, 54, 0.137);
+  width: 25px;
+  transition: background-color 0.2s, border-radius 0.2s, transform 0.3s ease-out;
+}
+.iconCategorias:hover {
+  transform: rotate(360deg);
+  background-color: rgba(68, 0, 255, 0.404);
+}
+#asideElement p {
+  position: relative;
+  left: 20px;
+}
+/*otra parte osea ventana -
+----------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------------*/
+.container {
+  background-color: rgb(36, 36, 36);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 15px 10px 10px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 10px;
+  box-shadow: rgba(46, 46, 46, 0.2) 0px 8px 24px;
+  color: rgb(255, 255, 255);
+}
+#favorite {
+  display: none;
+}
+#favorite:checked + .container svg {
+  fill: hsl(0deg 100% 50%);
+  stroke: hsl(0deg 100% 50%);
+  animation: heartButton 1s;
+}
+@keyframes heartButton {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.3);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+#favorite + .container .action {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+}
+#favorite + .container .action span {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  transition: all 0.5s;
+}
+#favorite + .container .action span.option-1 {
+  transform: translate(0px, 0%);
+  opacity: 1;
+}
+#favorite:checked + .container .action span.option-1 {
+  transform: translate(0px, -100%);
+  opacity: 0;
+}
+#favorite + .container .action span.option-2 {
+  transform: translate(0px, 100%);
+  opacity: 0;
+}
+#favorite:checked + .container .action span.option-2 {
+  transform: translate(0px, 0%);
+  opacity: 1;
+}
+button {
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+}
+button:hover {
+  transform: scale(1.1);
+}
+.icon {
+  transition: transform 0.2s ease-in-out;
+}
+.icon:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+/* Animación de entrada 
+  ------------------------------------------------------------------------------------------------*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+:root {
+  --primary-color: #6441a5;
+  --secondary-color: #8b69c2;
+  --background-color: #2b2b2b;
+  --text-color: #fff;
+  --hover-background-color: #404040;
+}
+.user:hover {
+  background-color: #505050;
+}
+.user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+section {
+  padding: 20px;
+  flex-grow: 1;
+  /* backdrop-filter: blur(5px); */
+  background-color: #303763c9;
+  border-radius: 20px;
+  margin: 15px;
+}
+@media (max-width: 768px) {
+  aside {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    height: 100vh;
+    z-index: 999;
+    transition: left 0.3s ease;
+  }
+
+  aside.open {
+    left: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  section {
+    padding: 10px;
+  }
+}
+.loginExit {
+  margin-top: 170px;
+}
+/*tipo
+------------------------------------------------------------------------------------------*/
+.categoriaTipo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+.filter-btn {
+  background-color: #6441a5;
+  border: transparent;
+  padding: 3px 10px;
+  border-radius: 35px;
+  margin: 3px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  color: #fff;
+}
+/*sjdsjhdasjkdhaskjsajdhasjkbdhadbhsbhdchdbajsjksdbcjhdsbhdbchjdbcjadhjdbcjhdbhjdbcdbcjhdbcjhdbchd
+================================================================================================0*/
+
+.form-group {
+  margin-bottom: 15px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+.form-row > .form-group {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.form-row > .col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+/* Estilo básico para el botón */
+#btnBackToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #270246a6;
+  backdrop-filter: blur(20px);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 20px 20px;
+  font-size: 20px;
+  animation: moveUpDown 1s infinite ease-out;
+  cursor: pointer;
+}
+/**{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 20px;
+  background: #2c2953;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  color: rgb(255, 255, 255);
+}
+.form-container img {
+  width: 100px;
+  display: block;
+  margin: 0 auto 20px auto;
+  filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+#product-image{
+  width: 70%;
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 20px;
+  max-width: 300px;
+}
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: aliceblue;
+  font-size: 13px;
+}
+.form-container input[type="number"],
+.form-container input[type="text"],
+.form-container select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #462b86;
+  background-color: #8641a05e;
+  color: #fff;
+}
+.form-container .cvv {
+  display: flex;
+  justify-content: space-between;
+}
+.form-container .cvv .form-group {
+  flex: 1;
+}
+.form-container .cvv .form-group:not(:last-child) {
+  margin-right: 10px;
+}
+.form-container .form-actions {
+  text-align: center;
+}
+.form-container button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.form-container button:hover {
+  background-color: #45a049;
+}
+.form-container #cancel-btn {
+  background-color: #f44336;
+  margin-left: 10px;
+}
+.form-container #cancel-btn:hover {
+  background-color: #e53935;
+}
+.game-details {
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/*carroucel
+------------------------------------------------------------------------------------*/
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.carousel-slide {
+  display: none;
+  animation: fade 1s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-description {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background: rgb(8,13,131);
+  background: linear-gradient(141deg, rgba(46, 44, 95, 0.76) 20%, rgba(220,84,216,0) 100%);
+}
+.carousel-description h2 {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 50%;
+  text-align: left;
+  margin: 30px;
+}
+
+
+#prevBtn,#nextBtn {
+  display: none;
+}
+
+ 
+
+
+.thumbnail-container {
+  text-align: center;
+  border-radius: 20px;
+}
+.thumbnail-container img{
+  border-radius: 20px;
+  box-shadow: 0 0  5px rgba(0, 0, 0, 0.3);
+}
+
+.thumbnail {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.thumbnail:hover {
+  border-color: #333;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+img.logotipo{
+  width: 150px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: 30px;
+}
+.name-user {
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 40px;
+  background-color: #292554;
+  padding: 0px 0px 0 0px;
+  width: 48px;
+  transition: padding .2s;
+  overflow: hidden;
+  cursor: pointer;
+}
+.name-user:hover {
+  padding: 0 0 0 70px;
+}
+
+/*popup de descarga
+-----------------------------------------------------------------------------------------------*/
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.download-link {
+  display: block;
+  margin: 10px 0;
+  font-size: 18px;
+  color: #0645ad;
+  text-decoration: none;
+}
+
+.download-link:hover {
+  text-decoration: underline;
+}
+/* Define the animations */
+@keyframes popupShow {
+0% { opacity: 0; transform: scale(0.7); }
+100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes popupHide {
+0% { opacity: 1; transform: scale(1); }
+100% { opacity: 0; transform: scale(0.7); }
+}
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: backdrop-filter 1s;
+    animation: popupShow 0.5s forwards;
+
+}
+.popup:hover{
+    backdrop-filter: blur(10px);
+}
+
+.popup-content {
+    background-color: #291155e0;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.download-link {
+   display: block;
+  margin: 10px 0;
+    margin-left: 0px;
+  font-size: 18px;
+  color: #9f9f9f;
+  text-decoration: none;
+  padding: 18px;
+  background-color: #3c2763;
+  border-radius: 20px;
+  transition: transform .2s,box-shadow .2s;
+  margin-left: 10px;
+}
+
+.download-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 10px ;
+}
+#download-options{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.game-requisitos {
+    background-color: #2e2c37;
+    padding: 20px;
+    border-radius: 15px;
+}

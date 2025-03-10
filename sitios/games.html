@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-X lista</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/inicio.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Game-X</div>
+            <div class="name-user">
+                <img src="https://img.icons8.com/fluency/48/user-male-circle--v2.png" alt="">
+                <p id="user-name"></p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- <button id="toggleButton">Ocultar ◯</button> -->
+        <aside id="asideElement">
+            <ul>
+                <button class="estender">≡</button>
+                <a href="/sitios/inicio.html"><li><img class="iconCategorias" src="/img/icon/home.png"> <p>Home</p></li></a>
+                <a href="/sitios/games.html"><li><img class="iconCategorias" src="/img/icon/games.png"> <p>Games</p></li></a>
+                <li><img class="iconCategorias" src="/img/icon/new.png"> <p>Nuevo</p></li>
+                <li><img class="iconCategorias" src="/img/icon/caja.png"> <p>Perdi</p></li>
+                
+            </ul>
+            <div class="loginExit">
+                <a href="/index.html"><li><img class="iconCategorias" src="/img/icon/exit.png"><p>Salir</p></li></a>
+            </div>
+        </aside>
+        <section id="juegos">
+            <div class="hero">
+                <!-- <img src="/img/zelda.png" alt="Mortal Kombat 11"> -->
+                <iframe width="100%" height="215" src="https://www.youtube.com/embed/VIguUSVN_q8?si=lc97vwod8pAHYr1J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                
+            </div>
+            
+            <div class="categoriaTipo">
+                <button class="filter-btn" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="multiplayer">Multiplayer</button>
+                <button class="filter-btn" data-category="shooter">Shooter</button>
+                <button class="filter-btn" data-category="abierto">Mundo abierto</button>
+                <button class="filter-btn" data-category="online">Online</button>
+                <button class="filter-btn" data-category="accion">Accion</button>
+                <button class="filter-btn" data-category="adventura">Adventura</button>
+                <button class="filter-btn" data-category="puzzle">Puzzle</button>
+                <button class="filter-btn" data-category="rpg">RPG</button>
+                <button class="filter-btn" data-category="emulador">Emulador</button>
+                <button class="filter-btn" data-category="terror">Terror</button>
+                <button class="filter-btn" data-category="lucha">Lucha</button>
+                <button class="filter-btn" data-category="construccion">Construccion</button>
+                <button class="filter-btn" data-category="supervivencia">Supervivencia</button>
+                <button class="filter-btn" data-category="carreras">Carreras</button>
+                <button class="filter-btn" data-category="sandbox">Sandbox</button>
+                <button class="filter-btn" data-category="estrategia">Estrategia</button>
+
+            </div>
+            <div class="game-grid">
+
+                
+
+                <div class="game-card" data-categories="emulador">
+                    <img src="https://cdn2.steamgriddb.com/grid/db6e520404076e032d2385b85e142dcc.png" alt="Game 1">
+                    <div class="game-info">
+                        <h3>Super Mario Odyssey</h3>
+                        <p>es un juego super emocionante, fantastico, estupendo, lo tienes que comprar si o si</p>
+                        <h6 style="display: none;">Gratis</h6>
+                    </div>
+                </div>
+
+
+                <div class="game-card">
+                    <div class="game-info">
+                        <h3></h3>
+                        <p></p>
+                        <h6 style="display: none;"></h6>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-info">
+                        <h3></h3>
+                        <p></p>
+                        <h6 style="display: none;"></h6>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-info">
+                        <h3></h3>
+                        <p></p>
+                        <h6 style="display: none;"></h6>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-info">
+                        <h3></h3>
+                        <p></p>
+                        <h6 style="display: none;"></h6>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-info">
+                        <h3></h3>
+                        <p></p>
+                        <h6 style="display: none;"></h6>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-info">
+                        <h3></h3>
+                        <p></p>
+                        <h6 style="display: none;"></h6>
+                    </div>
+                </div>
+                <div class="game-details" style="display: none;">
+                    <h2 id="game-title"></h2>
+                    <p id="game-description"></p>
+                    <p style="background-color: #6441a5; padding: 15px; border-radius: 10px;">Precio: <span id="game-price"></span></p>
+                    <button id="buy-btn">Metodos de pago</button>
+                    <button id="back-btn">Regresar</button>
+                    <input
+                    value="favorite-button"
+                    name="favorite-checkbox"
+                    id="favorite"
+                    checked="checked"
+                    type="checkbox"
+                    />
+                    <label class="container" for="favorite">
+                    <svg
+                    class="feather feather-heart"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    height="24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                    </svg>
+                    <div class="action">
+                        <span class="option-1">agregar to Favorites</span>
+                        <span class="option-2">Added to Favorites</span>
+                    </div>
+                    </label>
+                </div>
+
+                <div id="purchase-form" style="display: none;"> 
+                    <div class="form-container">
+                        <div class="product-info">
+                            <img id="product-image" src="" alt="Product Image">
+                            <h2 id="product-name"></h2>
+                        </div>
+                        
+                        <form action="/PHP/process_purchase.php" method="post">
+                            <input type="hidden" id="hidden-product-name" name="product_name">
+                            <input type="hidden" id="hidden-product-price" name="product_price">
+                            <img id="card-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Card Logo">
+                            <div class="form-group">
+                                <label for="payment">Por favor, seleccione su tarjeta</label>
+                                <select id="payment" name="payment" onchange="updateLogo()">
+                                    <option value="visa">Visa</option>
+                                    <option value="mastercard">MasterCard</option>
+                                    <option value="paypal">Paypal</option>
+                                    <option value="amex">American Express</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="tarjeta">Numero de Tarjeta</label>
+                                <input type="number" id="tarjeta" name="tarjeta" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="portatarjetas">Portatarjetas</label>
+                                <input type="text" id="portatarjetas" name="portatarjetas" required>
+                            </div>
+                            <div class="cvv">
+                                <div class="form-group">
+                                    <label for="expire">Expiracipon</label>
+                                    <input type="number" id="expire" name="expire" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cvc">CVC</label>
+                                    <input type="text" id="cvc" name="cvc" required>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Comprar</button>
+                                <button id="cancel-btn" class="btn btn-secondary" type="button">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    
+<button id="btnBackToTop">⨇</button>
+<script src="/JS/scripts2.js"></script>
+<script src="/JS/inicio.js"></script>
+
+</body>
+</html>
+<!--categorias-->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const gameCards = document.querySelectorAll('.game-card');
+    
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.getAttribute('data-category');
+    
+                gameCards.forEach(card => {
+                    if (category === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        const categories = card.getAttribute('data-categories').split(',');
+    
+                        if (categories.includes(category)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    });
+</script>
+<!--sliter-->  
+<script>
+    function updateLogo() {
+        const cardType = document.getElementById("payment").value;
+        const logo = document.getElementById("card-logo");
+        switch (cardType) {
+            case "visa":
+                logo.src = "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/visa-512.png";
+                break;
+            case "mastercard":
+                logo.src = "https://cdn3.iconfinder.com/data/icons/payment-method-1/64/_Mastercard-512.png";
+                break;
+            case "paypal":
+                logo.src = "https://cdn3.iconfinder.com/data/icons/payment-method-1/64/_Paypal-39-512.png";
+                break;
+            case "amex":
+                logo.src = "https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Amex-512.png";
+                break;
+            default:
+                logo.src = "";
+        }
+    }
+    
+</script>
+<!--conexion-->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch('/PHP/get_user_name.php')
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById('user-name').textContent = data.user_name;
+                }
+            })
+            .catch(error => console.error('Error:', error));
+    });
+</script>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-X Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/inicio.css">
+    <link rel="stylesheet" href="/css/compra.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Game-X</div>
+        </nav>
+    </header>
+    <main>
+        <aside id="asideElement">
+            <ul>
+                <button class="estender">≡</button>
+                <a href="#inicio"><li><img class="iconCategorias" src="/img/icon/home.png"> <p>Home</p></li></a>
+                <a href="/sitios/games.html"><li><img class="iconCategorias" src="/img/icon/games.png"> <p>Games</p></li></a>
+                <li><img class="iconCategorias" src="/img/icon/new.png"> <p>Nuevo</p></li>
+                <li><img class="iconCategorias" src="/img/icon/caja.png"> <p>Perdi</p></li>
+            </ul>
+            <div class="loginExit">
+                <a href="/index.html"><li><img class="iconCategorias" src="/img/icon/exit.png"><p>Salir</p></li></a>
+            </div>
+        </aside>
+
+        <section id="juegos">
+            
+            <div class="carrouselJuegos">
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="https://cdn2.steamgriddb.com/hero/2e3636ebfb2686bca1f41859e1ced9a4.jpg" alt="Image 1">
+                        <div class="carousel-description">
+                            <img class="logotipo" src="https://cdn2.steamgriddb.com/logo/f89827bb9d3e10d3c0abbe32af4af1f2.png" alt="logotipo">
+                            <h2>Splatoon 3 (2022)</h2>
+                        </div>
+                    </div>
+                    <!-- More carousel slides -->
+                    <button id="prevBtn">&#10094;</button>
+                    <button id="nextBtn">&#10095;</button>
+                </div>
+                <div class="thumbnail-container">
+                    <img src="https://cdn2.steamgriddb.com/icon/39e1057382425c5ceab4d8702ffdf7bd.png" class="thumbnail" onclick="currentSlide(1)">
+                    <!-- More thumbnails -->
+                </div>
+            </div>
+          
+            <h2>Mas Populares</h2>
+            
+            <div class="categoriaTipo"></div>
+            <div class="game-grid" id="game-grid">
+                <!-- Game cards will be inserted here by JavaScript -->
+            </div>
+
+            <!-- Área para mostrar los detalles del juego -->
+            <div class="game-details" id="game-details" style="display: none;">
+                <h2 id="game-title"></h2>
+                <p id="game-description"></p>
+                <p style="background-color: #6441a5; padding: 15px; border-radius: 10px;">Precio: <span id="game-price"></span></p>
+                <button id="buy-btn">Descargar</button>
+                <button id="back-btn">Regresar</button>
+            </div>
+
+            <div class="game-requisitos" id="game-requisitos" style="display: none;">
+                <h3>Requisitos</h3>
+                <div id="requisitos-content"></div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Popup for downloads -->
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <span id="close-btn" class="close-btn">&times;</span>
+            <h2 id="popup-game-title"></h2>
+            <div id="download-options"></div>
+        </div>
+    </div>
+
+    <button id="btnBackToTop">⨇</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('/PHP/load_games.php')
+                .then(response => response.json())
+                .then(games => {
+                    const gameGrid = document.getElementById('game-grid');
+                    games.forEach(game => {
+                        const gameCard = document.createElement('div');
+                        gameCard.className = 'game-card';
+                        gameCard.innerHTML = `
+                            <div class="game-image">
+                                <img src="${game.image}" alt="${game.title}">
+                            </div>
+                            <div class="game-info">
+                                <h3>${game.title}</h3>
+                                <p>${game.description}</p>
+                                <h6 style="display: none;">${game.price}</h6>
+                                <div class="descargas" style="display: none;">
+                                    ${game.download_links.map(link => `<a href="${link.href}" class="link">${link.text}</a>`).join('')}
+                                </div>
+                                <div class="requisitos" style="display: none;">
+                                    <h4>Requisitos minimos:</h4>
+                                    <ul>${game.min_requirements.split(';').map(req => `<li>${req}</li>`).join('')}</ul>
+                                    <h4>Requisitos recomendados:</h4>
+                                    <ul>${game.rec_requirements.split(';').map(req => `<li>${req}</li>`).join('')}</ul>
+                                </div>
+                            </div>
+                        `;
+                        gameGrid.appendChild(gameCard);
+
+                        // Agregar evento click para mostrar detalles
+                        gameCard.addEventListener('click', function() {
+                            document.getElementById('game-title').textContent = game.title;
+                            document.getElementById('game-description').textContent = game.description;
+                            document.getElementById('game-price').textContent = `Precio: $${game.price}`;
+                            document.getElementById('requisitos-content').innerHTML = `
+                                <h4>Requisitos minimos:</h4>
+                                <ul>${game.min_requirements.split(';').map(req => `<li>${req}</li>`).join('')}</ul>
+                                <h4>Requisitos recomendados:</h4>
+                                <ul>${game.rec_requirements.split(';').map(req => `<li>${req}</li>`).join('')}</ul>
+                            `;
+
+                            document.querySelectorAll('.game-card').forEach(card => card.style.display = 'none');
+                            document.getElementById('game-details').style.display = 'block';
+                            document.getElementById('game-requisitos').style.display = 'block';
+                        });
+                    });
+
+                    document.getElementById('back-btn').addEventListener('click', () => {
+                        document.querySelectorAll('.game-card').forEach(card => card.style.display = 'block');
+                        document.getElementById('game-details').style.display = 'none';
+                        document.getElementById('game-requisitos').style.display = 'none';
+                    });
+                });
+
+            // Logic for showing download popup
+            const buyBtn = document.getElementById('buy-btn');
+            const popup = document.getElementById('popup');
+            const closeBtn = document.getElementById('close-btn');
+            const popupGameTitle = document.getElementById('popup-game-title');
+            const downloadOptions = document.getElementById('download-options');
+
+            buyBtn.addEventListener('click', () => {
+                const gameTitleText = document.getElementById('game-title').textContent;
+                popupGameTitle.textContent = gameTitleText;
+
+                const currentCard = Array.from(document.querySelectorAll('.game-card')).find(card => {
+                    return card.querySelector('.game-info h3').textContent === gameTitleText;
+                });
+
+                if (currentCard) {
+                    const links = currentCard.querySelectorAll('.descargas .link');
+                    downloadOptions.innerHTML = '';
+                    links.forEach(link => {
+                        const a = document.createElement('a');
+                        a.href = link.href;
+                        a.textContent = link.textContent;
+                        a.className = 'download-link';
+                        downloadOptions.appendChild(a);
+                    });
+                }
+
+                popup.style.display = 'block';
+            });
+
+            closeBtn.addEventListener('click', () => {
+                popup.style.display = 'none';
+            });
+
+            window.addEventListener('click', (event) => {
+                if (event.target == popup) {
+                    popup.style.display = 'none';
+                }
+            });
+        });
+
+        document.querySelector('.estender').addEventListener('click', function() {
+            const asideElement = document.getElementById('asideElement');
+            asideElement.classList.toggle('collapsed');
+        });
+
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n - 1);
+        }
+
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName("carousel-slide");
+            const thumbnails = document.getElementsByClassName("thumbnail");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                thumbnails[i].style.border = "2px solid transparent";
+            }
+            slides[slideIndex].style.display = "block";
+            thumbnails[slideIndex].style.border = "2px solid #fff";
+        }
+
+        document.getElementById("prevBtn").addEventListener("click", () => {
+            slideIndex--;
+            if (slideIndex < 0) slideIndex = document.getElementsByClassName("carousel-slide").length - 1;
+            showSlides(slideIndex);
+        });
+
+        document.getElementById("nextBtn").addEventListener("click", () => {
+            slideIndex++;
+            if (slideIndex >= document.getElementsByClassName("carousel-slide").length) slideIndex = 0;
+            showSlides(slideIndex);
+        });
+    </script>
+
+</body>
+</html>
