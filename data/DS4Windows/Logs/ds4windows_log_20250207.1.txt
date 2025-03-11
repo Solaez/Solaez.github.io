@@ -1,0 +1,29 @@
+2025-02-07 19:18:31.9642|INFO|DS4Windows version 3.3.3
+2025-02-07 19:18:31.9642|INFO|DS4Windows exe file: DS4Windows.exe
+2025-02-07 19:18:31.9642|INFO|DS4Windows Assembly Architecture: x64
+2025-02-07 19:18:31.9642|INFO|OS Version: Microsoft Windows NT 10.0.26100.0
+2025-02-07 19:18:31.9642|INFO|OS Product Name: Windows 10 Pro
+2025-02-07 19:18:31.9642|INFO|OS Release ID: 2009
+2025-02-07 19:18:31.9642|INFO|System Architecture: x64
+2025-02-07 19:18:31.9642|INFO|Logger created
+2025-02-07 19:18:33.3797|INFO|Running as User
+2025-02-07 19:18:33.3797|INFO|HidHide control device found
+2025-02-07 19:18:34.4476|INFO|Starting...
+2025-02-07 19:18:36.4488|INFO|Using output KB+M handler: FakerInput 0.1.0.0
+2025-02-07 19:18:36.4488|INFO|Connection to ViGEmBus 1.21.442.0 established
+2025-02-07 19:18:36.4488|INFO|Searching for controllers...
+2025-02-07 19:18:36.4488|INFO|Using Exclusive Mode
+2025-02-07 19:18:37.6982|INFO|Found Controller: 37:94:51:05:06:07 (BT) (DS4 v.2).
+2025-02-07 19:18:38.1483|INFO|Plugging in virtual X360 controller (XInput slot #1) in output slot #1
+2025-02-07 19:18:38.1483|INFO|Associated input controller #1 (DS4 v.2) to virtual X360 Controller in output slot #1
+2025-02-07 19:18:38.1689|INFO|Controller 1 is using Profile "Xbox-Controller". Battery level is 100%
+2025-02-07 20:20:36.7024|WARN|37:94:51:05:06:07 disconnected due to read failure: 0
+2025-02-07 20:20:36.7024|INFO|Disassociated virtual X360 Controller in output slot #1 from input controller #1 (DS4 v.2)
+2025-02-07 20:20:36.7024|INFO|Unplugging virtual X360 Controller from output slot #1
+2025-02-07 20:20:36.7024|INFO|Controller 1 was removed or lost connection
+2025-02-07 20:20:45.0696|INFO|Request App Shutdown
+2025-02-07 20:20:45.0724|INFO|Stopping Virtual Output Controllers
+2025-02-07 20:20:45.0724|INFO|Closing connection to ViGEmBus
+2025-02-07 20:20:45.0724|INFO|Stopping DS4 Input Controllers
+2025-02-07 20:20:45.0724|INFO|Stopped DS4Windows
+2025-02-07 20:20:45.0724|INFO|Closing connection to output handler FakerInput
