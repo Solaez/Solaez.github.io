@@ -8,201 +8,1000 @@
     <link rel="stylesheet" href="/css/inicio.css">
 </head>
 <body>
-    <header>
+   <header>
         <nav>
-            <div class="logo">Game-X</div>
+            <div class="logo">Repositorio GameScript</div>
             <div class="name-user">
                 <img src="https://img.icons8.com/fluency/48/user-male-circle--v2.png" alt="">
-                <p id="user-name"></p>
+                <p id="user-name">Solaez</p>
             </div>
+            
         </nav>
     </header>
+
     <main>
         <!-- <button id="toggleButton">Ocultar ◯</button> -->
-        <aside id="asideElement">
+        <aside id="asideElement" class="collapsed">
             <ul>
                 <button class="estender">≡</button>
-                <a href="/sitios/inicio.html"><li><img class="iconCategorias" src="/img/icon/home.png"> <p>Home</p></li></a>
-                <a href="/sitios/games.html"><li><img class="iconCategorias" src="/img/icon/games.png"> <p>Games</p></li></a>
-                <li><img class="iconCategorias" src="/img/icon/new.png"> <p>Nuevo</p></li>
-                <li><img class="iconCategorias" src="/img/icon/caja.png"> <p>Perdi</p></li>
-                
+                <a href="/index.html"><li><img class="iconCategorias" src="/img/icon/home.png"> <p>Inicio</p></li></a>
+                <a href="/sitios/games.html"><li><img class="iconCategorias" src="/img/icon/games.png"> <p>Emuladores</p></li></a>
+                <li><img class="iconCategorias" src="/img/icon/new.png"> <p>Roms</p></li>
+                <li><img class="iconCategorias" src="/img/icon/new.png"> <p>Programas</p></li>
+                <li><img class="iconCategorias" src="/img/icon/new.png"> <p>Mods</p></li>
             </ul>
             <div class="loginExit">
                 <a href="/index.html"><li><img class="iconCategorias" src="/img/icon/exit.png"><p>Salir</p></li></a>
             </div>
         </aside>
+
         <section id="juegos">
-            <div class="hero">
+            <div class="carrouselJuegos">
                 <!-- <img src="/img/zelda.png" alt="Mortal Kombat 11"> -->
                 <iframe width="100%" height="215" src="https://www.youtube.com/embed/VIguUSVN_q8?si=lc97vwod8pAHYr1J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                
             </div>
             
             <div class="categoriaTipo">
                 <button class="filter-btn" data-category="all">Todos</button>
-                <button class="filter-btn" data-category="multiplayer">Multiplayer</button>
-                <button class="filter-btn" data-category="shooter">Shooter</button>
-                <button class="filter-btn" data-category="abierto">Mundo abierto</button>
-                <button class="filter-btn" data-category="online">Online</button>
-                <button class="filter-btn" data-category="accion">Accion</button>
-                <button class="filter-btn" data-category="adventura">Adventura</button>
-                <button class="filter-btn" data-category="puzzle">Puzzle</button>
-                <button class="filter-btn" data-category="rpg">RPG</button>
                 <button class="filter-btn" data-category="emulador">Emulador</button>
-                <button class="filter-btn" data-category="terror">Terror</button>
-                <button class="filter-btn" data-category="lucha">Lucha</button>
-                <button class="filter-btn" data-category="construccion">Construccion</button>
-                <button class="filter-btn" data-category="supervivencia">Supervivencia</button>
-                <button class="filter-btn" data-category="carreras">Carreras</button>
-                <button class="filter-btn" data-category="sandbox">Sandbox</button>
-                <button class="filter-btn" data-category="estrategia">Estrategia</button>
+                <button class="filter-btn" data-category="Nintendo">Nintendo</button>
+                <button class="filter-btn" data-category="Play Station">Play Station</button>
+                <button class="filter-btn" data-category="Xbox">Xbox</button>
+                <button class="filter-btn" data-category="Sony">Sony</button>
+                <button class="filter-btn" data-category="PC">PC</button>
 
             </div>
+            
             <div class="game-grid">
 
-                
-
                 <div class="game-card" data-categories="emulador">
-                    <img src="https://cdn2.steamgriddb.com/grid/db6e520404076e032d2385b85e142dcc.png" alt="Game 1">
-                    <div class="game-info">
-                        <h3>Super Mario Odyssey</h3>
-                        <p>es un juego super emocionante, fantastico, estupendo, lo tienes que comprar si o si</p>
-                        <h6 style="display: none;">Gratis</h6>
-                    </div>
-                </div>
-
-
-                <div class="game-card">
-                    <div class="game-info">
-                        <h3></h3>
-                        <p></p>
-                        <h6 style="display: none;"></h6>
-                    </div>
-                </div>
-                <div class="game-card">
-                    <div class="game-info">
-                        <h3></h3>
-                        <p></p>
-                        <h6 style="display: none;"></h6>
-                    </div>
-                </div>
-                <div class="game-card">
-                    <div class="game-info">
-                        <h3></h3>
-                        <p></p>
-                        <h6 style="display: none;"></h6>
-                    </div>
-                </div>
-                <div class="game-card">
-                    <div class="game-info">
-                        <h3></h3>
-                        <p></p>
-                        <h6 style="display: none;"></h6>
-                    </div>
-                </div>
-                <div class="game-card">
-                    <div class="game-info">
-                        <h3></h3>
-                        <p></p>
-                        <h6 style="display: none;"></h6>
-                    </div>
-                </div>
-                <div class="game-card">
-                    <div class="game-info">
-                        <h3></h3>
-                        <p></p>
-                        <h6 style="display: none;"></h6>
-                    </div>
-                </div>
-                <div class="game-details" style="display: none;">
-                    <h2 id="game-title"></h2>
-                    <p id="game-description"></p>
-                    <p style="background-color: #6441a5; padding: 15px; border-radius: 10px;">Precio: <span id="game-price"></span></p>
-                    <button id="buy-btn">Metodos de pago</button>
-                    <button id="back-btn">Regresar</button>
-                    <input
-                    value="favorite-button"
-                    name="favorite-checkbox"
-                    id="favorite"
-                    checked="checked"
-                    type="checkbox"
-                    />
-                    <label class="container" for="favorite">
-                    <svg
-                    class="feather feather-heart"
-                    stroke-linejoin="round"
-                    stroke-linecap="round"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    height="24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                    </path>
-                    </svg>
-                    <div class="action">
-                        <span class="option-1">agregar to Favorites</span>
-                        <span class="option-2">Added to Favorites</span>
-                    </div>
-                    </label>
-                </div>
-
-                <div id="purchase-form" style="display: none;"> 
-                    <div class="form-container">
-                        <div class="product-info">
-                            <img id="product-image" src="" alt="Product Image">
-                            <h2 id="product-name"></h2>
+                    <div class="game-image">
+                        <img src="https://cdn2.steamgriddb.com/grid/5fa6073702e5d6751ffd4e6e8168e568.png" alt="Game 1">
+                        <div class="game-info">
+                            <h3>Cemu</h3>
+                            <p>Emulador de Nintendo WII U</p>
+                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <div class="descargas" style="display: none;">
+                                <a href="need for speed.com" class="link">Office 2003 oline</a>
+                            </div>
+                            <div class="requisitos" style="display: none;">
+                                
+                                <div>
+                                <h4>Los que nos trae:</h4>
+                                <ul>
+                                    <li>Microsoft Word</li>
+                                    <li>Microsoft Excel</li>
+                                    <li>Microsoft PowerPoint</li>
+                                    <li>Microsoft Outlook</li>
+                                    <li>Microsoft Access</li>
+                                    <li>Microsoft OneNote</li>
+                                    <li>Microsoft Teams</li>
+                                    <li>Microsoft Publisher</li>
+                                    <li>Microsoft OneDrive</li>
+                                </ul>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <form action="/PHP/process_purchase.php" method="post">
-                            <input type="hidden" id="hidden-product-name" name="product_name">
-                            <input type="hidden" id="hidden-product-price" name="product_price">
-                            <img id="card-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Card Logo">
-                            <div class="form-group">
-                                <label for="payment">Por favor, seleccione su tarjeta</label>
-                                <select id="payment" name="payment" onchange="updateLogo()">
-                                    <option value="visa">Visa</option>
-                                    <option value="mastercard">MasterCard</option>
-                                    <option value="paypal">Paypal</option>
-                                    <option value="amex">American Express</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="tarjeta">Numero de Tarjeta</label>
-                                <input type="number" id="tarjeta" name="tarjeta" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="portatarjetas">Portatarjetas</label>
-                                <input type="text" id="portatarjetas" name="portatarjetas" required>
-                            </div>
-                            <div class="cvv">
-                                <div class="form-group">
-                                    <label for="expire">Expiracipon</label>
-                                    <input type="number" id="expire" name="expire" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="cvc">CVC</label>
-                                    <input type="text" id="cvc" name="cvc" required>
-                                </div>
-                            </div>
-                            <div class="form-actions">
-                                <button type="submit" class="btn btn-primary">Comprar</button>
-                                <button id="cancel-btn" class="btn btn-secondary" type="button">Cancel</button>
-                            </div>
-                        </form>
                     </div>
                 </div>
+                <div class="game-card" data-categories="emulador">
+                    <div class="game-image">
+                        <img src="https://cdn2.steamgriddb.com/grid/6f7c62c478c08564d468ececda07d77e.png" alt="Game 1">
+                        <div class="game-info">
+                            <h3>Yuzu </h3>
+                            <p>Emulador de Nintendo Switch</p>
+                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <div class="descargas" style="display: none;">
+                                <a href="need for speed.com" class="link">Office 2003 oline</a>
+                                <a href="mario.com" class="link">Office 2010 oline</a>
+                                <a href="caarr.com" class="link">Office 2016 oline</a>
+                                <a href="caarr.com" class="link">Office 2019 oline</a>
+                                <a href="caarr.com" class="link">Office 2024 oline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 oline</a>
+                                <a href="need for speed.com" class="link">Office 2003 Ofline</a>
+                                <a href="mario.com" class="link">Office 2010 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2016 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2019 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2024 Ofline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 Ofline</a>
+                            </div>
+                            <div class="requisitos" style="display: none;">
+                                
+                                <div>
+                                <h4>Los que nos trae:</h4>
+                                <ul>
+                                    <li>Microsoft Word</li>
+                                    <li>Microsoft Excel</li>
+                                    <li>Microsoft PowerPoint</li>
+                                    <li>Microsoft Outlook</li>
+                                    <li>Microsoft Access</li>
+                                    <li>Microsoft OneNote</li>
+                                    <li>Microsoft Teams</li>
+                                    <li>Microsoft Publisher</li>
+                                    <li>Microsoft OneDrive</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card" data-categories="emulador">
+                    <div class="game-image">
+                        <img src="https://cdn2.steamgriddb.com/grid/0c59cdc2503ef2319e9ba065276b46fc.png" alt="Game 1">
+                        <div class="game-info">
+                            <h3>Ryujinx </h3>
+                            <p>Emulador de Nintendo Switch</p>
+                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <div class="descargas" style="display: none;">
+                                <a href="need for speed.com" class="link">Office 2003 oline</a>
+                                <a href="mario.com" class="link">Office 2010 oline</a>
+                                <a href="caarr.com" class="link">Office 2016 oline</a>
+                                <a href="caarr.com" class="link">Office 2019 oline</a>
+                                <a href="caarr.com" class="link">Office 2024 oline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 oline</a>
+                                <a href="need for speed.com" class="link">Office 2003 Ofline</a>
+                                <a href="mario.com" class="link">Office 2010 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2016 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2019 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2024 Ofline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 Ofline</a>
+                            </div>
+                            <div class="requisitos" style="display: none;">
+                                
+                                <div>
+                                <h4>Los que nos trae:</h4>
+                                <ul>
+                                    <li>Microsoft Word</li>
+                                    <li>Microsoft Excel</li>
+                                    <li>Microsoft PowerPoint</li>
+                                    <li>Microsoft Outlook</li>
+                                    <li>Microsoft Access</li>
+                                    <li>Microsoft OneNote</li>
+                                    <li>Microsoft Teams</li>
+                                    <li>Microsoft Publisher</li>
+                                    <li>Microsoft OneDrive</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card" data-categories="emulador">
+                    <div class="game-image">
+                        <img src="https://cdn2.steamgriddb.com/grid/d6cf900c66ad80f7e8c1282a4281ff61.png" alt="Game 1">
+                        <div class="game-info">
+                            <h3>Ryujinx v2</h3>
+                            <p>Emulador de Nintendo Switch</p>
+                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <div class="descargas" style="display: none;">
+                                <a href="need for speed.com" class="link">Office 2003 oline</a>
+                                <a href="mario.com" class="link">Office 2010 oline</a>
+                                <a href="caarr.com" class="link">Office 2016 oline</a>
+                                <a href="caarr.com" class="link">Office 2019 oline</a>
+                                <a href="caarr.com" class="link">Office 2024 oline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 oline</a>
+                                <a href="need for speed.com" class="link">Office 2003 Ofline</a>
+                                <a href="mario.com" class="link">Office 2010 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2016 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2019 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2024 Ofline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 Ofline</a>
+                            </div>
+                            <div class="requisitos" style="display: none;">
+                                
+                                <div>
+                                <h4>Los que nos trae:</h4>
+                                <ul>
+                                    <li>Microsoft Word</li>
+                                    <li>Microsoft Excel</li>
+                                    <li>Microsoft PowerPoint</li>
+                                    <li>Microsoft Outlook</li>
+                                    <li>Microsoft Access</li>
+                                    <li>Microsoft OneNote</li>
+                                    <li>Microsoft Teams</li>
+                                    <li>Microsoft Publisher</li>
+                                    <li>Microsoft OneDrive</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card" data-categories="emulador">
+                    <div class="game-image">
+                        <img src="https://cdn2.steamgriddb.com/grid/b4203b21d6e33ebe245c0ffd85055977.png" alt="Game 1">
+                        <div class="game-info">
+                            <h3>Yuzu Early</h3>
+                            <p>Emulador beta de Nintendo Switch</p>
+                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <div class="descargas" style="display: none;">
+                                <a href="need for speed.com" class="link">Office 2003 oline</a>
+                                <a href="mario.com" class="link">Office 2010 oline</a>
+                                <a href="caarr.com" class="link">Office 2016 oline</a>
+                                <a href="caarr.com" class="link">Office 2019 oline</a>
+                                <a href="caarr.com" class="link">Office 2024 oline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 oline</a>
+                                <a href="need for speed.com" class="link">Office 2003 Ofline</a>
+                                <a href="mario.com" class="link">Office 2010 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2016 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2019 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2024 Ofline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 Ofline</a>
+                            </div>
+                            <div class="requisitos" style="display: none;">
+                                
+                                <div>
+                                <h4>Los que nos trae:</h4>
+                                <ul>
+                                    <li>Microsoft Word</li>
+                                    <li>Microsoft Excel</li>
+                                    <li>Microsoft PowerPoint</li>
+                                    <li>Microsoft Outlook</li>
+                                    <li>Microsoft Access</li>
+                                    <li>Microsoft OneNote</li>
+                                    <li>Microsoft Teams</li>
+                                    <li>Microsoft Publisher</li>
+                                    <li>Microsoft OneDrive</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card" data-categories="emulador">
+                    <div class="game-image">
+                        <img src="https://cdn2.steamgriddb.com/grid/70db426211c5b2ca44c6c5cc42156e3d.webp" alt="Game 1">
+                        <div class="game-info">
+                            <h3>Suyu</h3>
+                            <p>Emulador de Nintendo Switch</p>
+                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <div class="descargas" style="display: none;">
+                                <a href="need for speed.com" class="link">Office 2003 oline</a>
+                                <a href="mario.com" class="link">Office 2010 oline</a>
+                                <a href="caarr.com" class="link">Office 2016 oline</a>
+                                <a href="caarr.com" class="link">Office 2019 oline</a>
+                                <a href="caarr.com" class="link">Office 2024 oline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 oline</a>
+                                <a href="need for speed.com" class="link">Office 2003 Ofline</a>
+                                <a href="mario.com" class="link">Office 2010 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2016 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2019 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2024 Ofline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 Ofline</a>
+                            </div>
+                            <div class="requisitos" style="display: none;">
+                                
+                                <div>
+                                <h4>Los que nos trae:</h4>
+                                <ul>
+                                    <li>Microsoft Word</li>
+                                    <li>Microsoft Excel</li>
+                                    <li>Microsoft PowerPoint</li>
+                                    <li>Microsoft Outlook</li>
+                                    <li>Microsoft Access</li>
+                                    <li>Microsoft OneNote</li>
+                                    <li>Microsoft Teams</li>
+                                    <li>Microsoft Publisher</li>
+                                    <li>Microsoft OneDrive</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card" data-categories="emulador">
+                    <div class="game-image">
+                        <img src="https://cdn2.steamgriddb.com/grid/02adba1673a1b9756216a505a3381a76.png" alt="Game 1">
+                        <div class="game-info">
+                            <h3>Sudachi</h3>
+                            <p>Emulador de Nintendo Switch</p>
+                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <div class="descargas" style="display: none;">
+                                <a href="need for speed.com" class="link">Office 2003 oline</a>
+                                <a href="mario.com" class="link">Office 2010 oline</a>
+                                <a href="caarr.com" class="link">Office 2016 oline</a>
+                                <a href="caarr.com" class="link">Office 2019 oline</a>
+                                <a href="caarr.com" class="link">Office 2024 oline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 oline</a>
+                                <a href="need for speed.com" class="link">Office 2003 Ofline</a>
+                                <a href="mario.com" class="link">Office 2010 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2016 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2019 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2024 Ofline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 Ofline</a>
+                            </div>
+                            <div class="requisitos" style="display: none;">
+                                
+                                <div>
+                                <h4>Los que nos trae:</h4>
+                                <ul>
+                                    <li>Microsoft Word</li>
+                                    <li>Microsoft Excel</li>
+                                    <li>Microsoft PowerPoint</li>
+                                    <li>Microsoft Outlook</li>
+                                    <li>Microsoft Access</li>
+                                    <li>Microsoft OneNote</li>
+                                    <li>Microsoft Teams</li>
+                                    <li>Microsoft Publisher</li>
+                                    <li>Microsoft OneDrive</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card" data-categories="emulador">
+                    <div class="game-image">
+                        <img src="https://cdn2.steamgriddb.com/grid/e9cd0062c38558b6b5da47528a898b0a.png" alt="Game 1">
+                        <div class="game-info">
+                            <h3>Citron</h3>
+                            <p>Emulador de Nintendo Switch</p>
+                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <div class="descargas" style="display: none;">
+                                <a href="need for speed.com" class="link">Office 2003 oline</a>
+                                <a href="mario.com" class="link">Office 2010 oline</a>
+                                <a href="caarr.com" class="link">Office 2016 oline</a>
+                                <a href="caarr.com" class="link">Office 2019 oline</a>
+                                <a href="caarr.com" class="link">Office 2024 oline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 oline</a>
+                                <a href="need for speed.com" class="link">Office 2003 Ofline</a>
+                                <a href="mario.com" class="link">Office 2010 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2016 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2019 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2024 Ofline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 Ofline</a>
+                            </div>
+                            <div class="requisitos" style="display: none;">
+                                
+                                <div>
+                                <h4>Los que nos trae:</h4>
+                                <ul>
+                                    <li>Microsoft Word</li>
+                                    <li>Microsoft Excel</li>
+                                    <li>Microsoft PowerPoint</li>
+                                    <li>Microsoft Outlook</li>
+                                    <li>Microsoft Access</li>
+                                    <li>Microsoft OneNote</li>
+                                    <li>Microsoft Teams</li>
+                                    <li>Microsoft Publisher</li>
+                                    <li>Microsoft OneDrive</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card" data-categories="emulador">
+                    <div class="game-image">
+                        <img src="https://cdn2.steamgriddb.com/grid/622a4a6b85989c4f7095f3bd6ff258c4.png" alt="Game 1">
+                        <div class="game-info">
+                            <h3>Proyect 64</h3>
+                            <p>Emulador de Nintendo 64</p>
+                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <div class="descargas" style="display: none;">
+                                <a href="need for speed.com" class="link">Office 2003 oline</a>
+                                <a href="mario.com" class="link">Office 2010 oline</a>
+                                <a href="caarr.com" class="link">Office 2016 oline</a>
+                                <a href="caarr.com" class="link">Office 2019 oline</a>
+                                <a href="caarr.com" class="link">Office 2024 oline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 oline</a>
+                                <a href="need for speed.com" class="link">Office 2003 Ofline</a>
+                                <a href="mario.com" class="link">Office 2010 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2016 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2019 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2024 Ofline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 Ofline</a>
+                            </div>
+                            <div class="requisitos" style="display: none;">
+                                
+                                <div>
+                                <h4>Los que nos trae:</h4>
+                                <ul>
+                                    <li>Microsoft Word</li>
+                                    <li>Microsoft Excel</li>
+                                    <li>Microsoft PowerPoint</li>
+                                    <li>Microsoft Outlook</li>
+                                    <li>Microsoft Access</li>
+                                    <li>Microsoft OneNote</li>
+                                    <li>Microsoft Teams</li>
+                                    <li>Microsoft Publisher</li>
+                                    <li>Microsoft OneDrive</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card" data-categories="emulador">
+                    <div class="game-image">
+                        <img src="https://cdn2.steamgriddb.com/grid/4828decbcf77a6591a9264b2e10ee945.png" alt="Game 1">
+                        <div class="game-info">
+                            <h3>Dolphin</h3>
+                            <p>Emulador de Nintendo WII</p>
+                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <div class="descargas" style="display: none;">
+                                <a href="need for speed.com" class="link">Office 2003 oline</a>
+                                <a href="mario.com" class="link">Office 2010 oline</a>
+                                <a href="caarr.com" class="link">Office 2016 oline</a>
+                                <a href="caarr.com" class="link">Office 2019 oline</a>
+                                <a href="caarr.com" class="link">Office 2024 oline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 oline</a>
+                                <a href="need for speed.com" class="link">Office 2003 Ofline</a>
+                                <a href="mario.com" class="link">Office 2010 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2016 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2019 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2024 Ofline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 Ofline</a>
+                            </div>
+                            <div class="requisitos" style="display: none;">
+                                
+                                <div>
+                                <h4>Los que nos trae:</h4>
+                                <ul>
+                                    <li>Microsoft Word</li>
+                                    <li>Microsoft Excel</li>
+                                    <li>Microsoft PowerPoint</li>
+                                    <li>Microsoft Outlook</li>
+                                    <li>Microsoft Access</li>
+                                    <li>Microsoft OneNote</li>
+                                    <li>Microsoft Teams</li>
+                                    <li>Microsoft Publisher</li>
+                                    <li>Microsoft OneDrive</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card" data-categories="emulador">
+                    <div class="game-image">
+                        <img src="https://cdn2.steamgriddb.com/grid/fa2803a174c50ccf23c5d411483ab5b2.png" alt="Game 1">
+                        <div class="game-info">
+                            <h3>ZSNES</h3>
+                            <p>Emulador de Nintendo Super nintendo</p>
+                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <div class="descargas" style="display: none;">
+                                <a href="need for speed.com" class="link">Office 2003 oline</a>
+                                <a href="mario.com" class="link">Office 2010 oline</a>
+                                <a href="caarr.com" class="link">Office 2016 oline</a>
+                                <a href="caarr.com" class="link">Office 2019 oline</a>
+                                <a href="caarr.com" class="link">Office 2024 oline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 oline</a>
+                                <a href="need for speed.com" class="link">Office 2003 Ofline</a>
+                                <a href="mario.com" class="link">Office 2010 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2016 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2019 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2024 Ofline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 Ofline</a>
+                            </div>
+                            <div class="requisitos" style="display: none;">
+                                
+                                <div>
+                                <h4>Los que nos trae:</h4>
+                                <ul>
+                                    <li>Microsoft Word</li>
+                                    <li>Microsoft Excel</li>
+                                    <li>Microsoft PowerPoint</li>
+                                    <li>Microsoft Outlook</li>
+                                    <li>Microsoft Access</li>
+                                    <li>Microsoft OneNote</li>
+                                    <li>Microsoft Teams</li>
+                                    <li>Microsoft Publisher</li>
+                                    <li>Microsoft OneDrive</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card" data-categories="emulador">
+                    <div class="game-image">
+                        <img src="https://cdn2.steamgriddb.com/grid/3b13c858da155ca191aff01aec5ef5a7.png" alt="Game 1">
+                        <div class="game-info">
+                            <h3>Key de Nintendo Switch</h3>
+                            <p>Emulador beta de Nintendo Switch</p>
+                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <div class="descargas" style="display: none;">
+                                <a href="need for speed.com" class="link">Office 2003 oline</a>
+                                <a href="mario.com" class="link">Office 2010 oline</a>
+                                <a href="caarr.com" class="link">Office 2016 oline</a>
+                                <a href="caarr.com" class="link">Office 2019 oline</a>
+                                <a href="caarr.com" class="link">Office 2024 oline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 oline</a>
+                                <a href="need for speed.com" class="link">Office 2003 Ofline</a>
+                                <a href="mario.com" class="link">Office 2010 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2016 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2019 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2024 Ofline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 Ofline</a>
+                            </div>
+                            <div class="requisitos" style="display: none;">
+                                
+                                <div>
+                                <h4>Los que nos trae:</h4>
+                                <ul>
+                                    <li>Microsoft Word</li>
+                                    <li>Microsoft Excel</li>
+                                    <li>Microsoft PowerPoint</li>
+                                    <li>Microsoft Outlook</li>
+                                    <li>Microsoft Access</li>
+                                    <li>Microsoft OneNote</li>
+                                    <li>Microsoft Teams</li>
+                                    <li>Microsoft Publisher</li>
+                                    <li>Microsoft OneDrive</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="game-card" data-categories="emulador">
+                    <div class="game-image">
+                        <img src="https://cdn2.steamgriddb.com/grid/3b13c858da155ca191aff01aec5ef5a7.png" alt="Game 1">
+                        <div class="game-info">
+                            <h3>Finware de Nintendo Switch</h3>
+                            <p>Emulador beta de Nintendo Switch</p>
+                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <div class="descargas" style="display: none;">
+                                <a href="need for speed.com" class="link">Office 2003 oline</a>
+                                <a href="mario.com" class="link">Office 2010 oline</a>
+                                <a href="caarr.com" class="link">Office 2016 oline</a>
+                                <a href="caarr.com" class="link">Office 2019 oline</a>
+                                <a href="caarr.com" class="link">Office 2024 oline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 oline</a>
+                                <a href="need for speed.com" class="link">Office 2003 Ofline</a>
+                                <a href="mario.com" class="link">Office 2010 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2016 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2019 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2024 Ofline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 Ofline</a>
+                            </div>
+                            <div class="requisitos" style="display: none;">
+                                
+                                <div>
+                                <h4>Los que nos trae:</h4>
+                                <ul>
+                                    <li>Microsoft Word</li>
+                                    <li>Microsoft Excel</li>
+                                    <li>Microsoft PowerPoint</li>
+                                    <li>Microsoft Outlook</li>
+                                    <li>Microsoft Access</li>
+                                    <li>Microsoft OneNote</li>
+                                    <li>Microsoft Teams</li>
+                                    <li>Microsoft Publisher</li>
+                                    <li>Microsoft OneDrive</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card" data-categories="emulador">
+                    <div class="game-image">
+                        <img src="https://cdn2.steamgriddb.com/grid/81855e3b6121dc65278b73a8979452d8.png" alt="Game 1">
+                        <div class="game-info">
+                            <h3>Key de Nintendo WII U</h3>
+                            <p>key de Nintendo wii u</p>
+                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <div class="descargas" style="display: none;">
+                                <a href="need for speed.com" class="link">Office 2003 oline</a>
+                                <a href="mario.com" class="link">Office 2010 oline</a>
+                                <a href="caarr.com" class="link">Office 2016 oline</a>
+                                <a href="caarr.com" class="link">Office 2019 oline</a>
+                                <a href="caarr.com" class="link">Office 2024 oline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 oline</a>
+                                <a href="need for speed.com" class="link">Office 2003 Ofline</a>
+                                <a href="mario.com" class="link">Office 2010 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2016 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2019 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2024 Ofline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 Ofline</a>
+                            </div>
+                            <div class="requisitos" style="display: none;">
+                                
+                                <div>
+                                <h4>Los que nos trae:</h4>
+                                <ul>
+                                    <li>Microsoft Word</li>
+                                    <li>Microsoft Excel</li>
+                                    <li>Microsoft PowerPoint</li>
+                                    <li>Microsoft Outlook</li>
+                                    <li>Microsoft Access</li>
+                                    <li>Microsoft OneNote</li>
+                                    <li>Microsoft Teams</li>
+                                    <li>Microsoft Publisher</li>
+                                    <li>Microsoft OneDrive</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card" data-categories="emulador">
+                    <div class="game-image">
+                        <img src="https://cdn2.steamgriddb.com/grid/151cd1c600ac025c76377259df8204da.png" alt="Game 1">
+                        <div class="game-info">
+                            <h3>DeSmuME</h3>
+                            <p>Emulador de Nintendo DS</p>
+                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <div class="descargas" style="display: none;">
+                                <a href="need for speed.com" class="link">Office 2003 oline</a>
+                                <a href="mario.com" class="link">Office 2010 oline</a>
+                                <a href="caarr.com" class="link">Office 2016 oline</a>
+                                <a href="caarr.com" class="link">Office 2019 oline</a>
+                                <a href="caarr.com" class="link">Office 2024 oline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 oline</a>
+                                <a href="need for speed.com" class="link">Office 2003 Ofline</a>
+                                <a href="mario.com" class="link">Office 2010 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2016 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2019 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2024 Ofline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 Ofline</a>
+                            </div>
+                            <div class="requisitos" style="display: none;">
+                                
+                                <div>
+                                <h4>Los que nos trae:</h4>
+                                <ul>
+                                    <li>Microsoft Word</li>
+                                    <li>Microsoft Excel</li>
+                                    <li>Microsoft PowerPoint</li>
+                                    <li>Microsoft Outlook</li>
+                                    <li>Microsoft Access</li>
+                                    <li>Microsoft OneNote</li>
+                                    <li>Microsoft Teams</li>
+                                    <li>Microsoft Publisher</li>
+                                    <li>Microsoft OneDrive</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card" data-categories="emulador">
+                    <div class="game-image">
+                        <img src="https://cdn2.steamgriddb.com/grid/fe5c9d523ab8e32d5063722dac3a3aca.webp" alt="Game 1">
+                        <div class="game-info">
+                            <h3>PCSX2</h3>
+                            <p>Emulador de PlayStation 2</p>
+                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <div class="descargas" style="display: none;">
+                                <a href="need for speed.com" class="link">Office 2003 oline</a>
+                                <a href="mario.com" class="link">Office 2010 oline</a>
+                                <a href="caarr.com" class="link">Office 2016 oline</a>
+                                <a href="caarr.com" class="link">Office 2019 oline</a>
+                                <a href="caarr.com" class="link">Office 2024 oline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 oline</a>
+                                <a href="need for speed.com" class="link">Office 2003 Ofline</a>
+                                <a href="mario.com" class="link">Office 2010 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2016 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2019 Ofline</a>
+                                <a href="caarr.com" class="link">Office 2024 Ofline</a>
+                                <a href="caarr.com" class="link">Microsoft 365 Ofline</a>
+                            </div>
+                            <div class="requisitos" style="display: none;">
+                                
+                                <div>
+                                <h4>Los que nos trae:</h4>
+                                <ul>
+                                    <li>Microsoft Word</li>
+                                    <li>Microsoft Excel</li>
+                                    <li>Microsoft PowerPoint</li>
+                                    <li>Microsoft Outlook</li>
+                                    <li>Microsoft Access</li>
+                                    <li>Microsoft OneNote</li>
+                                    <li>Microsoft Teams</li>
+                                    <li>Microsoft Publisher</li>
+                                    <li>Microsoft OneDrive</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+
+<!-- detalles del juego -->
+            <div class="game-details" style="display: none;">
+                <div>
+                <h2 id="game-title"></h2>
+                <p id="game-description"></p>
+                <p style="background-color: #6441a5; padding: 15px; border-radius: 10px;"> <span id="game-price"></span></p>
+                <button id="buy-btn">Descargar</button>
+                <button id="back-btn">Regresar</button>
+                </div>
+            </div>
+            <div class="game-requisitos" style="display: none;">
+                <h3>Información</h3>
+                <div id="game-requisitos"></div>
+            </div>
             </div>
             
         </section>
     </main>
-    
+  
+<!-- Agregar popup osea ventana 
+======================================================================================================================0-->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span id="close-btn" class="close-btn">&times;</span>
+        <h2 id="popup-game-title"></h2>
+        <div id="download-options"></div>
+    </div>
+</div>
+
 <button id="btnBackToTop">⨇</button>
-<script src="/JS/scripts2.js"></script>
-<script src="/JS/inicio.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let btnBackToTop = document.getElementById('btnBackToTop');
+        window.addEventListener('scroll', function() {
+            btnBackToTop.style.display = document.documentElement.scrollTop > 300 ? 'block' : 'none';
+        });
+        btnBackToTop.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        const gameCards = document.querySelectorAll('.game-card');
+        const gameDetails = document.querySelector('.game-details');
+        const gameTitle = document.getElementById('game-title');
+        const gameDescription = document.getElementById('game-description');
+        const gamePrice = document.getElementById('game-price');
+        const gameRequisitos = document.querySelector('.game-requisitos');
+        const requisitosContent = document.getElementById('game-requisitos');
+        const heroSection = document.querySelector('.carrouselJuegos');
+        const categoriaTipo = document.querySelector('.categoriaTipo');
+        const buyBtn = document.getElementById('buy-btn');
+        const popup = document.getElementById('popup');
+        const closeBtn = document.getElementById('close-btn');
+        const popupGameTitle = document.getElementById('popup-game-title');
+        const downloadOptions = document.getElementById('download-options');
+        const backBtn = document.getElementById('back-btn');
+
+        gameCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const title = card.querySelector('.game-info h3').textContent;
+                const description = card.querySelector('.game-info p').textContent;
+                const price = card.querySelector('.game-info h6').textContent; 
+                const requisitos = card.querySelector('.requisitos').innerHTML;
+
+                gameTitle.textContent = title;
+                gameDescription.textContent = description;
+                gamePrice.textContent = price;
+                requisitosContent.innerHTML = requisitos;
+
+                gameCards.forEach(otherCard => {
+                    if (otherCard !== card) {
+                        otherCard.style.display = 'none';
+                        heroSection.style.display = 'none';
+                        categoriaTipo.style.display = 'none';
+                    }
+                });
+
+                gameDetails.style.display = 'block';
+                gameRequisitos.style.display = 'block';
+            });
+        });
+
+        buyBtn.addEventListener('click', () => {
+            const gameTitleText = gameTitle.textContent;
+            popupGameTitle.textContent = gameTitleText;
+
+            const currentCard = Array.from(gameCards).find(card => {
+                return card.querySelector('.game-info h3').textContent === gameTitleText;
+            });
+
+            const links = currentCard.querySelectorAll('.descargas .link');
+            downloadOptions.innerHTML = '';
+            links.forEach(link => {
+                const a = document.createElement('a');
+                a.href = link.href;
+                a.textContent = link.textContent;
+                a.className = 'download-link';
+                downloadOptions.appendChild(a);
+            });
+
+            popup.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target == popup) {
+                popup.style.display = 'none';
+            }
+        });
+
+        backBtn.addEventListener('click', () => {
+            gameCards.forEach(card => {
+                card.style.display = 'block';
+                heroSection.style.display = 'block';
+                categoriaTipo.style.display = 'block';
+                categoriaTipo.style.display = 'flex';
+            });
+
+            gameDetails.style.display = 'none';
+            gameRequisitos.style.display = 'none';
+        });
+    });
+</script>
+<script>
+    //inicio de seccion-------------------------------------------------------------------------------------------
+
+function validateLogin(event) {
+    event.preventDefault();
+    showLoading();
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    setTimeout(() => {
+        if (username === 'aguerrerosolaez' &&  password === '12062005as' || username === 'user' &&  password === '123') {
+            window.location.href = '/sitios/inicio.html';
+        } else {
+            hideLoading();
+            showErrorPopup();
+        }
+    }, 2000); 
+}
+
+function showLoading() {
+    const loading = document.getElementById('loading');
+    loading.style.display = 'block';
+}
+
+function hideLoading() {
+    const loading = document.getElementById('loading');
+    loading.style.display = 'none';
+}
+
+function showErrorPopup() {
+    const modal = document.getElementById('errorModal');
+    modal.style.display = 'block';
+}
+
+function closeErrorPopup() {
+    const modal = document.getElementById('errorModal');
+    modal.style.display = 'none';
+}
+//boton subir-----------------------------------------------------------------------------------------------
+document.addEventListener("DOMContentLoaded", function() {
+  let btnBackToTop = document.getElementById('btnBackToTop');
+
+  window.addEventListener('scroll', function() {
+    btnBackToTop.style.display = document.documentElement.scrollTop > 100 ? "block" : "none";
+  });
+
+  btnBackToTop.addEventListener('click', function() {
+    scrollToTop();
+  });
+
+  function scrollToTop() {
+    let currentScroll = document.documentElement.scrollTop;
+    if (currentScroll > 0) {
+      window.scrollTo(0, currentScroll - (currentScroll / 10));
+      window.requestAnimationFrame(scrollToTop);
+    }
+  }
+});
+
+//boton para ocultar categorias---------------------------------------------------------------------------
+
+
+//funcion de detalles de los productos-------------------------------------------------------------------------
+
+const heroSection = document.querySelector('.carrouselJuegos');
+const categoriaTipo = document.querySelector('.categoriaTipo');
+const gameCards = document.querySelectorAll('.game-card');
+const gameDetails = document.querySelector('.game-details');
+const gameTitle = document.getElementById('game-title');
+const gameDescription = document.getElementById('game-description');
+const gamePrice = document.getElementById('game-price');
+const gameQuantity = document.getElementById('game-quantity');
+const buyBtn = document.getElementById('buy-btn');
+
+
+
+gameCards.forEach(card => {
+card.addEventListener('click', () => {
+const title = card.querySelector('.game-info h3').textContent;
+const description = card.querySelector('.game-info p').textContent;
+const price = card.querySelector('.game-info h6').textContent; 
+
+gameTitle.textContent = title;
+gameDescription.textContent = description;
+gamePrice.textContent = price;
+
+gameCards.forEach(otherCard => {
+    if (otherCard !== card) {
+        otherCard.style.display = 'none';
+        heroSection.style.display = 'none';
+        categoriaTipo.style.display = 'none';
+        
+    }
+});
+
+gameDetails.style.display = 'block';
+
+});
+});
+
+buyBtn.addEventListener('click', () => {
+document.getElementById('popup').style.display = 'block';
+
+document.getElementById('close-btn').addEventListener('click', () => {
+document.getElementById('popup').style.display = 'none';
+});
+});
+
+const backBtn = document.getElementById('back-btn');
+
+backBtn.addEventListener('click', () => {
+gameCards.forEach(card => {
+card.style.display = 'block';
+heroSection.style.display = 'block';
+categoriaTipo.style.display = 'block';
+categoriaTipo.style.display = 'flex';
+
+});
+
+gameDetails.style.display = 'none';
+});
+
+
+
+
+
+
+
+</script>
+<script>
+    
+    document.querySelector('.estender').addEventListener('click', function() {
+        const asideElement = document.getElementById('asideElement');
+        asideElement.classList.toggle('collapsed');
+    });
+    
+    function toggleSidebar() {
+        document.querySelector('aside').classList.toggle('open');
+    }
+
+    
+   let slideIndex = 0;
+   showSlides(slideIndex);
+   
+   function currentSlide(n) {
+     showSlides(slideIndex = n - 1);
+   }
+   
+   function showSlides(n) {
+     let i;
+     const slides = document.getElementsByClassName("carousel-slide");
+     const thumbnails = document.getElementsByClassName("thumbnail");
+     for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+       thumbnails[i].style.border = "2px solid transparent";
+     }
+     slides[slideIndex].style.display = "block";
+     thumbnails[slideIndex].style.border = "2px solid #fff";
+   }
+   
+   document.getElementById("prevBtn").addEventListener("click", () => {
+     slideIndex--;
+     if (slideIndex < 0) slideIndex = document.getElementsByClassName("carousel-slide").length - 1;
+     showSlides(slideIndex);
+   });
+   
+   document.getElementById("nextBtn").addEventListener("click", () => {
+     slideIndex++;
+     if (slideIndex >= document.getElementsByClassName("carousel-slide").length) slideIndex = 0;
+     showSlides(slideIndex);
+   });
+   
+</script>
 
 </body>
 </html>
@@ -231,42 +1030,5 @@
                 });
             });
         });
-    });
-</script>
-<!--sliter-->  
-<script>
-    function updateLogo() {
-        const cardType = document.getElementById("payment").value;
-        const logo = document.getElementById("card-logo");
-        switch (cardType) {
-            case "visa":
-                logo.src = "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/visa-512.png";
-                break;
-            case "mastercard":
-                logo.src = "https://cdn3.iconfinder.com/data/icons/payment-method-1/64/_Mastercard-512.png";
-                break;
-            case "paypal":
-                logo.src = "https://cdn3.iconfinder.com/data/icons/payment-method-1/64/_Paypal-39-512.png";
-                break;
-            case "amex":
-                logo.src = "https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Amex-512.png";
-                break;
-            default:
-                logo.src = "";
-        }
-    }
-    
-</script>
-<!--conexion-->
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        fetch('/PHP/get_user_name.php')
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    document.getElementById('user-name').textContent = data.user_name;
-                }
-            })
-            .catch(error => console.error('Error:', error));
     });
 </script>
