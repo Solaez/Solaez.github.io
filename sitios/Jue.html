@@ -6,6 +6,75 @@
     <title>Game-X lista</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="/css/inicio.css">
+    <style>
+        /* Define the animations */
+@keyframes popupShow {
+    0% { opacity: 0; transform: scale(0.7); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes popupHide {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0.7); }
+}
+        .popup {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            transition: backdrop-filter 1s;
+            animation: popupShow 0.5s forwards;
+
+        }
+        .popup:hover{
+            backdrop-filter: blur(10px);
+        }
+    
+        .popup-content {
+            background-color: #291155e0;
+            margin: 15% auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+    
+        .close-btn {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+    
+        .close-btn:hover,
+        .close-btn:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    
+       
+    
+        .download-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 10px ;
+        }
+        #download-options{
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .game-requisitos {
+            background-color: #2e2c37;
+            padding: 20px;
+            border-radius: 15px;
+        }
+    </style>
 </head>
 <body>
    <header>
@@ -26,7 +95,7 @@
                 <button class="estender">≡</button>
                 <a href="/index.html"><li><img class="iconCategorias" src="/img/icon/home.png"> <p>Inicio</p></li></a>
                 <a href="/sitios/games.html"><li><img class="iconCategorias" src="/img/icon/games.png"> <p>Emuladores</p></li></a>
-                <a href="/sitios/Jue.html"><li><img class="iconCategorias" src="/img/icon/new.png"> <p>Juegos</p></li></a>
+                <li><img class="iconCategorias" src="/img/icon/new.png"> <p>Juegos</p></li>
                 <li><img class="iconCategorias" src="/img/icon/new.png"> <p>Programas</p></li>
                 <li><img class="iconCategorias" src="/img/icon/new.png"> <p>Mods</p></li>
             </ul>
@@ -52,34 +121,39 @@
                 <button class="filter-btn" data-category="PC">PC</button>
 
             </div>
-            <h2 class="tituloGames">Diseños</h2>
+            <h2 class="tituloGames">Juegos</h2>
             
             <div class="game-grid">
 
                 <div class="game-card" data-categories="Nintendo">
                     <div class="game-image">
-                        <img src="https://cdn2.steamgriddb.com/grid/3205c9cc676d3631c1f36b54de99de44.jpg" alt="Game 1">
+                        <img src="/img/grid/zelda.webp" alt="Game 1">
                         <div class="game-info">
-                            <h3>Adobe Illustrator</h3>
-                            <p>diseño por vectores</p>
-                            <h6 style="display: none;"><a href="#mario">OMG que rico</a> </h6>
+                            <h3>The Legend of Zelda: Breath of the Wild Multiplayer</h3>
+                            <p>The Legend of Zelda: Breath of the Wild Multiplayer</p>
+                            <h6 style="display: none;"><a href="#mario">Una JOYA SIIIII</a> </h6>
                             <div class="descargas" style="display: none;">
-                                <a href="https://download2363.mediafire.com/zxryn8uvt3agF1BTq4mUJsVBilCfJKEGHQIncC4vI8P_wQt5HkT5Ok52Z3268CMpUQpqiqlF54ROBAluEUVbl8WRXx2EH4_vLByWCvZpOyjdhxC0yJNkNnq29-6fbmTCxyl51MWZyQOSFsp3xOCcBPaYXiVY7s2jBcZS8RKMlF9oLfg/8rwrvz43otv6iof/ADB.AI.2K25.WIN.WIZCAT.rar" class="link">Adobe Illustrator CC 2025 (V.29.0)</a>
+                                <a href="" class="link">Python</a>
+                                <a href="" class="link">Launcher</a>
+                                <a href="" class="link">Radmin VPN</a>
+                                <a href="" class="link">Gestionador de mods</a>
+                                <a href="" class="link">Rom</a>
+                                <a href="" class="link">Emulador</a>
+                                <a href="" class="link">Manual</a>
                             </div>
                             <div class="requisitos" style="display: none;">
                                 
                                 <div>
-                                <h4>Los que nos trae:</h4>
+                                <h4>Instalacion:</h4>
                                 <ul>
-                                    <li>Microsoft Word</li>
-                                    <li>Microsoft Excel</li>
-                                    <li>Microsoft PowerPoint</li>
-                                    <li>Microsoft Outlook</li>
-                                    <li>Microsoft Access</li>
-                                    <li>Microsoft OneNote</li>
-                                    <li>Microsoft Teams</li>
-                                    <li>Microsoft Publisher</li>
-                                    <li>Microsoft OneDrive</li>
+                                    <li>1 - Instalar Python y marcar Parchear</li>
+                                    <li>2 - Instalar el Gestionador de mods, que se hace en CMD "pip instal bcml"</li>
+                                    <li>3 - Instalar el mods que aparecen en el launcher</li>
+                                    <li>4 - descargar el juego/rom</li>
+                                    <li>5 - descargar el emulador</li>
+                                    <li>6 - abrir el launcher</li>
+                                    <li>7 - Instalar el vpn</li>
+                                    <li>8 - Jugar</li>
                                 </ul>
                                 </div>
                             </div>
@@ -88,28 +162,24 @@
                 </div>
                 <div class="game-card" data-categories="Nintendo">
                     <div class="game-image">
-                        <img src="https://cdn2.steamgriddb.com/grid/6b12ec878a0d6b6de0b4a7a42a38b346.jpg" alt="Game 1">
+                        <img src="https://cdn2.steamgriddb.com/grid/8a6a69de3404b8405495b04354cf5704.jpg" alt="Game 1">
                         <div class="game-info">
-                            <h3>Adobe Photoshop</h3>
-                            <p>Diseño por pixeles</p>
-                            <h6 style="display: none;"><a href="#mario">¡Elimíname este objeto de Photoshop! </a> </h6>
+                            <h3>Hydra Launcher</h3>
+                            <p>The Legend of Zelda: Breath of the Wild Multiplayer</p>
+                            <h6 style="display: none;"><a href="#mario">Una JOYA SIIIII</a> </h6>
                             <div class="descargas" style="display: none;">
-                                <a href="https://drive.usercontent.google.com/download?id=1iojzKNZM6wLLMmwLfrtawB3k5UMe1HsT&export=download&authuser=0&confirm=t&uuid=d79980ff-2cba-4bf4-9a8d-6f337ab49454&at=AEz70l71CtBZXtY-nKDy35zjL7uy%3A1741890648365" class="link">Adobe Photoshop CC 2025 (V26)</a>
+                                <a href="" class="link">Launcher</a>
+                                <a href="" class="link">Link de Descarga</a>
+                                <a href="" class="link">Mis Descargas</a>
+                                <a href="" class="link">Temas</a>
                             </div>
                             <div class="requisitos" style="display: none;">
                                 
                                 <div>
-                                <h4>Los que nos trae:</h4>
+                                <h4>Contraseña de online:</h4>
                                 <ul>
-                                    <li>Microsoft Word</li>
-                                    <li>Microsoft Excel</li>
-                                    <li>Microsoft PowerPoint</li>
-                                    <li>Microsoft Outlook</li>
-                                    <li>Microsoft Access</li>
-                                    <li>Microsoft OneNote</li>
-                                    <li>Microsoft Teams</li>
-                                    <li>Microsoft Publisher</li>
-                                    <li>Microsoft OneDrive</li>
+                                    <li>online-fix.me</li>
+                                    
                                 </ul>
                                 </div>
                             </div>
@@ -117,64 +187,12 @@
                     </div>
                 </div>
                 <div class="game-card" data-categories="Nintendo">
-                    <div class="game-image">
-                        <img src="https://cdn2.steamgriddb.com/grid/e2a82ec1a9fe99d3ac20fc4d4e8f1c55.png" alt="Game 1">
-                        <div class="game-info">
-                            <h3>Adobe Creative Cloud</h3>
-                            <p>Adobe Creative Cloud</p>
-                            <h6 style="display: none;"><a href="#mario">Tremendo jsjs</a> </h6>
-                            <div class="descargas" style="display: none;">
-                                <a href="https://drive.usercontent.google.com/download?id=1vbP91_ggmKramY2oj-5kNByPVedI6MxB&export=download&authuser=0&confirm=t&uuid=2ced8ff2-3652-41fe-9832-e7616f4ffdf4&at=AEz70l7OxFOV24XCeS55lVpz6P-5%3A1741890864833" class="link">Adobe InDesign 2025</a>
-                            </div>
-                            <div class="requisitos" style="display: none;">
-                                
-                                <div>
-                                <h4>Los que nos trae:</h4>
-                                <ul>
-                                    <li>Microsoft Word</li>
-                                    <li>Microsoft Excel</li>
-                                    <li>Microsoft PowerPoint</li>
-                                    <li>Microsoft Outlook</li>
-                                    <li>Microsoft Access</li>
-                                    <li>Microsoft OneNote</li>
-                                    <li>Microsoft Teams</li>
-                                    <li>Microsoft Publisher</li>
-                                    <li>Microsoft OneDrive</li>
-                                </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="game-card" data-categories="Nintendo">
-                    <div class="game-image">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH4jtM2WbTRbpZ4Cyb-J6GtN19-cvi8fLJaQ&s" alt="Game 1">
-                        <div class="game-info">
-                            <h3>Corel Technical Suite</h3>
-                            <p>Emulador de Nintendo WII U</p>
-                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
-                            <div class="descargas" style="display: none;">
-                                <a href="https://drive.usercontent.google.com/download?id=10TUPZBw2wkgHHQzt7B0EmFBob_Wx0UPO&export=download&authuser=0&confirm=t&uuid=4f1778b8-fb88-47c3-af46-940440f20270&at=AEz70l7Tn6JRiIMjf0oVcBcXjYqn%3A1741891132141" class="link">Corel Technical Suite 2024</a>
-                            </div>
-                            <div class="requisitos" style="display: none;">
-                                
-                                <div>
-                                <h4>Los que nos trae:</h4>
-                                <ul>
-                                    <li>Microsoft Word</li>
-                                    <li>Microsoft Excel</li>
-                                    <li>Microsoft PowerPoint</li>
-                                    <li>Microsoft Outlook</li>
-                                    <li>Microsoft Access</li>
-                                    <li>Microsoft OneNote</li>
-                                    <li>Microsoft Teams</li>
-                                    <li>Microsoft Publisher</li>
-                                    <li>Microsoft OneDrive</li>
-                                </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                <div class="game-card" data-categories="Nintendo">
+                </div>
+                <div class="game-card" data-categories="Nintendo">
                 </div>
                
 
