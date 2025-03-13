@@ -84,7 +84,7 @@
         <nav>
             <div class="logo">Repositorio GameScript</div>
             <div class="name-user">
-                <img src="https://img.icons8.com/fluency/48/user-male-circle--v2.png" alt="">
+                <img src="/img/user.png" alt="" height="50">
                 <p id="user-name">Solaez</p>
             </div>
             
@@ -97,8 +97,8 @@
                 <button class="estender">≡</button>
                 <a href="#inicio"><li><img class="iconCategorias" src="/img/icon/home.png"> <p>Inicio</p></li></a>
                 <a href="/sitios/games.html"><li><img class="iconCategorias" src="/img/icon/games.png"> <p>Emuladores</p></li></a>
-                <li><img class="iconCategorias" src="/img/icon/new.png"> <p>Roms</p></li>
-                <li><img class="iconCategorias" src="/img/icon/new.png"> <p>Programas</p></li>
+                <li><img class="iconCategorias" src="/img/icon/new.png"> <p>Juegos</p></li>
+                <a href="/sitios/Pro.html"><li><img class="iconCategorias" src="/img/icon/new.png"> <p>Programas</p></li>
                 <li><img class="iconCategorias" src="/img/icon/new.png"> <p>Mods</p></li>
             </ul>
             <div class="loginExit">
@@ -160,26 +160,10 @@
             </div>
             </div>
           
-            <h2>Programas Nesesarios</h2>
+            <h2 class="tituloGames">Programas Nesesarios</h2>
             
             <div class="categoriaTipo">
-                <button class="filter-btn" data-category="all">Todos</button>
-                <button class="filter-btn" data-category="multiplayer">Multiplayer</button>
-                <button class="filter-btn" data-category="shooter">Shooter</button>
-                <button class="filter-btn" data-category="abierto">Mundo abierto</button>
-                <button class="filter-btn" data-category="online">Online</button>
-                <button class="filter-btn" data-category="accion">Accion</button>
-                <button class="filter-btn" data-category="adventura">Adventura</button>
-                <button class="filter-btn" data-category="puzzle">Puzzle</button>
-                <button class="filter-btn" data-category="rpg">RPG</button>
-                <button class="filter-btn" data-category="emulador">Emulador</button>
-                <button class="filter-btn" data-category="terror">Terror</button>
-                <button class="filter-btn" data-category="lucha">Lucha</button>
-                <button class="filter-btn" data-category="construccion">Construccion</button>
-                <button class="filter-btn" data-category="supervivencia">Supervivencia</button>
-                <button class="filter-btn" data-category="carreras">Carreras</button>
-                <button class="filter-btn" data-category="sandbox">Sandbox</button>
-                <button class="filter-btn" data-category="estrategia">Estrategia</button>
+                <!-- <button class="filter-btn" data-category="all">Todos</button> -->
 
             </div>
             <div class="game-grid">
@@ -570,6 +554,7 @@
         const gameRequisitos = document.querySelector('.game-requisitos');
         const requisitosContent = document.getElementById('game-requisitos');
         const heroSection = document.querySelector('.carrouselJuegos');
+        const heroSection2 = document.querySelector('.tituloGames');
         const categoriaTipo = document.querySelector('.categoriaTipo');
         const buyBtn = document.getElementById('buy-btn');
         const popup = document.getElementById('popup');
@@ -594,6 +579,7 @@
                     if (otherCard !== card) {
                         otherCard.style.display = 'none';
                         heroSection.style.display = 'none';
+                        heroSection2.style.display = 'none';
                         categoriaTipo.style.display = 'none';
                     }
                 });
@@ -638,6 +624,7 @@
             gameCards.forEach(card => {
                 card.style.display = 'block';
                 heroSection.style.display = 'block';
+                heroSection2.style.display = 'block';
                 categoriaTipo.style.display = 'block';
                 categoriaTipo.style.display = 'flex';
             });
@@ -711,6 +698,7 @@ document.addEventListener("DOMContentLoaded", function() {
 //funcion de detalles de los productos-------------------------------------------------------------------------
 
 const heroSection = document.querySelector('.carrouselJuegos');
+const heroSection2 = document.querySelector('.tituloGames');
 const categoriaTipo = document.querySelector('.categoriaTipo');
 const gameCards = document.querySelectorAll('.game-card');
 const gameDetails = document.querySelector('.game-details');
@@ -736,6 +724,7 @@ gameCards.forEach(otherCard => {
     if (otherCard !== card) {
         otherCard.style.display = 'none';
         heroSection.style.display = 'none';
+        heroSection2.style.display = 'none';
         categoriaTipo.style.display = 'none';
         
     }
@@ -760,6 +749,7 @@ backBtn.addEventListener('click', () => {
 gameCards.forEach(card => {
 card.style.display = 'block';
 heroSection.style.display = 'block';
+heroSection2.style.display = 'block';
 categoriaTipo.style.display = 'block';
 categoriaTipo.style.display = 'flex';
 
