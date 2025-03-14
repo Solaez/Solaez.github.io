@@ -6,6 +6,75 @@
     <title>Game-X lista</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="/css/inicio.css">
+    <style>
+        /* Define the animations */
+@keyframes popupShow {
+    0% { opacity: 0; transform: scale(0.7); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes popupHide {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0.7); }
+}
+        .popup {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            transition: backdrop-filter 1s;
+            animation: popupShow 0.5s forwards;
+
+        }
+        .popup:hover{
+            backdrop-filter: blur(10px);
+        }
+    
+        .popup-content {
+            background-color: #291155e0;
+            margin: 15% auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+    
+        .close-btn {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+    
+        .close-btn:hover,
+        .close-btn:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    
+       
+    
+        .download-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 10px ;
+        }
+        #download-options{
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .game-requisitos {
+            background-color: #2e2c37;
+            padding: 20px;
+            border-radius: 15px;
+        }
+    </style>
 </head>
 <body>
    <header>
@@ -46,7 +115,6 @@
                 <button class="filter-btn" data-category="Nintendo">Nintendo</button>
                 <button class="filter-btn" data-category="PlayStation">PlayStation</button>
                 <button class="filter-btn" data-category="Xbox">Xbox</button>
-                <button class="filter-btn" data-category="Sony">Sony</button>
                 <button class="filter-btn" data-category="Keys & Firmware">Keys & Firmware</button>
                 <button class="filter-btn" data-category="PC">PC</button>
 
@@ -487,22 +555,16 @@
                     <div class="game-image">
                         <img src="https://cdn2.steamgriddb.com/grid/3b13c858da155ca191aff01aec5ef5a7.png" alt="Game 1">
                         <div class="game-info">
-                            <h3>Key de Nintendo Switch</h3>
+                            <h3>Firmware de Nintendo Switch</h3>
                             <p>Emulador beta de Nintendo Switch</p>
                             <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
                             <div class="descargas" style="display: none;">
-                                <a href="need for speed.com" class="link">Office 2003 oline</a>
-                                <a href="mario.com" class="link">Office 2010 oline</a>
-                                <a href="caarr.com" class="link">Office 2016 oline</a>
-                                <a href="caarr.com" class="link">Office 2019 oline</a>
-                                <a href="caarr.com" class="link">Office 2024 oline</a>
-                                <a href="caarr.com" class="link">Microsoft 365 oline</a>
-                                <a href="need for speed.com" class="link">Office 2003 Ofline</a>
-                                <a href="mario.com" class="link">Office 2010 Ofline</a>
-                                <a href="caarr.com" class="link">Office 2016 Ofline</a>
-                                <a href="caarr.com" class="link">Office 2019 Ofline</a>
-                                <a href="caarr.com" class="link">Office 2024 Ofline</a>
-                                <a href="caarr.com" class="link">Microsoft 365 Ofline</a>
+                                <a href="https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.19.0.1.zip" class="link">v19.0.1</a>
+                                <a href="https://usc1.contabostorage.com/b14312a874cd4fb8812c5c8860564d3a:firmwares/Firmware%2019.0.0.zip" class="link">v19.0.0</a>
+                                <a href="https://usc1.contabostorage.com/b14312a874cd4fb8812c5c8860564d3a:firmwares/Firmware%2018.1.0.zip" class="link">v18.1.0</a>
+                                <a href="https://usc1.contabostorage.com/b14312a874cd4fb8812c5c8860564d3a:firmwares/Firmware%2018.0.1.zip" class="link">v18.0.1</a>
+                                <a href="https://usc1.contabostorage.com/b14312a874cd4fb8812c5c8860564d3a:firmwares/Firmware.18.0.0.zip" class="link">v18.0.0</a>
+                                
                             </div>
                             <div class="requisitos" style="display: none;">
                                 
@@ -528,22 +590,22 @@
                     <div class="game-image">
                         <img src="https://cdn2.steamgriddb.com/grid/3b13c858da155ca191aff01aec5ef5a7.png" alt="Game 1">
                         <div class="game-info">
-                            <h3>Finware de Nintendo Switch</h3>
+                            <h3>Keys de Nintendo Switch</h3>
                             <p>Emulador beta de Nintendo Switch</p>
-                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <h6 style="display: none;"><a href="#mario">Para mostrar los juegos</a> </h6>
                             <div class="descargas" style="display: none;">
-                                <a href="need for speed.com" class="link">Office 2003 oline</a>
-                                <a href="mario.com" class="link">Office 2010 oline</a>
-                                <a href="caarr.com" class="link">Office 2016 oline</a>
-                                <a href="caarr.com" class="link">Office 2019 oline</a>
-                                <a href="caarr.com" class="link">Office 2024 oline</a>
-                                <a href="caarr.com" class="link">Microsoft 365 oline</a>
-                                <a href="need for speed.com" class="link">Office 2003 Ofline</a>
-                                <a href="mario.com" class="link">Office 2010 Ofline</a>
-                                <a href="caarr.com" class="link">Office 2016 Ofline</a>
-                                <a href="caarr.com" class="link">Office 2019 Ofline</a>
-                                <a href="caarr.com" class="link">Office 2024 Ofline</a>
-                                <a href="caarr.com" class="link">Microsoft 365 Ofline</a>
+                                <a href="https://files.prodkeys.net/ProdKeys.net-v19.0.1.zip" class="link">V19.0.1</a>
+                                <a href="https://files-prodkeys.b-cdn.net/prodkeys/Prodkeys.net_v19.0.0.zip" class="link">V19.0.0</a>
+                                <a href="https://files-prodkeys.b-cdn.net/prodkeys/ProdKeys.net-v18.-1-0.zip" class="link">V18.1.0</a>
+                                <a href="https://files-prodkeys.b-cdn.net/prodkeys/prodkeys.net-18-0-1.zip" class="link">V18.0.1</a>
+                                <a href="https://files-prodkeys.b-cdn.net/prodkeys/ProdKeys.net-v18.0.0.zip" class="link">V18.0.0</a>
+                                <a href="https://files-prodkeys.b-cdn.net/prodkeys/prodkeys.net-v17.0.1.zip" class="link">V17.0.1</a>
+                                <a href="https://files-prodkeys.b-cdn.net/prodkeys/ProdkKeys.net-V17.0.0.zip" class="link">V17.0.0</a>
+                                <a href="https://files-prodkeys.b-cdn.net/prodkeys/Prodkeys.net-V16.1.0.zip" class="link">V16.1.0</a>
+                                <a href="https://files-prodkeys.b-cdn.net/prodkeys/Keys-16.0.3-By-Prodkeys.net_.zip" class="link">V16.0.3</a>
+                                <a href="https://files-prodkeys.b-cdn.net/prodkeys/Keys-16.0.2-By-Prodkeys.net_.zip" class="link">V16.0.2</a>
+                                <a href="https://files-prodkeys.b-cdn.net/prodkeys/Keys-16.0.1.zip" class="link">V16.0.1</a>
+                                <a href="https://files-prodkeys.b-cdn.net/prodkeys/Keys-16-by-Prodkeys.net_.zip" class="link">V16.0.0</a>
                             </div>
                             <div class="requisitos" style="display: none;">
                                 
@@ -655,8 +717,37 @@
                             <p>Emulador de Nintendo nes en 3D</p>
                             <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
                             <div class="descargas" style="display: none;">
-                                <a href="need for speed.com" class="link">ultima version</a>
-                                <a href="need for speed.com" class="link">Juegos</a>
+                                <a href="/data/3dsen.rar" class="link">ultima version</a>
+                            </div>
+                            <div class="requisitos" style="display: none;">
+                                
+                                <div>
+                                <h4>Los que nos trae:</h4>
+                                <ul>
+                                    <li>Microsoft Word</li>
+                                    <li>Microsoft Excel</li>
+                                    <li>Microsoft PowerPoint</li>
+                                    <li>Microsoft Outlook</li>
+                                    <li>Microsoft Access</li>
+                                    <li>Microsoft OneNote</li>
+                                    <li>Microsoft Teams</li>
+                                    <li>Microsoft Publisher</li>
+                                    <li>Microsoft OneDrive</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card" data-categories="Nintendo">
+                    <div class="game-image">
+                        <img src="https://cdn2.steamgriddb.com/grid/ff5d799224765963a0fe9eb6e02dd775.png" alt="Game 1">
+                        <div class="game-info">
+                            <h3>amiibo</h3>
+                            <p>Todos los amiibo de Nintendo</p>
+                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <div class="descargas" style="display: none;">
+                                <a href="/data/amiibo.zip" class="link">Todos los amiibo</a>
                             </div>
                             <div class="requisitos" style="display: none;">
                                 
@@ -723,22 +814,11 @@
                     <div class="game-image">
                         <img src="https://cdn2.steamgriddb.com/grid/f7ef57245018d7138dfecbc6eaae27e6.png" alt="Game 1">
                         <div class="game-info">
-                            <h3>Finware de PlayStation 2</h3>
+                            <h3>Fimware de PlayStation 2</h3>
                             <p>Version de PlayStation 2</p>
-                            <h6 style="display: none;"><a href="#mario">Descargar activador</a> </h6>
+                            <h6 style="display: none;"><a href="#mario">Calidad</a> </h6>
                             <div class="descargas" style="display: none;">
-                                <a href="need for speed.com" class="link">Office 2003 oline</a>
-                                <a href="mario.com" class="link">Office 2010 oline</a>
-                                <a href="caarr.com" class="link">Office 2016 oline</a>
-                                <a href="caarr.com" class="link">Office 2019 oline</a>
-                                <a href="caarr.com" class="link">Office 2024 oline</a>
-                                <a href="caarr.com" class="link">Microsoft 365 oline</a>
-                                <a href="need for speed.com" class="link">Office 2003 Ofline</a>
-                                <a href="mario.com" class="link">Office 2010 Ofline</a>
-                                <a href="caarr.com" class="link">Office 2016 Ofline</a>
-                                <a href="caarr.com" class="link">Office 2019 Ofline</a>
-                                <a href="caarr.com" class="link">Office 2024 Ofline</a>
-                                <a href="caarr.com" class="link">Microsoft 365 Ofline</a>
+                                <a href="/data/fimware/pplay/bios.rar" class="link">Todos</a>
                             </div>
                             <div class="requisitos" style="display: none;">
                                 
@@ -1175,3 +1255,4 @@ gameDetails.style.display = 'none';
         });
     });
 </script>
+<!-- http://dmx01.ps3.update.playstation.net/update/ps3/image/mx/2025_0305_c179ad173bbc08b55431d30947725a4b/PS3UPDAT.PUP -->
