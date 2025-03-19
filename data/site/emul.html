@@ -1,0 +1,250 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+  <title>Nintendo Switch Home UI</title>
+
+    <link rel="canonical" href="https://codepen.io/perry_nt/pen/XMxNyy">
+  	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  	<link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+    <link rel="stylesheet" href="/data/style/diseño.css">
+  
+</head>
+
+<body translate="no">
+
+  	<div class="wrapper flex flex-col">
+
+	<header class="flex v-center">
+		<img src="https://cdn-icons-png.flaticon.com/512/5665/5665189.png" width="30" alt=""> <p>Todos los Emuladores</p>		
+	</header>
+
+	<main>
+		<div class="games">
+
+
+        <div class="item a2" onclick="showDetails('yuzu',
+         'Actualizador de driver, sasasas',
+          'https://cdn2.steamgriddb.com/grid/6f7c62c478c08564d468ececda07d77e.png', [
+            { nombre: 'Programa', enlace: 'https://cdn.iobit.com/insurweb/dl_esseo_dbfpdp/driver_booster_setup.exe' },
+            { nombre: 'Activador', enlace: '/data/donwload/version.dll' }
+            ],'mario') ">
+            <img src="https://cdn2.steamgriddb.com/grid/86fe9cf2ee0ddd669a4565465586de21.png">
+                <div class="game-name">yuzu</div>
+        </div>
+        <div class="item a2" onclick="showDetails('yuzu early',
+         'Actualizador de driver, sasasas',
+          'https://cdn2.steamgriddb.com/grid/b4203b21d6e33ebe245c0ffd85055977.png', [
+            { nombre: 'Programa', enlace: 'https://cdn.iobit.com/insurweb/dl_esseo_dbfpdp/driver_booster_setup.exe' },
+            { nombre: 'Activador', enlace: '/data/donwload/version.dll' }
+            ])">
+            <img src="https://cdn2.steamgriddb.com/grid/b4203b21d6e33ebe245c0ffd85055977.png">
+                <div class="game-name">yuzu early</div>
+        </div>
+        <div class="item a2" onclick="showDetails('Suyu',
+         'Nos trae todos los visual:' +
+          '<ul>' +
+         '<li>vcredist2005_x64</li>' +
+         '<li>vcredist2005_x86</li>' +
+         '<li>vcredist2008_x64</li>' +
+         '<li>vcredist2008_x86</li>' +
+         '<li>vcredist2010_x64</li>' +
+         '<li>vcredist2010_x86</li>' +
+         '<li>vcredist2012_x64</li>' +
+         '<li>vcredist2012_x86</li>' +
+         '<li>vcredist2013_x64</li>' +
+         '<li>vcredist2013_x86</li>' +
+         '<li>vcredist2015_2017_2019_2022_x64</li>' +
+         '<li>vcredist2015_2017_2019_2022_x86</li>' +
+         '</ul>'+
+         'Se puede instalas tanto manual como automatico'
+         ,
+          'https://cdn2.steamgriddb.com/grid/15a1408aed6a3f54b7a1fa9dd9efa7e1.png', [
+            { nombre: 'Todos', enlace: '/data/donwload/visual.zip' }
+            ])">
+            <img src="https://cdn2.steamgriddb.com/icon/86ba1452780820e4c745f2fb19d4e3a8.png">
+                <div class="game-name">Suyu</div>
+        </div>
+        <div class="item a2" onclick="showDetails('Sudachi', 'Actualizador de driver, poner el archivo en la carpeta raiz del programa.', 'https://cdn2.steamgriddb.com/grid/02adba1673a1b9756216a505a3381a76.png', [
+            { nombre: 'DirectX 9,10,11', enlace: '/data/donwload/DirectX 9,10,11.rar' },
+            { nombre: 'DirectX 12', enlace: '/data/donwload/DirectX 12 (Requiere internet).exe' }
+            ])">
+            <img src="https://cdn2.steamgriddb.com/icon/1084652a5665fce465f5860a56722b8c.ico">
+                <div class="game-name">Sudachi</div>
+        </div>
+        <div class="item a2" onclick="showDetails('Citron', 'Actualizador de driver, poner el archivo en la carpeta raiz del programa.', 'https://cdn2.steamgriddb.com/grid/f9065c4db2e5945e8e71e94234119a62.png', [
+            { nombre: 'Programa', enlace: 'https://github.com/upscayl/upscayl/releases/download/v2.15.0/upscayl-2.15.0-win.exe' }
+            ])">
+            <img src="https://cdn2.steamgriddb.com/grid/e9cd0062c38558b6b5da47528a898b0a.png">
+                <div class="game-name">Citron</div>
+        </div>
+        <div class="item a2" onclick="showDetails('Ryujinx', 'Actualizador de driver, poner el archivo en la carpeta raiz del programa.', 'https://cdn2.steamgriddb.com/grid/0c59cdc2503ef2319e9ba065276b46fc.png', [
+            { nombre: 'Programa + configuración', enlace: '/data/donwload/DS4Windows.zip' }
+            ])">
+            <img src="https://cdn2.steamgriddb.com/grid/0412fc61b34419fdaeab05879dc3a62b.jpg">
+                <div class="game-name">Ryujinx</div>
+        </div>
+        <div class="item a2" onclick="showDetails('Ryujinx v2', 'Actualizador de driver, poner el archivo en la carpeta raiz del programa.', 'https://cdn2.steamgriddb.com/grid/d6cf900c66ad80f7e8c1282a4281ff61.png', [
+            { nombre: 'Programa + configuración', enlace: '/data/donwload/DS4Windows.zip' }
+            ])">
+            <img src="https://cdn2.steamgriddb.com/grid/d6cf900c66ad80f7e8c1282a4281ff61.png">
+                <div class="game-name">Ryujinx v2</div>
+        </div>
+        <div class="item a2" onclick="showDetails('Nintendo Switch Fimware', 'Actualizador de driver, poner el archivo en la carpeta raiz del programa.', 'https://cdn2.steamgriddb.com/grid/06bd7fe81e891c921f4db0d916dccc41.png', [
+            { nombre: 'DirectX 9,10,11', enlace: 'https://descarga1.com' },
+            { nombre: 'DirectX 12', enlace: 'https://descarga2.com' }
+            ])">
+            <img src="https://cdn2.steamgriddb.com/grid/7b95281b31ddce8847993feee67c3451.png">
+                <div class="game-name">NS Fimware</div>
+        </div>
+        <div class="item a2" onclick="showDetails('Nintendo Switch Key', 'Actualizador de driver, poner el archivo en la carpeta raiz del programa.', 'https://cdn2.steamgriddb.com/grid/3b13c858da155ca191aff01aec5ef5a7.png', [
+            { nombre: 'DirectX 9,10,11', enlace: 'https://descarga1.com' },
+            { nombre: 'DirectX 12', enlace: 'https://descarga2.com' }
+            ])">
+            <img src="https://cdn2.steamgriddb.com/grid/7b95281b31ddce8847993feee67c3451.png">
+                <div class="game-name">NS Key</div>
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+
+            
+
+		</div>
+		
+        <div class="overlay" id="overlay" onclick="closeAll()"></div>
+
+    <div id="details" class="details">
+        <div class="details-card">
+            
+            <div class="details-cont"  id="details-cont"></div>
+            <img id="details-img" >
+        </div>
+        <div class="info">
+            <h3 id="details-title"></h3>
+            <p id="details-desc"></p>
+        </div>
+        <button class="button blue" onclick="showDownloads()">Descargar</button>
+        <button class="button" onclick="closeDetails()">Cerrar</button>
+    </div>
+
+    <div id="downloads-popup" class="downloads-popup">
+        <h3>Enlaces de Descarga</h3>
+        <div id="downloads" class="downloads"></div>
+        <button class="button" onclick="closeDownloads()">Volver</button>
+    </div>
+		
+	</main>
+
+	<footer class="flex">
+		<div class="mode">
+			<img src="/data/img/icon/Captura de pantalla 2025-03-15 131006.png">
+		</div>
+		<div class="accept flex v-center">
+			<a href="/data/site/inicio.html" class="textBn"><div class="btn ">E</div>Volver</a>
+			
+
+		</div>
+	</footer>
+
+	</div>
+  
+
+    <!-- importan -->
+    <script>
+        
+       function showDetails(title, desc, imgSrc, downloads,dcont) {
+    document.getElementById('details-title').textContent = title;
+    document.getElementById('details-desc').innerHTML = desc;
+    document.getElementById('details-cont').innerHTML = dcont;
+
+    document.getElementById('details-img').src = imgSrc;
+    currentDownloads = downloads;
+
+    let overlay = document.getElementById('overlay');
+    let details = document.getElementById('details');
+
+    overlay.style.display = 'block';
+    details.style.display = 'block';
+
+    setTimeout(() => {
+        overlay.classList.add('show');
+        details.classList.add('show');
+    }, 10);
+}
+
+function showDownloads() {
+    let card = document.querySelector('.details-card');
+    card.classList.toggle('flipped'); // 
+    
+    let downloadsContainer = document.getElementById('downloads');
+    downloadsContainer.innerHTML = '';
+
+    currentDownloads.forEach(download => {
+        let a = document.createElement('a');
+        a.href = download.enlace;
+        a.textContent = `Descargar  ${download.nombre}`;
+        a.target = '_blank';
+        downloadsContainer.appendChild(a);
+    });
+
+    let downloadsPopup = document.getElementById('downloads-popup');
+    downloadsPopup.style.display = 'block';
+
+    setTimeout(() => {
+        downloadsPopup.classList.add('show');
+    }, 10);
+}
+
+function closeDetails() {
+    let overlay = document.getElementById('overlay');
+    let details = document.getElementById('details');
+
+    overlay.classList.remove('show');
+    details.classList.remove('show');
+
+    setTimeout(() => {
+        overlay.style.display = 'none';
+        details.style.display = 'none';
+    }, 300);
+}
+
+function closeDownloads() {
+    let card = document.querySelector('.details-card');
+    card.classList.toggle('flipped'); // 
+    let downloadsPopup = document.getElementById('downloads-popup');
+    downloadsPopup.classList.remove('show');
+
+    setTimeout(() => {
+        downloadsPopup.style.display = 'none';
+    }, 300);
+}
+
+function closeAll() {
+    closeDetails();
+    closeDownloads();
+}
+
+    </script>
+
+</body> 
