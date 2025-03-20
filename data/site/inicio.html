@@ -278,18 +278,25 @@ footer {
 	margin-right: auto;
 }
 
-.accept .btn {
+.accept .btn { 
 	--d: 25px;
-	margin-right: 12px;
-	display: inline-block;
+	margin-right: 15px;
+	display: flex;
 	width: var(--d);
 	height: var(--d);
 	background: var(--static);
 	border-radius: 100%;
-	font-size: .75em;
+	font-size: .80em;
 	text-align: center;
 	color: var(--bg);
+	align-items: center;
+	justify-content: center;
+	padding: 17px;
+	transition: transform 1s ease-in-out;  font-weight: bold;
 }
+    .accept:active{
+        transform: scale(0.9);
+    }
 /* Animación de entrada */
 .wrapper {
     opacity: 0;

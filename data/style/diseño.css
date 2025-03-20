@@ -399,7 +399,7 @@
     .accept .btn {
         --d: 25px;
         margin-right: 12px;
-        display: inline-block;
+        display: flex;
         width: var(--d);
         height: var(--d);
         background: var(--static);
@@ -407,11 +407,21 @@
         font-size: .75em;
         text-align: center;
         color: var(--bg);
+        align-items: center;
+        justify-content: center;
+        font: revert;
+        padding: 17px;
+        transition: transform 1s ease-in-out;  font-weight: bold;
+    }
+    .accept:active{
+        transform: scale(0.9);
     }
     .textBn{
         text-decoration: none; 
         color: rgb(51, 51, 51);
         transition: scale .1s;
+        display: flex;
+        align-items: center;
     }
     .textBn:hover{
         scale: 1.1;
