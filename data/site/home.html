@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Inicio - Estilo Switch</title>
+    <style>
+       
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }   
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Aplica la animación */
+        .sidebar {
+            animation: fadeInLeft 1s ease-out;
+        }
+
+        .main-screen {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .estado {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 60px;
+            align-items: center;
+            justify-content: flex-end;
+            position: absolute;
+            top: 15px;
+            gap: 10px;
+            right: 15px;
+            font-size: 30px;
+        }
+        body {
+            margin: 0;
+            background-color: #dadada;
+            display: flex;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 23%;
+            background-color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+            padding: 40px 35px 40px 35px;
+            color: white;
+        }
+        .noticias{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .news-box {
+            width: 100%;
+            height: 100%;
+            background-color: #3a3a3a;
+            margin-bottom: 10px;
+            border: 1px solid #313131;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #bbb;
+            font-size: 18px;
+            transition: scale 0.2s;
+            cursor: pointer;
+        }
+        .news-box:hover {
+            background-color: #313131;
+            scale: 1.03;
+        }
+        .news-footer:hover{
+            scale: 1.1;
+        }
+        .news-footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            margin-top: auto;
+            padding-top: 20px;
+            transition: scale 0.2s;
+            cursor: pointer;
+        }
+        .news-footer span {
+            font-size: 24px;
+            margin-right: 10px;
+            background: white;
+            color: black;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-screen {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            background-color: rgb(233, 233, 233);
+            align-items: center;
+            gap: 130px;
+            justify-content: center;
+        }
+        .home-icon {
+            cursor: pointer;
+            width: 140px;
+            height: 140px;
+            border: 6px solid #313131;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 130px;
+            transition: scale 0.3s,background-color 0s, box-shadow 0.1s;
+        }
+        .home-icon:hover, .start-button:hover {
+           scale: 1.1;
+        }
+        .home-icon:active{
+            background-color: #3131316b;
+            box-shadow: 0px 0px 2px 13px #9c9c9c;
+        }
+        .home-icon svg {
+            width: 60%;
+            }
+        .start-button {
+            cursor: pointer;
+            margin-top: 25px;
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            transition: scale 0.3s;
+            color: #313131;
+        }
+        .start-button span {
+            font-size: 31px;
+            font-weight: bold;
+            margin-right: 10px;
+            background: #313131;
+            color: white;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .status-bar {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            color: black;
+        }
+        .status-bar img {
+            margin-left: 10px;
+            height: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        @keyframes fadeOutUp {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    animation: fadeOutUp 0.5s ease-out forwards;
+}
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="noticias">
+            <div class="news-box"></div>
+            <div class="news-box"></div>
+            <div class="news-box"></div>
+        </div>
+        <div class="news-footer"><span>Y</span> Noticias destacadas</div>
+    </div>
+    <div class="main-screen">
+        <div class="estado">
+            <div class=" time">
+                <span id="time">12:59</span>
+            </div>
+            <div class=" wifi">
+                <img src="/data/img/icon/wifi.png">
+            </div>
+            <div class=" battery">
+                <span >100<i>%</i></span>
+                <img src="/data/img/icon/battery.png">
+            </div>
+        </div>
+        <!-- <div class="status-bar">17:30 <img src="/data/img/icon/wifi.png" alt="WiFi"> 100% <img src="/data/img/icon/battery.png" alt="Batería"></div> -->
+        
+        <a href="/data/site/inicio.html"><div class="home-icon">
+            <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 67.98">
+                <defs>
+                    <style>
+                    .cls-1 {
+                        fill: #313131;
+                    }
+                    </style>
+                </defs>
+                <path class="cls-1" d="M1.34,34.19c-.74,0-1.34-.61-1.34-1.35h0c0-.41.18-.79.5-1.05C6.54,26.94,34.37.08,37.03,0c3.64-.1,33.64,28.11,37.55,31.79.27.25.42.61.42.98v.08c0,.74-.59,1.34-1.34,1.35-2.74.01-8.77.06-9.11.29v33.5s-54,0-54,0v-33.5c-.43-.23-6.48-.28-9.22-.29ZM49.56,34.98h-24v19h24v-19Z"/>
+            </svg>
+        </div></a>
+        <a href="/data/site/inicio.html"><div class="start-button"><span>A</span> Comenzar</div></a>
+    </div>
+    
+    <script id="rendered-js">
+        
+        function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+        }
+
+        function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+
+        m = checkTime(m);
+        document.getElementById('time').innerHTML = h + ":" + m;
+        t = setTimeout(function () {
+            startTime();
+        }, 500);
+        }
+        startTime();
+        //# sourceURL=pen.js
+    </script>
+    <script>
+     document.querySelector(".home-icon").addEventListener("click", function(event) {
+    event.preventDefault(); // Evita la navegación inmediata
+    document.body.classList.add("fade-out"); // Agrega la clase de animación
+
+    setTimeout(() => {
+        window.location.href = this.closest("a").href; // Redirige después de la animación
+    }, 800); // Espera el tiempo de la animación (0.8s)
+});
+
+    </script>
+</body>
+</html>

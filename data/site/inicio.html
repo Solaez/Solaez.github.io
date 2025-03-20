@@ -284,6 +284,36 @@ footer {
 	text-align: center;
 	color: var(--bg);
 }
+/* Animación de entrada */
+.wrapper {
+    opacity: 0;
+    animation: fadeInScale 0.9s ease-out forwards;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animación de salida */
+.fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
 </style>
 
   <script>
@@ -325,7 +355,7 @@ footer {
 			<a data-attr="Emuladores" href="/data//site/emul.html" class="iconAcess" ><img src="/data/img/icon/Album.png"></a>
 			<a data-attr="Windows" href="/data/site/win.html" class="iconAcess" ><img src="/data/img/icon/Controllers.png"></a>
 			<a data-attr="Opciones" href="#" class="iconAcess"><img src="/data/img/icon/Settings.png"></a>
-			<a data-attr="Salir" href="/index.html" class="iconAcess" ><img src="/data/img/icon/Sleep Mode.png"></a>
+			<a data-attr="Salir" href="/data/site/home.html" class="iconAcess" ><img src="/data/img/icon/Sleep Mode.png"></a>
 		</nav>
 	</main>
 	<footer class="flex">
@@ -425,8 +455,21 @@ startTime();
 		
 		</script>
 		
-		
-  
+		<script>
+    document.querySelectorAll(".iconAcess").forEach(button => {
+        button.addEventListener("click", function(event) {
+            event.preventDefault(); // Evita la navegación inmediata
+            document.body.classList.add("fade-out"); // Agrega la clase de animación
+
+            const link = this.closest("a"); // Busca el enlace más cercano
+            if (link) {
+                setTimeout(() => {
+                    window.location.href = link.href; // Redirige después de la animación
+                }, 800); // Espera el tiempo de la animación (0.8s)
+            }
+        });
+    });
+</script>
 
 
 </body>

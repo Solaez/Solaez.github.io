@@ -246,5 +246,15 @@ function closeAll() {
 }
 
     </script>
+ <script>
+     document.querySelector(".textBn").addEventListener("click", function(event) {
+    event.preventDefault(); // Evita la navegación inmediata
+    document.body.classList.add("fade-out"); // Agrega la clase de animación
 
+    setTimeout(() => {
+        window.location.href = this.closest("a").href; // Redirige después de la animación
+    }, 800); // Espera el tiempo de la animación (0.8s)
+});
+
+    </script>
 </body> 

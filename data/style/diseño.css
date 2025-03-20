@@ -90,7 +90,8 @@
         font-size: 16px;
         color: #585858;
         max-height: 295px;
-        overflow: scroll;
+        overflow: overlay;
+        height: 270px;
     }
 
     .button {
@@ -285,20 +286,17 @@
 
     main {
         position: relative;
-        margin: 15px 0 0 0px;
     }
 
     .games {
         position: relative;
-        /*margin-bottom: 10px;*/
         padding: 10px 95px;
         white-space: nowrap;
         overflow-x: hidden;
-        /*margin-top: 42px;*/
         
         display: flex;
         flex-wrap: wrap;
-        max-height: 500px;
+        max-height: 485px;
         justify-content: center;
     }
 
@@ -376,13 +374,23 @@
 
 /*=========== footer =============*/
 
-    footer {
+    /* footer {
         position: relative;
         margin-top: auto;
         padding: 20px 25px 0;
         font-size: 24px;
         border-top: 2px solid var(--static);
-    }
+    } */
+    footer {
+    position: sticky;
+    margin-top: auto;
+  padding: 20px 25px 0;
+    font-size: 24px;
+    border-top: 2px solid var(--static);
+    width: 97.5%;
+    bottom: 0;
+    background-color: #ececec;
+}
 
     .mode {
         margin-right: auto;
@@ -460,3 +468,33 @@
         background-repeat: no-repeat; /* Evita que la imagen se repita */
         padding: 130px 0 0 15px;
 }
+
+/* Animación de entrada */
+.wrapper {
+    opacity: 0;
+    animation: fadeInScale 0.9s ease-out forwards;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animación de salida */
+.fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
