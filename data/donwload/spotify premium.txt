@@ -1,0 +1,9 @@
+abrir powershell normal
+
+poner los comandos por orden
+
+1- iwr -useb https://raw.githubusercontent.com/spicetify/cli/main/install.ps1 | iex
+
+2- iwr -useb https://raw.githubusercontent.com/spicetify/marketplace/main/resources/install.ps1 | iex
+
+luego aparece una tienda nueva, y buscan el adblock + premium
