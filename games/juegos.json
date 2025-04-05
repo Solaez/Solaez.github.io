@@ -399,9 +399,22 @@
   ]
 },
 {
-  "titulo": "Yuzu",
-  "imagen": "https://cdn2.steamgriddb.com/grid/6f7c62c478c08564d468ececda07d77e.png",
-  "descripcion": "Yuzu - Funciones principales\nEmulación de Nintendo Switch: Corre juegos comerciales y homebrew de la consola.\n\nGráficos mejorados: Soporta resoluciones mayores que la consola original (upscaling).\n\nMultijugador local en línea (LDN): Permite jugar en línea como si fuera multijugador local.\n\nSoporte para mods y cheats: Podés aplicar modificaciones, parches y trucos fácilmente.\n\nCompatibilidad con mandos: Detecta joysticks y permite configurarlos como Joy-Con o Pro Controller.\n\nGuardado automático y estados: Guarda partidas automáticamente o con \"save states\".\n\nShader cache: Acelera los tiempos de carga y mejora el rendimiento visual.\n\nActualizaciones y DLCs: Permite instalar updates y contenido adicional de los juegos.\n\n",
+  "titulo": "Yuzu early",
+  "imagen": "https://cdn2.steamgriddb.com/grid/b4203b21d6e33ebe245c0ffd85055977.png",
+  "descripcion": "Yuzu early- Funciones principales\nEmulación de Nintendo Switch: Corre juegos comerciales y homebrew de la consola.\n\nGráficos mejorados: Soporta resoluciones mayores que la consola original (upscaling).\n\nMultijugador local en línea (LDN): Permite jugar en línea como si fuera multijugador local.\n\nSoporte para mods y cheats: Podés aplicar modificaciones, parches y trucos fácilmente.\n\nCompatibilidad con mandos: Detecta joysticks y permite configurarlos como Joy-Con o Pro Controller.\n\nGuardado automático y estados: Guarda partidas automáticamente o con \"save states\".\n\nShader cache: Acelera los tiempos de carga y mejora el rendimiento visual.\n\nActualizaciones y DLCs: Permite instalar updates y contenido adicional de los juegos.\n\n",
+  "manual": "Primer inicio y configuración\nAbrí Yuzu\n\nEn el primer arranque, te pedirá:\n\nKeys (prod.keys y title.keys): Deben obtenerse desde tu propia consola Switch (por temas legales).\n\nFirmware: También desde tu Switch, o podés usar el instalador de firmware de Yuzu (si tenés los archivos).\n\n👉 Los keys se colocan en la carpeta:\n%appdata%\\yuzu\\keys",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Emulador",
+      "url": "mario"
+    }
+  ]
+},
+{
+  "titulo": "Suyu",
+  "imagen": "https://cdn2.steamgriddb.com/grid/15a1408aed6a3f54b7a1fa9dd9efa7e1.png",
+  "descripcion": "Yuzu early- Funciones principales\nEmulación de Nintendo Switch: Corre juegos comerciales y homebrew de la consola.\n\nGráficos mejorados: Soporta resoluciones mayores que la consola original (upscaling).\n\nMultijugador local en línea (LDN): Permite jugar en línea como si fuera multijugador local.\n\nSoporte para mods y cheats: Podés aplicar modificaciones, parches y trucos fácilmente.\n\nCompatibilidad con mandos: Detecta joysticks y permite configurarlos como Joy-Con o Pro Controller.\n\nGuardado automático y estados: Guarda partidas automáticamente o con \"save states\".\n\nShader cache: Acelera los tiempos de carga y mejora el rendimiento visual.\n\nActualizaciones y DLCs: Permite instalar updates y contenido adicional de los juegos.\n\n",
   "manual": "Primer inicio y configuración\nAbrí Yuzu\n\nEn el primer arranque, te pedirá:\n\nKeys (prod.keys y title.keys): Deben obtenerse desde tu propia consola Switch (por temas legales).\n\nFirmware: También desde tu Switch, o podés usar el instalador de firmware de Yuzu (si tenés los archivos).\n\n👉 Los keys se colocan en la carpeta:\n%appdata%\\yuzu\\keys",
   "categoria": "Emulaters",
   "descargas": [
