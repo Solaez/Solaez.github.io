@@ -141,7 +141,7 @@ $(function () {
                     const btn = document.createElement('a');
                     btn.href = d.url;
                     btn.textContent = d.nombre;
-                    btn.className = 'content-button';
+                    btn.className = 'content-button close';
                     btn.target = '_blank';
                     btn.style.display = 'block';
                     btn.style.marginBottom = '10px';
