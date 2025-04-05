@@ -55,7 +55,7 @@
     "descargas": [
       {
         "nombre": "Programa",
-        "url": "/data/donwload/DS4Windows.zip"
+        "url": "https://objects.githubusercontent.com/github-production-release-asset-2e65be/519577891/081d7c69-5388-4fd7-8076-e235805b449a?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250405%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250405T191657Z&X-Amz-Expires=300&X-Amz-Signature=d45ee5abceb30130ac10e90ddc93174378b805ba2f51cce8e49db986ca5de67c&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dupscayl-2.15.0-win.exe&response-content-type=application%2Foctet-stream"
       }
     ]
   },
@@ -300,5 +300,116 @@
       "url": "https://www.harddisksentinel.com/hdsentinel_pro_setup.zip"
     }
   ]
+},
+  {
+  "titulo": "Wii U USB Helper",
+  "imagen": "https://cdn2.steamgriddb.com/grid/4cef08f99c72431dadbb867aa75c1c90.png",
+  "descripcion": "Wii U USB Helper fue una herramienta que permitía descargar y gestionar copias de seguridad de juegos para Wii U y 3DS. Facilitaba la instalación de títulos en una memoria USB o tarjeta SD para usarlos en consolas modificadas <br> <br>Buscador: titlekeys.ovh",
+  "manual": "",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Programa portable",
+      "url": "https://github.com/FailedShack/USBHelperInstaller/releases/download/1.2/USBHelperInstaller.exe"
+    }
+  ]
+},
+  {
+  "titulo": "Hydra Launcher",
+  "imagen": "https://cdn2.steamgriddb.com/grid/8a6a69de3404b8405495b04354cf5704.jpg",
+  "descripcion": "Hydra Launcher es una aplicación de código abierto que funciona como un lanzador de juegos con un cliente BitTorrent integrado. Está diseñada para simplificar la descarga y gestión de juegos en tu PC, permitiendo organizar títulos de diversas fuentes en una sola plataforma. Entre sus características destacan: <br><br><li>Cliente BitTorrent incorporado: facilita la descarga de juegos directamente desde la aplicación. <br><br><li>Scraper de repacks autogestionado: ayuda a encontrar y organizar versiones comprimidas de juegos. <br><br><li>Personalización de rutas de descarga: permite elegir las ubicaciones donde se almacenarán los juegos. <br><br><li>Compatibilidad con Windows y Linux: ofrece soporte para múltiples sistemas operativos. <br><br><li>Integración con How Long To Beat (HLTB): proporciona información sobre el tiempo promedio de finalización de los juegos..",
+  "manual": "link de descarga: https://hydralinks.cloud/",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Programa portable",
+      "url": "https://hydralauncher.net/portable"
+    },
+    {
+      "nombre": "Programa",
+      "url": "https://hydralauncher.net/windows"
+    }
+  ]
+},
+  {
+  "titulo": "Plutonium",
+  "imagen": "https://cdn2.steamgriddb.com/grid/b35b37c9c5e39a02717c37e00b417590.jpg",
+  "descripcion": "Plutonium es un cliente modificado para juegos de la saga Call of Duty, que mejora la experiencia en títulos antiguos como <br><br><li> Call of Duty: Black Ops II. <br><li> Call of Duty: Black Ops I. <br><li> Call of Duty: Modern Warfare 3 <br><li> Call of Duty: World at War <br><br> Servidores dedicados con anti-cheat integrado. <br>✅ Mejor rendimiento y soporte para FPS desbloqueados.<br>✅ Soporte para mods y mapas personalizados.<br>✅ Jugar sin necesidad de Steam (requiere archivos del juego).",
+  "manual": "",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Launcher",
+      "url": "https://cdn.plutonium.pw/updater/plutonium.exe"
+    },
+    {
+      "nombre": "T4 - World at War",
+      "url": "magnet:?xl=8752916605&xt=urn:btih:588db5246b9e3b03a57479e8f9d19a51ef3688b5&dn=pluto_t4_full_game&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.bt4g.com%3A2095%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce"
+    },
+    {
+      "nombre": "T5 - Black Ops I",
+      "url": "magnet:?xl=12138748288&xt=urn:btih:9b588fb111e3e442a33f8f5240fb2244ad02d8ca&dn=pluto_t5_full_game&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.bt4g.com%3A2095%2Fannounce&tr=http%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce"
+    },
+    {
+      "nombre": "T6 - Black Ops II",
+      "url": "magnet:?xl=14691893183&xt=urn:btih:924a8d0e89358f664979789dc86be9a3f5b4ac4c&dn=pluto_t6_full_game&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.nwps.ws%3A6969%2Fannounce"
+    }
+  ]
+},
+  {
+  "titulo": "The Legend of Zelda: Breath of the Wild Multiplayer",
+  "imagen": "https://zelda.nintendo.com/breath-of-the-wild/assets/media/wallpapers/mobile-5.jpg",
+  "descripcion": "The Legend of Zelda: Breath of the Wild Multiplayer es un mod que permite jugar en modo cooperativo con varios jugadores en Breath of the Wild. Fue desarrollado por la comunidad de modders y funciona principalmente en emuladores como Cemu y Yuzu, en PC.",
+  "manual": "",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Python",
+      "url": "https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe"
+    },
+    {
+      "nombre": "Launcher",
+      "url": "/data/donwload/MilkBarLauncher.zip"
+    },
+    {
+      "nombre": "Radmin VPN",
+      "url": "https://download.radmin-vpn.com/download/files/Radmin_VPN_1.4.4642.1.exe"
+    },
+    {
+      "nombre": "Emulador",
+      "url": "/data/donwload/cemu_1.26.2.zip"
+    },
+    {
+      "nombre": "Nesesario .net",
+      "url": "https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/6.0.14/windowsdesktop-runtime-6.0.14-win-x64.exe"
+    }
+  ]
+},
+{
+  "titulo": "Yuzu",
+  "imagen": "https://cdn2.steamgriddb.com/grid/6f7c62c478c08564d468ececda07d77e.png",
+  "descripcion": "Yuzu - Funciones principales\nEmulación de Nintendo Switch: Corre juegos comerciales y homebrew de la consola.\n\nGráficos mejorados: Soporta resoluciones mayores que la consola original (upscaling).\n\nMultijugador local en línea (LDN): Permite jugar en línea como si fuera multijugador local.\n\nSoporte para mods y cheats: Podés aplicar modificaciones, parches y trucos fácilmente.\n\nCompatibilidad con mandos: Detecta joysticks y permite configurarlos como Joy-Con o Pro Controller.\n\nGuardado automático y estados: Guarda partidas automáticamente o con \"save states\".\n\nShader cache: Acelera los tiempos de carga y mejora el rendimiento visual.\n\nActualizaciones y DLCs: Permite instalar updates y contenido adicional de los juegos.\n\n",
+  "manual": "Primer inicio y configuración\nAbrí Yuzu\n\nEn el primer arranque, te pedirá:\n\nKeys (prod.keys y title.keys): Deben obtenerse desde tu propia consola Switch (por temas legales).\n\nFirmware: También desde tu Switch, o podés usar el instalador de firmware de Yuzu (si tenés los archivos).\n\n👉 Los keys se colocan en la carpeta:\n%appdata%\\yuzu\\keys",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Emulador",
+      "url": "mario"
+    }
+  ]
+},
+{
+  "titulo": "Yuzu",
+  "imagen": "https://cdn2.steamgriddb.com/grid/6f7c62c478c08564d468ececda07d77e.png",
+  "descripcion": "Yuzu - Funciones principales\nEmulación de Nintendo Switch: Corre juegos comerciales y homebrew de la consola.\n\nGráficos mejorados: Soporta resoluciones mayores que la consola original (upscaling).\n\nMultijugador local en línea (LDN): Permite jugar en línea como si fuera multijugador local.\n\nSoporte para mods y cheats: Podés aplicar modificaciones, parches y trucos fácilmente.\n\nCompatibilidad con mandos: Detecta joysticks y permite configurarlos como Joy-Con o Pro Controller.\n\nGuardado automático y estados: Guarda partidas automáticamente o con \"save states\".\n\nShader cache: Acelera los tiempos de carga y mejora el rendimiento visual.\n\nActualizaciones y DLCs: Permite instalar updates y contenido adicional de los juegos.\n\n",
+  "manual": "Primer inicio y configuración\nAbrí Yuzu\n\nEn el primer arranque, te pedirá:\n\nKeys (prod.keys y title.keys): Deben obtenerse desde tu propia consola Switch (por temas legales).\n\nFirmware: También desde tu Switch, o podés usar el instalador de firmware de Yuzu (si tenés los archivos).\n\n👉 Los keys se colocan en la carpeta:\n%appdata%\\yuzu\\keys",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Emulador",
+      "url": "mario"
+    }
+  ]
 }
+
 ]
