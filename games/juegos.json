@@ -1,0 +1,304 @@
+[
+  {
+    "titulo": "Driver Booster",
+    "imagen": "https://cdn2.steamgriddb.com/grid/74f7489d77bfd8a4c8020cf9c2131c3a.jpg",
+    "descripcion": "Actualizador de driver, poner el archivo en la carpeta raiz del programa.",
+    "manual": "1. Descarga el archivo.\n2. Descomprime el ZIP.\n3. Abre `mario.exe`.",
+    "categoria": "Programs",
+    "descargas": [
+      {
+        "nombre": "Programa",
+        "url": "https://cdn.iobit.com/insurweb/dl_esseo_dbfpdp/driver_booster_setup.exe"
+      },
+      {
+        "nombre": "Activador",
+        "url": "/data/donwload/version.dll"
+      }
+    ]
+  },
+  {
+    "titulo": "Visual C++ Redistributable",
+    "imagen": "https://solaez.github.io/data/img/grid/vs++.png",
+    "descripcion": "Nos trae todos los visual",
+    "manual": "1. Descarga el archivo.\n2. Descomprime el ZIP.\n3. Abre `mario.exe`.",
+    "categoria": "new",
+    "descargas": [
+      {
+        "nombre": "Todos",
+        "url": "/data/donwload/visual.zip"
+      }
+    ]
+  },
+  {
+    "titulo": "DirectX",
+    "imagen": "https://solaez.github.io/data/img/grid/DirectX.png",
+    "descripcion": "DirectX es un conjunto de API desarrolladas por Microsoft para mejorar el rendimiento gráfico y multimedia en Windows. Se usa principalmente en videojuegos y aplicaciones que requieren procesamiento avanzado de gráficos y sonido.",
+    "manual": "1. Descarga el archivo.",
+    "categoria": "new",
+    "descargas": [
+      {
+        "nombre": "DirectX 9,10,11",
+        "url": "/data/donwload/DirectX 9,10,11.rar"
+      },
+      {
+        "nombre": "DirectX 12",
+        "url": "/data/donwload/DirectX 12 (Requiere internet).exe"
+      }
+    ]
+  },
+  {
+    "titulo": "Upscayl",
+    "imagen": "/data/img/grid/Upscayl.png",
+    "descripcion": "Upscayl es un software de código abierto que utiliza inteligencia artificial para aumentar la resolución de imágenes sin perder calidad. Es especialmente útil para mejorar fotos, ilustraciones y gráficos de baja resolución, y está disponible para Windows, macOS y Linux.",
+    "manual": "1. Descarga el archivo.",
+    "categoria": "new",
+    "descargas": [
+      {
+        "nombre": "Programa",
+        "url": "/data/donwload/DS4Windows.zip"
+      }
+    ]
+  },
+  {
+  "titulo": "Spotify Premium",
+  "imagen": "https://cdn2.steamgriddb.com/grid/cdeae18baf7bb375affc62bb6caf0b10.png",
+  "descripcion": "Spotify es una plataforma de streaming de música, pódcast y audiolibros que permite a los usuarios escuchar contenido en línea o descargarlo para reproducirlo sin conexión. Ofrece un catálogo extenso de canciones y programas, con opciones gratuitas con anuncios y suscripciones premium sin interrupciones.\n",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Programa Oficial",
+      "url": "https://download.scdn.co/SpotifySetup.exe"
+    },
+    {
+      "nombre": "Modificador Premium automatico por mi",
+      "url": "/data/donwload/spotify premium.bat"
+    },
+    {
+      "nombre": "Modificador Premium Manual",
+      "url": "/data/donwload/spotify premium.txt"
+    }
+  ]
+},
+  {
+  "titulo": "DS4 Windows",
+  "imagen": "/data/img/grid/ds4.png",
+  "descripcion": "DS4Windows es un software que permite usar controladores DualShock 4 y DualSense en una PC con Windows, emulando un control de Xbox para mejorar la compatibilidad con juegos. También permite personalizar botones, sensibilidad de sticks y gatillos, así como usar el panel táctil y la retroalimentación háptica.",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Programa + configuración",
+      "url": "/data/donwload/DS4Windows.zip"
+    }
+  ]
+},
+  {
+  "titulo": "Balena Etcher",
+  "imagen": "/data/img/grid/balena Etcher.png",
+  "descripcion": "Balena Etcher es una herramienta gratuita y de código abierto para crear unidades USB booteables o grabar imágenes de disco (ISO y IMG) en tarjetas SD y memorias USB. Es fácil de usar y compatible con Windows, macOS y Linux, ideal para instalar sistemas operativos.",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Programa Oficial",
+      "url": "https://github.com/balena-io/etcher/releases/download/v2.1.0/balenaEtcher-2.1.0.Setup.exe"
+    }
+  ]
+},
+  {
+  "titulo": "WinRAR Pro",
+  "imagen": "/data/img/grid/winrar.png",
+  "descripcion": "WinRAR Pro no es una versión oficial del software, ya que WinRAR solo tiene una versión estándar con licencia paga. WinRAR es un programa de compresión y descompresión de archivos compatible con formatos como RAR, ZIP, 7Z, ISO y más. Ofrece funciones avanzadas como encriptación, reparación de archivos dañados y división de archivos grandes. Aunque es de pago, permite usarlo con una prueba indefinida con recordatorios.",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Programa Oficial",
+      "url": "https://winrar.es/descargas/103/descargar-winrar-para-windows-x64-en-espanol"
+    },
+    {
+      "nombre": "Activador",
+      "url": "/data/donwload/rarreg.key"
+    }
+  ]
+},
+  {
+  "titulo": "Microsoft Office",
+  "imagen": "/data/img/grid/OFFICE.png",
+  "descripcion": "Microsoft Office es una suite de aplicaciones de productividad desarrollada por Microsoft. Incluye programas como Word (procesador de textos), Excel (hojas de cálculo), PowerPoint (presentaciones), Outlook (correo y calendario) y más. Está disponible en versiones de compra única y mediante suscripción con Microsoft 365, que ofrece almacenamiento en la nube y actualizaciones continuas.",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Microsoft 365",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&platform=x64&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Microsoft 365 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/O365ProPlusRetail.img"
+    },
+    {
+      "nombre": "Office 2024",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2024Retail&platform=x64&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Office 2024 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/ProPlus2024Retail.img"
+    },
+    {
+      "nombre": "Office 2021",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Professional2021Retail&platform=x64&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Office 2021 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/Professional2021Retail.img"
+    },
+    {
+      "nombre": "Office 2019",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Professional2019Retail&platform=x64&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Office 2019 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/Professional2019Retail.img"
+    },
+    {
+      "nombre": "Office 2016",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProfessionalRetail&platform=x64&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Office 2016 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/ProPlusRetail.img"
+    },
+    {
+      "nombre": "Office 2013 ",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&platform=x64&language=es-es&version=O15GA"
+    },
+    {
+      "nombre": "Office 2013 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/es-es/HomeBusinessRetail.img"
+    }
+    
+  ]
+},
+
+  {
+  "titulo": "Microsoft Office 32bits",
+  "imagen": "/data/img/grid/OFFICE.png",
+  "descripcion": "Microsoft Office es una suite de aplicaciones de productividad desarrollada por Microsoft. Incluye programas como Word (procesador de textos), Excel (hojas de cálculo), PowerPoint (presentaciones), Outlook (correo y calendario) y más. Está disponible en versiones de compra única y mediante suscripción con Microsoft 365, que ofrece almacenamiento en la nube y actualizaciones continuas.",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Microsoft 365 x86",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&platform=x86&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Microsoft 365 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/O365ProPlusRetail.img"
+    },
+    {
+      "nombre": "Office 2024 x86",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2024Retail&platform=x86&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Office 2024 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/ProPlus2024Retail.img"
+    },
+    {
+      "nombre": "Office 2021 x86",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Professional2021Retail&platform=x86&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Office 2021 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/Professional2021Retail.img"
+    },
+    {
+      "nombre": "Office 2019 x86",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2019Retail&platform=x86&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Office 2019 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/Professional2019Retail.img"
+    },
+    {
+      "nombre": "Office 2016 x86",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProfessionalRetail&platform=x86&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Office 2016 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/ProPlusRetail.img"
+    },
+    {
+      "nombre": "Office 2013 x86",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&platform=x86&language=es-es&version=O15GA"
+    },
+    {
+      "nombre": "Office 2013 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/es-es/HomeBusinessRetail.img"
+    }
+    
+  ]
+},
+
+  {
+  "titulo": "Office key",
+  "imagen": "/data/img/grid/office key.png",
+  "descripcion": "WiLas keys de Microsoft Office son claves de producto necesarias para activar versiones legítimas de la suite. Estas claves pueden comprarse oficialmente a través de Microsoft o distribuidores autorizados. Si buscas una licencia, te recomiendo adquirirla de fuentes oficiales para evitar riesgos de seguridad o problemas con actualizaciones. También puedes considerar Microsoft 365, que funciona con una suscripción y no requiere una clave única.",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Activador automatico",
+      "url": "/data/donwload/Activar Office.bat"
+    },
+    {
+      "nombre": "Manual",
+      "url": "/data/donwload/activar office.txt"
+    }
+  ]
+},
+  {
+  "titulo": "guiformat",
+  "imagen": "/data/img/grid/guiformat.png",
+  "descripcion": "GUIFormat es una herramienta ligera y gratuita que permite formatear unidades USB y discos en formato FAT32, incluso si son mayores a 32 GB, algo que Windows no permite por defecto. Es útil para preparar unidades para consolas, sistemas embebidos y otros dispositivos que requieren FAT32.",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Programa",
+      "url": "/data/donwload/guiformat.exe"
+    }
+  ]
+},
+  {
+  "titulo": "RocketDock",
+  "imagen": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/3623c10c-f08e-4aa8-8051-fc4cb51a6cd4/daetrak-0f4dd4ce-14c5-42fb-b05e-bfea68f6af09.jpg",
+  "descripcion": "GUIFormat es una herramienta ligera y gratuita que permite formatear unidades USB y discos en formato FAT32, incluso si son mayores a 32 GB, algo que Windows no permite por defecto. Es útil para preparar unidades para consolas, sistemas embebidos y otros dispositivos que requieren FAT32.",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Programa",
+      "url": "/data/donwload/RocketDock-v1.3.5.exe"
+    }
+  ]
+},
+  {
+  "titulo": "Hard Disk Sentinel",
+  "imagen": "https://images.tokopedia.net/img/cache/250-square/VqbcmM/2025/1/25/2ae3800f-3eda-44ac-b1a6-2b8e34e4b16f.jpg?ect=4g",
+  "descripcion": "Hard Disk Sentinel es un software de monitoreo y diagnóstico de discos duros y SSD. Permite detectar, analizar y reportar problemas de salud, temperatura y rendimiento del almacenamiento. Es útil para prevenir fallos y realizar mantenimiento preventivo en Windows",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Programa portable",
+      "url": "https://www.harddisksentinel.com/hdsentinel_pro_portable.zip"
+    },
+     {
+      "nombre": "Programa",
+      "url": "https://www.harddisksentinel.com/hdsentinel_pro_setup.zip"
+    }
+  ]
+}
+]

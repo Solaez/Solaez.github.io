@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.formulario-juego {
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 30px auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario-juego input,
+.formulario-juego textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-family: inherit;
+}
+
+.formulario-juego button {
+  background-color: #00c3ff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <div class="formulario-juego">
+        <h2>Agregar nuevo juego</h2>
+        <input type="text" id="titulo" placeholder="Título del juego">
+        <input type="text" id="imagen" placeholder="URL de la imagen">
+        <textarea id="descripcion" placeholder="Descripción"></textarea>
+        <textarea id="manual" placeholder="Manual de instalación"></textarea>
+        <input type="text" id="categoria" placeholder="Categoría">
+    
+        <h4>Descargas</h4>
+        <div id="descargas-container">
+            <div class="descarga-entry">
+                <input type="text" class="nombre-descarga" placeholder="Nombre de descarga">
+                <input type="text" class="url-descarga" placeholder="URL de descarga">
+            </div>
+        </div>
+        <button id="agregar-descarga">+ Añadir otra descarga</button>
+    
+        <button id="generar-json">Generar JSON</button>
+    
+        <h3>Resultado JSON:</h3>
+        <pre id="json-output" style="background:#111; color:#0f0; padding:10px; border-radius:8px;"></pre>
+    </div>
+<script>
+    document.getElementById('agregar-descarga').addEventListener('click', () => {
+        const container = document.getElementById('descargas-container');
+        const entry = document.createElement('div');
+        entry.classList.add('descarga-entry');
+        entry.innerHTML = `
+    <input type="text" class="nombre-descarga" placeholder="Nombre de descarga">
+    <input type="text" class="url-descarga" placeholder="URL de descarga">
+  `;
+        container.appendChild(entry);
+    });
+
+    document.getElementById('generar-json').addEventListener('click', () => {
+        const titulo = document.getElementById('titulo').value;
+        const imagen = document.getElementById('imagen').value;
+        const descripcion = document.getElementById('descripcion').value;
+        const manual = document.getElementById('manual').value;
+        const categoria = document.getElementById('categoria').value;
+
+        const descargas = Array.from(document.querySelectorAll('.descarga-entry')).map(entry => {
+            const nombre = entry.querySelector('.nombre-descarga').value;
+            const url = entry.querySelector('.url-descarga').value;
+            return { nombre, url };
+        });
+
+        const juego = {
+            titulo,
+            imagen,
+            descripcion,
+            manual,
+            categoria,
+            descargas
+        };
+
+        const jsonOutput = document.getElementById('json-output');
+        jsonOutput.textContent = JSON.stringify(juego, null, 2);
+    });
+</script>
+</body>
+</html>
