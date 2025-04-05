@@ -164,7 +164,7 @@ $(function () {
   let juegosOriginales = [];
 
   // Cargar juegos
-  fetch('juegos.json')
+  fetch('games/juegos.json')
     .then(res => res.json())
     .then(juegos => {
       juegosOriginales = juegos;

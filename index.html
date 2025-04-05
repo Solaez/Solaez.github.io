@@ -584,3 +584,38 @@ div#popup-download-options {
 }
 
 </style>
+<script>
+    mainWindow.webContents.on('did-finish-load', () => {
+            mainWindow.webContents.executeJavaScript(`
+            if (!document.getElementById('download-progress')) {
+                const wrapper = document.createElement('div');
+                wrapper.id = 'download-progress';
+                wrapper.style = \`
+                    position: fixed;
+                    bottom: 20px;
+                    left: 20px;
+                    width: 90%;
+                    height: 20px;
+                    background: #eee;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    display: none;
+                    z-index: 9999;
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+                \`;
+
+                const bar = document.createElement('div');
+                bar.id = 'progress-bar';
+                bar.style = \`
+                    height: 100%;
+                    width: 0%;
+                    background: #4caf50;
+                    transition: width 0.2s ease;
+                \`;
+
+                wrapper.appendChild(bar);
+                document.body.appendChild(wrapper);
+            }
+        `);
+        });
+</script>

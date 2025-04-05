@@ -371,6 +371,7 @@ body {
      padding: 0 16px 0 40px;
      margin-left: auto;
      flex-shrink: 0;
+     z-index: 9999;
  }
 
  .header-profile svg {
