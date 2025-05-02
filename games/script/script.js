@@ -67,10 +67,12 @@ $(".search-bar input")
     });
 
 // ========== BOTÓN VOLVER ==========
-document.querySelector('.volver-btn').addEventListener('click', function (e) {
-    e.preventDefault();
-    document.getElementById('detalle-juego').classList.add('hidden');
-    document.getElementById('grid-juegos').classList.remove('hidden');
+document.querySelectorAll('.volver-btn').forEach(button => {
+    button.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.getElementById('detalle-juego').classList.add('hidden');
+        document.getElementById('grid-juegos').classList.remove('hidden');
+    });
 });
 
 // ========== MANEJO DE USUARIO (PERFIL) ==========

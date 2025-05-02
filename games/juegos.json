@@ -340,7 +340,7 @@
   "descargas": [
     {
       "nombre": "Launcher",
-      "url": "https://cdn.plutonium.pw/updater/plutonium.exe"
+      "url": "magnet:?xt=urn:btih:995ec499bdf0c0604c203d93f2047d139f33f4fc&dn=Mario%20and%20Luigi%20Brothership%20[01006D0017F7A000][v0][US](nsw2u.com).xci&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://opentracker.i2p.rocks:6969/announce&tr=udp://tracker.openbittorrent.com:6969/announce"
     },
     {
       "nombre": "T4 - World at War",
@@ -415,6 +415,19 @@
   "titulo": "Suyu",
   "imagen": "https://cdn2.steamgriddb.com/grid/15a1408aed6a3f54b7a1fa9dd9efa7e1.png",
   "descripcion": "Yuzu early- Funciones principales\nEmulación de Nintendo Switch: Corre juegos comerciales y homebrew de la consola.\n\nGráficos mejorados: Soporta resoluciones mayores que la consola original (upscaling).\n\nMultijugador local en línea (LDN): Permite jugar en línea como si fuera multijugador local.\n\nSoporte para mods y cheats: Podés aplicar modificaciones, parches y trucos fácilmente.\n\nCompatibilidad con mandos: Detecta joysticks y permite configurarlos como Joy-Con o Pro Controller.\n\nGuardado automático y estados: Guarda partidas automáticamente o con \"save states\".\n\nShader cache: Acelera los tiempos de carga y mejora el rendimiento visual.\n\nActualizaciones y DLCs: Permite instalar updates y contenido adicional de los juegos.\n\n",
+  "manual": "Primer inicio y configuración\nAbrí Yuzu\n\nEn el primer arranque, te pedirá:\n\nKeys (prod.keys y title.keys): Deben obtenerse desde tu propia consola Switch (por temas legales).\n\nFirmware: También desde tu Switch, o podés usar el instalador de firmware de Yuzu (si tenés los archivos).\n\n👉 Los keys se colocan en la carpeta:\n%appdata%\\yuzu\\keys",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Emulador",
+      "url": "mario"
+    }
+  ]
+},
+{
+  "titulo": "Sudachi",
+  "imagen": "https://cdn2.steamgriddb.com/grid/02adba1673a1b9756216a505a3381a76.png",
+  "descripcion": "Sudachi- Funciones principales\nEmulación de Nintendo Switch: Corre juegos comerciales y homebrew de la consola.\n\nGráficos mejorados: Soporta resoluciones mayores que la consola original (upscaling).\n\nMultijugador local en línea (LDN): Permite jugar en línea como si fuera multijugador local.\n\nSoporte para mods y cheats: Podés aplicar modificaciones, parches y trucos fácilmente.\n\nCompatibilidad con mandos: Detecta joysticks y permite configurarlos como Joy-Con o Pro Controller.\n\nGuardado automático y estados: Guarda partidas automáticamente o con \"save states\".\n\nShader cache: Acelera los tiempos de carga y mejora el rendimiento visual.\n\nActualizaciones y DLCs: Permite instalar updates y contenido adicional de los juegos.\n\n",
   "manual": "Primer inicio y configuración\nAbrí Yuzu\n\nEn el primer arranque, te pedirá:\n\nKeys (prod.keys y title.keys): Deben obtenerse desde tu propia consola Switch (por temas legales).\n\nFirmware: También desde tu Switch, o podés usar el instalador de firmware de Yuzu (si tenés los archivos).\n\n👉 Los keys se colocan en la carpeta:\n%appdata%\\yuzu\\keys",
   "categoria": "Emulaters",
   "descargas": [

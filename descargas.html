@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Historial de Descargas</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+        }
+
+        .download-item {
+            background: #2c2c2c;
+            border: 1px solid #444;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .progress-bar {
+            background: #444;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+
+        .progress-bar-inner {
+            background: #32a6ff;
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .controls {
+            margin-top: 10px;
+        }
+
+        .controls button {
+            background: #3d83ff;
+            border: none;
+            padding: 6px 12px;
+            margin-right: 8px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 30px;
+            background: #2c2c2c;
+            border: 1px solid #444;
+            border-radius: 5px;
+            z-index: 10;
+        }
+
+        .dropdown-menu li {
+            list-style: none;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        .dropdown-menu li:hover {
+            background: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Historial de Descargas</h1>
+
+    <div id="descargas-lista">
+        <!-- Las descargas aparecerán aquí dinámicamente -->
+    </div>
+
+    <script>
+        // Simular descargas completadas
+        const downloads = [
+            { id: 1, name: 'Ejemplo1.zip', path: 'C:/Users/tu_usuario/Downloads/Ejemplo1.zip' },
+            { id: 2, name: 'Ejemplo2.mp4', path: 'C:/Users/tu_usuario/Downloads/Ejemplo2.mp4' }
+        ];
+
+        downloads.forEach(descarga => {
+            const el = document.createElement('div');
+            el.className = 'download-item';
+            el.innerHTML = \`
+        <strong>\${descarga.name}</strong>
+        <div class="progress-bar"><div class="progress-bar-inner" style="width:100%"></div></div>
+        <div class="controls">
+          <button onclick="openFile('\${descarga.path}')">Abrir</button>
+          <button onclick="showInFolder('\${descarga.path}')">Ubicación</button>
+          <button onclick="eliminar(this)">Borrar</button>
+        </div>
+        <div class="dropdown" onclick="toggleDropdown(this)">⋮</div>
+        <ul class="dropdown-menu">
+          <li onclick="openFile('\${descarga.path}')">Ejecutar</li>
+          <li onclick="showInFolder('\${descarga.path}')">Ubicación</li>
+          <li onclick="eliminar(this.parentNode.parentNode)">Borrar</li>
+        </ul>
+      \`;
+      document.getElementById('descargas-lista').appendChild(el);
+    });
+
+    function toggleDropdown(el) {
+      const menu = el.nextElementSibling;
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function eliminar(el) {
+      el.remove();
+    }
+
+    function openFile(path) {
+      window.electronAPI.openFile(path);
+    }
+
+    function showInFolder(path) {
+      window.electronAPI.openFolder(path);
+    }
+    </script>
+</body>
+
+</html>

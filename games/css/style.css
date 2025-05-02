@@ -53,10 +53,12 @@
      justify-content: center;
      align-items: center;
      flex-direction: column;
-     padding: 2em;
+     /* padding: 2em; */
      width: 100%;
      height: 100vh;
      overflow: hidden;
+    user-select: none;  /* Desactiva la selección de texto */
+
  }
 body {
     margin: 0;
@@ -221,15 +223,15 @@ body {
 
  .app {
      background-color: var(--theme-bg-color);
-     max-width: 1250px;
-     max-height: 860px;
-     height: 90vh;
+     /* max-width: 1250px;
+     max-height: 860px; */
+     height: 100%;
      display: flex;
      flex-direction: column;
      overflow: hidden;
      position: relative;
      width: 100%;
-     border-radius: 14px;
+     /* border-radius: 14px; */
      backdrop-filter: blur(20px);
      -webkit-backdrop-filter: blur(20px);
      font-size: 15px;
@@ -245,6 +247,10 @@ body {
      border-bottom: 1px solid var(--border-color);
      padding: 0 30px;
      white-space: nowrap;
+         -webkit-app-region: drag; /* Hacer que esta área sea arrastrable */
+
+     
+     
  }
 
  @media screen and (max-width: 480px) {
@@ -302,10 +308,8 @@ body {
  .menu-circle {
      width: 15px;
      height: 15px;
-     background-color: #f96057;
-     border-radius: 50%;
-     box-shadow: 24px 0 0 0 #f8ce52, 48px 0 0 0 #5fcf65;
-     margin-right: 195px;
+    
+     margin-right: 110px;
      flex-shrink: 0;
  }
 
@@ -520,6 +524,7 @@ body {
      border-bottom: 1px solid var(--border-color);
      height: 58px;
      flex-shrink: 0;
+     z-index: 10;
  }
 
  .main-header .header-menu {
@@ -912,7 +917,7 @@ body {
  }
 
  .pop-up__subtitle a {
-     color: var(--theme-color);
+text-decoration: none;
  }
 
  .content-button-wrapper .content-button.status-button.open.close {
@@ -1059,3 +1064,150 @@ body {
      background: var(--scrollbar-bg);
      border-radius: 10px;
  }
+
+ /* estilos y contenedor después de que la ventana carga */
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+:root {
+    font-family: "Inter";
+    --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
+    --color: #32a6ff;
+}
+.noti {
+    display: flex;
+    flex-direction: column;
+    isolation: isolate;
+    position: relative;
+    width: 300px;
+    height: 110px;
+    background: #80808041;
+    border-radius: 1rem;
+    overflow: hidden;
+    color: white;
+}
+.noti:before {
+    position: absolute;
+    content: "";
+    inset: 0.0625rem;
+    border-radius: 0.9375rem;
+    background: var(--popup-bg);
+    z-index: 2;
+}
+.noti:after {
+    position: absolute;
+    content: "";
+    width: 0.25rem;
+    inset: 0.65rem auto 0.65rem 0.5rem;
+    border-radius: 0.125rem;
+    background: var(--gradient);
+    transition: transform 300ms ease;
+    z-index: 4;
+}
+.noti:hover:after {
+    transform: translateX(0.15rem);
+}
+.notititle {
+    color: var(--color);
+    padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: transform 300ms ease;
+    z-index: 5;
+}
+.noti:hover .notititle {
+    transform: translateX(0.15rem);
+}
+.descarBu {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.descarBu:hover {
+    scale: 1.2;
+}
+.notibody {
+    color: #808080;
+    padding: 0 1.25rem;
+    transition: transform 300ms ease;
+    z-index: 5;
+    font-size: 0.9rem;
+}
+.noti:hover .notibody {
+    transform: translateX(0.25rem);
+}
+.fade-out {
+    opacity: 0 !important;
+    transition: opacity 0.8s ease;
+}
+.notiglow, .notiborderglow {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle closest-side at center, white, transparent);
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+.notiglow { z-index: 3; }
+.notiborderglow { z-index: 1; }
+.noti:hover .notiglow {opacity: 0.1;}
+.noti:hover .notiborderglow {opacity: 0.1;
+}
+#btn-minimize,#btn-maxi,#btn-close,.header-menu,.search-bar,.notification,.notification.card,.profile-menu{
+        -webkit-app-region: no-drag; /* Evitar que el botón interfiera con el arrastre */
+
+}
+#btn-minimize{
+    background: #5fcf65;
+    border: none;
+    border-radius: 60px;
+    width: 18px;
+    height: 18px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+}
+#btn-maxi{
+    background: #f8ce52;
+    border: none;
+    border-radius: 60px;
+    width: 18px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+    height: 18px;
+}
+#btn-close{
+    background: #f96057;
+    border: none;
+    border-radius: 60px;
+    width: 18px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+    height: 18px;
+}
+#btn-minimize:hover,#btn-maxi:hover,#btn-close:hover{
+    scale: .9;
+}   
+.download-entry {
+    background: #7171712e;
+    padding: 1px 20px 20px 20px;
+    border-radius: 10px;
+    margin: 0 0 15px 0;
+}
+.download-entry button {
+    background: no-repeat;
+    border: double;
+    color: #767676;
+    cursor: pointer;
+    border-radius: 25px;
+    border-block-width: 1px;
+    margin: 0 10px 0 0;
+}
+
+button.btn-xd {
+    border: none;
+    margin: 0;
+}
+.download-entry p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

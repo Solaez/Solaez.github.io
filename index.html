@@ -24,8 +24,11 @@
         </svg>
     </div>
     <div class="app">
-        <div class="header">
-            <div class="menu-circle"></div>
+        <div class="header" id="drag-area" >
+            <button id="btn-close"></button>
+            <button id="btn-maxi"></button>
+            <button  id="btn-minimize"></button>
+            <div class="menu-circle" ></div>
             <div class="header-menu">
                 <a class="menu-link is-active" href="#">Online</a>
                 <a class="menu-link notify" href="#">Sin conexion</a>
@@ -33,7 +36,19 @@
             <div class="search-bar">
                 <input type="text" id="search-input"  placeholder="Buscar...">
             </div>
+            
             <div class="header-profile">
+
+                <div class="notification" id="download-notification">
+                    <span class="notification-number">0</span>
+                    <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-download">
+                        <path d="M21 18v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                </div>
+
                 <div class="notification" id="notification">
                     <span class="notification-number">1</span>
                     <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -41,6 +56,8 @@
                         <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"></path>
                     </svg>
                 </div>
+                
+                
                 <div class="card" id="card" style="display: none;">
                     <div class="messages">
                         <div class="message" >
@@ -64,10 +81,9 @@
                             alt="user">
                     </div>
                     <div class="dropdown-menu" id="dropdownMenu">
-                        <p class="user-name">Solaez</p>
-                        <a href="#">Cuenta</a>
-                        <a href="#">Configuración *</a>
-                        <a href="#">Cerrar sesión</a>
+                        <a href="#">Iniciar sesión</a>
+                        <a href="#">Configuración</a>
+                        <a href="#">Cerrar</a>
                     </div>
                 </div>
 
@@ -79,7 +95,7 @@
                 <div class="side-wrapper">
                     <div class="side-title">Apps</div>
                     <div class="side-menu" >
-                        <a href="#" class="categoria-link" data-categoria="todos">
+                        <a href="#" class="categoria-link volver-btn" data-categoria="todos">
                             <svg viewBox="0 0 512 512">
                                 <g xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                                     <path
@@ -94,7 +110,7 @@
                             </svg>
                             All Programs
                         </a>
-                        <a href="#" class="categoria-link" data-categoria="Updates">
+                        <a href="#" class="categoria-link volver-btn" data-categoria="Updates">
                             <svg viewBox="0 0 488.932 488.932" fill="currentColor">
                                 <path
                                     d="M243.158 61.361v-57.6c0-3.2 4-4.9 6.7-2.9l118.4 87c2 1.5 2 4.4 0 5.9l-118.4 87c-2.7 2-6.7.2-6.7-2.9v-57.5c-87.8 1.4-158.1 76-152.1 165.4 5.1 76.8 67.7 139.1 144.5 144 81.4 5.2 150.6-53 163-129.9 2.3-14.3 14.7-24.7 29.2-24.7 17.9 0 31.8 15.9 29 33.5-17.4 109.7-118.5 192-235.7 178.9-98-11-176.7-89.4-187.8-187.4-14.7-128.2 84.9-237.4 209.9-238.8z">
@@ -103,7 +119,7 @@
                             Updates
                             <span class="notification-number updates">0</span>
                         </a>
-                        <a href="#" class="categoria-link" data-categoria="New">
+                        <a href="#" class="categoria-link volver-btn" data-categoria="New">
                             <svg viewBox="0 0 488.932 488.932" fill="currentColor">
                                 <path
                                     d="M243.158 61.361v-57.6c0-3.2 4-4.9 6.7-2.9l118.4 87c2 1.5 2 4.4 0 5.9l-118.4 87c-2.7 2-6.7.2-6.7-2.9v-57.5c-87.8 1.4-158.1 76-152.1 165.4 5.1 76.8 67.7 139.1 144.5 144 81.4 5.2 150.6-53 163-129.9 2.3-14.3 14.7-24.7 29.2-24.7 17.9 0 31.8 15.9 29 33.5-17.4 109.7-118.5 192-235.7 178.9-98-11-176.7-89.4-187.8-187.4-14.7-128.2 84.9-237.4 209.9-238.8z">
@@ -117,7 +133,7 @@
                 <div class="side-wrapper">
                     <div class="side-title">Categories</div>
                     <div class="side-menu">
-                        <a href="#" class="categoria-link" data-categoria="Programs">
+                        <a href="#" class="categoria-link volver-btn" data-categoria="Programs">
                             <svg viewBox="0 0 488.455 488.455" fill="currentColor">
                                 <path
                                     d="M287.396 216.317c23.845 23.845 23.845 62.505 0 86.35s-62.505 23.845-86.35 0-23.845-62.505 0-86.35 62.505-23.845 86.35 0">
@@ -128,7 +144,7 @@
                             </svg>
                             Programs
                         </a>
-                        <a href="#" class="categoria-link" data-categoria="Games">
+                        <a href="#"  class="categoria-link volver-btn" data-categoria="Games" id="restore-btn">
                             <svg viewBox="0 0 512 512" fill="currentColor">
                                 <path
                                     d="M0 331v112.295a14.996 14.996 0 007.559 13.023L106 512V391L0 331zM136 391v121l105-60V331zM271 331v121l105 60V391zM406 391v121l98.441-55.682A14.995 14.995 0 00512 443.296V331l-106 60zM391 241l-115.754 57.876L391 365.026l116.754-66.15zM262.709 1.583a15.006 15.006 0 00-13.418 0L140.246 57.876 256 124.026l115.754-66.151L262.709 1.583zM136 90v124.955l105 52.5V150zM121 241L4.246 298.876 121 365.026l115.754-66.15zM271 150v117.455l105-52.5V90z">
@@ -136,7 +152,7 @@
                             </svg>
                             Games
                         </a>
-                        <a href="#" class="categoria-link" data-categoria="Emulaters">
+                        <a href="#" class="categoria-link volver-btn" data-categoria="Emulaters">
                             <svg viewBox="0 0 58 58" fill="currentColor">
                                 <path
                                     d="M57 6H1a1 1 0 00-1 1v44a1 1 0 001 1h56a1 1 0 001-1V7a1 1 0 00-1-1zM10 50H2v-9h8v9zm0-11H2v-9h8v9zm0-11H2v-9h8v9zm0-11H2V8h8v9zm26.537 12.844l-11 7a1.007 1.007 0 01-1.018.033A1.001 1.001 0 0124 36V22a1.001 1.001 0 011.538-.844l11 7a1.003 1.003 0 01-.001 1.688zM56 50h-8v-9h8v9zm0-11h-8v-9h8v9zm0-11h-8v-9h8v9zm0-11h-8V8h8v9z">
@@ -144,7 +160,7 @@
                             </svg>
                             Emulaters
                         </a>
-                        <a href="#" class="categoria-link" data-categoria="Proyects">
+                        <a href="#"  class="categoria-link volver-btn" data-categoria="Proyects">
                             <svg viewBox="0 0 512 512" fill="currentColor">
                                 <path
                                     d="M499.377 46.402c-8.014-8.006-18.662-12.485-29.985-12.613a41.13 41.13 0 00-.496-.003c-11.142 0-21.698 4.229-29.771 11.945L198.872 275.458c25.716 6.555 47.683 23.057 62.044 47.196a113.544 113.544 0 0110.453 23.179L500.06 106.661C507.759 98.604 512 88.031 512 76.89c0-11.507-4.478-22.33-12.623-30.488zM176.588 302.344a86.035 86.035 0 00-3.626-.076c-20.273 0-40.381 7.05-56.784 18.851-19.772 14.225-27.656 34.656-42.174 53.27C55.8 397.728 27.795 409.14 0 416.923c16.187 42.781 76.32 60.297 115.752 61.24 1.416.034 2.839.051 4.273.051 44.646 0 97.233-16.594 118.755-60.522 23.628-48.224-5.496-112.975-62.192-115.348z">
@@ -153,12 +169,14 @@
                             Proyects
                         </a>
                     </div>
+                    
                 </div>
                 
             </div>
+
             <div class="main-container">
                 <div class="main-header">
-                    <a class="menu-link-main volver-btn" href="#">Volver</a>
+                    <a class="menu-link-main volver-btn categoria-link" href="#">Volver</a>
                     <div class="header-menu" >
                         <a class="main-header-link is-active" href="#">Escritorio</a>
                         <a class="main-header-link" href="#">Mods</a>
@@ -227,128 +245,13 @@
                         </div>
                         <img class="content-wrapper-img" src="https://assets.codepen.io/3364143/glass.png" alt="">
                     </div>
-                    <div class="content-section" style="display: none;">
-                        <div class="content-section-title">Installed</div>
-                        <ul>
-                            <li class="adobe-product">
-                                <div class="products">
-                                    <svg viewBox="0 0 52 52" style="border:1px solid #3291b8">
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M40.824 52H11.176C5.003 52 0 46.997 0 40.824V11.176C0 5.003 5.003 0 11.176 0h29.649C46.997 0 52 5.003 52 11.176v29.649C52 46.997 46.997 52 40.824 52z"
-                                                fill="#061e26" data-original="#393687"></path>
-                                            <path
-                                                d="M12.16 39H9.28V11h9.64c2.613 0 4.553.813 5.82 2.44 1.266 1.626 1.9 3.76 1.9 6.399 0 .934-.027 1.74-.08 2.42-.054.681-.22 1.534-.5 2.561-.28 1.026-.66 1.866-1.14 2.52-.48.654-1.213 1.227-2.2 1.72-.987.494-2.16.74-3.52.74h-7.04V39zm0-12h6.68c.96 0 1.773-.187 2.44-.56.666-.374 1.153-.773 1.46-1.2.306-.427.546-1.04.72-1.84.173-.801.267-1.4.28-1.801.013-.399.02-.973.02-1.72 0-4.053-1.694-6.08-5.08-6.08h-6.52V27zM29.48 33.92l2.8-.12c.106.987.6 1.754 1.48 2.3.88.547 1.893.82 3.04.82s2.14-.26 2.98-.78c.84-.52 1.26-1.266 1.26-2.239s-.36-1.747-1.08-2.32c-.72-.573-1.6-1.026-2.64-1.36-1.04-.333-2.086-.686-3.14-1.06a7.36 7.36 0 01-2.78-1.76c-.987-.934-1.48-2.073-1.48-3.42s.54-2.601 1.62-3.761 2.833-1.739 5.26-1.739c.854 0 1.653.1 2.4.3.746.2 1.28.394 1.6.58l.48.279-.92 2.521c-.854-.666-1.974-1-3.36-1-1.387 0-2.42.26-3.1.78-.68.52-1.02 1.18-1.02 1.979 0 .88.426 1.574 1.28 2.08.853.507 1.813.934 2.88 1.28 1.066.347 2.126.733 3.18 1.16 1.053.427 1.946 1.094 2.68 2s1.1 2.106 1.1 3.6c0 1.494-.6 2.794-1.8 3.9-1.2 1.106-2.954 1.66-5.26 1.66-2.307 0-4.114-.547-5.42-1.64-1.307-1.093-1.987-2.44-2.04-4.04z"
-                                                fill="#c1dbe6" data-original="#89d3ff"></path>
-                                        </g>
-                                    </svg>
-                                    Photoshop
-                                </div>
-                                <span class="status">
-                                    <span class="status-circle green"></span>
-                                    Updated</span>
-                                <div class="button-wrapper">
-                                    <button class="content-button status-button open">Open</button>
-                                    <div class="menu">
-                                        <button class="dropdown">
-                                            <ul>
-                                                <li><a href="#">Go to Discover</a></li>
-                                                <li><a href="#">Learn more</a></li>
-                                                <li><a href="#">Uninstall</a></li>
-                                            </ul>
-                                        </button>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="adobe-product">
-                                <div class="products">
-                                    <svg viewBox="0 0 52 52" style="border:1px solid #b65a0b">
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M40.824 52H11.176C5.003 52 0 46.997 0 40.824V11.176C0 5.003 5.003 0 11.176 0h29.649C46.997 0 52 5.003 52 11.176v29.649C52 46.997 46.997 52 40.824 52z"
-                                                fill="#261400" data-original="#6d4c13"></path>
-                                            <path
-                                                d="M30.68 39h-3.24l-2.76-9.04h-8.32L13.72 39H10.6l8.24-28h3.32l8.52 28zm-6.72-12l-3.48-11.36L17.12 27h6.84zM37.479 12.24c0 .453-.16.84-.48 1.16-.32.319-.7.479-1.14.479-.44 0-.827-.166-1.16-.5-.334-.333-.5-.713-.5-1.14s.166-.807.5-1.141c.333-.333.72-.5 1.16-.5.44 0 .82.16 1.14.48.321.322.48.709.48 1.162zM37.24 39h-2.88V18.96h2.88V39z"
-                                                fill="#e6d2c0" data-original="#ffbd2e"></path>
-                                        </g>
-                                    </svg>
-                                    Illustrator
-                                </div>
 
-                                <span class="status">
-                                    <span class="status-circle"></span>
-                                    Update Available</span>
-                                <div class="button-wrapper">
-                                    <button class="content-button status-button">Update this app</button>
-                                    <div class="pop-up">
-                                        <div class="pop-up__title">Update This App
-                                            <svg class="close" width="24" height="24" fill="none" stroke="currentColor"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                <circle cx="12" cy="12" r="10"></circle>
-                                                <path d="M15 9l-6 6M9 9l6 6"></path>
-                                            </svg>
-                                        </div>
-                                        <div class="pop-up__subtitle">Adjust your selections for advanced options as
-                                            desired before continuing. <a href="#">Learn more</a></div>
-                                        <div class="checkbox-wrapper">
-                                            <input type="checkbox" id="check1" class="checkbox">
-                                            <label for="check1">Import previous settings and preferences</label>
-                                        </div>
-                                        <div class="checkbox-wrapper">
-                                            <input type="checkbox" id="check2" class="checkbox">
-                                            <label for="check2">Remove old versions</label>
-                                        </div>
-                                        <div class="content-button-wrapper">
-                                            <button class="content-button status-button open close">Cancel</button>
-                                            <button class="content-button status-button">Continue</button>
-                                        </div>
-                                    </div>
-                                    <div class="menu">
-                                        <button class="dropdown">
-                                            <ul>
-                                                <li><a href="#">Go to Discover</a></li>
-                                                <li><a href="#">Learn more</a></li>
-                                                <li><a href="#">Uninstall</a></li>
-                                            </ul>
-                                        </button>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="adobe-product">
-                                <div class="products">
-                                    <svg viewBox="0 0 52 52" style="border: 1px solid #C75DEB">
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M40.824 52H11.176C5.003 52 0 46.997 0 40.824V11.176C0 5.003 5.003 0 11.176 0h29.649C46.997 0 52 5.003 52 11.176v29.649C52 46.997 46.997 52 40.824 52z"
-                                                fill="#3a3375" data-original="#3a3375"></path>
-                                            <path
-                                                d="M27.44 39H24.2l-2.76-9.04h-8.32L10.48 39H7.36l8.24-28h3.32l8.52 28zm-6.72-12l-3.48-11.36L13.88 27h6.84zM31.48 33.48c0 2.267 1.333 3.399 4 3.399 1.653 0 3.466-.546 5.44-1.64L42 37.6c-2.054 1.254-4.2 1.881-6.44 1.881-4.64 0-6.96-1.946-6.96-5.841v-8.2c0-2.16.673-3.841 2.02-5.04 1.346-1.2 3.126-1.801 5.34-1.801s3.94.594 5.18 1.78c1.24 1.187 1.86 2.834 1.86 4.94V30.8l-11.52.6v2.08zm8.6-5.24v-3.08c0-1.413-.44-2.42-1.32-3.021-.88-.6-1.907-.899-3.08-.899-1.174 0-2.167.359-2.98 1.08-.814.72-1.22 1.773-1.22 3.16v3.199l8.6-.439z"
-                                                fill="#e4d1eb" data-original="#e7adfb"></path>
-                                        </g>
-                                    </svg>
-                                    After Effects
-                                </div>
-                                <span class="status">
-                                    <span class="status-circle green"></span>
-                                    Updated</span>
-                                <div class="button-wrapper">
-                                    <button class="content-button status-button open">Open</button>
-                                    <div class="menu">
-                                        <button class="dropdown">
-                                            <ul>
-                                                <li><a href="#">Go to Discover</a></li>
-                                                <li><a href="#">Learn more</a></li>
-                                                <li><a href="#">Uninstall</a></li>
-                                            </ul>
-                                        </button>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                    <div id="download-history" style="display: none;">
+                        <h3>Gestionador de Descargas</h3>
+                        <div id="history-content"></div>
                     </div>
 
-
-                    <div class="content-section">
+                    <div class="content-section" id="main-content">
 
                     <div class="apps-card" id="grid-juegos"></div>
 
@@ -395,6 +298,8 @@
         </div>
     </div>
    
+
+    
 </body>
 </html>
 
@@ -453,16 +358,16 @@
     }
 
     .ext-card img {
-        width: 270px;
+        width: 350px;
         border-radius: 10px;
-        height: 400px;
+        height: 530px;
         object-fit: cover;
     }
 
     .conte-card {
         flex: 1;
             
-        max-height: 400px;
+        max-height: 550px;
         overflow: auto;
     }
 
@@ -727,5 +632,158 @@
 }
 .notification{
     cursor: pointer;
+    margin: 0 0 0 20px;
 }
 </style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Selecciona todos los enlaces <a>
+        const enlaces = document.querySelectorAll("a");
+
+        enlaces.forEach((a) => {
+            const href = a.getAttribute("href");
+            if (href && href.startsWith("magnet:")) {
+                a.addEventListener("click", (e) => {
+                    e.preventDefault(); // Evita la acción por defecto
+                    window.api.iniciarDescarga(href);
+                });
+            }
+        });
+
+        // Escucha el progreso
+        window.api.onProgreso((linea) => {
+            document.getElementById("progreso-texto").textContent += linea + "\n";
+
+            const match = linea.match(/(\d{1,3})\s*%/);
+            if (match) {
+                const porcentaje = parseInt(match[1]);
+                const barra = document.getElementById("barra-progreso");
+                barra.style.width = porcentaje + "%";
+                barra.textContent = porcentaje + "%";
+            }
+        });
+    });
+</script>
+
+<!-- funcion de historial de descargas -->
+<script>
+    document.getElementById('download-notification').addEventListener('click', () => {
+            // Ocultar la sección principal de contenido
+            document.querySelector('.content-section').style.display = 'none';
+
+            // Mostrar el historial de descargas
+            document.getElementById('download-history').style.display = 'block';
+        });
+
+        document.querySelectorAll('.categoria-link').forEach(button => {
+                button.addEventListener('click', () => {
+                    // Restaurar la vista inicial
+                    document.querySelector('.content-section').style.display = 'block';
+
+                    // Ocultar el historial de descargas
+                    document.getElementById('download-history').style.display = 'none';
+                });
+            });
+
+
+        // Función para agregar una nueva descarga al historial
+        function addToDownloadHistory(filename, state, downloadId, isInProgress = false) {
+                const historyContent = document.getElementById('history-content');
+                const downloadEntry = document.createElement('div');
+                downloadEntry.className = 'download-entry';
+                downloadEntry.dataset.id = downloadId;
+
+                downloadEntry.innerHTML = `
+        <p><strong>${filename}</strong><span class="status-text">${state}</span></p>
+        <div class="progress-wrapper" style="display: ${isInProgress ? 'block' : 'none'};">
+            <div style="height: 6px; background: #444; border-radius: 5px; overflow: hidden; margin-top: 5px;">
+                <div class="progress-bar" style="height: 100%; width: 0%; background: #32a6ff;"></div>
+            </div>
+            <div class="progress-text" style="font-size: 12px; text-align: right;">0%</div>
+            <div class="progress-error" style="color: red; font-size: 12px; display: none;"></div>
+        </div>
+        <div class="controls" style="margin-top: 5px;">
+            <button class="btn-xd" onclick="window.electronAPI.togglePause('${downloadId}')">⏸️</button>
+            <button class="btn-xd" onclick="window.electronAPI.cancelDownload('${downloadId}')">❌</button>
+        </div>
+    `;
+                historyContent.appendChild(downloadEntry);
+            }
+
+
+        // Función para abrir un archivo descargado
+        function openDownload(downloadId) {
+            // Llamar a la función para abrir el archivo (implementada en el código de Electron)
+            window.electronAPI.openFile(downloadId);
+        }
+
+        // Función para eliminar un historial de descarga
+        function removeDownload(downloadId) {
+            // Aquí podrías eliminar la entrada visual o cancelar el archivo si está en progreso
+            const entry = document.querySelector(`#download-history .download-entry[data-id='${downloadId}']`);
+            if (entry) entry.remove();
+        }
+
+</script>
+<!-- fin -->
+
+<!-- contador de descargas -->
+ <script>
+    function updateDownloadCount(count) {
+        const badge = document.querySelector('.notification-number');
+        if (badge) {
+            badge.textContent = count;
+            badge.style.display = count > 0 ? '' : '';
+        }
+    }
+</script>
+
+ <!-- fin -->
+
+<script>
+    document.getElementById('btn-minimize').addEventListener('click', () => {
+        window.electronAPI.minimizeWindow();
+    });
+
+    document.getElementById('btn-maxi').addEventListener('click', () => {
+        window.electronAPI.toggleMaximize();
+    });
+
+    document.getElementById('btn-close').addEventListener('click', () => {
+        window.electronAPI.closeWindow();
+    });
+</script>
+
+
+<script>
+    const dragArea = document.getElementById('drag-area');
+
+    dragArea.addEventListener('mousedown', (event) => {
+        const { x, y } = mainWindow.getBounds(); // Posición actual de la ventana
+
+        const offsetX = event.clientX;
+        const offsetY = event.clientY;
+
+        const onMouseMove = (moveEvent) => {
+            const newX = x + moveEvent.clientX - offsetX;
+            const newY = y + moveEvent.clientY - offsetY;
+            mainWindow.setBounds({ x: newX, y: newY });
+        };
+
+        const onMouseUp = () => {
+            document.removeEventListener('mousemove', onMouseMove);
+            document.removeEventListener('mouseup', onMouseUp);
+        };
+
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', onMouseUp);
+    });
+</script>
+<button id="btn-devtools">Abrir DevTools</button>
+<script>
+    document.getElementById('btn-devtools').addEventListener('click', () => {
+            window.electronAPI.openDevTools();
+        });
+
+</script>
