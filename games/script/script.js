@@ -156,10 +156,8 @@ document.addEventListener('DOMContentLoaded', () => {
             card.classList.add('app-card');
             card.innerHTML = `
                 <img src="${juego.imagen}" alt="${juego.titulo}">
-                <div class="app-card__subtext">${juego.titulo}</div>
-                <div class="app-card-buttons">
-                    <button class="content-button" data-index="${index}">Detalles</button>
-                </div>
+                <div class="app-card__subtext"><div class="card-titles"> ${juego.titulo} </div><button class="content-button" data-index="${index}">Detalles</button></div>
+                    <p>${juego.categoria} </p>
             `;
             grid.appendChild(card);
         });
@@ -197,12 +195,23 @@ document.addEventListener('click', function (e) {
 
         descargas.forEach(d => {
             const btn = document.createElement('a');
-            btn.href = d.url;
             btn.textContent = d.nombre;
             btn.className = 'content-button close';
-            btn.target = '_blank';
             btn.style.display = 'block';
             btn.style.marginBottom = '10px';
+
+          if (d.url.startsWith('magnet:')) {
+    btn.href = '#';
+    btn.onclick = () => {
+        window.electronAPI.descargarMagnet(d.url);
+        popup.classList.remove('visible');
+    };
+}
+else {
+                btn.href = d.url;
+                btn.target = '_blank';
+            }
+
             optionsContainer.appendChild(btn);
         });
 
