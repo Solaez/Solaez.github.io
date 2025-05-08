@@ -52,10 +52,10 @@ $(document).click(function (e) {
 });
 
 // ========== MODO CLARO/OSCURO ==========
-const toggleButton = document.querySelector('.dark-light');
-toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
-});
+// const toggleButton = document.querySelector('.dark-light');
+// toggleButton.addEventListener('click', () => {
+//     document.body.classList.toggle('light-mode');
+// });
 
 // ========== SEARCH BAR EXPAND ==========
 $(".search-bar input")
@@ -335,3 +335,7 @@ document.addEventListener('click', function (e) {
   });
 
 
+document.getElementById("theme").addEventListener("change", (event) => {
+  const selectedTheme = event.target.value;
+  window.electronAPI.changeTheme(selectedTheme); // Notifica al proceso principal
+});
