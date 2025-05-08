@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Test Mando Automático</title>
+  <style>
+    body {
+      background: #1e1e1e;
+      color: #fff;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .mando.changing {
+    opacity: 0.5;
+    transform: scale(0.98);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+    .mando {
+      height: 500px;
+      width: 800px;
+      background-image: url('/xbox.png');
+      /* URL de la imagen */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    #status {
+      margin-bottom: 20px;
+    }
+
+
+    .stick {
+      width: 30px;
+      height: 30px;
+      background: #4caf50;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .labels {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin: 311px 180px 3px -200px;   
+    }
+
+    .axis-values {
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .buttons-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 60px);
+      gap: 10px;
+      justify-content: center;
+      position: absolute;
+      bottom: 20px;
+    }
+.button {
+    width: 30px;
+    height: 30px;
+    background: #333;
+    border: 3px solid #777;
+    border-radius: 50px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    transition: background 0.2s, transform 0.1s;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}
+
+    .button.active {
+      background: #4caf50;
+      transform: scale(1.1);
+    }
+    .button-5.active {
+      background: #4caf50;
+      transform: scale(1.1)  rotateZ(-13deg);
+    }
+    .button-6.active {
+      background: #4caf50;
+      transform: scale(1.1)  rotateZ(13deg);
+    }
+
+    .joystick-area {
+    display: flex;
+    gap: 131px;
+    margin-bottom: 20px;
+}
+/*botones de xbox*/
+.joystick-container {
+    width: 101px;
+    height: 101px;
+    background-color: #2b2b2b;
+    border: 3px solid #444;
+    border-radius: 50%;
+    position: relative;
+    left: 195px;
+    top: 9px;
+}
+.button-1 {
+    top: -158px;
+    left: 362px;
+}
+
+.button-2 {
+    top: -206px;
+    left: 341px;
+}
+
+.button-3 {
+    top: -210px;
+    left: 171px;
+}
+
+.button-4 {
+    top: -259px;
+    left: 152px;
+}
+
+
+.joystick-container.l {
+    left: 141px;
+    top: -104px;
+}
+
+.button-6 {
+    top: -310px;
+    left: -32px;
+    height: 0px;
+    width: 112px;
+    transform: rotateZ(13deg);
+}
+
+.button-10 {
+    top: -8px;
+}
+
+.button-17 {
+    top: -396px;
+    left: -111px;
+    scale: 1.6;
+    background: #008f1382;
+    border: 2px solid #777;
+}
+
+.button-12 {
+    top: -150px;
+    left: -82px;
+}
+
+.button-11 {
+    top: -266px;
+    left: -304px;
+}
+
+.button-13 {
+    top: -238px;
+    left: 70px;
+    border-radius: 50% 50%  0px 0px / 10px 10px 0px 0px;
+    padding: 4px;
+}
+
+.button-14 {
+    top: -154px;
+    border-radius: 0 0 50% 50% / 0 0 10px 10px;
+    padding: 4px;
+}
+
+.button-15 {
+    top: -195px;
+    left: -110px;
+    border-radius: 50% 0 0 56% / 50px 0 0 50px;
+    padding: 3px;
+}
+
+.button-16 {
+    top: -195px;
+    left: -98px;
+    border-radius: 0 50% 50% 0 / 0 50px 50px 0;
+    padding: 3px;
+}
+
+.button-9 {
+    top: -267px;
+    left: -26px;
+    scale: .7;
+}
+
+.button-10 {
+    top: -267px;
+    scale: .7;
+    left: 12px;
+}
+
+.button-18 {
+    top: -279px;
+    left: -190px;
+    width: 45px;
+}
+
+.button-5 {
+    top: -308px;
+    left: -344px;
+    height: 0px;
+    width: 112px;
+    transform: rotateZ(-13deg);
+}
+
+.button-7 {
+    top: -356px;
+    left: -152px;
+}
+
+.button-8 {
+    top: -362px;
+    left: 410px;
+}
+/*fin botones de xbox*/
+/*posision de mando de ps4*/
+
+
+   .ps4-style  .button.active {
+      background: #0011fa;
+      transform: scale(1.1);
+    }
+   .ps4-style  .button-5.active {
+      transform: scale(1.1)  rotateZ(-10deg);
+    }
+   .ps4-style  .button-6.active {
+      transform: scale(1.1)  rotateZ(10deg);
+    }
+
+.ps4-style .joystick-container {
+    width: 101px;
+    height: 101px;
+    background-color: #2b2b2b;
+    border: 3px solid #444;
+    border-radius: 50%;
+    position: relative;
+    left: 212px;
+    top: 11px;
+}
+.ps4-style .labels {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 229px 180px 3px -200px;   
+}
+.ps4-style .joystick-area {
+    display: flex;
+    gap: 131px;
+    margin-bottom: 20px;
+}
+.ps4-style .button-1 {
+    top: -30px;
+    left: 399px;
+}
+.ps4-style .button-2 {
+    top: -84px;
+    left: 384px;
+}
+.ps4-style .button-3 {
+    top: -85px;
+    left: 204px;
+}
+.ps4-style .button-4 {
+    top: -140px;
+    left: 189px;
+}
+.ps4-style .button-5 {
+    left: -377px;
+    top: -197px;
+    height: 1px;
+    width: 83px;
+    transform: rotateZ(-10deg);
+    border-radius: 190px 190px 0 0 / 125px 127px 75px 0px;
+    font-size: 10px;
+}
+
+.ps4-style .button-6 {
+    top: -197px;
+    left: 23px;
+    height: 1px;
+    width: 83px;
+    transform: rotateZ(10deg);
+    border-radius: 190px 190px 0 0 / 125px 127px 75px 0px;
+    font-size: 10px;
+}
+
+.ps4-style .button-17 {
+    top: -208px;
+    left: -112px;
+    /* width: 28px; */
+}
+
+.ps4-style .button-12 {
+    top: -38px;
+    left: -65px;
+}
+
+.ps4-style .button-11 {
+    top: -38px;
+    left: -231px;
+}
+
+.ps4-style .button-17 {
+    top: -100px;
+    
+    scale: 1;
+    background: #001dc2;
+    border: 2px solid #777;
+}
+
+.ps4-style .button-18 {
+    top: -307px;
+    left: -308px;
+    width: 281px;
+    height: 141px;
+    border-radius: 35px 35px 80px 75px / 40px 40px 170px 170px;
+}
+
+.ps4-style .button-13 {
+    top: -233px;
+    left: -67px;
+    border-radius: 15px 15px  32px 32px / 15px 15px 50px 50px;
+}
+
+.ps4-style .button-14 {
+    top: -160px;
+    left: -136px;
+    border-radius: 30px 30px 15px 15px / 50px 50px 15px 15px;
+}
+
+.ps4-style .button-15 {
+    top: -197px;
+    left: -243px;
+    border-radius: 15px 70px 70px 15px / 15px 50px 50px 15px;
+}
+
+.ps4-style .button-16 {
+    top: -197px;
+    left: -240px;
+    border-radius: 70px 15px 15px 70px / 50px 15px 15px 50px;
+}
+
+.ps4-style .button-10 {
+    top: -218px;
+    left: 141px;
+    width: 10px;
+    transform: rotateZ(7deg);
+    font-size: 6px;
+    scale: 1;
+}
+
+.ps4-style .button-9 {
+    top: -218px;
+    left: -139px;
+    width: 10px;
+    transform: rotateZ(-7deg);
+    font-size: 6px;
+    scale: 1;
+}
+
+.ps4-style .button-7 {
+  top: -264px;
+    left: -161px;
+}
+
+.ps4-style .button-8 {
+   top: -266px;
+    left: 421px;
+}
+/*fin de posicion de mando de ps4*/
+    /* Continúa para el resto de los botones... */
+  </style>
+</head>
+
+<body>
+  <h1>Test de Mando</h1>
+  <p id="status">Conecta un mando y presiona un botón.</p>
+  <div class="mando">
+    <div class="joystick-area">
+      <div class="joystick-container l"></div>
+      <div class="joystick-container"></div>
+
+    </div>
+
+    <div class="labels">
+      <div class="axis-values" id="left-values">
+        <strong>Izquierdo</strong><br />X: 0<br />Y: 0
+      </div>
+      <div class="axis-values" id="right-values">
+        <strong>Derecho</strong><br />X: 0<br />Y: 0
+      </div>
+    </div>
+
+    <div class="buttons-grid" id="buttons-container"></div>
+  </div>
+<script>
+  const ps4Labels = [
+    "⨉", "◯", "◻", "△",
+    "L1", "R1", "L2", "R2",
+    "Share", "Options", "L3", "R3",
+    "▴", "▾", "◂", "▸",
+    "PS", "Touch"
+  ];
+
+  const xboxLabels = [
+    "A", "B", "X", "Y",
+    "LB", "RB", "LT", "RT",
+    "◲", "≡", "LS", "RS",
+    "▴", "▾", "◂", "▸",
+    "•", "—"
+  ];
+
+  const defaultLabels = Array.from({ length: 18 }, (_, i) => i.toString());
+
+  let currentLabels = defaultLabels;
+  const buttonsContainer = document.getElementById("buttons-container");
+
+  // Crear botón de vibración (oculto por defecto)
+  const vibrationButton = document.createElement("button");
+  vibrationButton.textContent = "Vibrar";
+  vibrationButton.style.marginTop = "20px";
+  vibrationButton.style.display = "none";
+  document.body.appendChild(vibrationButton);
+
+  function setButtonLabels(type) {
+      const mando = document.querySelector('.mando');
+
+      mando.classList.add('changing'); // Añade clase de animación
+
+      setTimeout(() => {
+        mando.classList.remove('changing'); // La remueve luego de animar
+      }, 300); // Tiempo igual a la duración de la animación
+
+      mando.classList.remove('ps4-style');
+
+      if (type.includes("Wireless") || type.toLowerCase().includes("playstation")) {
+        currentLabels = ps4Labels;
+        mando.classList.add('ps4-style');
+        mando.style.backgroundImage = "url('/ps4.png')";
+      } else if (type.toLowerCase().includes("xinput") || type.toLowerCase().includes("xbox")) {
+        currentLabels = xboxLabels;
+        mando.style.backgroundImage = "url('/xbox.png')";
+      } else {
+        currentLabels = defaultLabels;
+        mando.style.backgroundImage = "url('/xbox.png')";
+      }
+
+      buttonsContainer.innerHTML = "";
+      for (let i = 0; i < 18; i++) {
+        const btn = document.createElement("div");
+        btn.classList.add("button", `button-${i + 1}`);
+        btn.id = `btn-${i}`;
+        btn.textContent = currentLabels[i] || i;
+        buttonsContainer.appendChild(btn);
+      }
+    }
+
+
+  function updateJoysticks(gp) {
+    const [lx, ly, rx, ry] = gp.axes;
+    const maxMove = 40;
+    const l3Button = document.getElementById('btn-10');
+    const r3Button = document.getElementById('btn-11');
+    if (l3Button) {
+      l3Button.style.transform = `translate(${lx * maxMove}px, ${ly * maxMove}px)`;
+    }
+    if (r3Button) {
+      r3Button.style.transform = `translate(${rx * maxMove}px, ${ry * maxMove}px)`;
+    }
+    document.getElementById("left-values").innerHTML =
+      `<strong>Izquierdo</strong><br>X: ${lx.toFixed(2)}<br>Y: ${ly.toFixed(2)}`;
+    document.getElementById("right-values").innerHTML =
+      `<strong>Derecho</strong><br>X: ${rx.toFixed(2)}<br>Y: ${ry.toFixed(2)}`;
+  }
+
+  function updateButtons(gp) {
+    for (let i = 0; i < 18; i++) {
+      const button = document.getElementById(`btn-${i}`);
+      if (!button) continue;
+      if (gp.buttons[i]?.pressed) {
+        button.classList.add("active");
+      } else {
+        button.classList.remove("active");
+      }
+    }
+  }
+
+  let gamepadIndex = null;
+  let lastGamepadId = null;
+
+  function gameLoop() {
+    const gamepads = navigator.getGamepads();
+    const gp = gamepadIndex !== null ? gamepads[gamepadIndex] : null;
+
+    if (gp) {
+      if (gp.id !== lastGamepadId) {
+        lastGamepadId = gp.id;
+        setButtonLabels(gp.id);
+        document.getElementById("status").textContent = `Mando activo: ${gp.id}`;
+
+        // Mostrar el botón de vibración si es compatible
+        if (gp.vibrationActuator && typeof gp.vibrationActuator.playEffect === "function") {
+          vibrationButton.style.display = "block";
+          vibrationButton.onclick = () => {
+            gp.vibrationActuator.playEffect("dual-rumble", {
+              startDelay: 0,
+              duration: 500,
+              weakMagnitude: 0.75,
+              strongMagnitude: 1.0
+            });
+          };
+        } else {
+          vibrationButton.style.display = "none";
+        }
+      }
+
+      updateJoysticks(gp);
+      updateButtons(gp);
+    }
+
+    requestAnimationFrame(gameLoop);
+  }
+
+  window.addEventListener("gamepadconnected", (e) => {
+    gamepadIndex = e.gamepad.index;
+    const name = e.gamepad.id;
+    document.getElementById("status").textContent = `Mando conectado: ${name}`;
+    setButtonLabels(name);
+  });
+
+  window.addEventListener("gamepaddisconnected", () => {
+    gamepadIndex = null;
+    document.getElementById("status").textContent = "Mando desconectado.";
+    vibrationButton.style.display = "none";
+  });
+
+  requestAnimationFrame(gameLoop);
+</script>
+<button id="vibrate-btn" style="display: none; margin-top: 20px;">Vibrar Mando</button>
+
+</body>
+
+</html>
+<!-- <button id="btn-devtools" >Abrir DevTools</button>
+<script>
+  document.getElementById('btn-devtools').addEventListener('click', () => {
+    window.electronAPI.openDevTools();
+  });
+
+</script> -->

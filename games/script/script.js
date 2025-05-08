@@ -201,13 +201,13 @@ document.addEventListener('click', function (e) {
             btn.style.marginBottom = '10px';
 
           if (d.url.startsWith('magnet:')) {
-    btn.href = '#';
-    btn.onclick = () => {
-        window.electronAPI.descargarMagnet(d.url);
-        popup.classList.remove('visible');
-    };
-}
-else {
+                btn.href = '#';
+                btn.onclick = () => {
+                    window.electronAPI.descargarMagnet(d.url);
+                    popup.classList.remove('visible');
+                };
+            }
+            else {
                 btn.href = d.url;
                 btn.target = '_blank';
             }
@@ -222,3 +222,116 @@ else {
         popup.classList.remove('visible');
     }
 });
+
+// ========== PANTALLA DE CARGA ==========
+ window.addEventListener('load', () => {
+        setTimeout(() => {
+            const loaderBar = document.querySelector('.loader-bar');
+            const logo = document.querySelector('.logo');
+
+            // Desvanece la barra de carga primero
+            loaderBar.style.transition = 'opacity 0.6s ease';
+            loaderBar.style.opacity = '0';
+
+            // Luego de 600ms, explota el logo
+            setTimeout(() => {
+                logo.classList.add('explode');
+
+                // Luego de la explosión, ocultamos todo el preloader
+                setTimeout(() => {
+                    const preloader = document.getElementById('preloader');
+                    preloader.style.opacity = '0';
+                    preloader.style.transition = 'opacity 1s ease';
+                    setTimeout(() => {
+                        preloader.style.display = 'none';
+                        document.querySelectorAll('.app, .dark-light').forEach(el => {
+                        el.style.opacity = "1";
+                        });
+                    }, 10);
+                }, 600); // tiempo de la explosión
+            }, 600); // espera a que termine la barra
+        }, 2000); // tiempo total de carga
+    });
+    //========== CONFIGURACION ==========
+  document
+    .getElementById("menu-config")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+
+      // Ocultar contenido principal y filtros
+      document.getElementById("main-content").style.display = "none";
+      document.getElementById("filtros-categorias").style.display = "none";
+
+      // Ocultar barra de búsqueda, notificación de descarga y menú de encabezado
+      document.querySelector(".search-bar").style.display = "none";
+      document.getElementById("download-notification").style.display = "none";
+      document.querySelector(".subtlile").style.display = "none";
+
+      // Mostrar configuración principal y panel lateral de config
+      document.getElementById("config-panel").style.display = "block";
+      document.getElementById("config-all").style.display = "block";
+
+      // Asegurarse de mostrar config principal y ocultar test teclado al entrar
+      document.getElementById("config-content").style.display = "block";
+      document.getElementById("test-teclado").style.display = "none";
+      document.getElementById("test-mando").style.display = "none"; // Asegurarse de que test-mando esté oculto al entrar en configuración
+    });
+
+  document.querySelectorAll(".volver-btn").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      // Mostrar contenido principal y filtros
+      document.getElementById("main-content").style.display = "block";
+      document.getElementById("filtros-categorias").style.display = "block";
+
+      // Mostrar nuevamente barra de búsqueda, notificación y menú de encabezado
+      document.querySelector(".search-bar").style.display = "flex"; // usa "block" si no es flex
+      document.getElementById("download-notification").style.display = "block";
+      document.querySelector(".subtlile").style.display = "flex"; // usa "block" si no es flex
+
+      // Ocultar panel de configuración y lateral
+      document.getElementById("config-panel").style.display = "none";
+      document.getElementById("config-all").style.display = "none";
+
+      // Resetear visibilidad de subpaneles de configuración
+      document.getElementById("config-content").style.display = "block";
+      document.getElementById("test-teclado").style.display = "none";
+      document.getElementById("test-mando").style.display = "none"; // Ocultar test-mando al regresar
+    });
+  });
+
+  // Mostrar el apartado de test teclado al hacer clic
+  document
+    .querySelector(".btn_teclado")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+
+      document.getElementById("config-content").style.display = "none";
+      document.getElementById("test-teclado").style.display = "block";
+      document.getElementById("test-mando").style.display = "none"; // Asegurarse de ocultar test-mando
+    });
+
+  // Mostrar el apartado de test mando al hacer clic
+  document.querySelector(".btn_mando").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    // Ocultar el contenido de configuración actual (test teclado)
+    document.getElementById("config-content").style.display = "none";
+    document.getElementById("test-teclado").style.display = "none";
+
+    // Mostrar el apartado de test mando
+    document.getElementById("test-mando").style.display = "flex";
+  });
+
+  // Volver a configuración principal desde el test del teclado
+  document.querySelector(".btn_config").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    // Mostrar contenido principal de configuración
+    document.getElementById("config-content").style.display = "block";
+    document.getElementById("test-teclado").style.display = "none";
+    document.getElementById("test-mando").style.display = "none"; // Ocultar test-mando al volver
+  });
+
+

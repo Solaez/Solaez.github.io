@@ -1,0 +1,138 @@
+
+.joystick-container {
+    width: 89px;
+    height: 89px;
+    background-color: #2b2b2b;
+    border: 3px solid #444;
+    border-radius: 50%;
+    position: relative;
+    left: 137px;
+    top: 9px;
+}
+.button-1 {
+    top: -127px;
+    left: 334px;
+}
+
+.button-2 {
+    top: -167px;
+    left: 305px;
+}
+
+.button-3 {
+    top: -170px;
+    left: 152px;
+}
+
+.button-4 {
+    top: -210px;
+    left: 123px;
+}
+
+
+.joystick-container.l {
+    left: 116px;
+    top: -85px;
+}
+
+.button-6 {
+    top: -251px;
+    left: -53px;
+    height: 0px;
+    width: 112px;
+    transform: rotateZ(13deg);
+}
+
+.button-10 {
+    top: -8px;
+}
+
+.button-17 {
+    top: -332px;
+    left: -107px;
+    scale: 1.5;
+    background: #008f1300;
+    border: 2px solid #777;
+}
+
+.button-12 {
+    top: -127px;
+    left: -93px;
+}
+
+.button-11 {
+    top: -220px;
+    left: -264px;
+}
+
+.button-13 {
+    top: -197px;
+    left: 96px;
+    border-radius: 50% 50%  0px 0px / 10px 10px 0px 0px;
+    padding: 4px;
+    height: 34px;
+    width: 33px;
+}
+
+.button-14 {
+    top: -130px;
+    border-radius: 0 0 50% 50% / 0 0 10px 10px;
+    padding: 4px;
+    left: 26px;
+    width: 33px;
+    height: 34px;
+}
+
+.button-15 {
+    top: -163px;
+    left: -78px;
+    border-radius: 50% 0 0 56% / 50px 0 0 50px;
+    padding: 3px;
+    width: 34px;
+    height: 33px;
+}
+
+.button-16 {
+    top: -163px;
+    left: -81px;
+    border-radius: 0 50% 50% 0 / 0 50px 50px 0;
+    padding: 3px;
+    width: 32px;
+    height: 33px;
+}
+
+.button-9 {
+    top: -221px;
+    left: -11px;
+    scale: .7;
+}
+
+.button-10 {
+    top: -221px;
+    scale: .7;
+    left: 8px;
+}
+
+.button-18 {
+    top: -237px;
+    left: -176px;
+    width: 44px;
+}
+
+.button-5 {
+    top: -249px;
+    left: -301px;
+    height: 0px;
+    width: 112px;
+    transform: rotateZ(-13deg);
+}
+
+.button-7 {
+    top: -300px;
+    left: -84px;
+}
+
+.button-8 {
+    top: -300px;
+    left: 352px;
+}

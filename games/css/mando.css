@@ -1,0 +1,108 @@
+
+    #test-mando{
+      
+      color: #fff;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .mando.changing {
+    opacity: 0.5;
+    transform: scale(0.98);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+    .mando {
+      
+    height: 430px;
+    width: 660px;
+      background-image: url('/xbox.png');
+      /* URL de la imagen */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    #status {
+      margin-bottom: 20px;
+    }
+
+
+    .stick {
+      width: 30px;
+      height: 30px;
+      background: #4caf50;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .labels {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin: 311px 180px 3px -200px;   
+    }
+
+    .axis-values {
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .buttons-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 60px);
+      gap: 10px;
+      justify-content: center;
+      position: absolute;
+      bottom: 20px;
+    }
+.button {
+    width: 40px;
+    height: 40px;
+    background: #333;
+    border: 3px solid #777;
+    border-radius: 50px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    transition: background 0.2s, transform 0.1s;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}
+
+    .button.active {
+      background: #4caf50;
+      transform: scale(1.1);
+    }
+    .button-5.active {
+      background: #4caf50;
+      transform: scale(1.1)  rotateZ(-13deg);
+    }
+    .button-6.active {
+      background: #4caf50;
+      transform: scale(1.1)  rotateZ(13deg);
+    }
+
+    .joystick-area {
+    display: flex;
+    gap: 131px;
+    margin-bottom: 20px;
+}
+.btn-vibrar {
+    margin: 455px 0 0 176px;
+    position: absolute;
+  }

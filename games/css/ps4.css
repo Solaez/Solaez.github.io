@@ -1,0 +1,154 @@
+/*posision de mando de ps4*/
+
+
+   .ps4-style  .button.active {
+      background: #3600fa;
+      transform: scale(1.1);
+    }
+   .ps4-style  .button-5.active {
+      transform: scale(1.1)  rotateZ(-10deg);
+    }
+   .ps4-style  .button-6.active {
+      transform: scale(1.1)  rotateZ(10deg);
+    }
+
+.ps4-style .joystick-container {
+    width: 93px;
+    height: 92px;
+    background-color: #2b2b2b;
+    border: 3px solid #444;
+    border-radius: 50%;
+    position: relative;
+    left: 172px;
+    top: 11px;
+}
+.ps4-style .labels {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 208px 155px 3px -170px;
+}
+.ps4-style .joystick-area {
+    display: flex;
+    gap: 104px;
+    margin-bottom: 20px;
+}
+.ps4-style .button-1 {
+    top: -24px;
+    left: 364px;
+}
+.ps4-style .button-2 {
+    top: -69px;
+    left: 339px;
+}
+.ps4-style .button-3 {
+    top: -69px;
+    left: 179px;
+}
+.ps4-style .button-4 {
+    top: -114px;
+    left: 154px;
+}
+.ps4-style .button-5 {
+    left: -323px;
+    top: -163px;
+    height: 1px;
+    width: 83px;
+    transform: rotateZ(-10deg);
+    border-radius: 190px 190px 0 0 / 125px 127px 75px 0px;
+    font-size: 10px;
+}
+
+.ps4-style .button-6 {
+    top: -163px;
+    left: -6px;
+    height: 1px;
+    width: 83px;
+    transform: rotateZ(10deg);
+    border-radius: 190px 190px 0 0 / 125px 127px 75px 0px;
+    font-size: 10px;
+}
+
+.ps4-style .button-17 {
+    top: -208px;
+    left: -112px;
+    /* width: 28px; */
+}
+
+.ps4-style .button-12 {
+    top: -35px;
+    left: -78px;
+}
+
+.ps4-style .button-11 {
+    top: -36px;
+    left: -206px;
+}
+
+.ps4-style .button-17 {
+    top: -90px;
+    scale: .6;
+    border: 2px solid #777;
+    left: -107px;
+}
+
+.ps4-style .button-18 {
+    top: -260px;
+    left: -280px;
+    width: 245px;
+    height: 129px;
+    border-radius: 35px 35px 80px 75px / 40px 40px 170px 170px;
+}
+
+.ps4-style .button-13 {
+    top: -197px;
+    left: -17px;
+    border-radius: 15px 15px  32px 32px / 15px 15px 50px 50px;
+}
+
+.ps4-style .button-14 {
+    top: -136px;
+    left: -86px;
+    border-radius: 30px 30px 15px 15px / 50px 50px 15px 15px;
+}
+
+.ps4-style .button-15 {
+    top: -166px;
+    left: -187px;
+    border-radius: 15px 70px 70px 15px / 15px 50px 50px 15px;
+}
+
+.ps4-style .button-16 {
+    top: -166px;
+    left: -195px;
+    border-radius: 70px 15px 15px 70px / 50px 15px 15px 50px;
+}
+
+.ps4-style .button-10 {
+    top: -187px;
+    left: 115px;
+    width: 20px;
+    transform: rotateZ(10deg);
+    font-size: 6px;
+    scale: 1;
+}
+
+.ps4-style .button-9 {
+    top: -186px;
+    left: -101px;
+    width: 20px;
+    transform: rotateZ(-13deg);
+    font-size: 6px;
+    scale: 1;
+}
+
+.ps4-style .button-7 {
+  top: -208px;
+  left: -123px;
+}
+
+.ps4-style .button-8 {
+   top: -208px;
+   left: 396px;
+}
+/*fin de posicion de mando de ps4*/
