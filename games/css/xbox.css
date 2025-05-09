@@ -41,6 +41,7 @@
     height: 0px;
     width: 112px;
     transform: rotateZ(13deg);
+    font-size: 12px;
 }
 
 .button-10 {
@@ -124,6 +125,7 @@
     left: -301px;
     height: 0px;
     width: 112px;
+    font-size: 12px;
     transform: rotateZ(-13deg);
 }
 
