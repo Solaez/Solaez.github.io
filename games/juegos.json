@@ -988,6 +988,10 @@
     {
       "nombre": "Descargar para Windows",
       "url": "https://drive.usercontent.google.com/download?id=1iojzKNZM6wLLMmwLfrtawB3k5UMe1HsT&export=download&authuser=0&confirm=t&uuid=9533e3e2-3aab-48d6-a664-0901dae7212c&at=ALoNOgn2o5CAKJiFOkSwu6CoPHoY%3A1746742307413"
+    },
+    {
+      "nombre": "Descargar para Windows portable CC",
+      "url": "https://download2392.mediafire.com/dowunlae7b3gJaBilcojXNHszdRQjI5XnRD_1-rMaYK3_A0LcP6YE7YJPikTPS8uWK6fFyluC4V7dkkkZtXrtDKXGXTyOuPGHhqDunzQN8iahMlG0hkDjCGLMA6lPno4oD1pmGc4nSYc2rKaaWdFvUfz4IbocqSakHPY3bb6EXLe/j012wsal2lo84cq/CCfotosho.rar"
     }
   ]
 },
@@ -1452,12 +1456,12 @@
   "categoria": "Emulaters",
   "descargas": [
     {
-      "nombre": "Descargar Project64",
-      "url": "https://www.pj64-emu.com/public-releases/"
+      "nombre": "Descargar Project64 portable",
+      "url": "https://www.pj64-emu.com/download/project64-3-0-1-zip"
     },
     {
       "nombre": "Descargar Project64 x86",
-      "url": "https://www.pj64-emu.com/public-releases/"
+      "url": "https://www.pj64-emu.com/download/project64-3-0-1-installer"
     }
   ]
 },
@@ -1470,11 +1474,7 @@
   "descargas": [
     {
       "nombre": "Descargar PCSX2",
-      "url": "https://pcsx2.net/download/"
-    },
-    {
-      "nombre": "Descargar PCSX2 x86",
-      "url": "https://pcsx2.net/download/"
+      "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.2.0/pcsx2-v2.2.0-windows-x64-Qt.7z"
     }
   ]
 },
@@ -1487,11 +1487,7 @@
   "descargas": [
     {
       "nombre": "Descargar Dolphin",
-      "url": "https://dolphin-emu.org/download/"
-    },
-    {
-      "nombre": "Descargar Dolphin x86",
-      "url": "https://dolphin-emu.org/download/"
+      "url": "hthttps://dl.dolphin-emu.org/releases/2503a/dolphin-2503a-x64.7z"
     }
   ]
 },
@@ -1504,11 +1500,7 @@
   "descargas": [
     {
       "nombre": "Descargar DeSmuME",
-      "url": "https://desmume.org/download/"
-    },
-    {
-      "nombre": "Descargar DeSmuME x86",
-      "url": "https://desmume.org/download/"
+      "url": "https://github.com/TASEmulators/desmume/releases/download/release_0_9_13/desmume-0.9.13-win64.zip"
     }
   ]
 },
@@ -1521,11 +1513,7 @@
   "descargas": [
     {
       "nombre": "Descargar Citra",
-      "url": "https://citra-emu.org/download/"
-    },
-    {
-      "nombre": "Descargar Citra x86",
-      "url": "https://citra-emu.org/wiki/"
+      "url": "https://archive.org/download/citra-emu_202403/citra-windows-msvc-20240303-0ff3440_nightly.zip"
     }
   ]
 },
@@ -1538,10 +1526,70 @@
   "descargas": [
     {
       "nombre": "Descargar Cemu",
-      "url": "https://cemu.info/"
+      "url": "https://github.com/cemu-project/Cemu/releases/download/v2.6/cemu-2.6-windows-x64.zip"
+    }
+  ]
+},
+{
+  "titulo": "Keys (Nintendo Switch)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/5cffc955c27a2178ca08f82f74ae80ea.png",
+  "descripcion": "Yuzu es un emulador de código abierto para la consola Nintendo Switch, desarrollado por los creadores de Citra (emulador de 3DS). Permite ejecutar juegos de Switch en PC con alto rendimiento y compatibilidad. Soporta mejoras visuales, resolución escalada, mods y DLCs. Es ideal para quienes buscan disfrutar de títulos de Switch como si fueran nativos de PC.<br><br><li> Compatible con Windows 10 y 11 de 64 bits.<br><li> Requiere una tarjeta gráfica con soporte para Vulkan o OpenGL 4.6.<br><li> Soporta resolución 4K, mejoras gráficas y mods.<br><li> Compatible con controles de Switch y otros mandos.",
+  "manual": "🔧 Cómo instalar y usar Yuzu\n\n1. **Descargar Yuzu:**\n   - Visita: https://yuzu-emu.org/\n   - Haz clic en 'Download' para descargar la versión para Windows.\n\n2. **Instalar Yuzu:**\n   - Ejecuta el instalador o extrae el archivo ZIP (según versión) y sigue las instrucciones.\n\n3. **Obtener las claves de sistema (keys):**\n   - Necesitas los archivos `prod.keys` y `title.keys` para que Yuzu pueda ejecutar juegos. Estos deben colocarse en la carpeta `yuzu/keys`.\n   - Estos archivos se obtienen extrayéndolos de una Nintendo Switch con acceso homebrew (no se pueden distribuir legalmente).\n\n4. **Obtener juegos (XCI o NSP):**\n   - Necesitas tus propios backups de juegos en formato `.xci` o `.nsp`.\n\n5. **Configurar Yuzu:**\n   - Abre Yuzu, configura los controles, gráficos y audio a tu gusto.\n   - Importa las claves en el menú de configuración si no las reconoce automáticamente.\n\n6. **Cargar un juego:**\n   - Ve a 'Archivo > Cargar juego' o simplemente añade la carpeta de juegos en el explorador de Yuzu.\n\n7. **DLCs y actualizaciones:**\n   - Se pueden instalar desde el menú: 'Archivo > Instalar archivo NSP/XCI'.",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Descargar Yuzu",
+      "url": "https://github.com/yuzu-emu/yuzu-mainline/releases/latest/download/yuzu-windows-msvc.zip"
+    }
+  ]
+},
+{
+  "titulo": "Fimware (Nintendo Switch)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/8641a4356438d1307dec5b9ae1b2ee1c.jpg",
+  "descripcion": "Yuzu es un emulador de código abierto para la consola Nintendo Switch, desarrollado por los creadores de Citra (emulador de 3DS). Permite ejecutar juegos de Switch en PC con alto rendimiento y compatibilidad. Soporta mejoras visuales, resolución escalada, mods y DLCs. Es ideal para quienes buscan disfrutar de títulos de Switch como si fueran nativos de PC.<br><br><li> Compatible con Windows 10 y 11 de 64 bits.<br><li> Requiere una tarjeta gráfica con soporte para Vulkan o OpenGL 4.6.<br><li> Soporta resolución 4K, mejoras gráficas y mods.<br><li> Compatible con controles de Switch y otros mandos.",
+  "manual": "🔧 Cómo instalar y usar Yuzu\n\n1. **Descargar Yuzu:**\n   - Visita: https://yuzu-emu.org/\n   - Haz clic en 'Download' para descargar la versión para Windows.\n\n2. **Instalar Yuzu:**\n   - Ejecuta el instalador o extrae el archivo ZIP (según versión) y sigue las instrucciones.\n\n3. **Obtener las claves de sistema (keys):**\n   - Necesitas los archivos `prod.keys` y `title.keys` para que Yuzu pueda ejecutar juegos. Estos deben colocarse en la carpeta `yuzu/keys`.\n   - Estos archivos se obtienen extrayéndolos de una Nintendo Switch con acceso homebrew (no se pueden distribuir legalmente).\n\n4. **Obtener juegos (XCI o NSP):**\n   - Necesitas tus propios backups de juegos en formato `.xci` o `.nsp`.\n\n5. **Configurar Yuzu:**\n   - Abre Yuzu, configura los controles, gráficos y audio a tu gusto.\n   - Importa las claves en el menú de configuración si no las reconoce automáticamente.\n\n6. **Cargar un juego:**\n   - Ve a 'Archivo > Cargar juego' o simplemente añade la carpeta de juegos en el explorador de Yuzu.\n\n7. **DLCs y actualizaciones:**\n   - Se pueden instalar desde el menú: 'Archivo > Instalar archivo NSP/XCI'.",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Descargar Yuzu",
+      "url": "https://github.com/yuzu-emu/yuzu-mainline/releases/latest/download/yuzu-windows-msvc.zip"
+    }
+  ]
+},
+{
+  "titulo": "SKLauncher (Launcher de Minecraft Alternativo)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/cd0e5a599806943e1c09e6a1e5c49b95.png",
+  "descripcion": "SKLauncher es un launcher alternativo para Minecraft que permite ejecutar versiones oficiales y personalizadas del juego, tanto para usuarios con cuenta premium como sin cuenta. Es una opción ligera y personalizable que ofrece soporte para mods, diferentes versiones de Java y configuraciones específicas para cada perfil de jugador.<br><br><li> Compatible con Windows, macOS y Linux.<br><li> Permite múltiples perfiles de juego.<br><li> Soporte para versiones desde la clásica hasta la más reciente.<br><li> Ideal para jugar con mods y configuraciones personalizadas.",
+  "manual": "🔧 Cómo instalar y usar SKLauncher\n\n1. **Descargar SKLauncher:**\n   - Visita: https://skmedix.pl/sklauncher\n   - Haz clic en \"Descargar\" según tu sistema operativo.\n\n2. **Ejecutar el launcher:**\n   - En Windows, abre el archivo `.exe` descargado.\n   - En Linux/macOS, abre el archivo `.jar` con Java instalado.\n\n3. **Iniciar sesión:**\n   - Puedes usar una cuenta oficial de Mojang/Microsoft, o bien jugar como usuario no premium (offline).\n\n4. **Configurar el perfil:**\n   - Selecciona la versión de Minecraft que deseas usar (incluye snapshots, versiones antiguas, etc.).\n   - Ajusta la cantidad de RAM, opciones de Java y carpeta de mods si deseas usar Forge o Fabric.\n\n5. **Jugar:**\n   - Haz clic en “Jugar” y disfruta de Minecraft con tu configuración preferida.",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Descargar SKLauncher (instalador)",
+      "url": "https://skmedix.pl/binaries/skl/3.2.12/win-x64/SKlauncher-3.2.12_Setup.exe"
+    },
+    {
+      "nombre": "Descargar SKLauncher (portable)",
+      "url": "https://skmedix.pl/binaries/skl/3.2.12/SKlauncher-3.2.12.jar"
+    }
+  ]
+},
+{
+  "titulo": "CorelDRAW (Diseño Gráfico Profesional)",
+  "imagen": "https://www.microsoft.com/es-es/p/coreldraw-microsoft-store-edition/9pbl2kqxq47k",
+  "descripcion": "CorelDRAW es un software profesional de diseño gráfico ampliamente utilizado para crear ilustraciones vectoriales, logotipos, folletos, carteles y más. Con una interfaz intuitiva y potentes herramientas de diseño, es ideal tanto para profesionales del diseño como para usuarios que inician en el mundo gráfico.<br><br><li> Compatible con Windows y macOS.<br><li> Herramientas avanzadas de edición vectorial y tipografía.<br><li> Compatible con formatos como AI, PSD, PDF, JPG, PNG y más.<br><li> Ideal para diseñadores gráficos, publicistas y creativos.",
+  "manual": "🔧 Cómo instalar y usar CorelDRAW\n\n1. **Descargar CorelDRAW:**\n   - Ve a: https://www.coreldraw.com/\n   - Haz clic en “Prueba gratis” o elige tu plan si ya lo adquiriste.\n\n2. **Instalar el programa:**\n   - Ejecuta el instalador descargado y sigue los pasos del asistente de instalación.\n\n3. **Activar (opcional):**\n   - Inicia sesión con una cuenta de Corel para activar la versión de prueba o introducir tu clave de licencia.\n\n4. **Explorar la interfaz:**\n   - Familiarízate con herramientas como la pluma, formas, texto, capas y nodos.\n\n5. **Crear un diseño:**\n   - Empieza desde una hoja en blanco o una plantilla. Usa las herramientas vectoriales para construir tus composiciones.\n\n6. **Guardar y exportar:**\n   - Puedes guardar en formato `.CDR` o exportar en otros formatos como PDF, JPG, PNG, entre otros.",
+  "categoria": "Diseño",
+  "descargas": [
+    {
+      "nombre": "Descargar CorelDRAW 2024 Graphics Suite PRO",
+      "url": "https://download2393.mediafire.com/uvyt7h6y41bg04XPmUCTFS8MmUXyd5aa9fzyiBTUiqNvN4UwWUX70BI7Um8hkxjF_lVZE6UjEGfXH42UauUTH8LXqIjkGRXWPVdbmXyoyQ8n66G9MsOPS23x0CH0c7Nff2G1v3ESz5BsW4Xp6FJvjG2MtQtTzvNZar6I-tTiS3-x/a2znt7eiftyiuic/CDGS2024.IEMOJ98.rar"
     }
   ]
 }
+
+
+
+
 
 
 

@@ -1,797 +1,296 @@
-
-<!DOCTYPE html>
-<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programas</title>
-    <link rel="stylesheet" href="games/css/style.css">
-    
+
+
+    <link rel="apple-touch-icon" type="image/png"
+        href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg"
+        color="#111">
+
+
+
+
+    <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+
+    <title>Bubbles Background Animation</title>
+
+    <link rel="canonical" href="https://codepen.io/glitchworker/pen/jENZGOV">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://public.codepenassets.com/css/reset-2.0.min.css">
+
+
+
+    <style>
+        html,
+        body {
+            font-family: "Dongle", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .text-container {
+            z-index: 100;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            justify-content: center;
+            align-items: center;
+            font-size: 96px;
+            color: white;
+            opacity: 0.8;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        :root {
+            --color-bg1: rgb(108, 0, 162);
+            --color-bg2: rgb(0, 17, 82);
+            --color1: 18, 113, 255;
+            --color2: 221, 74, 255;
+            --color3: 100, 220, 255;
+            --color4: 200, 50, 50;
+            --color5: 180, 180, 50;
+            --color-interactive: 140, 100, 255;
+            --circle-size: 80%;
+            --blending: hard-light;
+        }
+
+        @-webkit-keyframes moveInCircle {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes moveInCircle {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes moveVertical {
+            0% {
+                transform: translateY(-50%);
+            }
+
+            50% {
+                transform: translateY(50%);
+            }
+
+            100% {
+                transform: translateY(-50%);
+            }
+        }
+
+        @keyframes moveVertical {
+            0% {
+                transform: translateY(-50%);
+            }
+
+            50% {
+                transform: translateY(50%);
+            }
+
+            100% {
+                transform: translateY(-50%);
+            }
+        }
+
+        @-webkit-keyframes moveHorizontal {
+            0% {
+                transform: translateX(-50%) translateY(-10%);
+            }
+
+            50% {
+                transform: translateX(50%) translateY(10%);
+            }
+
+            100% {
+                transform: translateX(-50%) translateY(-10%);
+            }
+        }
+
+        @keyframes moveHorizontal {
+            0% {
+                transform: translateX(-50%) translateY(-10%);
+            }
+
+            50% {
+                transform: translateX(50%) translateY(10%);
+            }
+
+            100% {
+                transform: translateX(-50%) translateY(-10%);
+            }
+        }
+
+        .gradient-bg {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
+            top: 0;
+            left: 0;
+        }
+
+        .gradient-bg svg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .gradient-bg .gradients-container {
+            filter: url(#goo) blur(40px);
+            width: 100%;
+            height: 100%;
+        }
+
+        .gradient-bg .g1 {
+            position: absolute;
+            background: radial-gradient(circle at center, rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 50%) no-repeat;
+            mix-blend-mode: var(--blending);
+            width: var(--circle-size);
+            height: var(--circle-size);
+            top: calc(50% - var(--circle-size) / 2);
+            left: calc(50% - var(--circle-size) / 2);
+            transform-origin: center center;
+            -webkit-animation: moveVertical 30s ease infinite;
+            animation: moveVertical 30s ease infinite;
+            opacity: 1;
+        }
+
+        .gradient-bg .g2 {
+            position: absolute;
+            background: radial-gradient(circle at center, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 50%) no-repeat;
+            mix-blend-mode: var(--blending);
+            width: var(--circle-size);
+            height: var(--circle-size);
+            top: calc(50% - var(--circle-size) / 2);
+            left: calc(50% - var(--circle-size) / 2);
+            transform-origin: calc(50% - 400px);
+            animation: moveInCircle 20s reverse infinite;
+            opacity: 1;
+        }
+
+        .gradient-bg .g3 {
+            position: absolute;
+            background: radial-gradient(circle at center, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 50%) no-repeat;
+            mix-blend-mode: var(--blending);
+            width: var(--circle-size);
+            height: var(--circle-size);
+            top: calc(50% - var(--circle-size) / 2 + 200px);
+            left: calc(50% - var(--circle-size) / 2 - 500px);
+            transform-origin: calc(50% + 400px);
+            -webkit-animation: moveInCircle 40s linear infinite;
+            animation: moveInCircle 40s linear infinite;
+            opacity: 1;
+        }
+
+        .gradient-bg .g4 {
+            position: absolute;
+            background: radial-gradient(circle at center, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
+            mix-blend-mode: var(--blending);
+            width: var(--circle-size);
+            height: var(--circle-size);
+            top: calc(50% - var(--circle-size) / 2);
+            left: calc(50% - var(--circle-size) / 2);
+            transform-origin: calc(50% - 200px);
+            -webkit-animation: moveHorizontal 40s ease infinite;
+            animation: moveHorizontal 40s ease infinite;
+            opacity: 0.7;
+        }
+
+        .gradient-bg .g5 {
+            position: absolute;
+            background: radial-gradient(circle at center, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 50%) no-repeat;
+            mix-blend-mode: var(--blending);
+            width: calc(var(--circle-size) * 2);
+            height: calc(var(--circle-size) * 2);
+            top: calc(50% - var(--circle-size));
+            left: calc(50% - var(--circle-size));
+            transform-origin: calc(50% - 800px) calc(50% + 200px);
+            -webkit-animation: moveInCircle 20s ease infinite;
+            animation: moveInCircle 20s ease infinite;
+            opacity: 1;
+        }
+
+        .gradient-bg .interactive {
+            position: absolute;
+            background: radial-gradient(circle at center, rgba(var(--color-interactive), 0.8) 0, rgba(var(--color-interactive), 0) 50%) no-repeat;
+            mix-blend-mode: var(--blending);
+            width: 100%;
+            height: 100%;
+            top: -50%;
+            left: -50%;
+            opacity: 0.7;
+        }
+    </style>
+
 </head>
 
 <body translate="no">
-
-
-
-    <div class="circulo"></div>
-    <div class="circulo"></div>
-    <div class="circulo"></div>
-
-    <div class="dark-light">
-        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+    <div class="text-container">
+        Bubbles
+    </div>
+    <div class="gradient-bg">
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                        result="goo"></feColorMatrix>
+                    <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                </filter>
+            </defs>
         </svg>
-    </div>
-    <div class="app">
-        <div class="header" id="drag-area" >
-            <button id="btn-close"></button>
-            <button id="btn-maxi"></button>
-            <button  id="btn-minimize"></button>
-            <div class="menu-circle" ></div>
-            <div class="header-menu">
-                <a class="menu-link " href="#">Online</a>
-                <a class="menu-link is-active notify" href="#">Sin conexion</a>
-            </div>
-            <div class="search-bar">
-                <input type="text" id="search-input"  placeholder="Buscar...">
-            </div>
-            
-            <div class="header-profile">
-
-                <div class="notification" id="download-notification">
-                    <span class="notification-number">0</span>
-                    <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="feather feather-download">
-                        <path d="M21 18v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1"></path>
-                        <polyline points="7 10 12 15 17 10"></polyline>
-                        <line x1="12" y1="15" x2="12" y2="3"></line>
-                    </svg>
-                </div>
-
-                <div class="notification" id="notification">
-                    <span class="notification-number">1</span>
-                    <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="feather feather-bell">
-                        <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"></path>
-                    </svg>
-                </div>
-                
-                
-                <div class="card" id="card" style="display: none;">
-                    <div class="messages">
-                        <div class="message" >
-                            <div class="message-icon"></div>
-                            <div class="message-info">
-                                <div class="message-header">
-                                    <div class="message-title">Bienvenido</div>
-                                </div>
-                                <div class="message-content">Calidad de vida jsjsjsj</div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-
-                
-                <div class="profile-menu">
-                    <div class="profile-i" >
-                        <img class="profile-img "id="profileToggle"
-                            src="https://avatars.githubusercontent.com/u/165969268?v=4"
-                            alt="user">
-                    </div>
-                    <div class="dropdown-menu" id="dropdownMenu">
-                        <a href="#">Iniciar sesión</a>
-                        <a href="#">Configuración</a>
-                        <a href="#">Cerrar</a>
-                    </div>
-                </div>
-
-                
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="left-side" id="filtros-categorias">
-                <div class="side-wrapper">
-                    <div class="side-title">Apps</div>
-                    <div class="side-menu" >
-                        <a href="#" class="categoria-link volver-btn" data-categoria="todos">
-                            <svg viewBox="0 0 512 512">
-                                <g xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                                    <path
-                                        d="M0 0h128v128H0zm0 0M192 0h128v128H192zm0 0M384 0h128v128H384zm0 0M0 192h128v128H0zm0 0"
-                                        data-original="#bfc9d1"></path>
-                                </g>
-                                <path xmlns="http://www.w3.org/2000/svg" d="M192 192h128v128H192zm0 0"
-                                    fill="currentColor" data-original="#82b1ff"></path>
-                                <path xmlns="http://www.w3.org/2000/svg"
-                                    d="M384 192h128v128H384zm0 0M0 384h128v128H0zm0 0M192 384h128v128H192zm0 0M384 384h128v128H384zm0 0"
-                                    fill="currentColor" data-original="#bfc9d1"></path>
-                            </svg>
-                            Todos
-                        </a>
-                        <a href="#" class="categoria-link volver-btn" data-categoria="Updates">
-                            <svg viewBox="0 0 488.932 488.932" fill="currentColor">
-                                <path
-                                    d="M243.158 61.361v-57.6c0-3.2 4-4.9 6.7-2.9l118.4 87c2 1.5 2 4.4 0 5.9l-118.4 87c-2.7 2-6.7.2-6.7-2.9v-57.5c-87.8 1.4-158.1 76-152.1 165.4 5.1 76.8 67.7 139.1 144.5 144 81.4 5.2 150.6-53 163-129.9 2.3-14.3 14.7-24.7 29.2-24.7 17.9 0 31.8 15.9 29 33.5-17.4 109.7-118.5 192-235.7 178.9-98-11-176.7-89.4-187.8-187.4-14.7-128.2 84.9-237.4 209.9-238.8z">
-                                </path>
-                            </svg>
-                            Actualizaciones
-                            <span class="notification-number updates">0</span>
-                        </a>
-                        <a href="#" class="categoria-link volver-btn" data-categoria="New">
-                            <svg viewBox="0 0 488.932 488.932" fill="currentColor">
-                                <path
-                                    d="M243.158 61.361v-57.6c0-3.2 4-4.9 6.7-2.9l118.4 87c2 1.5 2 4.4 0 5.9l-118.4 87c-2.7 2-6.7.2-6.7-2.9v-57.5c-87.8 1.4-158.1 76-152.1 165.4 5.1 76.8 67.7 139.1 144.5 144 81.4 5.2 150.6-53 163-129.9 2.3-14.3 14.7-24.7 29.2-24.7 17.9 0 31.8 15.9 29 33.5-17.4 109.7-118.5 192-235.7 178.9-98-11-176.7-89.4-187.8-187.4-14.7-128.2 84.9-237.4 209.9-238.8z">
-                                </path>
-                            </svg>
-                            Nuevos
-                            <span class="notification-number updates">3</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="side-wrapper">
-                    <div class="side-title">Categories</div>
-                    <div class="side-menu">
-                        <a href="#" class="categoria-link volver-btn" data-categoria="Programs">
-                            <svg viewBox="0 0 488.455 488.455" fill="currentColor">
-                                <path
-                                    d="M287.396 216.317c23.845 23.845 23.845 62.505 0 86.35s-62.505 23.845-86.35 0-23.845-62.505 0-86.35 62.505-23.845 86.35 0">
-                                </path>
-                                <path
-                                    d="M427.397 91.581H385.21l-30.544-61.059H133.76l-30.515 61.089-42.127.075C27.533 91.746.193 119.115.164 152.715L0 396.86c0 33.675 27.384 61.074 61.059 61.074h366.338c33.675 0 61.059-27.384 61.059-61.059V152.639c-.001-33.674-27.385-61.058-61.059-61.058zM244.22 381.61c-67.335 0-122.118-54.783-122.118-122.118s54.783-122.118 122.118-122.118 122.118 54.783 122.118 122.118S311.555 381.61 244.22 381.61z">
-                                </path>
-                            </svg>
-                            Programas
-                        </a>
-                        <a href="#"  class="categoria-link volver-btn" data-categoria="Games" id="restore-btn">
-                            <svg viewBox="0 0 512 512" fill="currentColor">
-                                <path
-                                    d="M0 331v112.295a14.996 14.996 0 007.559 13.023L106 512V391L0 331zM136 391v121l105-60V331zM271 331v121l105 60V391zM406 391v121l98.441-55.682A14.995 14.995 0 00512 443.296V331l-106 60zM391 241l-115.754 57.876L391 365.026l116.754-66.15zM262.709 1.583a15.006 15.006 0 00-13.418 0L140.246 57.876 256 124.026l115.754-66.151L262.709 1.583zM136 90v124.955l105 52.5V150zM121 241L4.246 298.876 121 365.026l115.754-66.15zM271 150v117.455l105-52.5V90z">
-                                </path>
-                            </svg>
-                            Juegos
-                        </a>
-                        <a href="#" class="categoria-link volver-btn" data-categoria="Emulaters">
-                            <svg viewBox="0 0 58 58" fill="currentColor">
-                                <path
-                                    d="M57 6H1a1 1 0 00-1 1v44a1 1 0 001 1h56a1 1 0 001-1V7a1 1 0 00-1-1zM10 50H2v-9h8v9zm0-11H2v-9h8v9zm0-11H2v-9h8v9zm0-11H2V8h8v9zm26.537 12.844l-11 7a1.007 1.007 0 01-1.018.033A1.001 1.001 0 0124 36V22a1.001 1.001 0 011.538-.844l11 7a1.003 1.003 0 01-.001 1.688zM56 50h-8v-9h8v9zm0-11h-8v-9h8v9zm0-11h-8v-9h8v9zm0-11h-8V8h8v9z">
-                                </path>
-                            </svg>
-                            Emuladores
-                        </a>
-                        <a href="#"  class="categoria-link volver-btn" data-categoria="Proyects">
-                            <svg viewBox="0 0 512 512" fill="currentColor">
-                                <path
-                                    d="M499.377 46.402c-8.014-8.006-18.662-12.485-29.985-12.613a41.13 41.13 0 00-.496-.003c-11.142 0-21.698 4.229-29.771 11.945L198.872 275.458c25.716 6.555 47.683 23.057 62.044 47.196a113.544 113.544 0 0110.453 23.179L500.06 106.661C507.759 98.604 512 88.031 512 76.89c0-11.507-4.478-22.33-12.623-30.488zM176.588 302.344a86.035 86.035 0 00-3.626-.076c-20.273 0-40.381 7.05-56.784 18.851-19.772 14.225-27.656 34.656-42.174 53.27C55.8 397.728 27.795 409.14 0 416.923c16.187 42.781 76.32 60.297 115.752 61.24 1.416.034 2.839.051 4.273.051 44.646 0 97.233-16.594 118.755-60.522 23.628-48.224-5.496-112.975-62.192-115.348z">
-                                </path>
-                            </svg>
-                            Proyectos
-                        </a>
-                    </div>
-                    
-                </div>
-                
-            </div>
-
-            <div class="main-container">
-                <div class="main-header">
-                    <a class="menu-link-main volver-btn categoria-link" href="#">Volver</a>
-                    <div class="header-menu" >
-                        <a class="main-header-link is-active" href="#">Escritorio</a>
-                        <a class="main-header-link" href="#">Mods</a>
-                        <a class="main-header-link" href="#">Script / CMD</a>
-
-                    </div>
-                </div>
-                <div class="content-wrapper">
-
-                    <!-- mensaje ----------------------------------------------------------------------------- -->
-                    <div class="pop-up">
-                        <div class="pop-up__title">Update This App
-                            <svg class="close" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <path d="M15 9l-6 6M9 9l6 6"></path>
-                            </svg>
-                        </div>
-                        <div class="pop-up__subtitle">Adjust your selections for advanced options as
-                            desired before continuing. <a href="#">Learn more</a></div>
-                        <div class="checkbox-wrapper">
-                            <input type="checkbox" id="check1" class="checkbox">
-                            <label for="check1">Import previous settings and preferences</label>
-                        </div>
-                        <div class="checkbox-wrapper">
-                            <input type="checkbox" id="check2" class="checkbox">
-                            <label for="check2">Remove old versions</label>
-                        </div>
-                        <div class="content-button-wrapper">
-                            <button class="content-button status-button open close">Cancel</button>
-                            <button class="content-button status-button">Continue</button>
-                        </div>
-                    </div>
-                    
-                    <!-- mensaje fin ----------------------------------------------------------------------------- -->
-
-                    <!-- contenido ----------------------------------------------------------------------------- -->
-                    <div class="content-wrapper-header" style="display: none;">
-                        <div class="content-wrapper-context">
-                            <h3 class="img-content">
-                                <svg viewBox="0 0 512 512">
-                                    <path
-                                        d="M467 0H45C20.099 0 0 20.099 0 45v422c0 24.901 20.099 45 45 45h422c24.901 0 45-20.099 45-45V45c0-24.901-20.099-45-45-45z"
-                                        fill="#d6355b" data-original="#ff468c"></path>
-                                    <path xmlns="http://www.w3.org/2000/svg"
-                                        d="M512 45v422c0 24.901-20.099 45-45 45H256V0h211c24.901 0 45 20.099 45 45z"
-                                        fill="#d6355b" data-original="#d72878"></path>
-                                    <path xmlns="http://www.w3.org/2000/svg"
-                                        d="M467 30H45c-8.401 0-15 6.599-15 15v422c0 8.401 6.599 15 15 15h422c8.401 0 15-6.599 15-15V45c0-8.401-6.599-15-15-15z"
-                                        fill="#2e000a" data-original="#700029"></path>
-                                    <path xmlns="http://www.w3.org/2000/svg"
-                                        d="M482 45v422c0 8.401-6.599 15-15 15H256V30h211c8.401 0 15 6.599 15 15z"
-                                        fill="#2e000a" data-original="#4d0e06"></path>
-                                    <path xmlns="http://www.w3.org/2000/svg"
-                                        d="M181 391c-41.353 0-75-33.647-75-75 0-8.291 6.709-15 15-15s15 6.709 15 15c0 24.814 20.186 45 45 45s45-20.186 45-45-20.186-45-45-45c-41.353 0-75-33.647-75-75s33.647-75 75-75 75 33.647 75 75c0 8.291-6.709 15-15 15s-15-6.709-15-15c0-24.814-20.186-45-45-45s-45 20.186-45 45 20.186 45 45 45c41.353 0 75 33.647 75 75s-33.647 75-75 75z"
-                                        fill="#d6355b" data-original="#ff468c"></path>
-                                    <path xmlns="http://www.w3.org/2000/svg"
-                                        d="M391 361h-30c-8.276 0-15-6.724-15-15V211h45c8.291 0 15-6.709 15-15s-6.709-15-15-15h-45v-45c0-8.291-6.709-15-15-15s-15 6.709-15 15v45h-15c-8.291 0-15 6.709-15 15s6.709 15 15 15h15v135c0 24.814 20.186 45 45 45h30c8.291 0 15-6.709 15-15s-6.709-15-15-15z"
-                                        fill="#d6355b" data-original="#d72878"></path>
-                                </svg>
-                                Adobe Stock
-                            </h3>
-                            <div class="content-text">Grab yourself 10 free images from Adobe Stock in a 30-day free
-                                trial plan and find perfect image, that will help you with your new project.</div>
-                            <button class="content-button">Start free trial</button>
-                        </div>
-                        <img class="content-wrapper-img" src="https://assets.codepen.io/3364143/glass.png" alt="">
-                    </div>
-
-                    <div id="download-history" style="display: none;">
-                        <h3>Gestionador de Descargas</h3>
-                        <div id="history-content"></div>
-                    </div>
-
-                    <div class="content-section" id="main-content">
-
-                    <div class="apps-card" id="grid-juegos"></div>
-
-                    <div id="detalle-juego" class="hidden"></div>
-
-                        <!--  -->
-                    
-                        <!--  -->
-                    
-                    </div>
-                    <!-- contenido fin ----------------------------------------------------------------------------- -->
-                </div>
-            </div>
-        </div>
-        <div class="overlay-app"></div>
-    </div>
-
-    
-<script>
-  
-</script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="games/script/script.js"></script>
-
-
-    <!-- Popup de descarga -->
-    <div class="pop-up" id="popup">
-        <div class="pop-up__title">
-            Opciones de descarga
-            <svg class="close" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <path d="M15 9l-6 6M9 9l6 6"></path>
-            </svg>
-        </div>
-    
-        <div class="pop-up__subtitle" id="popup-download-options">
-            <!-- Aquí se inyectarán los botones de descarga -->
-        </div>
-    
-        <div class="content-button-wrapper">
-            <button class="content-button status-button open close">Cancelar</button>
+        <div class="gradients-container">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+            <div class="g5"></div>
+            <div class="interactive"></div>
         </div>
     </div>
-   
 
-    
+
+
+
+
 </body>
-</html>
-
-<style>
-  /* CSS */
-    .content-section {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeSlideIn 0.8s ease-out forwards;
-    }
-
-    @keyframes fadeSlideIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    }
-
-    div#popup-download-options {
-        max-height: 250px;
-        overflow: auto;
-    }
-    h1 {
-        text-align: center;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        gap: 20px;
-    }
-
-    .app-card img {
-        width: 100%;
-        border-radius: 15px 15px 0 0;
-        height: 200px;
-        object-fit: cover;
-        mask-image: linear-gradient(#000000 70%, #fb000000);
-        transition: transform 0.3s ease; 
-
-    }
-
-    .app-card__subtext {
-        margin: 5px 10px 0 10px;
-        font-weight: bold;
-        font-size: 16px;
-        position: relative;
-        display: flex
-;
-    justify-content: space-between;
-    }
-
-    .app-card-buttons {
-        margin-top: 10px;
-    }
-
-
-    .ext-card {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        align-items: center;
-    }
-
-    .ext-card img {
-        width: 350px;
-        border-radius: 10px;
-        height: 530px;
-        object-fit: cover;
-    }
-
-    .conte-card {
-        flex: 1;
-            
-        max-height: 550px;
-        overflow: auto;
-    }
-
-    .title-card h2 {
-        margin: 0 0 10px;
-    }
-
-    .desc-card p {
-        margin: 0;
-    }
-
-    .manu-card {
-        margin-top: 20px;
-        background-color: rgba(255, 255, 255, 0.158);
-        padding: 15px;
-        border-radius: 10px;
-        white-space: pre-line;
-        /*max-height: 190px;
-        overflow: auto;*/
-    }
-
-    .down-card {
-        margin-top: 15px;
-    }
-
-    .hidden {
-        display: none;
-    }
-
-.profile-menu {
-  position: relative;
-  display: inline-block;
-}
-
-.profile-img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 2px solid #fff;
-}
-.dropdown-menu {
-  position: absolute;
-  top: 40px;
-  right: 0;
-  background-color:var(--popup-bg);
-  min-width: 160px;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-  z-index: 999;
-  padding: 10px 0;
-  
-  opacity: 0;
-  transform: translateY(-10px);
-  pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.dropdown-menu.visible {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-.dropdown-menu a,
-.dropdown-menu .user-name {
-  color: var(--theme-color);
-  padding: 10px 20px;
-  display: block;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.dropdown-menu a:hover {
-  background-color: var(--content-bg);
-}
-
-.dropdown-menu .user-name {
-  font-weight: bold;
-  border-bottom: 1px solid #444;
-  margin-bottom: 5px;
-}
-
-</style>
-<script>
-    mainWindow.webContents.on('did-finish-load', () => {
-            mainWindow.webContents.executeJavaScript(`
-            if (!document.getElementById('download-progress')) {
-                const wrapper = document.createElement('div');
-                wrapper.id = 'download-progress';
-                wrapper.style = \`
-                    position: fixed;
-                    bottom: 20px;
-                    left: 20px;
-                    width: 90%;
-                    height: 20px;
-                    background: #eee;
-                    border-radius: 10px;
-                    overflow: hidden;
-                    display: none;
-                    z-index: 9999;
-                    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-                \`;
-
-                const bar = document.createElement('div');
-                bar.id = 'progress-bar';
-                bar.style = \`
-                    height: 100%;
-                    width: 0%;
-                    background: #4caf50;
-                    transition: width 0.2s ease;
-                \`;
-
-                wrapper.appendChild(bar);
-                document.body.appendChild(wrapper);
-            }
-        `);
-        });
-</script>
-
-
-
-<style>
-    .card {
-  width: fit-content;
-  height: 320px;
-  background: var(--popup-bg);
-  box-shadow: 0px 1px 32px 8px rgba(0, 0, 0, 0.05);
-  border-radius: 0.875rem;
-  padding: 1.5rem;
-  
-  overflow: auto;
-  z-index: 9999;
-  --delay: 150ms;
-    position: absolute;
-    transition: all 0.3s ease;
-    top: 60px;
-    right: 0;
-
-}
-
-.messages {
-  width: 280px;
-}
-
-.message {
-  width: 280px;
-  border: 1.5px solid rgba(0, 0, 0, 0.08);
-  border-radius: 0.5rem;
-  padding: 1rem 1.25rem;
-  display: flex;
-  gap: 1rem;
-  transform: scale(0);
-  height: 0;
-  box-shadow: 0px 4px 16px 8px rgba(0, 0, 0, 0.03);
-  animation: show-message 200ms forwards;
-  transform-origin: top center;
-  visibility: hidden;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-  overflow: hidden;
-    background-color: var(--content-bg);
-    color: var(--theme-color);
-}
-
-.message:hover {
-  box-shadow: 0px 3px 16px 8px rgba(0, 0, 0, 0.07);
-  transform: translateY(-2px) scale(1.1);
-}
-
-.message-icon {
-  background: linear-gradient(180deg, rgb(242, 124, 40), rgb(255, 69, 243));
-  width: 2.5rem;
-  height: 2.5rem;
-  min-width: 2.5rem;
-  min-height: 2.5rem;
-  border-radius: 1rem;
-}
-
-.message:nth-child(1) {
-  animation-delay: calc(4 * var(--delay));
-}
-
-.message:nth-child(2) {
-  animation-delay: calc(3 * var(--delay));
-}
-
-.message:nth-child(3) {
-  animation-delay: calc(2 * var(--delay));
-}
-
-.message:nth-child(4) {
-  animation-delay: var(--delay);
-}
-
-.message:nth-child(2) .message-icon {
-  background: linear-gradient(180deg, rgb(242, 124, 40), rgb(255, 69, 243));
-}
-
-.message:nth-child(3) .message-icon {
-  background: linear-gradient(90deg, rgb(242, 212, 40), rgb(255, 56, 56));
-}
-
-.message:nth-child(4) .message-icon {
-  background: linear-gradient(45deg, rgb(70, 197, 255), rgb(64, 64, 255));
-}
-
-.message:nth-child(5) .message-icon {
-  background: linear-gradient(45deg, rgb(247, 158, 85), rgb(231, 38, 249));
-}
-
-.message-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.message-header {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  line-height: 1;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.message-title {
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.message-time {
-  font-size: 0.875rem;
-  color: #454545;
-}
-
-.message-time::before {
-  content: "•";
-  margin: 0 0.25rem;
-  font-size: 0.875rem;
-  color: #454545;
-}
-
-.message-content {
-  margin-top: 0.5rem;
-  line-height: 1;
-  text-overflow: ellipsis;
-  white-space: wrap;
-  font-weight: 300;
-}
-
-@keyframes show-message {
-  0% {
-    transform: scale(0);
-    margin-bottom: 0;
-    visibility: visible;
-  }
-  100% {
-    transform: scale(1);
-    height: 100%;
-    margin-bottom: 1rem;
-    visibility: visible;
-  }
-}
-.notification{
-    cursor: pointer;
-    margin: 0 0 0 20px;
-}
-</style>
-
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        // Selecciona todos los enlaces <a>
-        const enlaces = document.querySelectorAll("a");
-
-        enlaces.forEach((a) => {
-            const href = a.getAttribute("href");
-            if (href && href.startsWith("magnet:")) {
-                a.addEventListener("click", (e) => {
-                    e.preventDefault(); // Evita la acción por defecto
-                    window.api.iniciarDescarga(href);
-                });
-            }
-        });
-
-        // Escucha el progreso
-        window.api.onProgreso((linea) => {
-            document.getElementById("progreso-texto").textContent += linea + "\n";
-
-            const match = linea.match(/(\d{1,3})\s*%/);
-            if (match) {
-                const porcentaje = parseInt(match[1]);
-                const barra = document.getElementById("barra-progreso");
-                barra.style.width = porcentaje + "%";
-                barra.textContent = porcentaje + "%";
-            }
-        });
-    });
-</script>
-
-<!-- funcion de historial de descargas -->
-<script>
-    document.getElementById('download-notification').addEventListener('click', () => {
-            // Ocultar la sección principal de contenido
-            document.querySelector('.content-section').style.display = 'none';
-
-            // Mostrar el historial de descargas
-            document.getElementById('download-history').style.display = 'block';
-        });
-
-        document.querySelectorAll('.categoria-link').forEach(button => {
-                button.addEventListener('click', () => {
-                    // Restaurar la vista inicial
-                    document.querySelector('.content-section').style.display = 'block';
-
-                    // Ocultar el historial de descargas
-                    document.getElementById('download-history').style.display = 'none';
-                });
-            });
-
-
-        // Función para agregar una nueva descarga al historial
-        function addToDownloadHistory(filename, state, downloadId, isInProgress = false) {
-                const historyContent = document.getElementById('history-content');
-                const downloadEntry = document.createElement('div');
-                downloadEntry.className = 'download-entry';
-                downloadEntry.dataset.id = downloadId;
-
-                downloadEntry.innerHTML = `
-        <p><strong>${filename}</strong><span class="status-text">${state}</span></p>
-        <div class="progress-wrapper" style="display: ${isInProgress ? 'block' : 'none'};">
-            <div style="height: 6px; background: #444; border-radius: 5px; overflow: hidden; margin-top: 5px;">
-                <div class="progress-bar" style="height: 100%; width: 0%; background: #32a6ff;"></div>
-            </div>
-            <div class="progress-text" style="font-size: 12px; text-align: right;">0%</div>
-            <div class="progress-error" style="color: red; font-size: 12px; display: none;"></div>
-        </div>
-        <div class="controls" style="margin-top: 5px;">
-            <button class="btn-xd" onclick="window.electronAPI.togglePause('${downloadId}')">⏸️</button>
-            <button class="btn-xd" onclick="window.electronAPI.cancelDownload('${downloadId}')">❌</button>
-        </div>
-    `;
-                historyContent.appendChild(downloadEntry);
-            }
-
-
-        // Función para abrir un archivo descargado
-        function openDownload(downloadId) {
-            // Llamar a la función para abrir el archivo (implementada en el código de Electron)
-            window.electronAPI.openFile(downloadId);
-        }
-
-        // Función para eliminar un historial de descarga
-        function removeDownload(downloadId) {
-            // Aquí podrías eliminar la entrada visual o cancelar el archivo si está en progreso
-            const entry = document.querySelector(`#download-history .download-entry[data-id='${downloadId}']`);
-            if (entry) entry.remove();
-        }
-
-</script>
-<!-- fin -->
-
-<!-- contador de descargas -->
- <script>
-    function updateDownloadCount(count) {
-        const badge = document.querySelector('.notification-number');
-        if (badge) {
-            badge.textContent = count;
-            badge.style.display = count > 0 ? '' : '';
-        }
-    }
-</script>
-
- <!-- fin -->
-
-<script>
-    document.getElementById('btn-minimize').addEventListener('click', () => {
-        window.electronAPI.minimizeWindow();
-    });
-
-    document.getElementById('btn-maxi').addEventListener('click', () => {
-        window.electronAPI.toggleMaximize();
-    });
-
-    document.getElementById('btn-close').addEventListener('click', () => {
-        window.electronAPI.closeWindow();
-    });
-</script>
-
-
-<script>
-    const dragArea = document.getElementById('drag-area');
-
-    dragArea.addEventListener('mousedown', (event) => {
-        const { x, y } = mainWindow.getBounds(); // Posición actual de la ventana
-
-        const offsetX = event.clientX;
-        const offsetY = event.clientY;
-
-        const onMouseMove = (moveEvent) => {
-            const newX = x + moveEvent.clientX - offsetX;
-            const newY = y + moveEvent.clientY - offsetY;
-            mainWindow.setBounds({ x: newX, y: newY });
-        };
-
-        const onMouseUp = () => {
-            document.removeEventListener('mousemove', onMouseMove);
-            document.removeEventListener('mouseup', onMouseUp);
-        };
-
-        document.addEventListener('mousemove', onMouseMove);
-        document.addEventListener('mouseup', onMouseUp);
-    });
-</script>
-<button id="btn-devtools" style="display: none;">Abrir DevTools</button>
-<script>
-    document.getElementById('btn-devtools').addEventListener('click', () => {
-            window.electronAPI.openDevTools();
-        });
-
-</script>
-
