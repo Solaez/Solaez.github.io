@@ -1575,7 +1575,7 @@
 },
 {
   "titulo": "CorelDRAW (Diseño Gráfico Profesional)",
-  "imagen": "https://www.microsoft.com/es-es/p/coreldraw-microsoft-store-edition/9pbl2kqxq47k",
+  "imagen": "https://www.revistagadgets.com/www/wp-content/uploads/2021/03/corel-draw-graphics-suite-2021-1.jpg?v=1616626343",
   "descripcion": "CorelDRAW es un software profesional de diseño gráfico ampliamente utilizado para crear ilustraciones vectoriales, logotipos, folletos, carteles y más. Con una interfaz intuitiva y potentes herramientas de diseño, es ideal tanto para profesionales del diseño como para usuarios que inician en el mundo gráfico.<br><br><li> Compatible con Windows y macOS.<br><li> Herramientas avanzadas de edición vectorial y tipografía.<br><li> Compatible con formatos como AI, PSD, PDF, JPG, PNG y más.<br><li> Ideal para diseñadores gráficos, publicistas y creativos.",
   "manual": "🔧 Cómo instalar y usar CorelDRAW\n\n1. **Descargar CorelDRAW:**\n   - Ve a: https://www.coreldraw.com/\n   - Haz clic en “Prueba gratis” o elige tu plan si ya lo adquiriste.\n\n2. **Instalar el programa:**\n   - Ejecuta el instalador descargado y sigue los pasos del asistente de instalación.\n\n3. **Activar (opcional):**\n   - Inicia sesión con una cuenta de Corel para activar la versión de prueba o introducir tu clave de licencia.\n\n4. **Explorar la interfaz:**\n   - Familiarízate con herramientas como la pluma, formas, texto, capas y nodos.\n\n5. **Crear un diseño:**\n   - Empieza desde una hoja en blanco o una plantilla. Usa las herramientas vectoriales para construir tus composiciones.\n\n6. **Guardar y exportar:**\n   - Puedes guardar en formato `.CDR` o exportar en otros formatos como PDF, JPG, PNG, entre otros.",
   "categoria": "Diseño",
@@ -1585,7 +1585,33 @@
       "url": "https://download2393.mediafire.com/uvyt7h6y41bg04XPmUCTFS8MmUXyd5aa9fzyiBTUiqNvN4UwWUX70BI7Um8hkxjF_lVZE6UjEGfXH42UauUTH8LXqIjkGRXWPVdbmXyoyQ8n66G9MsOPS23x0CH0c7Nff2G1v3ESz5BsW4Xp6FJvjG2MtQtTzvNZar6I-tTiS3-x/a2znt7eiftyiuic/CDGS2024.IEMOJ98.rar"
     }
   ]
+},
+{
+  "titulo": "sm64pcBuilder2 (Super Mario 64 para PC)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/40cbdcb05d12cc70a9d07d805955a1e8.png",
+  "descripcion": "sm64pcBuilder2 es una herramienta comunitaria que permite compilar Super Mario 64 nativamente en PC, brindando soporte para mejoras gráficas, mods, resoluciones modernas y más. Es ideal para fans que buscan una experiencia personalizada y mejorada del clásico de Nintendo 64.<br><br><li> Requiere una ROM legal de Super Mario 64.<br><li> Compatible con Windows y Linux.<br><li> Permite añadir texturas HD, música personalizada y mejoras visuales.<br><li> Soporte para mandos y resolución 4K.",
+  "manual": "🛠️ Cómo usar sm64pcBuilder2\n\n1. **Descargar sm64pcBuilder2:**\n   - Repositorio oficial: https://github.com/sm64pcbuilder2/sm64pcbuilder2\n\n2. **Preparar la ROM:**\n   - Necesitas una ROM de Super Mario 64 en formato `.z64` (versión USA). Esta debe ser obtenida legalmente desde tu propio cartucho.\n\n3. **Ejecutar el builder:**\n   - Abre `sm64pcBuilder2.bat` (en Windows) o el script correspondiente en Linux.\n\n4. **Compilar el juego:**\n   - Sigue las instrucciones en pantalla para configurar tu compilación.\n   - Puedes habilitar mods y mejoras gráficas.\n\n5. **Jugar:**\n   - Una vez compilado, abre el ejecutable generado y disfruta del juego en alta resolución.",
+  "categoria": "Juegos",
+  "descargas": [
+    {
+      "nombre": "Descargar sm64pcBuilder2",
+      "url": "https://sm64pc.info/sm64pcbuilder2/downloads/sm64pcbuilder2.zip"
+    },
+    {
+      "nombre": ".NET Framework 4.8 Runtime",
+      "url": "https://go.microsoft.com/fwlink/?LinkId=2085155"
+    },
+    {
+      "nombre": "MSYS2",
+      "url": "https://github.com/msys2/msys2-installer/releases/download/2024-07-27/msys2-x86_64-20240727.exe?"
+    },
+    {
+      "nombre": "Super Mario 64 (USA)",
+      "url": "https://statics.romsfun.com/Nintendo-64/Super%20Mario%2064%20%28USA%29.zip?token=c3xZdFs1WlsXRHl0U3VQZF1bQxV2fFMlV2cJWxYZIiFTcFBlDR1FFnVyUXZRYlFT"
+    }
+  ]
 }
+
 
 
 

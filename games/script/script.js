@@ -223,6 +223,19 @@ document.addEventListener('click', function (e) {
     }
 });
 
+// ========== botones de la ventana ==========
+ document.getElementById("btn-minimize").addEventListener("click", () => {
+   window.electronAPI.minimizeWindow();
+ });
+
+ document.getElementById("btn-maxi").addEventListener("click", () => {
+   window.electronAPI.toggleMaximize();
+ });
+
+ document.getElementById("btn-close").addEventListener("click", () => {
+   window.electronAPI.closeWindow();
+ });
+
 // ========== PANTALLA DE CARGA ==========
  window.addEventListener('load', () => {
         setTimeout(() => {

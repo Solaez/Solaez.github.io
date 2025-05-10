@@ -179,6 +179,14 @@
                             </svg>
                             Emuladores
                         </a>
+                        <a id="menu-rom">
+                            <svg viewBox="0 0 58 58" fill="currentColor">
+                                <path
+                                    d="M57 6H1a1 1 0 00-1 1v44a1 1 0 001 1h56a1 1 0 001-1V7a1 1 0 00-1-1zM10 50H2v-9h8v9zm0-11H2v-9h8v9zm0-11H2v-9h8v9zm0-11H2V8h8v9zm26.537 12.844l-11 7a1.007 1.007 0 01-1.018.033A1.001 1.001 0 0124 36V22a1.001 1.001 0 011.538-.844l11 7a1.003 1.003 0 01-.001 1.688zM56 50h-8v-9h8v9zm0-11h-8v-9h8v9zm0-11h-8v-9h8v9zm0-11h-8V8h8v9z">
+                                </path>
+                            </svg>
+                            Juegos Roms
+                        </a>
                         <a href="#"  class="categoria-link volver-btn" data-categoria="Proyects">
                         <svg viewBox="0 0 512 512" fill="currentColor">
                             <path
@@ -216,7 +224,9 @@
 
             <div class="main-container">
                 <div class="main-header">
-                    <a class="menu-link-main volver-btn categoria-link" href="#">Volver</a>
+                    <a class="menu-link-main volver-btn categoria-link" href="#" id="volver2">Volver</a>
+                    <button class="menu-link-main" id="volver">Volver</button>
+
                     <div class="header-menu subtlile" >
                         <a class="main-header-link is-active" href="#">Escritorio</a>
                         <a class="main-header-link" href="#">Mods</a>
@@ -343,6 +353,8 @@
                                     <br>
                                     
                                     <button class="btn-con" id="btn-devtools">AbrirDevTools</button>
+                                    <br>
+                                    <button class="btn-con" id="btn-devtools-rom-n64">AbrirDevTools Webview</button>
                                     <br>
                                     
                                     <button class="btn-con" onclick="guardarConfiguracion()">Guardar</button>
@@ -694,12 +706,321 @@
 
 
                     </div>
-
                     
+                    <div id="rom-fum" style="display: none;">
+                    <div id="loader">Cargando...</div>
+
+                        <webview id="rom-n64" class="view-rom" style="display: none ; height:80vh; width:100% "src="https://romsfun.com/roms/nintendo-3ds" 
+                              useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+                            allowpopups>
+                        </webview>
+                        <webview id="rom-ds" class="view-rom" style="display: none; height:80vh; width:100%" src="https://romsfun.com/roms/nintendo-ds"
+                            style="width:100%; height:90vh;"
+                            useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                            allowpopups>
+                        </webview>
+                        <webview id="rom-3dds" class="view-rom" style="display: none; height:80vh; width:100%"
+                            src="https://romsfun.com/roms/nintendo-3ds" style="width:100%; height:90vh;"
+                            useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                            allowpopups>
+                        </webview>
+                        <webview id="rom-nwii" class="view-rom" style="display: none; height:80vh; width:100%" src="https://romsfun.com/roms/nintendo-wii"
+                            style="width:100%; height:90vh;"
+                            useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                            allowpopups>
+                        </webview>
+                        <webview id="rom-nwiiu" class="view-rom" style="display: none; height:80vh; width:100%" src="https://romsfun.com/roms/wii-u"
+                            style="width:100%; height:90vh;"
+                            useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                            allowpopups>
+                        </webview>
+                        <webview id="rom-ncube" class="view-rom" style="display: none; height:80vh; width:100%"
+                            src="https://romsfun.com/roms/gamecube" style="width:100%; height:90vh;"
+                            useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                            allowpopups>
+                        </webview>
+                        <webview id="rom-nsnes" class="view-rom" style="display: none; height:80vh; width:100%"
+                            src="https://romsfun.com/roms/super-nintendo" style="width:100%; height:90vh;"
+                            useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                            allowpopups>
+                        </webview>
+                        <webview id="rom-nes" class="view-rom" style="display: none; height:80vh; width:100%"
+                            src="https://romsfun.com/roms/nes" style="width:100%; height:90vh;"
+                            useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                            allowpopups>
+                        </webview>
+                        <webview id="rom-gba" class="view-rom" style="display: none; height:80vh; width:100%" src="https://romsfun.com/roms/game-boy-advance"
+                            style="width:100%; height:90vh;"
+                            useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                            allowpopups>
+                        </webview>
+                        <webview id="rom-gbac" class="view-rom" style="display: none; height:80vh; width:100%"
+                            src="https://romsfun.com/roms/game-boy-color" style="width:100%; height:90vh;"
+                            useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                            allowpopups>
+                        </webview>
+                        <webview id="rom-psp" class="view-rom" style="display: none; height:80vh; width:100%" src="https://romsfun.com/roms/playstation-portable"
+                            style="width:100%; height:90vh;"
+                            useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                            allowpopups>
+                        </webview>
+                        <webview id="rom-ps2" class="view-rom" style="display: none; height:80vh; width:100%" src="https://romsfun.com/roms/playstation-2"
+                            style="width:100%; height:90vh;"
+                            useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                            allowpopups>
+                        </webview>
+                        <webview id="rom-ps3" class="view-rom" style="display: none; height:80vh; width:100%"
+                            src="https://romsfun.com/roms/ps3" style="width:100%; height:90vh;"
+                            useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                            allowpopups>
+                        </webview>
+                        <webview id="rom-ps4" class="view-rom" style="display: none; height:80vh; width:100%" src="https://romsfun.com/roms/playstation-4"
+                            style="width:100%; height:90vh;"
+                            useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                            allowpopups>
+                        </webview>
+                        <webview id="rom-psvita" class="view-rom" style="display: none; height:80vh; width:100%"
+                            src="https://romsfun.com/roms/ps-vita" style="width:100%; height:90vh;"
+                            useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                            allowpopups>
+                        </webview>
+                        <webview id="rom-xbox" class="view-rom" style="display: none; height:80vh; width:100%"
+                            src="https://romsfun.com/roms/xbox" style="width:100%; height:90vh;"
+                            useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                            allowpopups>
+                        </webview>
+                        <webview id="rom-xbox360" class="view-rom" style="display: none; height:80vh; width:100%"
+                            src="https://romsfun.com/roms/xbox-360" style="width:100%; height:90vh;"
+                            useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                            allowpopups>
+                        </webview>
+                        
+                    </div>
+                    
+                    <div class="manuela" style="display: none;">
+                        <div class="content-wrapper-header" >
+                            <div class="content-wrapper-context">
+                                <h3 class="img-content">
+                                    Nintendo 64
+                                </h3>
+                                <div class="content-text">Grab yourself 10 free images from Adobe Stock in a 30-day free
+                                    trial plan and find perfect image, that will help you with your new project.</div>
+                                <button class="content-button btn_rom " data-rom="n64">Ver roms</button>
+                            </div>
+                            <img class="content-wrapper-img" src="https://cdn2.steamgriddb.com/logo/d78fafb91f61bfc90ec20840630d2b65.png" alt="">
+                        </div>
+
+                        <div class="content-wrapper-header">
+                            <div class="content-wrapper-context">
+                                <h3 class="img-content">
+                                   
+                                    Nintendo DS
+                                </h3>
+                                <div class="content-text">Grab yourself 10 free images from Adobe Stock in a 30-day free
+                                    trial plan and find perfect image, that will help you with your new project.</div>
+                                <button class="content-button btn_rom " data-rom="ds">Ver roms</button>
+                            </div>
+                            <img class="content-wrapper-img" src="https://cdn2.steamgriddb.com/icon/9a1470c3ad1535f93736e090991e5794.ico" alt="">
+                        </div>
+                        <div class="content-wrapper-header">
+                            <div class="content-wrapper-context">
+                                <h3 class="img-content">
+                                   
+                                    Nintendo 3DS
+                                </h3>
+                                <div class="content-text">Grab yourself 10 free images from Adobe Stock in a 30-day free
+                                    trial plan and find perfect image, that will help you with your new project.</div>
+                                <button class="content-button btn_rom " data-rom="3dds">Ver roms</button>
+                            </div>
+                            <img class="content-wrapper-img" src="https://cdn2.steamgriddb.com/logo/1f8928132a042e7ec2098db0cc65fc42.png" alt="">
+                        </div>
+
+                        <div class="content-wrapper-header">
+                            <div class="content-wrapper-context">
+                                <h3 class="img-content">
+                        
+                                    Nintendo Wii
+                                </h3>
+                                <div class="content-text">Grab yourself 10 free images from Adobe Stock in a 30-day free
+                                    trial plan and find perfect image, that will help you with your new project.</div>
+                                <button class="content-button btn_rom " data-rom="nwii">Ver roms</button>
+                            </div>
+                            <img class="content-wrapper-img" src="https://cdn2.steamgriddb.com/logo/0fed8f3a7b01206e865830667ee747d0.png"
+                                alt="">
+                        </div>
+
+                        <div class="content-wrapper-header">
+                            <div class="content-wrapper-context">
+                                <h3 class="img-content">
+                        
+                                    Nintendo Wii U
+                                </h3>
+                                <div class="content-text">Grab yourself 10 free images from Adobe Stock in a 30-day free
+                                    trial plan and find perfect image, that will help you with your new project.</div>
+                                <button class="content-button btn_rom " data-rom="nwiiu">Ver roms</button>
+                            </div>
+                            <img class="content-wrapper-img" src="https://cdn2.steamgriddb.com/logo/e5265c48d8569f6fff44ad44f0e57342.png"
+                                alt="">
+                        </div>
+
+                        <div class="content-wrapper-header">
+                            <div class="content-wrapper-context">
+                                <h3 class="img-content">
+                        
+                                    Nintendo GameCube
+                                </h3>
+                                <div class="content-text">Grab yourself 10 free images from Adobe Stock in a 30-day free
+                                    trial plan and find perfect image, that will help you with your new project.</div>
+                                <button class="content-button btn_rom " data-rom="ncube">Ver roms</button>
+                            </div>
+                            <img class="content-wrapper-img" src="https://cdn2.steamgriddb.com/logo/845e511017cac015863e945fe4c2967c.png"
+                                alt="">
+                        </div>
+                        <div class="content-wrapper-header">
+                            <div class="content-wrapper-context">
+                                <h3 class="img-content">
+                        
+                                    Nintendo Super Nintendo
+                                </h3>
+                                <div class="content-text">Grab yourself 10 free images from Adobe Stock in a 30-day free
+                                    trial plan and find perfect image, that will help you with your new project.</div>
+                                <button class="content-button btn_rom " data-rom="nsnes">Ver roms</button>
+                            </div>
+                            <img class="content-wrapper-img" src="https://cdn2.steamgriddb.com/logo/ad0c3ccdc09354d93b049de0edd3cd82.png"
+                                alt="">
+                        </div>
+                        <div class="content-wrapper-header">
+                            <div class="content-wrapper-context">
+                                <h3 class="img-content">
+                        
+                                    Nintendo Nes
+                                </h3>
+                                <div class="content-text">Grab yourself 10 free images from Adobe Stock in a 30-day free
+                                    trial plan and find perfect image, that will help you with your new project.</div>
+                                <button class="content-button btn_rom " data-rom="nes">Ver roms</button>
+                            </div>
+                            <img class="content-wrapper-img" src="https://cdn2.steamgriddb.com/logo/680dc030aea5462f042ba212fc37d0d8.png"
+                                alt="">
+                        </div>
+                        <div class="content-wrapper-header">
+                            <div class="content-wrapper-context">
+                                <h3 class="img-content">
+                        
+                                    Nintendo GBA
+                                </h3>
+                                <div class="content-text">Grab yourself 10 free images from Adobe Stock in a 30-day free
+                                    trial plan and find perfect image, that will help you with your new project.</div>
+                                <button class="content-button btn_rom " data-rom="gba">Ver roms</button>
+                            </div>
+                            <img class="content-wrapper-img" src="https://cdn2.steamgriddb.com/logo/de2126a9b990548c1c93f5de4f8bc640.png"
+                                alt="">
+                        </div>
+                        <div class="content-wrapper-header">
+                            <div class="content-wrapper-context">
+                                <h3 class="img-content">
+                        
+                                    Nintendo Game Boy
+                                </h3>
+                                <div class="content-text">Grab yourself 10 free images from Adobe Stock in a 30-day free
+                                    trial plan and find perfect image, that will help you with your new project.</div>
+                                <button class="content-button btn_rom " data-rom="gbac">Ver roms</button>
+                            </div>
+                            <img class="content-wrapper-img" src="https://cdn2.steamgriddb.com/logo/6f1983c78fa68a10ac5db21a2ae64318.png"
+                                alt="">
+                        </div>
+
+
+                        <div class="content-wrapper-header">
+                            <div class="content-wrapper-context">
+                                <h3 class="img-content">
+                        
+                                    Sony PlayStation PSP
+                                </h3>
+                                <div class="content-text">Grab yourself 10 free images from Adobe Stock in a 30-day free
+                                    trial plan and find perfect image, that will help you with your new project.</div>
+                                <button class="content-button btn_rom " data-rom="psp">Ver roms</button>
+                            </div>
+                            <img class="content-wrapper-img" src="https://cdn2.steamgriddb.com/logo/85d2a760ccd3016221898219740a5e54.png"
+                                alt="">
+                        </div>
+                        <div class="content-wrapper-header">
+                            <div class="content-wrapper-context">
+                                <h3 class="img-content">
+                        
+                                    Sony PlayStation 2
+                                </h3>
+                                <div class="content-text">Grab yourself 10 free images from Adobe Stock in a 30-day free
+                                    trial plan and find perfect image, that will help you with your new project.</div>
+                                <button class="content-button btn_rom " data-rom="ps2">Ver roms</button>
+                            </div>
+                            <img class="content-wrapper-img" src="https://cdn2.steamgriddb.com/logo/dea8f4099d73382ff4eb973529375e63.png"
+                                alt="">
+                        </div>
+                        <div class="content-wrapper-header">
+                            <div class="content-wrapper-context">
+                                <h3 class="img-content">
+                        
+                                    Sony PlayStation 3
+                                </h3>
+                                <div class="content-text">Grab yourself 10 free images from Adobe Stock in a 30-day free
+                                    trial plan and find perfect image, that will help you with your new project.</div>
+                                <button class="content-button btn_rom " data-rom="ps3">Ver roms</button>
+                            </div>
+                            <img class="content-wrapper-img" src="https://cdn2.steamgriddb.com/logo/38ce1c214347c69979c48d86f8eb3a00.png"
+                                alt="">
+                        </div>
+                        <div class="content-wrapper-header">
+                            <div class="content-wrapper-context">
+                                <h3 class="img-content">
+                        
+                                    Sony PlayStation 4
+                                </h3>
+                                <div class="content-text">Grab yourself 10 free images from Adobe Stock in a 30-day free
+                                    trial plan and find perfect image, that will help you with your new project.</div>
+                                <button class="content-button btn_rom " data-rom="ps4">Ver roms</button>
+                            </div>
+                            <img class="content-wrapper-img" src="https://cdn2.steamgriddb.com/logo/59dceb194dc25b2c234936afe9e82929.png"
+                                alt="">
+                        </div>
+                        <div class="content-wrapper-header">
+                            <div class="content-wrapper-context">
+                                <h3 class="img-content">
+                        
+                                    Microsoft Xbox 360
+                                </h3>
+                                <div class="content-text">Grab yourself 10 free images from Adobe Stock in a 30-day free
+                                    trial plan and find perfect image, that will help you with your new project.</div>
+                                <button class="content-button btn_rom " data-rom="xbox360">Ver roms</button>
+                            </div>
+                            <img class="content-wrapper-img" src="https://cdn2.steamgriddb.com/logo/b64a468079ff608f1e478971284e259d.png"
+                                alt="">
+                        </div>
+                        <div class="content-wrapper-header">
+                            <div class="content-wrapper-context">
+                                <h3 class="img-content">
+                        
+                                    Microsoft Xbox
+                                </h3>
+                                <div class="content-text">Grab yourself 10 free images from Adobe Stock in a 30-day free
+                                    trial plan and find perfect image, that will help you with your new project.</div>
+                                <button class="content-button btn_rom " data-rom="xbox">Ver roms</button>
+                            </div>
+                            <img class="content-wrapper-img" src="https://cdn2.steamgriddb.com/logo/8f7b143806d66d75926d2d2906a37c31.png"
+                                alt="">
+                        </div>
+                        
+                        
+                        
+                    </div>
+
 
                     <div class="content-section" id="main-content">
 
-                    <div class="apps-card" id="grid-juegos"></div>
+                    <div class="apps-card" id="grid-juegos">
+
+                        
+                    </div>
 
                     <div id="detalle-juego" class="hidden"></div>
 
@@ -1189,19 +1510,6 @@
 
  <!-- fin -->
 
-<script>
-    document.getElementById('btn-minimize').addEventListener('click', () => {
-        window.electronAPI.minimizeWindow();
-    });
-
-    document.getElementById('btn-maxi').addEventListener('click', () => {
-        window.electronAPI.toggleMaximize();
-    });
-
-    document.getElementById('btn-close').addEventListener('click', () => {
-        window.electronAPI.closeWindow();
-    });
-</script>
 
 
 <script>
@@ -1233,4 +1541,444 @@
             window.electronAPI.openDevTools();
         });
 
+</script> 
+<!-- <a id="menu-rom">Ir a ROMs</a> -->
+
+<script>
+   // Mostrar el panel de configuración de ROMs
+    document.getElementById("menu-rom").addEventListener("click", function (e) {
+        e.preventDefault();
+
+        // Ocultar el contenido principal si es necesario
+        document.getElementById("main-content").style.display = "none";
+        document.querySelector(".manuela").style.display = "flex";
+
+        // Mostrar panel de configuración de ROMs
+        document.getElementById("rom-fum").style.display = "block";
+
+        // Ocultar webviews por defecto
+        document.querySelectorAll(".view-rom").forEach(v => v.style.display = "none");
+    });
+
+    // Manejo dinámico de botones para mostrar las ROMs correspondientes
+    const botones = document.querySelectorAll(".btn_rom");
+    const vistas = document.querySelectorAll(".view-rom");
+    const manuela = document.querySelector(".manuela");
+
+    botones.forEach((boton) => {
+        boton.addEventListener("click", (e) => {
+            e.preventDefault();
+            const targetRom = boton.getAttribute("data-rom");
+
+            // Ocultar todas las vistas de roms
+            vistas.forEach(v => v.style.display = "none");
+
+            // Mostrar solo la correspondiente
+            const mostrar = document.getElementById(`rom-${targetRom}`);
+            if (mostrar) mostrar.style.display = "flex";
+
+            // Ocultar la sección "manuela"
+            if (manuela) manuela.style.display = "none";
+        });
+    });
+
+    // Volver a la vista principal
+    document.querySelectorAll(".volver-btn").forEach(function (btn) {
+        btn.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Ocultar el panel de ROMs
+            document.getElementById("rom-fum").style.display = "none";
+
+            // Mostrar elementos principales
+            document.getElementById("main-content").style.display = "block";
+            document.querySelector(".manuela").style.display = "none";
+
+            // Ocultar todos los webviews
+            document.querySelectorAll(".view-rom").forEach(v => v.style.display = "none");
+        });
+    });
+
+    const webviews = document.querySelectorAll('.view-rom');
+
+    webviews.forEach((webview) => {
+        webview.addEventListener('did-finish-load', () => {
+            const customCSS = `
+     <style>
+      .bg-light.py-2 {
+    display: none;
+}
+    section.bg-white.border.rounded.shadow-sm.pt-3.px-4.pb-2.mb-4 {
+    display: none;
+}
+    .footer-nav {
+    background-color: #EB144C;
+    display: none;
+}
+    .footer-copyright {
+    background-color: #DA154A;
+    display: none;
+}
+    .layout-switch {
+    border: 1px solid black;
+    border-radius: 6px;
+    display: none;
+}
+    .btn-sm {
+    font-size: 0.75rem;
+    display: none;
+}
+    .row {
+    display: -ms-flexbox;
+    display: flex
+;
+    -ms-flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+    flex-wrap: wrap;
+}
+    @media (min-width: 768px) {
+    .container {
+        max-width: none; */
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: none;
+    }
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+    .entry-content {
+    text-align: justify;
+    display: none;
+}
+    .pl-3 {
+    padding-left: 1rem !important;
+    display: none;
+}
+    section.related-roms {
+    display: none;
+}
+    ins.adsbygoogle {
+    position: fixed;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    display: none;
+}
+    .bg-light {
+    background-color: #ff000000;
+}
+    .bg-light {
+    background-color: #ffffff00 !important;
+}
+    section.bg-white.border.rounded.shadow-sm.pt-3.px-3.mb-4 {
+    display: none;
+}
+    .alert.alert-success {
+    display: none;
+}
+    .help-block.d-flex.justify-content-between.align-items-center.px-3.py-2.bg-white.my-4.rounded {
+    /* background: #ff000000; */
+    display: none !important;
+}
+    .filter-row {
+    display: none;
+}
+    li.filter-row.bg-primary.mb-2 {
+    display: block;
+}
+    #masthead {
+  display: none;
+}
+ body {
+    color: var(--theme-color);
+}
+    html {
+    scrollbar-width: none;
+}
+    .tech-info.d-flex.flex-row.align-items-center.justify-content-around {
+    display: none !important;
+}
+
+/*juegos--------------------*/
+.archive-cover-container img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    mask-image: linear-gradient(#000000 70%, #fb000000);
+    border-radius: 6px 6px 0 0;
+}
+   .p-3 {
+    padding: 5px !important;
+    /* color: var(--theme-color); */
+    border: 2px solid var(--theme-bg-color) !important;
+}
+    .text-body {
+    color: var(--theme-color) !important;
+    position: absolute;
+    bottom: 23px;
+    margin-left: 10px;
+}
+    .genres-info {
+    font-size: 11px;
+    display: flex
+;
+    margin-left: 10px;
+}
+    a.border:hover, .archive-container:hover {
+    border-color: #9191914f !important;
+    scale: 1.1;
+}
+    a.border:hover, .archive-container {
+        transition: all 0.3s ease;
+}
+
+
+/*theme */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: var(--theme-color);
+}
+    .text-primary {
+    color: var(--theme-color) !important;
+}
+    .table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: var(--theme-color);
+}
+.filters .dropfilter .filter_btn {
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--popup-bg);
+    border: #8d8d8d78;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex
+;
+    margin: 0;
+    opacity: 1;
+    padding: 8px 14px;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .2s ease 0s;
+}
+    .filters .dropfilter .dropdown-filter-content {
+    background: var(--popup-bg);
+    border: 1px solid #85858500;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    padding: 0;
+    display: none;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow: visible;
+    position: absolute;
+    top: 46px;
+    z-index: 99999;
+}
+    .btn-primary, .btn-primary:not(:disabled):not(.disabled):active:focus {
+    color: #fff;
+    background-color: var(--content-bg);
+    border-color: #818181;
+}
+.mb-2 strong,  .px-2 {
+    display: none;
+}
+    .bg-white {
+    background-color: var(--content-bg) !important;
+}
+ :root {
+     --theme-bg-color: rgba(16 18 27 / 40%);
+     --border-color: rgba(113 119 144 / 25%);
+     --theme-color: #f9fafb;
+     --inactive-color: rgb(113 119 144 / 78%);
+     --body-font: "Poppins", sans-serif;
+     --hover-menu-bg: rgba(12 15 25 / 30%);
+     --content-title-color: #999ba5;
+     --content-bg: rgb(146 151 179 / 13%);
+     --button-inactive: rgb(249 250 251 / 55%);
+     --dropdown-bg: #21242d;
+     --dropdown-hover: rgb(42 46 60);
+     --popup-bg: rgb(22 25 37);
+     --search-bg: #14162b;
+     --overlay-bg: rgba(36, 39, 59, 0.3);
+     --scrollbar-bg: rgb(1 2 3 / 40%);
+ }
+
+ .light-mode {
+     --theme-bg-color: rgb(255 255 255 / 31%);
+     --theme-color: #3c3a3a;
+     --inactive-color: #333333;
+     --button-inactive: #3c3a3a;
+     --search-bg: rgb(255 255 255 / 31%);
+     --dropdown-bg: #f7f7f7;
+     --overlay-bg: rgb(255 255 255 / 30%);
+     --dropdown-hover: rgb(236 236 236);
+     --border-color: rgb(255 255 255 / 35%);
+     --popup-bg: rgb(255 255 255);
+     --hover-menu-bg: rgba(255 255 255 / 35%);
+     --scrollbar-bg: rgb(255 253 253 / 57%);
+     --content-title-color: --theme-color;
+ }
+    </style>
+    `;
+
+            webview.executeJavaScript(`
+      const styleTag = document.createElement('div');
+      styleTag.innerHTML = \`${customCSS}\`;
+      document.head.appendChild(styleTag);
+    `);
+        });
+    });
+
+
+    webview.addEventListener('dom-ready', () => {
+        const script = `
+    function aplicarTema(theme) {
+      const body = document.body;
+      body.className = '';
+
+      if (theme === 'dark') {
+        body.classList.add('light-theme');
+      } else if (theme === 'light') {
+        body.classList.add('light-theme', 'light-mode');
+      }
+    }
+  `;
+        webview.executeJavaScript(script);
+    });
+
 </script>
+<script>
+    // Abrir DevTools solo para el webview
+    document.getElementById('btn-devtools-rom-n64').addEventListener('click', () => {
+        const webview = document.getElementById('rom-n64');
+        webview.openDevTools();  // Abre la consola del webview
+    });
+</script>
+
+<script>
+    const btnVolver = document.getElementById('volver');
+    const btnVolver2 = document.getElementById('volver2');
+
+    // Función para actualizar los botones según si se puede volver atrás
+    function actualizarBotones(webview) {
+        const canGoBack = webview.canGoBack();
+
+        // Mostrar el botón "volver" si se puede ir atrás, y ocultar el otro
+        btnVolver.style.display = canGoBack ? 'inline-block' : 'none';
+        btnVolver2.style.display = canGoBack ? 'none' : 'block';
+    }
+
+    // Cuando se hace clic en el botón "volver", se navega hacia atrás en el historial si es posible
+    btnVolver.addEventListener('click', () => {
+        webviews.forEach(webview => {
+            if (webview.canGoBack()) {
+                webview.goBack();  // Vuelve a la página anterior si es posible
+            }
+        });
+    });
+
+    // Opcional: Habilita o desactiva el botón según si hay historial atrás en cada webview
+    webviews.forEach(webview => {
+        webview.addEventListener('did-navigate', () => {
+            actualizarBotones(webview); // Actualiza los botones cada vez que el webview navega
+        });
+    });
+
+    // Asegúrate de que al cargar la página los botones se actualicen según el estado inicial
+    webviews.forEach(webview => {
+        actualizarBotones(webview);
+    });
+</script>
+
+
+<style>
+    #loader {
+         position: absolute;
+        top: 0;
+        left: 0;
+        width: 108%;
+        height: 100%;
+        background: var(--popup-bg);
+        display: flex
+    ;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        z-index: 999;
+        filter: blur(1px);
+        margin: -40px;
+    }
+#loader,
+webview {
+    transition: opacity 0.5s ease;
+}
+
+.hidden-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+</style>
+
+<!-- loading de webview -->
+ <script>
+    const loader = document.getElementById('loader');
+
+    function actualizarBoton(webview) {
+        btnVolver.style.display = webview.canGoBack() ? 'inline-block' : 'none';
+    }
+
+    webviews.forEach((webview) => {
+        // Aparece de golpe al iniciar carga
+        webview.style.opacity = '1';
+        loader.style.opacity = '1';
+
+        webview.addEventListener('did-start-loading', () => {
+            loader.style.display = 'flex';
+            loader.style.opacity = '1';
+            loader.classList.remove('hidden-out');
+
+            webview.style.display = 'none';
+        });
+
+        webview.addEventListener('did-stop-loading', () => {
+            // Oculta loader con suavidad
+            loader.classList.add('hidden-out');
+            setTimeout(() => loader.style.display = 'none', 500); // Oculta completamente luego de la animación
+
+            // Muestra el webview directamente
+            webview.style.display = 'flex';
+            actualizarBoton(webview);
+        });
+
+        webview.addEventListener('dom-ready', () => {
+            actualizarBoton(webview);
+        });
+    });
+
+    btnVolver.addEventListener('click', () => {
+        webviews.forEach((webview) => {
+            if (webview.canGoBack()) {
+                webview.goBack();
+            }
+        });
+    });
+</script>
+
