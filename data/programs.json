@@ -1,0 +1,1696 @@
+[
+  {
+    "titulo": "Driver Booster",
+    "imagen": "https://cdn2.steamgriddb.com/hero/83a62ec9cb817600685ad9e72404a513.png",
+    "descripcion": "Driver Booster es una herramienta diseñada para escanear, identificar y actualizar drivers obsoletos en sistemas Windows. <br><br><li> Compatible con Windows 7, 8, 10 y 11. <br><li> Soporte para más de 6 millones de drivers oficiales. <br><li> Mejora el rendimiento en juegos y reduce errores del sistema. <br><br>✅ Actualización automática con un solo clic.<br>✅ Función de respaldo y restauración de drivers.<br>✅ Modo Game Boost para optimizar recursos y FPS.<br>✅ Interfaz simple y en español, ideal para usuarios sin experiencia técnica.",
+    "manual": "🔧 Instalación y uso de Driver Booster\n\n1. Descargar Driver Booster:\n- Ir al sitio oficial: https://www.iobit.com/es/driver-booster.php\n- Hacé clic en 'Descargar gratis' para obtener el instalador.\n\n2. Instalar el programa:\n- Ejecutá el archivo descargado (`driver_booster_setup.exe`).\n- Seguí las instrucciones del instalador (podés desmarcar software adicional si se ofrece).\n\n3. Escanear tu PC:\n- Al abrir Driver Booster, hacé clic en 'Escanear'.\n- El programa detectará drivers obsoletos, faltantes o corruptos.\n\n4. Actualizar los drivers:\n- Revisá la lista de resultados.\n- Hacé clic en 'Actualizar ahora' para instalar todos, o seleccioná individualmente los que quieras.\n\n5. Opciones útiles:\n- Activá 'Crear punto de restauración' antes de instalar por seguridad.\n- Usá el modo 'Game Boost' para liberar memoria RAM antes de jugar.\n\n6. Finalizar y reiniciar:\n- Tras actualizar, reiniciá tu PC si el programa lo recomienda.\n- Tu sistema estará optimizado con los controladores más recientes.",
+    "categoria": "drivers",
+    "descargas": [
+      {
+        "nombre": "Programa",
+        "url": "https://cdn.iobit.com/insurweb/dl_esseo_dbfpdp/driver_booster_setup.exe"
+      },
+      {
+        "nombre": "Activador",
+        "url": "/data/download/version.dll"
+      }
+    ]
+  },
+  {
+    "titulo": "Visual C++ Redistributable",
+    "imagen": "https://solaez.github.io/data/img/grid/vs++.png",
+    "descripcion": "Visual C++ Redistributable es un conjunto de bibliotecas necesarias para ejecutar aplicaciones creadas con Microsoft Visual Studio en Windows. <br><br><li> Requerido por muchos juegos y programas modernos. <br><li> Incluye versiones desde 2005 hasta 2022. <br><li> Compatible con sistemas de 32 y 64 bits. <br><br>✅ Permite el funcionamiento correcto de software desarrollado en C++.<br>✅ Instalación rápida y silenciosa.<br>✅ Recomendado tener múltiples versiones instaladas para evitar errores como 'MSVCP140.dll no encontrado'.<br>✅ Fundamental para usuarios de Steam, Epic Games y otras plataformas.",
+    "manual": "🔧 Instalación de Visual C++ Redistributable\n\n1. Descargar los instaladores oficiales:\n- Ir al sitio de Microsoft: https://learn.microsoft.com/es-es/cpp/windows/latest-supported-vc-redist\n- Descargá las versiones necesarias (x86 y x64) según tu sistema.\n\n2. Elegir las versiones recomendadas:\n- Se recomienda instalar todas las versiones desde 2005 hasta 2022.\n- Las más usadas por programas actuales son: 2013, 2015-2019 y 2022 (estas últimas vienen unificadas).\n\n3. Ejecutar los instaladores:\n- Hacé doble clic en cada archivo `.exe` descargado (por ejemplo: `vc_redist.x64.exe`).\n- Aceptá los términos y hacé clic en 'Instalar'.\n\n4. Reiniciar si es necesario:\n- Algunas versiones solicitan reiniciar el sistema para completar la instalación.\n\n5. Verificar instalación:\n- Podés comprobar las versiones instaladas desde Panel de control > Programas y características.\n\n💡 Tener varias versiones instaladas no causa conflictos y es necesario para asegurar compatibilidad con distintos programas.",
+    "categoria": "new",
+    "descargas": [
+      {
+        "nombre": "Todos",
+        "url": "/data/download/visual.zip"
+      }
+    ]
+  },
+  {
+    "titulo": "DirectX",
+    "imagen": "https://solaez.github.io/data/img/grid/DirectX.png",
+    "descripcion": "DirectX es un conjunto de APIs desarrollado por Microsoft que permite ejecutar aplicaciones multimedia, especialmente videojuegos, en Windows. <br><br><li> Utilizado por casi todos los juegos modernos para gráficos, audio y entrada. <br><li> Incluye Direct3D, DirectSound, DirectInput, entre otros módulos. <br><li> Compatible con versiones de Windows desde XP hasta Windows 11. <br><br>✅ Mejora el rendimiento gráfico y la calidad visual en juegos.<br>✅ Requisito esencial para títulos de Steam, Epic Games y Microsoft Store.<br>✅ Versiones más recientes (como DirectX 12) ofrecen soporte para trazado de rayos (Ray Tracing).<br>✅ Instalación automática con muchos juegos, pero también disponible por separado desde Microsoft.",
+    "manual": "Solo instalar",
+    "categoria": "new",
+    "descargas": [
+      {
+        "nombre": "DirectX 9,10,11",
+        "url": "/data/download/DirectX 9,10,11.rar"
+      },
+      {
+        "nombre": "DirectX 12",
+        "url": "/data/download/DirectX 12 (Requiere internet).exe"
+      }
+    ]
+  },
+  {
+    "titulo": "Upscayl",
+    "imagen": "https://img.thosefree.com/wp-content/uploads/2023/01/upscayl-cover.jpg&720x405.jpg",
+    "descripcion": "Upscayl es un software de código abierto que utiliza inteligencia artificial para aumentar la resolución de imágenes sin perder calidad. Es especialmente útil para mejorar fotos, ilustraciones y gráficos de baja resolución, y está disponible para Windows, macOS y Linux.",
+    "manual": "1. Descarga el archivo.",
+    "categoria": "new",
+    "descargas": [
+      {
+        "nombre": "Programa",
+        "url": "https://github.com/upscayl/upscayl/releases/download/v2.15.0/upscayl-2.15.0-win.exe"
+      }
+    ]
+  },
+  {
+  "titulo": "Spotify Premium",
+  "imagen": "https://cdn2.steamgriddb.com/grid/cdeae18baf7bb375affc62bb6caf0b10.png",
+  "descripcion": "Spotify es una plataforma de streaming de música, pódcast y audiolibros que permite a los usuarios escuchar contenido en línea o descargarlo para reproducirlo sin conexión. Ofrece un catálogo extenso de canciones y programas, con opciones gratuitas con anuncios y suscripciones premium sin interrupciones.\n",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Programa Oficial",
+      "url": "https://download.scdn.co/SpotifySetup.exe"
+    },
+    {
+      "nombre": "Modificador Premium automatico por mi",
+      "url": "/data/download/spotify premium.bat"
+    },
+    {
+      "nombre": "Modificador Premium Manual",
+      "url": "/data/download/spotify premium.txt"
+    }
+  ]
+},
+  {
+  "titulo": "DS4 Windows",
+  "imagen": "https://repository-images.githubusercontent.com/108735091/a34fb9da-87f3-4968-a1e3-3953837bbff7",
+  "descripcion": "DS4Windows es un software que permite usar controladores DualShock 4 y DualSense en una PC con Windows, emulando un control de Xbox para mejorar la compatibilidad con juegos. También permite personalizar botones, sensibilidad de sticks y gatillos, así como usar el panel táctil y la retroalimentación háptica.",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Programa + configuración",
+      "url": "/data/download/DS4Windows.zip"
+    }
+  ]
+},
+  {
+  "titulo": "Balena Etcher",
+  "imagen": "https://libretips.com/wp-content/uploads/2021/04/Etcher.jpg",
+  "descripcion": "Balena Etcher es una herramienta gratuita y de código abierto para crear unidades USB booteables o grabar imágenes de disco (ISO y IMG) en tarjetas SD y memorias USB. Es fácil de usar y compatible con Windows, macOS y Linux, ideal para instalar sistemas operativos.",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Programa Oficial",
+      "url": "https://github.com/balena-io/etcher/releases/download/v2.1.0/balenaEtcher-2.1.0.Setup.exe"
+    }
+  ]
+},
+  {
+  "titulo": "WinRAR Pro",
+  "imagen": "https://brightcell.net/wp-content/uploads/2023/10/winrar-2.jpg",
+  "descripcion": "WinRAR Pro no es una versión oficial del software, ya que WinRAR solo tiene una versión estándar con licencia paga. WinRAR es un programa de compresión y descompresión de archivos compatible con formatos como RAR, ZIP, 7Z, ISO y más. Ofrece funciones avanzadas como encriptación, reparación de archivos dañados y división de archivos grandes. Aunque es de pago, permite usarlo con una prueba indefinida con recordatorios.",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Programa Oficial x64",
+      "url": "https://d.winrar.es/d/103z1747163034/rsf1jgDeVRYVkZ7_sDpB0g/winrar-x64-711es.exe"
+    },
+    {
+      "nombre": "Programa Oficial x86",
+      "url": "https://d.winrar.es/d/52z1747163093/Tst7f5osRt-8mTmLaLe73w/winrar-x32-701es.exe"
+    },
+    {
+      "nombre": "Activador",
+      "url": "/data/download/rarreg.key"
+    }
+  ]
+},
+  {
+  "titulo": "Microsoft Office",
+  "imagen": "https://support.microsoft.com/images/es-es/454b5ad9-37d1-4b66-826e-59cc18796a4f",
+  "descripcion": "Microsoft Office es una suite de aplicaciones de productividad desarrollada por Microsoft. Incluye programas como Word (procesador de textos), Excel (hojas de cálculo), PowerPoint (presentaciones), Outlook (correo y calendario) y más. Está disponible en versiones de compra única y mediante suscripción con Microsoft 365, que ofrece almacenamiento en la nube y actualizaciones continuas.",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Microsoft 365",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&platform=x64&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Microsoft 365 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/O365ProPlusRetail.img"
+    },
+    {
+      "nombre": "Office 2024",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2024Retail&platform=x64&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Office 2024 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/ProPlus2024Retail.img"
+    },
+    {
+      "nombre": "Office 2021",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Professional2021Retail&platform=x64&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Office 2021 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/Professional2021Retail.img"
+    },
+    {
+      "nombre": "Office 2019",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Professional2019Retail&platform=x64&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Office 2019 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/Professional2019Retail.img"
+    },
+    {
+      "nombre": "Office 2016",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProfessionalRetail&platform=x64&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Office 2016 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/ProPlusRetail.img"
+    },
+    {
+      "nombre": "Office 2013 ",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&platform=x64&language=es-es&version=O15GA"
+    },
+    {
+      "nombre": "Office 2013 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/es-es/HomeBusinessRetail.img"
+    }
+    
+  ]
+},
+
+  {
+  "titulo": "Microsoft Office 32bits",
+  "imagen": "https://support.microsoft.com/images/es-es/454b5ad9-37d1-4b66-826e-59cc18796a4f",
+  "descripcion": "Microsoft Office es una suite de aplicaciones de productividad desarrollada por Microsoft. Incluye programas como Word (procesador de textos), Excel (hojas de cálculo), PowerPoint (presentaciones), Outlook (correo y calendario) y más. Está disponible en versiones de compra única y mediante suscripción con Microsoft 365, que ofrece almacenamiento en la nube y actualizaciones continuas.",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Microsoft 365 x86",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&platform=x86&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Microsoft 365 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/O365ProPlusRetail.img"
+    },
+    {
+      "nombre": "Office 2024 x86",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2024Retail&platform=x86&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Office 2024 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/ProPlus2024Retail.img"
+    },
+    {
+      "nombre": "Office 2021 x86",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Professional2021Retail&platform=x86&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Office 2021 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/Professional2021Retail.img"
+    },
+    {
+      "nombre": "Office 2019 x86",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2019Retail&platform=x86&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Office 2019 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/Professional2019Retail.img"
+    },
+    {
+      "nombre": "Office 2016 x86",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProfessionalRetail&platform=x86&language=es-es&version=O16GA"
+    },
+    {
+      "nombre": "Office 2016 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/es-es/ProPlusRetail.img"
+    },
+    {
+      "nombre": "Office 2013 x86",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&platform=x86&language=es-es&version=O15GA"
+    },
+    {
+      "nombre": "Office 2013 Offline x64/x86",
+      "url": "https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/es-es/HomeBusinessRetail.img"
+    }
+    
+  ]
+},
+
+  {
+  "titulo": "Office key",
+  "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHnOpwBYeeGl2z6YdTdoDs4ZNxvc8LJi9V3g&s",
+  "descripcion": "WiLas keys de Microsoft Office son claves de producto necesarias para activar versiones legítimas de la suite. Estas claves pueden comprarse oficialmente a través de Microsoft o distribuidores autorizados. Si buscas una licencia, te recomiendo adquirirla de fuentes oficiales para evitar riesgos de seguridad o problemas con actualizaciones. También puedes considerar Microsoft 365, que funciona con una suscripción y no requiere una clave única.",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Activador automatico",
+      "url": "/data/download/Activar Office.bat"
+    },
+    {
+      "nombre": "Manual",
+      "url": "/data/download/activar office.txt"
+    }
+  ]
+},
+  {
+  "titulo": "guiformat",
+  "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgoiKlmeVkzqxntXq72UR5GYl6agGVZQqNWg&s",
+  "descripcion": "GUIFormat es una herramienta ligera y gratuita que permite formatear unidades USB y discos en formato FAT32, incluso si son mayores a 32 GB, algo que Windows no permite por defecto. Es útil para preparar unidades para consolas, sistemas embebidos y otros dispositivos que requieren FAT32.",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Programa",
+      "url": "/data/download/guiformat.exe"
+    }
+  ]
+},
+  {
+  "titulo": "RocketDock",
+  "imagen": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/3623c10c-f08e-4aa8-8051-fc4cb51a6cd4/daetrak-0f4dd4ce-14c5-42fb-b05e-bfea68f6af09.jpg",
+  "descripcion": "GUIFormat es una herramienta ligera y gratuita que permite formatear unidades USB y discos en formato FAT32, incluso si son mayores a 32 GB, algo que Windows no permite por defecto. Es útil para preparar unidades para consolas, sistemas embebidos y otros dispositivos que requieren FAT32.",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Programa",
+      "url": "/data/download/RocketDock-v1.3.5.exe"
+    }
+  ]
+},
+  {
+  "titulo": "Hard Disk Sentinel",
+  "imagen": "https://images.tokopedia.net/img/cache/250-square/VqbcmM/2025/1/25/2ae3800f-3eda-44ac-b1a6-2b8e34e4b16f.jpg?ect=4g",
+  "descripcion": "Hard Disk Sentinel es un software de monitoreo y diagnóstico de discos duros y SSD. Permite detectar, analizar y reportar problemas de salud, temperatura y rendimiento del almacenamiento. Es útil para prevenir fallos y realizar mantenimiento preventivo en Windows",
+  "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Programa portable",
+      "url": "https://www.harddisksentinel.com/hdsentinel_pro_portable.zip"
+    },
+     {
+      "nombre": "Programa",
+      "url": "https://www.harddisksentinel.com/hdsentinel_pro_setup.zip"
+    }
+  ]
+},
+  {
+  "titulo": "Wii U USB Helper",
+  "imagen": "https://cdn2.steamgriddb.com/grid/4cef08f99c72431dadbb867aa75c1c90.png",
+  "descripcion": "Wii U USB Helper fue una herramienta que permitía descargar y gestionar copias de seguridad de juegos para Wii U y 3DS. Facilitaba la instalación de títulos en una memoria USB o tarjeta SD para usarlos en consolas modificadas <br> <br>Buscador: titlekeys.ovh",
+  "manual": "",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Programa portable",
+      "url": "https://github.com/FailedShack/USBHelperInstaller/releases/download/1.2/USBHelperInstaller.exe"
+    }
+  ]
+},
+  {
+  "titulo": "Hydra Launcher",
+  "imagen": "https://cdn2.steamgriddb.com/grid/8a6a69de3404b8405495b04354cf5704.jpg",
+  "descripcion": "Hydra Launcher es una aplicación de código abierto que funciona como un lanzador de juegos con un cliente BitTorrent integrado. Está diseñada para simplificar la descarga y gestión de juegos en tu PC, permitiendo organizar títulos de diversas fuentes en una sola plataforma. Entre sus características destacan: <br><br><li>Cliente BitTorrent incorporado: facilita la descarga de juegos directamente desde la aplicación. <br><br><li>Scraper de repacks autogestionado: ayuda a encontrar y organizar versiones comprimidas de juegos. <br><br><li>Personalización de rutas de descarga: permite elegir las ubicaciones donde se almacenarán los juegos. <br><br><li>Compatibilidad con Windows y Linux: ofrece soporte para múltiples sistemas operativos. <br><br><li>Integración con How Long To Beat (HLTB): proporciona información sobre el tiempo promedio de finalización de los juegos..",
+  "manual": "link de descarga: https://hydralinks.cloud/",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Programa portable",
+      "url": "https://hydralauncher.net/portable"
+    },
+    {
+      "nombre": "Programa",
+      "url": "https://hydralauncher.net/windows"
+    }
+  ]
+},
+  {
+  "titulo": "Plutonium",
+  "imagen": "https://cdn2.steamgriddb.com/grid/b35b37c9c5e39a02717c37e00b417590.jpg",
+  "descripcion": "Plutonium es un cliente modificado para juegos de la saga Call of Duty, que mejora la experiencia en títulos antiguos como <br><br><li> Call of Duty: Black Ops II. <br><li> Call of Duty: Black Ops I. <br><li> Call of Duty: Modern Warfare 3 <br><li> Call of Duty: World at War <br><br> Servidores dedicados con anti-cheat integrado. <br>✅ Mejor rendimiento y soporte para FPS desbloqueados.<br>✅ Soporte para mods y mapas personalizados.<br>✅ Jugar sin necesidad de Steam (requiere archivos del juego).",
+  "manual": "",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Launcher",
+      "url": "magnet:?xt=urn:btih:995ec499bdf0c0604c203d93f2047d139f33f4fc&dn=Mario%20and%20Luigi%20Brothership%20[01006D0017F7A000][v0][US](nsw2u.com).xci&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://opentracker.i2p.rocks:6969/announce&tr=udp://tracker.openbittorrent.com:6969/announce"
+    },
+    {
+      "nombre": "T4 - World at War",
+      "url": "magnet:?xl=8752916605&xt=urn:btih:588db5246b9e3b03a57479e8f9d19a51ef3688b5&dn=pluto_t4_full_game&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.bt4g.com%3A2095%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce"
+    },
+    {
+      "nombre": "T5 - Black Ops I",
+      "url": "magnet:?xl=12138748288&xt=urn:btih:9b588fb111e3e442a33f8f5240fb2244ad02d8ca&dn=pluto_t5_full_game&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.bt4g.com%3A2095%2Fannounce&tr=http%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce"
+    },
+    {
+      "nombre": "T6 - Black Ops II",
+      "url": "magnet:?xl=14691893183&xt=urn:btih:924a8d0e89358f664979789dc86be9a3f5b4ac4c&dn=pluto_t6_full_game&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.nwps.ws%3A6969%2Fannounce"
+    }
+  ]
+},
+  {
+  "titulo": "The Legend of Zelda: Breath of the Wild Multiplayer",
+  "imagen": "https://zelda.nintendo.com/breath-of-the-wild/assets/media/wallpapers/mobile-5.jpg",
+  "descripcion": "The Legend of Zelda: Breath of the Wild Multiplayer es un mod que permite jugar en modo cooperativo con varios jugadores en Breath of the Wild. Fue desarrollado por la comunidad de modders y funciona principalmente en emuladores como Cemu y Yuzu, en PC.",
+  "manual": "",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Python",
+      "url": "https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe"
+    },
+    {
+      "nombre": "Launcher",
+      "url": "/data/download/MilkBarLauncher.zip"
+    },
+    {
+      "nombre": "Radmin VPN",
+      "url": "https://download.radmin-vpn.com/download/files/Radmin_VPN_1.4.4642.1.exe"
+    },
+    {
+      "nombre": "Emulador",
+      "url": "/data/download/cemu_1.26.2.zip"
+    },
+    {
+      "nombre": "Nesesario .net",
+      "url": "https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/6.0.14/windowsdesktop-runtime-6.0.14-win-x64.exe"
+    }
+  ]
+},
+{
+  "titulo": "Yuzu",
+  "imagen": "https://cdn2.steamgriddb.com/grid/6f7c62c478c08564d468ececda07d77e.png",
+  "descripcion": "Yuzu - Funciones principales\nEmulación de Nintendo Switch: Corre juegos comerciales y homebrew de la consola.\n\nGráficos mejorados: Soporta resoluciones mayores que la consola original (upscaling).\n\nMultijugador local en línea (LDN): Permite jugar en línea como si fuera multijugador local.\n\nSoporte para mods y cheats: Podés aplicar modificaciones, parches y trucos fácilmente.\n\nCompatibilidad con mandos: Detecta joysticks y permite configurarlos como Joy-Con o Pro Controller.\n\nGuardado automático y estados: Guarda partidas automáticamente o con \"save states\".\n\nShader cache: Acelera los tiempos de carga y mejora el rendimiento visual.\n\nActualizaciones y DLCs: Permite instalar updates y contenido adicional de los juegos.\n\n",
+  "manual": "Primer inicio y configuración\nAbrí Yuzu\n\nEn el primer arranque, te pedirá:\n\nKeys (prod.keys y title.keys): Deben obtenerse desde tu propia consola Switch (por temas legales).\n\nFirmware: También desde tu Switch, o podés usar el instalador de firmware de Yuzu (si tenés los archivos).\n\n👉 Los keys se colocan en la carpeta:\n%appdata%\\yuzu\\keys",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Emulador",
+      "url": "mario"
+    }
+  ]
+},
+{
+  "titulo": "Yuzu early",
+  "imagen": "https://cdn2.steamgriddb.com/grid/b4203b21d6e33ebe245c0ffd85055977.png",
+  "descripcion": "Yuzu early- Funciones principales\nEmulación de Nintendo Switch: Corre juegos comerciales y homebrew de la consola.\n\nGráficos mejorados: Soporta resoluciones mayores que la consola original (upscaling).\n\nMultijugador local en línea (LDN): Permite jugar en línea como si fuera multijugador local.\n\nSoporte para mods y cheats: Podés aplicar modificaciones, parches y trucos fácilmente.\n\nCompatibilidad con mandos: Detecta joysticks y permite configurarlos como Joy-Con o Pro Controller.\n\nGuardado automático y estados: Guarda partidas automáticamente o con \"save states\".\n\nShader cache: Acelera los tiempos de carga y mejora el rendimiento visual.\n\nActualizaciones y DLCs: Permite instalar updates y contenido adicional de los juegos.\n\n",
+  "manual": "Primer inicio y configuración\nAbrí Yuzu\n\nEn el primer arranque, te pedirá:\n\nKeys (prod.keys y title.keys): Deben obtenerse desde tu propia consola Switch (por temas legales).\n\nFirmware: También desde tu Switch, o podés usar el instalador de firmware de Yuzu (si tenés los archivos).\n\n👉 Los keys se colocan en la carpeta:\n%appdata%\\yuzu\\keys",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Emulador",
+      "url": "mario"
+    }
+  ]
+},
+{
+  "titulo": "Suyu",
+  "imagen": "https://cdn2.steamgriddb.com/grid/15a1408aed6a3f54b7a1fa9dd9efa7e1.png",
+  "descripcion": "Yuzu early- Funciones principales\nEmulación de Nintendo Switch: Corre juegos comerciales y homebrew de la consola.\n\nGráficos mejorados: Soporta resoluciones mayores que la consola original (upscaling).\n\nMultijugador local en línea (LDN): Permite jugar en línea como si fuera multijugador local.\n\nSoporte para mods y cheats: Podés aplicar modificaciones, parches y trucos fácilmente.\n\nCompatibilidad con mandos: Detecta joysticks y permite configurarlos como Joy-Con o Pro Controller.\n\nGuardado automático y estados: Guarda partidas automáticamente o con \"save states\".\n\nShader cache: Acelera los tiempos de carga y mejora el rendimiento visual.\n\nActualizaciones y DLCs: Permite instalar updates y contenido adicional de los juegos.\n\n",
+  "manual": "Primer inicio y configuración\nAbrí Yuzu\n\nEn el primer arranque, te pedirá:\n\nKeys (prod.keys y title.keys): Deben obtenerse desde tu propia consola Switch (por temas legales).\n\nFirmware: También desde tu Switch, o podés usar el instalador de firmware de Yuzu (si tenés los archivos).\n\n👉 Los keys se colocan en la carpeta:\n%appdata%\\yuzu\\keys",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Emulador",
+      "url": "mario"
+    }
+  ]
+},
+{
+  "titulo": "Sudachi",
+  "imagen": "https://cdn2.steamgriddb.com/grid/02adba1673a1b9756216a505a3381a76.png",
+  "descripcion": "Sudachi- Funciones principales\nEmulación de Nintendo Switch: Corre juegos comerciales y homebrew de la consola.\n\nGráficos mejorados: Soporta resoluciones mayores que la consola original (upscaling).\n\nMultijugador local en línea (LDN): Permite jugar en línea como si fuera multijugador local.\n\nSoporte para mods y cheats: Podés aplicar modificaciones, parches y trucos fácilmente.\n\nCompatibilidad con mandos: Detecta joysticks y permite configurarlos como Joy-Con o Pro Controller.\n\nGuardado automático y estados: Guarda partidas automáticamente o con \"save states\".\n\nShader cache: Acelera los tiempos de carga y mejora el rendimiento visual.\n\nActualizaciones y DLCs: Permite instalar updates y contenido adicional de los juegos.\n\n",
+  "manual": "Primer inicio y configuración\nAbrí Yuzu\n\nEn el primer arranque, te pedirá:\n\nKeys (prod.keys y title.keys): Deben obtenerse desde tu propia consola Switch (por temas legales).\n\nFirmware: También desde tu Switch, o podés usar el instalador de firmware de Yuzu (si tenés los archivos).\n\n👉 Los keys se colocan en la carpeta:\n%appdata%\\yuzu\\keys",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Emulador",
+      "url": "mario"
+    }
+  ]
+},
+{
+  "titulo": "Sekiro: Shadows Die Twice",
+  "imagen": "https://cdn2.steamgriddb.com/grid/cc735352db842232a33b3d1edd26f8f6.png",
+  "descripcion": "Sekiro: Shadows Die Twice es un videojuego de acción y aventura desarrollado por FromSoftware. Ambientado en un Japón ficticio del período Sengoku, sigues la historia de un guerrero shinobi llamado Lobo, que busca rescatar a su joven señor y vengarse de sus enemigos. A diferencia de otros juegos de la compañía, Sekiro se enfoca más en el sigilo, la exploración y el combate con espadas, sin elementos de rol tradicionales como subir de nivel o elegir clases. Se destaca por su dificultad desafiante, mecánicas de resurrección y un sistema de combate centrado en la postura y el contraataque",
+  "manual": "⚔️ Cómo jugar en línea\n\nCrear una sesión (host): Usa el objeto Cursed Emblem.\n\nInvadir otra sesión: Usa el objeto Demon Eyes.\n\nJugar en cooperativo:\n- El anfitrión debe crear una sesión.\n- Invita a tus amigos a través de la lista de amigos de Steam.\n- Alternativamente, utiliza los objetos Vengeful Spirit o Serendipitous Spirit para invitar a otros jugadores.\n\nSalir de una sesión: Usa el objeto Coward's Bell o muere en el juego.",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Mods online",
+      "url": "/data/download/Sekiro Multiplayer.zip"
+    },
+    {
+      "nombre": "Fix online - (falta de archivos)",
+      "url": "aun no esta"
+    }
+  ]
+},
+{
+  "titulo": "Elden Ring - Seamless Co-op",
+  "imagen": "https://cdn2.steamgriddb.com/grid/9153bb77795515274c2be61ccc59c952.jpg",
+  "descripcion": "Elden Ring - Características principales\n\nJuego de rol y acción en mundo abierto: Explora libremente un vasto mundo lleno de secretos y enemigos.\n\nDesarrollado por FromSoftware: De los creadores de Dark Souls, con participación de George R.R. Martin en el lore.\n\nCombate desafiante: Sistema de combate profundo con múltiples estilos, magias y armas.\n\nPersonalización del personaje: Crea tu propio Tiznado con diferentes clases, atributos y equipamiento.\n\nExploración y libertad: Mazmorras, jefes y eventos opcionales repartidos por un mundo interconectado.\n\nMultijugador: Opciones de juego cooperativo y PvP en línea.\n\nHistoria oscura y enigmática: Descubrí el trasfondo del mundo a través de objetos, NPCs y entornos.",
+  "manual": "🔧 Instalación del mod Seamless Co-op\n\n1. Descargar el mod desde Nexus Mods: https://www.nexusmods.com/eldenring/mods/510\n\n2. Extraer y mover archivos:\n- Descomprimí el archivo descargado.\n- Copiá los archivos `launch_elden_ring_seamlesscoop.exe` y la carpeta `SeamlessCoop` dentro de la carpeta `Game` de Elden Ring (ubicada en Steam > clic derecho > Examinar archivos locales).\n\n3. Configurar ajustes:\n- Abrí el archivo `ersc_settings.ini` dentro de la carpeta `SeamlessCoop`.\n- Establecé una contraseña en `cooppassword` (todos los jugadores deben usar la misma).\n- Podés ajustar opciones extra como dificultad o interfaz.\n\n4. Iniciar el juego:\n- Ejecutá `launch_elden_ring_seamlesscoop.exe` (no uses el lanzador normal de Steam).\n- Asegurate de tener Steam abierto y no estar en modo desconectado.",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Mods online (Seamless Co-op)",
+      "url": "/data/download/SeamlessCoop.zip"
+    }
+  ]
+},
+{
+  "titulo": "Dark Souls III - Seamless Co-op",
+  "imagen": "https://cdn2.steamgriddb.com/grid/8bd45687d0fb8f417edec5993a45a8d1.png",
+  "descripcion": "Dark Souls III - Características principales\n\nJuego de rol y acción en un mundo oscuro: Explora un reino en ruinas lleno de enemigos implacables y secretos escondidos.\n\nDesarrollado por FromSoftware: La entrega final de la saga Souls, dirigida por Hidetaka Miyazaki.\n\nCombate exigente: Sistema de combate preciso con espadas, hechizos, milagros y piromancias.\n\nPersonalización del personaje: Crea tu No-muerto con clases iniciales, estadísticas y equipamiento variado.\n\nDiseño de niveles interconectado: Áreas meticulosamente conectadas con atajos y zonas ocultas.\n\nMultijugador: Modo cooperativo y PvP integrado mediante invocaciones y enfrentamientos.\n\nNarrativa oscura y ambiental: Descubrí la historia a través de objetos, diálogos crípticos y escenarios decadentes.",
+  "manual": "🔧 Instalación del mod Seamless Co-op (Dark Souls III)\n\n1. Descargar el mod desde Nexus Mods: https://www.nexusmods.com/darksouls3/mods/999 (buscalo como 'Seamless Co-op for DS3')\n\n2. Extraer y mover archivos:\n- Descomprimí el archivo descargado.\n- Copiá todos los archivos (como `dinput8.dll`, `modengine2.ini`, `seamlesscoop.dll`, etc.) en la carpeta `Game` de Dark Souls III (Steam > clic derecho en el juego > Administrar > Examinar archivos locales).\n\n3. Configurar ajustes:\n- Si el mod incluye un archivo `.ini`, abrilo y ajustá el `cooppassword` (todos los jugadores deben usar la misma contraseña).\n- Verificá que esté habilitado el modo sin conexión para evitar problemas con los servidores oficiales.\n\n4. Iniciar el juego:\n- Ejecutá el juego desde Steam (en modo sin conexión) o desde el archivo provisto por el mod si viene con un lanzador propio.\n- Asegurate de que el mod esté funcionando antes de conectarte con amigos.",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Mods online (Seamless Co-op)",
+      "url": "/data/download/DS3 Seamless Co-op v0.0.3-999-0-0-3-1744572032.zip"
+    }
+  ]
+},
+{
+  "titulo": "Dark Souls: Remastered - Seamless Co-op",
+  "imagen": "https://cdn2.steamgriddb.com/grid/fa09649961c5c38096ee815c1084b2f0.png",
+  "descripcion": "Dark Souls: Remastered - Características principales\n\nJuego de rol y acción en un mundo tenebroso: Aventurate por Lordran, una tierra olvidada llena de desafíos y secretos mortales.\n\nDesarrollado por FromSoftware: La obra que dio origen a la saga Souls, con diseño de niveles icónico y combate meticuloso.\n\nCombate desafiante: Enfrentamientos exigentes donde cada movimiento cuenta; con espadas, escudos, hechizos y milagros.\n\nPersonalización del personaje: Crea tu No-muerto elegido con múltiples clases iniciales, atributos y equipos.\n\nDiseño interconectado: Un mundo cohesivo lleno de atajos, zonas ocultas y conexiones inteligentes entre áreas.\n\nMultijugador mejorado: Invocaciones cooperativas y PvP online fluido, ahora con hasta 6 jugadores por sesión.\n\nLore críptico y ambiental: Descubrí la historia del mundo a través de objetos, escenarios y diálogos enigmáticos.",
+  "manual": "🔧 Instalación del mod Seamless Co-op (Dark Souls: Remastered)\n\n1. Descargar el mod desde Nexus Mods: https://www.nexusmods.com/darksoulsremastered/mods/99 (buscalo como 'Dark Souls Remastered Seamless Co-op')\n\n2. Extraer y mover archivos:\n- Descomprimí el archivo descargado.\n- Copiá todos los archivos del mod (como `dinput8.dll` y la carpeta del mod) dentro de la carpeta raíz del juego (Steam > clic derecho en el juego > Administrar > Examinar archivos locales).\n\n3. Configurar ajustes:\n- Si el mod incluye un archivo `.ini` o similar, abrilo y ajustá el `cooppassword` (todos los jugadores deben usar la misma contraseña).\n- Activá el modo sin conexión para evitar conflictos con los servidores oficiales.\n\n4. Iniciar el juego:\n- Ejecutá el juego desde Steam (en modo sin conexión) o desde el ejecutable modificado si el mod incluye uno.\n- Asegurate de que el mod esté activo y conectado correctamente antes de iniciar la sesión cooperativa con tus amigos.",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Mods online (Seamless Co-op)",
+      "url": "/data/download/DS1 Seamless Co-op v0.0.3-899-0-0-3-1744572032.zip"
+    }
+  ]
+},
+{
+  "titulo": "Ventoy",
+  "imagen": "https://i0.wp.com/www.pcdemano.com/wp-content/uploads/2020/08/ventoy.jpg?fit=600%2C400&ssl=1",
+  "descripcion": "Ventoy - Características principales\n\nHerramienta de creación de medios booteables: Permite iniciar múltiples sistemas operativos desde un solo dispositivo USB.\n\nInstalación simple: Solo se instala una vez en el USB, luego podés copiar archivos ISO directamente sin necesidad de formatear.\n\nCompatibilidad amplia: Soporta más de 900 archivos ISO, incluyendo Windows, Linux, BSD y utilidades de rescate.\n\nInterfaz multiboot automática: Al iniciar el USB, Ventoy muestra un menú con las ISOs disponibles para elegir.\n\nSoporte para archivos grandes: Compatible con archivos ISO de más de 4 GB gracias al soporte para exFAT y NTFS.\n\nActualizaciones fáciles: Se puede actualizar sin borrar el contenido del USB.\n\nCódigo abierto: Proyecto gratuito y de código abierto, disponible para Windows y Linux.",
+  "manual": "🔧 Instalación de Ventoy en un USB\n\n1. Descargar Ventoy:\n- Ir al sitio oficial: https://www.ventoy.net\n- Elegí tu sistema operativo (Windows o Linux) y descargá la última versión.\n\n2. Extraer y ejecutar:\n- Descomprimí el archivo ZIP descargado.\n- Abrí `Ventoy2Disk.exe` (en Windows) con permisos de administrador.\n\n3. Seleccionar el dispositivo USB:\n- En la interfaz de Ventoy, elegí la letra de unidad correspondiente a tu USB (⚠️ Todos los datos serán borrados).\n- Hacé clic en 'Instalar'. Confirmá cuando lo solicite.\n\n4. Copiar archivos ISO:\n- Una vez instalado Ventoy, abrí tu USB.\n- Copiá dentro cualquier cantidad de archivos `.iso` (por ejemplo, instaladores de Windows, Linux, herramientas de rescate, etc.).\n\n5. Bootear desde el USB:\n- Reiniciá tu PC y accedé al menú de arranque (normalmente con F12, F11 o ESC).\n- Seleccioná el USB con Ventoy.\n- Aparecerá un menú donde podés elegir qué ISO iniciar.\n\n💡 Podés seguir agregando o quitando ISOs en cualquier momento, sin necesidad de reinstalar Ventoy.",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Ultima version",
+      "url": "https://cfhcable.dl.sourceforge.net/project/ventoy/v1.1.05/ventoy-1.1.05-windows.zip?viasf=1"
+    }
+  ]
+},
+{
+  "titulo": "Rufus",
+  "imagen": "https://www.winusb.net/wp-content/uploads/2024/05/images.jpg",
+  "descripcion": "Rufus - Características principales\n\nCreación de unidades USB booteables: Herramienta ligera para crear discos de arranque desde archivos ISO.\n\nCompatible con múltiples sistemas: Admite imágenes de Windows, Linux y otros sistemas operativos.\n\nVelocidad y eficiencia: Uno de los programas más rápidos en la creación de medios de instalación.\n\nOpciones avanzadas de formato: Permite elegir entre sistemas de archivos FAT32, NTFS, UEFI, BIOS y más.\n\nModo de descarga directa: Incluye función para descargar ISOs oficiales de Windows directamente desde Microsoft.\n\nUso portátil: No requiere instalación, solo se ejecuta el archivo `.exe`.\n\nGratuito y de código abierto: Completamente libre, sin anuncios ni restricciones.",
+  "manual": "🔧 Instalación y uso de Rufus para crear un USB booteable\n\n1. Descargar Rufus:\n- Ir al sitio oficial: https://rufus.ie\n- Descargá la última versión disponible (archivo `.exe`).\n\n2. Ejecutar Rufus:\n- No requiere instalación. Hacé doble clic en el archivo `.exe` descargado.\n- Si es necesario, otorgá permisos de administrador.\n\n3. Preparar el USB:\n- Insertá una unidad USB (⚠️ Se borrarán todos los datos).\n- Rufus la detectará automáticamente en el campo 'Dispositivo'.\n\n4. Seleccionar la imagen ISO:\n- Hacé clic en 'Seleccionar' y elegí el archivo `.iso` del sistema operativo que querés instalar (por ejemplo, Windows o Ubuntu).\n\n5. Configurar las opciones:\n- Sistema de arranque: BIOS o UEFI (Rufus lo detecta según el ISO).\n- Sistema de archivos: Generalmente NTFS (para Windows) o FAT32 (para Linux).\n- Otras opciones como nombre de volumen se pueden dejar por defecto.\n\n6. Iniciar el proceso:\n- Hacé clic en 'Empezar'. Confirmá los avisos sobre el formateo.\n- Esperá a que termine (el progreso se muestra en una barra).\n\n7. Bootear desde el USB:\n- Reiniciá tu PC y accedé al menú de arranque (tecla F12, F11, ESC o según el fabricante).\n- Seleccioná el USB para iniciar la instalación del sistema operativo.",
+  "categoria": "programs",
+  "descargas": [
+    {
+      "nombre": "Portable",
+      "url": "https://github.com/pbatard/rufus/releases/download/v4.7/rufus-4.7p.exe"
+    },
+    {
+      "nombre": "Instalador",
+      "url": "https://github.com/pbatard/rufus/releases/download/v4.7/rufus-4.7.exe"
+    },
+    {
+      "nombre": "Instalador x86",
+      "url": "https://github.com/pbatard/rufus/releases/download/v4.7/rufus-4.7_x86.exe"
+    }
+  ]
+},
+{
+  "titulo": "3Dsen",
+  "imagen": "https://cdn2.steamgriddb.com/grid/bd68b7c2a4dfcae27ff7866e82b93d38.jpg",
+  "descripcion": "3dSen es un emulador único que transforma juegos clásicos de NES en experiencias 3D en tiempo real. <br><br><li> Compatible con una gran cantidad de títulos de la Nintendo Entertainment System (NES). <br><li> Convierte gráficos 2D originales en entornos 3D con profundidad y perspectiva. <br><li> Disponible en Steam y otras plataformas. <br><br>✅ Soporte para realidad virtual (VR) en juegos seleccionados.<br>✅ Controles personalizables y guardado rápido.<br>✅ Interfaz moderna y fácil de usar.<br>✅ Permite redescubrir juegos retro con una estética completamente nueva.",
+  "manual": "🔧 Instalación y uso de 3dSen\n\n1. Descargar 3dSen:\n- Podés adquirirlo desde Steam: https://store.steampowered.com/app/1147940/3dSen_PC/\n- También está disponible una versión para VR y una demo gratuita.\n\n2. Instalar el emulador:\n- Una vez comprado, hacé clic en 'Instalar' desde tu biblioteca de Steam.\n- Esperá a que se complete la descarga e instalación automática.\n\n3. Agregar ROMs:\n- 3dSen no incluye juegos por defecto.\n- Debés cargar tus propias ROMs de NES compatibles en formato `.nes`.\n- Solo algunos juegos están optimizados para el efecto 3D completo (consultá la lista oficial en su sitio o comunidad de Steam).\n\n4. Usar el emulador:\n- Iniciá 3dSen desde Steam.\n- Desde la interfaz, seleccioná el juego que quieras cargar.\n- Ajustá la vista, controles y efectos según preferencia.\n\n5. Opcional - VR:\n- Si tenés visor de realidad virtual compatible, podés usar la versión 3dSen VR para jugar en 3D inmersivo.\n\n💡 Consejo: Asegurate de usar ROMs legales y respaldadas de tus propios cartuchos originales.",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Ultima version",
+      "url": "/data/download/3Dsen-11.0.0.zip"
+    }
+  ]
+},
+{
+  "titulo": "AnyDesk",
+  "imagen": "https://cdn2.steamgriddb.com/grid/bf2c1540431006085b38a07db3163a1c.png",
+  "descripcion": "AnyDesk es una aplicación de escritorio remoto que permite acceder y controlar dispositivos de forma segura y eficiente desde cualquier lugar. <br><br><li> Compatible con Windows, macOS, Linux, Android, iOS y más. <br><li> Transmisión de video fluida y baja latencia gracias al códec propietario DeskRT. <br><li> Seguridad robusta con cifrado TLS 1.2 y autenticación de dos factores. <br><li> Funciones como transferencia de archivos, impresión remota y acceso desatendido. <br><br>✅ Interfaz intuitiva y fácil de usar. <br>✅ Personalización para uso empresarial. <br>✅ Ideal para soporte técnico, trabajo remoto y colaboración.",
+  "manual": "🔧 Instalación y uso de AnyDesk\n\n1. Descargar AnyDesk:\n- Sitio oficial: https://anydesk.com/en/downloads\n- Selecciona la versión correspondiente a tu sistema operativo (Windows o macOS).\n\n2. Instalar AnyDesk:\n- Windows:\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n  - Puedes optar por instalar AnyDesk permanentemente o usarlo sin instalación.\n- macOS:\n  - Abre el archivo .dmg descargado y arrastra el icono de AnyDesk a la carpeta de Aplicaciones.\n  - Al iniciar la aplicación por primera vez, es posible que debas otorgar permisos en 'Preferencias del Sistema' > 'Seguridad y privacidad'.\n\n3. Iniciar AnyDesk:\n- Abre la aplicación desde el acceso directo creado.\n- Se mostrará tu ID de AnyDesk, que puedes compartir con otros para permitir el acceso remoto.\n\n4. Conectar a otro dispositivo:\n- Ingresa el ID de AnyDesk del dispositivo al que deseas conectarte en el campo 'Dirección remota' y haz clic en 'Conectar'.\n- El usuario del dispositivo remoto deberá aceptar la solicitud de conexión.\n\n💡 Consejo: Para acceso desatendido, configura una contraseña en 'Configuración' > 'Seguridad'.",
+  "categoria": "Escritorio remoto",
+  "descargas": [
+    {
+      "nombre": "Instalador para Windows",
+      "url": "https://download.anydesk.com/AnyDesk.exe"
+    },
+    {
+      "nombre": "Instalador para macOS",
+      "url": "https://anydesk.com/en/downloads/mac-os"
+    }
+  ]
+}
+,
+{
+  "titulo": "Subsistema de Windows para Android™ (WSA)",
+  "imagen": "https://t2.tudocdn.net/653414?w=824&h=494",
+  "descripcion": "El Subsistema de Windows para Android™ permite ejecutar aplicaciones Android en dispositivos con Windows 11. <br><br><li> Compatible con Windows 11. <br><li> Requiere Amazon Appstore para instalar aplicaciones. <br><li> Soporte para depuración mediante ADB. <br><br>✅ Integración con el sistema operativo. <br>✅ Acceso a aplicaciones Android directamente desde Windows.",
+  "manual": "🔧 Instalación y uso del Subsistema de Windows para Android™\n\n1. Descargar e instalar Amazon Appstore desde Microsoft Store.\n2. Al instalar Amazon Appstore, se instalará automáticamente el Subsistema de Windows para Android™.\n3. Iniciar sesión con una cuenta de Amazon para acceder a las aplicaciones.\n4. Para desarrolladores: habilitar el modo de desarrollador en la configuración del Subsistema para depurar aplicaciones mediante ADB.",
+  "categoria": "Desarrollos",
+  "descargas": [
+    {
+      "nombre": "Instalador para Mincrosoft Store",
+      "url": "https://www.microsoft.com/store/productId/9P3395VX91NR"
+    },
+    {
+      "nombre": "Instalador para Windows",
+      "url": "https://github.com/MustardChef/WSABuilds/releases/download/Windows_11_2407.40000.4.0_LTS_6/WSA_2407.40000.4.0_x64_Release-Nightly-GApps-13.0-NoAmazon.7z"
+    }
+  ]
+}
+,
+{
+  "titulo": "Parsec",
+  "imagen": "https://cdn2.steamgriddb.com/grid/8396dd8601021572866e4ed2b20eb5dd.png",
+  "descripcion": "Parsec es una aplicación de escritorio remoto de alto rendimiento que permite conectarte a tu PC desde cualquier lugar con una latencia casi nula, ideal para juegos, trabajo creativo y colaboración remota. <br><br><li> Compatible con Windows, macOS, Linux y Android. <br><li> Transmisión de video hasta 4K a 60 FPS con tecnología peer-to-peer. <br><li> Soporte para múltiples monitores, tabletas gráficas y controladores. <br><li> Versiones avanzadas como Parsec Warp y Parsec for Teams para profesionales y empresas. <br><br>✅ Instalación rápida y sencilla. <br>✅ Seguridad robusta con cifrado DTLS 1.2 y autenticación multifactor. <br>✅ Ideal para juegos cooperativos, edición de video y trabajo remoto.",
+  "manual": "🔧 Instalación y uso de Parsec\n\n1. Descargar Parsec:\n- Sitio oficial: https://parsec.app/downloads\n- Selecciona la versión correspondiente a tu sistema operativo (Windows o macOS).\n\n2. Instalar Parsec:\n- Windows:\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n  - Durante la instalación, puedes optar por instalar el controlador de pantalla virtual si planeas usar Parsec en sistemas sin monitor conectado.\n- macOS:\n  - Abre el archivo .dmg descargado y arrastra el icono de Parsec a la carpeta de Aplicaciones.\n  - Asegúrate de que tu sistema operativo sea macOS 10.15 (Catalina) o superior y que tu hardware sea de 2019 o más reciente para un rendimiento óptimo.\n\n3. Crear una cuenta o iniciar sesión:\n- Abre Parsec y selecciona 'Registrarse' para crear una nueva cuenta o 'Iniciar sesión' si ya tienes una.\n\n4. Conectar a otro dispositivo:\n- En la pestaña 'Computadoras', verás una lista de dispositivos disponibles.\n- Selecciona el dispositivo al que deseas conectarte y haz clic en 'Conectar'.\n\n💡 Consejo: Para una experiencia de juego óptima, conecta ambos dispositivos a través de una red Ethernet y utiliza controladores compatibles.",
+  "categoria": "Escritorio remoto",
+  "descargas": [
+    {
+      "nombre": "Instalador para Windows",
+      "url": "https://builds.parsecgaming.com/package/parsec-windows.exe"
+    },
+    {
+      "nombre": "Instalador para macOS",
+      "url": "https://builds.parsecgaming.com/package/parsec-macos.dmg"
+    }
+  ]
+}
+,
+{
+  "titulo": "Discord",
+  "imagen": "https://cdn2.steamgriddb.com/grid/0388e1d37913862eda633ada420d058f.png",
+  "descripcion": "Discord es una plataforma de comunicación gratuita que combina chat de texto, voz y video, diseñada inicialmente para gamers, pero que ahora es utilizada por comunidades de todo tipo. Permite crear servidores con canales organizados por temas, facilitando la interacción en tiempo real. <br><br><li> Compatible con Windows, macOS, Linux, iOS y Android. <br><li> Soporte para videollamadas, compartir pantalla y transmisiones en vivo. <br><li> Integración con servicios como Spotify, Twitch y YouTube. <br><li> Personalización mediante bots y roles de usuario. <br><br>✅ Interfaz intuitiva y fácil de usar. <br>✅ Alta calidad de audio y video. <br>✅ Amplia comunidad y soporte activo.",
+  "manual": "🔧 Instalación y uso de Discord\n\n1. Descargar Discord:\n- Sitio oficial: https://discord.com/download\n- Selecciona la versión correspondiente a tu sistema operativo (Windows o macOS).\n\n2. Instalar Discord:\n- Windows:\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n  - Se recomienda seleccionar la opción para agregar Discord al PATH del sistema durante la instalación.\n- macOS:\n  - Abre el archivo .dmg descargado y arrastra el icono de Discord a la carpeta de Aplicaciones.\n  - Al iniciar la aplicación, es posible que debas permitir la ejecución desde las Preferencias del Sistema si es la primera vez que la abres.\n\n3. Crear una cuenta o iniciar sesión:\n- Abre Discord y selecciona 'Registrarse' para crear una nueva cuenta o 'Iniciar sesión' si ya tienes una.\n\n4. Unirse o crear un servidor:\n- Para unirte a un servidor existente, haz clic en el ícono '+' en la barra lateral y selecciona 'Unirse a un servidor'. Ingresa el enlace de invitación proporcionado.\n- Para crear tu propio servidor, selecciona 'Crear un servidor' y sigue las instrucciones para configurarlo.\n\n5. Navegar y participar en canales:\n- Dentro de un servidor, los canales están organizados por texto y voz. Haz clic en un canal de texto para enviar mensajes o en un canal de voz para unirte a una conversación.\n\n💡 Consejo: Explora la configuración de usuario para personalizar tu experiencia, incluyendo notificaciones, privacidad y apariencia.",
+  "categoria": "Comunicación",
+  "descargas": [
+    {
+      "nombre": "Instalador para Windows",
+      "url": "https://discord.com/api/download?platform=win"
+    },
+    {
+      "nombre": "Instalador para macOS",
+      "url": "https://discord.com/api/download?platform=osx"
+    }
+  ]
+}
+,
+{
+  "titulo": "Steam",
+  "imagen": "https://cdn2.steamgriddb.com/grid/39c2966989c4f0091a99eef7f1d09c09.png",
+  "descripcion": "Steam es una plataforma de distribución digital de videojuegos desarrollada por Valve Corporation. Lanzada en 2003, ofrece una amplia biblioteca de juegos, desde títulos AAA hasta indies, y funciones sociales como chat, grupos y logros. <br><br><li> Compatible con Windows, macOS y Linux. <br><li> Más de 30,000 juegos disponibles. <br><li> Ofertas semanales y juegos gratuitos. <br><li> Soporte para mods a través de Steam Workshop. <br><br>✅ Actualizaciones automáticas de juegos. <br>✅ Guardado en la nube y sincronización entre dispositivos. <br>✅ Modo Big Picture para televisores y controladores.",
+  "manual": "🔧 Instalación y uso de Steam\n\n1. Descargar Steam:\n- Sitio oficial: https://store.steampowered.com/about/\n- Selecciona la versión correspondiente a tu sistema operativo (Windows o macOS).\n\n2. Instalar Steam:\n- Windows:\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n- macOS:\n  - Abre el archivo .dmg descargado y arrastra el icono de Steam a la carpeta de Aplicaciones.\n\n3. Crear una cuenta o iniciar sesión:\n- Abre Steam y selecciona \"Crear una nueva cuenta\" o inicia sesión con tus credenciales existentes.\n\n4. Navegar y descargar juegos:\n- Explora la tienda para encontrar juegos.\n- Haz clic en \"Añadir al carrito\" y luego en \"Comprar\" para adquirir un juego.\n- Una vez comprado, el juego se añadirá a tu biblioteca y podrás instalarlo desde allí.\n\n💡 Consejo: Activa la autenticación en dos pasos (Steam Guard) para proteger tu cuenta.",
+  "categoria": "Plataforma de juegos",
+  "descargas": [
+    {
+      "nombre": "Instalador para Windows",
+      "url": "https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe"
+    },
+    {
+      "nombre": "Instalador para macOS",
+      "url": "https://cdn.cloudflare.steamstatic.com/client/installer/steam.dmg"
+    }
+  ]
+}
+,
+{
+  "titulo": "Epic Games Launcher",
+  "imagen": "https://cdn2.steamgriddb.com/grid/f6bf4fdb8b2beb096cb25b3ce1f51164.png",
+  "descripcion": "El Epic Games Launcher es la aplicación oficial de Epic Games que permite acceder a una amplia variedad de videojuegos, herramientas de desarrollo y contenido exclusivo. <br><br><li> Compatible con Windows 10/11 y macOS 10.13 o superior. <br><li> Acceso a títulos populares como Fortnite, Rocket League y Fall Guys. <br><li> Ofrece juegos gratuitos cada semana y descuentos especiales. <br><li> Integración con Unreal Engine y herramientas de desarrollo. <br><br>✅ Interfaz intuitiva y fácil de usar. <br>✅ Actualizaciones automáticas de juegos y aplicaciones. <br>✅ Soporte para múltiples idiomas y regiones.",
+  "manual": "🔧 Instalación y uso de Epic Games Launcher\n\n1. Descargar Epic Games Launcher:\n- Sitio oficial: https://store.epicgames.com/en-US/download\n- Selecciona la versión correspondiente a tu sistema operativo (Windows o macOS).\n\n2. Instalar Epic Games Launcher:\n- Windows:\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n  - Se recomienda seleccionar la opción para agregar Epic Games Launcher al PATH del sistema durante la instalación.\n- macOS:\n  - Abre el archivo .dmg descargado y arrastra el icono de Epic Games Launcher a la carpeta de Aplicaciones.\n  - Al iniciar la aplicación, es posible que debas permitir la ejecución desde las Preferencias del Sistema si es la primera vez que la abres.\n\n3. Iniciar Epic Games Launcher:\n- Abre la aplicación desde el acceso directo creado.\n- Inicia sesión con tu cuenta de Epic Games o crea una nueva si no tienes una.\n\n4. Descargar y jugar:\n- Navega por la biblioteca de juegos disponibles.\n- Selecciona el juego que deseas instalar y haz clic en 'Instalar'.\n- Una vez instalado, haz clic en 'Iniciar' para comenzar a jugar.\n\n💡 Consejo: Activa la autenticación en dos pasos en tu cuenta de Epic Games para mayor seguridad.",
+  "categoria": "Plataforma de juegos",
+  "descargas": [
+    {
+      "nombre": "Instalador para Windows",
+      "url": "https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi"
+    },
+    {
+      "nombre": "Instalador para macOS",
+      "url": "https://store.epicgames.com/en-US/download"
+    }
+  ]
+}
+,
+{
+  "titulo": "EA app",
+  "imagen": "https://cdn2.steamgriddb.com/grid/67fce8ab05c7c0a28fa66b353e813cbd.png",
+  "descripcion": "EA app es la nueva plataforma de Electronic Arts para PC y Mac, diseñada para reemplazar a Origin. Ofrece una experiencia más rápida y ligera, con una interfaz simplificada que facilita el acceso a tus juegos favoritos. <br><br><li> Compatible con Windows 7, 8, 10 y 11 (solo versiones de 64 bits) y macOS Catalina o superior. <br><li> Permite descargar, instalar y actualizar juegos automáticamente. <br><li> Integra funciones sociales como chat y gestión de amigos. <br><li> Soporta membresías de EA Play y EA Play Pro. <br><br>✅ Interfaz moderna y optimizada. <br>✅ Transición automática desde Origin conservando tu biblioteca de juegos. <br>✅ Actualizaciones en segundo plano para mantener tus juegos al día.",
+  "manual": "🔧 Instalación y uso de EA app\n\n1. Descargar EA app:\n- Sitio oficial: https://www.ea.com/es-mx/ea-app\n- Selecciona la versión correspondiente a tu sistema operativo (Windows o macOS).\n\n2. Instalar EA app:\n- Windows:\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n  - Se recomienda seleccionar la opción para agregar EA app al PATH del sistema durante la instalación.\n- macOS:\n  - Abre el archivo .dmg descargado y arrastra el icono de EA app a la carpeta de Aplicaciones.\n  - Al iniciar la aplicación, es posible que debas permitir la ejecución desde las Preferencias del Sistema si es la primera vez que la abres.\n\n3. Iniciar EA app:\n- Abre la aplicación desde el acceso directo creado.\n- Inicia sesión con tu cuenta de EA o crea una nueva si no tienes una.\n\n4. Descargar y jugar:\n- Navega por la biblioteca de juegos disponibles.\n- Selecciona el juego que deseas instalar y haz clic en 'Descargar'.\n- Una vez instalado, haz clic en 'Jugar' para comenzar.\n\n💡 Consejo: Si estás migrando desde Origin, tus juegos y progresos se transferirán automáticamente a EA app.",
+  "categoria": "Plataforma de juegos",
+  "descargas": [
+    {
+      "nombre": "Instalador para Windows (64-bit)",
+      "url": "https://origin-a.akamaihd.net/EA-Desktop-Client-Download/installer-releases/EAappInstaller.exe"
+    },
+    {
+      "nombre": "Instalador para macOS",
+      "url": "https://www.ea.com/ea-app"
+    }
+  ]
+}
+,
+{
+  "titulo": "MiniTool Partition Wizard",
+  "imagen": "https://www.mavksoft.es/wp-content/uploads/2016/05/PartitionWizard.png",
+  "descripcion": "MiniTool Partition Wizard es una herramienta gratuita de gestión de particiones para Windows que permite crear, redimensionar, mover, fusionar, dividir, formatear y eliminar particiones de forma segura. <br><br><li> Compatible con Windows 11/10/8/7. <br><li> Incluye funciones como análisis de espacio en disco y pruebas de rendimiento. <br><li> Permite convertir discos entre MBR y GPT, y particiones entre NTFS y FAT32. <br><li> Ofrece recuperación de particiones y datos perdidos en versiones de pago. <br><br>✅ Interfaz intuitiva y fácil de usar. <br>✅ Simula cambios antes de aplicarlos. <br>✅ Ideal para usuarios domésticos y profesionales.",
+  "manual": "🔧 Instalación y uso de MiniTool Partition Wizard\n\n1. Descargar MiniTool Partition Wizard:\n- Sitio oficial: https://www.partitionwizard.com/free-partition-manager.html\n- Selecciona la versión gratuita correspondiente a tu sistema operativo Windows.\n\n2. Instalar MiniTool Partition Wizard:\n- Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n- Durante la instalación, puedes optar por crear accesos directos en el escritorio y en el menú de inicio.\n\n3. Usar MiniTool Partition Wizard:\n- Abre la aplicación desde el acceso directo creado.\n- En la interfaz principal, verás una lista de tus discos y particiones actuales.\n- Para realizar una operación (como redimensionar una partición):\n  - Selecciona la partición deseada.\n  - En el panel izquierdo, elige la acción que deseas realizar (por ejemplo, \"Mover/Redimensionar Partición\").\n  - Ajusta los parámetros según tus necesidades y haz clic en \"Aceptar\".\n- Todas las operaciones se agregarán a una lista de tareas pendientes.\n- Para aplicar los cambios, haz clic en \"Aplicar\" en la esquina superior izquierda.\n\n💡 Consejo: Antes de realizar cambios en las particiones, es recomendable hacer una copia de seguridad de tus datos importantes.",
+  "categoria": "Gestión de particiones",
+  "descargas": [
+    {
+      "nombre": "Instalador para Windows",
+      "url": "https://cdn2.minitool.com/?p=pw&e=pw-free"
+    }
+  ]
+}
+,
+{
+  "titulo": "Node.js",
+  "imagen": "https://ositcom.com/static/images/images/IMG_1743.png",
+  "descripcion": "Node.js es un entorno de ejecución de JavaScript de código abierto y multiplataforma, construido sobre el motor V8 de Chrome. Permite ejecutar JavaScript en el servidor, facilitando el desarrollo de aplicaciones web escalables y de alto rendimiento. <br><br><li> Compatible con Windows, macOS y Linux. <br><li> Incluye npm (Node Package Manager) para gestionar dependencias. <br><li> Amplio ecosistema de módulos y herramientas. <br><br>✅ Ideal para aplicaciones en tiempo real, APIs RESTful y microservicios. <br>✅ Soporte para asincronía y programación basada en eventos. <br>✅ Comunidad activa y en constante crecimiento.",
+  "manual": "🔧 Instalación y uso de Node.js\n\n1. Descargar Node.js:\n- Sitio oficial: https://nodejs.org/en/download\n- Selecciona la versión LTS (Long Term Support) para mayor estabilidad.\n\n2. Instalar Node.js:\n- Windows:\n  - Descarga el instalador .msi correspondiente a tu arquitectura (32 o 64 bits).\n  - Ejecuta el instalador y sigue las instrucciones del asistente.\n  - Asegúrate de seleccionar la opción para instalar npm (Node Package Manager) durante la instalación.\n- macOS:\n  - Descarga el instalador .pkg desde el sitio oficial.\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente.\n  - Alternativamente, puedes instalar Node.js usando Homebrew con el comando: `brew install node`.\n\n3. Verificar la instalación:\n- Abre una terminal o línea de comandos.\n- Ejecuta los siguientes comandos para verificar las versiones de Node.js y npm:\n  - `node -v`\n  - `npm -v`\n- Deberías ver las versiones instaladas como salida.\n\n4. Usar Node.js:\n- Crea un archivo JavaScript, por ejemplo `app.js`.\n- Escribe tu código JavaScript en el archivo.\n- Ejecuta el archivo con el comando: `node app.js`.\n- Para instalar paquetes, usa: `npm install <paquete>`.\n\n💡 Consejo: Node.js es ideal para desarrollar aplicaciones web escalables y de alto rendimiento, como APIs RESTful, aplicaciones en tiempo real y microservicios.",
+  "categoria": "Desarrollos",
+  "descargas": [
+    {
+      "nombre": "Instalador LTS para Windows",
+      "url": "https://nodejs.org/dist/v22.15.0/node-v22.15.0-x64.msi"
+    },
+    {
+      "nombre": "Instalador LTS para macOS",
+      "url": "https://nodejs.org/dist/v22.15.0/node-v22.15.0.pkg"
+    }
+  ]
+},
+{
+  "titulo": "Visual Studio Code",
+  "imagen": "https://cdn2.steamgriddb.com/grid/3e0604c35f3ba7eedfc33396560b20f5.png",
+  "descripcion": "Visual Studio Code (VS Code) es un editor de código fuente gratuito y de código abierto, desarrollado por Microsoft. Es ligero, rápido y extensible, ideal para desarrolladores de software, web y ciencia de datos. <br><br><li> Compatible con Windows, macOS y Linux. <br><li> Soporte integrado para Git y control de versiones. <br><li> Amplia biblioteca de extensiones para lenguajes como Python, JavaScript, C++, Java, PHP y más. <br><li> Depuración integrada y terminal incorporado. <br><li> Personalización avanzada con temas, atajos de teclado y configuraciones de usuario. <br><br>✅ Ligero y rápido. <br>✅ Potente sistema de autocompletado y sugerencias (IntelliSense). <br>✅ Integración con GitHub Copilot para asistencia de IA en el código. <br>✅ Soporte para contenedores Docker y entornos de desarrollo remoto.",
+  "manual": "🔧 Instalación y uso de Visual Studio Code\n\n1. Descargar Visual Studio Code:\n- Sitio oficial: https://code.visualstudio.com/\n- Selecciona la versión correspondiente a tu sistema operativo (Windows o macOS).\n\n2. Instalar Visual Studio Code:\n- Windows:\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n  - Se recomienda seleccionar la opción para agregar Visual Studio Code al PATH del sistema durante la instalación.\n- macOS:\n  - Abre el archivo .dmg descargado y arrastra el icono de Visual Studio Code a la carpeta de Aplicaciones.\n  - Al iniciar la aplicación, es posible que debas permitir la ejecución desde las Preferencias del Sistema si es la primera vez que la abres.\n\n3. Configurar Visual Studio Code:\n- Al iniciar Visual Studio Code, puedes personalizar la configuración desde el menú 'Code' > 'Preferencias' > 'Configuración'.\n- Instalar extensiones:\n  - Abre el panel de extensiones desde el icono de cuadrados en la barra lateral izquierda o presiona `Ctrl+Shift+X`.\n  - Busca y selecciona las extensiones que necesites, como Python, C++, Prettier, etc.\n- Integrar Git:\n  - Visual Studio Code detecta automáticamente los repositorios Git en tu máquina.\n  - Puedes realizar commits, push, pull y otras operaciones desde el panel de control de fuente.\n\n4. Usar Visual Studio Code:\n- Abre una carpeta o proyecto desde 'Archivo' > 'Abrir carpeta...'.\n- Abre un archivo desde 'Archivo' > 'Abrir archivo...'.\n- Usa el terminal integrado desde 'Terminal' > 'Nuevo terminal' o presionando `Ctrl+` `.\n- Para obtener más información y tutoriales, visita: https://code.visualstudio.com/docs/getstarted/getting-started",
+  "categoria": "Desarrollos",
+  "descargas": [
+    {
+      "nombre": "Instalador para Windows (64-bit)",
+      "url": "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user"
+    },
+    {
+      "nombre": "Instalador para macOS",
+      "url": "https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal"
+    }
+  ]
+}
+,
+{
+  "titulo": "MAMP",
+  "imagen": "https://i.ytimg.com/vi/Yi5BRGkOrRw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD_7ww07WK7ayzudxpStxUmdGwYmQ",
+  "descripcion": "MAMP es un entorno de desarrollo local gratuito que instala Apache, MySQL y PHP en tu computadora con solo unos clics. Es ideal para desarrollar y probar sitios web de forma local antes de publicarlos. <br><br><li> Compatible con Windows y macOS. <br><li> Incluye phpMyAdmin para gestionar bases de datos. <br><li> Permite cambiar entre diferentes versiones de PHP. <br><br>✅ Fácil de instalar y usar. <br>✅ No requiere configuración avanzada. <br>✅ Incluye herramientas como Nginx y soporte para Python y Perl.",
+  "manual": "🔧 Instalación y uso de MAMP\n\n1. Descargar MAMP:\n- Sitio oficial: https://www.mamp.info/en/downloads/\n- Selecciona la versión correspondiente a tu sistema operativo (Windows o macOS).\n\n2. Instalar MAMP:\n- Windows:\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n  - Durante la instalación, puedes elegir si deseas instalar MAMP PRO (versión de pago) o solo la versión gratuita.\n  - Se recomienda seleccionar la opción para agregar MAMP al PATH del sistema durante la instalación.\n- macOS:\n  - Abre el archivo .dmg descargado y arrastra el icono de MAMP a la carpeta de Aplicaciones.\n  - Al iniciar la aplicación, es posible que debas permitir la ejecución desde las Preferencias del Sistema si es la primera vez que la abres.\n\n3. Iniciar los servicios:\n- Abre MAMP desde el menú de inicio (Windows) o desde la carpeta de Aplicaciones (macOS).\n- Haz clic en 'Start Servers' para iniciar los servidores Apache y MySQL.\n- Si todo está configurado correctamente, deberías ver un mensaje indicando que los servicios están en ejecución.\n\n4. Acceder a phpMyAdmin:\n- Abre tu navegador web y ve a http://localhost/phpmyadmin.\n- Desde aquí, puedes crear y gestionar bases de datos para tus proyectos web.\n\n5. Colocar tus proyectos:\n- Los archivos de tus proyectos deben estar ubicados en la carpeta 'htdocs' dentro del directorio de instalación de MAMP.\n- Puedes acceder a tus proyectos desde http://localhost/nombre_de_tu_proyecto en tu navegador.",
+  "categoria": "Desarrollos",
+  "descargas": [
+    {
+      "nombre": "Instalador para Windows (64-bit)",
+      "url": "https://www.mamp.info/en/downloads/"
+    },
+    {
+      "nombre": "Instalador para macOS",
+      "url": "https://www.mamp.info/en/downloads/"
+    }
+  ]
+}
+,
+{
+  "titulo": "XAMPP",
+  "imagen": "https://lcdung.top/wp-content/uploads/2013/06/xampp-la-gi.jpg",
+  "descripcion": "XAMPP es un paquete de software libre que consiste principalmente en el sistema de gestión de bases de datos MariaDB, el servidor web Apache y los intérpretes para lenguajes de script PHP y Perl. <br><br><li> Compatible con Windows, macOS y Linux. <br><li> Incluye phpMyAdmin para la gestión de bases de datos. <br><li> Ideal para desarrolladores que desean un entorno local para pruebas y desarrollo. <br><br>✅ Fácil de instalar y configurar. <br>✅ Permite ejecutar aplicaciones web dinámicas en tu máquina local. <br>✅ Incluye herramientas como OpenSSL, MediaWiki y WordPress.",
+  "manual": "🔧 Instalación y uso de XAMPP\n\n1. Descargar XAMPP:\n- Sitio oficial: https://www.apachefriends.org/es/download.html\n- Selecciona la versión correspondiente a tu sistema operativo (Windows o macOS).\n\n2. Instalar XAMPP:\n- Windows:\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n  - Se recomienda seleccionar la opción para agregar XAMPP al PATH del sistema durante la instalación.\n- macOS:\n  - Abre el archivo .dmg descargado y arrastra el icono de XAMPP a la carpeta de Aplicaciones.\n  - Al iniciar la aplicación, es posible que debas permitir la ejecución desde las Preferencias del Sistema si es la primera vez que la abres.\n\n3. Iniciar los servicios:\n- Abre el Panel de Control de XAMPP.\n- Haz clic en 'Start' junto a 'Apache' y 'MySQL' para iniciar el servidor web y la base de datos.\n- Si todo está configurado correctamente, deberías ver un mensaje indicando que los servicios están en ejecución.\n\n4. Acceder a phpMyAdmin:\n- Abre tu navegador web y ve a http://localhost/phpmyadmin.\n- Desde aquí, puedes crear y gestionar bases de datos para tus proyectos web.\n\n5. Colocar tus proyectos:\n- Los archivos de tus proyectos deben estar ubicados en la carpeta 'htdocs' dentro del directorio de instalación de XAMPP.\n- Puedes acceder a tus proyectos desde http://localhost/nombre_de_tu_proyecto en tu navegador.",
+  "categoria": "Desarrollos",
+  "descargas": [
+    {
+      "nombre": "Instalador para Windows (64-bit)",
+      "url": "https://www.apachefriends.org/xampp-files/8.2.12/xampp-windows-x64-8.2.12-0-VS16-installer.exe"
+    },
+    {
+      "nombre": "Instalador para macOS",
+      "url": "https://www.apachefriends.org/xampp-files/8.2.12/xampp-osx-8.2.12-0-installer.dmg"
+    }
+  ]
+}
+,
+{
+  "titulo": "Git",
+  "imagen": "https://cantodocodigo.com.br/wp-content/uploads/2025/02/Imagens-Destaque-Blog_20250215_165548_0000.png",
+  "descripcion": "Git es un sistema de control de versiones distribuido gratuito y de código abierto, diseñado para manejar desde pequeños hasta muy grandes proyectos con velocidad y eficiencia. <br><br><li> Permite gestionar el historial de cambios en proyectos de software. <br><li> Facilita la colaboración entre múltiples desarrolladores. <br><li> Soporta flujos de trabajo distribuidos y centralizados. <br><br>✅ Ligero y rápido. <br>✅ Soporta ramas y fusiones eficientes. <br>✅ Amplia comunidad y documentación. <br>✅ Compatible con plataformas como GitHub, GitLab y Bitbucket.",
+  "manual": "🔧 Instalación y uso de Git\n\n1. Descargar Git:\n- Sitio oficial: https://git-scm.com/downloads\n- Selecciona la versión correspondiente a tu sistema operativo (Windows o macOS).\n\n2. Instalar Git:\n- Windows:\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n  - Se recomienda seleccionar la opción para agregar Git al PATH del sistema durante la instalación.\n- macOS:\n  - Abre el archivo .dmg descargado y arrastra el icono de Git a la carpeta de Aplicaciones.\n  - Al iniciar la aplicación, es posible que debas permitir la ejecución desde las Preferencias del Sistema si es la primera vez que la abres.\n\n3. Configurar Git:\n- Abre la terminal o línea de comandos y configura tu nombre de usuario y correo electrónico:\n  - `git config --global user.name \"Tu Nombre\"`\n  - `git config --global user.email \"tu.email@ejemplo.com\"`\n- Verifica la configuración con:\n  - `git config --list`\n\n4. Usar Git:\n- Inicializar un repositorio: `git init`\n- Clonar un repositorio existente: `git clone <url-del-repositorio>`\n- Verificar el estado de los archivos: `git status`\n- Agregar archivos al área de preparación: `git add <archivo>`\n- Realizar un commit: `git commit -m \"Mensaje del commit\"`\n- Subir cambios a un repositorio remoto: `git push origin <rama>`\n\n💡 Consejo: Para una experiencia óptima, asegúrate de tener los controladores gráficos actualizados y que tu sistema cumpla con los requisitos mínimos recomendados.",
+  "categoria": "Desarrollos",
+  "descargas": [
+    {
+      "nombre": "Instalador para Windows (64-bit)",
+      "url": "https://objects.githubusercontent.com/github-production-release-asset-2e65be/23216272/c6c1c87b-d3af-4ae8-9cd6-78a4aea72a77?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250505%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250505T195343Z&X-Amz-Expires=300&X-Amz-Signature=96f33c368b1185d68bd346e85335457be8bccbcdeb0f47d638daa4bdef1adff2&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DGit-2.49.0-64-bit.exe&response-content-type=application%2Foctet-stream"
+    },
+    {
+      "nombre": "Instalador para macOS",
+      "url": "https://git-scm.com/download/mac"
+    }
+  ]
+},
+{
+  "titulo": "GitHub Desktop",
+  "imagen": "https://cdn2.steamgriddb.com/grid/a429eda9f2518c8c4853c73b809ef27a.png",
+  "descripcion": "GitHub Desktop es una aplicación gratuita de código abierto que facilita el uso de Git y GitHub desde una interfaz gráfica. Ideal para usuarios que prefieren evitar la línea de comandos.<br><br><li> Compatible con Windows 10 y 11. <br><li> Permite clonar, hacer commits, push, pull y manejar ramas fácilmente. <br><li> Integración directa con tu cuenta de GitHub. <br><li> Vista previa de cambios, conflictos de merge y más. <br><br>✅ Recomendado para desarrolladores que usan GitHub y prefieren una herramienta visual para gestionar repositorios.",
+  "manual": "🔧 Cómo instalar GitHub Desktop\n\n1. **Descargar el instalador:**\n   - Ve a: https://desktop.github.com/\n   - Haz clic en el botón “Download for Windows”.\n\n2. **Ejecutar el instalador:**\n   - Abre el archivo `.exe` descargado.\n   - El instalador se ejecuta automáticamente sin necesidad de configuración adicional.\n\n3. **Iniciar sesión:**\n   - Abre la app y haz clic en “Sign in to GitHub” para vincular tu cuenta.\n\n4. **Clonar un repositorio:**\n   - Haz clic en “Clone a repository” o arrastra un proyecto desde GitHub.com.\n\n5. **Usar GitHub Desktop:**\n   - Realiza cambios, crea commits y sube tus actualizaciones con solo unos clics.",
+  "categoria": "Desarrollos",
+  "descargas": [
+    {
+      "nombre": "Descargar GitHub Desktop",
+      "url": "https://central.github.com/deployments/desktop/desktop/latest/win32"
+    }
+  ]
+}
+,
+{
+  "titulo": "Blender",
+  "imagen": "https://cdn2.steamgriddb.com/grid/3d3d0d329f928076a9f074a51250a911.png",
+  "descripcion": "Blender es una suite de creación 3D gratuita y de código abierto que soporta todo el flujo de trabajo 3D: modelado, rigging, animación, simulación, renderizado, composición y edición de video. <br><br><li> Compatible con Windows, macOS y Linux. <br><li> Incluye herramientas avanzadas como Cycles y Eevee para renderizado. <br><li> Amplia comunidad y extensiones disponibles. <br><br>✅ Ideal para artistas 3D, desarrolladores de videojuegos y estudios de animación. <br>✅ Soporte para realidad virtual (VR) y realidad aumentada (AR). <br>✅ Integración con motores de juego como Unity y Unreal Engine.",
+  "manual": "🔧 Instalación y uso de Blender\n\n1. Descargar Blender:\n- Sitio oficial: https://www.blender.org/download/\n- Selecciona la versión correspondiente a tu sistema operativo (Windows o macOS).\n\n2. Instalar Blender:\n- Windows:\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n  - Se recomienda seleccionar la opción para agregar Blender al PATH del sistema durante la instalación.\n- macOS:\n  - Abre el archivo .dmg descargado y arrastra el icono de Blender a la carpeta de Aplicaciones.\n  - Al iniciar la aplicación, es posible que debas permitir la ejecución desde las Preferencias del Sistema si es la primera vez que la abres.\n\n3. Usar Blender:\n- Al iniciar Blender, se abrirá la interfaz principal con una escena por defecto.\n- Puedes comenzar a modelar, esculpir, animar o renderizar utilizando las herramientas disponibles en la interfaz.\n- Para acceder a tutoriales y documentación oficial, visita: https://www.blender.org/support/tutorials/\n\n💡 Consejo: Para un rendimiento óptimo, asegúrate de tener los controladores gráficos actualizados y que tu sistema cumpla con los requisitos mínimos recomendados.",
+  "categoria": "Diseño",
+  "descargas": [
+    {
+      "nombre": "Instalador para Windows (64-bit)",
+      "url": "https://download.blender.org/release/Blender4.4/blender-4.4.3-windows-x64.msi"
+    },
+    {
+      "nombre": "Instalador para macOS (Intel)",
+      "url": "https://download.blender.org/release/Blender4.4/blender-4.4.3-macos-intel.dmg"
+    },
+    {
+      "nombre": "Instalador para macOS (Apple Silicon)",
+      "url": "https://download.blender.org/release/Blender4.4/blender-4.4.3-macos-arm64.dmg"
+    }
+  ]
+},
+{
+  "titulo": "Radmin VPN",
+  "imagen": "https://ru.troywellvpn.com/wp-content/uploads/2022/05/radmin-vpn-how-to-download-free-and-configure.webp",
+  "descripcion": "Radmin VPN es una herramienta gratuita que permite crear redes privadas virtuales (VPN) seguras y estables entre computadoras, incluso si están protegidas por firewalls. <br><br><li> Ideal para juegos en LAN, trabajo remoto y administración de redes. <br><li> Cifrado AES de 256 bits para garantizar la seguridad de la conexión. <br><li> No requiere configuración compleja ni conocimientos avanzados. <br><br>✅ 100% gratuito y sin anuncios. <br>✅ Compatible con Windows 11, 10, 8 y 7. <br>✅ Integración con el software de control remoto Radmin. <br>✅ Actualizaciones automáticas para mantener la seguridad y estabilidad.",
+  "manual": "🔧 Instalación y uso de Radmin VPN\n\n1. Descargar Radmin VPN:\n- Sitio oficial: https://www.radmin-vpn.com/es/\n\n2. Instalar Radmin VPN:\n- Ejecuta el archivo descargado y sigue las instrucciones del instalador.\n\n3. Crear o unirse a una red:\n- Para crear una red: Haz clic en 'Crear red', asigna un nombre y una contraseña.\n- Para unirse a una red existente: Haz clic en 'Unirse a red' e ingresa el nombre y la contraseña proporcionados por el administrador de la red.\n\n4. Usos comunes:\n- Juegos en LAN: Juega con amigos como si estuvieran en la misma red local.\n- Trabajo remoto: Accede a recursos de la oficina desde casa de forma segura.\n- Administración de redes: Gestiona múltiples equipos como si estuvieran en la misma red física.\n\n💡 Consejo: Para una experiencia óptima, asegúrate de que todos los participantes utilicen la misma versión de Radmin VPN y tengan una conexión a Internet estable.",
+  "categoria": "VPN",
+  "descargas": [
+    {
+      "nombre": "Instalador directo (Windows)",
+      "url": "https://download.radmin-vpn.com/download/files/Radmin_VPN_1.4.4642.1.exe"
+    }
+  ]
+},
+{
+  "titulo": "LogMeIn Hamachi",
+  "imagen": "https://cdn2.steamgriddb.com/grid/4c7f217476f00fce3d09b657d9ddd60b.png",
+  "descripcion": "LogMeIn Hamachi es una aplicación de red privada virtual (VPN) que permite crear redes privadas seguras entre computadoras, emulando una red local (LAN) a través de Internet. <br><br><li> Ideal para juegos multijugador en línea, trabajo remoto y administración de redes. <br><li> Cifrado de datos para garantizar la seguridad de la conexión. <br><li> Fácil de configurar sin necesidad de conocimientos avanzados. <br><br>✅ Compatible con Windows, macOS y Linux. <br>✅ Versión gratuita disponible para redes de hasta 5 computadoras. <br>✅ Interfaz intuitiva y fácil de usar. <br>✅ No requiere configuración de firewall o router en la mayoría de los casos.",
+  "manual": "🔧 Instalación y uso de LogMeIn Hamachi\n\n1. Descargar LogMeIn Hamachi:\n- Sitio oficial: https://vpn.net/\n- Selecciona la versión correspondiente a tu sistema operativo (Windows o macOS).\n\n2. Instalar LogMeIn Hamachi:\n- Windows:\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n  - Una vez instalado, se creará una carpeta llamada 'LogMeIn Hamachi' en tu PC.\n- macOS:\n  - Abre el archivo .dmg descargado y arrastra el icono de Hamachi a la carpeta de Aplicaciones.\n  - Al iniciar la aplicación, se creará una carpeta llamada 'LogMeIn Hamachi' en tu Mac.\n\n3. Crear o unirse a una red:\n- Para crear una red: Haz clic en 'Red' > 'Crear una nueva red', asigna un nombre y una contraseña.\n- Para unirse a una red existente: Haz clic en 'Red' > 'Unirse a una red existente' e ingresa el nombre y la contraseña proporcionados por el administrador de la red.\n\n4. Usos comunes:\n- Juegos en LAN: Juega con amigos como si estuvieran en la misma red local.\n- Trabajo remoto: Accede a recursos de la oficina desde casa de forma segura.\n- Administración de redes: Gestiona múltiples equipos como si estuvieran en la misma red física.\n\n💡 Consejo: Para una experiencia óptima, asegúrate de que todos los participantes utilicen la misma versión de LogMeIn Hamachi y tengan una conexión a Internet estable.",
+  "categoria": "VPN",
+  "descargas": [
+    {
+      "nombre": "Instalador para Windows",
+      "url": "https://vpn.net/installers/hamachi-installer.msi"
+    },
+    {
+      "nombre": "Instalador para macOS",
+      "url": "https://vpn.net/installers/hamachi-installer.dmg"
+    }
+  ]
+},
+{
+  "titulo": "Microsoft OneDrive",
+  "imagen": "https://cdn2.steamgriddb.com/grid/a7dd9ddbf7bb82f284380c5d3302c21a.png",
+  "descripcion": "Microsoft OneDrive es un servicio de almacenamiento en la nube que permite guardar archivos en línea, sincronizarlos entre dispositivos y compartirlos con otros usuarios. <br><br><li> Ofrece 5 GB de almacenamiento gratuito. <br><li> Integración con Microsoft 365 para editar documentos en línea. <br><li> Acceso desde cualquier dispositivo con conexión a Internet. <br><br>✅ Sincronización automática de archivos. <br>✅ Compartición de archivos y carpetas con permisos personalizados. <br>✅ Acceso sin conexión a archivos sincronizados. <br>✅ Aplicaciones móviles para Android e iOS.",
+  "manual": "🔧 Instalación y uso de Microsoft OneDrive\n\n1. Descargar OneDrive:\n- Sitio oficial: https://www.microsoft.com/es-es/microsoft-365/onedrive/download\n- Selecciona la versión correspondiente a tu sistema operativo (Windows o macOS).\n\n2. Instalar OneDrive:\n- Windows:\n  - Si tienes Windows 11, OneDrive ya está instalado en tu PC. Si usas otra versión de Windows, instala OneDrive para empezar.\n- macOS:\n  - Descarga el archivo .pkg desde el sitio oficial.\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente.\n\n3. Configurar la sincronización:\n- Al iniciar sesión con tu cuenta de Microsoft, podrás elegir qué carpetas sincronizar entre tu dispositivo y la nube.\n- Puedes optar por sincronizar todos los archivos o solo carpetas específicas.\n\n4. Usar OneDrive:\n- Los archivos sincronizados aparecerán en la carpeta 'OneDrive' de tu dispositivo.\n- Puedes agregar, eliminar o modificar archivos en esta carpeta, y los cambios se reflejarán automáticamente en la nube y en otros dispositivos sincronizados.\n\n💡 Consejo: Para acceder a tus archivos sin conexión, marca la opción 'Disponible sin conexión' en la configuración de OneDrive.",
+  "categoria": "Almacenamiento en la nube",
+  "descargas": [
+    {
+      "nombre": "Instalador para Windows",
+      "url": "https://go.microsoft.com/fwlink/p/?LinkId=248256"
+    },
+    {
+      "nombre": "Instalador para macOS",
+      "url": "https://go.microsoft.com/fwlink/p/?LinkId=248255"
+    }
+  ]
+},
+{
+  "titulo": "Google Drive",
+  "imagen": "https://cdn2.steamgriddb.com/grid/80dd7dd35ef7e7899a5e9629a6f2daa2.png",
+  "descripcion": "Google Drive es un servicio de almacenamiento en la nube que permite guardar archivos en línea, sincronizarlos entre dispositivos y compartirlos con otros usuarios. <br><br><li> Ofrece 15 GB de almacenamiento gratuito. <br><li> Integración con Google Docs, Hojas de cálculo y Presentaciones. <br><li> Acceso desde cualquier dispositivo con conexión a Internet. <br><br>✅ Sincronización automática de archivos. <br>✅ Compartición de archivos y carpetas con permisos personalizados. <br>✅ Acceso sin conexión a archivos sincronizados. <br>✅ Aplicaciones móviles para Android e iOS.",
+  "manual": "🔧 Instalación y uso de Google Drive\n\n1. Descargar Google Drive:\n- Sitio oficial: https://www.google.com/intl/es-419/drive/download/\n- Selecciona la versión correspondiente a tu sistema operativo (Windows o macOS).\n\n2. Instalar Google Drive:\n- Windows:\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n  - Una vez instalado, se creará una carpeta llamada 'Google Drive' en tu PC.\n- macOS:\n  - Abre el archivo .dmg descargado y arrastra el icono de Google Drive a la carpeta de Aplicaciones.\n  - Al iniciar la aplicación, se creará una carpeta llamada 'Google Drive' en tu Mac.\n\n3. Configurar la sincronización:\n- Al iniciar sesión con tu cuenta de Google, podrás elegir qué carpetas sincronizar entre tu dispositivo y la nube.\n- Puedes optar por sincronizar todos los archivos o solo carpetas específicas.\n\n4. Usar Google Drive:\n- Los archivos sincronizados aparecerán en la carpeta 'Google Drive' de tu dispositivo.\n- Puedes agregar, eliminar o modificar archivos en esta carpeta, y los cambios se reflejarán automáticamente en la nube y en otros dispositivos sincronizados.\n\n💡 Consejo: Para acceder a tus archivos sin conexión, marca la opción 'Disponible sin conexión' en la configuración de Google Drive.",
+  "categoria": "Almacenamiento en la nube",
+  "descargas": [
+    {
+      "nombre": "Instalador para Windows",
+      "url": "https://dl.google.com/drive/installbackupandsync.exe"
+    },
+    {
+      "nombre": "Instalador para macOS",
+      "url": "https://dl.google.com/drive/installbackupandsync.dmg"
+    }
+  ]
+},
+{
+  "titulo": "TeraBox",
+  "imagen": "https://media.tech-latest.com/wp-content/uploads/2021/11/27115901/TeraBox-Logo-Featuredjpg.jpg",
+  "descripcion": "TeraBox es un servicio de almacenamiento en la nube que ofrece 1 TB (1024 GB) de espacio gratuito para guardar documentos, fotos, videos y otros archivos. <br><br><li> Compatible con Windows, macOS, Linux, Android e iOS. <br><li> Sincronización automática entre dispositivos. <br><li> Álbum inteligente que organiza fotos por fecha y ubicación. <br><li> Compartición de archivos mediante enlaces protegidos. <br><br>✅ Interfaz intuitiva y fácil de usar. <br>✅ Copias de seguridad automáticas. <br>✅ Acceso rápido a archivos recientes e importantes.",
+  "manual": "🔧 Instalación y uso de TeraBox\n\n1. Descargar TeraBox:\n- Sitio oficial: https://www.terabox.com/\n- Selecciona la versión correspondiente a tu sistema operativo (Windows o macOS).\n\n2. Instalar TeraBox:\n- Windows:\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n- macOS:\n  - Abre el archivo .dmg descargado y arrastra el icono de TeraBox a la carpeta de Aplicaciones.\n\n3. Crear una cuenta o iniciar sesión:\n- Abre TeraBox y selecciona 'Registrarse' para crear una nueva cuenta o 'Iniciar sesión' si ya tienes una.\n\n4. Subir y gestionar archivos:\n- Utiliza la interfaz para subir archivos y organizarlos en carpetas.\n- Activa la sincronización automática para respaldar tus archivos importantes.\n\n💡 Consejo: Aprovecha el álbum inteligente para organizar tus fotos automáticamente por fecha y ubicación.",
+  "categoria": "Almacenamiento en la nube",
+  "descargas": [
+    {
+      "nombre": "Instalador para Windows",
+      "url": "https://issuepcdn.freeterabox.com/issue/terabox/PCTeraBox/TeraBox_1.39.2.130.exe?to=gl&sign=BOTH-F3530edecde9cd71b79378b290804a96-JoTDK%2FcmzcjI0pFD%2BB1Bebsd%2B7s%3D&region=tky&pkey=0000a33264e544ccb13554e94274ba0ed30b"
+    },
+    {
+      "nombre": "Instalador para macOS",
+      "url": "https://theteraboxapp.com/terabox-for-mac/"
+    }
+  ]
+}
+,{
+  "titulo": "Google Chrome",
+  "imagen": "https://cdn2.steamgriddb.com/grid/cbaf927430d938aee7e8a5b01cbc6d02.png",
+  "descripcion": "Google Chrome es uno de los navegadores web más rápidos, seguros y ampliamente utilizados del mundo. <br><br><li> Compatible con todos los sistemas operativos principales (Windows, macOS, Linux, Android, iOS). <br><li> Navegación rápida gracias a su motor V8 JavaScript. <br><li> Sincronización entre dispositivos con cuenta de Google. <br><br>✅ Extensiones y aplicaciones desde Chrome Web Store.<br>✅ Navegación segura con protección contra sitios maliciosos.<br>✅ Interfaz limpia, moderna y personalizable.<br>✅ Actualizaciones automáticas para mantener la seguridad y el rendimiento.",
+  "manual": "🔧 Instalación y uso de Google Chrome\n\n1. Descargar Google Chrome:\n- Sitio oficial: https://www.google.com/chrome/\n\n2. Instalar Chrome:\n- Ejecutá el archivo descargado.\n- Seguí los pasos del instalador según tu sistema operativo.\n\n3. Iniciar sesión:\n- Abrí Chrome y, si querés sincronizar tus datos, iniciá sesión con tu cuenta de Google.\n\n4. Personalizar:\n- Instalá extensiones desde la Chrome Web Store: https://chrome.google.com/webstore\n- Cambiá el tema o fondo desde la página de nueva pestaña.\n\n5. Consejos adicionales:\n- Usá el modo incógnito para navegar sin guardar historial.\n- Administrá tus contraseñas desde la configuración de Chrome.\n\n💡 Consejo: Mantené Chrome actualizado para aprovechar las últimas mejoras de seguridad y velocidad.",
+  "categoria": "Navegadores",
+  "descargas": [
+    {
+      "nombre": "Versión oficial",
+      "url": "https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7BA9CF4D31-8210-7096-A751-36DD324DD93D%7D%26lang%3Den%26browser%3D3%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-statsdef_1%26installdataindex%3Dempty/update2/installers/ChromeSetup.exe"
+    }
+  ]
+}
+,{
+  "titulo": "Mozilla Firefox",
+  "imagen": "https://cdn2.steamgriddb.com/grid/7cef8209e90a2e7196acfeedaaa4ab1e.png",
+  "descripcion": "Mozilla Firefox es un navegador web de código abierto centrado en la privacidad, la seguridad y la personalización. <br><br><li> Disponible para Windows, macOS, Linux, Android y iOS. <br><li> Fuerte enfoque en la protección de datos y bloqueo de rastreadores. <br><li> Compatible con miles de extensiones. <br><br>✅ Modo estricto de protección de privacidad.<br>✅ Herramientas de desarrollo integradas avanzadas.<br>✅ Interfaz personalizable con temas y barra de herramientas flexible.<br>✅ Actualizaciones frecuentes con mejoras de seguridad y rendimiento.",
+  "manual": "🔧 Instalación y uso de Mozilla Firefox\n\n1. Descargar Mozilla Firefox:\n- Sitio oficial: https://www.mozilla.org/firefox/\n\n2. Instalar Firefox:\n- Descargá el archivo para tu sistema operativo.\n- Ejecutá el instalador y seguí los pasos indicados.\n\n3. Personalizar Firefox:\n- Iniciá sesión con una cuenta Firefox para sincronizar marcadores, contraseñas e historial entre dispositivos.\n- Instalá complementos desde: https://addons.mozilla.org\n\n4. Navegar con privacidad:\n- Usá el modo estricto para bloquear rastreadores y cookies de terceros.\n- Activá el modo privado para no guardar historial de navegación.\n\n5. Herramientas útiles:\n- Usá la función “Captura de pantalla” integrada.\n- Accedé al panel de desarrollador con F12 para analizar sitios web.\n\n💡 Consejo: Firefox es ideal si priorizás la privacidad sin sacrificar velocidad ni compatibilidad.",
+  "categoria": "Navegadores",
+  "descargas": [
+    {
+      "nombre": "Versión oficial",
+      "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/138.0.1/win32/es-ES/Firefox%20Installer.exe"
+    }
+  ]
+},
+{
+  "titulo": "Opera Browser",
+  "imagen": "https://cdn2.steamgriddb.com/grid/b5ed65ea59910670913ff550042591a2.jpg",
+  "descripcion": "Opera es un navegador web rápido, ligero y con funciones integradas únicas que mejoran la experiencia de navegación. <br><br><li> Disponible para Windows, macOS, Linux, Android y iOS. <br><li> Incluye VPN gratuita y bloqueador de anuncios integrado. <br><li> Diseño moderno con barra lateral personalizable. <br><br>✅ Integración con WhatsApp, Messenger, Instagram y más.<br>✅ Ahorro de batería para portátiles.<br>✅ Espacios de trabajo para organizar pestañas.<br>✅ Navegación rápida con su motor basado en Chromium.",
+  "manual": "🔧 Instalación y uso de Opera\n\n1. Descargar Opera:\n- Descarga directa (Windows): https://net.geo.opera.com/opera/stable/windows\n- También disponible en https://www.opera.com/es/download\n\n2. Instalar Opera:\n- Ejecutá el archivo descargado.\n- Seguí los pasos del instalador para completar la instalación.\n\n3. Personalizar el navegador:\n- Usá la barra lateral para acceder rápidamente a mensajeros y redes sociales.\n- Activá la VPN gratuita desde el menú de configuración.\n\n4. Extensiones y temas:\n- Podés instalar extensiones desde: https://addons.opera.com\n- También es compatible con muchas extensiones de Chrome.\n\n5. Consejos adicionales:\n- Usá “Espacios de trabajo” para separar tareas o proyectos.\n- Activá el modo oscuro para descansar la vista.\n\n💡 Consejo: Opera es ideal si buscás un navegador todo-en-uno con funciones útiles ya integradas.",
+  "categoria": "Navegadores",
+  "descargas": [
+    {
+      "nombre": "Instalador directo (Windows)",
+      "url": "https://net.geo.opera.com/opera/stable/windows"
+    }
+  ]
+},
+{
+  "titulo": "Brave Browser",
+  "imagen": "https://cdn2.steamgriddb.com/grid/d7452dd79aa8c1c3e9e835fb4f48991a.jpg",
+  "descripcion": "Brave es un navegador web rápido, centrado en la privacidad y con bloqueo de anuncios integrado. También permite ganar recompensas con su sistema de tokens BAT. <br><br><li> Basado en Chromium, compatible con extensiones de Chrome. <br><li> Bloquea rastreadores y publicidad por defecto. <br><li> Acelera la carga de páginas y reduce el consumo de datos. <br><br>✅ VPN integrada (opcional).<br>✅ Recompensas por ver publicidad voluntaria (Brave Rewards).<br>✅ Sincronización entre dispositivos.<br>✅ Navegación privada con Tor (opcional).",
+  "manual": "🔧 Instalación y uso de Brave\n\n1. Descargar Brave:\n- Descarga directa (Windows): https://laptop-updates.brave.com/latest/winx64\n- Sitio oficial: https://brave.com/es/\n\n2. Instalar Brave:\n- Ejecutá el instalador descargado.\n- Seguí los pasos para completar la instalación.\n\n3. Configuración inicial:\n- Elegí importar tus marcadores y configuración desde otro navegador (opcional).\n- Activá o desactivá Brave Rewards según prefieras.\n\n4. Personalización:\n- Instalá extensiones desde la Chrome Web Store.\n- Ajustá configuraciones de seguridad, privacidad y apariencia desde el menú de configuración.\n\n5. Funciones destacadas:\n- Activá la navegación privada con Tor para mayor anonimato.\n- Usá el panel de Brave Shields para controlar qué bloquear en cada sitio.\n\n💡 Consejo: Brave es ideal si querés una navegación rápida y segura sin depender de bloqueadores externos.",
+  "categoria": "Navegadores",
+  "descargas": [
+    {
+      "nombre": "Instalador directo (Windows 64-bit)",
+      "url": "https://laptop-updates.brave.com/latest/winx64"
+    }
+  ]
+},
+{
+  "titulo": "Zen Browser",
+  "imagen": "https://cdn2.steamgriddb.com/grid/70fde9bb12772a894ac7b51fe78f1da2.png",
+  "descripcion": "Zen Browser es un navegador web de código abierto basado en Firefox, enfocado en la privacidad, la productividad y un diseño minimalista. <br><br><li> Disponible para Windows, macOS y Linux. <br><li> Interfaz moderna con pestañas verticales, vista dividida y barra lateral personalizable. <br><li> Bloqueo de rastreadores y protección de privacidad integrada. <br><br>✅ Basado en la última versión de Firefox.<br>✅ Compatible con extensiones de Firefox.<br>✅ Soporte para temas personalizados a través de Zen Mods.<br>✅ Navegación privada con Tor (opcional).",
+  "manual": "🔧 Instalación y uso de Zen Browser\n\n1. Descargar Zen Browser:\n- Sitio oficial: https://zen-browser.app/\n- GitHub: https://github.com/zen-browser/desktop\n\n2. Instalar Zen Browser:\n- Windows:\n  - Descarga el instalador desde el sitio oficial.\n  - Ejecuta el archivo descargado y sigue las instrucciones del instalador.\n- macOS:\n  - Descarga el archivo .dmg desde el sitio oficial.\n  - Abre el archivo y arrastra Zen Browser a la carpeta de Aplicaciones.\n- Linux:\n  - Flatpak: `flatpak install flathub app.zen_browser.zen`\n  - AppImage: Descarga el archivo AppImage desde el sitio oficial, hazlo ejecutable y ejecútalo.\n\n3. Personalizar Zen Browser:\n- Accede a la configuración para ajustar preferencias de privacidad y apariencia.\n- Instala temas personalizados desde Zen Mods.\n- Agrega extensiones compatibles desde el sitio de complementos de Firefox.\n\n4. Consejos adicionales:\n- Utiliza la vista dividida para trabajar con múltiples sitios simultáneamente.\n- Activa la navegación privada con Tor para mayor anonimato.\n- Explora la barra lateral para acceder rápidamente a tus sitios favoritos.\n\n💡 Consejo: Zen Browser es ideal si buscas una experiencia de navegación enfocada en la privacidad y la productividad, con una interfaz moderna y personalizable.",
+  "categoria": "Navegadores",
+  "descargas": [
+    {
+      "nombre": "Instalador directo (Windows)",
+      "url": "https://objects.githubusercontent.com/github-production-release-asset-2e65be/778556932/bb5c7fbe-7923-4804-a420-4539225fb48b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250505%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250505T192744Z&X-Amz-Expires=300&X-Amz-Signature=52f0c192f72de7a5c021cacc14c7e13f463c8c7dd6127a0201408ee1317ca046&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dzen.installer.exe&response-content-type=application%2Foctet-stream"
+    },
+    {
+      "nombre": "Instalador directo (macOS)",
+      "url": "https://zen-browser.app/download/macos"
+    },
+    {
+      "nombre": "Flatpak (Linux)",
+      "url": "https://flathub.org/en/apps/app.zen_browser.zen"
+    },
+    {
+      "nombre": "AppImage (Linux)",
+      "url": "https://zen-browser.app/download/linux"
+    }
+  ]
+},
+{
+  "titulo": "Arc Browser",
+  "imagen": "https://external-preview.redd.it/change-it-up-new-icons-for-you-icons-now-live-in-your-arc-v0-ZjJ5b2tmczM1a2xjMZqkZhUxAjTzFkY99AMq3g50p9m5iNLCj49yieLzD2Ms.png?width=640&crop=smart&format=pjpg&auto=webp&s=c6e7d21c2dc34af6a9a45109fc48bc6defc81aac",
+  "descripcion": "Arc Browser es un navegador web innovador desarrollado por The Browser Company, diseñado para reinventar la experiencia de navegación con un enfoque en la productividad y la organización. <br><br><li> Disponible para Windows 10 y versiones posteriores, y macOS 13 y versiones posteriores. <br><li> Interfaz única con barra lateral para gestionar pestañas, espacios y herramientas. <br><li> Basado en Chromium, compatible con extensiones de Chrome. <br><br>✅ Funcionalidades como 'Spaces' para organizar tareas y contextos. <br>✅ Integración de herramientas como notas, capturas de pantalla y más. <br>✅ Navegación más limpia y enfocada, eliminando distracciones. <br>✅ Sincronización entre dispositivos y soporte para extensiones.",
+  "manual": "🔧 Instalación y uso de Arc Browser\n\n1. Descargar Arc Browser:\n- Sitio oficial: https://arc.net/download\n\n2. Instalar Arc:\n- Windows:\n  - Descarga el instalador desde el sitio oficial.\n  - Ejecuta el archivo descargado y sigue las instrucciones del instalador.\n- macOS:\n  - Descarga el archivo .dmg desde el sitio oficial.\n  - Abre el archivo y arrastra Arc a la carpeta de Aplicaciones.\n\n3. Configuración inicial:\n- Al iniciar Arc por primera vez, puedes importar tus marcadores y configuraciones desde otros navegadores.\n- Explora la barra lateral para familiarizarte con las funcionalidades únicas de Arc.\n\n4. Personalización:\n- Utiliza 'Spaces' para organizar tus tareas y contextos de navegación.\n- Instala extensiones desde la Chrome Web Store para ampliar las capacidades del navegador.\n\n5. Consejos adicionales:\n- Explora las herramientas integradas como notas y capturas de pantalla para mejorar tu productividad.\n- Configura la sincronización entre dispositivos para mantener tu experiencia de navegación consistente.\n\n💡 Consejo: Arc Browser es ideal si buscas una experiencia de navegación moderna, organizada y centrada en la productividad.",
+  "categoria": "Navegadores",
+  "descargas": [
+    {
+      "nombre": "Descargar para Windows",
+      "url": "https://releases.arc.net/windows/ArcInstaller.exe"
+    },
+    {
+      "nombre": "Descargar para macOS",
+      "url": "https://arc.net/download"
+    }
+  ]
+},
+{
+  "titulo": "Adobe Photoshop",
+  "imagen": "https://cdn2.steamgriddb.com/grid/6b12ec878a0d6b6de0b4a7a42a38b346.jpg",
+  "descripcion": "Adobe Photoshop es el software líder en edición de imágenes y diseño gráfico, utilizado por profesionales y aficionados para crear, retocar y transformar fotografías y gráficos con precisión. <br><br><li> Compatible con Windows y macOS. <br><li> Herramientas avanzadas de selección, retoque, pintura y composición. <br><li> Integración con Adobe Sensei para inteligencia artificial generativa. <br><li> Soporte para capas, máscaras, filtros y efectos. <br><br>✅ Actualizaciones periódicas con nuevas funciones y mejoras. <br>✅ Amplia comunidad y recursos de aprendizaje disponibles.",
+  "manual": "🔧 Instalación y uso de Adobe Photoshop\n\n1. Descargar Adobe Photoshop:\n- Sitio oficial: https://www.adobe.com/products/photoshop.html\n- Selecciona la opción 'Prueba gratuita' para obtener acceso temporal a todas las funciones.\n\n2. Instalar Adobe Photoshop:\n- Windows:\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n- macOS:\n  - Abre el archivo .dmg descargado y arrastra el icono de Photoshop a la carpeta de Aplicaciones.\n\n3. Iniciar sesión o crear una cuenta:\n- Abre Photoshop y selecciona 'Iniciar sesión' para acceder con tu cuenta de Adobe o 'Registrarse' si no tienes una cuenta.\n\n4. Explorar y utilizar herramientas:\n- Familiarízate con la interfaz y las herramientas disponibles en la barra de herramientas y los paneles de control.\n- Utiliza tutoriales y recursos en línea para aprender técnicas avanzadas y mejorar tus habilidades.",
+  "categoria": "Diseño",
+  "descargas": [
+    {
+      "nombre": "Descargar para Windows",
+      "url": "https://drive.usercontent.google.com/download?id=1iojzKNZM6wLLMmwLfrtawB3k5UMe1HsT&export=download&authuser=0&confirm=t&uuid=9533e3e2-3aab-48d6-a664-0901dae7212c&at=ALoNOgn2o5CAKJiFOkSwu6CoPHoY%3A1746742307413"
+    },
+    {
+      "nombre": "Descargar para Windows portable CC",
+      "url": "https://download2392.mediafire.com/dowunlae7b3gJaBilcojXNHszdRQjI5XnRD_1-rMaYK3_A0LcP6YE7YJPikTPS8uWK6fFyluC4V7dkkkZtXrtDKXGXTyOuPGHhqDunzQN8iahMlG0hkDjCGLMA6lPno4oD1pmGc4nSYc2rKaaWdFvUfz4IbocqSakHPY3bb6EXLe/j012wsal2lo84cq/CCfotosho.rar"
+    }
+  ]
+},
+{
+  "titulo": "Adobe Illustrator",
+  "imagen": "https://cdn2.steamgriddb.com/grid/3205c9cc676d3631c1f36b54de99de44.jpg",
+  "descripcion": "Adobe Illustrator es el software líder en diseño gráfico vectorial, utilizado por profesionales para crear logotipos, ilustraciones, tipografías y gráficos complejos con precisión y escalabilidad. <br><br><li> Compatible con Windows y macOS. <br><li> Herramientas avanzadas de dibujo, tipografía y color. <br><li> Integración con Adobe Creative Cloud para sincronización y colaboración. <br><li> Soporte para gráficos vectoriales escalables sin pérdida de calidad. <br><br>✅ Actualizaciones periódicas con nuevas funciones y mejoras. <br>✅ Amplia comunidad y recursos de aprendizaje disponibles.",
+  "manual": "🔧 Instalación y uso de Adobe Illustrator\n\n1. Descargar Adobe Illustrator:\n- Sitio oficial: https://www.adobe.com/products/illustrator.html\n- Selecciona la opción 'Prueba gratuita' para obtener acceso temporal a todas las funciones.\n\n2. Instalar Adobe Illustrator:\n- Windows:\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n- macOS:\n  - Abre el archivo .dmg descargado y arrastra el icono de Illustrator a la carpeta de Aplicaciones.\n\n3. Iniciar sesión o crear una cuenta:\n- Abre Illustrator y selecciona 'Iniciar sesión' para acceder con tu cuenta de Adobe o 'Registrarse' si no tienes una cuenta.\n\n4. Explorar y utilizar herramientas:\n- Familiarízate con la interfaz y las herramientas disponibles en la barra de herramientas y los paneles de control.\n- Utiliza tutoriales y recursos en línea para aprender técnicas avanzadas y mejorar tus habilidades.",
+  "categoria": "Diseño",
+  "descargas": [
+    {
+      "nombre": "Descargar para Windows",
+      "url": "https://download2363.mediafire.com/f8cvca0wigmgRfFX2jV9ySlliJnXPcyjzOzTHfLkcHIujCd4Th8hjIFNljLjV3Kwpw19by1P0t0c59QH3zue8zqvmRGI_jmiMpuD8CyCOeAkYsSbog4LtQE5QwKm_k-PtSCXh1fdukYHmQnUsheqxP7oJ8PIYl20yA9QjgTrf-R3/8rwrvz43otv6iof/ADB.AI.2K25.WIN.WIZCAT.rar"
+    }
+    ]
+},
+{
+  "titulo": "Adobe Creative Cloud",
+  "imagen": "https://cdn2.steamgriddb.com/grid/c2503a6cf8a1ff184e18f4b0aa34b12b.png",
+  "descripcion": "Adobe Creative Cloud es una plataforma integral que ofrece acceso a más de 20 aplicaciones y servicios de Adobe para diseño gráfico, edición de video, fotografía, desarrollo web y más. <br><br><li> Compatible con Windows y macOS. <br><li> Incluye aplicaciones como Photoshop, Illustrator, Premiere Pro, After Effects y Lightroom. <br><li> Integración con Adobe Stock, Adobe Fonts y Behance. <br><li> Sincronización de archivos y bibliotecas en la nube. <br><br>✅ Acceso a actualizaciones y nuevas funciones. <br>✅ Colaboración y almacenamiento en la nube. <br>✅ Recursos de aprendizaje y soporte técnico.",
+  "manual": "🔧 Instalación y uso de Adobe Creative Cloud\n\n1. Descargar Adobe Creative Cloud:\n- Sitio oficial: https://www.adobe.com/creativecloud/desktop-app.html\n- Haz clic en 'Descargar' para obtener el instalador correspondiente a tu sistema operativo.\n\n2. Instalar Adobe Creative Cloud:\n- Windows:\n  - Ejecuta el archivo descargado (Creative_Cloud_Set-Up.exe) y sigue las instrucciones del asistente de instalación.\n- macOS:\n  - Abre el archivo .dmg descargado (Creative_Cloud_Installer.dmg) y arrastra el icono de Creative Cloud a la carpeta de Aplicaciones.\n\n3. Iniciar sesión o crear una cuenta:\n- Abre la aplicación de Creative Cloud y selecciona 'Iniciar sesión' para acceder con tu cuenta de Adobe o 'Registrarse' si no tienes una cuenta.\n\n4. Instalar aplicaciones de Adobe:\n- Dentro de la aplicación de Creative Cloud, navega a la pestaña 'Aplicaciones'.\n- Busca la aplicación que deseas instalar (por ejemplo, Photoshop) y haz clic en 'Instalar'.\n\n💡 Consejo: Puedes gestionar tus aplicaciones, actualizaciones y preferencias directamente desde la aplicación de Creative Cloud.",
+  "categoria": "Diseño",
+  "descargas": [
+    {
+      "nombre": "Descargar para Windows",
+      "url": "https://prod-rel-ffc-ccm.oobesaas.adobe.com/adobe-ffc-external/core/v1/wam/download?sapCode=KCCC&productName=Creative%20Cloud&os=win&guid=d4e3491e-6da8-4fa0-bd90-f89f10efd5da&contextParams=%7B%22component%22%3A%22cc-home%22%2C%22visitor_guid%22%3A%2201108415247925364775885825895561229308%22%2C%22campaign_id%22%3A%22ahome_redirection%7C2024-11-kaizenStrictSignIn%7C2024-11-kaizenStrictSignIn%22%2C%22browser%22%3A%22firefox%22%2C%22context_guid%22%3A%220982a38d-d15f-4c76-a2c2-d127d3ad7544%22%2C%22variation_id%22%3A%22disabled%7Cdisabled%22%2C%22experience_id%22%3A%22%22%2C%22planCodeList%22%3A%22%22%2C%22updateCCD%22%3A%22true%22%2C%22secondarySapcodeList%22%3A%22%22%2C%22Product_ID_Promoted%22%3A%22KCCC%22%2C%22contextComName%22%3A%22ACom%3ACCH%22%2C%22contextSvcName%22%3A%22NO-CCD%22%2C%22contextOrigin%22%3A%22ACom%3ACCH%22%2C%22gpv%22%3A%22adobe.com%3Adownload%3Acreative-cloud%22%2C%22AMCV_9E1005A551ED61CA0A490D45%2540AdobeOrg%22%3A%22-2121179033%257CMCMID%257C01108415247925364775885825895561229308%257CMCAID%257CNONE%257CMCOPTOUT-1743209680s%257CNONE%257CvVersion%257C5.3.0%22%2C%22kaizenTrialDuration%22%3A7%7D&wamFeature=nuj-live&environment=prod&api_key=CCHomeWeb1"
+    }
+  ]
+},
+{
+  "titulo": "7-Zip",
+  "imagen": "https://cdn2.steamgriddb.com/grid/2bc29035e18665f505dbe329f344f679.png",
+  "descripcion": "7-Zip es un archivador de archivos gratuito y de código abierto con una alta tasa de compresión. Compatible con Windows y macOS (vía p7zip), permite comprimir y descomprimir una amplia variedad de formatos. <br><br><li> Compatible con Windows y macOS (mediante p7zip). <br><li> Alta tasa de compresión, especialmente en formato 7z. <br><li> Soporta múltiples formatos: 7z, ZIP, RAR, TAR, GZIP, entre otros. <br><li> Integración con el menú contextual del Explorador de Windows. <br><br>✅ Software gratuito y de código abierto. <br>✅ Ligero y eficiente. <br>✅ Soporte para cifrado AES-256.",
+  "manual": "🔧 Instalación y uso de 7-Zip\n\n1. Descargar 7-Zip:\n- Windows:\n  - Sitio oficial: https://www.7-zip.org/download.html\n  - Selecciona la versión adecuada para tu sistema (32 o 64 bits).\n- macOS:\n  - Utiliza la versión p7zip disponible en: https://sourceforge.net/projects/p7zip/\n\n2. Instalar 7-Zip:\n- Windows:\n  - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n- macOS:\n  - Instala p7zip mediante Homebrew con el comando: `brew install p7zip`.\n\n3. Usar 7-Zip:\n- Windows:\n  - Haz clic derecho sobre un archivo o carpeta y selecciona las opciones de 7-Zip para comprimir o descomprimir.\n- macOS:\n  - Utiliza comandos en la terminal como `7z x archivo.7z` para descomprimir archivos.\n\n💡 Consejo: Para comprimir archivos con contraseña, utiliza la opción de cifrado AES-256 disponible en las configuraciones de compresión.",
+  "categoria": "Compresión de archivos",
+  "descargas": [
+    {
+      "nombre": "Descargar para Windows x64",
+      "url": "https://www.7-zip.org/a/7z2409-x64.exe"
+    },
+    {
+      "nombre": "Descargar para Windows x86",
+      "url": "https://www.7-zip.org/a/7z2409.exe"
+    }
+  ]
+},
+{
+  "titulo": "Wallpaper Engine",
+  "imagen": "https://cdn2.steamgriddb.com/grid/debf48b09b591ef018c9d51f90a2a4d3.png",
+  "descripcion": "Wallpaper Engine es una aplicación que permite utilizar fondos de pantalla animados en tu escritorio de Windows. Soporta diversos tipos de fondos, incluyendo animaciones 3D y 2D, sitios web, videos e incluso ciertas aplicaciones. Puedes elegir un fondo existente o crear el tuyo propio y compartirlo en el Steam Workshop. Además, puedes usar la aplicación complementaria gratuita para Android para transferir tus fondos de pantalla favoritos a tu dispositivo móvil y llevar tus fondos animados contigo.",
+  "manual": "🔧 Instalación y uso de Wallpaper Engine\n\n1. **Adquirir Wallpaper Engine:**\n   - Visita la página oficial en Steam: https://store.steampowered.com/app/431960/Wallpaper_Engine/\n   - Compra la aplicación y descárgala a través del cliente de Steam.\n\n2. **Instalar Wallpaper Engine:**\n   - Una vez descargada, la instalación se realizará automáticamente a través de Steam.\n\n3. **Explorar y aplicar fondos de pantalla:**\n   - Abre Wallpaper Engine desde tu biblioteca de Steam.\n   - Explora la amplia variedad de fondos disponibles en el Steam Workshop.\n   - Selecciona y aplica el fondo que desees a tu escritorio.\n\n4. **Crear tus propios fondos:**\n   - Utiliza el editor integrado para diseñar fondos personalizados.\n   - Puedes animar imágenes, importar videos o incluso utilizar sitios web como fondos.\n\n5. **Aplicación complementaria para Android:**\n   - Descarga la aplicación gratuita desde Google Play: https://play.google.com/store/apps/details?id=io.wallpaperengine.weclient\n   - Conéctala a tu versión de escritorio para transferir tus fondos favoritos a tu dispositivo móvil.",
+  "categoria": "Personalización de escritorio",
+  "descargas": [
+    {
+      "nombre": "Descargar para Windows (vía Steam)",
+      "url": "https://store.steampowered.com/app/431960/Wallpaper_Engine/"
+    }
+  ]
+},
+{
+  "titulo": "Lossless Scaling",
+  "imagen": "https://cdn2.steamgriddb.com/grid/512b8181c9af83f976ca317d2da076c7.png",
+  "descripcion": "Lossless Scaling es una herramienta de utilidad para juegos que permite escalar juegos en modo ventana a pantalla completa utilizando algoritmos de escalado avanzados, así como generar fotogramas adicionales mediante técnicas de inteligencia artificial. <br><br><li> Compatible con Windows 10 (versión 1903 o superior) y Windows 11. <br><li> Soporta múltiples algoritmos de escalado: LS1, AMD FidelityFX Super Resolution, NVIDIA Image Scaling, Integer Scaling, Nearest Neighbor, xBR, Anime4K, Sharp Bilinear y Bicubic CAS. <br><li> Función de generación de fotogramas (LSFG) para mejorar la fluidez en juegos que no la soportan nativamente. <br><li> Ideal para mejorar la calidad visual en juegos antiguos o pixel-art que no admiten resoluciones modernas o modo de pantalla completa. <br><br>✅ Mejora la experiencia de juego en hardware limitado. <br>✅ Permite una personalización detallada de las opciones de escalado y generación de fotogramas. <br>✅ Interfaz sencilla y fácil de usar.",
+  "manual": "🔧 Instalación y uso de Lossless Scaling\n\n1. **Adquirir Lossless Scaling:**\n   - Visita la página oficial en Steam: https://store.steampowered.com/app/993090/Lossless_Scaling/\n   - Compra la aplicación y descárgala a través del cliente de Steam.\n\n2. **Instalar Lossless Scaling:**\n   - Una vez descargada, la instalación se realizará automáticamente a través de Steam.\n\n3. **Configurar Lossless Scaling:**\n   - Abre la aplicación desde tu biblioteca de Steam.\n   - Selecciona el algoritmo de escalado que mejor se adapte a tus necesidades.\n   - Activa la función de generación de fotogramas (LSFG) si deseas mejorar la fluidez en juegos que no la soportan nativamente.\n\n4. **Usar Lossless Scaling con tus juegos:**\n   - Ejecuta el juego en modo ventana.\n   - En la aplicación de Lossless Scaling, selecciona el juego en ejecución.\n   - Aplica el escalado y/o la generación de fotogramas según tus preferencias.\n\n💡 Consejo: Para obtener los mejores resultados, limita la tasa de fotogramas del juego a una velocidad estable para que Lossless Scaling pueda funcionar de manera óptima.",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Descargar para Windows (vía Steam)",
+      "url": "https://store.steampowered.com/app/993090/Lossless_Scaling/"
+    }
+  ]
+},
+{
+  "titulo": "x360ce (Xbox 360 Controller Emulator)",
+  "imagen": "https://intelamdgames.wordpress.com/wp-content/uploads/2015/01/ccbe7-images.jpg",
+  "descripcion": "x360ce es un emulador gratuito que permite que controladores DirectInput (como gamepads genéricos, volantes o joysticks) funcionen como si fueran controladores Xbox 360 en juegos que solo admiten XInput. <br><br><li> Compatible con Windows. <br><li> Emulación de hasta cuatro controladores simultáneamente. <br><li> Personalización detallada de mapeo de botones y ejes. <br><li> Soporte para vibración y zonas muertas. <br><br>✅ Ideal para usar controladores de PlayStation, Logitech, entre otros, en juegos que requieren controladores de Xbox.",
+  "manual": "🔧 Instalación y uso de x360ce\n\n1. **Descargar x360ce:**\n   - Visita el sitio oficial: https://www.x360ce.com/\n   - Descarga la versión 4.x más reciente.\n\n2. **Instalar x360ce:**\n   - Extrae el archivo ZIP descargado.\n   - Ejecuta `x360ce.exe` como administrador.\n\n3. **Instalar el controlador ViGEmBus:**\n   - Si es necesario, la aplicación te solicitará instalar el controlador ViGEmBus para la emulación del gamepad virtual.\n   - Sigue las instrucciones en pantalla para completar la instalación.\n\n4. **Configurar tu controlador:**\n   - Conecta tu controlador al PC.\n   - En la pestaña 'Controller 1', haz clic en 'Add...' y selecciona tu dispositivo.\n   - Mapea los botones y ejes según tus preferencias.\n   - Guarda la configuración y minimiza la aplicación antes de iniciar el juego.\n\n💡 Consejo: Para juegos más antiguos que requieren archivos `xinput1_*.dll`, considera usar la versión 3.x de x360ce, colocándola en la carpeta del juego correspondiente.",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Descargar x360ce (versión 4.x)",
+      "url": "https://www.x360ce.com/files/x360ce.zip"
+    },
+    {
+      "nombre": "Descargar x360ce x64 (versión 3.x) ",
+      "url": "https://www.x360ce.com/files/x360ce_x64.zip"
+    },
+    {
+      "nombre": "Descargar x360ce x86 (versión 3.x) ",
+      "url": "https://www.x360ce.com/files/x360ce_x86.zip"
+    }
+  ]
+},
+{
+  "titulo": "Windhawk",
+  "imagen": "https://acf.geeknetic.es/imgri/imagenes/auto/2024/11/13/b9z-windhawk-personaliza-windows-11-con-sus-mods.jpg?f=webp",
+  "descripcion": "Windhawk es una herramienta gratuita y de código abierto que permite personalizar el sistema operativo Windows mediante la instalación de 'mods' (módulos de personalización). <br><br><li> Compatible con Windows 10 y Windows 11. <br><li> Permite modificar aspectos del sistema como la barra de tareas, el menú de inicio, el explorador de archivos y más. <br><li> Dispone de una amplia biblioteca de mods creados por la comunidad. <br><li> Cada mod es transparente y revisable, ya que se proporciona en forma de código fuente. <br><br>✅ Interfaz intuitiva para instalar y gestionar mods. <br>✅ Posibilidad de crear y compartir tus propios mods.",
+  "manual": "🔧 Instalación y uso de Windhawk\n\n1. **Descargar Windhawk:**\n   - Visita el sitio oficial: https://windhawk.net/\n   - Haz clic en 'Download' para obtener el instalador.\n\n2. **Instalar Windhawk:**\n   - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n\n3. **Explorar e instalar mods:**\n   - Abre Windhawk y navega a la sección 'Mods'.\n   - Explora la biblioteca de mods disponibles y selecciona los que desees instalar.\n   - Haz clic en 'Install' para aplicar el mod seleccionado.\n\n4. **Configurar mods instalados:**\n   - Accede a la sección 'Installed Mods' para ver los mods activos.\n   - Haz clic en un mod para ajustar sus configuraciones según tus preferencias.\n\n💡 Consejo: Puedes crear tus propios mods utilizando C++ y compartirlos con la comunidad. Consulta la documentación oficial para más detalles.",
+  "categoria": "Desarrollos",
+  "descargas": [
+    {
+      "nombre": "Descargar para Windows",
+      "url": "https://ramensoftware.com/downloads/windhawk_setup.exe"
+    }
+  ]
+},
+{
+  "titulo": "Xpadder",
+  "imagen": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/5753098/684254_148929.jpeg",
+  "descripcion": "Xpadder es una herramienta que permite emular entradas de teclado y ratón utilizando un gamepad, joystick o volante. Es ideal para juegos que no ofrecen soporte nativo para controladores o para personalizar la experiencia de juego. <br><br><li> Compatible con Windows 10, 8, 7, Vista y XP. <br><li> Soporta hasta 16 controladores simultáneamente. <br><li> Permite crear perfiles personalizados para diferentes juegos. <br><li> Incluye soporte para retroalimentación por vibración (force feedback). <br><br>✅ Interfaz intuitiva y fácil de usar. <br>✅ Permite asignar combinaciones de teclas, secuencias y macros. <br>✅ Compatible con una amplia variedad de controladores.",
+  "manual": "🔧 Instalación y uso de Xpadder\n\n1. **Descargar Xpadder:**\n   - Visita el sitio oficial: https://xpadder.com/\n   - Descarga la versión más reciente del software.\n\n2. **Instalar Xpadder:**\n   - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n\n3. **Configurar tu controlador:**\n   - Conecta tu controlador al PC.\n   - Abre Xpadder y selecciona tu controlador desde la interfaz.\n   - Asigna las teclas del teclado o acciones del ratón a los botones de tu controlador.\n   - Guarda el perfil para usarlo en el futuro.\n\n4. **Usar Xpadder con tus juegos:**\n   - Ejecuta el juego en modo ventana o sin bordes.\n   - Minimiza el juego y abre Xpadder con el perfil correspondiente.\n   - Regresa al juego y comienza a jugar con tu controlador.",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Descargar Xpadder 5.7",
+      "url": "https://www.xpadder.org/Xpadder-5.7.zip"
+    }
+  ]
+},
+{
+  "titulo": "360 Total Security",
+  "imagen": "https://i.ebayimg.com/images/g/fhEAAOSwce5mmtfn/s-l1200.png",
+  "descripcion": "360 Total Security es una solución de seguridad todo en uno que protege tu PC contra malware, ransomware, sitios web maliciosos y otras amenazas en línea avanzadas. <br><br><li> Compatible con Windows XP, Vista, 7, 8, 10 y 11. <br><li> Utiliza múltiples motores antivirus: 360 Cloud Scan Engine, QVMII AI Engine, Avira y Bitdefender. <br><li> Incluye herramientas de optimización del sistema, limpieza de archivos basura y aceleración del arranque. <br><li> Ofrece protección en tiempo real, sandbox, firewall y protección contra ransomware. <br><br>✅ Protección integral contra amenazas en línea. <br>✅ Herramientas adicionales para mejorar el rendimiento del sistema. <br>✅ Interfaz fácil de usar y personalizable.",
+  "manual": "🔧 Instalación y uso de 360 Total Security\n\n1. **Descargar 360 Total Security:**\n   - Visita el sitio oficial: https://www.360totalsecurity.com/\n   - Haz clic en 'Free Download' para obtener el instalador.\n\n2. **Instalar 360 Total Security:**\n   - Ejecuta el archivo descargado y sigue las instrucciones del asistente de instalación.\n\n3. **Configurar 360 Total Security:**\n   - Abre la aplicación y realiza un 'Full Check' para evaluar el estado de seguridad y rendimiento de tu PC.\n   - Activa los motores antivirus adicionales (Avira y Bitdefender) desde la configuración para una protección más robusta.\n\n4. **Utilizar las herramientas adicionales:**\n   - Usa 'Speed Up' para optimizar el inicio del sistema y los servicios en segundo plano.\n   - Emplea 'Cleanup' para eliminar archivos innecesarios y liberar espacio en disco.\n   - Configura la 'Sandbox' para ejecutar programas sospechosos en un entorno seguro.\n\n💡 Consejo: Mantén la aplicación actualizada y realiza análisis periódicos para garantizar la máxima protección.",
+  "categoria": "Antivirus y optimización del sistema",
+  "descargas": [
+    {
+      "nombre": "Descargar para Windows sin internet",
+      "url": "https://free.360totalsecurity.com/totalsecurity/360TS_Setup_11.0.0.1195.exe"
+    },
+    {
+      "nombre": "Descargar para Windows online",
+      "url": "https://free.360totalsecurity.com/totalsecurity/360TS_Setup_Mini.exe"
+    }
+  ]
+},
+{
+  "titulo": "DSHMC (DsHidMini Control Utility)",
+  "imagen": "https://i.ytimg.com/vi/X0QOcNujB7c/sddefault.jpg",
+  "descripcion": "DSHMC es la utilidad de configuración incluida con el controlador DsHidMini, diseñada para gestionar y personalizar el comportamiento de los controladores DualShock 3 en Windows. Permite ajustar modos de emulación, niveles de vibración, configuraciones de LED y más. <br><br><li> Compatible con Windows 10 y 11. <br><li> Requiere el controlador DsHidMini instalado. <br><li> Permite cambiar entre modos de emulación: HID, XInput, DualShock 4, entre otros. <br><li> Muestra el nivel de batería y el estado de conexión del controlador. <br><li> Configura combinaciones de botones para desconexión rápida y ajustes de zona muerta. <br><br>✅ Interfaz gráfica intuitiva para una fácil configuración. <br>✅ No es necesario mantener la aplicación abierta para que los cambios surtan efecto.",
+  "manual": "🔧 Instalación y uso de DSHMC\n\n1. **Descargar DsHidMini:**\n   - Visita el repositorio oficial en GitHub: https://github.com/nefarius/DsHidMini/releases\n   - Descarga la última versión estable del archivo `.zip`.\n\n2. **Instalar DsHidMini:**\n   - Extrae el archivo descargado.\n   - Navega a la carpeta correspondiente a tu arquitectura (`x64` o `x86`) y ejecuta `dshidmini.inf` con clic derecho y selecciona 'Instalar'.\n\n3. **Conectar el controlador:**\n   - Conecta tu controlador DualShock 3 al PC mediante un cable USB.\n\n4. **Ejecutar DSHMC:**\n   - Dentro de la carpeta extraída, localiza y ejecuta `DSHMC.exe` como administrador.\n   - La aplicación detectará el controlador conectado y mostrará sus detalles.\n\n5. **Configurar el controlador:**\n   - Selecciona el modo de emulación deseado (por ejemplo, XInput para compatibilidad con juegos modernos).\n   - Ajusta configuraciones adicionales como intensidad de vibración, comportamiento de los LEDs y zonas muertas.\n   - Haz clic en 'Aplicar cambios' para guardar la configuración.\n\n💡 Consejo: Una vez configurado, puedes cerrar DSHMC; las configuraciones se mantendrán activas sin necesidad de que la aplicación esté en ejecución.",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Descargar DsHidMini (incluye DSHMC)",
+      "url": "https://github.com/nefarius/DsHidMini/releases/download/setup-v3.5.1/Nefarius_DsHidMini_Drivers_x64_arm64_v3.5.1.msi"
+    },
+    {
+      "nombre": "Descargar BthPS3Setup_x64 (BLUETHOOTH)",
+      "url": "/data/download/CONECTAR MANDO PS3/BLUETHOOTH/BthPS3Setup_x64.msi"
+    },
+    {
+      "nombre": "Descargar BthPS3Setup_x86 (BLUETHOOTH)",
+      "url": "/data/download/CONECTAR MANDO PS3/BLUETHOOTH/BthPS3Setup_x86.msi"
+    }
+  ]
+},
+{
+  "titulo": "Libtorrent (Python Bindings para torrent)",
+  "imagen": "https://pythonfix.com/pkg/l/lbry-libtorrent/lbry-libtorrent-banner.webp",
+  "descripcion": "Libtorrent es una biblioteca de C++ para la implementación de clientes BitTorrent, utilizada en numerosos programas. Su versión para Python (`python-libtorrent`) permite controlar descargas de torrents directamente desde scripts. Es ideal para automatización, desarrollo de apps de escritorio o herramientas CLI.<br><br><li> Soporte para descargas .torrent y enlaces magnet. <br><li> Compatible con Python 3.10 o versiones específicas según el wheel. <br><li> Requiere dependencias de OpenSSL 1.1.1 (libcrypto y libssl). <br><li> Usado por clientes como qBittorrent, Deluge, etc. <br><br>✅ Ligero, potente y con múltiples opciones para personalización de descargas.",
+  "manual": "🔧 Instalación manual de libtorrent en Windows\n\n1. **Instalar Python 3.10 (recomendado):**\n   - Descarga desde https://www.python.org/downloads/release/python-3100/ y asegúrate de marcar la opción 'Add to PATH'.\n\n2. **Descargar el wheel de libtorrent:**\n   - Usa una versión compatible como `libtorrent-2.0.11-cp310-cp310-win_amd64.whl` desde: https://www.lfd.uci.edu/~gohlke/pythonlibs/#libtorrent\n\n3. **Instalar libtorrent con pip:**\n   ```bash\n   pip install libtorrent-2.0.11-cp310-cp310-win_amd64.whl\n   ```\n\n4. **Agregar DLLs necesarias (OpenSSL 1.1.1):**\n   - Descarga desde: https://kb.firedaemon.com/support/solutions/articles/4000121705-openssl-binary-distributions-for-microsoft-windows\n   - Copia `libcrypto-1_1-x64.dll` y `libssl-1_1-x64.dll` a:\n     - El directorio de tu script Python.\n     - O `C:\\Windows\\System32` si usas Windows 64 bits.\n\n5. **Verificar instalación:**\n   ```bash\n   python -c \"import libtorrent as lt; print(lt.version)\"\n   ```\n   - Si todo está correcto, mostrará la versión de libtorrent instalada.\n\n💡 Consejo: Usa versiones coincidentes entre Python y el `.whl` (por ejemplo, `cp310` para Python 3.10).",
+  "categoria": "Desarrollos",
+  "descargas": [
+    {
+      "nombre": "Descargar libtorrent .whl x64 (Gohlke)",
+      "url": "https://files.pythonhosted.org/packages/3a/d1/bf1317d4c604078a23535701ca666cc7df35b2587756965a8ccbf10f63f7/libtorrent-2.0.11-cp310-cp310-win_amd64.whl"
+    },
+    {
+      "nombre": "Descargar libtorrent .whl x86(Gohlke)",
+      "url": "https://files.pythonhosted.org/packages/58/d1/6074ddb437719d92059e5294266a85c0a996e17bbc7ac0cec8993f204e91/libtorrent-2.0.11-cp310-cp310-win32.whl"
+    },
+    {
+      "nombre": "Descargar OpenSSL 1.1.1 (DLLs necesarios)",
+      "url": "https://download.firedaemon.com/FireDaemon-OpenSSL/openssl-1.1.1w.zip"
+    },
+    {
+      "nombre": "Descargar Python 3.10 x64(recomendado)",
+      "url": "https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe"
+    },
+    {
+      "nombre": "Descargar Python 3.10 x86(recomendado)",
+      "url": "https://www.python.org/ftp/python/3.10.0/python-3.10.0.exe"
+    }
+  ]
+},
+{
+  "titulo": "Dependencies (x64 Release)",
+  "imagen": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAA81BMVEX///8XhgDw8PBzy4TzS33G28UAfwDy8vIvNj37ztjyPHVryX7z8fP38vYBJFbq7uslLTXS5tYZIyzG48sJGCMTHynm5+nOz9AAAAD39/ixs7XT1diytruKjZDj5OaPlZ3BxMinq7FDSU95zYmboKeb1qaz3buSmKCHjZZlaW2L0ZkgKTGjqK7FyMy6vcIAFCBVVVUACxp7foEAABFYXWIAAEl9hI6TlZhrb3PRRHUYLFZ6ialHTVOZnJ40O0KHlbFix3Zmb3tbZXLAx9VISEi638EAABbe6uB0e4ZjbXlRW2qQnLbT1+Ghq8GyustxgqQAE0ka4k+VAAASk0lEQVR4nO1dDWPjtpHFoXdH3XVzZXgiaBAQCLhsSUUkFMk6ST1L3m423brZbNL//2s6A1KyZctey/qwN4uXjU0CQ4B4HAxmAJAmxMPDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8Pj6wIPng7+0jf72sDpbnjp+31dCHZkz/N3Gxu69+ZheP62YkP5/vdBfHubP2//1tjolr/7/UP40236gp1qGPcOcJtzcYBCjoAN+v74uwewD33R+f53qT/sX8ZRcHz6wn3oa+3EZLZHGcfEq6ZPnTfXsjP27DKOixPRx9r2q2bYpjrVq1KUTZOVbJKmrZHjIKG6i9SdzCZ7tfGIOBF9iwt3rM7cONIbXVxcDJsOOf8AxwNHoLq6uLo6O0eGbTw6j4dXbRGRPkhbj4AT0TeJ3LEaIWfjUV+wZOKO56OZYjKM0chddUBHVbSAHx8mkDAe1u6qunvQJh8SSMfaN17Tt/JXbuj75pb/vCd9YtT0xfCCk+BsjofpyCJnjWoOKVmOUB35cOwE+4dwfY4DZO9vf26x1rZVwp9WCd+tUtB/3pO+3rCxdSKFgpqyxKgC+zharK5ZjpwJjPvuFs/UARp6HAB933x3T9laXfvm29/f1cc/70/fpHs7bElm4/G4H1Uo1I3mSzekJBeod+loiRLLxd0iXw8cffdMXWvk3tzQt8o5AH2L6BZ984vzXq83jpE+sjzvjkZdPFx2z3uTi6aTD+xBWnoUnJa+BIfb/vCmAPvBjb+u8yICUQ1G0Fd7k9m4p5trLvZv5dFwIvr6bmglyxjYWg4bdZp1BAzCzq5VqHJMO6fQDFOib5m7+esdOE5GX2+IDrDqDoA+NrxCLlkcQnoXqWRRZCCwPXMqWMEoXI/6KUCDXPCKB45T0DdA+tQw6qW9C93FvpqOwmXai0bg1YkPgxmkz+IJDLXnw5RRGyO5Y3SsLz50BakOMONwPJxA+9zAqcPRxVVCYmfq6vPRxXDhfBPdGV1EKZlgOMLHw7Oz0RyKTyPNADZekKv04G0+ILY7LvfpayX+ujt9K7Dbs9SUrQtpwmHG2xP3e9T4y2QRPquq0wFJWs8p//FB+r5rJf62u9v8HETOOpJkND96Vftha9B2j759grbnoO6OJuP51dnkta8LbJ0y2ELf86cMnoUgnfV61Sudob+FV0rflwJP317w9O0FT99e8PTthQ361s7xmr6/tgnPp48LB3WIyDWtnj4Y6x1kn48N+v7+bYtVwh9WCX+nz6WPncUO3W5vb62dRMMnh3DjeFjtW9/nsUHf/Q1B23YI7Uhf3OmEgE5nMNhXA/th9HT6ou6p6XsidqUvHPd646sBELhnELELfWmvV+9X21NwCvpip3XLqDNoZz6VuK2Hwa2zzRx6c6YEvUUfGNTbExBMrHch3Mm5k7JZ/AFwEvoaG94PO27KvoeWsIM82LOzJRmP4KxZe+t1MQcnUNOzs8rlXLn2iqtuPBqv6KP9YRwPJ5gzvjhTdDGMh/2mNS7HTYXNL86Wm7LwALH8g05en5A+HTk9nERh3I06wyWmQL8eRtCthyiyGEDOoIMm30ZhbzyMwk6IOw1UF+xnNBzPHX0sCgfdbhjiNeNwkJ7HUECEU1yQAxa2E+JELOSYG9muwMfWiaDi6JCzOCekT8Hta1CBsM94CvwxJLQTz/Qs6oQTQmarnC4F+sBSVno+6MR1o7c9Db2/g/RNwmgW0HHYOUeSOuF5ahdQToDTgx08gWFqRd8iHDjZ8JzwuDOwJOlGh5z9PyF9tNuJLIGG4gACraucPmqCk8udISVhJyZNTor0uasWncGSBNBwHEVFhPSJbsctYHY6XYX0AVUoESeY00UzN4ouREPfSjYEWQpPD3ITrQ+4uxjp+MM9rJnamrOP9jHoh/N+v7/ohD2kr9kFBNqVqNs5QJ9b4+iFcCLiTrOyfo70pYPOOcjNr1CXx5hPcHsMnFSD0JHFedBqn7mRrQl08bBdhj8YqJusP+Jaxx3bB1R0uoAYTBnavmYlHHjRoFurHKQvdIOBo6+OGr1sho4lGLdG7gLpGyxXBZDZIByv63X0zW5ka6KHgzAcRKNDjh302EtFN/TNsXcifUkDZ/uaDRhg1GrIuRKrnA36EjCHTmzS0BfOWzm+SR/mrOt19G3IErrsn8dhZ6gPwFuLk9DnbDUYOFAOMOBOk7hSjr4YDRH2TrWRs0EfdHj3BPgAO28dNyrLlAo26YPi3NLSZLJobZ+Om2JQNsBySTBpu/thcAr6wl5VzSbYNynqoHOeF92LmWvvQhFxDsMsdk1cRMec5SZ9YNk654KwiaOPNKMxG8ZnYpM+jg+IcxjBh0E78g5wSCEKZZOzeMjX9X9B9HXCwQDtttuYBueD8zlYoZAjfZNzsExALPpz3TanQ+7Ql8KoEne7V31Hnx114kk/dg7cBn0kHaKpA8pmK8dFDm9kr8ApnINXMzrgTMzx6buIHOJuv/G31FU8iAbdBXNuc19F0WDQ7IMUnRhOuhOKW4e6rof2hsOe+zUYRJGqRiOMOtIYC3TXjIfNJrZO/EFjThcKi9wl867bdnRLloF/jTdyyHX3o9PHde2Q3FylZ71ls8UAR16e9mbibg7TtYvjRF27czHrpZxQXbvgNkhnM6PafPc7qfUqp2fY7ZwbWZBa9mbp4R2XY9L3GNaOyxeL59B3sLVrHX/p9OEbld/cwyroeHMvBydOD1Z5MpmMPy/1qrF7yPvaN06cFruy59fZNrHT2/j+YwYeHh4eHh4eHh4eHq8ND+3sEzzYnHxQNURAjNybC24m/nCp5ynr2yIJHpjTEFjG6mMU2/K3pyp+8yWLF0CWbU9PSLJ5wyVE00KT8q6gS6ig1WL9Yq99OHQsuX6A5dzgVfrBqfrt95lL+rAKHB9MSnx03OSkLgqec1USSY1UkpVTJYoCtaHOMm6uJeGQlNtME54XGtJpltXQLFWaHBthiSxywrLSEpFlzP2oApJzFEyIzgpeXZtpVinyjohaZZkilRS0KJAzXRNaVkYQUxiibZ5xOKpIovOCwJHNXenE1c3hhLmb0LjNTQgmq/Ilwn1DqcF7uiY05yyvhS1Bn6aUVFwIknEKykVz1DG8dejAJSNTkjOeBU7xCp7BOSmRPi0srzUQVkBnZjlmW2WhqUQKkkACyOZEK2ZUySQVnBZYUxnwVqWBgUrphEuhNVEm0VzXiSS1EBKeCtSDXTtXvAhqa9xB09UToeAhyheg75217+BXkIOuWCsCUyXCNbziiWCltbXrspACOoBH0IcKUlqJHdTxU3DUDkefNdYqVRYKeqLM3XMhmbMB2mhRIz9IH8m00AWpjCywiKmVuqUPBJWR1lIL3bHA4lgtQFHdKRBUYaWu7p+oOwhW9FnSVHdaCEmpTRx9oBpMkszwaYLtyHli4TeDm+IlV7mjD55whlYIuhi2pFAcdbWkwbWzfcqApmhZK1AUAdrCQSk0ahY0/xpKERVqX00MXGNQpnQKTFFBEVieAhNqlcb+q1DxHH1QfZKRishEgGpC3TkrUaWrhr46AdGXoA9fCOdg8jmubBtQ/9oRAyk1mB4GRtC9WY45GuWNgl+QaytnraVhcBYYiwt1DBpaabwqC1QlJHdXK7eFWYI86BXhYDcrqpAhyIHOjnVLsxo5jRSM1FVNbGIgR8CRAEHo+hUor6jAulKsO3DpdrU5XykqSHCCzb4ngC3yW5u+k+dZdPuaX/H38PDw8PB4PiBaw1gTPCznwEt5Kwc8PAUB0a292tsde3bPZbh508VuE73lod1x1lpxLiEDs+7sE38B1+5xQNDEIGAzgYvVGbgZnOInXYHSKcSg0AylOCdu/Zii6wxHzYfpIJJ1PgkPwNvG4ybZtRcdMpdLM+7KcmXCP3Bvm2CvLRAO8QLufgSET50fjH506eYIMCDHvFb8gemNF4NAfYLgPhdGw5GdJqIwOcQeGCVxDVEDhBhU53LKSSkhx5i8lor9QKTKJcS/wLgEbza3BYXQd8pLCU2E0J8XElSX1FNh8xpSIWam4FGzTBY4yyBlVTvZDAtVkEpsXkl1jW40VFSRrKUPrgBxkycYCN6b7nlh1G2/kyRxapNj/C+Zu00LoVIFUZmhIJUkEI9wF9+WytYVzeA3aBbJA4jWRJ7YqobIk+Vul4ikOHuFpQAtCU5nKQthsaQQ1jm9mib1lKJsiTEgxs7CRYNImRU4SdHSRwsOMRlLdB7k5P5s2QuDYbRpSDWtygx7l6PPKtdJlMyBmQrpg3AsgVaRIqjc7AHEbhAkK+yj0DxlhWWM8coEJBBYDtBXr+lTOGXFJGRCuCYdfbygTKFsOwOBzzHHOBsvgQ7Lb+jLcKKiVKrCmPa1dV7ojMKYtfaBclmZlM1T5u9qwv9RY+eFoLMOpsIUJKuB0Dwn1zWZYkhKRCEKSUphapJnRBUCujkUwkuXS6YMo9tMlLQ2yZSyaSINPoBEVwxksaaS1AaOcl0DkQLNgTBo+/AmDAO7UvKpgH47Tez1i3K1Dc3boqwdBxS+Fep+kWYGHv5nHDrZGwrKwhXOjrvJcUjnzeujTHBQFyyFoilsdvlCdvMWKlX42SuKqUJRzmlbvBCNrHJnDMctTOJ4QLEi5W4CLmZYVeKqftJygIeHh4eHh8dvGQ+68vKun7CR8CILg68NVKNfj69YCYXrRgl6wswdCXR4NcRbHN+fYpoRFrgE7qYXAgXhAHfpwjl6Lqt+/d9EPCD4VFmI5pWoyHWipqQSCiMKiKbyWk2ZwJhTVqrkqmAZBBAQnRUcgl58jVSqimV8ChIQuOXcyWI8/NJtOiFQWTJynedTjCeNckcukCox+MzzvBQQg1pl3F85cQnKSlQxZYMc9C0HHUX6iJNtsr4aJLrdQIAr26TAjqyQyBJPK1bhTJ+jD8weY9YlYK81SB9O11EKpLu5kFXWCT5N9XpQViYjOi8sKU1uSF3k0m2cIElpMsXLKoOwHRf0y6qEoSNwCXmGgaukZVVgOhcgy52shCz5VY4pr20u7QvDV2W0PDw8PPYClbu/QPxbsrJa3uwgo+5bSMkj0ndhpsn12k/Bafnk898CSH66qRGjQaiPbXkGJe7bnba7bxPco5pgyK12ub2jQ1qRrTYWqr5ecDWxT/7+A/8B2+J29wKSUJGF7X9Ot+i1yFv+1LhH9Dgdk2pLpDfNwJXPmu+XTHQ6If20lxL4v//U29sRnL3Z+ZoMXWTT7I0AzVmKMd3amK1QWVkT26oIT+cqSQl//OuP9gejiM1/cpfo5YzAsxrTNCH3PjqBS8LtrA6HbIYFL+A/0jvKgpH6eAl4v+NVyXVZNXsNEHSCzamf+iEfaJ19V7sVOcRS0AldfkZ3c3w2RdsDWQ/rW4o0md9/syWbXk9XpoABuwumO6Rn2fkxuu/7Xy/fvn17+evHna5i14plSd5uzdYTTqBr2B3oc0vc7elSEDUTn/v26DVp9ztjAY6+mUqvtpHObqK/MWgcXyZwc2m6PAJ9P//6/v3bTx8/qctPu1yG72OQd6R5M0BgB4KOvEUTtoNe4y6LbPURpZkIeiT53F+KLuV1XbTHQB8QsyBpve2ybK18BL9VOSZ8QpaMHONv1Ly9/Hl1sMsLXrT94X6n4/FckF5fP/lyNpUleVe1g3eqSNr/3Idz2DtB5Gq3AKsIH8NgY6Ha+0M2Dh4NFH5ITPTnlATz/hEmFNnlZftMfrn85fDFPwxhSHCsKargZG/6/Xz5cX20U+/1QPx8+bY9eu/p2x1vLlvbx9/u7Lt4EPLp/cdPYCp+Ad/Ff4dpd7z59c174O3jPsrHq5t5dtwLhi8FNhBPeSRmY+u2vLct/D6EzOmT3gTPpWwG5kP/SYU12NtPSN8+XRdGUMWYVNAsBg0TQll8kZZyUVh0DUWt5CONrfCfhCAE/BiJgQxeXT9GPS5RmYpYEErYY2t0OLbXkiu4A0HVveX7Q4Cj9r3fZ6zPmx+GFyRngkmuLQukUNzWHO89Jzl/5M6hjSYRTBlVaUqRPsZlHTzyMkEgKyYU8EElNfQR+nIrRYKlK2lxSfm5LTwqDIfOYYillhglmAD6UI+APs3BvatBE8Ujq2g5vkOtjLAKpfAfx7czHvFyoXcXQmkB9IG1eMR9rNxslakDZQzcxKt7vaOBAdtXw/OFrspzJXhd64ryXEOnpXDfkqzf+94GYQxlKCZFUGmgRuuKkfwRsylMpQIjjBSWJI+tbyJfxqgkUArofuwmfmMQnx0/PDw8PDw8PDw8PDw8PDw8XhT/8ZXiv56Leo0kSch/fqX472fiL/+3wj9//PFH8m9fKf79mfjL/6zw/99//72nz9P3HHj69oKnby8chr5/AQCajDyR33JtAAAAAElFTkSuQmCC",
+  "descripcion": "Dependencies es una herramienta moderna de código abierto que permite analizar y visualizar las dependencias (DLLs) de archivos ejecutables y bibliotecas (.exe, .dll). Sirve como alternativa más moderna a Dependency Walker. Muy útil para detectar qué librerías faltan o están mal cargadas en sistemas Windows.<br><br><li> Compatible con Windows 7, 10 y 11. <br><li> Soporte para arquitecturas x86 y x64. <br><li> Portable, no requiere instalación. <br><li> Interfaz gráfica intuitiva y rápida. <br><li> Muestra errores de carga de DLLs y rutas de búsqueda. <br><br>✅ Ideal para desarrolladores que depuran errores como `DLL load failed`.",
+  "manual": "🔧 Cómo usar Dependencies para analizar DLLs\n\n1. **Descargar la versión Release x64:**\n   - Ve a: https://github.com/lucasg/Dependencies/releases\n   - Descarga `Dependencies_x64_Release.zip` o la versión más reciente.\n\n2. **Extraer el archivo zip:**\n   - Extrae en cualquier carpeta (no requiere instalación).\n\n3. **Ejecutar Dependencies.exe:**\n   - Abre el archivo `Dependencies.exe`.\n\n4. **Analizar un ejecutable o DLL:**\n   - Haz clic en el botón de carpeta o arrastra un archivo `.exe` o `.dll` al programa.\n   - Se mostrará un árbol con todas las dependencias requeridas.\n   - Las líneas rojas o los íconos de advertencia indican DLLs faltantes o incompatibles.\n\n5. **Resolver errores:**\n   - Identifica qué archivo falta (por ejemplo, `libssl-1_1-x64.dll`) y asegúrate de colocarlo en el mismo directorio que el ejecutable o en `System32` (en sistemas de 64 bits).\n\n💡 Consejo: Usa esta herramienta cuando Python o cualquier otro programa te muestre errores como *'No se puede encontrar el módulo especificado'*, para identificar exactamente qué falta.",
+  "categoria": "Desarrollos",
+  "descargas": [
+    {
+      "nombre": "Descargar Dependencies_x64_Release.zip",
+      "url": "https://github.com/lucasg/Dependencies/releases/download/v1.10/Dependencies_x64_Release.zip"
+    },
+    {
+      "nombre": "Descargar Dependencies_x86_Release.zip",
+      "url": "https://github.com/lucasg/Dependencies/releases/download/v1.11.1/Dependencies_x86_Release.zip"
+    }
+  ]
+},
+{
+  "titulo": "Visual Studio 2022 (Community Edition)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/463f68072aec736f1f704fa733bfea0a.png",
+  "descripcion": "Visual Studio 2022 es un entorno de desarrollo integrado (IDE) potente y completo para crear aplicaciones en C++, C#, .NET, Python, JavaScript, entre otros. La edición Community es gratuita para estudiantes, desarrolladores individuales y proyectos de código abierto.<br><br><li> Compatible con Windows 10 y 11. <br><li> Soporta desarrollo para escritorio, web, móvil, juegos y nube. <br><li> Incluye depurador, diseñador de interfaces, terminal integrado y administrador de paquetes. <br><li> Integración con Git y GitHub. <br><br>✅ Recomendado para proyectos en C++, como la compilación de libtorrent u otras bibliotecas nativas.",
+  "manual": "🔧 Cómo instalar Visual Studio Community\n\n1. **Descargar el instalador:**\n   - Ve a: https://visualstudio.microsoft.com/es/downloads/\n   - Descarga el instalador de Visual Studio Community.\n\n2. **Ejecutar el instalador:**\n   - Abre `vs_community.exe` y sigue las instrucciones.\n\n3. **Seleccionar cargas de trabajo necesarias:**\n   - Para compilar proyectos C++ como libtorrent, marca:\n     - ✅ Desarrollo de escritorio con C++\n     - (Opcional) Desarrollo de Python si usas bindings con `boost-python`\n\n4. **Finalizar instalación:**\n - Haz clic en Instalar y espera que se descarguen todos los componentes.\n\n5. **Compilar un proyecto:**\n   - Abre Visual Studio.\n   - Usa 'Abrir carpeta' o 'Abrir solución' (`.sln`) para cargar tu proyecto.\n   - Asegúrate de que esté seleccionado el compilador adecuado (x64).\n   - Haz clic en “Compilar” o presiona `Ctrl+Shift+B`.",
+  "categoria": "Desarrollos",
+  "descargas": [
+    {
+      "nombre": "Descargar Visual Studio 2022 Community",
+      "url": "https://c2rsetup.officeapps.live.com/c2r/downloadVS.aspx?sku=community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030:845cdb00094744ab97cb3839bdd422d9"
+    }
+  ]
+},
+{
+  "titulo": "Driver AMD Adrenalin (GPU)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/41efe2712fd7598e4c5cc85c6bc7ebb5.png",
+  "descripcion": "El paquete de controladores AMD Adrenalin proporciona soporte para tarjetas gráficas Radeon, mejorando el rendimiento, corrigiendo errores y añadiendo nuevas funciones como Radeon Chill, Anti-Lag y FidelityFX.<br><br><li> Compatible con Windows 10 y 11. <br><li> Soporte para DirectX 12, Vulkan y OpenCL. <br><li> Herramientas de rendimiento y monitoreo integradas. <br><li> Optimización automática de juegos y configuración de perfil. <br><br>✅ Recomendado para usuarios con tarjetas gráficas Radeon RX, Vega o RDNA.",
+  "manual": "🔧 Cómo instalar el Driver AMD Adrenalin\n\n1. **Ir al sitio oficial:**\n   - Visita: https://www.amd.com/es/support\n\n2. **Buscar tu GPU:**\n   - Selecciona tu modelo en el menú o deja que el sitio lo detecte automáticamente.\n\n3. **Descargar el controlador recomendado:**\n   - Asegúrate de elegir la versión 'Adrenalin Edition'.\n\n4. **Instalar:**\n   - Ejecuta el archivo `.exe` descargado.\n   - Sigue los pasos del asistente de instalación.\n\n5. **Reinicia el equipo:**\n   - Una vez instalado, reinicia tu computadora para aplicar los cambios.",
+  "categoria": "drivers",
+  "descargas": [
+    {
+      "nombre": "Descargar AMD Adrenalin Automatico",
+      "url": "https://drivers.amd.com/drivers/installer/25.10/whql/amd-software-adrenalin-edition-25.5.1-minimalsetup-250513_web.exe"
+    }
+  ]
+},
+{
+  "titulo": "Driver Intel Graphics (iGPU)",
+  "imagen": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/09/hipertextual-intel-desvela-sus-procesadores-tiger-like-11a-generacion-y-graficos-xe-portatiles-fin-con-grandes-mejoras-bordo-2020765182.png?fit=1200%2C614&quality=70&strip=all&ssl=1",
+  "descripcion": "El controlador de gráficos Intel proporciona soporte para las GPUs integradas en procesadores Intel Core. Ideal para tareas cotidianas, multimedia, y juegos ligeros. Incluye Intel Arc Control para modelos discretos.<br><br><li> Compatible con Windows 10 y 11. <br><li> Soporta DirectX 12, OpenGL y Vulkan. <br><li> Mejora el consumo energético y rendimiento. <br><li> Ideal para laptops o PCs sin GPU dedicada. <br><br>✅ Recomendado si usas gráficos integrados Intel UHD, Iris o Arc.",
+  "manual": "🔧 Cómo instalar el Driver Intel\n\n1. **Visita el sitio oficial de Intel:**\n   - Ve a: https://www.intel.com/content/www/es/es/download-center/home.html\n\n2. **Buscar el producto:**\n   - Usa el buscador para localizar tu modelo de CPU o GPU (ej. 'Intel UHD 630').\n\n3. **Descargar el controlador:**\n   - Elige el driver más reciente para tu versión de Windows.\n\n4. **Instalación:**\n   - Ejecuta el archivo `.exe` y sigue el instalador.\n\n5. **Reinicio final:**\n   - Reinicia para completar la instalación correctamente.",
+  "categoria": "drivers",
+  "descargas": [
+    {
+      "nombre": "Descargar Driver Intel Graphics Automatico",
+      "url": "https://dsadata.intel.com/installer"
+    }
+  ]
+},
+{
+  "titulo": "Driver NVIDIA GeForce (Game Ready) ",
+  "imagen": "https://cdn2.steamgriddb.com/grid/cd6683af18b85abf7a1808b6cca887e1.png",
+  "descripcion": "Los controladores NVIDIA GeForce Game Ready ofrecen soporte optimizado para juegos, herramientas como GeForce Experience, y actualizaciones frecuentes. Incluyen características como DLSS, Reflex y controladores Studio para creadores.<br><br><li> Compatible con Windows 10 y 11. <br><li> Soporte para DirectX 12 Ultimate, Vulkan, CUDA y OpenCL. <br><li> Incluye grabación, transmisión y superposición de rendimiento. <br><br>✅ Recomendado para juegos y tareas aceleradas por GPU con tarjetas GTX, RTX o Quadro.",
+  "manual": "🔧 Cómo instalar el Driver NVIDIA GeForce\n\n1. **Ir a la página de descarga de NVIDIA:**\n   - Accede a: https://www.nvidia.com/Download/index.aspx?lang=es\n\n2. **Selecciona tu GPU:**\n   - Rellena el formulario con tu modelo exacto (ej. RTX 3060).\n\n3. **Descargar el driver Game Ready:**\n   - Elige el controlador más reciente compatible con tu sistema.\n\n4. **Ejecutar el instalador:**\n   - Abre el `.exe` descargado y selecciona instalación 'Express'.\n\n5. **Reiniciar el sistema:**\n   - Reinicia para completar el proceso.",
+  "categoria": "drivers",
+  "descargas": [
+    {
+      "nombre": "Descargar Driver NVIDIA Automatico",
+      "url": "https://us.download.nvidia.com/nvapp/client/11.0.3.232/NVIDIA_app_v11.0.3.232.exe"
+    }
+  ]
+},
+{
+  "titulo": "Python (Intérprete y entorno)",
+  "imagen": "https://miro.medium.com/v2/resize:fit:700/1*3IcLSFuT8PQg4cUBaRXH1A.png",
+  "descripcion": "Python es un lenguaje de programación versátil, fácil de aprender y ampliamente usado en desarrollo web, automatización, análisis de datos, inteligencia artificial, scripting y mucho más.<br><br><li> Compatible con Windows 10 y 11. <br><li> Soporte activo para múltiples versiones (3.13, 3.12, 3.11, 3.10, etc.). <br><li> Viene con `pip`, IDLE y herramientas de desarrollo. <br><li> Instaladores oficiales incluyen opción para agregar Python al PATH. <br><br>✅ Recomendado para principiantes y expertos que desarrollan en cualquier ámbito con Python.",
+  "manual": "🔧 Cómo instalar Python en Windows\n\n1. **Elige una versión adecuada:**\n   - Usa Python 3.13 para proyectos nuevos.\n   - Usa Python 3.10 o 3.11 si necesitas compatibilidad con bibliotecas específicas.\n\n2. **Descargar el instalador:**\n   - Selecciona uno de los enlaces directos abajo.\n\n3. **Ejecutar el instalador:**\n   - Marca **'Add Python to PATH'** antes de hacer clic en **'Install Now'**.\n   - Espera que finalice la instalación.\n\n4. **Verificar instalación:**\n   - Abre `cmd` y escribe: `python --version`\n   - También puedes abrir el entorno interactivo con `python` o usar IDLE.",
+  "categoria": "Desarrollos",
+  "descargas": [
+    {
+      "nombre": "Python 3.13.3 (64-bit)",
+      "url": "https://www.python.org/ftp/python/3.13.3/python-3.13.3-amd64.exe"
+    },
+    {
+      "nombre": "Python 3.12.6 (64-bit)",
+      "url": "https://www.python.org/ftp/python/3.12.6/python-3.12.6-amd64.exe"
+    },
+    {
+      "nombre": "Python 3.11.11 (64-bit)",
+      "url": "https://www.python.org/ftp/python/3.11.11/python-3.11.11-amd64.exe"
+    },
+    {
+      "nombre": "Python 3.10.14 (64-bit)",
+      "url": "https://www.python.org/ftp/python/3.10.14/python-3.10.14-amd64.exe"
+    },
+    {
+      "nombre": "Python 3.10.0 (64-bit)",
+      "url": "https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe"
+    },
+    {
+      "nombre": "Python 3.9.19 (64-bit)",
+      "url": "https://www.python.org/ftp/python/3.9.19/python-3.9.19-amd64.exe"
+    },
+    {
+      "nombre": "Python 3.8.20 (64-bit)",
+      "url": "https://www.python.org/ftp/python/3.8.20/python-3.8.20-amd64.exe"
+    }
+  ]
+},
+{
+  "titulo": "Java Development (JDK)",
+  "imagen": "https://www.finoit.com/wp-content/uploads/2022/10/top-java-use-cases.jpg",
+  "descripcion": "El Java Development Kit (JDK) es un entorno de desarrollo esencial para crear aplicaciones en Java. Incluye el compilador, la máquina virtual (JVM), bibliotecas estándar y herramientas de desarrollo.<br><br><li> Compatible con Windows 10 y 11. <br><li> Soporte para arquitecturas de 64 bits y 32 bits (en versiones específicas). <br><li> Incluye herramientas como `javac`, `java`, `javadoc` y más. <br><li> Recomendado para desarrollo de aplicaciones de escritorio, web y móviles. <br><br>✅ Ideal para desarrolladores que trabajan con versiones específicas de Java.",
+  "manual": "🔧 Cómo instalar Java JDK en Windows\n\n1. **Selecciona la versión adecuada:**\n   - Usa Java 8 para aplicaciones heredadas o específicas.\n   - Usa Java 17 o superior para nuevos desarrollos.\n\n2. **Descargar el instalador:**\n   - Elige el enlace de descarga directa correspondiente a tu versión y arquitectura.\n\n3. **Ejecutar el instalador:**\n   - Sigue las instrucciones del asistente de instalación.\n   - Asegúrate de marcar la opción para agregar Java al PATH si está disponible.\n\n4. **Verificar instalación:**\n   - Abre `cmd` y escribe: `java -version` y `javac -version` para confirmar la instalación.",
+  "categoria": "Desarrollos",
+  "descargas": [
+    {
+      "nombre": "Java 8",
+      "url": "https://javadl.oracle.com/webapps/download/AutoDL?BundleId=252043_8a1589aa0fe24566b4337beee47c2d29"
+    },
+    {
+      "nombre": "Java SE 17 (64-bit)",
+      "url": "https://download.oracle.com/java/17/archive/jdk-17.0.12_windows-x64_bin.exe"
+    },
+    {
+      "nombre": "Java SE 18 (64-bit)",
+      "url": "https://download.oracle.com/java/18/archive/jdk-18.0.2.1_windows-x64_bin.exe"
+    },
+    {
+      "nombre": "Java SE 19 (64-bit)",
+      "url": "https://translate.google.com/website?sl=en&tl=es&hl=es&client=srp&u=https://download.oracle.com/java/19/archive/jdk-19.0.2_windows-x64_bin.exe"
+    },
+    {
+      "nombre": "Java SE 20 (64-bit)",
+      "url": "https://translate.google.com/website?sl=en&tl=es&hl=es&client=srp&u=https://download.oracle.com/java/20/archive/jdk-20.0.2_windows-x64_bin.exe"
+    },
+    {
+      "nombre": "Java SE 21 (64-bit)",
+      "url": "https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.exe"
+    },
+    {
+      "nombre": "Java SE 22 (64-bit)",
+      "url": "https://translate.google.com/website?sl=en&tl=es&hl=es&client=srp&u=https://download.oracle.com/java/22/archive/jdk-22.0.2_windows-x64_bin.exe"
+    },
+    {
+      "nombre": "Java SE 23 (64-bit)",
+      "url": "https://download.oracle.com/java/23/archive/jdk-23.0.2_windows-x64_bin.exe"
+    },
+    {
+      "nombre": "Java SE 24 (64-bit)",
+      "url": "https://download.oracle.com/java/24/latest/jdk-24_windows-x64_bin.exe"
+    }
+  ]
+},
+{
+  "titulo": "Apache NetBeans IDE",
+  "imagen": "https://somospnt.com/images/blog/cover/apache-netbeans.jpg",
+  "descripcion": "Apache NetBeans es un entorno de desarrollo integrado (IDE) gratuito y de código abierto que admite múltiples lenguajes como Java, PHP, HTML5, JavaScript y C/C++. Ideal para desarrollar aplicaciones de escritorio, web y móviles.<br><br><li> Compatible con Windows 7, 8, 10 y 11. <br><li> Soporte para arquitecturas de 64 bits y 32 bits (en versiones específicas). <br><li> Incluye herramientas como editor de código, depurador, diseñador de interfaces y gestión de proyectos. <br><li> Integración con sistemas de control de versiones como Git y Subversion. <br><br>✅ Recomendado para desarrolladores que trabajan con tecnologías Java y otras.",
+  "manual": "🔧 Cómo instalar Apache NetBeans en Windows\n\n1. **Selecciona la versión adecuada:**\n   - Usa NetBeans 25 para aprovechar las últimas características y mejoras.\n   - Usa NetBeans 8.2 si necesitas compatibilidad con proyectos más antiguos o sistemas de 32 bits.\n\n2. **Descargar el instalador:**\n   - Elige el enlace de descarga directa correspondiente a tu versión y arquitectura.\n\n3. **Ejecutar el instalador:**\n   - Sigue las instrucciones del asistente de instalación.\n   - Asegúrate de tener instalado el JDK correspondiente (Java 8 o superior).\n\n4. **Verificar instalación:**\n   - Abre NetBeans y crea un nuevo proyecto para confirmar que todo funciona correctamente.",
+  "categoria": "Desarrollos",
+  "descargas": [
+    {
+      "nombre": "Apache NetBeans 25 (64-bit)",
+      "url": "https://www.apache.org/dyn/closer.lua/netbeans/netbeans-installers/25/Apache-NetBeans-25-bin-windows-x64.exe"
+    },
+    {
+      "nombre": "Apache NetBeans 8.2 con JDK 8 (32-bit)",
+      "url": "https://archive.org/download/nb-82-86-jdk8/jdk-8u111-nb-8_2-windows-i586.exe"
+    }
+  ]
+},
+{
+  "titulo": "Eclipse IDE",
+  "imagen": "https://raw.githubusercontent.com/eclipse-platform/eclipse.platform/master/platform/org.eclipse.platform/splash.png",
+  "descripcion": "Eclipse es un entorno de desarrollo integrado (IDE) de código abierto y altamente extensible, utilizado principalmente para el desarrollo en Java, pero también compatible con otros lenguajes como C/C++, Python y más mediante complementos.<br><br><li> Compatible con Windows 10 y 11 (64 bits). <br><li> Últimas versiones optimizadas para Java 21 y superiores. <br><li> Soporte para múltiples lenguajes y herramientas mediante plugins. <br><li> Integración con sistemas de control de versiones como Git. <br><br>✅ Ideal para desarrolladores que buscan un entorno flexible y personalizable.",
+  "manual": "🔧 Cómo instalar Eclipse IDE en Windows\n\n1. **Descargar el instalador:**\n   - Visita: https://www.eclipse.org/downloads/\n   - Haz clic en 'Download x86_64' para sistemas de 64 bits.\n\n2. **Ejecutar el instalador:**\n   - Abre el archivo descargado y sigue las instrucciones.\n   - Selecciona el paquete 'Eclipse IDE for Java Developers' u otro según tus necesidades.\n\n3. **Configurar el entorno:**\n   - Elige un directorio para tu espacio de trabajo (workspace).\n   - Asegúrate de tener instalado el JDK correspondiente.\n\n4. **Verificar instalación:**\n   - Abre Eclipse y crea un nuevo proyecto para confirmar que todo funciona correctamente.",
+  "categoria": "Desarrollos",
+  "descargas": [
+    {
+      "nombre": "Eclipse IDE 2025-03 (64-bit)",
+      "url": "https://eclipse.c3sl.ufpr.br/oomph/epp/2025-03/R/eclipse-inst-jre-win64.exe"
+    },
+    {
+      "nombre": "Eclipse IDE 2018-09 R (32-bit)",
+      "url": "https://archive.eclipse.org/technology/epp/downloads/release/2018-09/R/eclipse-jee-2018-09-win32.zip"
+    }
+  ]
+},
+{
+  "titulo": "IntelliJ IDEA ",
+  "imagen": "https://www.jrebel.com/sites/default/files/image/2024-04/image-jrebel-intelij-cheat-sheet.jpg.jpeg",
+  "descripcion": "IntelliJ IDEA es un entorno de desarrollo integrado (IDE) potente y versátil desarrollado por JetBrains. Ofrece soporte avanzado para Java, Kotlin y otros lenguajes, con herramientas inteligentes para el desarrollo moderno.<br><br><li> Compatible con Windows 10 y 11 (64 bits). <br><li> Edición Community gratuita y de código abierto. <br><li> Edición Ultimate con características avanzadas para desarrollo empresarial. <br><li> Integración con sistemas de control de versiones como Git. <br><br>✅ Ideal para desarrolladores que buscan un entorno de desarrollo robusto y eficiente.",
+  "manual": "🔧 Cómo instalar IntelliJ IDEA en Windows\n\n1. **Selecciona la edición adecuada:**\n   - **Community Edition:** Gratuita y de código abierto, adecuada para la mayoría de los desarrolladores.\n   - **Ultimate Edition:** Comercial, con características adicionales para desarrollo empresarial.\n\n2. **Descargar el instalador:**\n   - Visita: https://www.jetbrains.com/idea/download/\n   - Elige la edición y descarga el instalador correspondiente para tu sistema operativo.\n\n3. **Ejecutar el instalador:**\n   - Abre el archivo descargado y sigue las instrucciones del asistente de instalación.\n   - Asegúrate de tener instalado el JDK correspondiente (Java 8 o superior).\n\n4. **Configurar el entorno:**\n   - Elige un directorio para tu espacio de trabajo (workspace).\n   - Configura los plugins y ajustes según tus preferencias.\n\n5. **Verificar instalación:**\n   - Abre IntelliJ IDEA y crea un nuevo proyecto para confirmar que todo funciona correctamente.",
+  "categoria": "Desarrollos",
+  "descargas": [
+    {
+      "nombre": "IntelliJ IDEA 2025.1 (Community Edition, 64-bit)",
+      "url": "https://download-cdn.jetbrains.com/idea/ideaIU-2025.1.1.exe/"
+    },
+    {
+      "nombre": "IntelliJ IDEA 2021.1.2 (Community Edition, 32-bit)",
+      "url": "https://download.jetbrains.com/idea/ideaIC-2021.1.2.exe"
+    }
+  ]
+},
+{
+  "titulo": "Docker Desktop",
+  "imagen": "https://www.muylinux.com/wp-content/uploads/2022/05/DockerDesktop.png",
+  "descripcion": "Docker Desktop es una aplicación para desarrolladores que proporciona una plataforma sencilla para construir, compartir y ejecutar aplicaciones en contenedores. Incluye Docker Engine, Docker CLI, Docker Compose y Kubernetes integrados.<br><br><li> Compatible con Windows 10 y 11 (64 bits). <br><li> Requiere WSL 2 o Hyper-V habilitado. <br><li> Interfaz gráfica intuitiva para gestionar contenedores e imágenes. <br><li> Integración con sistemas de control de versiones como Git. <br><br>✅ Ideal para desarrolladores que buscan una solución completa para la gestión de contenedores en Windows.",
+  "manual": "🔧 Cómo instalar Docker Desktop en Windows\n\n1. **Verifica los requisitos del sistema:**\n   - Windows 10 o 11 de 64 bits.\n   - WSL 2 o Hyper-V habilitado.\n   - Procesador con soporte para virtualización.\n   - Mínimo 4 GB de RAM.\n\n2. **Descargar el instalador:**\n   - Visita: https://www.docker.com/products/docker-desktop\n   - Descarga la versión correspondiente para tu sistema operativo.\n\n3. **Ejecutar el instalador:**\n   - Abre el archivo descargado y sigue las instrucciones del asistente de instalación.\n\n4. **Configurar Docker Desktop:**\n   - Elige entre WSL 2 o Hyper-V como backend.\n   - Inicia Docker Desktop desde el menú de inicio.\n\n5. **Verificar la instalación:**\n   - Abre una terminal y ejecuta `docker --version` para confirmar que Docker está instalado correctamente.",
+  "categoria": "Desarrollos",
+  "descargas": [
+    {
+      "nombre": "Docker Desktop para Windows (64-bit)",
+      "url": "https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module"
+    }
+  ]
+},
+{
+  "titulo": "Super Mario Maker 2 (Mod Online en PC)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/108cf4124b7cb259bbb6f92a60f69474.png",
+  "descripcion": "Super Mario Maker 2 es un juego de creación y plataformas exclusivo de Nintendo Switch. Sin embargo, gracias a la emulación y a servidores personalizados, es posible jugarlo en PC con soporte para juego en línea y mods.<br><br><li> Requiere emulador de Nintendo Switch (Ryujinx o Yuzu). <br><li> Compatible con sistemas Windows de 64 bits. <br><li> Soporte para juego en línea mediante servidores personalizados como Open Course World. <br><li> Posibilidad de instalar mods para ampliar la experiencia de juego. <br><br>✅ Ideal para entusiastas que desean disfrutar de Super Mario Maker 2 en PC con funcionalidades adicionales.",
+  "manual": "🔧 Cómo jugar Super Mario Maker 2 en PC con soporte en línea\n\n1. **Instalar un emulador de Nintendo Switch:**\n   - Descarga e instala [Ryujinx](https://ryujinx.org/) o [Yuzu](https://yuzu-emu.org/).\n\n2. **Obtener el juego:**\n   - Necesitarás una copia legítima de Super Mario Maker 2 en formato NSP o XCI.\n\n3. **Configurar el emulador:**\n   - Sigue las instrucciones del emulador elegido para configurar las claves de producto y el firmware necesarios.\n\n4. **Instalar mods y soporte en línea:**\n   - Utiliza herramientas como [Open Course World](https://opencourse.world/) para acceder a niveles en línea y funcionalidades adicionales. :contentReference[oaicite:4]{index=4}\n   - Sigue tutoriales específicos para instalar mods en Super Mario Maker 2. :contentReference[oaicite:5]{index=5}\n\n5. **Iniciar el juego:**\n   - Abre el emulador, carga el juego y comienza a disfrutar de Super Mario Maker 2 en PC con soporte en línea.",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Ryujinx (Emulador de Nintendo Switch)",
+      "url": "https://ryujinx.org/"
+    },
+    {
+      "nombre": "Yuzu (Emulador de Nintendo Switch)",
+      "url": "https://yuzu-emu.org/"
+    },
+    {
+      "nombre": "Open Course World",
+      "url": "https://opencourse.world/"
+    }
+  ]
+},
+{
+  "titulo": "Ryujinx (Emulador de Nintendo Switch)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/8b74109a090f26752e80c9575b7c5508.png",
+  "descripcion": "Ryujinx es un emulador de Nintendo Switch para PC, enfocado en precisión, estabilidad y jugabilidad. Permite ejecutar juegos comerciales como Super Mario Maker 2, The Legend of Zelda: BOTW y más, con soporte para mods y juego en línea a través de redes como RyuOnline y LDN.<br><br><li> Compatible con Windows, Linux y macOS. <br><li> Requiere una PC de 64 bits con soporte para OpenGL 4.5+ o Vulkan. <br><li> Soporte para controles, resolución escalable, y mods. <br><li> Compatible con servidores personalizados para multijugador.<br><br>✅ Recomendado para emular títulos como Super Mario Odyssey, Pokémon Sword/Shield y Super Mario Maker 2.",
+  "manual": "🔧 Cómo instalar y usar Ryujinx\n\n1. **Descarga Ryujinx:**\n   - Ve a: https://ryujinx.org/\n   - Haz clic en \"Download\" y elige la versión para tu sistema operativo.\n\n2. **Extrae y ejecuta:**\n   - Extrae el archivo ZIP y ejecuta `Ryujinx.exe`.\n\n3. **Configura claves y firmware:**\n   - Necesitarás `prod.keys` y `title.keys` extraídas desde tu Nintendo Switch.\n   - Ve a 'File > Open Ryujinx Folder' y colócalas en la carpeta `system`.\n\n4. **Instala el firmware:**\n   - Desde el menú, selecciona `Tools > Install Firmware > Install a firmware from XCI/ZIP`.\n\n5. **Carga un juego:**\n   - Usa un archivo `.XCI` o `.NSP` legítimo y ábrelo desde el emulador.\n\n6. **Juega y configura:**\n   - Ajusta gráficos, controles y mods desde la interfaz.\n   - Para multijugador, activa el modo LDN o usa herramientas como RyuOnline.",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Descargar Ryujinx",
+      "url": "https://ryujinx.org/download"
+    },
+    {
+      "nombre": "Descargar Ryujinx v2)",
+      "url": "https://github.com/Ryujinx/Ryujinx/wiki"
+    }
+  ]
+},
+{
+  "titulo": "Citron (Emulador de Nintendo Switch)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/e9cd0062c38558b6b5da47528a898b0a.png",
+  "descripcion": "Citron es un emulador moderno de Nintendo Switch para PC, basado en Yuzu, que se centra en ofrecer mayor rendimiento y compatibilidad con los títulos más recientes. Incluye soporte para juego en línea, mods, y es multiplataforma.<br><br><li> Disponible para Windows, Linux y Android. <br><li> Soporta juegos en formato NSP, XCI y NCA. <br><li> Compatible con claves de producto y firmware oficiales. <br><li> Soporte para servidores multijugador y mods.<br><br>✅ Ideal para quienes buscan una experiencia optimizada con títulos exigentes como Zelda: Tears of the Kingdom o Metroid Dread.",
+  "manual": "🔧 Cómo instalar y usar Citron\n\n1. **Descarga Citron:**\n   - Ve a: https://citron-emu.org/\n   - Descarga la versión compatible con tu sistema operativo.\n\n2. **Extrae y ejecuta:**\n   - Descomprime el archivo ZIP descargado.\n   - Ejecuta `Citron.exe` (en Windows) o su equivalente en otros sistemas.\n\n3. **Configura claves y firmware:**\n   - Necesitarás los archivos `prod.keys` y `title.keys` de tu consola.\n   - Colócalos en la carpeta `keys` del emulador.\n\n4. **Instala el firmware:**\n   - Desde el menú, selecciona `Archivo > Instalar firmware` y elige tu archivo `.ZIP` o `.NCA` de firmware.\n\n5. **Agrega tus juegos:**\n   - Usa `Archivo > Agregar juego` para añadir títulos en formato `.NSP`, `.XCI` o `.NCA`.\n\n6. **Ajusta configuraciones:**\n   - Personaliza gráficos, controles, mods, y más desde el menú de configuración.",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Descargar Citron",
+      "url": "https://citron-emu.org/download"
+    },
+    {
+      "nombre": "Repositorio GitHub",
+      "url": "https://github.com/CitronEmu/Citron"
+    }
+  ]
+},
+{
+  "titulo": "Project64 (Emulador de Nintendo 64)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/156d1e0fb57f185c88c7f7630787e37a.png",
+  "descripcion": "Project64 es uno de los emuladores más populares de Nintendo 64 para Windows. Permite ejecutar una amplia gama de juegos clásicos de N64 con mejoras gráficas, soporte para controladores modernos y opciones de personalización avanzadas.<br><br><li> Compatible con Windows de 32 y 64 bits. <br><li> Soporte para archivos ROM en formato `.n64`, `.z64`, `.v64`, entre otros. <br><li> Permite personalizar la resolución, filtros gráficos y plugins. <br><li> Soporte para multiplayer local y controles configurables.<br><br>✅ Perfecto para jugar títulos como Super Mario 64, The Legend of Zelda: Ocarina of Time o Mario Kart 64.",
+  "manual": "🔧 Cómo instalar y usar Project64\n\n1. **Descargar Project64:**\n   - Visita: https://www.pj64-emu.com/\n   - Haz clic en \"Download\" para obtener la última versión.\n\n2. **Instalación:**\n   - Ejecuta el instalador y sigue los pasos.\n\n3. **Agregar ROMs:**\n   - Coloca tus archivos `.n64`, `.z64` o `.v64` en una carpeta.\n   - Desde el emulador, usa 'Archivo > Abrir ROM' para seleccionarlos.\n\n4. **Configurar controles:**\n   - Ve a 'Opciones > Configurar plugin de entrada' para asignar botones de tu mando o teclado.\n\n5. **Mejoras gráficas:**\n   - Ajusta la resolución y filtros desde 'Opciones > Configurar plugin de video'.\n\n6. **Juega:**\n   - Una vez cargada la ROM, ¡disfruta tu juego de N64 favorito!",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Descargar Project64 portable",
+      "url": "https://www.pj64-emu.com/download/project64-3-0-1-zip"
+    },
+    {
+      "nombre": "Descargar Project64 x86",
+      "url": "https://www.pj64-emu.com/download/project64-3-0-1-installer"
+    }
+  ]
+},
+{
+  "titulo": "PCSX2 (Emulador de PlayStation 2)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/7d1c670a8c324c56a1c757c3a3a7d33e.png",
+  "descripcion": "PCSX2 es un emulador de código abierto para PlayStation 2, que permite ejecutar juegos de PS2 en PC con soporte para alta resolución, mejoras gráficas y personalización de controles. Soporta una gran cantidad de títulos, incluyendo juegos populares como Grand Theft Auto: San Andreas, Final Fantasy X y más.<br><br><li> Compatible con Windows, Linux y macOS. <br><li> Requiere una PC con soporte para SSE2. <br><li> Soporte para juegos en alta resolución, plugins gráficos, y mejoras visuales. <br><li> Compatible con controles y periféricos modernos, así como multijugador local. <br><br>✅ Ideal para revivir los clásicos de PS2 en tu PC con gráficos mejorados.",
+  "manual": "🔧 Cómo instalar y usar PCSX2\n\n1. **Descargar PCSX2:**\n   - Visita: https://pcsx2.net/\n   - Haz clic en \"Descargar\" para obtener la última versión para tu sistema operativo.\n\n2. **Instalación:**\n   - Ejecuta el instalador y sigue las instrucciones para completar la instalación.\n\n3. **Configurar PCSX2:**\n   - Al abrir el emulador, configura los plugins de video, audio y controladores según tu hardware.\n   - En la primera ejecución, PCSX2 te guiará para configurar las opciones básicas.\n\n4. **Obtener juegos (ISO):**\n   - Necesitarás archivos ISO de tus juegos de PS2. Asegúrate de tener una copia legítima de tus juegos.\n\n5. **Cargar un juego:**\n   - Ve a 'Sistema > Cargar juego' y selecciona el archivo ISO del juego que quieras ejecutar.\n\n6. **Configurar controles y gráficos:**\n   - Personaliza la experiencia con opciones gráficas mejoradas y configuraciones de control en el menú de opciones del emulador.\n\n7. **Jugar:**\n   - ¡Disfruta de tus juegos de PS2 en PC con gráficos mejorados y rendimiento optimizado!",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Descargar PCSX2",
+      "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.2.0/pcsx2-v2.2.0-windows-x64-Qt.7z"
+    }
+  ]
+},
+{
+  "titulo": "Dolphin (Emulador de GameCube y Wii)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/83c454bc256379edbba415dd1c8f4ced.png",
+  "descripcion": "Dolphin es un emulador de código abierto para Nintendo GameCube y Wii que permite ejecutar juegos de ambas consolas en PC. Ofrece soporte para resolución mejorada, compatibilidad con controles de GameCube y Wii, así como la posibilidad de jugar títulos en línea. Dolphin es conocido por su estabilidad y la alta calidad de su emulación.<br><br><li> Compatible con Windows, Linux y macOS. <br><li> Requiere una PC con soporte para SSE2. <br><li> Soporte para juegos en alta definición y controladores modernos. <br><li> Compatible con multijugador en línea y juego en red. <br><br>✅ Ideal para revivir clásicos de GameCube y Wii con gráficos mejorados.",
+  "manual": "🔧 Cómo instalar y usar Dolphin\n\n1. **Descargar Dolphin:**\n   - Visita: https://dolphin-emu.org/\n   - Haz clic en \"Download\" para obtener la última versión del emulador para tu sistema operativo.\n\n2. **Instalación:**\n   - Ejecuta el instalador y sigue las instrucciones para completar la instalación.\n\n3. **Obtener juegos (ISO):**\n   - Necesitarás archivos ISO de tus juegos de GameCube o Wii. Asegúrate de tener una copia legítima de tus juegos.\n\n4. **Configurar Dolphin:**\n   - Al abrir el emulador, ajusta la configuración de video, audio y controles según tu hardware.\n   - Puedes configurar las opciones gráficas para mejorar la calidad visual de los juegos.\n\n5. **Cargar un juego:**\n   - Ve a 'Archivo > Abrir' y selecciona el archivo ISO del juego que quieras ejecutar.\n\n6. **Jugar en línea:**\n   - Dolphin permite el juego en línea en títulos compatibles, solo debes configurar la conexión en las opciones de red.\n\n7. **Personalizar controles:**\n   - Personaliza el mapeo de controles para usar el mando de GameCube o Wii, o incluso un mando de Xbox o PlayStation.",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Descargar Dolphin",
+      "url": "hthttps://dl.dolphin-emu.org/releases/2503a/dolphin-2503a-x64.7z"
+    }
+  ]
+},
+{
+  "titulo": "DeSmuME (Emulador de Nintendo DS)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/5c75d0530bc61a5d55af77bd10cf2f3b.jpg",
+  "descripcion": "DeSmuME es un emulador de código abierto para la consola portátil Nintendo DS. Permite jugar títulos de Nintendo DS en PC con soporte para características como controles personalizados, gráficos mejorados y emulación precisa. DeSmuME es conocido por su estabilidad y es ideal para revivir los mejores juegos de Nintendo DS.<br><br><li> Compatible con Windows, macOS y Linux. <br><li> Soporte para gráficos mejorados y personalización de controles. <br><li> Permite la emulación de la pantalla táctil y el micrófono de la DS. <br><li> Soporte para guardar en cualquier momento y usar trucos. <br><br>✅ Ideal para jugar títulos de DS como Pokémon, Mario Kart y The Legend of Zelda.",
+  "manual": "🔧 Cómo instalar y usar DeSmuME\n\n1. **Descargar DeSmuME:**\n   - Visita: https://desmume.org/\n   - Haz clic en \"Download\" para obtener la última versión del emulador para tu sistema operativo.\n\n2. **Instalación:**\n   - Ejecuta el instalador y sigue las instrucciones para completar la instalación.\n\n3. **Obtener juegos (ROMs):**\n   - Necesitarás archivos ROM de tus juegos de Nintendo DS. Asegúrate de tener una copia legítima de tus juegos.\n\n4. **Configurar DeSmuME:**\n   - Abre el emulador y ajusta la configuración gráfica, de audio y de controles según tus preferencias y hardware.\n\n5. **Cargar un juego:**\n   - Ve a 'Archivo > Abrir' y selecciona el archivo ROM del juego que quieras ejecutar.\n\n6. **Usar la pantalla táctil:**\n   - DeSmuME emula la pantalla táctil de la Nintendo DS, permitiendo usar el ratón o un controlador táctil para interactuar con los juegos.\n\n7. **Guardar en cualquier momento:**\n   - Puedes guardar el estado del juego en cualquier momento, lo que facilita la reanudación en cualquier punto.",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Descargar DeSmuME",
+      "url": "https://github.com/TASEmulators/desmume/releases/download/release_0_9_13/desmume-0.9.13-win64.zip"
+    }
+  ]
+},
+{
+  "titulo": "Citra (Emulador de Nintendo 3DS)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/794051fe42f9f3749f98b084fff21758.jpg",
+  "descripcion": "Citra es un emulador de código abierto para la consola Nintendo 3DS. Permite jugar títulos de Nintendo 3DS en PC con soporte para gráficos mejorados, multijugador local y compatibilidad con controles personalizados. Citra es conocido por su alta compatibilidad con una gran cantidad de títulos y su desarrollo constante para mejorar el rendimiento y la estabilidad.<br><br><li> Compatible con Windows, macOS y Linux. <br><li> Soporte para gráficos mejorados, multijugador local y emulación de la pantalla táctil. <br><li> Requiere una PC con soporte para OpenGL 4.3+ o Vulkan. <br><li> Compatible con controles, resolución escalable y trucos. <br><br>✅ Ideal para emular títulos como The Legend of Zelda: Ocarina of Time 3D, Pokémon Sun/Moon y Super Mario 3D Land.",
+  "manual": "🔧 Cómo instalar y usar Citra\n\n1. **Descargar Citra:**\n   - Ve a: https://citra-emu.org/\n   - Haz clic en \"Download\" para obtener la última versión del emulador para tu sistema operativo.\n\n2. **Instalación:**\n   - Ejecuta el instalador y sigue las instrucciones para completar la instalación.\n\n3. **Obtener juegos (ROMs):**\n   - Necesitarás archivos ROM de tus juegos de Nintendo 3DS. Asegúrate de tener una copia legítima de tus juegos.\n\n4. **Configurar Citra:**\n   - Abre el emulador y ajusta la configuración gráfica, de audio y de controles según tus preferencias y hardware.\n\n5. **Cargar un juego:**\n   - Ve a 'Archivo > Cargar juego' y selecciona el archivo ROM del juego que quieras ejecutar.\n\n6. **Jugar en multijugador:**\n   - Citra permite el juego multijugador local entre dispositivos que ejecutan Citra, solo necesitas la misma red Wi-Fi o conexión directa.",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Descargar Citra",
+      "url": "https://archive.org/download/citra-emu_202403/citra-windows-msvc-20240303-0ff3440_nightly.zip"
+    }
+  ]
+},
+{
+  "titulo": "Cemu (Emulador de Nintendo Wii U)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/5fa6073702e5d6751ffd4e6e8168e568.png",
+  "descripcion": "Cemu es un emulador de código cerrado para la consola Nintendo Wii U, que permite ejecutar juegos de Wii U en PC. Es conocido por su alto rendimiento y compatibilidad con muchos títulos de la consola. Además, Cemu permite jugar a una resolución superior a la nativa de la Wii U, lo que mejora la experiencia visual. Cemu también soporta mods, DLCs y contenido descargable para muchos juegos.<br><br><li> Compatible con Windows 7, 8 y 10 de 64 bits. <br><li> Requiere una PC con soporte para OpenGL 4.5 o superior. <br><li> Soporta resolución escalable y mejoras gráficas. <br><li> Soporta mods y DLCs. <br><br>✅ Ideal para emular títulos como The Legend of Zelda: Breath of the Wild, Super Mario 3D World y Mario Kart 8.",
+  "manual": "🔧 Cómo instalar y usar Cemu\n\n1. **Descargar Cemu:**\n   - Ve a: https://cemu.info/\n   - Haz clic en \"Download\" para obtener la última versión del emulador para tu sistema operativo.\n\n2. **Instalar Cemu:**\n   - Extrae el archivo ZIP en una carpeta de tu elección.\n\n3. **Obtener juegos (ROMs):**\n   - Necesitarás archivos de juego en formato .wud o .wux de tus juegos de Wii U.\n\n4. **Configurar Cemu:**\n   - Abre Cemu y ajusta la configuración gráfica, de audio y de controles según tus preferencias y hardware.\n   - Asegúrate de tener los archivos de claves necesarios para emular algunos juegos.<br>\n   - Si deseas usar controles, puedes configurarlos desde el menú de entradas (inputs) de Cemu.\n\n5. **Cargar un juego:**\n   - Ve a 'Archivo > Cargar juego' y selecciona el archivo ROM del juego que quieras ejecutar.\n\n6. **Jugar con mods y DLCs:**\n   - Los mods y DLCs se instalan en las carpetas correspondientes dentro del directorio de Cemu. Asegúrate de seguir las instrucciones de instalación proporcionadas por la comunidad para cada mod.",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Descargar Cemu",
+      "url": "https://github.com/cemu-project/Cemu/releases/download/v2.6/cemu-2.6-windows-x64.zip"
+    }
+  ]
+},
+{
+  "titulo": "Keys (Nintendo Switch)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/5cffc955c27a2178ca08f82f74ae80ea.png",
+  "descripcion": "Yuzu es un emulador de código abierto para la consola Nintendo Switch, desarrollado por los creadores de Citra (emulador de 3DS). Permite ejecutar juegos de Switch en PC con alto rendimiento y compatibilidad. Soporta mejoras visuales, resolución escalada, mods y DLCs. Es ideal para quienes buscan disfrutar de títulos de Switch como si fueran nativos de PC.<br><br><li> Compatible con Windows 10 y 11 de 64 bits.<br><li> Requiere una tarjeta gráfica con soporte para Vulkan o OpenGL 4.6.<br><li> Soporta resolución 4K, mejoras gráficas y mods.<br><li> Compatible con controles de Switch y otros mandos.",
+  "manual": "🔧 Cómo instalar y usar Yuzu\n\n1. **Descargar Yuzu:**\n   - Visita: https://yuzu-emu.org/\n   - Haz clic en 'Download' para descargar la versión para Windows.\n\n2. **Instalar Yuzu:**\n   - Ejecuta el instalador o extrae el archivo ZIP (según versión) y sigue las instrucciones.\n\n3. **Obtener las claves de sistema (keys):**\n   - Necesitas los archivos `prod.keys` y `title.keys` para que Yuzu pueda ejecutar juegos. Estos deben colocarse en la carpeta `yuzu/keys`.\n   - Estos archivos se obtienen extrayéndolos de una Nintendo Switch con acceso homebrew (no se pueden distribuir legalmente).\n\n4. **Obtener juegos (XCI o NSP):**\n   - Necesitas tus propios backups de juegos en formato `.xci` o `.nsp`.\n\n5. **Configurar Yuzu:**\n   - Abre Yuzu, configura los controles, gráficos y audio a tu gusto.\n   - Importa las claves en el menú de configuración si no las reconoce automáticamente.\n\n6. **Cargar un juego:**\n   - Ve a 'Archivo > Cargar juego' o simplemente añade la carpeta de juegos en el explorador de Yuzu.\n\n7. **DLCs y actualizaciones:**\n   - Se pueden instalar desde el menú: 'Archivo > Instalar archivo NSP/XCI'.",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Descargar Yuzu",
+      "url": "https://github.com/yuzu-emu/yuzu-mainline/releases/latest/download/yuzu-windows-msvc.zip"
+    }
+  ]
+},
+{
+  "titulo": "Fimware (Nintendo Switch)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/8641a4356438d1307dec5b9ae1b2ee1c.jpg",
+  "descripcion": "Yuzu es un emulador de código abierto para la consola Nintendo Switch, desarrollado por los creadores de Citra (emulador de 3DS). Permite ejecutar juegos de Switch en PC con alto rendimiento y compatibilidad. Soporta mejoras visuales, resolución escalada, mods y DLCs. Es ideal para quienes buscan disfrutar de títulos de Switch como si fueran nativos de PC.<br><br><li> Compatible con Windows 10 y 11 de 64 bits.<br><li> Requiere una tarjeta gráfica con soporte para Vulkan o OpenGL 4.6.<br><li> Soporta resolución 4K, mejoras gráficas y mods.<br><li> Compatible con controles de Switch y otros mandos.",
+  "manual": "🔧 Cómo instalar y usar Yuzu\n\n1. **Descargar Yuzu:**\n   - Visita: https://yuzu-emu.org/\n   - Haz clic en 'Download' para descargar la versión para Windows.\n\n2. **Instalar Yuzu:**\n   - Ejecuta el instalador o extrae el archivo ZIP (según versión) y sigue las instrucciones.\n\n3. **Obtener las claves de sistema (keys):**\n   - Necesitas los archivos `prod.keys` y `title.keys` para que Yuzu pueda ejecutar juegos. Estos deben colocarse en la carpeta `yuzu/keys`.\n   - Estos archivos se obtienen extrayéndolos de una Nintendo Switch con acceso homebrew (no se pueden distribuir legalmente).\n\n4. **Obtener juegos (XCI o NSP):**\n   - Necesitas tus propios backups de juegos en formato `.xci` o `.nsp`.\n\n5. **Configurar Yuzu:**\n   - Abre Yuzu, configura los controles, gráficos y audio a tu gusto.\n   - Importa las claves en el menú de configuración si no las reconoce automáticamente.\n\n6. **Cargar un juego:**\n   - Ve a 'Archivo > Cargar juego' o simplemente añade la carpeta de juegos en el explorador de Yuzu.\n\n7. **DLCs y actualizaciones:**\n   - Se pueden instalar desde el menú: 'Archivo > Instalar archivo NSP/XCI'.",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Descargar Yuzu",
+      "url": "https://github.com/yuzu-emu/yuzu-mainline/releases/latest/download/yuzu-windows-msvc.zip"
+    }
+  ]
+},
+{
+  "titulo": "SKLauncher (Launcher de Minecraft Alternativo)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/cd0e5a599806943e1c09e6a1e5c49b95.png",
+  "descripcion": "SKLauncher es un launcher alternativo para Minecraft que permite ejecutar versiones oficiales y personalizadas del juego, tanto para usuarios con cuenta premium como sin cuenta. Es una opción ligera y personalizable que ofrece soporte para mods, diferentes versiones de Java y configuraciones específicas para cada perfil de jugador.<br><br><li> Compatible con Windows, macOS y Linux.<br><li> Permite múltiples perfiles de juego.<br><li> Soporte para versiones desde la clásica hasta la más reciente.<br><li> Ideal para jugar con mods y configuraciones personalizadas.",
+  "manual": "🔧 Cómo instalar y usar SKLauncher\n\n1. **Descargar SKLauncher:**\n   - Visita: https://skmedix.pl/sklauncher\n   - Haz clic en \"Descargar\" según tu sistema operativo.\n\n2. **Ejecutar el launcher:**\n   - En Windows, abre el archivo `.exe` descargado.\n   - En Linux/macOS, abre el archivo `.jar` con Java instalado.\n\n3. **Iniciar sesión:**\n   - Puedes usar una cuenta oficial de Mojang/Microsoft, o bien jugar como usuario no premium (offline).\n\n4. **Configurar el perfil:**\n   - Selecciona la versión de Minecraft que deseas usar (incluye snapshots, versiones antiguas, etc.).\n   - Ajusta la cantidad de RAM, opciones de Java y carpeta de mods si deseas usar Forge o Fabric.\n\n5. **Jugar:**\n   - Haz clic en “Jugar” y disfruta de Minecraft con tu configuración preferida.",
+  "categoria": "games",
+  "descargas": [
+    {
+      "nombre": "Descargar SKLauncher (instalador)",
+      "url": "https://skmedix.pl/binaries/skl/3.2.12/win-x64/SKlauncher-3.2.12_Setup.exe"
+    },
+    {
+      "nombre": "Descargar SKLauncher (portable)",
+      "url": "https://skmedix.pl/binaries/skl/3.2.12/SKlauncher-3.2.12.jar"
+    }
+  ]
+},
+{
+  "titulo": "CorelDRAW (Diseño Gráfico Profesional)",
+  "imagen": "https://www.revistagadgets.com/www/wp-content/uploads/2021/03/corel-draw-graphics-suite-2021-1.jpg?v=1616626343",
+  "descripcion": "CorelDRAW es un software profesional de diseño gráfico ampliamente utilizado para crear ilustraciones vectoriales, logotipos, folletos, carteles y más. Con una interfaz intuitiva y potentes herramientas de diseño, es ideal tanto para profesionales del diseño como para usuarios que inician en el mundo gráfico.<br><br><li> Compatible con Windows y macOS.<br><li> Herramientas avanzadas de edición vectorial y tipografía.<br><li> Compatible con formatos como AI, PSD, PDF, JPG, PNG y más.<br><li> Ideal para diseñadores gráficos, publicistas y creativos.",
+  "manual": "🔧 Cómo instalar y usar CorelDRAW\n\n1. **Descargar CorelDRAW:**\n   - Ve a: https://www.coreldraw.com/\n   - Haz clic en “Prueba gratis” o elige tu plan si ya lo adquiriste.\n\n2. **Instalar el programa:**\n   - Ejecuta el instalador descargado y sigue los pasos del asistente de instalación.\n\n3. **Activar (opcional):**\n   - Inicia sesión con una cuenta de Corel para activar la versión de prueba o introducir tu clave de licencia.\n\n4. **Explorar la interfaz:**\n   - Familiarízate con herramientas como la pluma, formas, texto, capas y nodos.\n\n5. **Crear un diseño:**\n   - Empieza desde una hoja en blanco o una plantilla. Usa las herramientas vectoriales para construir tus composiciones.\n\n6. **Guardar y exportar:**\n   - Puedes guardar en formato `.CDR` o exportar en otros formatos como PDF, JPG, PNG, entre otros.",
+  "categoria": "Diseño",
+  "descargas": [
+    {
+      "nombre": "Descargar CorelDRAW 2024 Graphics Suite PRO",
+      "url": "https://download2393.mediafire.com/uvyt7h6y41bg04XPmUCTFS8MmUXyd5aa9fzyiBTUiqNvN4UwWUX70BI7Um8hkxjF_lVZE6UjEGfXH42UauUTH8LXqIjkGRXWPVdbmXyoyQ8n66G9MsOPS23x0CH0c7Nff2G1v3ESz5BsW4Xp6FJvjG2MtQtTzvNZar6I-tTiS3-x/a2znt7eiftyiuic/CDGS2024.IEMOJ98.rar"
+    }
+  ]
+},
+{
+  "titulo": "sm64pcBuilder2 (Super Mario 64 para PC)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/40cbdcb05d12cc70a9d07d805955a1e8.png",
+  "descripcion": "sm64pcBuilder2 es una herramienta comunitaria que permite compilar Super Mario 64 nativamente en PC, brindando soporte para mejoras gráficas, mods, resoluciones modernas y más. Es ideal para fans que buscan una experiencia personalizada y mejorada del clásico de Nintendo 64.<br><br><li> Requiere una ROM legal de Super Mario 64.<br><li> Compatible con Windows y Linux.<br><li> Permite añadir texturas HD, música personalizada y mejoras visuales.<br><li> Soporte para mandos y resolución 4K.",
+  "manual": "🛠️ Cómo usar sm64pcBuilder2\n\n1. **Descargar sm64pcBuilder2:**\n   - Repositorio oficial: https://github.com/sm64pcbuilder2/sm64pcbuilder2\n\n2. **Preparar la ROM:**\n   - Necesitas una ROM de Super Mario 64 en formato `.z64` (versión USA). Esta debe ser obtenida legalmente desde tu propio cartucho.\n\n3. **Ejecutar el builder:**\n   - Abre `sm64pcBuilder2.bat` (en Windows) o el script correspondiente en Linux.\n\n4. **Compilar el juego:**\n   - Sigue las instrucciones en pantalla para configurar tu compilación.\n   - Puedes habilitar mods y mejoras gráficas.\n\n5. **Jugar:**\n   - Una vez compilado, abre el ejecutable generado y disfruta del juego en alta resolución.",
+  "categoria": "Juegos",
+  "descargas": [
+    {
+      "nombre": "Descargar sm64pcBuilder2",
+      "url": "https://sm64pc.info/sm64pcbuilder2/downloads/sm64pcbuilder2.zip"
+    },
+    {
+      "nombre": ".NET Framework 4.8 Runtime",
+      "url": "https://go.microsoft.com/fwlink/?LinkId=2085155"
+    },
+    {
+      "nombre": "MSYS2",
+      "url": "https://github.com/msys2/msys2-installer/releases/download/2024-07-27/msys2-x86_64-20240727.exe?"
+    },
+    {
+      "nombre": "Super Mario 64 (USA)",
+      "url": "https://statics.romsfun.com/Nintendo-64/Super%20Mario%2064%20%28USA%29.zip?token=c3xZdFs1WlsXRHl0U3VQZF1bQxV2fFMlV2cJWxYZIiFTcFBlDR1FFnVyUXZRYlFT"
+    }
+  ]
+},
+{
+  "titulo": "PCSX4 (Emulador de PlayStation 4 para PC)",
+  "imagen": "https://pcsx4.com/og-image.jpg",
+  "descripcion": "PCSX4 es un proyecto que busca ofrecer emulación de PlayStation 4 en PC. Aunque su desarrollo ha generado controversia, es una opción que algunos usuarios han probado para ejecutar ciertos títulos de PS4 en sistemas Windows modernos.<br><br><li> Requiere una BIOS extraída legalmente desde una consola PS4.<br><li> Compatible con Windows 10/11 de 64 bits.<br><li> Requiere procesadores de alto rendimiento con soporte AVX2.<br><li> Algunos juegos pueden ejecutarse con limitaciones de compatibilidad.<br><li> No es compatible con todos los títulos comerciales.",
+  "manual": "🛠️ Cómo usar PCSX4\n\n1. **Descargar el emulador:**\n   - Sitio oficial (sujeto a disponibilidad): https://pcsx4.com\n\n2. **Instalar PCSX4:**\n   - Extrae el archivo ZIP y ejecuta el instalador o el archivo `.exe` incluido.\n\n3. **Cargar la BIOS:**\n   - Extrae tu propia BIOS desde una consola PS4. Colócala en la carpeta `bios/` dentro del directorio del emulador.\n\n4. **Añadir juegos:**\n   - Los juegos deben estar en formato `.pkg` o `.iso` extraído desde tu PS4.\n\n5. **Configurar mandos y gráficos:**\n   - Accede al menú de configuración para ajustar los gráficos, controles y rendimiento.\n\n6. **Ejecutar el juego:**\n   - Selecciona el archivo del juego y haz clic en 'Run'.",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Descargar PCSX4",
+      "url": "https://github.com/diegolix29/shadPS4/releases/download/release-shadPS4-2025-05-14-0ce1db5/shadps4-win64-qt-2025-05-14-0ce1db5.zip"
+    }
+  ]
+},
+{
+  "titulo": "RPCS3 (Emulador de PlayStation 3 para PC)",
+  "imagen": "https://cdn2.steamgriddb.com/grid/572b27846a7870d00eebdd1aacd3eca8.png",
+  "descripcion": "RPCS3 es un emulador de PlayStation 3 de código abierto que permite ejecutar juegos de PS3 en PC. Es uno de los emuladores más populares para PS3, y aunque su rendimiento depende del hardware de tu PC, ha logrado una compatibilidad bastante alta con los títulos de la consola.<br><br><li> Requiere una BIOS extraída legalmente desde una consola PS3.<br><li> Compatible con Windows, Linux y macOS.<br><li> Requiere procesadores con soporte AVX y AVX2 para obtener un buen rendimiento.<br><li> Compatible con una amplia gama de juegos, pero no todos los títulos funcionan sin problemas.<br><li> El rendimiento varía dependiendo del hardware y la configuración del sistema.",
+  "manual": "🛠️ Cómo usar RPCS3\n\n1. **Descargar el emulador:**\n   - Sitio oficial: https://rpcs3.net\n\n2. **Instalar RPCS3:**\n   - Extrae el archivo ZIP y ejecuta el instalador o el archivo `.exe` incluido.\n\n3. **Cargar la BIOS:**\n   - Extrae tu propia BIOS desde una consola PS3. Colócala en la carpeta `dev_hdd0/` dentro del directorio del emulador.\n\n4. **Añadir juegos:**\n   - Los juegos deben estar en formato `.iso` o `.pkg` extraído desde tu PS3.\n\n5. **Configurar mandos y gráficos:**\n   - Accede al menú de configuración para ajustar los gráficos, controles y rendimiento.\n\n6. **Ejecutar el juego:**\n   - Selecciona el archivo del juego y haz clic en 'Start'.",
+  "categoria": "emulaters",
+  "descargas": [
+    {
+      "nombre": "Descargar RPCS3",
+      "url": "https://rpcs3.net/download"
+    },
+    {
+      "nombre": "Descargar BIOS de PS3",
+      "url": "http://dmx01.ps3.update.playstation.net/update/ps3/image/mx/2025_0305_c179ad173bbc08b55431d30947725a4b/PS3UPDAT.PUP"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
