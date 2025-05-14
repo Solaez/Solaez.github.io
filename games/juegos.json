@@ -12,7 +12,7 @@
       },
       {
         "nombre": "Activador",
-        "url": "/data/donwload/version.dll"
+        "url": "/data/download/version.dll"
       }
     ]
   },
@@ -25,7 +25,7 @@
     "descargas": [
       {
         "nombre": "Todos",
-        "url": "/data/donwload/visual.zip"
+        "url": "/data/download/visual.zip"
       }
     ]
   },
@@ -38,24 +38,24 @@
     "descargas": [
       {
         "nombre": "DirectX 9,10,11",
-        "url": "/data/donwload/DirectX 9,10,11.rar"
+        "url": "/data/download/DirectX 9,10,11.rar"
       },
       {
         "nombre": "DirectX 12",
-        "url": "/data/donwload/DirectX 12 (Requiere internet).exe"
+        "url": "/data/download/DirectX 12 (Requiere internet).exe"
       }
     ]
   },
   {
     "titulo": "Upscayl",
-    "imagen": "/data/img/grid/Upscayl.png",
+    "imagen": "https://img.thosefree.com/wp-content/uploads/2023/01/upscayl-cover.jpg&720x405.jpg",
     "descripcion": "Upscayl es un software de código abierto que utiliza inteligencia artificial para aumentar la resolución de imágenes sin perder calidad. Es especialmente útil para mejorar fotos, ilustraciones y gráficos de baja resolución, y está disponible para Windows, macOS y Linux.",
     "manual": "1. Descarga el archivo.",
     "categoria": "new",
     "descargas": [
       {
         "nombre": "Programa",
-        "url": "https://objects.githubusercontent.com/github-production-release-asset-2e65be/519577891/081d7c69-5388-4fd7-8076-e235805b449a?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250405%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250405T191657Z&X-Amz-Expires=300&X-Amz-Signature=d45ee5abceb30130ac10e90ddc93174378b805ba2f51cce8e49db986ca5de67c&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dupscayl-2.15.0-win.exe&response-content-type=application%2Foctet-stream"
+        "url": "https://github.com/upscayl/upscayl/releases/download/v2.15.0/upscayl-2.15.0-win.exe"
       }
     ]
   },
@@ -72,30 +72,30 @@
     },
     {
       "nombre": "Modificador Premium automatico por mi",
-      "url": "/data/donwload/spotify premium.bat"
+      "url": "/data/download/spotify premium.bat"
     },
     {
       "nombre": "Modificador Premium Manual",
-      "url": "/data/donwload/spotify premium.txt"
+      "url": "/data/download/spotify premium.txt"
     }
   ]
 },
   {
   "titulo": "DS4 Windows",
-  "imagen": "/data/img/grid/ds4.png",
+  "imagen": "https://repository-images.githubusercontent.com/108735091/a34fb9da-87f3-4968-a1e3-3953837bbff7",
   "descripcion": "DS4Windows es un software que permite usar controladores DualShock 4 y DualSense en una PC con Windows, emulando un control de Xbox para mejorar la compatibilidad con juegos. También permite personalizar botones, sensibilidad de sticks y gatillos, así como usar el panel táctil y la retroalimentación háptica.",
   "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
   "categoria": "programs",
   "descargas": [
     {
       "nombre": "Programa + configuración",
-      "url": "/data/donwload/DS4Windows.zip"
+      "url": "/data/download/DS4Windows.zip"
     }
   ]
 },
   {
   "titulo": "Balena Etcher",
-  "imagen": "/data/img/grid/balena Etcher.png",
+  "imagen": "https://libretips.com/wp-content/uploads/2021/04/Etcher.jpg",
   "descripcion": "Balena Etcher es una herramienta gratuita y de código abierto para crear unidades USB booteables o grabar imágenes de disco (ISO y IMG) en tarjetas SD y memorias USB. Es fácil de usar y compatible con Windows, macOS y Linux, ideal para instalar sistemas operativos.",
   "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
   "categoria": "programs",
@@ -108,24 +108,28 @@
 },
   {
   "titulo": "WinRAR Pro",
-  "imagen": "/data/img/grid/winrar.png",
+  "imagen": "https://brightcell.net/wp-content/uploads/2023/10/winrar-2.jpg",
   "descripcion": "WinRAR Pro no es una versión oficial del software, ya que WinRAR solo tiene una versión estándar con licencia paga. WinRAR es un programa de compresión y descompresión de archivos compatible con formatos como RAR, ZIP, 7Z, ISO y más. Ofrece funciones avanzadas como encriptación, reparación de archivos dañados y división de archivos grandes. Aunque es de pago, permite usarlo con una prueba indefinida con recordatorios.",
   "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
   "categoria": "programs",
   "descargas": [
     {
-      "nombre": "Programa Oficial",
-      "url": "https://winrar.es/descargas/103/descargar-winrar-para-windows-x64-en-espanol"
+      "nombre": "Programa Oficial x64",
+      "url": "https://d.winrar.es/d/103z1747163034/rsf1jgDeVRYVkZ7_sDpB0g/winrar-x64-711es.exe"
+    },
+    {
+      "nombre": "Programa Oficial x86",
+      "url": "https://d.winrar.es/d/52z1747163093/Tst7f5osRt-8mTmLaLe73w/winrar-x32-701es.exe"
     },
     {
       "nombre": "Activador",
-      "url": "/data/donwload/rarreg.key"
+      "url": "/data/download/rarreg.key"
     }
   ]
 },
   {
   "titulo": "Microsoft Office",
-  "imagen": "/data/img/grid/OFFICE.png",
+  "imagen": "https://support.microsoft.com/images/es-es/454b5ad9-37d1-4b66-826e-59cc18796a4f",
   "descripcion": "Microsoft Office es una suite de aplicaciones de productividad desarrollada por Microsoft. Incluye programas como Word (procesador de textos), Excel (hojas de cálculo), PowerPoint (presentaciones), Outlook (correo y calendario) y más. Está disponible en versiones de compra única y mediante suscripción con Microsoft 365, que ofrece almacenamiento en la nube y actualizaciones continuas.",
   "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
   "categoria": "programs",
@@ -184,7 +188,7 @@
 
   {
   "titulo": "Microsoft Office 32bits",
-  "imagen": "/data/img/grid/OFFICE.png",
+  "imagen": "https://support.microsoft.com/images/es-es/454b5ad9-37d1-4b66-826e-59cc18796a4f",
   "descripcion": "Microsoft Office es una suite de aplicaciones de productividad desarrollada por Microsoft. Incluye programas como Word (procesador de textos), Excel (hojas de cálculo), PowerPoint (presentaciones), Outlook (correo y calendario) y más. Está disponible en versiones de compra única y mediante suscripción con Microsoft 365, que ofrece almacenamiento en la nube y actualizaciones continuas.",
   "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
   "categoria": "programs",
@@ -243,31 +247,31 @@
 
   {
   "titulo": "Office key",
-  "imagen": "/data/img/grid/office key.png",
+  "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHnOpwBYeeGl2z6YdTdoDs4ZNxvc8LJi9V3g&s",
   "descripcion": "WiLas keys de Microsoft Office son claves de producto necesarias para activar versiones legítimas de la suite. Estas claves pueden comprarse oficialmente a través de Microsoft o distribuidores autorizados. Si buscas una licencia, te recomiendo adquirirla de fuentes oficiales para evitar riesgos de seguridad o problemas con actualizaciones. También puedes considerar Microsoft 365, que funciona con una suscripción y no requiere una clave única.",
   "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
   "categoria": "programs",
   "descargas": [
     {
       "nombre": "Activador automatico",
-      "url": "/data/donwload/Activar Office.bat"
+      "url": "/data/download/Activar Office.bat"
     },
     {
       "nombre": "Manual",
-      "url": "/data/donwload/activar office.txt"
+      "url": "/data/download/activar office.txt"
     }
   ]
 },
   {
   "titulo": "guiformat",
-  "imagen": "/data/img/grid/guiformat.png",
+  "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgoiKlmeVkzqxntXq72UR5GYl6agGVZQqNWg&s",
   "descripcion": "GUIFormat es una herramienta ligera y gratuita que permite formatear unidades USB y discos en formato FAT32, incluso si son mayores a 32 GB, algo que Windows no permite por defecto. Es útil para preparar unidades para consolas, sistemas embebidos y otros dispositivos que requieren FAT32.",
   "manual": "instalar la version oficial de spotify no microsoft store\n\n2 - ejecutar el .bat o manual\n\n3 - despues iniciar spotify y buscar el makeplace que se agrego\n\n4 - instalar la extension de adblock + premium\n\n5 - disfrutar",
   "categoria": "programs",
   "descargas": [
     {
       "nombre": "Programa",
-      "url": "/data/donwload/guiformat.exe"
+      "url": "/data/download/guiformat.exe"
     }
   ]
 },
@@ -280,7 +284,7 @@
   "descargas": [
     {
       "nombre": "Programa",
-      "url": "/data/donwload/RocketDock-v1.3.5.exe"
+      "url": "/data/download/RocketDock-v1.3.5.exe"
     }
   ]
 },
@@ -369,7 +373,7 @@
     },
     {
       "nombre": "Launcher",
-      "url": "/data/donwload/MilkBarLauncher.zip"
+      "url": "/data/download/MilkBarLauncher.zip"
     },
     {
       "nombre": "Radmin VPN",
@@ -377,7 +381,7 @@
     },
     {
       "nombre": "Emulador",
-      "url": "/data/donwload/cemu_1.26.2.zip"
+      "url": "/data/download/cemu_1.26.2.zip"
     },
     {
       "nombre": "Nesesario .net",
@@ -446,7 +450,7 @@
   "descargas": [
     {
       "nombre": "Mods online",
-      "url": "/data/donwload/Sekiro Multiplayer.zip"
+      "url": "/data/download/Sekiro Multiplayer.zip"
     },
     {
       "nombre": "Fix online - (falta de archivos)",
@@ -463,7 +467,7 @@
   "descargas": [
     {
       "nombre": "Mods online (Seamless Co-op)",
-      "url": "/data/donwload/SeamlessCoop.zip"
+      "url": "/data/download/SeamlessCoop.zip"
     }
   ]
 },
@@ -476,7 +480,7 @@
   "descargas": [
     {
       "nombre": "Mods online (Seamless Co-op)",
-      "url": "/data/donwload/DS3 Seamless Co-op v0.0.3-999-0-0-3-1744572032.zip"
+      "url": "/data/download/DS3 Seamless Co-op v0.0.3-999-0-0-3-1744572032.zip"
     }
   ]
 },
@@ -489,7 +493,7 @@
   "descargas": [
     {
       "nombre": "Mods online (Seamless Co-op)",
-      "url": "/data/donwload/DS1 Seamless Co-op v0.0.3-899-0-0-3-1744572032.zip"
+      "url": "/data/download/DS1 Seamless Co-op v0.0.3-899-0-0-3-1744572032.zip"
     }
   ]
 },
@@ -536,7 +540,7 @@
   "descargas": [
     {
       "nombre": "Ultima version",
-      "url": "/data/donwload/3Dsen-11.0.0.zip"
+      "url": "/data/download/3Dsen-11.0.0.zip"
     }
   ]
 },
@@ -1141,11 +1145,11 @@
     },
     {
       "nombre": "Descargar BthPS3Setup_x64 (BLUETHOOTH)",
-      "url": "/data/donwload/CONECTAR MANDO PS3/BLUETHOOTH/BthPS3Setup_x64.msi"
+      "url": "/data/download/CONECTAR MANDO PS3/BLUETHOOTH/BthPS3Setup_x64.msi"
     },
     {
       "nombre": "Descargar BthPS3Setup_x86 (BLUETHOOTH)",
-      "url": "/data/donwload/CONECTAR MANDO PS3/BLUETHOOTH/BthPS3Setup_x86.msi"
+      "url": "/data/download/CONECTAR MANDO PS3/BLUETHOOTH/BthPS3Setup_x86.msi"
     }
   ]
 },
@@ -1610,51 +1614,19 @@
       "url": "https://statics.romsfun.com/Nintendo-64/Super%20Mario%2064%20%28USA%29.zip?token=c3xZdFs1WlsXRHl0U3VQZF1bQxV2fFMlV2cJWxYZIiFTcFBlDR1FFnVyUXZRYlFT"
     }
   ]
+},
+{
+  "titulo": "PCSX4 (Emulador de PlayStation 4 para PC)",
+  "imagen": "https://pcsx4.com/og-image.jpg",
+  "descripcion": "PCSX4 es un proyecto que busca ofrecer emulación de PlayStation 4 en PC. Aunque su desarrollo ha generado controversia, es una opción que algunos usuarios han probado para ejecutar ciertos títulos de PS4 en sistemas Windows modernos.<br><br><li> Requiere una BIOS extraída legalmente desde una consola PS4.<br><li> Compatible con Windows 10/11 de 64 bits.<br><li> Requiere procesadores de alto rendimiento con soporte AVX2.<br><li> Algunos juegos pueden ejecutarse con limitaciones de compatibilidad.<br><li> No es compatible con todos los títulos comerciales.",
+  "manual": "🛠️ Cómo usar PCSX4\n\n1. **Descargar el emulador:**\n   - Sitio oficial (sujeto a disponibilidad): https://pcsx4.com\n\n2. **Instalar PCSX4:**\n   - Extrae el archivo ZIP y ejecuta el instalador o el archivo `.exe` incluido.\n\n3. **Cargar la BIOS:**\n   - Extrae tu propia BIOS desde una consola PS4. Colócala en la carpeta `bios/` dentro del directorio del emulador.\n\n4. **Añadir juegos:**\n   - Los juegos deben estar en formato `.pkg` o `.iso` extraído desde tu PS4.\n\n5. **Configurar mandos y gráficos:**\n   - Accede al menú de configuración para ajustar los gráficos, controles y rendimiento.\n\n6. **Ejecutar el juego:**\n   - Selecciona el archivo del juego y haz clic en 'Run'.",
+  "categoria": "Emulaters",
+  "descargas": [
+    {
+      "nombre": "Descargar PCSX4",
+      "url": "https://github.com/diegolix29/shadPS4/releases/download/release-shadPS4-2025-05-13-9316098/shadps4-win64-qt-2025-05-13-9316098.zip"
+    }
+  ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ]
