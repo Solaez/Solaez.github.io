@@ -1646,7 +1646,7 @@
   "imagen": "https://cdn2.steamgriddb.com/grid/acc90c264f09d151c7a09da4c06877e8.png",
   "descripcion": "GeForce NOW es un servicio de juegos en la nube de NVIDIA que te permite jugar a títulos de PC sin necesidad de tener un equipo potente. Con solo una buena conexión a internet, puedes transmitir juegos desde servidores de alto rendimiento directamente a tu dispositivo.<br><br><li> Compatible con PC, Mac, Android, iOS, Smart TVs y más.<br><li> No requiere instalaciones pesadas ni hardware potente.<br><li> Usa tus bibliotecas de Steam, Epic Games, Ubisoft, entre otras.<br><li> Sincroniza tu progreso automáticamente con las versiones originales de los juegos.<br><li> Ofrece modos gratuitos y de suscripción (con prioridad y mejor rendimiento).",
   "manual": "🛠️ Cómo usar GeForce NOW\n\n1. **Crear una cuenta NVIDIA:**\n   - Sitio oficial: https://www.nvidia.com/geforce-now/\n\n2. **Elegir tu plan (Gratis o Prioritario):**\n   - Puedes comenzar gratis, o pagar para tener acceso prioritario y sesiones más largas.\n\n3. **Descargar la app o usar el navegador:**\n   - Compatible con Windows, macOS, Android, iOS (vía Safari), y Chrome/Edge.\n\n4. **Vincular tus cuentas de juegos:**\n   - Conecta tus cuentas de Steam, Epic, Ubisoft, etc. para acceder a tus títulos compatibles.\n\n5. **Buscar un juego disponible:**\n   - Usa el buscador dentro de la app para ver si el juego que quieres está en la nube.\n\n6. **Jugar en la nube:**\n   - Haz clic en el juego y presiona 'Play'. ¡Disfruta sin preocuparte por el hardware!",
-  "categoria": "cloud-gaming",
+  "categoria": "games",
   "descargas": [
     {
       "nombre": "Descargar GeForce NOW para PC",
@@ -1659,7 +1659,7 @@
   "imagen": "https://cdn-bgp.bluestacks.com/BGP/us/gametiles_com.psiphon3.subscription.jpg",
   "descripcion": "Psiphon3 es una herramienta gratuita diseñada para eludir la censura en Internet y proporcionar acceso sin restricciones a contenido bloqueado. Utiliza tecnologías como VPN, SSH y proxy HTTP para garantizar una conexión segura y privada.<br><br><li> Ideal para acceder a sitios bloqueados o restringidos en tu región.<br><li> No requiere configuración compleja, funciona de forma automática.<br><li> Disponible para Windows, Android y navegadores.<br><li> Cifrado seguro para proteger tus datos durante la navegación.<br><li> No es una VPN tradicional, sino una herramienta de elusión enfocada en la conectividad.",
   "manual": "🛠️ Cómo usar Psiphon3\n\n1. **Descargar Psiphon3:**\n   - Sitio oficial o fuente segura.\n\n2. **Ejecutar el programa:**\n   - En Windows: simplemente abre el archivo `psiphon3.exe`.\n   - En Android: instala la app desde una APK confiable o desde la Play Store (si está disponible).\n\n3. **Conexión automática:**\n   - Psiphon intentará conectarse automáticamente utilizando los mejores métodos disponibles (VPN, SSH o HTTP Proxy).\n\n4. **Elegir país (opcional):**\n   - Puedes seleccionar una ubicación de servidor si deseas conectarte a una región específica.\n\n5. **Navegar libremente:**\n   - Una vez conectado, puedes acceder a contenido bloqueado en tu navegador u otras apps.",
-  "categoria": "internet-tools",
+  "categoria": "programs",
   "descargas": [
     {
       "nombre": "Descargar Psiphon3 para Windows",
