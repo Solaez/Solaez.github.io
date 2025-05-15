@@ -12,7 +12,7 @@
       },
       {
         "nombre": "Activador",
-        "url": "https://raw.githubusercontent.com/Solaez/Solaez.github.io/refs/heads/main/data/donwload/version.dll"
+        "url": "/data/download/version.dll"
       }
     ]
   },
@@ -25,7 +25,7 @@
     "descargas": [
       {
         "nombre": "Todos",
-        "url": "https://raw.githubusercontent.com/Solaez/Solaez.github.io/refs/heads/main/data/donwload/visual.zip"
+        "url": "/data/download/visual.zip"
       }
     ]
   },
@@ -38,11 +38,11 @@
     "descargas": [
       {
         "nombre": "DirectX 9,10,11",
-        "url": "data/download/DirectX 9,10,11.rar"
+        "url": "/data/download/DirectX 9,10,11.rar"
       },
       {
         "nombre": "DirectX 12",
-        "url": "data/download/DirectX 12 (Requiere internet).exe"
+        "url": "/data/download/DirectX 12 (Requiere internet).exe"
       }
     ]
   },
@@ -72,11 +72,11 @@
     },
     {
       "nombre": "Modificador Premium automatico por mi",
-      "url": "data/download/spotify premium.bat"
+      "url": "/data/download/spotify premium.bat"
     },
     {
       "nombre": "Modificador Premium Manual",
-      "url": "data/download/spotify premium.txt"
+      "url": "/data/download/spotify premium.txt"
     }
   ]
 },
@@ -89,7 +89,7 @@
   "descargas": [
     {
       "nombre": "Programa + configuración",
-      "url": "data/download/DS4Windows.zip"
+      "url": "/data/download/DS4Windows.zip"
     }
   ]
 },
@@ -123,7 +123,7 @@
     },
     {
       "nombre": "Activador",
-      "url": "data/download/rarreg.key"
+      "url": "/data/download/rarreg.key"
     }
   ]
 },
@@ -254,11 +254,11 @@
   "descargas": [
     {
       "nombre": "Activador automatico",
-      "url": "data/download/Activar Office.bat"
+      "url": "/data/download/Activar Office.bat"
     },
     {
       "nombre": "Manual",
-      "url": "data/download/activar office.txt"
+      "url": "/data/download/activar office.txt"
     }
   ]
 },
@@ -271,7 +271,7 @@
   "descargas": [
     {
       "nombre": "Programa",
-      "url": "data/download/guiformat.exe"
+      "url": "/data/download/guiformat.exe"
     }
   ]
 },
@@ -284,7 +284,7 @@
   "descargas": [
     {
       "nombre": "Programa",
-      "url": "data/download/RocketDock-v1.3.5.exe"
+      "url": "/data/download/RocketDock-v1.3.5.exe"
     }
   ]
 },
@@ -373,7 +373,7 @@
     },
     {
       "nombre": "Launcher",
-      "url": "data/download/MilkBarLauncher.zip"
+      "url": "/data/download/MilkBarLauncher.zip"
     },
     {
       "nombre": "Radmin VPN",
@@ -381,7 +381,7 @@
     },
     {
       "nombre": "Emulador",
-      "url": "data/download/cemu_1.26.2.zip"
+      "url": "/data/download/cemu_1.26.2.zip"
     },
     {
       "nombre": "Nesesario .net",
@@ -450,7 +450,7 @@
   "descargas": [
     {
       "nombre": "Mods online",
-      "url": "data/download/Sekiro Multiplayer.zip"
+      "url": "/data/download/Sekiro Multiplayer.zip"
     },
     {
       "nombre": "Fix online - (falta de archivos)",
@@ -467,7 +467,7 @@
   "descargas": [
     {
       "nombre": "Mods online (Seamless Co-op)",
-      "url": "data/download/SeamlessCoop.zip"
+      "url": "/data/download/SeamlessCoop.zip"
     }
   ]
 },
@@ -480,7 +480,7 @@
   "descargas": [
     {
       "nombre": "Mods online (Seamless Co-op)",
-      "url": "data/download/DS3 Seamless Co-op v0.0.3-999-0-0-3-1744572032.zip"
+      "url": "/data/download/DS3 Seamless Co-op v0.0.3-999-0-0-3-1744572032.zip"
     }
   ]
 },
@@ -493,7 +493,7 @@
   "descargas": [
     {
       "nombre": "Mods online (Seamless Co-op)",
-      "url": "data/download/DS1 Seamless Co-op v0.0.3-899-0-0-3-1744572032.zip"
+      "url": "/data/download/DS1 Seamless Co-op v0.0.3-899-0-0-3-1744572032.zip"
     }
   ]
 },
@@ -540,7 +540,7 @@
   "descargas": [
     {
       "nombre": "Ultima version",
-      "url": "data/download/3Dsen-11.0.0.zip"
+      "url": "/data/download/3Dsen-11.0.0.zip"
     }
   ]
 },
@@ -1145,11 +1145,11 @@
     },
     {
       "nombre": "Descargar BthPS3Setup_x64 (BLUETHOOTH)",
-      "url": "data/download/CONECTAR MANDO PS3/BLUETHOOTH/BthPS3Setup_x64.msi"
+      "url": "/data/download/CONECTAR MANDO PS3/BLUETHOOTH/BthPS3Setup_x64.msi"
     },
     {
       "nombre": "Descargar BthPS3Setup_x86 (BLUETHOOTH)",
-      "url": "data/download/CONECTAR MANDO PS3/BLUETHOOTH/BthPS3Setup_x86.msi"
+      "url": "/data/download/CONECTAR MANDO PS3/BLUETHOOTH/BthPS3Setup_x86.msi"
     }
   ]
 },
