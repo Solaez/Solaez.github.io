@@ -1,0 +1,38 @@
+2025-02-06 13:50:31.1463|INFO|DS4Windows version 3.3.3
+2025-02-06 13:50:31.1519|INFO|DS4Windows exe file: DS4Windows.exe
+2025-02-06 13:50:31.1519|INFO|DS4Windows Assembly Architecture: x64
+2025-02-06 13:50:31.1519|INFO|OS Version: Microsoft Windows NT 10.0.26100.0
+2025-02-06 13:50:31.1519|INFO|OS Product Name: Windows 10 Pro
+2025-02-06 13:50:31.1519|INFO|OS Release ID: 2009
+2025-02-06 13:50:31.1519|INFO|System Architecture: x64
+2025-02-06 13:50:31.1519|INFO|Logger created
+2025-02-06 13:50:32.8430|INFO|Running as User
+2025-02-06 13:50:32.8430|INFO|HidHide control device found
+2025-02-06 13:50:33.9225|INFO|Starting...
+2025-02-06 13:50:35.9233|INFO|Using output KB+M handler: FakerInput 0.1.0.0
+2025-02-06 13:50:35.9233|INFO|Connection to ViGEmBus 1.21.442.0 established
+2025-02-06 13:50:35.9233|INFO|Searching for controllers...
+2025-02-06 13:50:35.9233|INFO|Using Exclusive Mode
+2025-02-06 13:50:35.9925|INFO|Found Controller: 37:94:51:05:06:07 (BT) (DS4 v.2).
+2025-02-06 13:50:36.4345|INFO|Plugging in virtual X360 controller (XInput slot #1) in output slot #1
+2025-02-06 13:50:36.4345|INFO|Associated input controller #1 (DS4 v.2) to virtual X360 Controller in output slot #1
+2025-02-06 13:50:36.4619|INFO|Controller 1 is using Profile "Xbox-Controller". Battery level is 50%
+2025-02-06 13:51:01.5183|INFO|Controller 1 is using Profile "PS4-Controller". Battery level is 50%
+2025-02-06 13:51:01.5183|INFO|Disassociated virtual X360 Controller in output slot #1 from input controller #1 (DS4 v.2)
+2025-02-06 13:51:01.5248|INFO|Unplugging virtual X360 Controller from output slot #1
+2025-02-06 13:51:01.5523|INFO|Plugging in virtual DS4 Controller in output slot #1
+2025-02-06 13:51:01.5523|INFO|Associated input controller #1 (DS4 v.2) to virtual DS4 Controller in output slot #1
+2025-02-06 13:51:26.8148|INFO|UDP server listening on address 127.0.0.1 port 26760
+2025-02-06 13:51:53.3603|INFO|Closed UDP server
+2025-02-06 13:51:55.0002|INFO|OSC LISTENER STARTED AT PORT: 9000
+2025-02-06 13:52:11.3227|INFO|OSC LISTENER STOPPED
+2025-02-06 13:52:31.7222|INFO|Stopping Virtual Output Controllers
+2025-02-06 13:52:31.7222|INFO|Closing connection to ViGEmBus
+2025-02-06 13:52:31.7222|WARN|37:94:51:05:06:07 disconnected due to read failure: 995
+2025-02-06 13:52:31.7261|INFO|Disassociated virtual DS4 Controller in output slot #1 from input controller #1 (DS4 v.2)
+2025-02-06 13:52:31.7261|INFO|Unplugging virtual DS4 Controller from output slot #1
+2025-02-06 13:52:31.7261|INFO|Controller 1 was removed or lost connection
+2025-02-06 13:52:31.7456|INFO|Stopping DS4 Input Controllers
+2025-02-06 13:52:31.7456|INFO|Stopped DS4Windows
+2025-02-06 13:52:31.7456|INFO|Closing connection to output handler FakerInput
+2025-02-06 13:52:51.0436|INFO|Request App Shutdown

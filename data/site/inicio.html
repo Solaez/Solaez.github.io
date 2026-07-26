@@ -1,0 +1,485 @@
+<head>
+  <meta charset="UTF-8">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo Switch Home UI</title>
+
+    <link rel="canonical" href="https://codepen.io/perry_nt/pen/XMxNyy">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+
+  
+  
+<style>
+
+/*=========== global =============*/
+
+.profilei {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile img {
+  width: 100%;
+}
+:focus {
+	outline: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+.iconAcess{
+	padding: 20px;
+	transition: background-color 0.3s;
+}
+.iconAcess img{
+	transition: transform 0.1s;
+	
+}
+.flex {
+	display: flex;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.v-center {
+	align-items: center;
+}
+
+body {
+	--bg: #EBEBEB;
+	background: var(--bg);
+}
+
+.wrapper {
+	--static: #2D2D2D;
+	--solid: #FFF;
+	--shadow: 0 0 5px rgba(0, 0, 0, .05);
+	position: relative;
+	margin: 0 auto;
+	padding: 20px;
+	height: 100vh;
+	width: 100%;
+}
+
+html {
+	font-family: 'Oxygen';
+	color: var(--static);
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+span {
+	display: inline-block;
+	line-height: 1;
+}
+
+a {
+	position: relative;
+	--focus-light: #3FE9D3;
+	--focus-dark: #04B9C3;
+}
+
+a:after {
+	display: none;
+	content: attr(data-attr);
+	position: absolute;
+	bottom: -80px;
+	left: 50%;
+	transform: translate(-50%, -42.5px);
+	font-size: 26px;
+	font-weight: 300;
+	white-space: pre;
+	color: var(--focus-dark);
+}
+
+a:hover:after,
+a:focus:after {
+	display: inline-block;
+}
+
+a:hover,
+a:focus {
+	-webkit-animation: focus 1s infinite;
+	        animation: focus 1s infinite;
+}
+
+@-webkit-keyframes focus {
+	0% {
+		box-shadow: var(--shadow), 0 0 0 5px var(--focus-light);
+	}
+	50% {
+		box-shadow: var(--shadow), 0 0 0 5px var(--focus-dark);
+	}
+	100% {
+		box-shadow: var(--shadow), 0 0 0 5px var(--focus-light);
+	}
+}
+
+@keyframes focus {
+	0% {
+		box-shadow: var(--shadow), 0 0 0 5px var(--focus-light);
+	}
+	50% {
+		box-shadow: var(--shadow), 0 0 0 5px var(--focus-dark);
+	}
+	100% {
+		box-shadow: var(--shadow), 0 0 0 5px var(--focus-light);
+	}
+}
+
+
+/*=========== header =============*/
+
+header {
+	margin-bottom: auto;
+	padding: 0 25px;
+	font-size: 28px;
+	font-weight: 600;
+}
+
+header > * {
+	margin: 0 10px;
+}
+
+header > *:first-child,
+.games .item:first-child {
+	margin-left: 0;
+}
+
+header > *:last-child,
+.games .item:last-child {
+	margin-right: 0;
+}
+
+a.profile {
+	margin-right: auto;
+	--d: 60px;
+	width: var(--d);
+	height: var(--d);
+	border: 3px solid var(--solid);
+	background: var(--bg);
+	box-shadow: var(--shadow);
+	border-radius: 100%;
+}
+
+a.profile:after {
+	font-size: .75em;
+}
+
+.battery span i {
+	font-style: initial;
+	font-size: .6em;
+}
+
+
+/*=========== main =============*/
+
+main {
+	position: relative;
+	margin: 0 -20px;
+}
+
+.games {
+	position: relative;
+	margin-bottom: 10px;
+	padding: 10px 95px;
+/*	overflow-x: scroll;*/
+	white-space: nowrap;
+	overflow-x: hidden;
+	margin-top: 42px;
+}
+.games:active {
+  cursor: grabbing;
+}
+
+.games::-webkit-scrollbar {
+	height: 0px;
+}
+
+.games .item {
+	display: inline-block;
+	margin: 0 7px;
+	--d: 300px;
+	height: var(--d);
+	width: var(--d);
+	flex-shrink: 0;
+	background: var(--bg);
+	border: 3px solid var(--solid);
+	box-shadow: var(--shadow);
+	overflow: hidden;
+
+	
+}
+.games .item img {
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+    -webkit-user-drag: none;
+    user-select: none;
+	
+}
+
+main nav {
+	text-align: center;
+	margin-bottom: 20px;
+	scale: .7;
+}
+
+main nav a {
+	display: inline-flex;
+	justify-content: center;
+	margin: 0 10px;
+	--d: 85px;
+	height: var(--d);
+	width: var(--d);
+	background: var(--solid);
+	box-shadow: var(--shadow);
+	border-radius: 100%;
+}
+
+
+/*=========== footer =============*/
+
+footer {
+	position: relative;
+	margin-top: auto;
+	padding: 20px 25px 0;
+	font-size: 24px;
+	border-top: 2px solid var(--static);
+}
+
+.mode {
+	margin-right: auto;
+}
+
+.accept .btn { 
+	--d: 25px;
+	margin-right: 15px;
+	display: flex;
+	width: var(--d);
+	height: var(--d);
+	background: var(--static);
+	border-radius: 100%;
+	font-size: .80em;
+	text-align: center;
+	color: var(--bg);
+	align-items: center;
+	justify-content: center;
+	padding: 17px;
+	transition: transform 1s ease-in-out;  font-weight: bold;
+}
+    .accept:active{
+        transform: scale(0.9);
+    }
+/* Animación de entrada */
+.wrapper {
+    opacity: 0;
+    animation: fadeInScale 0.9s ease-out forwards;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+		scale: 0.95;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animación de salida */
+.fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.iconAcess img:active{
+transform: rotate(50deg) scale(1.5) ;
+}
+.iconAcess:active{
+background-color: #2d2d2d6c;
+
+}.item:active {
+  background-color: rgba(157, 252, 252, 0.527);
+}
+.item{
+	  transition: background-color 0.3s;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate="no">
+	
+  <div class="wrapper flex flex-col">
+	<header class="flex v-center">
+		<a data-attr="Github Solaez" href="https://github.com/Solaez" class="profile"><div class="profilei" ><img src="/data/img/user.png" alt="" style="view-transition-name: solaez-1;"></div></a>
+		<div class="time">
+			<span id="time">12:59</span>
+		</div>
+		<div class="wifi">
+			<img src="/data/img/icon/wifi.png">
+		</div>
+		<div class="battery">
+			<span>100<i>%</i></span>
+			<img src="/data/img/icon/battery.png">
+		</div>
+	</header>
+	<main>
+		<div class="games">
+			<a href="/data/site/games.html"  class="item"><img src="https://i.ytimg.com/vi/-QOzfJSngCU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCq9cM7FXqDjzGW-gx1lkJZr4VhsQ"></a>
+			<a href="#" class="item"><img src="https://yt3.googleusercontent.com/ytc/AIdro_nQnBYq2Dh3KxwHPyFKiplMfvUGi_SBlWr7wGtmjZdkNQ=s900-c-k-c0x00ffffff-no-rj"></a>
+			<a href="#" class="item"><img src="https://i2.wp.com/fantasy-hive.co.uk/wp-content/uploads/2017/09/Zelda-Breath-of-the-Wild-Thumbnail.jpg?resize=300%2C300&ssl=1" </a>
+			<a href="#" class="item"></a>
+			<a href="#" class="item"></a>
+			<a href="http://www.google.com" class="item"></a>
+		</div>
+		<nav>
+			<a data-attr="Juegos" href="/data/site/games.html" class="iconAcess"><img src="/data/img/icon/News.png"></a>
+			<a data-attr="Programas" href="/data/site/progra.html" class="iconAcess" ><img src="/data/img/icon/images.png"></a>
+			<a data-attr="Emuladores" href="/data//site/emul.html" class="iconAcess" ><img src="/data/img/icon/Album.png"></a>
+			<a data-attr="Windows" href="/data/site/win.html" class="iconAcess" ><img src="/data/img/icon/Controllers.png"></a>
+			<a data-attr="Opciones" href="#" class="iconAcess"><img src="/data/img/icon/Settings.png"></a>
+			<a data-attr="Salir" href="/data/site/home.html" class="iconAcess" ><img src="/data/img/icon/Sleep Mode.png"></a>
+		</nav>
+	</main>
+	<footer class="flex">
+		<div class="mode">
+			<img src="/data/img/icon/Captura de pantalla 2025-03-15 131006.png">
+		</div>
+		<div class="accept flex v-center">
+			<div class="btn">A</div>
+			<span>OK</span>
+		</div>
+	</footer>
+</div>
+  
+      <script id="rendered-js">
+function checkTime(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
+
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+
+  m = checkTime(m);
+  document.getElementById('time').innerHTML = h + ":" + m;
+  t = setTimeout(function () {
+    startTime();
+  }, 500);
+}
+startTime();
+//# sourceURL=pen.js
+    </script>
+	
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const gamesContainer = document.querySelector(".games");
+			let scrollSpeed = 5; // Velocidad del scroll
+			let scrollDirection = 0;
+			let isScrolling = false;
+			let currentScroll = 0;
+		
+			// Función para detectar si el mouse está cerca de los bordes y ajustar la dirección
+			gamesContainer.addEventListener("mousemove", (e) => {
+				const rect = gamesContainer.getBoundingClientRect();
+				const mouseX = e.clientX - rect.left;
+		
+				if (mouseX < 50) {
+					scrollDirection = -scrollSpeed; // Mover a la izquierda
+				} else if (mouseX > rect.width - 50) {
+					scrollDirection = scrollSpeed; // Mover a la derecha
+				} else {
+					scrollDirection = 0; // No mover
+				}
+			});
+		
+			// Función para realizar el desplazamiento suave
+			function smoothScroll() {
+				if (scrollDirection !== 0) {
+					currentScroll += scrollDirection;
+					gamesContainer.scrollTo({
+						left: currentScroll,
+						behavior: "smooth",
+					});
+				}
+				requestAnimationFrame(smoothScroll);
+			}
+			smoothScroll();
+		
+			// Permitir desplazamiento horizontal con la rueda del mouse
+			gamesContainer.addEventListener("wheel", (e) => {
+				e.preventDefault();
+				gamesContainer.scrollBy({
+					left: e.deltaY,
+					behavior: "smooth",
+				});
+			});
+		
+			// Centrar un juego al hacer clic si no está completamente visible
+			document.querySelectorAll(".games .item").forEach((item) => {
+				item.addEventListener("click", (e) => {
+					e.preventDefault();
+					const containerRect = gamesContainer.getBoundingClientRect();
+					const itemRect = item.getBoundingClientRect();
+		
+					if (itemRect.left < containerRect.left || itemRect.right > containerRect.right) {
+						gamesContainer.scrollTo({
+							left: item.offsetLeft - (containerRect.width - itemRect.width) / 2,
+							behavior: "smooth",
+						});
+					}
+				});
+			});
+		});
+		
+		</script>
+		
+		<script>
+    document.querySelectorAll(".iconAcess").forEach(button => {
+        button.addEventListener("click", function(event) {
+            event.preventDefault(); // Evita la navegación inmediata
+            document.body.classList.add("fade-out"); // Agrega la clase de animación
+
+            const link = this.closest("a"); // Busca el enlace más cercano
+            if (link) {
+                setTimeout(() => {
+                    window.location.href = link.href; // Redirige después de la animación
+                }, 800); // Espera el tiempo de la animación (0.8s)
+            }
+        });
+    });
+</script>
+
+
+</body>

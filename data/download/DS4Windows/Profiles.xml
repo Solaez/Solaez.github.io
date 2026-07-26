@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Profile Configuration Data. 26/2/2025 22:23:18 -->
+<!-- Made with DS4Windows version 3.3.3 -->
+
+<Profile app_version="3.3.3" config_version="2">
+  <useExclusiveMode>True</useExclusiveMode>
+  <startMinimized>True</startMinimized>
+  <minimizeToTaskbar>False</minimizeToTaskbar>
+  <formWidth>1250</formWidth>
+  <formHeight>716</formHeight>
+  <formLocationX>84</formLocationX>
+  <formLocationY>10</formLocationY>
+  <Controller1>Xbox-Controller</Controller1>
+  <Controller2>Default</Controller2>
+  <Controller3>Default</Controller3>
+  <Controller4>Default</Controller4>
+  <Controller5>Default</Controller5>
+  <Controller6>Default</Controller6>
+  <Controller7>Default</Controller7>
+  <Controller8>Default</Controller8>
+  <LastChecked>02/07/2023 17:44:14</LastChecked>
+  <CheckWhen>0</CheckWhen>
+  <Notifications>2</Notifications>
+  <DisconnectBTAtStop>True</DisconnectBTAtStop>
+  <SwipeProfiles>True</SwipeProfiles>
+  <QuickCharge>True</QuickCharge>
+  <CloseMinimizes>False</CloseMinimizes>
+  <UseLang>es</UseLang>
+  <DownloadLang>False</DownloadLang>
+  <FlashWhenLate>False</FlashWhenLate>
+  <FlashWhenLateAt>100</FlashWhenLateAt>
+  <AppIcon>Black</AppIcon>
+  <AppTheme>Default</AppTheme>
+  <UseOSCServer>False</UseOSCServer>
+  <OSCServerPort>9000</OSCServerPort>
+  <InterpretingOscMonitoring>False</InterpretingOscMonitoring>
+  <UseOSCSender>False</UseOSCSender>
+  <OSCSenderPort>9001</OSCSenderPort>
+  <OSCSenderAddress>127.0.0.1</OSCSenderAddress>
+  <UseUDPServer>False</UseUDPServer>
+  <UDPServerPort>26760</UDPServerPort>
+  <UDPServerListenAddress>127.0.0.1</UDPServerListenAddress>
+  <UDPServerSmoothingOptions>
+    <UseSmoothing>True</UseSmoothing>
+    <UdpSmoothMinCutoff>0.9999999999999999</UdpSmoothMinCutoff>
+    <UdpSmoothBeta>1</UdpSmoothBeta>
+  </UDPServerSmoothingOptions>
+  <UseCustomSteamFolder>False</UseCustomSteamFolder>
+  <CustomSteamFolder />
+  <AutoProfileRevertDefaultProfile>True</AutoProfileRevertDefaultProfile>
+  <AbsRegionDisplay>\\?\DISPLAY#AUO723C#5&amp;2a08e90c&amp;0&amp;UID256#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}</AbsRegionDisplay>
+  <DeviceOptions>
+    <DS4SupportSettings>
+      <Enabled>True</Enabled>
+    </DS4SupportSettings>
+    <DualSenseSupportSettings>
+      <Enabled>True</Enabled>
+    </DualSenseSupportSettings>
+    <SwitchProSupportSettings>
+      <Enabled>False</Enabled>
+    </SwitchProSupportSettings>
+    <JoyConSupportSettings>
+      <Enabled>True</Enabled>
+      <LinkMode>Split</LinkMode>
+      <JoinedGyroProvider>JoyConL</JoinedGyroProvider>
+    </JoyConSupportSettings>
+    <DS3SupportSettings>
+      <Enabled>True</Enabled>
+    </DS3SupportSettings>
+  </DeviceOptions>
+  <CustomLed1>False:255,0,0</CustomLed1>
+  <CustomLed2>False:0,0,255</CustomLed2>
+  <CustomLed3>False:0,0,255</CustomLed3>
+  <CustomLed4>False:0,0,255</CustomLed4>
+  <CustomLed5>False:0,0,255</CustomLed5>
+  <CustomLed6>False:0,0,255</CustomLed6>
+  <CustomLed7>False:0,0,255</CustomLed7>
+  <CustomLed8>False:0,0,255</CustomLed8>
+</Profile>

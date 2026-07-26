@@ -1,0 +1,80 @@
+<div id="rom-fum">
+    <div id="loader">Cargando...</div>
+
+    <!-- Webview único que se actualiza dinámicamente -->
+    <webview id="rom-view" class="view-rom" style="display: none; height:80vh; width:100%" allowpopups></webview>
+</div>
+
+<!-- Contenido de selección de ROMs -->
+<div class="manuela">
+    <div class="content-wrapper-header">
+        <div class="content-wrapper-context">
+            <h3 class="img-content">Nintendo 64</h3>
+            <div class="content-text">Información sobre ROMs de Nintendo 64</div>
+            <button class="content-button btn_rom" data-rom="n64">Ver roms</button>
+        </div>
+    </div>
+
+    <div class="content-wrapper-header">
+        <div class="content-wrapper-context">
+            <h3 class="img-content">Nintendo DS</h3>
+            <div class="content-text">Información sobre ROMs de Nintendo DS</div>
+            <button class="content-button btn_rom" data-rom="ds">Ver roms</button>
+        </div>
+    </div>
+
+    <!-- Más categorías de ROMs... -->
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll('.btn_rom');
+            const webview = document.getElementById('rom-view');
+            const loader = document.getElementById('loader');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const romType = button.getAttribute('data-rom');
+                    let srcUrl = '';
+
+                    // Asignar la URL según el tipo de ROM
+                    switch (romType) {
+                        case 'n64':
+                            srcUrl = 'https://romsfun.com/roms/nintendo-64';
+                            break;
+                        case 'ds':
+                            srcUrl = 'https://romsfun.com/roms/nintendo-ds';
+                            break;
+                        case '3dds':
+                            srcUrl = 'https://romsfun.com/roms/nintendo-3ds';
+                            break;
+                        case 'nwii':
+                            srcUrl = 'https://romsfun.com/roms/nintendo-wii';
+                            break;
+                        case 'nwiiu':
+                            srcUrl = 'https://romsfun.com/roms/wii-u';
+                            break;
+                        case 'ncube':
+                            srcUrl = 'https://romsfun.com/roms/gamecube';
+                            break;
+                        // Añadir más casos según sea necesario
+                        default:
+                            console.error('ROM no encontrado');
+                            return;
+                    }
+
+                    // Mostrar el cargador
+                    loader.style.display = 'block';
+
+                    // Cambiar la fuente del webview y mostrarlo
+                    webview.src = srcUrl;
+                    webview.style.display = 'block';
+
+                    // Ocultar el cargador después de la carga del webview
+                    webview.addEventListener('load', function () {
+                        loader.style.display = 'none';
+                    });
+                });
+            });
+        });
+
+</script>

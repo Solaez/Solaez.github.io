@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Test de Teclado y Mouse</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #121212;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #key-display,
+    #mouse-buttons,
+    #mouse-position {
+      background: #1e1e1e;
+      border: 1px solid #333;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      text-align: center;
+      min-width: 300px;
+    }
+
+    .key {
+      display: inline-block;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 5px;
+      background: #333;
+      border: 1px solid #555;
+    }
+
+    .key.active {
+      background: #0a84ff;
+      border-color: #88c0d0;
+    }
+
+    .mouse-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      background: #444;
+      border: 1px solid #666;
+    }
+
+    .mouse-button.active {
+      background: #ff9500;
+      border-color: #ffc107;
+    }
+
+    /* Estilos para el historial */
+    #history {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px;
+      max-height: 300px;
+      overflow-y: auto;
+      border-radius: 8px;
+      width: 250px;
+      font-size: 14px;
+      z-index: 10;
+    }
+
+    #history h3 {
+      margin-top: 0;
+      font-size: 18px;
+    }
+
+    .history-item {
+      margin: 5px 0;
+      padding: 5px;
+      background: #333;
+      border-radius: 4px;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="test-teclado">
+    <div id="key-display">
+      <h2>Teclas presionadas</h2>
+      <div id="keys"></div>
+    </div>
+    
+    <div id="mouse-buttons">
+      <h2>Botones del Mouse</h2>
+      <span id="btn-left" class="mouse-button">Izquierdo</span>
+      <span id="btn-middle" class="mouse-button">Medio</span>
+      <span id="btn-right" class="mouse-button">Derecho</span>
+    </div>
+    
+    <div id="mouse-position">
+      <h2>Posición del Mouse</h2>
+      <div id="pos">X: 0, Y: 0</div>
+    </div>
+    
+    <!-- Historial de teclas y botones -->
+    <div id="history">
+      <h3>Historial</h3>
+      <div id="history-list"></div>
+    </div>
+    
+    <script>
+      const keysContainer = document.getElementById("keys");
+      const pressedKeys = new Set();
+      const historyList = document.getElementById("history-list");
+
+      // Set para llevar el historial sin repeticiones
+      const historySet = new Set();
+
+      // Función para agregar un historial si no existe
+      function addHistory(item) {
+        // Si el item ya está en el historial, no lo agregamos
+        if (!historySet.has(item)) {
+          const historyItem = document.createElement("div");
+          historyItem.classList.add("history-item");
+          historyItem.textContent = item;
+
+          // Insertar el historial al principio para mostrarlo de arriba hacia abajo
+          historyList.insertBefore(historyItem, historyList.firstChild);
+          historySet.add(item);
+        }
+
+        // Mantener solo los últimos 10 elementos
+        if (historyList.children.length > 10) {
+          historySet.delete(historyList.lastChild.textContent);
+          historyList.removeChild(historyList.lastChild);
+        }
+      }
+      document.addEventListener("keydown", (e) => {
+        e.preventDefault();  // Bloquear comportamiento por defecto
+
+        const key = e.key.toUpperCase();  // Convertir la tecla a mayúscula
+
+        if (!pressedKeys.has(key)) {
+          pressedKeys.add(key);
+          const keyEl = document.createElement("div");
+          keyEl.className = "key active";
+          keyEl.id = `key-${key}`;
+          keyEl.textContent = key;
+          keysContainer.appendChild(keyEl);
+          addHistory(`Tecla presionada: ${key}`);
+        }
+      });
+
+      document.addEventListener("keyup", (e) => {
+        const key = e.key.toUpperCase();
+        pressedKeys.delete(key);
+        const keyEl = document.getElementById(`key-${key}`);
+        if (keyEl) keyEl.remove();
+      });
+
+
+      const leftBtn = document.getElementById("btn-left");
+      const middleBtn = document.getElementById("btn-middle");
+      const rightBtn = document.getElementById("btn-right");
+
+      // Detectar los botones del mouse
+      document.addEventListener("mousedown", (e) => {
+        if (e.button === 0) {
+          leftBtn.classList.add("active");
+          addHistory("Botón izquierdo del mouse presionado");
+        }
+        if (e.button === 1) {
+          middleBtn.classList.add("active");
+          addHistory("Botón del medio del mouse presionado");
+        }
+        if (e.button === 2) {
+          rightBtn.classList.add("active");
+          addHistory("Botón derecho del mouse presionado");
+        }
+      });
+
+      document.addEventListener("mouseup", (e) => {
+        if (e.button === 0) leftBtn.classList.remove("active");
+        if (e.button === 1) middleBtn.classList.remove("active");
+        if (e.button === 2) rightBtn.classList.remove("active");
+      });
+
+      // Mostrar las coordenadas del mouse
+      document.addEventListener("mousemove", (e) => {
+        document.getElementById("pos").textContent = `X: ${e.clientX}, Y: ${e.clientY}`;
+      });
+    </script>
+  </div>
+</body>
+
+</html>

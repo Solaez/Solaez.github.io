@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Controller config data. 6/10/2024 9:27:03 -->
+
+<Controllers>
+  <Controller Mac="38:C0:96:97:26:DE" ControllerType="DS4">
+    <DS4SupportSettings>
+      <Copycat>False</Copycat>
+    </DS4SupportSettings>
+  </Controller>
+  <Controller Mac="28:9C:3A:55:00:00" ControllerType="DS3" />
+  <Controller Mac="27:A4:90:26:40:00" ControllerType="DS3" />
+  <Controller Mac="23:12:ED:C0:00:00" ControllerType="DS3" />
+  <Controller Mac="27:A4:90:26:00:00" ControllerType="DS3" />
+  <Controller Mac="28:C1:3C:A8:F1:C0" ControllerType="DS4">
+    <DS4SupportSettings>
+      <Copycat>False</Copycat>
+    </DS4SupportSettings>
+  </Controller>
+  <Controller Mac="37:94:51:05:06:07" ControllerType="DS4">
+    <DS4SupportSettings>
+      <Copycat>False</Copycat>
+    </DS4SupportSettings>
+  </Controller>
+</Controllers>

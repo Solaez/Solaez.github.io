@@ -1,0 +1,44 @@
+2025-02-20 21:53:35.5634|INFO|DS4Windows version 3.3.3
+2025-02-20 21:53:35.5692|INFO|DS4Windows exe file: DS4Windows.exe
+2025-02-20 21:53:35.5692|INFO|DS4Windows Assembly Architecture: x64
+2025-02-20 21:53:35.5692|INFO|OS Version: Microsoft Windows NT 10.0.26100.0
+2025-02-20 21:53:35.5692|INFO|OS Product Name: Windows 10 Pro
+2025-02-20 21:53:35.5692|INFO|OS Release ID: 2009
+2025-02-20 21:53:35.5692|INFO|System Architecture: x64
+2025-02-20 21:53:35.5692|INFO|Logger created
+2025-02-20 21:53:37.6861|INFO|Running as Admin
+2025-02-20 21:53:38.8120|INFO|ViGEmBus is not installed
+2025-02-20 21:54:02.5943|INFO|Starting...
+2025-02-20 21:54:04.6047|INFO|Using output KB+M handler: SendInput
+2025-02-20 21:54:04.6047|INFO|Connection to ViGEmBus 1.21.442.0 established
+2025-02-20 21:54:04.6047|INFO|Searching for controllers...
+2025-02-20 21:54:04.6047|INFO|Using Exclusive Mode
+2025-02-20 21:54:05.2885|INFO|Found Controller: 37:94:51:05:06:07 (BT) (DS4 v.2).
+2025-02-20 21:54:05.9275|INFO|Plugging in virtual X360 controller (XInput slot #1) in output slot #1
+2025-02-20 21:54:05.9275|INFO|Associated input controller #1 (DS4 v.2) to virtual X360 Controller in output slot #1
+2025-02-20 21:54:05.9558|INFO|Controller 1 is using Profile "Xbox-Controller". Battery level is 100%
+2025-02-20 21:55:27.2382|WARN|37:94:51:05:06:07 disconnected due to read failure: 0
+2025-02-20 21:55:27.2416|INFO|Disassociated virtual X360 Controller in output slot #1 from input controller #1 (DS4 v.2)
+2025-02-20 21:55:27.2416|INFO|Unplugging virtual X360 Controller from output slot #1
+2025-02-20 21:55:27.2416|INFO|Controller 1 was removed or lost connection
+2025-02-20 21:55:32.3094|INFO|Found Controller: 37:94:51:05:06:07 (BT) (DS4 v.2).
+2025-02-20 21:55:32.7358|INFO|Plugging in virtual X360 controller (XInput slot #1) in output slot #1
+2025-02-20 21:55:32.7358|INFO|Associated input controller #1 (DS4 v.2) to virtual X360 Controller in output slot #1
+2025-02-20 21:55:32.7358|INFO|Controller 1 is using Profile "Xbox-Controller". Battery level is 100%
+2025-02-20 21:55:36.5455|WARN|37:94:51:05:06:07 disconnected due to read failure: 0
+2025-02-20 21:55:36.5455|INFO|Disassociated virtual X360 Controller in output slot #1 from input controller #1 (DS4 v.2)
+2025-02-20 21:55:36.5455|INFO|Unplugging virtual X360 Controller from output slot #1
+2025-02-20 21:55:36.5455|INFO|Controller 1 was removed or lost connection
+2025-02-20 21:55:41.7082|INFO|Found Controller: 37:94:51:05:06:07 (BT) (DS4 v.2).
+2025-02-20 21:55:42.1568|INFO|Plugging in virtual X360 controller (XInput slot #1) in output slot #1
+2025-02-20 21:55:42.1568|INFO|Associated input controller #1 (DS4 v.2) to virtual X360 Controller in output slot #1
+2025-02-20 21:55:42.1568|INFO|Controller 1 is using Profile "Xbox-Controller". Battery level is 100%
+2025-02-20 22:01:54.3490|INFO|Request App Shutdown
+2025-02-20 22:01:54.3519|INFO|Stopping Virtual Output Controllers
+2025-02-20 22:01:54.3519|INFO|Closing connection to ViGEmBus
+2025-02-20 22:01:54.3519|INFO|Disassociated virtual X360 Controller in output slot #1 from input controller #1 (DS4 v.2)
+2025-02-20 22:01:54.3519|INFO|Unplugging virtual X360 Controller from output slot #1
+2025-02-20 22:01:54.3519|INFO|Controller 1 was removed or lost connection
+2025-02-20 22:01:54.3519|INFO|Stopping DS4 Input Controllers
+2025-02-20 22:01:54.3519|INFO|Stopped DS4Windows
+2025-02-20 22:01:54.3519|INFO|Closing connection to output handler SendInput

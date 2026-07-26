@@ -1,0 +1,58 @@
+2025-02-07 11:05:56.0812|INFO|DS4Windows version 3.3.3
+2025-02-07 11:05:56.0812|INFO|DS4Windows exe file: DS4Windows.exe
+2025-02-07 11:05:56.0812|INFO|DS4Windows Assembly Architecture: x64
+2025-02-07 11:05:56.0863|INFO|OS Version: Microsoft Windows NT 10.0.26100.0
+2025-02-07 11:05:56.0863|INFO|OS Product Name: Windows 10 Pro
+2025-02-07 11:05:56.0863|INFO|OS Release ID: 2009
+2025-02-07 11:05:56.0863|INFO|System Architecture: x64
+2025-02-07 11:05:56.0863|INFO|Logger created
+2025-02-07 11:05:57.8177|INFO|Running as User
+2025-02-07 11:05:57.8177|INFO|HidHide control device found
+2025-02-07 11:05:58.8845|INFO|Starting...
+2025-02-07 11:06:00.8859|INFO|Using output KB+M handler: FakerInput 0.1.0.0
+2025-02-07 11:06:00.8859|INFO|Connection to ViGEmBus 1.21.442.0 established
+2025-02-07 11:06:00.8859|INFO|Searching for controllers...
+2025-02-07 11:06:00.8859|INFO|Using Exclusive Mode
+2025-02-07 11:06:02.2380|INFO|Found Controller: 37:94:51:05:06:07 (BT) (DS4 v.2).
+2025-02-07 11:06:02.4627|INFO|Plugging in virtual DS4 Controller in output slot #1
+2025-02-07 11:06:02.4627|INFO|Associated input controller #1 (DS4 v.2) to virtual DS4 Controller in output slot #1
+2025-02-07 11:06:02.4887|INFO|Controller 1 is using Profile "PS4-Controller". Battery level is 25%
+2025-02-07 11:06:07.5188|INFO|Controller 1 is using Profile "Xbox-Controller". Battery level is 25%
+2025-02-07 11:06:07.5188|INFO|Disassociated virtual DS4 Controller in output slot #1 from input controller #1 (DS4 v.2)
+2025-02-07 11:06:07.6324|INFO|Unplugging virtual DS4 Controller from output slot #1
+2025-02-07 11:06:07.8998|INFO|Plugging in virtual X360 controller (XInput slot #1) in output slot #1
+2025-02-07 11:06:07.8998|INFO|Associated input controller #1 (DS4 v.2) to virtual X360 Controller in output slot #1
+2025-02-07 11:28:01.4252|WARN|37:94:51:05:06:07 disconnected due to read failure: 0
+2025-02-07 11:28:01.4252|INFO|Gamepad data write connection is lost. Disconnecting the gamepad. LastErrorCode=0
+2025-02-07 11:28:01.4252|INFO|Disassociated virtual X360 Controller in output slot #1 from input controller #1 (DS4 v.2)
+2025-02-07 11:28:01.4252|INFO|Unplugging virtual X360 Controller from output slot #1
+2025-02-07 11:28:01.4297|INFO|Controller 1 was removed or lost connection. Charge the battery
+2025-02-07 11:28:20.6361|INFO|Found Controller: 37:94:51:05:06:07 (USB) (DS4 v.2).
+2025-02-07 11:28:21.1498|INFO|Plugging in virtual X360 controller (XInput slot #1) in output slot #1
+2025-02-07 11:28:21.1498|INFO|Associated input controller #1 (DS4 v.2) to virtual X360 Controller in output slot #1
+2025-02-07 11:28:21.1498|INFO|Controller 1 is using Profile "Xbox-Controller". Battery level is 9%
+2025-02-07 11:29:27.7646|INFO|Stopping Virtual Output Controllers
+2025-02-07 11:29:27.7646|INFO|Closing connection to ViGEmBus
+2025-02-07 11:29:27.8263|INFO|Disassociated virtual X360 Controller in output slot #1 from input controller #1 (DS4 v.2)
+2025-02-07 11:29:27.8263|INFO|Unplugging virtual X360 Controller from output slot #1
+2025-02-07 11:29:27.8263|INFO|Stopping DS4 Input Controllers
+2025-02-07 11:29:27.8263|INFO|Stopped DS4Windows
+2025-02-07 11:29:28.3313|INFO|Closing connection to output handler FakerInput
+2025-02-07 11:29:30.2585|INFO|Starting...
+2025-02-07 11:29:32.2593|INFO|Using output KB+M handler: FakerInput 0.1.0.0
+2025-02-07 11:29:32.2593|INFO|Connection to ViGEmBus 1.21.442.0 established
+2025-02-07 11:29:32.2593|INFO|Searching for controllers...
+2025-02-07 11:29:32.2593|INFO|Using Exclusive Mode
+2025-02-07 11:29:34.0518|INFO|Found Controller: 37:94:51:05:06:07 (USB) (DS4 v.2).
+2025-02-07 11:29:34.5390|INFO|Plugging in virtual X360 controller (XInput slot #1) in output slot #1
+2025-02-07 11:29:34.5390|INFO|Associated input controller #1 (DS4 v.2) to virtual X360 Controller in output slot #1
+2025-02-07 11:29:34.5390|INFO|Controller 1 is using Profile "Xbox-Controller". Battery level is 9%
+2025-02-07 13:45:30.3093|INFO|Disassociated virtual X360 Controller in output slot #1 from input controller #1 (DS4 v.2)
+2025-02-07 13:45:30.3093|INFO|Unplugging virtual X360 Controller from output slot #1
+2025-02-07 13:45:30.3093|INFO|Controller 1 was removed or lost connection
+2025-02-07 13:45:36.4976|INFO|Request App Shutdown
+2025-02-07 13:45:36.4976|INFO|Stopping Virtual Output Controllers
+2025-02-07 13:45:36.4976|INFO|Closing connection to ViGEmBus
+2025-02-07 13:45:36.4976|INFO|Stopping DS4 Input Controllers
+2025-02-07 13:45:36.4976|INFO|Stopped DS4Windows
+2025-02-07 13:45:36.4976|INFO|Closing connection to output handler FakerInput
